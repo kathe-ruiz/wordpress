@@ -29,7 +29,6 @@ Thumbs.db
 # ignore everything in the "wp-content" directory, except:
 # "plugins" directory
 # "themes" directory
-/wp-content/
 
 /vendor/
 
