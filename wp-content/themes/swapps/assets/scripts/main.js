@@ -19,6 +19,16 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          nav: true,
+          navText: [
+            "<img src='/wp-content/themes/swapps/assets/images/back.svg'>",
+            "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
+          ],
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
