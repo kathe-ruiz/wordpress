@@ -13,11 +13,13 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
         </a>
       </div>
-      <div class="navbar_metalsocial nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Vimeo</a></li>
+      <div class="navbar_socialmedia socialmedia">
+        <div class="socialmedia_block nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+        </div>
       </div>
       <?php
       if (has_nav_menu('primary_navigation')) :
