@@ -6,7 +6,7 @@
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
-<?php $main_slider = get_sw_slider('main') ?>
+<?php $main_slider = get_sw_slider('Home') ?>
 <!-- begin container -->
 <div class="container">
   <h2>Buttons</h2>
@@ -14,8 +14,6 @@
     <?php $slides = get_slides_array($main_slider); ?>
     <div class="owl-carousel owl-theme">
       <?php foreach ($slides as $key => $slide): ?>
-        <?php print_r($slide); ?>
-        <hr>
         <div class="item">
             <img src="<?php echo $slide['image']['url'] ?>" alt="<?php echo $slide['image']['alt'] ?>" class="img-fluid">
             <p></p>
