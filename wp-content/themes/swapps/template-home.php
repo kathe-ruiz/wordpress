@@ -9,7 +9,7 @@
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
-<?php $main_slider = get_sw_slider('Main') ?>
+<?php $main_slider = get_sw_slider('main') ?>
 <!-- begin container -->
 <div class="container">
   <h2>Buttons</h2>
@@ -38,6 +38,3 @@
 <?php endwhile; ?>
 
 <?php the_posts_navigation(); ?>
-<footer class="navbar-inverse">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis placeat at quod tenetur consequuntur repellat optio assumenda expedita quas vero, quo molestias porro ipsam, tempore veniam consectetur aliquam qui, illo.
-</footer>

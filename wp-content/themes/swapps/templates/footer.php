@@ -1,5 +1,27 @@
-<footer class="content-info">
-  <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+<footer class="footer navbar-inverse">
+  <div class="container-fluid">
+    <?php //dynamic_sidebar('sidebar-footer'); ?>
+    <div class="footer__logo col-sm-2">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Footer logo">
+    </div>
+    <div class="footer__info col-sm-3">
+      <p>Carrera 100 # 5 - 169,<br>Cali, Colombia</p>
+      <a href="#">info@misitioweb.com</a>
+    </div>
+    <div class="col-sm-6 col-sm-offset-1">
+      <div class="row">
+        <div class="socialmedia footer__socialmedia col-sm-6 col-sm-push-6">
+          <div class="socialmedia_block">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+          </div>
+        </div>
+        <div class="footer__copyright col-sm-12 text-right">
+          <p>&copy; 2017 misitioweb. Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
