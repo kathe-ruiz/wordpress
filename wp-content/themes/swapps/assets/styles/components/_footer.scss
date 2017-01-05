@@ -1,10 +1,41 @@
 .footer{
-	@media (min-width: $screen-sm-min){
-    padding: 30px 0;
+  color: #5a5a5a;
+  &__logo{
+    &__img{
+      @media (max-width: 576px){
+        width: 5rem;
+      }
+    }
   }
-  @media (max-width: $screen-xs-max){
-    padding-bottom: 5px;
-    padding-top: 30px;
-    text-align: center;
+  &__info{
+    a{
+      font-family: $paragraphs-font-family;
+    }
+  }
+  &__socialmedia{
+    .socialmedia_block{
+      color: #bdbdbd;
+      font-size: 30px;
+      @media (max-width: 576px){
+        font-size: 20px;
+      }
+    }
+    .socialmedia__link{
+      @media (max-width: 576px){
+        padding: 0 8px;
+      }
+    }
+    .socialmedia__item{
+      display: inline-block;
+    }
+  }
+  &__copyright{
+    @media (max-width: $screen-xs-max){
+      text-align: center;
+      font-size: 90%;
+    }
+    @media (min-width: $screen-sm-min){
+      text-align: right;
+    }
   }
 }

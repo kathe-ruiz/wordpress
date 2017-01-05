@@ -1,1 +1,21 @@
 @import "components/footer";
+.footer{
+  @media (min-width: $screen-sm-min){
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: $screen-xs-max){
+    padding-bottom: 5px;
+    padding-top: 30px;
+    text-align: center;
+    [class^='col-sm-'], [class*='col-sm-']{
+      &:nth-child(1){
+        margin-bottom: 25px;
+      }
+      &:nth-child(2){
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}
