@@ -29,7 +29,9 @@ Thumbs.db
 # ignore everything in the "wp-content" directory, except:
 # "plugins" directory
 # "themes" directory
-
+wp-content/plugins/amazon-s3-and-cloudfront/
+wp-content/plugins/amazon-web-services/
+wp-content/plugins/mailgun
 /vendor/
 uploads
 !.gitkeep
