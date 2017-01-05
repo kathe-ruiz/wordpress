@@ -20,9 +20,18 @@
       init: function() {
         // JavaScript to be fired on all pages
         $('.owl-carousel').owlCarousel({
+          items: 1,
           loop: true,
           margin: 10,
           responsiveClass: true,
+          responsive : {
+              0 : {
+                  dots : false,
+              },
+              768 : {
+                  dots : true,
+              }
+          },
           nav: true,
           navText: [
             "<img src='/wp-content/themes/swapps/assets/images/back.svg'>",

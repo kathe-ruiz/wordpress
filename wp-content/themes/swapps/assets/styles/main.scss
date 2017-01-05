@@ -11,6 +11,9 @@
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
+@import "common/global";
+@import "common/base";
+@import "components/sliders";
 @import "components/buttons";
 @import "layouts/header";
 
