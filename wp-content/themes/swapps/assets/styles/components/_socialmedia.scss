@@ -2,10 +2,10 @@
   &_block{
     margin-top: 20px;
     font-size: ($font-size-large + 2);
-    li{
-      a{
+    .socialmedia__item{
+      .socialmedia__link{
         padding: 5px 10px;
-        i{
+        .fa{
           vertical-align: middle;
         }
       }

@@ -12,14 +12,14 @@
     margin-right: 15px;
     margin-top: 16px;
     border-width: ($navbar-top-border - 1);
-    i{
+    .fa{
       color: $brand-primary;
       vertical-align: middle;
       font-size: $font-size-h3;
     }
     &:hover,
     &:focus{
-      i{
+      .fa{
         color: inherit;
       }
     }

@@ -15,10 +15,10 @@
       </div>
       <div class="navbar_socialmedia socialmedia">
         <div class="socialmedia_block nav navbar-nav navbar-right">
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
         </div>
       </div>
       <button class="navbar__btn btn btn-primary-outline navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span>+57 (350) 316-8388</span></button>

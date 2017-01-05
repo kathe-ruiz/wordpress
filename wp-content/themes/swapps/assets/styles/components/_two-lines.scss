@@ -1,0 +1,13 @@
+.two-lines{
+  &__block{
+    margin: 60px 0px;
+  }
+  &__text{
+    font-weight: 400;
+    font-size: $font-size-h4;
+  }
+  &__btn{
+    letter-spacing: 2px;
+    font-size: ($font-size-h4 - 2);
+  }
+}
