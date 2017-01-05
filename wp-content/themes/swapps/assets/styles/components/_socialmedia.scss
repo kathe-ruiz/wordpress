@@ -2,4 +2,8 @@
   &_block{
     margin-top: 13px;
   }
+  @media (max-width: $grid-float-breakpoint) {
+    clear: both;
+    display: none;
+  }
 }

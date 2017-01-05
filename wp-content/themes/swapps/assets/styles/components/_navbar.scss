@@ -1,6 +1,30 @@
 .navbar{
   padding: 10px 0;
-  &_menu{
+  border-left:0;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-top: $navbar-top-border solid;
+  border-color: $brand-primary;
+  &__menu{
     margin-top: 13px;
+  }
+  &__btn{
+    margin-top: 19px;
+    border-width: ($navbar-top-border - 1);
+    i{
+      color: $brand-primary;
+    }
+  }
+  @media (max-width: $grid-float-breakpoint) {
+    &__logo{
+      float: left;
+    }
+    &__toggle{
+      float: right;
+      margin-top: 13px;
+    }
+    &__menu{
+      clear: both;
+    }
   }
 }
