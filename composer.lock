@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eeb8dfc86ebd7318bdb1495836689e05",
-    "content-hash": "9f216b5e8d180c806bcda061c1d636f8",
+    "content-hash": "0351ffcf6863c80bcf39ff15465e8831",
     "packages": [
         {
             "name": "composer/installers",
@@ -112,7 +111,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13 20:53:52"
+            "time": "2016-08-13T20:53:52+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -158,19 +157,19 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-05-30 16:15:01"
+            "time": "2015-05-30T16:15:01+00:00"
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "1.1",
+            "version": "1.1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/1.1"
+                "reference": "tags/1.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -182,15 +181,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-web-services",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-web-services/",
-                "reference": "tags/1.0"
+                "reference": "tags/1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -199,6 +198,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/amazon-web-services/"
+        },
+        {
+            "name": "wpackagist-plugin/mailgun",
+            "version": "1.4.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailgun/",
+                "reference": "tags/1.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailgun.1.4.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailgun/"
         }
     ],
     "packages-dev": [],
