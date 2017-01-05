@@ -9,10 +9,18 @@
     margin-top: 13px;
   }
   &__btn{
-    margin-top: 19px;
+    margin-right: 15px;
+    margin-top: 18px;
     border-width: ($navbar-top-border - 1);
     i{
       color: $brand-primary;
+      vertical-align: middle;
+    }
+    &:hover,
+    &:focus{
+      i{
+        color: inherit;
+      }
     }
   }
   @media (max-width: $grid-float-breakpoint) {
@@ -21,10 +29,17 @@
     }
     &__toggle{
       float: right;
-      margin-top: 13px;
+      margin-top: 11px;
     }
     &__menu{
       clear: both;
+    }
+    &__btn{
+      float: right;
+      margin-right: 40px;
+      span{
+        display: none;
+      }
     }
   }
 }
