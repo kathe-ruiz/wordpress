@@ -9,22 +9,48 @@
     margin-top: 13px;
   }
   &__btn{
-    margin-top: 19px;
+    margin-right: 15px;
+    margin-top: 16px;
     border-width: ($navbar-top-border - 1);
     i{
       color: $brand-primary;
+      vertical-align: middle;
+      font-size: $font-size-h3;
+    }
+    &:hover,
+    &:focus{
+      i{
+        color: inherit;
+      }
     }
   }
   @media (max-width: $grid-float-breakpoint) {
     &__logo{
       float: left;
+      img{
+        width: 65px;
+      }
     }
     &__toggle{
       float: right;
-      margin-top: 13px;
+      margin-top: 0px;
+      button{
+        border-color: transparent !important;
+        margin-top: 5px;
+        margin-bottom: 0px;
+      }
     }
     &__menu{
       clear: both;
+    }
+    &__btn{
+      float: right;
+      margin-right: 30px;
+      margin-top: 5px;
+      padding: 3px 6px;
+      span{
+        display: none;
+      }
     }
   }
 }
