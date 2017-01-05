@@ -1,4 +1,9 @@
+@import "mixins";
+
 @import "common/variables";
+@import "common/global";
+@import "common/fonts";
+
 @import "../../bower_components/owl.carousel/src/scss/owl.carousel.scss";
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
@@ -6,14 +11,16 @@
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
-@import "common/global";
-@import "mixins/button-variant-outline";
 @import "components/buttons";
-// // @import "components/comments";
-// @import "components/forms";
-// // @import "components/grid";
-// // @import "components/wp-classes";
 @import "layouts/header";
+
+
+// The next code need improvements
+
+// @import "components/comments";
+// @import "components/forms";
+// @import "components/grid";
+// @import "components/wp-classes";
 // @import "layouts/sidebar";
 // @import "layouts/footer";
 // @import "layouts/pages";
