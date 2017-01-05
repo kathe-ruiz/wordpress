@@ -5,7 +5,7 @@
       background-color: rgba(0,0,0,.5);
       color: #fff;
       position: absolute;
-      @media (min-width: $screen-sm-min){      
+      @media (min-width: $screen-sm-min){
         top: 50%;
         left: 10%;
         transform: translateY(-50%);
@@ -75,6 +75,21 @@
       &.active span{
         background: $brand-primary;
       }
+    }
+  }
+}
+
+
+.sliders{
+
+  &-main{
+
+  }
+  &-secondary{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .owl-dots{
+      display: none;
     }
   }
 }
