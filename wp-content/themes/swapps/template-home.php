@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name: Home Template
+ */
+?>
 <?php get_template_part('templates/page', 'header'); ?>
 
 <?php if (!have_posts()) : ?>
@@ -6,7 +11,7 @@
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
-<?php $main_slider = get_sw_slider('Home') ?>
+<?php $main_slider = get_sw_slider('Main') ?>
 <!-- begin container -->
 <div class="container">
   <h2>Buttons</h2>
@@ -16,7 +21,13 @@
       <?php foreach ($slides as $key => $slide): ?>
         <div class="item">
             <img src="<?php echo $slide['image']['url'] ?>" alt="<?php echo $slide['image']['alt'] ?>" class="img-fluid">
-            <p></p>
+            <div class="caption">
+              <h2><?php echo $slide['title'] ?></h2>
+              <p><?php echo $slide['description'] ?></p>
+              <a href="<?php echo $slide['link'] ?>" class="btn btn-primary">
+                <?php echo $slide['call_to_action_text'] ?>
+              </a>
+            </div>
         </div>
       <?php endforeach ?>
     </div>
