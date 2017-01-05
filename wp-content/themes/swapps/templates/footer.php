@@ -11,7 +11,7 @@
     <div class="col-sm-6 col-sm-offset-1">
       <div class="row">
         <div class="socialmedia footer__socialmedia col-sm-6 col-sm-push-6">
-          <div class="socialmedia_block">
+          <div class="socialmedia__block">
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>

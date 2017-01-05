@@ -1,6 +1,5 @@
 .socialmedia{
-  &_block{
-    margin-top: 20px;
+  &__block{
     font-size: ($font-size-large + 2);
     .socialmedia__item{
       .socialmedia__link{
@@ -10,9 +9,5 @@
         }
       }
     }
-  }
-  @media (max-width: $grid-float-breakpoint) {
-    clear: both;
-    display: none;
   }
 }
