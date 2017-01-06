@@ -1,2 +1,16 @@
 @import "components/navbar";
 @import "components/socialmedia";
+.header{
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  .navbar{
+    background-color: transparent;
+  }
+}
+// Workaround for Wordpress admin bar
+.logged-in .header {
+    margin-top: 32px;
+}
