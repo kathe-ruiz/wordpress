@@ -64,22 +64,7 @@
   </section>
   <!-- end example of section -->
 
-  <section class="bg-primary sliders-secondary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="owl-carousel owl-theme">
-            <?php foreach ($slides as $key => $slide): ?>
-              <div class="item text-center">
-                <h2><?php echo $slide['title'] ?></h2>
-                <p><?php echo $slide['description'] ?></p>
-              </div>
-            <?php endforeach ?>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <div class="container">
     <div class="row">
