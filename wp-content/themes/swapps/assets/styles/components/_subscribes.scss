@@ -1,3 +1,18 @@
 .subscribes{
-
+  background: url(../../assets/images/subscribes.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 460px;
+  padding-top: 100px;
+  color: $subscribe-text-color;
+  &__input{
+    border: 0px;
+    border-radius: $btn-border-radius-base;
+    color: $input-color;
+    display: inline-block;
+    margin-right: 25px;
+    padding: $padding-base-vertical 15px;
+    width: 40%;
+  }
 }
+

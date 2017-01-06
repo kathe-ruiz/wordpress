@@ -34,9 +34,9 @@
   <!-- begin titulo de seccion de dos lineas -->
   <section class="two-lines">
     <div class="container text-center">
-      <div class="row title">
-        <h2 class="title__h2">Este es el título de la sección,<br>con a dos líneas</h2>
-        <h4 class="title__h4"><p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</p></h4>
+      <div class="row heading">
+        <h2 class="heading__title">Este es el título de la sección,<br>con a dos líneas</h2>
+        <h4 class="heading__subtitle"><p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</p></h4>
       </div>
       <div class="row two-lines__block">
         <div class="col-sm-6 text-left two-lines__text">
@@ -52,13 +52,15 @@
   <!-- end titulo de seccion de dos lineas -->
 
   <!-- begin example of section -->
-  <section class="container home-section">
+  <section class="container home-section heading">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="home-section__title text-center">Lorem ipsum dolor sit amet</h2>
-        <p class="home-section__subtitle text-center">
-          ipsum dolor sit ipsum dolor sit ipsum dolor sit
-        </p>
+        <h2 class="heading__title text-center">Lorem ipsum dolor sit amet</h2>
+        <h4 class="heading__subtitle text-center">
+          <p>
+            ipsum dolor sit ipsum dolor sit ipsum dolor sit
+          </p>
+        </h4>
       </div>
     </div>
   </section>
@@ -76,16 +78,16 @@
       </div>
     </div>
   </div>
-  <section class="subscribe">
+  <section class="subscribes">
     <div class="container">
-      <div class="row text-center title">
-        <h2 class="title__h2">Suscríbase a nuestro boletín</h2>
-        <h4 class="title__h4">
+      <div class="row text-center heading">
+        <h2 class="heading__title">Suscríbase a nuestro boletín</h2>
+        <h4 class="heading__subtitle">
           <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
         </h4>
-        <div class="subscribe__content text-center">
-          <input type="text" class="subscribe__input" placeholder="Correo electónico">
-          <button class="subscribe__btn text-uppercase btn btn-primary">suscribirse</button>
+        <div class="subscribes__content text-center">
+          <input type="text" class="subscribes__input form-control" placeholder="Correo electónico">
+          <button class="subscribes__btn text-uppercase btn btn-primary">suscribirse</button>
         </div>
       </div>
     </div>
