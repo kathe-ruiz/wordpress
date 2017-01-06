@@ -41,7 +41,7 @@
     <?php endif; ?>
   </section>
   <!-- begin titulo de seccion de dos lineas -->
-  <section class="two-lines">
+  <section class="home-section two-lines">
     <div class="container text-center">
       <div class="row heading">
         <h2 class="heading__title">Este es el título de la sección,<br>con a dos líneas</h2>
@@ -61,15 +61,15 @@
   <!-- end titulo de seccion de dos lineas -->
 
   <!-- begin example of section -->
-  <section class="container home-section heading">
+  <section class="container home-section">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="heading__title text-center">Lorem ipsum dolor sit amet</h2>
-        <h4 class="heading__subtitle text-center">
-          <p>
-            ipsum dolor sit ipsum dolor sit ipsum dolor sit
-          </p>
-        </h4>
+        <div class="heading text-center">
+          <h2 class="heading__title">Título del módulo</h2>
+          <h4 class="heading__subtitle">
+            <p>Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.</p>
+          </h4>
+        </div>
         <div id="gallery" class="owl-carousel owl-theme gallery">
             <div class="gallery-item text-center">
               <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
@@ -110,13 +110,15 @@
   </section>
 
   <!-- begin example of section -->
-  <section class="container home-section heading">
+  <section class="container home-section">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="heading__title text-center">Lorem ipsum dolor sit amet</h2>
-        <h4 class="heading__subtitle text-center">
-          <p>ipsum dolor sit ipsum dolor sit ipsum dolor sit</p>
-        </h4>
+        <div class="heading">
+          <h2 class="heading__title text-center">Lorem ipsum dolor sit amet</h2>
+          <h4 class="heading__subtitle text-center">
+            <p>ipsum dolor sit ipsum dolor sit ipsum dolor sit</p>
+          </h4>
+        </div>
       </div>
     </div>
   </section>
@@ -136,11 +138,13 @@
   </div>
   <section class="subscribes">
     <div class="container">
-      <div class="row text-center heading">
-        <h2 class="heading__title">Suscríbase a nuestro boletín</h2>
-        <h4 class="heading__subtitle">
-          <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
-        </h4>
+      <div class="row text-center">
+        <div class="heading">
+          <h2 class="heading__title">Suscríbase a nuestro boletín</h2>
+          <h4 class="heading__subtitle">
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+          </h4>
+        </div>
         <div class="subscribes__content text-center">
           <input type="text" class="subscribes__input form-control" placeholder="Correo electónico">
           <button class="subscribes__btn text-uppercase btn btn-primary">suscribirse</button>
