@@ -1,5 +1,5 @@
 .subscribes{
-  background: url(../../assets/images/subscribes.png);
+  background: url(../../assets/images/background-subscribe.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 460px;
@@ -13,6 +13,24 @@
     margin-right: 25px;
     padding: $padding-base-vertical 15px;
     width: 40%;
+  }
+  @media (max-width: $screen-sm){
+    min-height: auto;
+    padding-top: 55px;
+    .heading{
+      &__subtitle{
+        margin-bottom: 50px;
+      }
+    }
+    &__input{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+    &__btn{
+      margin-bottom: 45px;
+    }
   }
 }
 
