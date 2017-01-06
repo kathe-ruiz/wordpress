@@ -4,33 +4,42 @@
  */
 ?>
 <div class="home">
-  <!-- <section class="sliders-main">
-    <?php /*if (!have_posts()) :*/ ?>
+  <section class="sliders-main">
+    <?php if (!have_posts()) : ?>
       <div class="alert alert-warning">
-        <?php /*_e('Sorry, no results were found.', 'sage');*/ ?>
+        <?php _e('Sorry, no results were found.', 'sage'); ?>
       </div>
-      <?php /*get_search_form();*/ ?>
-    <?php /*endif;*/ ?>
-    <?php /*$main_slider = get_sw_slider('Main')*/ ?>
-  
-    <?php /*if($main_slider):*/ ?>
-      <?php /*$slides = get_slides_array($main_slider);*/ ?>
+      <?php get_search_form(); ?>
+    <?php endif; ?>
+    <?php $main_slider = get_sw_slider('Main') ?>
+
+    <?php if($main_slider): ?>
+      <?php $slides = get_slides_array($main_slider); ?>
       <div class="owl-carousel owl-theme">
-        <?php /*foreach ($slides as $key => $slide):*/ ?>
+        <?php foreach ($slides as $key => $slide): ?>
+          <?php 
+            $image = $slide['image'];
+            $title = $slide['title'];
+            $description = $slide['description'];
+            $link = $slide['link'];
+            $cta = $slide['call_to_action_text'];
+          ?>
           <div class="item">
-              <img src="<?php /*echo $slide['image']['url']*/ ?>" alt="<?php /*echo $slide['image']['alt']*/ ?>" class="img-fluid">
+              <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" class="img-fluid">
               <div class="caption">
-                <h2><?php /*echo $slide['title']*/ ?></h2>
-                <p><?php /*echo $slide['description']*/ ?></p>
-                <a href="<?php /*echo $slide['link']*/ ?>" class="btn btn-primary">
-                  <?php /*echo $slide['call_to_action_text']*/ ?>
+                <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
+                <?php if ($description): ?><p><?php echo $description ?></p><?php endif ?>
+                <?php if ($link): ?>
+                <a href="<?php echo $link ?>" class="btn btn-primary">
+                  <?php if ($cta): echo $cta; endif; ?>
                 </a>
+                <?php endif ?>
               </div>
           </div>
-        <?php /*endforeach*/ ?>
+        <?php endforeach ?>
       </div>
-    <?php /*endif;*/ ?>
-  </section> -->
+    <?php endif; ?>
+  </section>
   <!-- begin titulo de seccion de dos lineas -->
   <section class="two-lines">
     <div class="container text-center">
@@ -60,6 +69,53 @@
           <p>
             ipsum dolor sit ipsum dolor sit ipsum dolor sit
           </p>
+        </h4>
+        <div id="gallery" class="owl-carousel owl-theme gallery">
+            <div class="gallery-item text-center">
+              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
+              <p class="gallery-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            </div>
+            <div class="gallery-item text-center">
+              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
+              <p class="gallery-item__caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+            </div>
+            <div class="gallery-item text-center">
+              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
+              <p class="gallery-item__caption">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="gallery-item text-center">
+              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
+              <p class="gallery-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end example of section -->
+  <section class="bg-primary sliders-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme">
+            <?php foreach ($slides as $key => $slide): ?>
+              <div class="item text-center">
+                <h2><?php echo $slide['title'] ?></h2>
+                <p><?php echo $slide['description'] ?></p>
+              </div>
+            <?php endforeach ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- begin example of section -->
+  <section class="container home-section heading">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="heading__title text-center">Lorem ipsum dolor sit amet</h2>
+        <h4 class="heading__subtitle text-center">
+          <p>ipsum dolor sit ipsum dolor sit ipsum dolor sit</p>
         </h4>
       </div>
     </div>

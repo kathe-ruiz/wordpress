@@ -1,0 +1,22 @@
+.gallery-item{
+  &__image{
+
+  }
+  &__caption{
+    @media (max-width: $screen-xs-max){
+      margin-top: 20px;
+    }
+    @media (min-width: $screen-sm-min){
+      margin-top: 30px;
+    }
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.2em;
+  }
+}
+.gallery{
+  .owl-nav{
+    top: 30%;
+    transform: translateY(-30%);
+  }
+}
