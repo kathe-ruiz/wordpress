@@ -13,6 +13,9 @@
     }
   }
   &__socialmedia{
+    @media (min-width: $screen-sm-min){
+      text-align: right;
+    }
     .socialmedia_block{
       color: #bdbdbd;
       font-size: 30px;
@@ -23,6 +26,9 @@
     .socialmedia__link{
       @media (max-width: 576px){
         padding: 0 8px;
+      }
+      @media (min-width: 577px){
+        padding: 1.25rem;
       }
     }
     .socialmedia__item{

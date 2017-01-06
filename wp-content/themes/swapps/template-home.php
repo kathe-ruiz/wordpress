@@ -4,33 +4,7 @@
  */
 ?>
 <div class="home">
-  <section class="sliders-main">
-    <?php if (!have_posts()) : ?>
-      <div class="alert alert-warning">
-        <?php _e('Sorry, no results were found.', 'sage'); ?>
-      </div>
-      <?php get_search_form(); ?>
-    <?php endif; ?>
-    <?php $main_slider = get_sw_slider('Main') ?>
 
-    <?php if($main_slider): ?>
-      <?php $slides = get_slides_array($main_slider); ?>
-      <div class="owl-carousel owl-theme">
-        <?php foreach ($slides as $key => $slide): ?>
-          <div class="item">
-              <img src="<?php echo $slide['image']['url'] ?>" alt="<?php echo $slide['image']['alt'] ?>" class="img-fluid">
-              <div class="caption">
-                <h2><?php echo $slide['title'] ?></h2>
-                <p><?php echo $slide['description'] ?></p>
-                <a href="<?php echo $slide['link'] ?>" class="btn btn-primary">
-                  <?php echo $slide['call_to_action_text'] ?>
-                </a>
-              </div>
-          </div>
-        <?php endforeach ?>
-      </div>
-    <?php endif; ?>
-  </section>
   <!-- begin titulo de seccion de dos lineas -->
   <section class="two-lines">
     <div class="container text-center">
@@ -62,22 +36,7 @@
   </section>
   <!-- end example of section -->
 
-  <section class="bg-primary sliders-secondary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="owl-carousel owl-theme">
-            <?php foreach ($slides as $key => $slide): ?>
-              <div class="item text-center">
-                <h2><?php echo $slide['title'] ?></h2>
-                <p><?php echo $slide['description'] ?></p>
-              </div>
-            <?php endforeach ?>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <div class="container">
     <div class="row">
