@@ -1,0 +1,26 @@
+.image-text{
+  padding: 111px 0px;
+  &__content{
+    display: flex;
+  }
+  &__btn{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+  }
+  &.one{
+    background:$body-other-bg;
+  }
+  @media (max-width: $screen-sm) {
+    padding-top: 25px;
+    padding-bottom: 55px;
+    &__content{
+      display: block;
+      text-align: center;
+    }
+    &__btn{
+      position: inherit;
+      margin-top: 10px;
+    }
+  }
+}

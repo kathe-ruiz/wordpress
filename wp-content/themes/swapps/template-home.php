@@ -136,6 +136,37 @@
       </div>
     </div>
   </div>
+  <section class="image-text one">
+    <div class="container">
+      <div class="row image-text__content">
+        <div class="col-sm-6">
+          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img.png" alt="">
+        </div>
+        <div class="col-sm-6 heading">
+          <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
+          <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus minima consequatur impedit facere sit aut, exercitationem assumenda, quos odit animi, earum quam distinctio debitis.</p>
+          <button class="image-text__btn btn btn-primary">más información</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="image-text two">
+    <div class="container">
+      <div class="row image-text__content">
+        <div class="col-sm-6 visible-xs">
+          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-1.png" alt="">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
+          <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt reiciendis natus provident impedit, autem nulla odit fugiat tempora inventore ad hic, neque ratione veritatis.</p>
+          <button class="image-text__btn btn btn-primary">más información</button>
+        </div>
+        <div class="col-sm-6 hidden-xs">
+          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="subscribes">
     <div class="container">
       <div class="row text-center">
