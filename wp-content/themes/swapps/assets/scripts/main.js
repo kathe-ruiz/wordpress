@@ -19,6 +19,26 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('#gallery').owlCarousel({
+          items: 4,
+          loop: true,
+          margin: 30,
+          responsiveClass: true,
+          responsive : {
+            0 : {
+              items : 1,
+              dots: false,
+            },
+            768 : {
+              dots : 4,
+            }
+          },
+          nav: true,
+          navText: [
+            "<img src='/wp-content/themes/swapps/assets/images/back.svg'>",
+            "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
+          ],
+        });
         $('.owl-carousel').owlCarousel({
           items: 1,
           loop: true,
