@@ -167,6 +167,39 @@
       </div>
     </div>
   </section>
+  <section class="icons">
+    <div class="container">
+      <div class="row text-center">
+        <i class="fa fa-angellist fa-11x icons__item" aria-hidden="true"></i>
+        <div class="heading text-center">
+          <h2 class="heading__title">Título del módulo</h2>
+          <h4 class="heading__subtitle">
+            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit.</p>
+          </h4>
+        </div>
+        <div class="col-xs-6 col-sm-3 text-center icons__content">
+          <i class="fa fa-comments-o fa-4x icons__item" aria-hidden="true"></i>
+          <h4 class="icons__title text-uppercase">Destacado uno</h4>
+          <p class="icons__text">Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="col-xs-6 col-sm-3 text-center icons__content">
+          <i class="fa fa-bicycle fa-4x icons__item" aria-hidden="true"></i>
+          <h4 class="icons__title text-uppercase">Destacado dos</h4>
+          <p class="icons__text">Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="col-xs-6 col-sm-3 text-center icons__content">
+          <i class="fa fa-bullhorn fa-4x icons__item" aria-hidden="true"></i>
+          <h4 class="icons__title text-uppercase">Destacado tres</h4>
+          <p class="icons__text">Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="col-xs-6 col-sm-3 text-center icons__content">
+          <i class="fa fa-calendar fa-4x icons__item" aria-hidden="true"></i>
+          <h4 class="icons__title text-uppercase">Destacado cuatro</h4>
+          <p class="icons__text">Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="subscribes">
     <div class="container">
       <div class="row text-center">

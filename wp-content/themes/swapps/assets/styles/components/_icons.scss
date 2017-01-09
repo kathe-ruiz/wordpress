@@ -1,0 +1,41 @@
+.icons{
+  padding-bottom: 83px;
+  padding-top: 104px;
+  &__item{
+    color: $brand-primary;
+  }
+  .fa-11x{
+    font-size: 11em;
+  }
+  &__title{
+    font-weight: 500;
+  }
+  &__text{
+    font-size: ($font-size-h4 - 2);
+  }
+  @media (max-width: $screen-sm) {
+    padding-bottom: 55px;
+    padding-top: 37px;
+    padding-right: 8px;
+    padding-left: 8px;
+    &__title{
+      font-size: ($font-size-h4 - 2);
+    }
+    &__content{
+      margin-bottom: 12px;
+    }
+    .heading{
+      &__subtitle{
+        margin-bottom: 40px;
+      }
+    }
+  }
+  @media (max-width: $screen-xs){
+    &__title{
+      font-size: ($font-size-h4 - 3);
+    }
+    &__text{
+      font-size: $font-size-base;
+    }
+  }
+}
