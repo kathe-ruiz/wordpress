@@ -167,6 +167,17 @@
       </div>
     </div>
   </section>
+  <section class="video">
+    <div class="container">
+      <div class="row text-center">
+        <div class="heading">
+          <h2 class="heading__title">Título para módulo<br>de video</h2>
+        </div>
+        <i class="fa fa-play-circle video__icon" aria-hidden="true"></i>
+        <p class="video__text">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit. Cum, quisquam, repudiandae<br>culpa ex ipsam dolore omnis odit a alias.</p>
+      </div>
+    </div>
+  </section>
   <section class="icons">
     <div class="container">
       <div class="row text-center">
