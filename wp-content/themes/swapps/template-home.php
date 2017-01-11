@@ -17,7 +17,7 @@
       <?php // $slides = get_slides_array($main_slider); ?>
       <div class="owl-carousel owl-theme">
         <?php // foreach ($slides as $key => $slide): ?>
-          <?php 
+          <?php
             // $image = $slide['image'];
             // $title = $slide['title'];
             // $description = $slide['description'];
@@ -120,22 +120,51 @@
     </div>
   </section>
   <!-- end example of section -->
-  <section class="bg-primary sliders-secondary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="owl-carousel owl-theme">
-            <?php foreach ($slides as $key => $slide): ?>
-              <div class="item text-center">
-                <h2><?php echo $slide['title'] ?></h2>
-                <p><?php echo $slide['description'] ?></p>
+
+  <?php // $main_slider = get_sw_slider('Main') ?>
+
+  <?php // if($main_slider): ?>
+    <section class="bg-primary sliders-secondary">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="row">
+              <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                <h4 class="sliders__title text-center">Title</h4>
+                <p>
+                Lorem  ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quas, quasi. Debitis magnam vel deserunt a, ipsam culpa sed cum facilis enim quisquam incidunt quia, assumenda nisi, dicta, maxime eos.</p>
+                <hr>
+                NOMBRE APELLIDO
+                Nombre del cargo
               </div>
-            <?php endforeach ?>
-          </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row">
+              <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                <h4 class="sliders__title text-center">Title</h4>
+                <p>
+                Lorem  ipsum dolor sit amet, consectetur adipisicing elit. Quis earum adipisci cum blanditiis, enim, minima dolores corrupti, ducimus tempore modi veritatis ea ipsum accusantium itaque sapiente! Omnis odit possimus magnam.</p>
+                <hr>
+                <p>NOMBRE APELLIDO.</p>
+                <p>Nombre del cargo.</p>
+              </div>
+            </div>
+        </div>
+        <div class="item text-center">
+            <div class="row">
+              <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+                <h4 class="sliders__title text-center">Title</h4>
+                <p>
+                Lorem  ipsum dolor sit amet, consectetur adipisicing elit. Odio nulla ab nostrum at natus debitis aliquam sit. Ex totam libero accusamus nulla eos, quae laboriosam. Impedit saepe aperiam, accusamus ducimus.</p>
+                <hr>
+                NOMBRE APELLIDO
+                Nombre del cargo
+              </div>
+            </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <?php // endif ?>
 
   <!-- begin example of section -->
   <section class="container home-section">
