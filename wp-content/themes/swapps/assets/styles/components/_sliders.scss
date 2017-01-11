@@ -35,9 +35,23 @@
     width: 100%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    .owl-next{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 7px;
+      padding-right: 3px;
+    }
+    .owl-prev{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 3px;
+      padding-right: 7px;
+    }
+
+
     .owl-prev, .owl-next{
       position: relative;
-      padding: 5px;
       &:hover{
         background-color: rgba(180,180,180,0.4);
         border-radius: 50%;
@@ -105,6 +119,19 @@
 
     .sliders__title{
       text-transform: uppercase;
+      font-weight: bold;
+    }
+    .sliders__text{
+      font-family: $paragraphs-font-family;
+    }
+    .sliders__footer{
+      p{
+        margin-bottom: 0;
+        &:nth-child(n+1){
+          color: #fff;
+        }
+      }
+
     }
   }
 }
