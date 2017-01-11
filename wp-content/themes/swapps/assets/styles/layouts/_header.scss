@@ -1,7 +1,9 @@
 @import "components/navbar";
 @import "components/socialmedia";
 .header{
-  background-color: transparent;
+  background: -webkit-linear-gradient(rgba(#000, .6), transparent);
+  background: -o-linear-gradient(rgba(#000, .6), transparent);
+  background: linear-gradient(rgba(#000, .6), transparent);
   position: absolute;
   top: 0px;
   width: 100%;
