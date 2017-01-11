@@ -1,5 +1,5 @@
 <header class="header">
-  <nav class="navbar navbar--dark">
+  <nav class="navbar navbar--transparent">
     <div class="container-fluid">
       <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

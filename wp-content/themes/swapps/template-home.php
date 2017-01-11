@@ -170,7 +170,7 @@
         <div class="col-sm-6">
           <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img.png" alt="">
         </div>
-        <div class="col-sm-6 heading">
+        <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
           <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus minima consequatur impedit facere sit aut, exercitationem assumenda, quos odit animi, earum quam distinctio debitis.</p>
           <button class="image-text__btn btn btn-primary">más información</button>
