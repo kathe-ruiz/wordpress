@@ -67,6 +67,17 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $("a.gallery_elements").fancybox({
+          'transitionIn'  : 'elastic',
+          'transitionOut' : 'elastic',
+          'speedIn'   : 600, 
+          'speedOut'    : 200, 
+          'overlayShow' : true,
+          'showCloseButton' : true,
+          'overlayColor' : '#666',
+          'opacity': true
+
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
