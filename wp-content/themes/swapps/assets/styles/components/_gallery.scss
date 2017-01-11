@@ -20,9 +20,17 @@
     top: 30%;
     transform: translateY(-30%);
   }
+}
+.image-gallery{
+  [class^="col-"] {
+      padding: 1px;
+  }
   .img-responsive {
     filter: none; /* IE6-9 */
     -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+    @media (max-width: $screen-sm-max){
+      width: 100%;
+    }
   }
 
   .img-responsive:hover {

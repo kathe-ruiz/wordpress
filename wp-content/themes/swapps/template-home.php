@@ -147,28 +147,28 @@
             <p>Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.</p>
           </h4>
         </div>
-        <div class="gallery text-center">
+        <div class="image-gallery text-center">
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
               </a>
@@ -176,25 +176,25 @@
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg" alt="">
               </a>
@@ -202,25 +202,25 @@
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom gallery_elements" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
+              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
               </a>
