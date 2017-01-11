@@ -336,6 +336,53 @@
     </div>
   </section>
   <section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8970960771353!2d-76.54073508580007!3d3.375322952663223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a16549a17749%3A0x69a522097dfde880!2sCentro+Comercial+244%2C+Cra.+100+%235-169%2C+Cali%2C+Valle+del+Cauca!5e0!3m2!1ses-419!2sco!4v1484162751271" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div id="map" style="height: 450px">
+      <script>
+        function initMap() {
+          var location = {lat: 3.3744223, lng: -76.5434036};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: location
+          });
+
+          var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<div id="bodyContent">'+
+              '<p><br>Carrera 100 # 5 - 16<br>'+
+              'info@misitioweb.com<br>'+
+              '+57 (350) 316-8388<br>'+
+              'Cali, Colombia<br>'+
+              '</p>'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+
+          var greenMarker = {
+            path: 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z',
+            fillColor: '#00aa61',
+            fillOpacity: 1,
+            scale: 1,
+            strokeColor: '#666',
+            strokeWeight: 2,
+            strokeOpacity: 0.1
+          };
+
+          var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Location',
+            icon: greenMarker
+          });
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY&callback=initMap" async defer></script>
+    </div>
   </section>
 </div>
