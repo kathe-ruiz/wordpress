@@ -1,3 +1,87 @@
+.navbar--transparent{
+  @extend .navbar-default;
+  background: -webkit-linear-gradient(rgba(#000, .7), transparent);
+  background: -o-linear-gradient(rgba(#000, .7), transparent);
+  background: linear-gradient(rgba(#000, .7), transparent);
+  .navbar__socialmedia{
+    .socialmedia__item{
+      .socialmedia__link{
+        color: $social-media-color;
+        &:hover,
+        &:focus{
+          color: $navbar-default-link-color;
+        }
+      }
+    }
+  }
+}
+.navbar--light{
+  background: rgba(#FFF, 0.9);
+  @extend .navbar-default;
+  .icon-bar{
+    background-color: #000 !important;
+  }
+  .navbar__menu{
+    .menu-item{
+      a{
+        color: inherit;
+        &:hover,
+        &:focus{
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+  .navbar__btn{
+    color: inherit;
+    &:hover,
+    &:focus{
+      @extend .btn-primary-outline:hover;
+    }
+  }
+  .navbar__socialmedia{
+    .socialmedia__item{
+      .socialmedia__link{
+        color: inherit;
+        &:hover,
+        &:focus{
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+.navbar--dark{
+  background: rgba(#000, 0.85);
+  @extend .navbar-default;
+  .navbar__menu{
+    .menu-item{
+      a{
+        &:hover,
+        &:focus{
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+  .navbar__btn{
+    &:hover,
+    &:focus{
+      @extend .btn-primary-outline:hover;
+    }
+  }
+  .navbar__socialmedia{
+    .socialmedia__item{
+      .socialmedia__link{
+        color: $social-media-color;
+        &:hover,
+        &:focus{
+          color: $navbar-default-link-color;
+        }
+      }
+    }
+  }
+}
 .navbar{
   padding: 10px 0;
   border-left:0;
@@ -11,7 +95,8 @@
   }
   &__btn{
     margin-right: 15px;
-    margin-top: 11px;
+    margin-top: 15px;
+    font-size: $font-size-base;
     border-width: ($navbar-top-border - 1);
     color: $navbar-default-link-color;
     .fa{
@@ -25,6 +110,9 @@
         color: inherit;
       }
     }
+  }
+  &__phone{
+    vertical-align: middle;
   }
   .socialmedia{
     &__block{
@@ -45,6 +133,9 @@
         border-color: transparent !important;
         margin-top: 5px;
         margin-bottom: 0px;
+        .icon-bar{
+          background-color: $navbar-default-link-color !important;
+        }
       }
     }
     &__menu{
