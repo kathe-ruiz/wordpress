@@ -11,4 +11,29 @@
     letter-spacing: 2px;
     font-size: ($font-size-h4 - 2);
   }
+  @media (max-width: $screen-sm){
+    .heading{
+      padding: 0 15px;
+      margin-bottom: 20px;
+      &__title{
+        text-align: left;
+      }
+      &__subtitle{
+        text-align: left;
+      }
+    }
+    &__text{
+      font-size: ($font-size-base + 2);
+      &:first-child{
+        margin-bottom: 15px;
+      }
+    }
+    &__block{
+      margin-bottom: 20px;
+    }
+    &__btn{
+      font-size: $font-size-base;
+      float: left;
+    }
+  }
 }
