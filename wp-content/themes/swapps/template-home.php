@@ -11,34 +11,62 @@
       </div>
       <?php get_search_form(); ?>
     <?php endif; ?>
-    <?php $main_slider = get_sw_slider('Main') ?>
+    <?php // $main_slider = get_sw_slider('Main') ?>
 
-    <?php if($main_slider): ?>
-      <?php $slides = get_slides_array($main_slider); ?>
+    <?php // if($main_slider): ?>
+      <?php // $slides = get_slides_array($main_slider); ?>
       <div class="owl-carousel owl-theme">
-        <?php foreach ($slides as $key => $slide): ?>
+        <?php // foreach ($slides as $key => $slide): ?>
           <?php 
-            $image = $slide['image'];
-            $title = $slide['title'];
-            $description = $slide['description'];
-            $link = $slide['link'];
-            $cta = $slide['call_to_action_text'];
+            // $image = $slide['image'];
+            // $title = $slide['title'];
+            // $description = $slide['description'];
+            // $link = $slide['link'];
+            // $cta = $slide['call_to_action_text'];
           ?>
           <div class="item">
-              <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" class="img-fluid">
+              <!-- <img src="<?php //echo $image['url'] ?>" alt="<?php // echo $image['alt'] ?>" class="img-fluid">
               <div class="caption">
-                <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
-                <?php if ($description): ?><p><?php echo $description ?></p><?php endif ?>
-                <?php if ($link): ?>
-                <a href="<?php echo $link ?>" class="btn btn-primary">
-                  <?php if ($cta): echo $cta; endif; ?>
+                <?php // if ($title): ?><h2><?php // echo $title ?></h2><?php // endif ?>
+                <?php // if ($description): ?><p><?php // echo $description ?></p><?php // endif ?>
+                <?php // if ($link): ?>
+                <a href="<?php // echo $link ?>" class="btn btn-primary">
+                  <?php //if ($cta): echo $cta; endif; ?>
                 </a>
-                <?php endif ?>
+                <?php // endif ?>
+              </div> -->
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
+              <div class="caption">
+                <h2>Título del slider</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-primary">
+                  Leer más
+                </a>
               </div>
           </div>
-        <?php endforeach ?>
+          <div class="item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner.png" alt="Slider image" class="img-fluid">
+            <div class="caption">
+              <h2>Título del slider</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">
+                Leer más
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner-2.png" alt="Slider image" class="img-fluid">
+            <div class="caption">
+              <h2>Título del slider</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">
+                Leer más
+              </a>
+            </div>
+          </div>
+        <?php // endforeach ?>
       </div>
-    <?php endif; ?>
+    <?php // endif; ?>
   </section>
   <!-- begin titulo de seccion de dos lineas -->
   <section class="home-section two-lines">
