@@ -45,7 +45,7 @@
               </div>
           </div>
           <div class="item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner.png" alt="Slider image" class="img-fluid">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner-2.png" alt="Slider image" class="img-fluid">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
