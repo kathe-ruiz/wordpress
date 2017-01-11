@@ -335,4 +335,7 @@
       </div>
     </div>
   </section>
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8970960771353!2d-76.54073508580007!3d3.375322952663223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a16549a17749%3A0x69a522097dfde880!2sCentro+Comercial+244%2C+Cra.+100+%235-169%2C+Cali%2C+Valle+del+Cauca!5e0!3m2!1ses-419!2sco!4v1484162751271" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
 </div>
