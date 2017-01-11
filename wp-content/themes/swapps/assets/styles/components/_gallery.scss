@@ -20,4 +20,33 @@
     top: 30%;
     transform: translateY(-30%);
   }
+  .img-responsive {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+  }
+
+  .img-responsive:hover {
+    filter: grayscale(50%); /* IE6-9 */
+    -webkit-filter: grayscale(50%); /* Google Chrome, Safari 6+ & Opera 15+ */
+   
+  }
+  .zoom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .fa{
+      display: none;
+    }
+    &:hover{
+      .fa{
+        display: inline;
+        position: absolute;
+        //top: 50%;
+        color: #fff;
+        z-index: 1;
+        //transform: translateY(-50%);
+        font-size: 3em;
+      }
+    }
+  }
 }
