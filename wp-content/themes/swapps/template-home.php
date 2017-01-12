@@ -179,25 +179,25 @@
         <div class="image-gallery text-center">
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
               </a>
@@ -205,25 +205,25 @@
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg" alt="">
               </a>
@@ -231,25 +231,25 @@
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
+              <a class="zoom" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
               </a>
@@ -374,10 +374,10 @@
             center: location
           });
 
-          var contentString = '<div id="content">'+
+          var contentString = '<div id="content" style="padding: 0 15px">'+
               '<div id="siteNotice">'+
               '</div>'+
-              '<div id="bodyContent">'+
+              '<div id="bodyContent" style="font-size: 1.25em">'+
               '<p><br>Carrera 100 # 5 - 16<br>'+
               'info@misitioweb.com<br>'+
               '+57 (350) 316-8388<br>'+
@@ -391,13 +391,11 @@
           });
 
           var greenMarker = {
-            path: 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z',
+            path: 'M44.057,55.052 C39.628,63.017 35.284,69.635 35.101,69.913 L31.938,74.723 C31.619,75.208 31.079,75.500 30.500,75.500 C29.921,75.500 29.380,75.208 29.062,74.723 L25.899,69.913 C25.714,69.632 21.339,62.955 16.943,55.052 C10.501,43.468 7.500,35.691 7.500,30.578 C7.500,17.853 17.818,7.500 30.500,7.500 C43.182,7.500 53.500,17.853 53.500,30.578 C53.500,35.692 50.499,43.469 44.057,55.052 ZM30.500,21.096 C25.369,21.096 21.194,25.285 21.194,30.434 C21.194,35.582 25.369,39.771 30.500,39.771 C35.631,39.771 39.806,35.582 39.806,30.434 C39.806,25.285 35.631,21.096 30.500,21.096 Z',
             fillColor: '#00aa61',
             fillOpacity: 1,
-            scale: 1,
-            strokeColor: '#666',
-            strokeWeight: 2,
-            strokeOpacity: 0.1
+            scale: 0.8,
+            strokeWeight: 0,
           };
 
           var marker = new google.maps.Marker({
@@ -409,6 +407,8 @@
           marker.addListener('click', function() {
             infowindow.open(map, marker);
           });
+
+          google.maps.event.trigger(marker, 'click');
         }
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY&callback=initMap" async defer></script>

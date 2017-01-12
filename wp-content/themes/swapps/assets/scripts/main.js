@@ -67,7 +67,7 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-        $("a.zoom").fancybox({
+        $("a.zoom").attr('rel', 'gallery').fancybox({
           'transitionIn'  : 'elastic',
           'transitionOut' : 'elastic',
           'speedIn'   : 600, 
