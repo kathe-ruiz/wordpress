@@ -1,51 +1,27 @@
-.gallery-item{
-  &__image{
-
-  }
-  &__caption{
-    font-family: 'Montserrat';
-    font-weight: 300;
-    @media (max-width: $screen-xs-max){
-      margin-top: 20px;
-      font-size: 1em;
-    }
-    @media (min-width: $screen-sm-min){
-      margin-top: 30px;
-      font-size: 1.2em;
-    }
-  }
-}
 .gallery{
-  .owl-nav{
-    top: 30%;
-    transform: translateY(-30%);
-  }
-}
-.image-gallery{
   [class^="col-"] {
       padding: 1px;
   }
-  .img-responsive {
+  &__item-image {
     filter: none; /* IE6-9 */
     -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
     @media (max-width: $screen-sm-max){
       width: 100%;
     }
   }
-
-  .img-responsive:hover {
+  &__item-image:hover {
     filter: grayscale(50%); /* IE6-9 */
     -webkit-filter: grayscale(50%); /* Google Chrome, Safari 6+ & Opera 15+ */
-   
   }
-  .zoom{
+  &__item{
     display: flex;
     align-items: center;
     justify-content: center;
     .fa{
       display: none;
     }
-    &:hover{
+  }
+  &__item:hover{
       .fa{
         display: inline;
         position: absolute;
@@ -56,5 +32,4 @@
         font-size: 3em;
       }
     }
-  }
 }
