@@ -370,8 +370,10 @@
         function initMap() {
           var location = {lat: 3.3744223, lng: -76.5434036};
           var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: location
+            center: location,
+            draggable: false,
+            scrollwheel: false,
+            zoom: 15
           });
 
           var contentString = '<div id="content" style="padding: 0 15px">'+
