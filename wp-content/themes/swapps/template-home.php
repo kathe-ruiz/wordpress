@@ -98,22 +98,22 @@
             <p>Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.</p>
           </h4>
         </div>
-        <div id="gallery" class="owl-carousel owl-theme gallery">
-            <div class="gallery-item text-center">
-              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
-              <p class="gallery-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+        <div id="highlights" class="owl-carousel owl-theme highlights">
+            <div class="highlight-item text-center">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
+              <p class="highlight-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
-            <div class="gallery-item text-center">
-              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
-              <p class="gallery-item__caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+            <div class="highlight-item text-center">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
+              <p class="highlight-item__caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
             </div>
-            <div class="gallery-item text-center">
-              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
-              <p class="gallery-item__caption">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="highlight-item text-center">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
+              <p class="highlight-item__caption">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
-            <div class="gallery-item text-center">
-              <img class="gallery-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
-              <p class="gallery-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <div class="highlight-item text-center">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
+              <p class="highlight-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
         </div>
       </div>
@@ -158,82 +158,82 @@
             <p>Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.</p>
           </h4>
         </div>
-        <div class="image-gallery text-center">
+        <div class="gallery text-center">
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg" alt="">
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="zoom" rel="gallery" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
               </a>
             </div>
           </div>
@@ -347,6 +347,53 @@
     </div>
   </section>
   <section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8970960771353!2d-76.54073508580007!3d3.375322952663223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a16549a17749%3A0x69a522097dfde880!2sCentro+Comercial+244%2C+Cra.+100+%235-169%2C+Cali%2C+Valle+del+Cauca!5e0!3m2!1ses-419!2sco!4v1484162751271" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div id="map" style="height: 450px">
+      <script>
+        function initMap() {
+          var location = {lat: 3.3744223, lng: -76.5434036};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: location
+          });
+
+          var contentString = '<div id="content" style="padding: 0 15px">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<div id="bodyContent" style="font-size: 1.25em">'+
+              '<p><br>Carrera 100 # 5 - 16<br>'+
+              'info@misitioweb.com<br>'+
+              '+57 (350) 316-8388<br>'+
+              'Cali, Colombia<br>'+
+              '</p>'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+
+          var greenMarker = {
+            path: 'M44.057,55.052 C39.628,63.017 35.284,69.635 35.101,69.913 L31.938,74.723 C31.619,75.208 31.079,75.500 30.500,75.500 C29.921,75.500 29.380,75.208 29.062,74.723 L25.899,69.913 C25.714,69.632 21.339,62.955 16.943,55.052 C10.501,43.468 7.500,35.691 7.500,30.578 C7.500,17.853 17.818,7.500 30.500,7.500 C43.182,7.500 53.500,17.853 53.500,30.578 C53.500,35.692 50.499,43.469 44.057,55.052 ZM30.500,21.096 C25.369,21.096 21.194,25.285 21.194,30.434 C21.194,35.582 25.369,39.771 30.500,39.771 C35.631,39.771 39.806,35.582 39.806,30.434 C39.806,25.285 35.631,21.096 30.500,21.096 Z',
+            fillColor: '#00aa61',
+            fillOpacity: 1,
+            scale: 0.8,
+            strokeWeight: 0,
+          };
+
+          var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Location',
+            icon: greenMarker
+          });
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+
+          google.maps.event.trigger(marker, 'click');
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY&callback=initMap" async defer></script>
+    </div>
   </section>
 </div>

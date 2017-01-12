@@ -19,7 +19,7 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        $('#gallery').owlCarousel({
+        $('#highlights').owlCarousel({
           items: 4,
           loop: true,
           margin: 30,
@@ -67,7 +67,7 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-        $("a.zoom").fancybox({
+        $("a.gallery__item").attr('rel', 'gallery').fancybox({
           'transitionIn'  : 'elastic',
           'transitionOut' : 'elastic',
           'speedIn'   : 600, 

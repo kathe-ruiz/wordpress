@@ -1,0 +1,22 @@
+.highlight-item{
+  &__image{
+  }
+  &__caption{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    @media (max-width: $screen-xs-max){
+      margin-top: 20px;
+      font-size: 1em;
+    }
+    @media (min-width: $screen-sm-min){
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+  }
+}
+.highlights{
+  .owl-nav{
+    top: 40%;
+    transform: translateY(-40%);
+  }
+}
