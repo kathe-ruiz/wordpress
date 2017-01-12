@@ -1,4 +1,4 @@
-@include font-face(Montserrat, '../fonts/Montserrat-Light', 300, $exts: ttf );
-@include font-face(Montserrat, '../fonts/Montserrat-Regular', 400, $exts: ttf );
-@include font-face(Montserrat, '../fonts/Montserrat-Bold', 700, $exts: ttf );
-@include font-face(PlayfairDisplay, '../fonts/PlayfairDisplay-Regular', 400, $exts: ttf );
+@include font-face("Montserrat", '../fonts/Montserrat-Light', 300, $exts: ttf );
+@include font-face("Montserrat", '../fonts/Montserrat-Regular', 400, $exts: ttf );
+@include font-face("Montserrat", '../fonts/Montserrat-Bold', 700, $exts: ttf );
+@include font-face("Playfair Display", '../fonts/PlayfairDisplay-Regular', 400, $exts: ttf );

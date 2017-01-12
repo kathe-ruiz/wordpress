@@ -127,18 +127,22 @@
     <section class="bg-primary sliders-secondary">
       <div class="owl-carousel owl-theme">
         <div class="item">
-            <div class="row">
-              <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
-                <h4 class="sliders__title text-center">Title</h4>
-                <p class="sliders__text">
-                Lorem  ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quas, quasi. Debitis magnam vel deserunt a, ipsam culpa sed cum facilis enim quisquam incidunt quia, assumenda nisi, dicta, maxime eos.</p>
-                <hr>
-                <div class="sliders__footer">
-                  <p>NOMBRE APELLIDO.</p>
-                  <p>Nombre del cargo.</p>
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+              <h4 class="sliders__title text-center">Título del módulo</h4>
+              <p class="sliders__text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <hr>
                 </div>
               </div>
+              <div class="sliders__footer">
+                <p>NOMBRE APELLIDO</p>
+                <p>Nombre del cargo</p>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
