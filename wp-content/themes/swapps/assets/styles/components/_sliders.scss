@@ -141,6 +141,7 @@
         &:first-child{
           letter-spacing: 2px;
           text-transform: uppercase;
+          font-weight: bold;
         }
         &:nth-child(n+2){
           margin-bottom: 0;
