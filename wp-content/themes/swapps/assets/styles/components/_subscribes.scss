@@ -1,6 +1,6 @@
 .subscribes{
   background: url(../../assets/images/background-subscribe.png);
-  @include bg-responsive;
+  @include responsive-bg;
   min-height: 460px;
   padding-top: 100px;
   color: $subscribe-text-color;

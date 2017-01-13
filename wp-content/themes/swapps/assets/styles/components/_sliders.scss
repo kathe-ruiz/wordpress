@@ -1,15 +1,7 @@
 .owl-carousel{
   position: relative;
   .item{
-    img{
-      @media (max-width: $screen-sm-max){
-        height: 80vh;
-      }
-      @media (min-width: $screen-md-min){
-        height: 95vh;
-        min-height: 650px;
-      }
-    }
+    @include responsive-slide(600px);
     .caption{
       background-color: rgba(0,0,0,.5);
       color: #fff;

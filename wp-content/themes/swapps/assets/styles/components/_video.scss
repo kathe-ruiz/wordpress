@@ -1,6 +1,6 @@
 .video{
   background: url(../../assets/images/video-background.png);
-  @include bg-responsive;
+  @include responsive-bg;
   min-height: 550px;
   padding-bottom: 120px;
   padding-top: 95px;
