@@ -132,14 +132,14 @@
               <h4 class="sliders__title text-center">Título del módulo</h4>
               <p class="sliders__text">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
-              <div class="row">
+              <div class="sliders__divider row">
                 <div class="col-md-6 col-md-offset-3">
                   <hr>
                 </div>
               </div>
               <div class="sliders__footer">
                 <p>NOMBRE APELLIDO</p>
-                <p>Nombre del cargo</p>
+                <p>Nombre del Cargo</p>
               </div>
             </div>
           </div>
@@ -150,14 +150,14 @@
               <h4 class="sliders__title text-center">Título del módulo</h4>
               <p class="sliders__text">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
-              <div class="row">
+              <div class="sliders__divider row">
                 <div class="col-md-6 col-md-offset-3">
                   <hr>
                 </div>
               </div>
               <div class="sliders__footer">
                 <p>NOMBRE APELLIDO</p>
-                <p>Nombre del cargo</p>
+                <p>Nombre del Cargo</p>
               </div>
             </div>
           </div>

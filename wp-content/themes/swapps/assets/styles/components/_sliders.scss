@@ -1,7 +1,6 @@
 .owl-carousel{
   position: relative;
   .item{
-    @include responsive-slide(600px);
     .caption{
       background-color: rgba(0,0,0,.5);
       color: #fff;
@@ -94,9 +93,12 @@
 
 
 .sliders{
-
   &-main{
-
+    .owl-carousel{
+      .item{
+        @include responsive-slide(600px);
+      }
+    }
   }
   &-secondary{
     padding-top: 12rem;
@@ -119,6 +121,7 @@
       font-weight: bold;
       font-size: $font-size-large;
       margin-bottom: 5rem;
+      letter-spacing: 2px;
     }
     .sliders__text{
       font-size: $font-size-large * 1.6;
@@ -128,13 +131,23 @@
         text-align: left;
       }
     }
+    .sliders__divider{
+      hr{
+        $divider-color: lighten($brand-primary, 15%);
+        $divider-color: desaturate($divider-color, 50%);
+        border-color: $divider-color;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
     .sliders__footer{
       p{
-        margin-bottom: 5px;
         &:first-child{
           letter-spacing: 2px;
           text-transform: uppercase;
-          font-weight: bold;
+          font-family: Montserrat;
+          font-weight: 400;
+          margin-bottom: 15px;
         }
         &:nth-child(n+2){
           margin-bottom: 0;
