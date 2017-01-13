@@ -3,8 +3,8 @@
  * Template Name: Home Template
  */
 ?>
-<div class="home">
-  <section class="sliders-main">
+<div id="home" class="home">
+  <section id="one" class="sliders-main">
     <?php if (!have_posts()) : ?>
       <div class="alert alert-warning">
         <?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -69,7 +69,7 @@
     <?php // endif; ?>
   </section>
   <!-- begin titulo de seccion de dos lineas -->
-  <section class="home-section two-lines">
+  <section id="two" class="home-section two-lines">
     <div class="container text-center">
       <div class="row heading">
         <h2 class="heading__title">Este es el título de la sección,<br>con a dos líneas</h2>
@@ -89,7 +89,7 @@
   <!-- end titulo de seccion de dos lineas -->
 
   <!-- begin example of section -->
-  <section class="container home-section">
+  <section id="three" class="container home-section">
     <div class="row">
       <div class="col-md-12">
         <div class="heading text-center">
@@ -124,7 +124,7 @@
   <?php // $main_slider = get_sw_slider('Main') ?>
 
   <?php // if($main_slider): ?>
-    <section class="bg-primary sliders-secondary">
+    <section id="four" class="bg-primary sliders-secondary">
       <div class="owl-carousel owl-theme">
         <div class="item">
           <div class="row">
@@ -167,7 +167,7 @@
   <?php // endif ?>
 
   <!-- begin example of section -->
-  <section class="container home-section">
+  <section id="five" class="container home-section">
     <div class="row">
       <div class="col-md-12">
         <div class="heading">
@@ -260,20 +260,7 @@
     </div>
   </section>
   <!-- end example of section -->
-
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <?php while (have_posts()) : the_post(); ?>
-          <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-        <?php endwhile; ?>
-        <?php the_posts_navigation(); ?>
-      </div>
-    </div>
-  </div>
-  <section class="image-text one">
+  <section id="six" class="image-text one">
     <div class="container">
       <div class="row image-text__content">
         <div class="col-sm-6">
@@ -287,7 +274,7 @@
       </div>
     </div>
   </section>
-  <section class="image-text two">
+  <section id="seven" class="image-text two">
     <div class="container">
       <div class="row image-text__content">
         <div class="col-sm-6 visible-xs">
@@ -304,7 +291,7 @@
       </div>
     </div>
   </section>
-  <section class="video">
+  <section id="eight" class="video">
     <div class="container">
       <div class="row text-center">
         <div class="heading">
@@ -315,7 +302,7 @@
       </div>
     </div>
   </section>
-  <section class="icons">
+  <section id="nine" class="icons">
     <div class="container">
       <div class="row text-center">
         <i class="fa fa-angellist fa-11x icons__item" aria-hidden="true"></i>
@@ -348,7 +335,7 @@
       </div>
     </div>
   </section>
-  <section class="subscribes">
+  <section id="ten" class="subscribes">
     <div class="container">
       <div class="row text-center">
         <div class="heading">
@@ -364,7 +351,7 @@
       </div>
     </div>
   </section>
-  <section class="map">
+  <section id="eleven" class="map">
     <div id="map" style="height: 450px">
       <script>
         function initMap() {
