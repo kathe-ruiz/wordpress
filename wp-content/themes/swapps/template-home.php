@@ -169,13 +169,17 @@
   <!-- begin example of section -->
   <section id="five" class="container home-section">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-sm-6 col-sm-offset-3">
         <div class="heading">
           <h2 class="heading__title text-center">Nuestros Productos</h2>
           <h4 class="heading__subtitle text-center">
             <p>Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.</p>
           </h4>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="gallery text-center">
           <div class="row">
             <div class="col-md-3 col-xs-6">
