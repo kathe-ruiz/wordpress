@@ -72,7 +72,7 @@
   <section id="two" class="home-section two-lines">
     <div class="container text-center">
       <div class="row heading">
-        <h2 class="heading__title">Este es el título de la sección,<br>con a dos líneas</h2>
+        <h2 class="heading__title">Quiénes somos</h2>
         <h4 class="heading__subtitle"><p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</p></h4>
       </div>
       <div class="row two-lines__block">
@@ -93,7 +93,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="heading text-center">
-          <h2 class="heading__title">Título del módulo</h2>
+          <h2 class="heading__title">Nuestros Servicios</h2>
           <h4 class="heading__subtitle">
             <p>Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.</p>
           </h4>
@@ -171,7 +171,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="heading">
-          <h2 class="heading__title text-center">Título del módulo</h2>
+          <h2 class="heading__title text-center">Nuestros Productos</h2>
           <h4 class="heading__subtitle text-center">
             <p>Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.</p>
           </h4>
