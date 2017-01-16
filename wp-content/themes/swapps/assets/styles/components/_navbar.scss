@@ -119,7 +119,7 @@
       margin-top: 20px;
     }
   }
-  @media (max-width: $grid-float-breakpoint) {
+  @media (max-width: $grid-float-breakpoint-max) {
     &__logo{
       float: left;
       img{

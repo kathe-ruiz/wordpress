@@ -4,3 +4,7 @@ p{
   line-height: $paragraphs-line-height;
   color: $paragraphs-color;
 }
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

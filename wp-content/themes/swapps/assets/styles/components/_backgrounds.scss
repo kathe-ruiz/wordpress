@@ -1,0 +1,5 @@
+.bg-primary{
+  background-color: $brand-primary;
+  @include text-contrast($brand-primary);
+}
+// #cec3b5

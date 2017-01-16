@@ -23,9 +23,9 @@
       </div>
       <button class="navbar__btn btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
       <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
+      // if (has_nav_menu('primary_navigation')) :
+      //   wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+      // endif;
       ?>
       <?php
         wp_nav_menu( array(
@@ -36,7 +36,8 @@
           'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
           'container_id'      => 'myNavbar',
           'menu_class'        => 'nav navbar-nav',
-          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+          // 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+          'fallback_cb'       => 'swapps_default_menu',
           'walker'            => new wp_bootstrap_navwalker())
         );
       ?>
