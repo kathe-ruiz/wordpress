@@ -1,0 +1,13 @@
+.heading-underline{
+  &__title{
+    margin-bottom: 15px;
+  }
+  &:after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: $brand-primary;
+  }
+  margin-bottom: 32px;
+}

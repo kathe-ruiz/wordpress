@@ -1,0 +1,12 @@
+.contact-form{
+  &__div{
+  }
+  &__label{
+    font-weight: 200;
+  }
+  &__input,
+  &__textarea,
+  &__btn{
+    border-radius: ($border-radius-base - 4);
+  }
+}

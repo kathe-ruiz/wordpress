@@ -86,6 +86,7 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-style-guide.php'),
+    is_page_template('template-contact-page.php'),
     is_page_template('template-home.php'),
   ]);
 
