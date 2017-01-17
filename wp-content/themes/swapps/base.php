@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <?php if (!is_front_page()): get_template_part('templates/page', 'header'); endif; ?>
-    <div class="wrap container<?php if (!is_single()): echo '-fluid'; endif; ?>" role="document">
+    <div class="wrap container<?php if ( !is_single() && !( !is_front_page() && is_home() ) ): echo '-fluid'; endif; ?>" role="document">
       <div class="content row">
         <main class="main <?php if (Setup\display_sidebar()): echo 'col-sm-8'; endif; ?>">
           <?php include Wrapper\template_path(); ?>
