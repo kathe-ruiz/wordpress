@@ -36,6 +36,9 @@ register_nav_menus( array(
 ) );
 //End Register Custom Navigator
 
+require_once('wp_theme_pages_setup.php');
+
+
 // For set sliders in the homepage
 // if( function_exists('acf_add_local_field_group') ):
 

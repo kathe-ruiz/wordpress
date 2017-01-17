@@ -1,6 +1,9 @@
 .heading-underline{
   &__title{
     margin-bottom: 15px;
+    a{
+      color: inherit;
+    }
   }
   &:after{
     content: '';
@@ -10,4 +13,13 @@
     background: $brand-primary;
   }
   margin-bottom: 32px;
+  @media (max-width: $screen-sm) {
+    &__title{
+      margin-bottom: 10px;
+    }
+    margin-bottom: 25px;
+    &__title--sidebar{
+      font-size: 24px;
+    }
+  }
 }

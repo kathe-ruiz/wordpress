@@ -19,6 +19,8 @@
 @import "components/home-section";
 @import "components/fancybox";
 @import "components/backgrounds";
+@import "components/entry-meta";
+@import "components/content-single";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/contact-page";
@@ -26,12 +28,12 @@
 
 // The next code need improvements
 
-// @import "components/comments";
+@import "components/comments";
 // @import "components/forms";
 // @import "components/grid";
 // @import "components/wp-classes";
-// @import "layouts/sidebar";
-// @import "layouts/footer";
+
+@import "layouts/sidebar";
 @import "layouts/pages";
-// @import "layouts/posts";
+@import "layouts/posts";
 // @import "layouts/tinymce";

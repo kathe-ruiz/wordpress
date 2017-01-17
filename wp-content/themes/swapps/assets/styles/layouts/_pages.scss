@@ -6,3 +6,16 @@
 @import "components/image-text";
 @import "components/icons";
 @import "components/video";
+@import "components/dividers";
+@import "components/breadcrumbs";
+.has-header{
+  @media (min-width: $screen-lg-desktop) {
+    padding-top: 98px;
+  }
+  @media (max-width: $screen-md-max) {
+    padding-top: 69px;
+  }
+}
+#map{
+  height: 450px;
+}
