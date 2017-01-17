@@ -19,8 +19,8 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <div class="wrap container<?php if (is_front_page() || !is_single()): echo '-fluid'; endif; ?>" role="document">
     <?php if (!is_front_page()): get_template_part('templates/page', 'header'); endif; ?>
-    <div class="wrap container<?php if ( !is_single() && !( !is_front_page() && is_home() ) ): echo '-fluid'; endif; ?>" role="document">
       <div class="content row">
         <main class="main <?php if (Setup\display_sidebar()): echo 'col-sm-8'; endif; ?>">
           <?php include Wrapper\template_path(); ?>

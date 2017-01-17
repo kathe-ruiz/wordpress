@@ -1,0 +1,21 @@
+.entry-meta{
+  font-weight: 200;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  &__icon{
+    vertical-align: baseline;
+  }
+  &__date,
+  &__author{
+    margin-left: 2px;
+    margin-right: 12px;
+  }
+  &__tags{
+    margin-left: 2px;
+  }
+  &__comment{
+    margin-right: 2px;
+    vertical-align: baseline;
+    color: $brand-primary;
+  }
+}
