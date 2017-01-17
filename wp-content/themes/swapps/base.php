@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="wrap container-fluid" role="document">
+    <div class="wrap container<?php if (!is_single()): echo '-fluid'; endif; ?>" role="document">
       <div class="content row">
         <main class="main <?php if (Setup\display_sidebar()): echo 'col-sm-8'; endif; ?>">
           <?php include Wrapper\template_path(); ?>
