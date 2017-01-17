@@ -13,14 +13,17 @@
     <i class="fa fa-lg fa-folder-open-o entry-meta__icon" aria-hidden="true"></i>
     <span class="entry-meta__tags">
       <?php $posttags = get_the_tags();
-      if ($posttags) {
+      if ($posttags):
         $last = end($posttags);
-        foreach($posttags as $tag) {
+        foreach($posttags as $tag){
           echo $tag->name;
           $separator = ($tag === $last) ? '.' : ', ' ;
           echo $separator;
         }
-      } ?>
+      else: 
+        echo "No tags.";
+      endif;
+      ?>
     </span>
   </span>
   <span class="pull-right">
