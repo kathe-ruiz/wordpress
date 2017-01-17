@@ -36,6 +36,17 @@ register_nav_menus( array(
 ) );
 //End Register Custom Navigator
 
+// Use a static front page
+// $about = get_page_by_title( 'Home' );
+// update_option( 'page_on_front', $about->ID );
+// update_option( 'show_on_front', 'page' );
+
+// // Set the blog page
+// $blog   = get_page_by_title( 'Blog list' );
+// update_option( 'page_for_posts', $blog->ID );
+
+
+
 // For set sliders in the homepage
 // if( function_exists('acf_add_local_field_group') ):
 

@@ -1,6 +1,9 @@
 .heading-underline{
   &__title{
     margin-bottom: 15px;
+    a{
+      color: inherit;
+    }
   }
   &:after{
     content: '';
@@ -10,4 +13,7 @@
     background: $brand-primary;
   }
   margin-bottom: 32px;
+  &__title--sidebar{
+    font-size: 24px;
+  }
 }
