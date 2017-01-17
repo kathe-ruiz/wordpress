@@ -13,9 +13,16 @@
     font-weight: 300;
     span, time{
       line-height: 1.857;
+      vertical-align: middle;
       a{
         color: inherit;
       }
+    }
+    span{
+      margin-right: 15px;
+    }
+    span:last-child{
+      margin-right: 0;
     }
     .fa{
       color: #ccc;
