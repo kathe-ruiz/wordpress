@@ -1,0 +1,12 @@
+.more-information{
+  background: $brand-primary;
+  padding-top: 37px;
+  padding-bottom: 40px;
+  &__title{
+    display: inline-block;
+    color: $navbar-default-color;
+    margin: 0px;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+}
