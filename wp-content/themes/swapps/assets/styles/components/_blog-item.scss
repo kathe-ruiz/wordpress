@@ -20,9 +20,13 @@
     }
     span{
       margin-right: 15px;
-    }
-    span:last-child{
-      margin-right: 0;
+      &:last-child{
+        margin-right: 0;
+        @media (max-width: $screen-sm-max) {
+          display: block;
+          float: none !important;
+        }
+      }
     }
     .fa{
       color: #ccc;
