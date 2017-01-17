@@ -1,5 +1,5 @@
 <section id="eleven" class="map">
-  <div id="map" style="height: 450px">
+  <div id="map">
     <script>
       function initMap() {
         var location = {lat: 3.3744223, lng: -76.5434036};
