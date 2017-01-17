@@ -1,0 +1,11 @@
+.breadcrumb{
+  background-color: $brand-primary;
+  border-radius: 0;
+  @include text-contrast($brand-primary);
+  &__item{
+    font-size: 15px;
+  }
+  &__item--active{
+    font-size: 50px;
+  }
+}
