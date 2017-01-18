@@ -219,6 +219,7 @@
       <h2>Buttons</h2>
       <hr>
       <h3>Call To Action</h3>
+      <h3>Buttons with border radius</h3>
       <div class="row">
         <div class="col-sm-3">
           <h4>Primary</h4>
@@ -439,6 +440,229 @@
           <small>Button xs</small>
           <br>
           <button class="btn btn-warning-outline btn-xs">Warning</button>
+        </div>
+      </div>
+      <h3>Buttons without border radius</h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <h4>Primary</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-primary-withoutborder btn-lg">Primary</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-primary-withoutborder btn-md">Primary</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-primary-withoutborder btn-sm">Primary</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-primary-withoutborder btn-xs">Primary</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Default</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-default-withoutborder btn-lg">Default</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-default-withoutborder btn-md">Default</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-default-withoutborder btn-sm">Default</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-default-withoutborder btn-xs">Default</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Information</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-info-withoutborder btn-lg">Info</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-info-withoutborder btn-md">Info</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-info-withoutborder btn-sm">Info</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-info-withoutborder btn-xs">Info</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Success</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-success-withoutborder btn-lg">Success</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-success-withoutborder btn-md">Success</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-success-withoutborder btn-sm">Success</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-success-withoutborder btn-xs">Success</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <h4>Danger</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-danger-withoutborder btn-lg">Danger</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-danger-withoutborder btn-md">Danger</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-danger-withoutborder btn-sm">Danger</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-danger-withoutborder btn-xs">Danger</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Warning</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-warning-withoutborder btn-lg">Warning</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-warning-withoutborder btn-md">Warning</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-warning-withoutborder btn-sm">Warning</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-warning-withoutborder btn-xs">Warning</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Primary Outline</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-primary-outline-withoutborder btn-lg">Primary</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-primary-outline-withoutborder btn-md">Primary</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-primary-outline-withoutborder btn-sm">Primary</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-primary-outline-withoutborder btn-xs">Primary</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Default Outline</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-default-outline-withoutborder btn-lg">Default</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-default-outline-withoutborder btn-md">Default</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-default-outline-withoutborder btn-sm">Default</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-default-outline-withoutborder btn-xs">Default</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <h4>Info Outline</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-info-outline-withoutborder btn-lg">Info</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-info-outline-withoutborder btn-md">Info</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-info-outline-withoutborder btn-sm">Info</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-info-outline-withoutborder btn-xs">Info</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Success Outline</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-success-outline-withoutborder btn-lg">Success</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-success-outline-withoutborder btn-md">Success</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-success-outline-withoutborder btn-sm">Success</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-success-outline-withoutborder btn-xs">Success</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Danger Outline</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-danger-outline-withoutborder btn-lg">Danger</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-danger-outline-withoutborder btn-md">Danger</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-danger-outline-withoutborder btn-sm">Danger</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-danger-outline-withoutborder btn-xs">Danger</button>
+        </div>
+        <div class="col-sm-3">
+          <h4>Warning Outline</h4>
+          <small>Button large</small>
+          <br>
+          <button class="btn btn-warning-outline-withoutborder btn-lg">Warning</button>
+          <br>
+          <small>Button medium</small>
+          <br>
+          <button class="btn btn-warning-outline-withoutborder btn-md">Warning</button>
+          <br>
+          <small>Button small</small>
+          <br>
+          <button class="btn btn-warning-outline-withoutborder btn-sm">Warning</button>
+          <br>
+          <small>Button xs</small>
+          <br>
+          <button class="btn btn-warning-outline-withoutborder btn-xs">Warning</button>
         </div>
       </div>
     </div>
