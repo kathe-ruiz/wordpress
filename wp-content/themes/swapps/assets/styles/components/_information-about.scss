@@ -1,0 +1,10 @@
+.information-about{
+    margin-bottom: 15px;
+  &__text{
+    font-family: inherit;
+    font-weight: 200;
+    font-size: ($font-size-base + 2);
+    line-height: 25px;
+    margin-bottom: 27px;
+  }
+}
