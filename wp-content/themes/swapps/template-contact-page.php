@@ -41,7 +41,7 @@
               <label for="" class="contact-form__label">Tu mensaje</label>
               <textarea name="message" id="" cols="30" rows="10" class="form-control contact-form__textarea"></textarea>
             </div>
-            <button class="contact-form__btn btn btn-primary text-uppercase">enviar</button>
+            <button class="contact-form__btn btn btn-primary-withoutborder text-uppercase">enviar</button>
           </form>
         </div>
       </div>
