@@ -30,6 +30,7 @@ unset($file, $filepath);
 //Start Register Custom Navigation
 require_once('wp_bootstrap_navwalker.php');
 require_once('swapps_default_menu.php');
+require_once('breadcrumb.php');
 
 register_nav_menus( array(
     'primary' => __( 'Theme Menu', 'wordpress' ),
