@@ -25,3 +25,58 @@
   @extend .btn-primary;
   border-radius: $button-without-border-radius;
 }
+.btn-default-withoutborder{
+  @extend .btn;
+  @extend .btn-default;
+  border-radius: $button-without-border-radius;
+}
+.btn-info-withoutborder{
+  @extend .btn;
+  @extend .btn-info;
+  border-radius: $button-without-border-radius;
+}
+.btn-success-withoutborder{
+  @extend .btn;
+  @extend .btn-success;
+  border-radius: $button-without-border-radius;
+}
+.btn-danger-withoutborder{
+  @extend .btn;
+  @extend .btn-danger;
+  border-radius: $button-without-border-radius;
+}
+.btn-warning-withoutborder{
+  @extend .btn;
+  @extend .btn-warning;
+  border-radius: $button-without-border-radius;
+}
+.btn-primary-outline-withoutborder{
+  @extend .btn;
+  @extend .btn-primary-outline;
+  border-radius: $button-without-border-radius;
+}
+.btn-default-outline-withoutborder{
+  @extend .btn;
+  @extend .btn-default-outline;
+  border-radius: $button-without-border-radius;
+}
+.btn-info-outline-withoutborder{
+  @extend .btn;
+  @extend .btn-info-outline;
+  border-radius: $button-without-border-radius;
+}
+.btn-success-outline-withoutborder{
+  @extend .btn;
+  @extend .btn-success-outline;
+  border-radius: $button-without-border-radius;
+}
+.btn-danger-outline-withoutborder{
+  @extend .btn;
+  @extend .btn-danger-outline;
+  border-radius: $button-without-border-radius;
+}
+.btn-warning-outline-withoutborder{
+  @extend .btn;
+  @extend .btn-warning-outline;
+  border-radius: $button-without-border-radius;
+}
