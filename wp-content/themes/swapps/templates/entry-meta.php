@@ -1,22 +1,24 @@
 <div class="entry-meta">
-  <i class="fa fa-lg fa-calendar entry-meta__icon" aria-hidden="true"></i>
-  <time class="updated entry-meta__date" datetime="<?= get_post_time('c', true); ?>">
-    <?= get_the_date(); ?>
-  </time>
-  <span class="byline author vcard">
-    <i class="fa fa-lg fa-keyboard-o entry-meta__icon" aria-hidden="true"></i>
-    <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__author">
+  <span class="entry-meta__item">
+    <i class="entry-meta__icon fa fa-lg fa-calendar " aria-hidden="true"></i>
+    <time class="updated entry-meta__text" datetime="<?= get_post_time('c', true); ?>">
+      <?= get_the_date(); ?>
+    </time>
+  </span>
+  <span class="entry-meta__item byline author vcard">
+    <i class="entry-meta__icon fa fa-lg fa-keyboard-o " aria-hidden="true"></i>
+    <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__text entry-meta__link">
       <?= get_the_author(); ?>
     </a>
   </span>
-  <span>
-    <i class="fa fa-lg fa-folder-open-o entry-meta__icon" aria-hidden="true"></i>
-    <span class="entry-meta__tags">
+  <span class="entry-meta__item">
+    <i class="entry-meta__icon fa fa-lg fa-folder-open-o" aria-hidden="true"></i>
+    <span class="entry-meta__text">
       <?php $posttags = get_the_tags();
       if ($posttags):
         $last = end($posttags);
         foreach($posttags as $tag){
-          echo $tag->name;
+          echo '<a class="entry-meta__link" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a>';
           $separator = ($tag === $last) ? '.' : ', ' ;
           echo $separator;
         }
@@ -26,9 +28,9 @@
       ?>
     </span>
   </span>
-  <span class="pull-right">
-    <i class="fa fa-lg fa-comment-o entry-meta__comment" aria-hidden="true"></i>
-     <?php comments_number( $post_id ); ?>
+  <span class="entry-meta__item entry-meta__item--right">
+    <i class="fa fa-lg fa-comment-o entry-meta__icon" aria-hidden="true"></i>
+    <a class="entry-meta__text entry-meta__link" href="<?php echo get_permalink(). '#comments'; ?>"><?php comments_number( 'No comments' ); ?></a>
   </span>
 </div>
 
