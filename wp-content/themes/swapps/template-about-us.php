@@ -23,7 +23,7 @@
         </p>
       </div>
       <div class="col-sm-6">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us.jpg" alt="" class="img-responsive">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us.jpg" alt="" class="img-responsive center-block">
       </div>
     </div>
     <div class="row information-about">
@@ -48,8 +48,9 @@
     <div class="container">
       <div class="row text-center ">
         <h4 class="more-information__title">Para mayor información contactese con nosotros</h4>
-        <button class="btn btn-default more-information__btn">más información</button>
+        <button class="btn btn-default more-information__btn text-uppercase">más información</button>
       </div>
     </div>
   </div>
 </section>
+<?php include 'templates/includes/component-map.php' ?>

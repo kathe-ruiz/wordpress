@@ -7,6 +7,19 @@
     color: $navbar-default-color;
     margin: 0px;
     margin-right: 8px;
-    margin-top: 2px;
+    vertical-align: middle;
+    font-weight: 500;
+  }
+  @media (max-width: $screen-sm){
+    padding: 33px 5px 31px 5px;
+    &__title{
+      margin-right: 0px;
+    }
+    &__btn{
+      margin-top: 10px;
+      padding: ($padding-small-vertical + 2) $padding-small-horizontal;
+      font-size: ($font-size-base - 2);
+      border-radius: $btn-border-radius-small;
+    }
   }
 }
