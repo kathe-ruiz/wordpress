@@ -1,8 +1,10 @@
 <div class="entry-meta">
-  <i class="fa fa-lg fa-calendar entry-meta__icon" aria-hidden="true"></i>
-  <time class="updated entry-meta__date" datetime="<?= get_post_time('c', true); ?>">
-    <?= get_the_date(); ?>
-  </time>
+  <span>
+    <i class="fa fa-lg fa-calendar entry-meta__icon" aria-hidden="true"></i>
+    <time class="updated entry-meta__date" datetime="<?= get_post_time('c', true); ?>">
+      <?= get_the_date(); ?>
+    </time>
+  </span>
   <span class="byline author vcard">
     <i class="fa fa-lg fa-keyboard-o entry-meta__icon" aria-hidden="true"></i>
     <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__author">
@@ -27,8 +29,10 @@
     </span>
   </span>
   <span class="pull-right">
-    <i class="fa fa-lg fa-comment-o entry-meta__comment" aria-hidden="true"></i>
-     <?php comments_number( $post_id ); ?>
+    <a href="<?php echo get_permalink(). '#comments'; ?>">
+      <i class="fa fa-lg fa-comment-o entry-meta__comment" aria-hidden="true"></i>
+      <?php comments_number( 'No comments' ); ?>
+    </a>
   </span>
 </div>
 
