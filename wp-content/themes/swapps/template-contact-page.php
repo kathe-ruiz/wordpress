@@ -28,21 +28,7 @@
           <h3 class="heading-underline__title">Formulario de Contacto</h3>
         </div>
         <div class="contact-form">
-          <form action="">
-            <div class="contact-form__div form-group">
-              <label for="" class="contact-form__label">Tu nombre</label>
-              <input type="text" class="contact-form__input form-control" name="name">
-            </div>
-            <div class="contact-form__div form-group">
-              <label for="" class="contact-form__label">Tu email</label>
-              <input type="email" class="contact-form__input form-control" name="email">
-            </div>
-            <div class="contact-form__div form-group">
-              <label for="" class="contact-form__label">Tu mensaje</label>
-              <textarea name="message" id="" cols="30" rows="10" class="form-control contact-form__textarea"></textarea>
-            </div>
-            <button class="contact-form__btn btn btn-primary text-uppercase">enviar</button>
-          </form>
+        <?php while ( have_posts() ) : the_post(); the_content();endwhile;?>
         </div>
       </div>
     </div>
