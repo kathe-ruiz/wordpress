@@ -12,6 +12,8 @@
   }
   &__text{
     font-size: ($font-size-h4 - 2);
+    font-family: $paragraphs-secondary-font-family;
+    font-weight: $paragraphs-secondary-font-weight;
   }
   @media (max-width: $screen-sm) {
     padding-bottom: 55px;
