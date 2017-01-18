@@ -38,7 +38,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
               <div class="caption">
                 <h2>Título del slider</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="btn btn-primary">
                   Leer más
                 </a>
@@ -48,7 +48,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner.png" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <a href="#" class="btn btn-primary">
                 Leer más
               </a>
@@ -58,7 +58,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner-2.png" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <a href="#" class="btn btn-primary">
                 Leer más
               </a>
@@ -73,7 +73,7 @@
     <div class="container text-center">
       <div class="row heading">
         <h2 class="heading__title">Quiénes somos</h2>
-        <h4 class="heading__subtitle"><p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</p></h4>
+        <h4 class="heading__subtitle">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</h4>
       </div>
       <div class="row two-lines__block">
         <div class="col-sm-6 text-left two-lines__text">
@@ -95,7 +95,7 @@
         <div class="heading text-center">
           <h2 class="heading__title">Nuestros Servicios</h2>
           <h4 class="heading__subtitle">
-            <p>Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.</p>
+            Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.
           </h4>
         </div>
         <div id="highlights" class="owl-carousel owl-theme highlights">
@@ -173,7 +173,7 @@
         <div class="heading">
           <h2 class="heading__title text-center">Nuestros Productos</h2>
           <h4 class="heading__subtitle text-center">
-            <p>Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.</p>
+            Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.
           </h4>
         </div>
       </div>
@@ -313,7 +313,7 @@
         <div class="heading text-center">
           <h2 class="heading__title">Título del módulo</h2>
           <h4 class="heading__subtitle">
-            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit.</p>
+            Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit.
           </h4>
         </div>
         <div class="col-xs-6 col-sm-3 text-center icons__content">
@@ -344,8 +344,7 @@
       <div class="row text-center">
         <div class="heading">
           <h2 class="heading__title">Suscríbase a nuestro boletín</h2>
-          <h4 class="heading__subtitle">
-            <p class="text-secondary">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+          <h4 class="heading__subtitle">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.
           </h4>
         </div>
         <div class="subscribes__content text-center">
