@@ -130,7 +130,7 @@
           <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
               <h4 class="sliders__title text-center">Título del módulo</h4>
-              <p class="sliders__text">
+              <p class="sliders__text text-secondary">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
               <div class="sliders__divider row">
                 <div class="col-md-6 col-md-offset-3">
@@ -139,7 +139,7 @@
               </div>
               <div class="sliders__footer">
                 <p>NOMBRE APELLIDO</p>
-                <p>Nombre del Cargo</p>
+                <p class="text-secondary">Nombre del Cargo</p>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@
         </div>
         <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
-          <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus minima consequatur impedit facere sit aut, exercitationem assumenda, quos odit animi, earum quam distinctio debitis.</p>
+          <p class="heading__text text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus minima consequatur impedit facere sit aut, exercitationem assumenda, quos odit animi, earum quam distinctio debitis.</p>
           <button class="image-text__btn btn btn-primary">más información</button>
         </div>
       </div>
@@ -286,7 +286,7 @@
         </div>
         <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
-          <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt reiciendis natus provident impedit, autem nulla odit fugiat tempora inventore ad hic, neque ratione veritatis.</p>
+          <p class="heading__text text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt reiciendis natus provident impedit, autem nulla odit fugiat tempora inventore ad hic, neque ratione veritatis.</p>
           <button class="image-text__btn btn btn-primary">más información</button>
         </div>
         <div class="col-sm-6 hidden-xs">
@@ -345,7 +345,7 @@
         <div class="heading">
           <h2 class="heading__title">Suscríbase a nuestro boletín</h2>
           <h4 class="heading__subtitle">
-            <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+            <p class="text-secondary">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
           </h4>
         </div>
         <div class="subscribes__content text-center">

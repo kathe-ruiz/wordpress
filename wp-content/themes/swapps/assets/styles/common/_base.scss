@@ -4,6 +4,10 @@ p{
   line-height: $paragraphs-line-height;
   color: $paragraphs-color;
 }
+.text-secondary{
+  font-family: $paragraphs-secondary-font-family;
+  font-weight: $paragraphs-secondary-font-weight;
+}
 body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
