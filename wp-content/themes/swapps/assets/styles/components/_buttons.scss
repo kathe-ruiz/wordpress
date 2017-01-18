@@ -20,3 +20,8 @@
 .btn-danger-outline {
   @include button-variant-outline($btn-danger-color, $btn-danger-bg, $btn-danger-bg);
 }
+.btn-primary-withoutborder{
+  @extend .btn;
+  @extend .btn-primary;
+  border-radius: $button-without-border-radius;
+}

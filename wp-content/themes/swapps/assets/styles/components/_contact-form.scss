@@ -5,8 +5,7 @@
     font-weight: 200;
   }
   &__input,
-  &__textarea,
-  &__btn{
-    border-radius: ($border-radius-base - 4);
+  &__textarea{
+    border-radius: $button-without-border-radius;
   }
 }
