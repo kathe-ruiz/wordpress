@@ -13,3 +13,9 @@ $social-media-color:       #9D9D9D;
 $subscribe-text-color:     #FFF;
 $navbar-text-color:        #FFF;
 $body-other-bg:            #F9F9F9;
+
+.error404{
+  .main{
+    min-height: calc(80vh - 150px);
+  }
+}
