@@ -48,7 +48,7 @@
     <div class="container">
       <div class="row text-center ">
         <h4 class="more-information__title">Para mayor información contactese con nosotros</h4>
-        <button class="btn btn-default more-information__btn text-uppercase">más información</button>
+        <button class="btn btn-default-outline more-information__btn text-uppercase">más información</button>
       </div>
     </div>
   </div>
