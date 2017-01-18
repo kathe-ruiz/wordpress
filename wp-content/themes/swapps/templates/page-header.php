@@ -6,7 +6,7 @@
       <div class="col-xs-12">
         <!-- <h4 class="breadcrumb__item">Inicio <small>></small> Blog</h4>
         <h1 class="breadcrumb__item breadcrumb__item--active"><?//= Titles\title(); ?></h1> -->
-          <?php custom_breadcrumbs(); ?>
+          <?php swapps_breadcrumbs(); ?>
       </div>
     </div>
   </div>
