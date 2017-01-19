@@ -1,0 +1,28 @@
+.search-form{
+  .screen-reader-text{
+    display: none;
+  }
+  &__field, &__submit{
+    height: 38px;
+    vertical-align: middle;
+  }
+  &__control{
+    width: calc(100% - 38px);
+  }
+  &__field{
+    border: 1px solid #ddd;
+    color: lighten($text-color, 40%);
+    font-family: $paragraphs-font-family;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px;
+    width: 100%;
+  }
+  &__submit{
+    background-color: $brand-primary;
+    border: 1px solid $brand-primary;
+    color: #fff;
+    margin-left: -5px;
+    width: 38px;
+  }
+}
