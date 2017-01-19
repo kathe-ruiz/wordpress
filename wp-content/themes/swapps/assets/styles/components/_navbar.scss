@@ -94,11 +94,13 @@
     margin-top: 11px;
   }
   &__btn{
-    margin-right: 15px;
-    margin-top: 15px;
     font-size: $font-size-base;
     border-width: ($navbar-top-border - 1);
     color: $navbar-default-link-color;
+    &--compact{
+      margin-right: 15px;
+      margin-top: 15px;
+    }
     .fa{
       color: $brand-primary;
       vertical-align: middle;
@@ -142,12 +144,14 @@
       clear: both;
     }
     &__btn{
-      float: right;
-      margin-right: 30px;
-      margin-top: 5px;
-      padding: 3px 6px;
-      span{
-        display: none;
+      &--compact{
+        float: right;
+        margin-right: 30px;
+        margin-top: 5px;
+        padding: 3px 6px;
+        span{
+          display: none;
+        }
       }
     }
     &__socialmedia{
