@@ -8,28 +8,28 @@
               <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
                 <?php echo get_custom_footer_logo(); ?>
               <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive center-block footer__logo__img">
               <?php endif ?>
             </div>
           </div>
-          <div class="col-md-3 col-sm-5">
+          <div class="col-md-3 col-sm-4">
             <div class="footer__info">
               <span>
-                <i class="footer__icon fa fa-3x fa-map-marker" aria-hidden="true"></i> 
+                <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i> 
                 <span class="footer__text footer__text--light text-secondary">Carrera 100 # 5 - 169,<br>Cali, Colombia</span>
               </span>
             </div>
           </div>
           <div class="col-md-3 col-sm-4">
             <div class="footer__info">
-              <span>
-                <i class="footer__icon fa fa-2x fa-envelope-o" aria-hidden="true"></i>
-                <a class="footer__link text-secondary" href="#">info@misitioweb.com</a>
-              </span>
+              <a class="footer__link" href="">
+                <i class="footer__icon fa footer__icon--2x fa-envelope-o" aria-hidden="true"></i>
+                <span class="footer__text text-secondary" href="#">info@misitioweb.com</span>
+              </a>
             </div>
           </div>
           <div class="col-md-3 col-sm-1">
-            <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+            <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
           </div>
         </div>
       </div>
