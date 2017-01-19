@@ -1,42 +1,12 @@
 .blog-item{
   &__description{
     p{
-      font-family: 'Montserrat';
       font-size: 16px;
-      font-weight: 300;
       line-height: 1.625;
       margin-bottom: 20px;
     }
   }
   &__image{
     margin-bottom: 20px;
-  }
-  &__footer{
-    font-size: 14px;
-    font-weight: 300;
-    span, time{
-      line-height: 1.857;
-      vertical-align: middle;
-      a{
-        color: inherit;
-      }
-    }
-    span{
-      margin-right: 15px;
-      &:last-child{
-        margin-right: 0;
-        @media (max-width: $screen-sm-max) {
-          display: block;
-          float: none !important;
-        }
-      }
-    }
-    .fa{
-      color: #ccc;
-    }
-    .fa-comment-o{
-      color: $brand-primary;
-      opacity: 1;
-    }
   }
 }

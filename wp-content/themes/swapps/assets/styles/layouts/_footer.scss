@@ -5,35 +5,21 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
-    .container-fluid > .row{
-      display: flex;
-    }
-    &__info p{
-      bottom: 0;
-      position: absolute;
-    }
-    &__logo{
-      align-self: center;
-    }
   }
   @media (min-width: $screen-lg-min){
     &__info{
       position: relative;
-      left: 4em;
     }
   }
   @media (max-width: $screen-xs-max){
-    padding-bottom: 5px;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     text-align: center;
-
-    [class^='col-sm-'], [class*='col-sm-']{
-      &:nth-child(1){
-        margin-bottom: 25px;
-      }
-      &:nth-child(2){
-        margin-bottom: 30px;
-      }
+    &__info, &__btn{
+      margin-top: 15px;
+    }
+    &__btn{
+      margin-bottom: 25px;
     }
   }
 
