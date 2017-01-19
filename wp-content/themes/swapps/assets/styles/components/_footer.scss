@@ -30,6 +30,11 @@
       color: #fff;
     }
   }
+  &__text, &__link{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+      font-size: 1em;
+    }
+  }
   &__text{
     &--light{
       color: #999;

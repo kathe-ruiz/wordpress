@@ -1,0 +1,16 @@
+.pagination{
+  margin-top: 0;
+  margin-bottom: 3em;
+  .page-numbers{
+    font-size: 1.4em;
+    font-weight: 300;
+    margin: 0 5px;
+    border-radius: $border-radius-small !important;
+    padding: .45em .75em;
+    text-align: center;
+    width: 2.3em;
+  }
+  .dots{
+    display: none;
+  }
+}

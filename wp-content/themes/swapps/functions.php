@@ -20,7 +20,7 @@ $sage_includes = [
 
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+  trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
   }
 
   require_once $filepath;
@@ -31,9 +31,10 @@ unset($file, $filepath);
 require_once('wp_bootstrap_navwalker.php');
 require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
+require_once('includes/custom-pagination.php');
 
 register_nav_menus( array(
-    'primary' => __( 'Theme Menu', 'wordpress' ),
+  'primary' => __( 'Theme Menu', 'wordpress' ),
 ) );
 //End Register Custom Navigator
 

@@ -11,7 +11,6 @@
   <hr class="divider divider--list">
 <?php endwhile; ?>
 
-<?php the_posts_navigation( array(
-  'prev_text' => __( '<', 'textdomain' ),
-  'next_text' => __( '>', 'textdomain' ),
-)); ?>
+<div class="col-md-12 text-center">
+  <?php echo custom_pagination() ?>
+</div>
