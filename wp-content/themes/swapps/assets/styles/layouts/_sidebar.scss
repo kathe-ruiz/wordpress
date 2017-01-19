@@ -20,26 +20,6 @@
     }
   }
 }
-.widget_search{
-  .screen-reader-text{
-    display: none;
-  }
-  .search-field{
-    border: 1px solid #ddd;
-    color: lighten($text-color, 40%);
-    font-family: $paragraphs-font-family;
-    font-size: 14px;
-    font-weight: 300;
-    height: 38px;
-    padding: 15px;
-  }
-  .search-submit{
-    background-color: $brand-primary;
-    border: 1px solid $brand-primary;
-    height: 38px;
-    color: #fff;
-  }
-}
 .tagcloud{
   a{
     display: block;
