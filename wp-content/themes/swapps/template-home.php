@@ -148,7 +148,7 @@
           <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
               <h4 class="sliders__title text-center">Título del módulo</h4>
-              <p class="sliders__text">
+              <p class="sliders__text text-secondary">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
               <div class="sliders__divider row">
                 <div class="col-md-6 col-md-offset-3">
