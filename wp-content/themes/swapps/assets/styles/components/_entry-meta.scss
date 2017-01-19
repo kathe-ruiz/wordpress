@@ -1,22 +1,22 @@
-// .entry-meta{
-//   font-weight: 300;
-//   &__icon{
-//     vertical-align: baseline;
-//   }
-//   &__date,
-//   &__author{
-//     margin-left: 2px;
-//     margin-right: 12px;
-//   }
-//   &__tags{
-//     margin-left: 2px;
-//   }
-//   &__comment{
-//     margin-right: 2px;
-//     vertical-align: baseline;
-//     color: $brand-primary;
-//   }
-// }
+/* .entry-meta{
+  font-weight: 300;
+  &__icon{
+    vertical-align: baseline;
+  }
+  &__date,
+  &__author{
+    margin-left: 2px;
+    margin-right: 12px;
+  }
+  &__tags{
+    margin-left: 2px;
+  }
+  &__comment{
+    margin-right: 2px;
+    vertical-align: baseline;
+    color: $brand-primary;
+  }
+} */
 .entry-meta{
   &__item{
     font-weight: 300;
@@ -39,6 +39,9 @@
       }
     }
   }
+  &__icon.fa-comment-o{
+    color: $brand-primary;
+  }
   &__icon{
     vertical-align: baseline;
     color: #ccc;
@@ -50,11 +53,15 @@
     color: inherit;
     margin-left: 2px;
     margin-right: 12px;
+    display: inline-block;
     &:hover{
       color: inherit;
     }
     .entry-meta__item--right &{
       margin-right: 0;
+    }
+    &::first-letter { 
+      text-transform: uppercase;
     }
   }
 }
