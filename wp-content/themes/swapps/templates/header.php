@@ -1,5 +1,5 @@
 <header class="header">
-  <nav class="navbar navbar--transparent">
+  <nav class="navbar <?php echo wpaasp_options('site_options_header_color') ?>">
     <div class="container-fluid">
       <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

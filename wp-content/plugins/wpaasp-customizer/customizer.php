@@ -534,7 +534,7 @@ class WPaaSP_Customizer{
     ));
 
     $wp_customize->add_setting('wpaasp_theme_options[site_options_header_color]', array(
-      'default' => 'navbar-default',
+      'default' => 'navbar--transparent',
       'capability' => 'edit_theme_options',
       'type' => 'option',
 
@@ -546,11 +546,12 @@ class WPaaSP_Customizer{
       'section' => 'wpaasp_color_options',
       'type' => 'select',
       'choices' => array(
-        'navbar-default' => __('Light', 'wpaasp'),
-        'navbar-inverse' => __('Dark', 'wpaasp'),
+        'navbar--transparent' => __('Transparent', 'wpaasp'),
+        'navbar--light' => __('Light', 'wpaasp'),
+        'navbar--dark' => __('Dark', 'wpaasp'),
       ),
     ));
-
+    
     // Option to select the position of the secondary nav bar, Above or below the page heading
 
     $wp_customize->add_section('wpaasp_secondary_navbar', array(
@@ -730,4 +731,15 @@ function get_custom_footer_logo( $blog_id = 0 ) {
    * @param int    $blog_id ID of the blog to get the custom logo for.
    */
   return apply_filters( 'get_custom_footer_logo', $html, $blog_id );
+}
+
+
+add_filter( 'add_filter', 'wpaasp_options' );
+if (!function_exists('wpaasp_options')) {
+  function wpaasp_options( $key ) {
+      $wpaasp_theme_options = get_option( 'wpaasp_theme_options' );
+      $option = isset(
+        $wpaasp_theme_options[$key]) ? $wpaasp_theme_options[$key] : false;
+      return $option;
+  }
 }
