@@ -33,7 +33,3 @@
     <a class="entry-meta__text entry-meta__link" href="<?php echo get_permalink(). '#comments'; ?>"><?php comments_number( 'No comments' ); ?></a>
   </span>
 </div>
-
-
-
-
