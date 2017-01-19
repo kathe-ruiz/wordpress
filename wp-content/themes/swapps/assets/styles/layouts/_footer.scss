@@ -5,21 +5,21 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
-    .container-fluid > .row{
-      display: flex;
-    }
-    &__info p{
-      bottom: 0;
-      position: absolute;
-    }
-    &__logo{
-      align-self: center;
-    }
+    // .container-fluid > .row{
+    //   display: flex;
+    // }
+    // &__info p{
+    //   bottom: 0;
+    //   position: absolute;
+    // }
+    // &__logo{
+    //   align-self: center;
+    // }
   }
   @media (min-width: $screen-lg-min){
     &__info{
       position: relative;
-      left: 4em;
+      //left: 4em;
     }
   }
   @media (max-width: $screen-xs-max){
