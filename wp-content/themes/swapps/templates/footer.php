@@ -41,8 +41,8 @@
             </div>
           </div>
           <div class="footer__copyright col-sm-12 text-right">
-            <p class="text-secondary">&copy; 2017 misitioweb.</p>
-            <p class="text-secondary">Todos los derechos reservados</p>
+            <span class="text-secondary">&copy; 2017 misitioweb.</span>
+            <span class="text-secondary">Todos los derechos reservados</span>
           </div>
         </div>
       </div>
