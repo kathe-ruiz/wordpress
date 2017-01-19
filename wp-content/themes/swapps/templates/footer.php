@@ -23,7 +23,7 @@
           <div class="col-md-3 col-sm-4">
             <div class="footer__info">
               <a class="footer__link" href="">
-                <i class="footer__icon fa footer__icon--2x fa-envelope-o" aria-hidden="true"></i>
+                <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
                 <span class="footer__text text-secondary" href="#">info@misitioweb.com</span>
               </a>
             </div>
@@ -50,6 +50,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row text-center">
+      <a class="brand-link text-secondary" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by Swapps</a>
     </div>
   </div>
 </footer>
