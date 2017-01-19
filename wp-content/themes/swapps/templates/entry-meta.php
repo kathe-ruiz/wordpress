@@ -6,7 +6,9 @@
     </time>
   </span>
   <span class="entry-meta__item byline author vcard">
-    <i class="entry-meta__icon fa fa-lg fa-keyboard-o " aria-hidden="true"></i>
+    <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__text entry-meta__link">
+      <i class="entry-meta__icon fa fa-lg fa-keyboard-o " aria-hidden="true"></i>
+    </a>
     <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__text entry-meta__link">
       <?= get_the_author(); ?>
     </a>
@@ -22,14 +24,18 @@
           $separator = ($tag === $last) ? '.' : ', ' ;
           echo $separator;
         }
-      else: 
+      else:
         echo "No tags.";
       endif;
       ?>
     </span>
   </span>
   <span class="entry-meta__item entry-meta__item--right">
-    <i class="fa fa-lg fa-comment-o entry-meta__icon" aria-hidden="true"></i>
-    <a class="entry-meta__text entry-meta__link" href="<?php echo get_permalink(). '#comments'; ?>"><?php comments_number( 'No comments' ); ?></a>
+    <a class="entry-meta__text entry-meta__link" href="<?php echo get_permalink(). '#comments'; ?>">
+      <i class="fa fa-lg fa-comment-o entry-meta__icon" aria-hidden="true"></i>
+    </a>
+    <a class="entry-meta__text entry-meta__link" href="<?php echo get_permalink(). '#comments'; ?>">
+      <?php comments_number( 'No comments' ); ?>
+    </a>
   </span>
 </div>
