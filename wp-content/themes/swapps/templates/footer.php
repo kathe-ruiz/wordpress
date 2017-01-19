@@ -5,7 +5,11 @@
         <div class="row row-centered">
           <div class="col-sm-2">
             <div class="footer__logo">
-              <img class="footer__logo__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Footer logo">
+              <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
+                <?php echo get_custom_footer_logo(); ?>
+              <?php else: ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
+              <?php endif ?>
             </div>
           </div>
           <div class="col-md-3 col-sm-5">
