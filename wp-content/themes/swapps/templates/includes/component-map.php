@@ -10,11 +10,11 @@
           zoom: 15
         });
 
-        var contentString = '<div id="content" style="padding: 0 15px">'+
+        var contentString = '<div id="content" class="map-info">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<div id="bodyContent" style="font-size: 1.25em">'+
-            '<p><br>Carrera 100 # 5 - 16<br>'+
+            '<div id="bodyContent">'+
+            '<p class="map-info__text text-secondary"><br>Carrera 100 # 5 - 16<br>'+
             'info@misitioweb.com<br>'+
             '+57 (350) 316-8388<br>'+
             'Cali, Colombia<br>'+
