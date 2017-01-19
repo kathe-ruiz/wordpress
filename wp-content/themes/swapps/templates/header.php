@@ -10,7 +10,11 @@
       </div>
       <div class="navbar__logo navbar-left">
         <a href="/" rel="nofollow">
+        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): ?>
+          <?php echo get_custom_logo(); ?>
+        <?php else: ?>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
+        <?php endif ?>
         </a>
       </div>
       <div class="navbar__socialmedia socialmedia">

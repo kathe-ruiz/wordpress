@@ -39,10 +39,8 @@ register_nav_menus( array(
 
 require_once('wp_theme_pages_setup.php');
 
-
 // Header image. Should be moved to plugin, check later. (Phase 3)
 // require get_template_directory() . '/includes/custom-header.php';
-
 // For set sliders in the homepage
 // if( function_exists('acf_add_local_field_group') ):
 

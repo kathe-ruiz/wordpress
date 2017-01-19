@@ -581,6 +581,30 @@ class WPaaSP_Customizer
             ),
         ));
 
+        $wp_customize->add_setting( 'custom_footer_logo', array(
+            'theme_supports' => array( 'custom-logo' ),
+            'transport'      => 'postMessage',
+        ) );
+        $custom_logo_args = get_theme_support( 'custom-logo' );
+        $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'custom_footer_logo', array(
+            'label'         => __( 'Footer Logo' ),
+            'section'       => 'title_tagline',
+            'priority'      => 8,
+            'height'        => $custom_logo_args[0]['height'],
+            'width'         => $custom_logo_args[0]['width'],
+            'flex_height'   => $custom_logo_args[0]['flex-height'],
+            'flex_width'    => $custom_logo_args[0]['flex-width'],
+            'button_labels' => array(
+                'select'       => __( 'Select footer logo' ),
+                'change'       => __( 'Change footer logo' ),
+                'remove'       => __( 'Remove' ),
+                'default'      => __( 'Default' ),
+                'placeholder'  => __( 'No footer logo selected' ),
+                'frame_title'  => __( 'Select footer logo' ),
+                'frame_button' => __( 'Choose footer logo' ),
+            ),
+        ) ) );
+
     }
 
 
@@ -651,4 +675,63 @@ class WPaaSP_Customizer
 
 }
 
+// add theme supports
+//add theme support features.
+if (function_exists('add_theme_support')) {
+add_theme_support( 'custom-logo', array(
+    'height'      => '75 px',
+    'width'       => '105 px',
+    'flex-height' => true,
+    'flex-width'  => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+) );
+}
+
 $wpaasp_customizer = new WPaaSP_Customizer();
+
+// get footer logo, based on get custom logo wp core
+
+function get_custom_footer_logo( $blog_id = 0 ) {
+    $html = '';
+    $switched_blog = false;
+
+    if ( is_multisite() && ! empty( $blog_id ) && (int) $blog_id !== get_current_blog_id() ) {
+        switch_to_blog( $blog_id );
+        $switched_blog = true;
+    }
+
+    $custom_footer_logo_id = get_theme_mod( 'custom_footer_logo' );
+
+    // We have a logo. Logo is go.
+    if ( $custom_footer_logo_id ) {
+        $html = sprintf( '<a href="%1$s" class="custom-logo-link" rel="home" itemprop="url">%2$s</a>',
+            esc_url( home_url( '/' ) ),
+            wp_get_attachment_image( $custom_footer_logo_id, 'full', false, array(
+                'class'    => 'custom-logo',
+                'itemprop' => 'logo',
+            ) )
+        );
+    }
+
+    // If no logo is set but we're in the Customizer, leave a placeholder (needed for the live preview).
+    // elseif ( is_customize_preview() ) {
+    //     $html = sprintf( '<a href="%1$s" class="custom-logo-link" style="display:none;"><img class="custom-logo"/></a>',
+    //         esc_url( home_url( '/' ) )
+    //     );
+    // }
+
+    if ( $switched_blog ) {
+        restore_current_blog();
+    }
+
+    /**
+     * Filters the custom logo output.
+     *
+     * @since 4.5.0
+     * @since 4.6.0 Added the `$blog_id` parameter.
+     *
+     * @param string $html    Custom logo HTML output.
+     * @param int    $blog_id ID of the blog to get the custom logo for.
+     */
+    return apply_filters( 'get_custom_footer_logo', $html, $blog_id );
+}
