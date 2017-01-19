@@ -17,19 +17,14 @@ require plugin_dir_path(__FILE__) . '/customizer-controls/select/google-font-dro
 /**
  * Customizer class
  */
-class WPaaSP_Customizer
-{
+class WPaaSP_Customizer{
 
-    public function __construct()
-    {
+    public function __construct(){
         add_action('admin_bar_menu', array($this, 'admin_bar_menu'), 1000);
-
         add_action('customize_register', array($this, 'customize_register_core'));
         add_action('customize_register', array($this, 'customize_register_custom'));
-
         add_action('customize_preview_init', array($this, 'customize_preview'));
         add_action('customize_controls_init', array($this, 'customize_controls'));
-
         //$this->icons = $custom_fields_icons;
     }
 
@@ -38,8 +33,7 @@ class WPaaSP_Customizer
      * Adds a 'customize' menu item to the admin bar
      * * This function is attached to the 'admin_bar_menu' action hook.
      */
-    public function admin_bar_menu($wp_admin_bar)
-    {
+    public function admin_bar_menu($wp_admin_bar){
         if (current_user_can('edit_theme_options') && is_admin_bar_showing()) {
             $wp_admin_bar->add_node(array('parent' => 'wpaasp_toolbar', 'id' => 'customize_theme', 'title' => __('Theme Options', 'wpaasp'), 'href' => admin_url('customize.php')));
         }
@@ -48,8 +42,7 @@ class WPaaSP_Customizer
     /**
      * Set up the default theme options
      */
-    public function wpaasp_theme_options()
-    {
+    public function wpaasp_theme_options(){
         $default_theme_options = array(
             'width' => '1200',
             'layout' => '2',
@@ -73,14 +66,13 @@ class WPaaSP_Customizer
      *
      * @param WP_Customize_Manager $wp_customize Theme Customizer object.
      */
-    public function customize_register_core($wp_customize)
-    {
+    public function customize_register_core($wp_customize){
 
-        //$wp_customize->get_setting( 'blogname' )->transport				= 'refresh';
-        //$wp_customize->get_setting( 'blogdescription' )->transport		= 'refresh';
-        //$wp_customize->get_setting( 'header_textcolor' )->transport		= 'refresh';
-        //$wp_customize->get_setting( 'background_image' )->transport		= 'refresh';
-        //$wp_customize->get_setting( 'background_color' )->transport		= 'refresh';
+        //$wp_customize->get_setting( 'blogname' )->transport               = 'refresh';
+        //$wp_customize->get_setting( 'blogdescription' )->transport        = 'refresh';
+        //$wp_customize->get_setting( 'header_textcolor' )->transport       = 'refresh';
+        //$wp_customize->get_setting( 'background_image' )->transport       = 'refresh';
+        //$wp_customize->get_setting( 'background_color' )->transport       = 'refresh';
     }
 
 
@@ -90,15 +82,10 @@ class WPaaSP_Customizer
      *
      * @param    class $wp_customize
      */
-    public function customize_register_custom($wp_customize)
-    {
+    public function customize_register_custom($wp_customize){
         $wpaasp_theme_options = $this->wpaasp_theme_options();
-
         //Remove some defaults
-        
         // $wp_customize->remove_section('colors');
-        
-
         /**************************
          * Business Details Panel *
          **************************/
@@ -111,11 +98,6 @@ class WPaaSP_Customizer
         ));
 
         /* Title & Tagline */
- 
-
-
-
-
         /* Favicon section */
         $wp_customize->add_section('wpaasp_favicon', array(
             'title' => __('Favicon', 'wpaasp'),
@@ -129,6 +111,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control(
             new WP_Customize_Image_Control(
                 $wp_customize,
@@ -157,6 +140,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_1]', array(
             'type' => 'textarea',
             'priority' => 10,
@@ -171,6 +155,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_2]', array(
             'type' => 'textarea',
             'priority' => 10,
@@ -185,6 +170,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_3]', array(
             'type' => 'textarea',
             'priority' => 10,
@@ -192,6 +178,7 @@ class WPaaSP_Customizer
             'label' => __('Opening hours Block 3', 'wpaasp'),
             'description' => '',
         ));
+
         /* Social Networks */
         $wp_customize->add_section('wpaasp_social_networks', array(
             'title' => __('Social Networks', 'wpaasp'),
@@ -205,6 +192,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[social_twitter]', array(
             'type' => 'url',
             'priority' => 10,
@@ -222,6 +210,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[social_facebook]', array(
             'type' => 'url',
             'priority' => 10,
@@ -239,6 +228,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[social_youtube]', array(
             'type' => 'url',
             'priority' => 10,
@@ -256,6 +246,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[social_linkedin]', array(
             'type' => 'url',
             'priority' => 10,
@@ -267,23 +258,23 @@ class WPaaSP_Customizer
             ),
         ));
 
-	    // Google+
-	    $wp_customize->add_setting('wpaasp_theme_options[social_google_plus]', array(
-		    // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-		    'type' => 'option',
-		    'capability' => 'edit_theme_options',
-	    ));
-	    $wp_customize->add_control('wpaasp_theme_options[social_google_plus]', array(
-		    'type' => 'url',
-		    'priority' => 10,
-		    'section' => 'wpaasp_social_networks',
-		    'label' => __('Google+', 'wpaasp'),
-		    'description' => '',
-		    'input_attrs' => array(
-			    'placeholder' => 'http://plus.google.com/+my-profile'
-		    ),
-	    ));
+        // Google+
+        $wp_customize->add_setting('wpaasp_theme_options[social_google_plus]', array(
+            // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+            'type' => 'option',
+            'capability' => 'edit_theme_options',
+        ));
 
+        $wp_customize->add_control('wpaasp_theme_options[social_google_plus]', array(
+            'type' => 'url',
+            'priority' => 10,
+            'section' => 'wpaasp_social_networks',
+            'label' => __('Google+', 'wpaasp'),
+            'description' => '',
+            'input_attrs' => array(
+                'placeholder' => 'http://plus.google.com/+my-profile'
+            ),
+        ));
 
         // Business Information
         $wp_customize->add_section('wpaasp_business_information', array(
@@ -292,13 +283,13 @@ class WPaaSP_Customizer
             'panel' => 'business_panel',
         ));
 
-
         // Business name
         $wp_customize->add_setting('wpaasp_theme_options[business_name]', array(
             // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[business_name]', array(
             'type' => 'textarea',
             'priority' => 10,
@@ -313,6 +304,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[address]', array(
             'type' => 'textarea',
             'priority' => 10,
@@ -321,11 +313,11 @@ class WPaaSP_Customizer
             'description' => '',
         ));
 
-
         $wp_customize->add_setting('wpaasp_theme_options[alternative_address]', array(
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[alternative_address]', array(
             'type' => 'textarea',
             'priority' => 10,
@@ -340,6 +332,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[phone]', array(
             'type' => 'text',
             'priority' => 10,
@@ -354,6 +347,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[email]', array(
             'type' => 'email',
             'priority' => 10,
@@ -362,13 +356,13 @@ class WPaaSP_Customizer
             'description' => '',
         ));
 
-
         // Footer Banner File setting
         $wp_customize->add_setting('wpaasp_theme_options[map_pin]', array(
             // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control(
             new WP_Customize_Image_Control(
                 $wp_customize,
@@ -389,6 +383,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[latitude]', array(
             'type' => 'text',
             'priority' => 10,
@@ -402,6 +397,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[longitude]', array(
             'type' => 'text',
             'priority' => 10,
@@ -413,23 +409,21 @@ class WPaaSP_Customizer
         // Map Zoom
         $wp_customize->add_setting('wpaasp_theme_options[map_zoom]', array(
             'type' => 'option',
-			'default' => 17,
+            'default' => 17,
             'capability' => 'edit_theme_options',
         ));
-		$zoom_opts = array();
-		for ($i=1; $i<=20; $i++) {
-			$zoom_opts[$i] = $i;
-		}
+        $zoom_opts = array();
+        for ($i=1; $i<=20; $i++) {
+            $zoom_opts[$i] = $i;
+        }
         $wp_customize->add_control('wpaasp_theme_options[map_zoom]', array(
             'type' => 'select',
             'priority' => 10,
             'section' => 'wpaasp_business_information',
             'label' => __('Map Zoom Level', 'wpaasp'),
             'description' => '',
-			'choices' => $zoom_opts,
+            'choices' => $zoom_opts,
         ));
-
-
 
         /* Favicon section */
         $wp_customize->add_section('wpaasp_footer', array(
@@ -444,8 +438,8 @@ class WPaaSP_Customizer
          ****************/
 
         // ini_set('error_reporting', E_ERROR  ); // TODO: remove, temporary hack to avoid php warning
-//      $widgets_panel = $wp_customize->get_panel('widgets');
-//      $widgets_panel->priority = 40;
+        // $widgets_panel = $wp_customize->get_panel('widgets');
+        // $widgets_panel->priority = 40;
         // ini_set('error_reporting', E_WARNING  ); // TODO: remove, temporary hack to avoid php warning
 
 
@@ -491,6 +485,7 @@ class WPaaSP_Customizer
             'type' => 'option',
             'capability' => 'edit_theme_options',
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[default_header_button_title]', array(
             'type' => 'text',
             'priority' => 10,
@@ -501,7 +496,6 @@ class WPaaSP_Customizer
                 'placeholder' => 'Schedule an appointment'
             ),
         ));
-
 
         /**************************
          * Color Options Panel *
@@ -521,13 +515,13 @@ class WPaaSP_Customizer
             'panel' => 'options_panel',
         ));
 
-
         $wp_customize->add_setting('wpaasp_theme_options[site_options_select]', array(
             'default' => 'value2',
             'capability' => 'edit_theme_options',
             'type' => 'option',
 
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[site_options_select_box]', array(
             'settings' => 'wpaasp_theme_options[site_options_select]',
             'label' => __('Site Palette Color:', ''),
@@ -545,6 +539,7 @@ class WPaaSP_Customizer
             'type' => 'option',
 
         ));
+
         $wp_customize->add_control('wpaasp_theme_options[site_options_header_color_box]', array(
             'settings' => 'wpaasp_theme_options[site_options_header_color]',
             'label' => __('Header Color:', ''),
@@ -585,26 +580,30 @@ class WPaaSP_Customizer
             'theme_supports' => array( 'custom-logo' ),
             'transport'      => 'postMessage',
         ) );
-        $custom_logo_args = get_theme_support( 'custom-logo' );
-        $wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, 'custom_footer_logo', array(
-            'label'         => __( 'Footer Logo' ),
-            'section'       => 'title_tagline',
-            'priority'      => 8,
-            'height'        => $custom_logo_args[0]['height'],
-            'width'         => $custom_logo_args[0]['width'],
-            'flex_height'   => $custom_logo_args[0]['flex-height'],
-            'flex_width'    => $custom_logo_args[0]['flex-width'],
-            'button_labels' => array(
-                'select'       => __( 'Select footer logo' ),
-                'change'       => __( 'Change footer logo' ),
-                'remove'       => __( 'Remove' ),
-                'default'      => __( 'Default' ),
-                'placeholder'  => __( 'No footer logo selected' ),
-                'frame_title'  => __( 'Select footer logo' ),
-                'frame_button' => __( 'Choose footer logo' ),
-            ),
-        ) ) );
 
+        $custom_logo_args = get_theme_support( 'custom-logo' );
+        $wp_customize->add_control(
+            new WP_Customize_Cropped_Image_Control(
+                $wp_customize, 'custom_footer_logo', array(
+                    'label'         => __( 'Footer Logo' ),
+                    'section'       => 'title_tagline',
+                    'priority'      => 8,
+                    'height'        => $custom_logo_args[0]['height'],
+                    'width'         => $custom_logo_args[0]['width'],
+                    'flex_height'   => $custom_logo_args[0]['flex-height'],
+                    'flex_width'    => $custom_logo_args[0]['flex-width'],
+                    'button_labels' => array(
+                        'select'       => __( 'Select footer logo' ),
+                        'change'       => __( 'Change footer logo' ),
+                        'remove'       => __( 'Remove' ),
+                        'default'      => __( 'Default' ),
+                        'placeholder'  => __( 'No footer logo selected' ),
+                        'frame_title'  => __( 'Select footer logo' ),
+                        'frame_button' => __( 'Choose footer logo' ),
+                    ),
+                ) 
+            ) 
+        );
     }
 
 
@@ -612,8 +611,7 @@ class WPaaSP_Customizer
      *
      * * This is executed INSIDE the preview iframe
      */
-    function customize_preview()
-    {
+    function customize_preview(){
         // Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
         wp_enqueue_script('wpaasp-customizer-preview-js', get_template_directory_uri() . '/includes/customizer/js/customizer-preview.js', array('customize-preview'), '', true);
         wp_enqueue_style('wpaasp-customizer-preview-css', get_template_directory_uri() . '/includes/customizer/css/customizer-preview.css');
@@ -624,8 +622,7 @@ class WPaaSP_Customizer
     /**
      * * This is executed OUTSIDE the preview iframe, in the controls.
      */
-    function customize_controls()
-    {
+    function customize_controls(){
         // Bootstrap is also needed in the controls, mainly for the glyphicons
         // wp_enqueue_style( 'wpaasp-bootstrap', get_template_directory_uri() . '/library/css/resources/bootstrap/css/bootstrap.css' );
         // wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/library/css/font-awesome/css/font-awesome.min.css' );
@@ -655,8 +652,7 @@ class WPaaSP_Customizer
      * @return string Returns a single line of CSS with selectors and a property.
      * @since MyTheme 1.0
      */
-    public static function generate_css($selector, $style, $mod_name, $prefix = '', $postfix = '', $echo = true)
-    {
+    public static function generate_css($selector, $style, $mod_name, $prefix = '', $postfix = '', $echo = true){
         $return = '';
         //TODO: Use get_option? options persist when switching themes, not theme_mods
         $mod = get_theme_mod($mod_name);
