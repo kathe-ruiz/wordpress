@@ -3,7 +3,7 @@
   border-left: none;
   border-right: none;
   border-top-width: 1px;
-  font-family: 'Montserrat';
+  font-family: $paragraphs-font-family;
   font-size: 16px !important;
   font-weight: 300;
   padding: 1.3rem 0;
@@ -26,8 +26,8 @@
   }
   .search-field{
     border: 1px solid #ddd;
-    color: #999;
-    font-family: 'Montserrat';
+    color: lighten($text-color, 40%);
+    font-family: $paragraphs-font-family;
     font-size: 14px;
     font-weight: 300;
     height: 38px;
