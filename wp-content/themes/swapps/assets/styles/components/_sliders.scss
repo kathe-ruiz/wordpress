@@ -145,7 +145,7 @@
         &:first-child{
           letter-spacing: 2px;
           text-transform: uppercase;
-          font-family: Montserrat;
+          font-family: $paragraphs-font-family;
           font-weight: 400;
           margin-bottom: 15px;
         }
