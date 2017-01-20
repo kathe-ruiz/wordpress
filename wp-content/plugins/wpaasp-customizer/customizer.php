@@ -717,7 +717,7 @@ function get_custom_footer_logo( $blog_id = 0 ) {
     $html = sprintf( '<a href="%1$s" class="custom-logo-link" rel="home" itemprop="url">%2$s</a>',
       esc_url( home_url( '/' ) ),
       wp_get_attachment_image( $custom_footer_logo_id, 'full', false, array(
-        'class'    => 'custom-logo',
+        'class'    => 'footer__logo__img custom-logo',
         'itemprop' => 'logo',
       ) )
     );
