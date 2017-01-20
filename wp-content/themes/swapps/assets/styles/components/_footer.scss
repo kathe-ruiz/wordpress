@@ -8,8 +8,13 @@
   }
   &__logo{
     &__img{
-      @media (max-width: 576px){
-        width: 5rem;
+        height: auto;
+      @media (min-width: $screen-sm-min){
+        max-width: 100%;
+      }
+      @media (max-width: $screen-xs-max){
+        min-width: 5rem;
+        max-width: 100px;
       }
     }
   }
