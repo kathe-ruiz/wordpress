@@ -89,23 +89,23 @@ class WPaaSP_Customizer{
     /**************************
      * Business Details Panel *
      **************************/
-    // $wp_customize->add_panel('business_panel', array(
-    //   'priority' => 20,
-    //   'capability' => 'edit_theme_options',
-    //   'theme_supports' => '',
-    //   'title' => __('Business Details'),
-    //   'description' => '',
-    // ));
+    $wp_customize->add_panel('business_panel', array(
+      'priority' => 20,
+      'capability' => 'edit_theme_options',
+      'theme_supports' => '',
+      'title' => __('Business Details'),
+      'description' => '',
+    ));
 
     /* Title & Tagline */
     /* Favicon section */
-    // $wp_customize->add_section('wpaasp_favicon', array(
-    //   'title' => __('Favicon', 'wpaasp'),
-    //   'priority' => 20,
-    //   'panel' => 'business_panel',
-    // ));
+    $wp_customize->add_section('wpaasp_favicon', array(
+      'title' => __('Favicon', 'wpaasp'),
+      'priority' => 20,
+      'panel' => 'business_panel',
+    ));
 
-    // Favicon File setting
+    // // Favicon File setting
     // $wp_customize->add_setting('wpaasp_theme_options[favicon]', array(
     //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
     //   'type' => 'option',
@@ -135,11 +135,11 @@ class WPaaSP_Customizer{
 
     // Opening hours
     // Schedule block 1
-    // $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_1]', array(
-    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-    //   'type' => 'option',
-    //   'capability' => 'edit_theme_options',
-    // ));
+    $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_1]', array(
+      // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+      'type' => 'option',
+      'capability' => 'edit_theme_options',
+    ));
 
     // $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_1]', array(
     //   'type' => 'textarea',
@@ -149,7 +149,7 @@ class WPaaSP_Customizer{
     //   'description' => '',
     // ));
 
-    // // monday to friday
+    // monday to friday
     // $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_2]', array(
     //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
     //   'type' => 'option',
@@ -164,7 +164,7 @@ class WPaaSP_Customizer{
     //   'description' => '',
     // ));
 
-    // // monday to friday
+    // monday to friday
     // $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_3]', array(
     //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
     //   'type' => 'option',
@@ -290,13 +290,13 @@ class WPaaSP_Customizer{
       'capability' => 'edit_theme_options',
     ));
 
-    $wp_customize->add_control('wpaasp_theme_options[business_name]', array(
-      'type' => 'textarea',
-      'priority' => 10,
-      'section' => 'wpaasp_business_information',
-      'label' => __('Business name and slogan', 'wpaasp'),
-      'description' => '',
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[business_name]', array(
+    //   'type' => 'textarea',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_business_information',
+    //   'label' => __('Business name and slogan', 'wpaasp'),
+    //   'description' => '',
+    // ));
 
     // Business address
     $wp_customize->add_setting('wpaasp_theme_options[address]', array(
@@ -381,6 +381,7 @@ class WPaaSP_Customizer{
         $wp_customize,
         'wpaasp_business_information',
         array(
+          'priority' => 20,
           'label' => __('Upload a marker for the map', 'wpaasp'),
           'section' => 'wpaasp_business_information',
           'settings' => 'wpaasp_theme_options[map_pin]',
@@ -468,11 +469,11 @@ class WPaaSP_Customizer{
     ));
 
     // Business Information
-    $wp_customize->add_section('wpaasp_default_header', array(
-      'title' => __('Default Header', 'wpaasp'),
-      'priority' => 20,
-      'panel' => 'defaults_panel',
-    ));
+    // $wp_customize->add_section('wpaasp_default_header', array(
+    //   'title' => __('Default Header', 'wpaasp'),
+    //   'priority' => 20,
+    //   'panel' => 'defaults_panel',
+    // ));
 
     //
     $wp_customize->add_setting('wpaasp_theme_options[default_header_button_url]', array(
@@ -481,16 +482,16 @@ class WPaaSP_Customizer{
       'capability' => 'edit_theme_options',
     ));
 
-    $wp_customize->add_control('wpaasp_theme_options[default_header_button_url]', array(
-      'type' => 'text',
-      'priority' => 10,
-      'section' => 'wpaasp_default_header',
-      'label' => __('Default header button URL', 'wpaasp'),
-      'description' => '',
-      'input_attrs' => array(
-        'placeholder' => 'https://www.wpaasp.com'
-      ),
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[default_header_button_url]', array(
+    //   'type' => 'text',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_default_header',
+    //   'label' => __('Default header button URL', 'wpaasp'),
+    //   'description' => '',
+    //   'input_attrs' => array(
+    //     'placeholder' => 'https://www.wpaasp.com'
+    //   ),
+    // ));
 
     // View Map button title
     $wp_customize->add_setting('wpaasp_theme_options[default_header_button_title]', array(
@@ -499,16 +500,16 @@ class WPaaSP_Customizer{
       'capability' => 'edit_theme_options',
     ));
 
-    $wp_customize->add_control('wpaasp_theme_options[default_header_button_title]', array(
-      'type' => 'text',
-      'priority' => 10,
-      'section' => 'wpaasp_default_header',
-      'label' => __('Default header button tittle', 'wpaasp'),
-      'description' => '',
-      'input_attrs' => array(
-        'placeholder' => 'Schedule an appointment'
-      ),
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[default_header_button_title]', array(
+    //   'type' => 'text',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_default_header',
+    //   'label' => __('Default header button tittle', 'wpaasp'),
+    //   'description' => '',
+    //   'input_attrs' => array(
+    //     'placeholder' => 'Schedule an appointment'
+    //   ),
+    // ));
 
     /**************************
      * Color Options Panel *
@@ -523,17 +524,17 @@ class WPaaSP_Customizer{
     ));
 
     $wp_customize->add_section('wpaasp_color_options', array(
-      'title' => __('Palette / Header', 'wpaasp'),
+      'title' => __('Navbar', 'wpaasp'),
       'priority' => 20,
       'panel' => 'options_panel',
     ));
 
-    // $wp_customize->add_setting('wpaasp_theme_options[site_options_select]', array(
-    //   'default' => 'value2',
-    //   'capability' => 'edit_theme_options',
-    //   'type' => 'option',
+    $wp_customize->add_setting('wpaasp_theme_options[site_options_select]', array(
+      'default' => 'value2',
+      'capability' => 'edit_theme_options',
+      'type' => 'option',
 
-    // ));
+    ));
 
     // $wp_customize->add_control('wpaasp_theme_options[site_options_select_box]', array(
     //   'settings' => 'wpaasp_theme_options[site_options_select]',
@@ -555,7 +556,7 @@ class WPaaSP_Customizer{
 
     $wp_customize->add_control('wpaasp_theme_options[site_options_header_color_box]', array(
       'settings' => 'wpaasp_theme_options[site_options_header_color]',
-      'label' => __('Navbar background-color:', ''),
+      'label' => __('Background Color:', ''),
       'section' => 'wpaasp_color_options',
       'type' => 'select',
       'choices' => array(
@@ -567,26 +568,26 @@ class WPaaSP_Customizer{
     
     // Option to select the position of the secondary nav bar, Above or below the page heading
 
-    // $wp_customize->add_section('wpaasp_secondary_navbar', array(
-    //   'title' => __('Secondary navbar', 'wpaasp'),
-    //   'priority' => 20,
-    //   'panel' => 'options_panel',
-    // ));
+    $wp_customize->add_section('wpaasp_secondary_navbar', array(
+      'title' => __('Secondary navbar', 'wpaasp'),
+      'priority' => 20,
+      'panel' => 'options_panel',
+    ));
 
     $wp_customize->add_setting('wpaasp_theme_options[site_options_secondary_navbar_position]', array(
-      'default' => '',
+      'default' => 'secondnavbar-below',
       'capability' => 'edit_theme_options',
       'type' => 'option',
     ));
 
     $wp_customize->add_control('wpaasp_theme_options[site_options_secondary_navbar_position_box]', array(
       'settings' => 'wpaasp_theme_options[site_options_secondary_navbar_position]',
-      'label' => __('navbar-fixed', ''),
+      'label' => __('Navbar sticky:', ''),
       'section' => 'wpaasp_color_options',
       'type' => 'radio',
       'choices' => array(
-        'navbar-fixed-top' => __('navbar-fixed-top', 'wpaasp'),
-        '' => __('navbar no fixed', 'wpaasp'),
+        'navbar-fixed-top' => __('Yes', 'wpaasp'),
+        '' => __('No', 'wpaasp'),
       ),
     ));
 
