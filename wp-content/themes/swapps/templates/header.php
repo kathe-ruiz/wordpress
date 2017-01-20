@@ -46,8 +46,8 @@
       ?>
       <?php
         wp_nav_menu( array(
-          'menu'              => 'primary',
-          'theme_location'    => 'primary',
+          'menu'              => 'primary_navigation',
+          'theme_location'    => 'primary_navigation',
           'depth'             => 4,
           'container'         => 'div',
           'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
