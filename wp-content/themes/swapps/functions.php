@@ -40,6 +40,23 @@ register_nav_menus( array(
 
 require_once('wp_theme_pages_setup.php');
 
+function get_social_accounts()
+{
+  $accounts = array(
+    'facebook' => '//facebook.com/swappsco',
+    'twitter' => '//twitter.com/swappsco',
+    'instagram' => '#',
+    'vimeo' => '#'
+  );
+  if (function_exists('wpaasp_options')) {
+    $accounts['facebook'] = (wpaasp_options('social_facebook')) ?: $accounts['facebook'];
+    $accounts['twitter'] = (wpaasp_options('social_twitter')) ?: $accounts['twitter'];
+    $accounts['instagram'] = (wpaasp_options('social_instagram')) ?: $accounts['instagram'];
+    $accounts['vimeo'] = (wpaasp_options('social_vimeo')) ?: $accounts['vimeo'];
+  }
+  return $accounts;
+}
+
 // Header image. Should be moved to plugin, check later. (Phase 3)
 // require get_template_directory() . '/includes/custom-header.php';
 // For set sliders in the homepage
