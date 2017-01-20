@@ -5,6 +5,9 @@
   <?php else: ?>
   navbar--transparent
   <?php endif ?>
+  <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_secondary_navbar_position')): ?>
+  <?php echo wpaasp_options('site_options_secondary_navbar_position') ?>
+  <?php endif ?>
   ">
     <div class="container-fluid">
       <div class="navbar-header navbar__toggle">

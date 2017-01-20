@@ -89,95 +89,95 @@ class WPaaSP_Customizer{
     /**************************
      * Business Details Panel *
      **************************/
-    $wp_customize->add_panel('business_panel', array(
-      'priority' => 20,
-      'capability' => 'edit_theme_options',
-      'theme_supports' => '',
-      'title' => __('Business Details'),
-      'description' => '',
-    ));
+    // $wp_customize->add_panel('business_panel', array(
+    //   'priority' => 20,
+    //   'capability' => 'edit_theme_options',
+    //   'theme_supports' => '',
+    //   'title' => __('Business Details'),
+    //   'description' => '',
+    // ));
 
     /* Title & Tagline */
     /* Favicon section */
-    $wp_customize->add_section('wpaasp_favicon', array(
-      'title' => __('Favicon', 'wpaasp'),
-      'priority' => 20,
-      'panel' => 'business_panel',
-    ));
+    // $wp_customize->add_section('wpaasp_favicon', array(
+    //   'title' => __('Favicon', 'wpaasp'),
+    //   'priority' => 20,
+    //   'panel' => 'business_panel',
+    // ));
 
     // Favicon File setting
-    $wp_customize->add_setting('wpaasp_theme_options[favicon]', array(
-      // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-      'type' => 'option',
-      'capability' => 'edit_theme_options',
-    ));
+    // $wp_customize->add_setting('wpaasp_theme_options[favicon]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
 
-    $wp_customize->add_control(
-      new WP_Customize_Image_Control(
-        $wp_customize,
-        'wpaasp_favicon',
-        array(
-          'label' => __('Upload a Favorite Icon', 'wpaasp'),
-          'section' => 'wpaasp_favicon',
-          'settings' => 'wpaasp_theme_options[favicon]',
-          'description' => __('Icons in <strong>PNG or ICO format</strong> with dimensions of <strong>32x32 pixels</strong> are highly recommended.', 'wpaasp')
-          // 'context'    => 'your_setting_context'
-        )
-      )
-    );
+    // $wp_customize->add_control(
+    //   new WP_Customize_Image_Control(
+    //     $wp_customize,
+    //     'wpaasp_favicon',
+    //     array(
+    //       'label' => __('Upload a Favorite Icon', 'wpaasp'),
+    //       'section' => 'wpaasp_favicon',
+    //       'settings' => 'wpaasp_theme_options[favicon]',
+    //       'description' => __('Icons in <strong>PNG or ICO format</strong> with dimensions of <strong>32x32 pixels</strong> are highly recommended.', 'wpaasp')
+    //       // 'context'    => 'your_setting_context'
+    //     )
+    //   )
+    // );
 
     // Opening Hours
-    $wp_customize->add_section('wpaasp_opening_hours', array(
-      'title' => __('Opening Hours', 'wpaasp'),
-      'priority' => 20,
-      'panel' => 'business_panel',
-    ));
+    // $wp_customize->add_section('wpaasp_opening_hours', array(
+    //   'title' => __('Opening Hours', 'wpaasp'),
+    //   'priority' => 20,
+    //   'panel' => 'business_panel',
+    // ));
 
     // Opening hours
     // Schedule block 1
-    $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_1]', array(
-      // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-      'type' => 'option',
-      'capability' => 'edit_theme_options',
-    ));
+    // $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_1]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
 
-    $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_1]', array(
-      'type' => 'textarea',
-      'priority' => 10,
-      'section' => 'wpaasp_opening_hours',
-      'label' => __('Opening hours Block 1', 'wpaasp'),
-      'description' => '',
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_1]', array(
+    //   'type' => 'textarea',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_opening_hours',
+    //   'label' => __('Opening hours Block 1', 'wpaasp'),
+    //   'description' => '',
+    // ));
 
-    // monday to friday
-    $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_2]', array(
-      // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-      'type' => 'option',
-      'capability' => 'edit_theme_options',
-    ));
+    // // monday to friday
+    // $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_2]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
 
-    $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_2]', array(
-      'type' => 'textarea',
-      'priority' => 10,
-      'section' => 'wpaasp_opening_hours',
-      'label' => __('Opening hours Block 2', 'wpaasp'),
-      'description' => '',
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_2]', array(
+    //   'type' => 'textarea',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_opening_hours',
+    //   'label' => __('Opening hours Block 2', 'wpaasp'),
+    //   'description' => '',
+    // ));
 
-    // monday to friday
-    $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_3]', array(
-      // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-      'type' => 'option',
-      'capability' => 'edit_theme_options',
-    ));
+    // // monday to friday
+    // $wp_customize->add_setting('wpaasp_theme_options[opening_hours_block_3]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
 
-    $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_3]', array(
-      'type' => 'textarea',
-      'priority' => 10,
-      'section' => 'wpaasp_opening_hours',
-      'label' => __('Opening hours Block 3', 'wpaasp'),
-      'description' => '',
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[opening_hours_block_3]', array(
+    //   'type' => 'textarea',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_opening_hours',
+    //   'label' => __('Opening hours Block 3', 'wpaasp'),
+    //   'description' => '',
+    // ));
 
     /* Social Networks */
     $wp_customize->add_section('wpaasp_social_networks', array(
@@ -510,28 +510,28 @@ class WPaaSP_Customizer{
     ));
 
     $wp_customize->add_section('wpaasp_color_options', array(
-      'title' => __('Palete / Header', 'wpaasp'),
+      'title' => __('Palette / Header', 'wpaasp'),
       'priority' => 20,
       'panel' => 'options_panel',
     ));
 
-    $wp_customize->add_setting('wpaasp_theme_options[site_options_select]', array(
-      'default' => 'value2',
-      'capability' => 'edit_theme_options',
-      'type' => 'option',
+    // $wp_customize->add_setting('wpaasp_theme_options[site_options_select]', array(
+    //   'default' => 'value2',
+    //   'capability' => 'edit_theme_options',
+    //   'type' => 'option',
 
-    ));
+    // ));
 
-    $wp_customize->add_control('wpaasp_theme_options[site_options_select_box]', array(
-      'settings' => 'wpaasp_theme_options[site_options_select]',
-      'label' => __('Site Palette Color:', ''),
-      'section' => 'wpaasp_color_options',
-      'type' => 'select',
-      'choices' => array(
-        'blue_green' => __('Blue Green', 'blue_green'),
-        'blue_red' => __('Blue Red', 'blue_red'),
-      ),
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[site_options_select_box]', array(
+    //   'settings' => 'wpaasp_theme_options[site_options_select]',
+    //   'label' => __('Site Palette Color:', ''),
+    //   'section' => 'wpaasp_color_options',
+    //   'type' => 'select',
+    //   'choices' => array(
+    //     'blue_green' => __('Blue Green', 'blue_green'),
+    //     'blue_red' => __('Blue Red', 'blue_red'),
+    //   ),
+    // ));
 
     $wp_customize->add_setting('wpaasp_theme_options[site_options_header_color]', array(
       'default' => 'navbar--transparent',
@@ -542,7 +542,7 @@ class WPaaSP_Customizer{
 
     $wp_customize->add_control('wpaasp_theme_options[site_options_header_color_box]', array(
       'settings' => 'wpaasp_theme_options[site_options_header_color]',
-      'label' => __('Header Color:', ''),
+      'label' => __('Navbar background-color:', ''),
       'section' => 'wpaasp_color_options',
       'type' => 'select',
       'choices' => array(
@@ -554,26 +554,26 @@ class WPaaSP_Customizer{
     
     // Option to select the position of the secondary nav bar, Above or below the page heading
 
-    $wp_customize->add_section('wpaasp_secondary_navbar', array(
-      'title' => __('Secondary navbar', 'wpaasp'),
-      'priority' => 20,
-      'panel' => 'options_panel',
-    ));
+    // $wp_customize->add_section('wpaasp_secondary_navbar', array(
+    //   'title' => __('Secondary navbar', 'wpaasp'),
+    //   'priority' => 20,
+    //   'panel' => 'options_panel',
+    // ));
 
     $wp_customize->add_setting('wpaasp_theme_options[site_options_secondary_navbar_position]', array(
-      'default' => 'secondnavbar-below',
+      'default' => '',
       'capability' => 'edit_theme_options',
       'type' => 'option',
     ));
 
     $wp_customize->add_control('wpaasp_theme_options[site_options_secondary_navbar_position_box]', array(
       'settings' => 'wpaasp_theme_options[site_options_secondary_navbar_position]',
-      'label' => __('Secondary navbar position:', ''),
-      'section' => 'wpaasp_secondary_navbar',
+      'label' => __('navbar-fixed', ''),
+      'section' => 'wpaasp_color_options',
       'type' => 'radio',
       'choices' => array(
-        'secondnavbar-below' => __('Below the Header', 'wpaasp'),
-        'secondnavbar-above' => __('Above the Header', 'wpaasp'),
+        'navbar-fixed-top' => __('navbar-fixed-top', 'wpaasp'),
+        '' => __('navbar no fixed', 'wpaasp'),
       ),
     ));
 
@@ -588,7 +588,7 @@ class WPaaSP_Customizer{
         $wp_customize, 'custom_footer_logo', array(
           'label'         => __( 'Footer Logo' ),
           'section'       => 'title_tagline',
-          'priority'      => 8,
+          'priority'      => 10,
           'height'        => $custom_logo_args[0]['height'],
           'width'         => $custom_logo_args[0]['width'],
           'flex_height'   => $custom_logo_args[0]['flex-height'],
