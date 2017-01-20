@@ -1,5 +1,5 @@
 .footer{
-  color: lighten($brand-footer, 22.5%);
+  color: lighten($navbar-inverse-bg, 28.5%);
   .row-centered{
     @media (min-width: $screen-sm-min){
       display: flex;
@@ -49,7 +49,7 @@
   }
   &__text{
     &--light{
-      color: lighten($brand-footer, 57.5%);
+      color: lighten($navbar-inverse-bg, 53.5%);
     }
   }
   &__btn{
