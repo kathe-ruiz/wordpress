@@ -1,11 +1,5 @@
 .footer{
   color: lighten($navbar-inverse-bg, 28.5%);
-  .row-centered{
-    @media (min-width: $screen-sm-min){
-      display: flex;
-      align-items: center;
-    }
-  }
   &__logo{
     &__img{
         height: auto;
@@ -57,19 +51,11 @@
       color: lighten($navbar-inverse-bg, 53.5%);
     }
   }
-  &__btn{
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
-      padding: 3px 6px;
-      span{
-        display: none;
-      }
-    }
-  }
   &__socialmedia{
     @media (min-width: $screen-sm-min){
       text-align: right;
     }
-    .socialmedia_block{
+    .socialmedia__block{
       font-size: 30px;
       margin-top: 0;
       margin-bottom: 0;
