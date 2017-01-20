@@ -19,7 +19,11 @@
             <?php else: ?>
               '<p class="map-info__text text-secondary"><br>Carrera 100 # 5 - 16<br>'+
             <?php endif ?>
-            'info@misitioweb.com<br>'+
+            <?php if (function_exists('wpaasp_options') && wpaasp_options('email')): ?>
+              '<?php echo wpaasp_options('email'); ?><br>'+
+            <?php else: ?>
+              'info@misitioweb.com<br>'+
+            <?php endif ?>
             <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
               '<?php echo wpaasp_options('phone'); ?><br>'+
             <?php else: ?>
