@@ -15,3 +15,16 @@
 //     @include make-col($sidebar-sm-columns);
 //   }
 // }
+
+.row-sm-centered{
+  @media (min-width: $screen-sm-min){
+    display: flex;
+    align-items: center;
+  }
+}
+.row-lg-centered{
+  @media (min-width: $screen-lg-min){
+    display: flex;
+    align-items: center;
+  }
+}

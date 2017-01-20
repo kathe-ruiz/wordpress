@@ -222,59 +222,96 @@ class WPaaSP_Customizer{
       ),
     ));
 
-    // youtube
-    $wp_customize->add_setting('wpaasp_theme_options[social_youtube]', array(
+    // instagram
+    $wp_customize->add_setting('wpaasp_theme_options[social_instagram]', array(
       // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
       'type' => 'option',
       'capability' => 'edit_theme_options',
     ));
 
-    $wp_customize->add_control('wpaasp_theme_options[social_youtube]', array(
+    $wp_customize->add_control('wpaasp_theme_options[social_instagram]', array(
       'type' => 'url',
       'priority' => 10,
       'section' => 'wpaasp_social_networks',
-      'label' => __('Youtube', 'wpaasp'),
+      'label' => __('Instagram', 'wpaasp'),
       'description' => '',
       'input_attrs' => array(
-        'placeholder' => 'http://www.youtube.com/my-channel'
+        'placeholder' => 'http://www.instagram.com/my-profile'
       ),
     ));
 
-    // linkedin
-    $wp_customize->add_setting('wpaasp_theme_options[social_linkedin]', array(
+    // vimeo
+    $wp_customize->add_setting('wpaasp_theme_options[social_vimeo]', array(
       // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
       'type' => 'option',
       'capability' => 'edit_theme_options',
     ));
 
-    $wp_customize->add_control('wpaasp_theme_options[social_linkedin]', array(
+    $wp_customize->add_control('wpaasp_theme_options[social_vimeo]', array(
       'type' => 'url',
       'priority' => 10,
       'section' => 'wpaasp_social_networks',
-      'label' => __('Linkedin', 'wpaasp'),
+      'label' => __('Vimeo', 'wpaasp'),
       'description' => '',
       'input_attrs' => array(
-        'placeholder' => 'http://www.linkedin.com/my-profile'
+        'placeholder' => 'http://www.vimeo.com/my-profile'
       ),
     ));
 
-    // Google+
-    $wp_customize->add_setting('wpaasp_theme_options[social_google_plus]', array(
-      // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
-      'type' => 'option',
-      'capability' => 'edit_theme_options',
-    ));
+    // // youtube
+    // $wp_customize->add_setting('wpaasp_theme_options[social_youtube]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
 
-    $wp_customize->add_control('wpaasp_theme_options[social_google_plus]', array(
-      'type' => 'url',
-      'priority' => 10,
-      'section' => 'wpaasp_social_networks',
-      'label' => __('Google+', 'wpaasp'),
-      'description' => '',
-      'input_attrs' => array(
-        'placeholder' => 'http://plus.google.com/+my-profile'
-      ),
-    ));
+    // $wp_customize->add_control('wpaasp_theme_options[social_youtube]', array(
+    //   'type' => 'url',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_social_networks',
+    //   'label' => __('Youtube', 'wpaasp'),
+    //   'description' => '',
+    //   'input_attrs' => array(
+    //     'placeholder' => 'http://www.youtube.com/my-channel'
+    //   ),
+    // ));
+
+
+    // // linkedin
+    // $wp_customize->add_setting('wpaasp_theme_options[social_linkedin]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
+
+    // $wp_customize->add_control('wpaasp_theme_options[social_linkedin]', array(
+    //   'type' => 'url',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_social_networks',
+    //   'label' => __('Linkedin', 'wpaasp'),
+    //   'description' => '',
+    //   'input_attrs' => array(
+    //     'placeholder' => 'http://www.linkedin.com/my-profile'
+    //   ),
+    // ));
+
+    // // Google+
+    // $wp_customize->add_setting('wpaasp_theme_options[social_google_plus]', array(
+    //   // 'default' => $wpaasp_theme_options['favicon'], //TODO: Set default
+    //   'type' => 'option',
+    //   'capability' => 'edit_theme_options',
+    // ));
+
+    // $wp_customize->add_control('wpaasp_theme_options[social_google_plus]', array(
+    //   'type' => 'url',
+    //   'priority' => 10,
+    //   'section' => 'wpaasp_social_networks',
+    //   'label' => __('Google+', 'wpaasp'),
+    //   'description' => '',
+    //   'input_attrs' => array(
+    //     'placeholder' => 'http://plus.google.com/+my-profile'
+    //   ),
+    // ));
 
     // Business Information
     $wp_customize->add_section('wpaasp_business_information', array(
