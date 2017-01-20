@@ -19,6 +19,9 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var sassVariables = require('gulp-sass-variables');
+var env = require('gulp-env');
+env({file: "../../../.env",type: 'ini',}); // if the file can be found via `require`
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -88,6 +91,11 @@ var cssTasks = function(filename) {
     .pipe(function() {
       return gulpif('*.less', less());
     })
+    .pipe(function(){return sassVariables({
+                $primaryred: process.env.PRIMARY_RED ? parseInt(process.env.PRIMARY_RED): 0,
+                $primarygreen: process.env.PRIMARY_GREEN ? parseInt(process.env.PRIMARY_GREEN): 171,
+                $primaryblue: process.env.PRIMARY_BLUE ? parseInt(process.env.PRIMARY_BLUE): 97
+             })})
     .pipe(function() {
       return gulpif('*.scss', sass({
         outputStyle: 'nested', // libsass doesn't support expanded yet
