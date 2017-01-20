@@ -1,5 +1,5 @@
 .footer{
-  color: lighten($brand-footer, 22.5%);
+  color: lighten($navbar-inverse-bg, 28.5%);
   .row-centered{
     @media (min-width: $screen-sm-min){
       display: flex;
@@ -8,8 +8,13 @@
   }
   &__logo{
     &__img{
-      @media (max-width: 576px){
-        width: 5rem;
+        height: auto;
+      @media (min-width: $screen-sm-min){
+        max-width: 100%;
+      }
+      @media (max-width: $screen-xs-max){
+        min-width: 5rem;
+        max-width: 100px;
       }
     }
   }
@@ -49,7 +54,7 @@
   }
   &__text{
     &--light{
-      color: lighten($brand-footer, 57.5%);
+      color: lighten($navbar-inverse-bg, 53.5%);
     }
   }
   &__btn{

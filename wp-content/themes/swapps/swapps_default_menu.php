@@ -24,11 +24,11 @@ function swapps_default_menu($args) {
   if ( $menu_class )
     $html .= ' class="' . $menu_class . '"';
   $html .= '>';
-  $html .= '<li><a href="'.  get_permalink( get_option( 'page_on_front' ) ) .'">Inicio</a></li>';
-  $html .= '<li><a href="#two">Quiénes Somos</a></li>';
-  $html .= '<li><a href="#three">Servicios</a></li>';
-  $html .= '<li><a href="'.  get_permalink( get_option( 'page_for_posts' ) ) .'">Blog</a></li>';
-  $html .= '<li><a href="#ten">Contáctenos</a></li>';
+  $html .= '<li class="menu-item item-default"><a href="'.  get_permalink( get_option( 'page_on_front' ) ) .'">Inicio</a></li>';
+  $html .= '<li class="menu-item item-default"><a href="#two">Quiénes Somos</a></li>';
+  $html .= '<li class="menu-item item-default"><a href="#three">Servicios</a></li>';
+  $html .= '<li class="menu-item item-default"><a href="'.  get_permalink( get_option( 'page_for_posts' ) ) .'">Blog</a></li>';
+  $html .= '<li class="menu-item item-default"><a href="#ten">Contáctenos</a></li>';
   $html .= '</ul>';
   if ( $container )
     $html .= '</' . $container . '>';
