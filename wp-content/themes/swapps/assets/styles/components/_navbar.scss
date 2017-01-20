@@ -93,6 +93,12 @@
   &__menu{
     margin-top: 11px;
   }
+  &__logo{
+    img{
+      max-width: 75px;
+      height: auto;
+    }
+  }
   &__btn{
     font-size: $font-size-base;
     border-width: ($navbar-top-border - 1);
