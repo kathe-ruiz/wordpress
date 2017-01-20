@@ -27,12 +27,7 @@
         </a>
       </div>
       <div class="navbar__socialmedia socialmedia">
-        <div class="socialmedia__block nav navbar-nav navbar-right">
-          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-        </div>
+        <?php include 'includes/socialmedia.php' ?>
       </div>
       <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
         <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>

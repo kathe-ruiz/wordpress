@@ -65,12 +65,7 @@
         <div class="row">
           <!-- <div class="socialmedia footer__socialmedia col-sm-8 col-sm-push-4 col-md-6 col-md-push-6"> -->
           <div class="socialmedia footer__socialmedia col-xs-12">
-            <div class="socialmedia_block nav navbar-nav navbar-right">
-              <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-            </div>
+            <?php include 'includes/socialmedia.php' ?>
           </div>
           <div class="footer__copyright col-sm-12 text-right">
             <span class="text-secondary">&copy; 2017 misitioweb.</span>
