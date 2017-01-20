@@ -95,7 +95,7 @@ var cssTasks = function(filename) {
                 $primaryred: process.env.PRIMARY_RED ? parseInt(process.env.PRIMARY_RED): 0,
                 $primarygreen: process.env.PRIMARY_GREEN ? parseInt(process.env.PRIMARY_GREEN): 171,
                 $primaryblue: process.env.PRIMARY_BLUE ? parseInt(process.env.PRIMARY_BLUE): 97
-             })})
+             });})
     .pipe(function() {
       return gulpif('*.scss', sass({
         outputStyle: 'nested', // libsass doesn't support expanded yet
