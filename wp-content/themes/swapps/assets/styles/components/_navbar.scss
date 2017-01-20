@@ -84,6 +84,9 @@
 }
 .navbar{
   padding: 10px 0;
+  @media (min-width: $grid-float-breakpoint){
+    padding-top: 0;
+  }
   border-left:0;
   border-right: 0px;
   border-bottom: 0px;
@@ -92,6 +95,15 @@
   margin-bottom: 0px;
   &__menu{
     margin-top: 11px;
+  }
+  &__logo{
+    @media (min-width: $grid-float-breakpoint){
+      margin-top: 10px;
+    }
+    img{
+      max-width: 75px;
+      height: auto;
+    }
   }
   &__btn{
     font-size: $font-size-base;
