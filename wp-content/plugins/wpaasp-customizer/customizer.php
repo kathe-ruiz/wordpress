@@ -313,16 +313,29 @@ class WPaaSP_Customizer{
       'description' => '',
     ));
 
-    $wp_customize->add_setting('wpaasp_theme_options[alternative_address]', array(
+    $wp_customize->add_setting('wpaasp_theme_options[city]', array(
       'type' => 'option',
       'capability' => 'edit_theme_options',
     ));
 
-    $wp_customize->add_control('wpaasp_theme_options[alternative_address]', array(
-      'type' => 'textarea',
+    $wp_customize->add_control('wpaasp_theme_options[city]', array(
+      'type' => 'text',
       'priority' => 10,
       'section' => 'wpaasp_business_information',
-      'label' => __('Alternative Address', 'wpaasp'),
+      'label' => __('City', 'wpaasp'),
+      'description' => '',
+    ));
+
+    $wp_customize->add_setting('wpaasp_theme_options[country]', array(
+      'type' => 'option',
+      'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control('wpaasp_theme_options[country]', array(
+      'type' => 'text',
+      'priority' => 10,
+      'section' => 'wpaasp_business_information',
+      'label' => __('Country', 'wpaasp'),
       'description' => '',
     ));
 

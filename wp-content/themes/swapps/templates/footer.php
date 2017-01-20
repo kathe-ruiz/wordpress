@@ -16,7 +16,20 @@
             <div class="footer__info">
               <span>
                 <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i> 
+              <?php if (function_exists('wpaasp_options') && wpaasp_options('address')): ?>
+                <span class="footer__text footer__text--light text-secondary"><?php echo wpaasp_options('address'); ?><br>
+                <?php if (wpaasp_options('city')): ?>
+                  <?php echo wpaasp_options('city'); ?>,&nbsp;
+                <?php endif ?>
+                <?php if (wpaasp_options('country')): ?>
+                  <?php echo wpaasp_options('country'); ?>
+                <?php else: ?>
+                  Colombia
+                <?php endif ?>
+                </span>
+              <?php else: ?>
                 <span class="footer__text footer__text--light text-secondary">Carrera 100 # 5 - 169,<br>Cali, Colombia</span>
+              <?php endif ?>
               </span>
             </div>
           </div>
@@ -29,7 +42,11 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-1">
-            <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+            <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
+              <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
+            <?php else: ?>
+              <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+            <?php endif ?>
           </div>
         </div>
       </div>

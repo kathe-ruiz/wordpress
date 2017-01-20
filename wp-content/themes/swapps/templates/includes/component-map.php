@@ -14,10 +14,25 @@
             '<div id="siteNotice">'+
             '</div>'+
             '<div id="bodyContent">'+
-            '<p class="map-info__text text-secondary"><br>Carrera 100 # 5 - 16<br>'+
+            <?php if (function_exists('wpaasp_options') && wpaasp_options('address')): ?>
+              '<p class="map-info__text text-secondary"><br><?php echo wpaasp_options('address'); ?><br>'+
+            <?php else: ?>
+              '<p class="map-info__text text-secondary"><br>Carrera 100 # 5 - 16<br>'+
+            <?php endif ?>
             'info@misitioweb.com<br>'+
-            '+57 (350) 316-8388<br>'+
-            'Cali, Colombia<br>'+
+            <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
+              '<?php echo wpaasp_options('phone'); ?><br>'+
+            <?php else: ?>
+              '+57 (350) 316-8388<br>'+
+            <?php endif ?>
+            <?php if (function_exists('wpaasp_options') && wpaasp_options('city')): ?>
+              '<?php echo wpaasp_options('city'); ?>, '+
+            <?php endif ?>
+            <?php if (function_exists('wpaasp_options') && wpaasp_options('country')): ?>
+              '<?php echo wpaasp_options('country'); ?><br>'+
+            <?php else: ?>
+              'Colombia<br>'+
+            <?php endif ?>
             '</p>'+
             '</div>'+
             '</div>';

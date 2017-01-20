@@ -31,7 +31,11 @@
           <li class="socialmedia__item"><a href="#" class="socialmedia__link"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
         </div>
       </div>
-      <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+      <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
+        <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
+      <?php else: ?>
+        <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+      <?php endif ?>
       <?php
       // if (has_nav_menu('primary_navigation')) :
       //   wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
