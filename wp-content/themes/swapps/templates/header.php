@@ -9,7 +9,7 @@
   <?php echo wpaasp_options('site_options_secondary_navbar_position') ?>
   <?php endif ?>
   ">
-    <div class="container-fluid">
+    <div class="container-fluid row-lg-centered">
       <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -26,33 +26,35 @@
         <?php endif ?>
         </a>
       </div>
-      <div class="navbar__socialmedia socialmedia">
-        <?php include 'includes/socialmedia.php' ?>
+      <div class="wrapper row-lg-centered flex-align-right">
+        <div class="navbar__socialmedia socialmedia">
+          <?php include 'includes/socialmedia.php' ?>
+        </div>
+        <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
+          <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
+        <?php else: ?>
+          <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+        <?php endif ?>
+        <?php
+        // if (has_nav_menu('primary_navigation')) :
+        //   wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+        // endif;
+        ?>
+        <?php
+          wp_nav_menu( array(
+            'menu'              => 'primary',
+            'theme_location'    => 'primary',
+            'depth'             => 4,
+            'container'         => 'div',
+            'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
+            'container_id'      => 'myNavbar',
+            'menu_class'        => 'nav navbar-nav',
+            // 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'fallback_cb'       => 'swapps_default_menu',
+            'walker'            => new wp_bootstrap_navwalker())
+          );
+        ?>
       </div>
-      <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
-        <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
-      <?php else: ?>
-        <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
-      <?php endif ?>
-      <?php
-      // if (has_nav_menu('primary_navigation')) :
-      //   wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      // endif;
-      ?>
-      <?php
-        wp_nav_menu( array(
-          'menu'              => 'primary',
-          'theme_location'    => 'primary',
-          'depth'             => 4,
-          'container'         => 'div',
-          'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
-          'container_id'      => 'myNavbar',
-          'menu_class'        => 'nav navbar-nav',
-          // 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-          'fallback_cb'       => 'swapps_default_menu',
-          'walker'            => new wp_bootstrap_navwalker())
-        );
-      ?>
     </div>
   </nav>
 </header>
