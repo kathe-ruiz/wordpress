@@ -27,6 +27,12 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
+add_action( 'after_setup_theme', 'my_theme_setup' );
+function my_theme_setup(){
+    load_theme_textdomain( 'swapps', get_template_directory() . '/languages' );
+}
+
+
 //Start Register Custom Navigation
 require_once('wp_bootstrap_navwalker.php');
 require_once('swapps_default_menu.php');
