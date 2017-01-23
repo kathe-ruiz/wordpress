@@ -14,8 +14,7 @@ $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
-
-$brand-primary:         #00ab61 !default; // #337ab7
+$brand-primary:         rgb($primaryred, $primarygreen, $primaryblue) !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -397,7 +396,7 @@ $navbar-default-toggle-border-color:       transparent !default;
 //=== Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      lighten($gray-light, 15%) !default;
-$navbar-inverse-bg:                         #222 !default;
+$navbar-inverse-bg:                         #111 !default;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
 
 // Inverted navbar links
@@ -453,7 +452,8 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //
 //##
 
-$pagination-color:                     $link-color !default;
+// $pagination-color:                     $link-color !default;
+$pagination-color:                     $text-color !default;
 $pagination-bg:                        #fff !default;
 $pagination-border:                    #ddd !default;
 

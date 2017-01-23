@@ -38,7 +38,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
               <div class="caption">
                 <h2>Título del slider</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="btn btn-primary">
                   Leer más
                 </a>
@@ -48,7 +48,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner.png" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <a href="#" class="btn btn-primary">
                 Leer más
               </a>
@@ -58,7 +58,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner-2.png" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <a href="#" class="btn btn-primary">
                 Leer más
               </a>
@@ -73,7 +73,7 @@
     <div class="container text-center">
       <div class="row heading">
         <h2 class="heading__title">Quiénes somos</h2>
-        <h4 class="heading__subtitle"><p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</p></h4>
+        <h4 class="heading__subtitle">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit vel reiciendis.</h4>
       </div>
       <div class="row two-lines__block">
         <div class="col-sm-6 text-left two-lines__text">
@@ -95,7 +95,7 @@
         <div class="heading text-center">
           <h2 class="heading__title">Nuestros Servicios</h2>
           <h4 class="heading__subtitle">
-            <p>Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.</p>
+            Vestibulum interdum ante sit amet felis<br> aliquet commodo. Sed semper ornare <br>tristique.
           </h4>
         </div>
         <div id="highlights" class="owl-carousel owl-theme highlights">
@@ -130,7 +130,7 @@
           <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
               <h4 class="sliders__title text-center">Título del módulo</h4>
-              <p class="sliders__text">
+              <p class="sliders__text text-secondary">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
               <div class="sliders__divider row">
                 <div class="col-md-6 col-md-offset-3">
@@ -139,7 +139,7 @@
               </div>
               <div class="sliders__footer">
                 <p>NOMBRE APELLIDO</p>
-                <p>Nombre del Cargo</p>
+                <p class="text-secondary">Nombre del Cargo</p>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@
           <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
               <h4 class="sliders__title text-center">Título del módulo</h4>
-              <p class="sliders__text">
+              <p class="sliders__text text-secondary">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.t</p>
               <div class="sliders__divider row">
                 <div class="col-md-6 col-md-offset-3">
@@ -173,7 +173,7 @@
         <div class="heading">
           <h2 class="heading__title text-center">Nuestros Productos</h2>
           <h4 class="heading__subtitle text-center">
-            <p>Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.</p>
+            Vestibulum interdum ante sit amet felis aliquet commodo. Sed semper ornare tristique.
           </h4>
         </div>
       </div>
@@ -272,7 +272,7 @@
         </div>
         <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
-          <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus minima consequatur impedit facere sit aut, exercitationem assumenda, quos odit animi, earum quam distinctio debitis.</p>
+          <p class="heading__text text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus minima consequatur impedit facere sit aut, exercitationem assumenda, quos odit animi, earum quam distinctio debitis.</p>
           <button class="image-text__btn btn btn-primary">más información</button>
         </div>
       </div>
@@ -286,7 +286,7 @@
         </div>
         <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
-          <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt reiciendis natus provident impedit, autem nulla odit fugiat tempora inventore ad hic, neque ratione veritatis.</p>
+          <p class="heading__text text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt reiciendis natus provident impedit, autem nulla odit fugiat tempora inventore ad hic, neque ratione veritatis.</p>
           <button class="image-text__btn btn btn-primary">más información</button>
         </div>
         <div class="col-sm-6 hidden-xs">
@@ -313,7 +313,7 @@
         <div class="heading text-center">
           <h2 class="heading__title">Título del módulo</h2>
           <h4 class="heading__subtitle">
-            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit.</p>
+            Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit.
           </h4>
         </div>
         <div class="col-xs-6 col-sm-3 text-center icons__content">
@@ -344,8 +344,7 @@
       <div class="row text-center">
         <div class="heading">
           <h2 class="heading__title">Suscríbase a nuestro boletín</h2>
-          <h4 class="heading__subtitle">
-            <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</p>
+          <h4 class="heading__subtitle">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.
           </h4>
         </div>
         <div class="subscribes__content text-center">
@@ -355,56 +354,5 @@
       </div>
     </div>
   </section>
-  <section id="eleven" class="map">
-    <div id="map" style="height: 450px">
-      <script>
-        function initMap() {
-          var location = {lat: 3.3744223, lng: -76.5434036};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            center: location,
-            draggable: false,
-            scrollwheel: false,
-            zoom: 15
-          });
-
-          var contentString = '<div id="content" style="padding: 0 15px">'+
-              '<div id="siteNotice">'+
-              '</div>'+
-              '<div id="bodyContent" style="font-size: 1.25em">'+
-              '<p><br>Carrera 100 # 5 - 16<br>'+
-              'info@misitioweb.com<br>'+
-              '+57 (350) 316-8388<br>'+
-              'Cali, Colombia<br>'+
-              '</p>'+
-              '</div>'+
-              '</div>';
-
-          var infowindow = new google.maps.InfoWindow({
-            content: contentString
-          });
-
-          var greenMarker = {
-            path: 'M44.057,55.052 C39.628,63.017 35.284,69.635 35.101,69.913 L31.938,74.723 C31.619,75.208 31.079,75.500 30.500,75.500 C29.921,75.500 29.380,75.208 29.062,74.723 L25.899,69.913 C25.714,69.632 21.339,62.955 16.943,55.052 C10.501,43.468 7.500,35.691 7.500,30.578 C7.500,17.853 17.818,7.500 30.500,7.500 C43.182,7.500 53.500,17.853 53.500,30.578 C53.500,35.692 50.499,43.469 44.057,55.052 ZM30.500,21.096 C25.369,21.096 21.194,25.285 21.194,30.434 C21.194,35.582 25.369,39.771 30.500,39.771 C35.631,39.771 39.806,35.582 39.806,30.434 C39.806,25.285 35.631,21.096 30.500,21.096 Z',
-            fillColor: '#00aa61',
-            fillOpacity: 1,
-            scale: 0.8,
-            strokeWeight: 0,
-          };
-
-          var marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            title: 'Location',
-            icon: greenMarker
-          });
-          marker.addListener('click', function() {
-            infowindow.open(map, marker);
-          });
-
-          google.maps.event.trigger(marker, 'click');
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY&callback=initMap" async defer></script>
-    </div>
-  </section>
+  <?php include 'templates/includes/component-map.php' ?>
 </div>

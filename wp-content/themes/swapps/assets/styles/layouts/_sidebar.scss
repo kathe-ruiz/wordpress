@@ -1,0 +1,29 @@
+%widget-list-item{
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top-width: 1px;
+  font-family: $paragraphs-font-family;
+  font-size: 16px !important;
+  font-weight: 300;
+  padding: 1.3rem 0;
+}
+.widget{
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    li{
+      @extend .divider--list, %widget-list-item;
+      a{
+        color: inherit;
+      }
+    }
+  }
+}
+.tagcloud{
+  a{
+    display: block;
+    color: inherit;
+    @extend .divider--list, %widget-list-item;
+  }
+}

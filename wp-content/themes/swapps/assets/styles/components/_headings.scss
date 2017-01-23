@@ -6,6 +6,8 @@
   }
   &__subtitle{
     color: $subtitle-color;
+    font-family: $paragraphs-secondary-font-family;
+    font-weight: $paragraphs-secondary-font-weight;
   }
   &__text{
     font-size: $font-size-h4;

@@ -1,1 +1,16 @@
-<?php include 'template-home.php';
+<?php // include 'template-home.php'; ?>
+<?php if (!have_posts()) : ?>
+  <div class="alert alert-warning">
+    <?php _e('Sorry, no results were found.', 'sage'); ?>
+  </div>
+  <?php get_search_form(); ?>
+<?php endif; ?>
+
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+  <hr class="divider divider--list">
+<?php endwhile; ?>
+
+<div class="col-md-12 text-center">
+  <?php echo custom_pagination() ?>
+</div>

@@ -1,0 +1,9 @@
+@import "components/blog-item";
+@import "components/pagination";
+@import "components/search-form";
+.single{
+  .entry-meta{
+    margin-top: 28px;
+    margin-bottom: 26px;
+  }
+}

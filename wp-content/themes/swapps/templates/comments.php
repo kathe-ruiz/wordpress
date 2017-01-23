@@ -31,6 +31,7 @@ if (post_password_required()) {
       <?php _e('Comments are closed.', 'sage'); ?>
     </div>
   <?php endif; ?>
-
-  <?php comment_form(); ?>
+  <div class="comment-form">
+    <?php comment_form(); ?>
+  </div>
 </section>

@@ -1,0 +1,8 @@
+@import "components/information-about";
+@import "components/more-information";
+.about-page{
+  padding-top: 21px;
+  @media (max-width: $screen-sm){
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,10 @@
+@import "components/information";
+@import "components/heading-underline";
+@import "components/contact-form";
+.contact-page{
+  padding-bottom: 76px;
+  @media (max-width: $screen-sm){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

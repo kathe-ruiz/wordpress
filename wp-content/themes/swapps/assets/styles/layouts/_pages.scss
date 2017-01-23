@@ -6,3 +6,9 @@
 @import "components/image-text";
 @import "components/icons";
 @import "components/video";
+@import "components/dividers";
+@import "components/breadcrumbs";
+@import "components/map-info";
+#map{
+  height: 450px;
+}

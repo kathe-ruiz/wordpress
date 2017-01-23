@@ -20,7 +20,7 @@ $sage_includes = [
 
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {
-    trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
+  trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
   }
 
   require_once $filepath;
@@ -30,12 +30,35 @@ unset($file, $filepath);
 //Start Register Custom Navigation
 require_once('wp_bootstrap_navwalker.php');
 require_once('swapps_default_menu.php');
+require_once('breadcrumb.php');
+require_once('includes/custom-pagination.php');
 
 register_nav_menus( array(
-    'primary' => __( 'Theme Menu', 'wordpress' ),
+  'primary' => __( 'Theme Menu', 'wordpress' ),
 ) );
 //End Register Custom Navigator
 
+require_once('wp_theme_pages_setup.php');
+
+function get_social_accounts()
+{
+  $accounts = array(
+    'facebook' => '//facebook.com/swappsco',
+    'twitter' => '//twitter.com/swappsco',
+    'instagram' => '#',
+    'vimeo' => '#'
+  );
+  if (function_exists('wpaasp_options')) {
+    $accounts['facebook'] = (wpaasp_options('social_facebook')) ?: $accounts['facebook'];
+    $accounts['twitter'] = (wpaasp_options('social_twitter')) ?: $accounts['twitter'];
+    $accounts['instagram'] = (wpaasp_options('social_instagram')) ?: $accounts['instagram'];
+    $accounts['vimeo'] = (wpaasp_options('social_vimeo')) ?: $accounts['vimeo'];
+  }
+  return $accounts;
+}
+
+// Header image. Should be moved to plugin, check later. (Phase 3)
+// require get_template_directory() . '/includes/custom-header.php';
 // For set sliders in the homepage
 // if( function_exists('acf_add_local_field_group') ):
 

@@ -1,24 +1,64 @@
 .footer{
-  color: #5a5a5a;
+  color: lighten($navbar-inverse-bg, 28.5%);
   &__logo{
     &__img{
-      @media (max-width: 576px){
-        width: 5rem;
+        height: auto;
+      @media (min-width: $screen-sm-min){
+        max-width: 100%;
+      }
+      @media (max-width: $screen-xs-max){
+        min-width: 5rem;
+        max-width: 100px;
       }
     }
   }
   &__info{
-    a{
-      font-family: $paragraphs-font-family;
+  }
+  &__info &__text, &__info &__link, &__info &__icon{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+  &__info &__icon{
+    color: $brand-primary;
+    margin-right: 5px;
+    &--3x{
+      font-size: 3em;
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+        font-size: 3vw;
+      }
+    }
+    &--2x{
+      font-size: 2em;
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+        font-size: 2vw;
+      }
+    }
+  }
+  &__info &__link{
+    color: #fff;
+    &:hover{
+      color: #fff;
+    }
+  }
+  &__text{
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+      font-size: 1.25vw;
+    }
+  }
+  &__text{
+    &--light{
+      color: lighten($navbar-inverse-bg, 53.5%);
     }
   }
   &__socialmedia{
     @media (min-width: $screen-sm-min){
       text-align: right;
     }
-    .socialmedia_block{
-      color: #bdbdbd;
+    .socialmedia__block{
       font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
       @media (max-width: 576px){
         font-size: 20px;
       }
@@ -28,7 +68,7 @@
         padding: 0 8px;
       }
       @media (min-width: 577px){
-        padding: 1.25rem;
+        padding: 1rem;
       }
     }
     .socialmedia__item{
@@ -36,6 +76,9 @@
     }
   }
   &__copyright{
+    .text-secondary{
+      display: inline-block;
+    }
     @media (max-width: $screen-xs-max){
       text-align: center;
       font-size: 90%;

@@ -1,4 +1,4 @@
-.comment-list {
+/* .comment-list {
   @extend .list-unstyled;
 }
 .comment-list ol {
@@ -16,4 +16,124 @@
 .comment-form input[type="submit"] {
   @extend .btn;
   @extend .btn-secondary;
+} */
+.comments{
+  padding-bottom: 115px;
+  .comment-list{
+    list-style: none;
+    .children{
+      list-style: none;
+    }
+    .comment-content{
+      p{
+        font-family: inherit;
+        font-weight: 200;
+        a{
+          font-weight: initial;
+        }
+      }
+    }
+    .comment-respond{
+      form.comment-form{
+        .comment-notes,
+        .comment-form-comment,
+        .comment-form-author,
+        .comment-form-email,
+        .comment-form-url{
+          margin-bottom: 18px;
+          font-family: inherit;
+          font-weight: 400;
+          input,
+          textarea{
+            @extend .form-control;
+            border-radius: ($border-radius-base - 4);
+          }
+          input{
+            height: 36px;
+            padding: 8px 10px;
+          }
+          textarea{
+            padding: 8px 10px;
+          }
+          label{
+            font-weight: 400;
+          }
+        }
+        .logged-in-as{
+          font-family: inherit;
+        }
+        .form-submit{
+          font-family: inherit;
+          padding-top: 20px;
+          margin-bottom: 0px;
+          .submit{
+            @extend .text-uppercase;
+            @extend .btn;
+            @extend .btn-primary;
+            border-radius: ($border-radius-base - 4);
+          }
+        }
+      }
+    }
+  }
+  div.comment-form{
+    .comment-respond{
+      border:1px solid $table-border-color;
+      @media (max-width: $screen-sm-min){
+        padding: 30px 15px;
+      }
+      padding: 32px 37px;
+      padding-bottom: 37px;
+      h3{
+        margin-top: 0px;
+        @extend .heading-underline;
+        &:after{
+          margin-top: 14px;
+        }
+      }
+      form.comment-form{
+        .comment-notes,
+        .comment-form-comment,
+        .comment-form-author,
+        .comment-form-email,
+        .comment-form-url{
+          margin-bottom: 18px;
+          font-family: inherit;
+          font-weight: 400;
+          input,
+          textarea{
+            @extend .form-control;
+            border-radius: ($border-radius-base - 4);
+          }
+          input{
+            height: 36px;
+            padding: 8px 10px;
+          }
+          textarea{
+            padding: 8px 10px;
+          }
+          label{
+            font-weight: 400;
+          }
+        }
+        .logged-in-as{
+          font-family: inherit;
+        }
+        .form-submit{
+          font-family: inherit;
+          padding-top: 20px;
+          margin-bottom: 0px;
+          .submit{
+            @extend .text-uppercase;
+            @extend .btn;
+            @extend .btn-primary;
+            border-radius: ($border-radius-base - 4);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-sm){
+    padding-bottom: 50px;
+  }
 }

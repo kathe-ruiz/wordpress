@@ -1,0 +1,11 @@
+.contact-form{
+  &__div{
+  }
+  &__label{
+    font-weight: 200;
+  }
+  &__input,
+  &__textarea{
+    border-radius: $button-without-border-radius;
+  }
+}
