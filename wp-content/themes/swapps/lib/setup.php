@@ -90,6 +90,7 @@ function display_sidebar() {
     is_page_template('template-style-guide.php'),
     is_page_template('template-map.php'),
     is_page_template('template-home.php'),
+    is_page_template('template-landing.php'),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
