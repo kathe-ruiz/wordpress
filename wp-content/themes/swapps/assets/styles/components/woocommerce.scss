@@ -1716,3 +1716,15 @@ p.demo_store {
   display: block;
   clear: both;
 }
+.woocommerce-ordering{
+  margin-bottom: 15px;
+  .orderby{
+    border: 1px solid $brand-primary !important;
+    background: transparent;
+    padding: 5px;
+    &:active,
+    &:focus{
+      border: 1px solid $brand-primary !important;
+    }
+  }
+}
