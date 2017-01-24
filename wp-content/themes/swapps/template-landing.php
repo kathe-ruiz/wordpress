@@ -34,6 +34,7 @@
         case 'image_text_button':
         break;
         case 'video':
+        include('layouts/layout_video.php');
         break;
         case 'icon':
         include('layouts/layout_icon.php');
