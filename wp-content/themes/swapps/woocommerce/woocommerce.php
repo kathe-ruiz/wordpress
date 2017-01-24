@@ -33,9 +33,9 @@ add_filter( 'woocommerce_enqueue_styles', 'swapps_dequeue_styles' );
 /**
  * Add custom CSS for Woocommerce
  */
-function swapps_woocommerce_css() {
+/*function swapps_woocommerce_css() {
     wp_enqueue_style( 'swapps-wc-css', get_template_directory_uri() . '/woocommerce/css/wc.min.css' );
-}
+}*/
 add_action( 'wp_enqueue_scripts', 'swapps_woocommerce_css', 9 );
 
 function swapps_woo_actions() {
