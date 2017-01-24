@@ -356,7 +356,10 @@
         <div class="heading">
           <h2 class="heading__title">Título para módulo<br>de video</h2>
         </div>
-        <i class="fa fa-play-circle video__icon" aria-hidden="true"></i>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+        </div>
+        <!-- <i class="fa fa-play-circle video__icon" aria-hidden="true"></i> -->
         <p class="video__text">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit. Cum, quisquam, repudiandae<br>culpa ex ipsam dolore omnis odit a alias.</p>
       </div>
     </div>
