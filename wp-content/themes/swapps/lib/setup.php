@@ -87,6 +87,7 @@ function display_sidebar() {
     is_front_page(),
     is_page(),
     is_post_type_archive('product'),
+    is_tax( 'product_cat' ),
     is_page_template('template-style-guide.php'),
     is_page_template('template-map.php'),
     is_page_template('template-home.php'),
