@@ -32,6 +32,7 @@ Thumbs.db
 wp-content/plugins/amazon-s3-and-cloudfront/
 wp-content/plugins/amazon-web-services/
 wp-content/plugins/mailgun
+wp-content/plugins/advanced-custom-fields-font-awesome/
 /vendor/
 uploads
 !.gitkeep

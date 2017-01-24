@@ -45,6 +45,7 @@ register_nav_menus( array(
 //End Register Custom Navigator
 
 require_once('wp_theme_pages_setup.php');
+require_once('includes/custom-fields.php');
 
 function get_social_accounts()
 {
