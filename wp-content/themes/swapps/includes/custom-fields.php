@@ -11,10 +11,10 @@ acf_add_local_field_group(array (
           'multiple' => 0,
           'allow_null' => 0,
           'choices' => array (
-            'bg-primary' => 'Brand Color',
             'bg-light' => 'Light',
             'bg-medium' => 'Medium',
             'bg-dark' => 'Dark',
+            'bg-primary' => 'Brand Color',
           ),
           'default_value' => array (
             0 => 'light',
