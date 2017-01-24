@@ -36,6 +36,7 @@
         case 'video':
         break;
         case 'icon':
+        include('layouts/layout_icon.php');
         break;
         case 'map':
         include('layouts/layout_map.php');
