@@ -2073,6 +2073,49 @@
                                             "class": "",
                                             "id": ""
                                         }
+                                    },
+                                    {
+                                        "default_value": "",
+                                        "new_lines": "br",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "rows": 4,
+                                        "key": "field_map_marker_description",
+                                        "label": "Marker description",
+                                        "name": "marker_description",
+                                        "type": "textarea",
+                                        "instructions": "Text to be displayed above the map marker",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
+                                        "return_format": "url",
+                                        "preview_size": "thumbnail",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": 60,
+                                        "max_height": 60,
+                                        "max_size": "",
+                                        "mime_types": "PNG",
+                                        "key": "field_map_marker_image",
+                                        "label": "Marker image",
+                                        "name": "marker_image",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
                                     }
                                 ],
                                 "min": "",
