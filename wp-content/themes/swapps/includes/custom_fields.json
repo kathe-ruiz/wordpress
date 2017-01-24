@@ -9,9 +9,10 @@
                         "multiple": 0,
                         "allow_null": 0,
                         "choices": {
-                            "light": "Light",
-                            "medium": "Medium",
-                            "dark": "Dark"
+                            "bg-primary": "Brand Color",
+                            "bg-light": "Light",
+                            "bg-medium": "Medium",
+                            "bg-dark": "Dark"
                         },
                         "default_value": [
                             "light"
