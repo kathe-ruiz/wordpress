@@ -86,6 +86,7 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page(),
+    is_post_type_archive('product'),
     is_page_template('template-style-guide.php'),
     is_page_template('template-map.php'),
     is_page_template('template-home.php'),
@@ -107,3 +108,5 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+add_theme_support('woocommerce');
