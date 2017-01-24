@@ -38,6 +38,7 @@
         case 'icon':
         break;
         case 'map':
+        include('layouts/layout_map.php');
         break;
       }
       ?>
