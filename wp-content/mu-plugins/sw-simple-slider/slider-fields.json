@@ -1,0 +1,170 @@
+{
+  "key": "group_57f7f700465bb",
+  "title": "Slide",
+  "fields": [
+    {
+      "key": "field_57f7f705421d2",
+      "label": "Add slides",
+      "name": "slide",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": "",
+      "max": "",
+      "layout": "block",
+      "button_label": "Add Slide",
+      "sub_fields": [
+        {
+          "key": "field_57f7f790421d3",
+          "label": "Image",
+          "name": "image",
+          "type": "image",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "array",
+          "preview_size": "thumbnail",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_57f7f7f8421d4",
+          "label": "Title",
+          "name": "title",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "Title of slide",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_57f7f86d421d5",
+          "label": "Title 2",
+          "name": "title_2",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "Secondary title of slider",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_57f7f883421d6",
+          "label": "Description",
+          "name": "description",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "Description of slide",
+          "maxlength": "",
+          "rows": "",
+          "new_lines": "wpautop"
+        },
+        {
+          "key": "field_57f7f8b6421d7",
+          "label": "Call to Action Text",
+          "name": "call_to_action_text",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_57f7f8d6421d8",
+          "label": "Link",
+          "name": "link",
+          "type": "page_link",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "post_type": [],
+          "taxonomy": [],
+          "allow_null": 0,
+          "allow_archives": 1,
+          "multiple": 0
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "slider"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content",
+    "excerpt",
+    "custom_fields",
+    "discussion",
+    "comments",
+    "featured_image"
+  ],
+  "active": 1,
+  "description": ""
+}
