@@ -1,5 +1,7 @@
+<?php $position = $key % 2 ?>
+
 <div class="container">
-  <div class="row image-text__content">
+  <div class="row <?php echo (!$position) ? 'image-text__content' : 'image-text__content--reverse' ?> ">
     <div class="col-sm-6">
     <?php if ($row_item['image']): ?>
       <img class="image-text__image center-block img-responsive" src="<?php echo $row_item['image']['url']; ?>" alt="">
@@ -12,11 +14,11 @@
         </h2>
       <?php endif ?>
       <?php if (isset($row_item['description']) ): ?>
-        <p class="heading__text text-secondary">
+        <div class="heading__text text-secondary">
           <?php echo $row_item['description'] ?>
-        </p>
+        </div>
       <?php endif ?>
-      <?php if (isset($row_item['include_button']) ): ?>
+      <?php if ($row_item['include_button']): ?>
         <a class="image-text__btn btn btn-primary" href="<?php echo $row_item['button_link']; ?>"><?php echo $row_item['button_label']; ?></a>
       <?php endif ?>
     </div>

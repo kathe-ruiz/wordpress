@@ -11,14 +11,17 @@
   if ($row['custom_background']) {
     echo $row['background_color'];
   }
-  echo ($key == 0) ?  ' sliders-main' : '';
+  echo ($key == 0) ?  ' sliders-main ' : '';
   if ($key != 0){
-    echo in_array('text_slider', $row['row_items'][0])
-      ? ' sliders-secondary' : ' home-section';
+    if ($row['row_items'][0]['acf_fc_layout'] == 'text_slider') {
+      echo ' sliders-secondary ';
+    } else{
+      echo ' home-section ';
+    }
   };
   ?>"
   <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)" <?php endif; ?>>
-      <?php foreach ($row['row_items'] as $row_item): ?>
+      <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
       switch($row_item['acf_fc_layout']){
         case 'title':
