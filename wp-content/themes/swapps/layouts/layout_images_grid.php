@@ -20,7 +20,9 @@ if($total < 3){
 			</div>
 		<?php elseif($row_item['grid_type']=='icons'): ?>
 			<div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center">
-				<?php echo $grid_element['font_icon'] ?>
+        <div class="icons__icon">
+				  <?php echo $grid_element['font_icon'] ?>
+        </div>
 				<h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
 				<p class="icons__text"><?php echo $grid_element['description'] ?></p>
 			</div>

@@ -4,8 +4,10 @@
   &__item{
     color: $brand-primary;
   }
-  .fa-11x{
-    font-size: 11em;
+  &__icon{
+    .fa{
+      font-size: 11em;
+    }
   }
   &__title{
     font-weight: 500;
