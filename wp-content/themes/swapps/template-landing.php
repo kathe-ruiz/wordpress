@@ -33,6 +33,7 @@
         include('layouts/layout_images_grid.php');
         break;
         case 'image_text_button':
+        include('layouts/layout_image_text_button.php');
         break;
         case 'video':
         include('layouts/layout_video.php');
