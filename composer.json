@@ -12,5 +12,14 @@
     "wpackagist-plugin/mailgun": "1.4.1",
     "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
     "wpackagist-plugin/acf-image-crop-add-on": "1.4.10"
+    },
+    "extra" : {
+        "installer-paths": {
+            "wp-content/mu-plugins/{$name}/": [
+            "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "wpackagist-plugin/mailgun",
+            "wpackagist-plugin/acf-image-crop-add-on"
+            ]
+        }
     }
 }
