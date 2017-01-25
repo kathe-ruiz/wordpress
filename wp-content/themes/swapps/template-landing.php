@@ -11,7 +11,7 @@
   if ($row['custom_background']) {
     echo $row['background_color'];
   }
-  echo ($key == 0) ?  'sliders-main' : '';
+  echo ($key == 0) ?  ' sliders-main' : '';
   if ($key != 0){
     echo in_array('text_slider', $row['row_items'][0])
       ? ' sliders-secondary' : ' home-section';
