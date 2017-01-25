@@ -35,6 +35,7 @@ Thumbs.db
 !/wp-content/mu-plugins/formidable
 # sw-simple-slider needs to be moved to WP codex
 !/wp-content/mu-plugins/sw-simple-slider
+!/wp-content/mu-plugins/wpaasp-customizer
 
 # Theme plugin in the repo until is updated with Ansible. 
 # Don't consider git submodules!
