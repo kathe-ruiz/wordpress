@@ -11,8 +11,9 @@
       <?php if(stripos($video_url, "youtube.com") !== false): 
           $video_type = 'youtube';
           parse_str( parse_url( $video_url, PHP_URL_QUERY ), $q );
-          $video_id = $q['v']; 
-        elseif (stripos($video_url, "vimeo.com") !== false): 
+          $video_id = $q['v']; ?>
+        <div data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
+        <?php elseif (stripos($video_url, "vimeo.com") !== false): 
           $video_type = 'vimeo'; 
           $video_id = (int) substr(parse_url($video_url, PHP_URL_PATH), 1); ?>
         <div data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
@@ -24,9 +25,7 @@
       <?php endif; ?>
     <?php endif; ?>
     <?php if (isset($row_item['video_description']) ): ?>
-      <p class="video__text">
-        <?php echo $row_item['video_description'] ?>
-      </p>
+      <p class="video__text"><?php echo strip_tags($row_item['video_description']) ?></p>
     <?php endif; ?>
   </div>
 </div>
