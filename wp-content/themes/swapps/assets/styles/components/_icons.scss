@@ -6,6 +6,11 @@
   }
   &__icon{
     .fa{
+      font-size: 4em;
+    }
+  }
+  &__icon--large{
+    .fa{
       font-size: 11em;
     }
   }
