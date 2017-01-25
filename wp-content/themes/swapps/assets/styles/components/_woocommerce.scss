@@ -479,7 +479,8 @@ p.demo_store {
     border: 0;
 }
 .woocommerce nav.woocommerce-pagination {
-    text-align: center
+    text-align: center;
+    margin: 10px 0;
 }
 .woocommerce nav.woocommerce-pagination ul {
     display: inline-block;
@@ -1738,6 +1739,7 @@ p.demo_store {
   }
 }
 .woocommerce-ordering{
+  margin-top: 10px;
   .orderby{
     border: 1px solid $brand-primary !important;
     background: transparent;
@@ -1777,5 +1779,15 @@ p.demo_store {
   }
   .tagged_as{
     display: block;
+  }
+}
+@media (max-width: $screen-sm) {
+  .woocommerce-result-count,
+  .woocommerce-ordering{
+    float: none !important;
+  }
+  .woocommerce-ordering{
+    margin-top: 0px;
+    margin-bottom: 15px;
   }
 }
