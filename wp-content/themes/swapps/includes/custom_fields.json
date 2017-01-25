@@ -6,6 +6,25 @@
             {
                 "sub_fields": [
                     {
+                        "default_value": 0,
+                        "message": "",
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "key": "field_58881d865122d",
+                        "label": "Custom Background",
+                        "name": "custom_background",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
                         "multiple": 0,
                         "allow_null": 0,
                         "choices": {
@@ -26,8 +45,16 @@
                         "name": "background_color",
                         "type": "select",
                         "instructions": "Choose the background of the Row",
-                        "required": 1,
-                        "conditional_logic": 0,
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58881d865122d",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
                         "wrapper": {
                             "width": "",
                             "class": "",
@@ -51,7 +78,15 @@
                         "type": "image",
                         "instructions": "",
                         "required": 0,
-                        "conditional_logic": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_58881d865122d",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
                         "wrapper": {
                             "width": "",
                             "class": "",
@@ -338,20 +373,18 @@
                                     {
                                         "sub_fields": [
                                             {
-                                                "return_format": "array",
-                                                "preview_size": "thumbnail",
+                                                "force_crop": "yes",
+                                                "crop_type": "hard",
+                                                "preview_size": "full",
+                                                "save_format": "object",
+                                                "save_in_media_library": "yes",
+                                                "target_size": "custom",
                                                 "library": "all",
-                                                "min_width": "",
-                                                "min_height": "",
-                                                "min_size": "",
-                                                "max_width": "",
-                                                "max_height": "",
-                                                "max_size": "",
-                                                "mime_types": "",
+                                                "retina_mode": "no",
                                                 "key": "field_images_grid_image",
                                                 "label": "Image",
                                                 "name": "image",
-                                                "type": "image",
+                                                "type": "image_crop",
                                                 "instructions": "",
                                                 "required": 0,
                                                 "conditional_logic": [
@@ -367,29 +400,11 @@
                                                     "width": "",
                                                     "class": "",
                                                     "id": ""
-                                                }
+                                                },
+                                                "width": 320,
+                                                "height": 240
                                             },
                                             {
-                                                "key": "field_images_grid_icon",
-                                                "label": "Icon",
-                                                "name": "font_icon",
-                                                "type": "font-awesome",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": [
-                                                    [
-                                                        {
-                                                            "field": "field_images_grid_type",
-                                                            "operator": "==",
-                                                            "value": "icons"
-                                                        }
-                                                    ]
-                                                ],
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
                                                 "enqueue_fa": 0,
                                                 "allow_null": 0,
                                                 "save_format": "element",
@@ -1072,6 +1087,26 @@
                                                     "fa-youtube": "&#xf167; fa-youtube",
                                                     "fa-youtube-play": "&#xf16a; fa-youtube-play",
                                                     "fa-youtube-square": "&#xf166; fa-youtube-square"
+                                                },
+                                                "key": "field_images_grid_icon",
+                                                "label": "Icon",
+                                                "name": "font_icon",
+                                                "type": "font-awesome",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_images_grid_type",
+                                                            "operator": "==",
+                                                            "value": "icons"
+                                                        }
+                                                    ]
+                                                ],
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
                                                 }
                                             },
                                             {
@@ -1351,18 +1386,6 @@
                                 "display": "block",
                                 "sub_fields": [
                                     {
-                                        "key": "field_icon_icon",
-                                        "label": "Centered Icon",
-                                        "name": "icon",
-                                        "type": "font-awesome",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        },
                                         "enqueue_fa": 0,
                                         "allow_null": 0,
                                         "save_format": "element",
@@ -2045,6 +2068,18 @@
                                             "fa-youtube": "&#xf167; fa-youtube",
                                             "fa-youtube-play": "&#xf16a; fa-youtube-play",
                                             "fa-youtube-square": "&#xf166; fa-youtube-square"
+                                        },
+                                        "key": "field_icon_icon",
+                                        "label": "Centered Icon",
+                                        "name": "icon",
+                                        "type": "font-awesome",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
                                         }
                                     }
                                 ],

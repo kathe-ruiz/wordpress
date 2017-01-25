@@ -30,6 +30,7 @@
         include('layouts/layout_gallery.php');
         break;
         case 'images_grid':
+        include('layouts/layout_images_grid.php');
         break;
         case 'image_text_button':
         break;

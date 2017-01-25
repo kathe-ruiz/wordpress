@@ -8,6 +8,25 @@ acf_add_local_field_group(array (
     array (
       'sub_fields' => array (
         array (
+          'default_value' => 0,
+          'message' => '',
+          'ui' => 1,
+          'ui_on_text' => '',
+          'ui_off_text' => '',
+          'key' => 'field_58881d865122d',
+          'label' => 'Custom Background',
+          'name' => 'custom_background',
+          'type' => 'true_false',
+          'instructions' => '',
+          'required' => 0,
+          'conditional_logic' => 0,
+          'wrapper' => array (
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+        ),
+        array (
           'multiple' => 0,
           'allow_null' => 0,
           'choices' => array (
@@ -28,8 +47,16 @@ acf_add_local_field_group(array (
           'name' => 'background_color',
           'type' => 'select',
           'instructions' => 'Choose the background of the Row',
-          'required' => 1,
-          'conditional_logic' => 0,
+          'required' => 0,
+          'conditional_logic' => array (
+            array (
+              array (
+                'field' => 'field_58881d865122d',
+                'operator' => '==',
+                'value' => '1',
+              ),
+            ),
+          ),
           'wrapper' => array (
             'width' => '',
             'class' => '',
@@ -53,7 +80,15 @@ acf_add_local_field_group(array (
           'type' => 'image',
           'instructions' => '',
           'required' => 0,
-          'conditional_logic' => 0,
+          'conditional_logic' => array (
+            array (
+              array (
+                'field' => 'field_58881d865122d',
+                'operator' => '==',
+                'value' => '1',
+              ),
+            ),
+          ),
           'wrapper' => array (
             'width' => '',
             'class' => '',
@@ -344,20 +379,18 @@ acf_add_local_field_group(array (
                 array (
                   'sub_fields' => array (
                     array (
-                      'return_format' => 'array',
-                      'preview_size' => 'thumbnail',
+                      'force_crop' => 'yes',
+                      'crop_type' => 'hard',
+                      'preview_size' => 'full',
+                      'save_format' => 'object',
+                      'save_in_media_library' => 'yes',
+                      'target_size' => 'custom',
                       'library' => 'all',
-                      'min_width' => '',
-                      'min_height' => '',
-                      'min_size' => '',
-                      'max_width' => '',
-                      'max_height' => '',
-                      'max_size' => '',
-                      'mime_types' => '',
+                      'retina_mode' => 'no',
                       'key' => 'field_images_grid_image',
                       'label' => 'Image',
                       'name' => 'image',
-                      'type' => 'image',
+                      'type' => 'image_crop',
                       'instructions' => '',
                       'required' => 0,
                       'conditional_logic' => array (
@@ -374,28 +407,10 @@ acf_add_local_field_group(array (
                         'class' => '',
                         'id' => '',
                       ),
+                      'width' => 320,
+                      'height' => 240,
                     ),
                     array (
-                      'key' => 'field_images_grid_icon',
-                      'label' => 'Icon',
-                      'name' => 'font_icon',
-                      'type' => 'font-awesome',
-                      'instructions' => '',
-                      'required' => 0,
-                      'conditional_logic' => array (
-                        array (
-                          array (
-                            'field' => 'field_images_grid_type',
-                            'operator' => '==',
-                            'value' => 'icons',
-                          ),
-                        ),
-                      ),
-                      'wrapper' => array (
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                      ),
                       'enqueue_fa' => 0,
                       'allow_null' => 0,
                       'save_format' => 'element',
@@ -1079,6 +1094,26 @@ acf_add_local_field_group(array (
                         'fa-youtube-play' => '&#xf16a; fa-youtube-play',
                         'fa-youtube-square' => '&#xf166; fa-youtube-square',
                       ),
+                      'key' => 'field_images_grid_icon',
+                      'label' => 'Icon',
+                      'name' => 'font_icon',
+                      'type' => 'font-awesome',
+                      'instructions' => '',
+                      'required' => 0,
+                      'conditional_logic' => array (
+                        array (
+                          array (
+                            'field' => 'field_images_grid_type',
+                            'operator' => '==',
+                            'value' => 'icons',
+                          ),
+                        ),
+                      ),
+                      'wrapper' => array (
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                      ),
                     ),
                     array (
                       'default_value' => '',
@@ -1359,18 +1394,6 @@ acf_add_local_field_group(array (
               'display' => 'block',
               'sub_fields' => array (
                 array (
-                  'key' => 'field_icon_icon',
-                  'label' => 'Centered Icon',
-                  'name' => 'icon',
-                  'type' => 'font-awesome',
-                  'instructions' => '',
-                  'required' => 0,
-                  'conditional_logic' => 0,
-                  'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                  ),
                   'enqueue_fa' => 0,
                   'allow_null' => 0,
                   'save_format' => 'element',
@@ -2053,6 +2076,18 @@ acf_add_local_field_group(array (
                     'fa-youtube' => '&#xf167; fa-youtube',
                     'fa-youtube-play' => '&#xf16a; fa-youtube-play',
                     'fa-youtube-square' => '&#xf166; fa-youtube-square',
+                  ),
+                  'key' => 'field_icon_icon',
+                  'label' => 'Centered Icon',
+                  'name' => 'icon',
+                  'type' => 'font-awesome',
+                  'instructions' => '',
+                  'required' => 0,
+                  'conditional_logic' => 0,
+                  'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
                   ),
                 ),
               ),
