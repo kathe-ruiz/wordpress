@@ -58,6 +58,7 @@
             "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
           ],
         });
+        plyr.setup();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

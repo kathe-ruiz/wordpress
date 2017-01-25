@@ -6,7 +6,7 @@
 <?php $rows = get_field('field_rows'); ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
-  <section class="background-<?php echo $row['background_color']; if ($key != 0){ echo " home-section"; }?>"
+  <section class="<?php echo $row['background_color']; if ($key != 0){ echo " home-section"; }?>"
   <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)" <?php endif; ?>>
       <?php foreach ($row['row_items'] as $row_item): ?>
       <?php
@@ -30,12 +30,15 @@
         include('layouts/layout_gallery.php');
         break;
         case 'images_grid':
+        include('layouts/layout_images_grid.php');
         break;
         case 'image_text_button':
         break;
         case 'video':
+        include('layouts/layout_video.php');
         break;
         case 'icon':
+        include('layouts/layout_icon.php');
         break;
         case 'map':
         include('layouts/layout_map.php');

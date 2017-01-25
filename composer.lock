@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e26c1f661db54baaa5f27e8ce9554ec",
+    "hash": "302033904150536a32322c2a395f10db",
+    "content-hash": "8355ec82fb72208b9465526b458f9595",
     "packages": [
         {
             "name": "composer/installers",
@@ -111,7 +112,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -157,7 +158,47 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-05-30T16:15:01+00:00"
+            "time": "2015-05-30 16:15:01"
+        },
+        {
+            "name": "wpackagist-plugin/acf-image-crop-add-on",
+            "version": "1.4.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-image-crop-add-on/",
+                "reference": "tags/1.4.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-image-crop-add-on/"
+        },
+        {
+            "name": "wpackagist-plugin/addthis",
+            "version": "5.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/addthis/",
+                "reference": "tags/5.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/addthis/"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields-font-awesome",
@@ -238,6 +279,66 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/mailgun/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "2.6.13",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/2.6.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-dropdown-cart",
+            "version": "2.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-dropdown-cart/",
+                "reference": "tags/2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-dropdown-cart/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-menu-bar-cart",
+            "version": "2.5.8.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-menu-bar-cart/",
+                "reference": "tags/2.5.8.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-menu-bar-cart/"
         }
     ],
     "packages-dev": [],

@@ -1,0 +1,172 @@
+[
+    {
+        "key": "group_57f7f700465bb",
+        "title": "Slide",
+        "fields": [
+            {
+                "sub_fields": [
+                    {
+                        "force_crop": "yes",
+                        "crop_type": "hard",
+                        "preview_size": "medium_large",
+                        "save_format": "object",
+                        "save_in_media_library": "yes",
+                        "target_size": "custom",
+                        "library": "all",
+                        "retina_mode": "no",
+                        "key": "field_57f7f790421d3",
+                        "label": "Slide Image",
+                        "name": "image",
+                        "type": "image_crop",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "width": 1200,
+                        "height": 600
+                    },
+                    {
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "Title of slide",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_57f7f7f8421d4",
+                        "label": "Slide Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "Secondary title of slider",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_57f7f86d421d5",
+                        "label": "Second Title",
+                        "name": "title_2",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": "",
+                        "new_lines": "wpautop",
+                        "maxlength": "",
+                        "placeholder": "Description of slide",
+                        "rows": "",
+                        "key": "field_57f7f883421d6",
+                        "label": "Description",
+                        "name": "description",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_57f7f8b6421d7",
+                        "label": "Button Label",
+                        "name": "call_to_action_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "post_type": [],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "allow_archives": 1,
+                        "key": "field_57f7f8d6421d8",
+                        "label": "Button Link",
+                        "name": "link",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    }
+                ],
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Slide",
+                "collapsed": "",
+                "key": "field_57f7f705421d2",
+                "label": "Add slides",
+                "name": "slide",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "slider"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "featured_image"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]
