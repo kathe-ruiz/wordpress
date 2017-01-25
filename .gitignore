@@ -1,8 +1,6 @@
 # ignore all files starting with .env
 .env
 .DS_Store
-# track this file .gitignore (i.e. do NOT ignore it)
-!.gitignore
 
 # ignore all files that start with ~
 ~*
@@ -27,13 +25,19 @@ Thumbs.db
 *.zip
 *.tgz
 # ignore everything in the "wp-content" directory, except:
-# "plugins" directory
-# "themes" directory
+/wp-content/uploads
+/wp-content/mu-plugins/*
+/wp-content/plugins/*
 
-wp-content/
 # ACF PRO Licensed plugin that needs to be included in repo
-!wp-content/mu-plugins/advanced-custom-fields-pro
-# Theme plugin in the repo until is updated with Ansible. Don't consider git submodules!
+!/wp-content/mu-plugins/advanced-custom-fields-pro
+# Forms plugin required with license
+!/wp-content/mu-plugins/formidable
+# sw-simple-slider needs to be moved to WP codex
+!/wp-content/mu-plugins/sw-simple-slider
+
+# Theme plugin in the repo until is updated with Ansible. 
+# Don't consider git submodules!
 !wp-content/themes/swapps
 
 
