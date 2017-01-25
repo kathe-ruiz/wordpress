@@ -203,7 +203,14 @@ if( function_exists('acf_add_local_field_group') ):
     'style' => 'default',
     'label_placement' => 'top',
     'instruction_placement' => 'label',
-    'hide_on_screen' => '',
+    'hide_on_screen' => array (
+      0 => 'the_content',
+      1 => 'excerpt',
+      2 => 'custom_fields',
+      3 => 'discussion',
+      4 => 'comments',
+      5 => 'featured_image',
+    ),
     'active' => 1,
     'description' => '',
   ));
