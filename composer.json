@@ -10,6 +10,7 @@
     "wpackagist-plugin/amazon-web-services": "1.0.1",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "1.1.4",
     "wpackagist-plugin/mailgun": "1.4.1",
-    "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3"
+    "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
+    "wpackagist-plugin/acf-image-crop-add-on": "1.4.10"
     }
 }
