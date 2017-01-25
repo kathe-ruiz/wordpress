@@ -2,4 +2,15 @@
   background-color: $brand-primary;
   @include text-contrast($brand-primary);
 }
-// #cec3b5
+.bg-medium{
+  background: $body-other-bg;
+  @include text-contrast($body-other-bg);
+}
+.bg-light{
+  background: #FFF;
+  @include text-contrast(#FFF);
+}
+.bg-dark{
+  background: $navbar-inverse-bg;
+  @include text-contrast($navbar-inverse-bg);
+}
