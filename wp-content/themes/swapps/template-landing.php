@@ -6,7 +6,14 @@
 <?php $rows = get_field('field_rows'); ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
-  <section class="<?php echo $row['background_color']; if ($key != 0){ echo " home-section"; }?>"
+  <section
+  class="<?php
+  echo $row['background_color'];
+  if ($key != 0){
+    echo in_array('text_slider', $row['row_items'][0])
+      ? ' sliders-secondary' : ' home-section';
+  };
+  ?>"
   <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)" <?php endif; ?>>
       <?php foreach ($row['row_items'] as $row_item): ?>
       <?php
