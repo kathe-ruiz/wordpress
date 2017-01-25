@@ -12,15 +12,29 @@
     }
 }
 @-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg)
-    }
+  100% {
+    -webkit-transform: rotate(360deg)
+  }
 }
 @keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg)
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+@font-face {
+  font-family: star;
+  src: url(../fonts/star.eot);
+  src: url(../fonts/star.eot?#iefix) format("embedded-opentype"), url(../fonts/star.woff) format("woff"), url(../fonts/star.ttf) format("truetype"), url(../fonts/star.svg#star) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: WooCommerce;
+  src: url(../fonts/WooCommerce.eot);
+  src: url(../fonts/WooCommerce.eot?#iefix) format("embedded-opentype"), url(../fonts/WooCommerce.woff) format("woff"), url(../fonts/WooCommerce.ttf) format("truetype"), url(../fonts/WooCommerce.svg#WooCommerce) format("svg");
+  font-weight: 400;
+  font-style: normal;
 }
 p.demo_store {
     position: fixed;
@@ -1692,8 +1706,8 @@ p.demo_store {
 #tab-description h2,
 .related.products h2,
 .woocommerce #reviews #comments h2 {
-    font-size: 20px;
-    margin: 0 0 25px;
+  font-size: $font-size-h3;
+  margin: 0 0 25px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -1724,7 +1738,6 @@ p.demo_store {
   }
 }
 .woocommerce-ordering{
-  margin-bottom: 15px;
   .orderby{
     border: 1px solid $brand-primary !important;
     background: transparent;
@@ -1733,5 +1746,36 @@ p.demo_store {
     &:focus{
       border: 1px solid $brand-primary !important;
     }
+  }
+}
+.woocommerce-result-count{
+  margin-top: 0px;
+  @extend .heading-underline;
+  font-size: $font-size-h3;
+  &:after{
+    margin-top: 14px;
+  }
+}
+.woocommerce-Reviews{
+  .woocommerce-Reviews-title{
+    @extend .heading-underline;
+    &:after{
+      margin-top: 14px;
+    }
+  }
+  .comment-reply-title{
+    @extend .heading-underline;
+    margin-bottom: 32px !important;
+    &:after{
+      margin-top: 14px;
+    }
+  }
+}
+.content-woocommerce{
+  .posted_in{
+    display: block;
+  }
+  .tagged_as{
+    display: block;
   }
 }
