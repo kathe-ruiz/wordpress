@@ -19,6 +19,9 @@
       echo ' home-section ';
     }
   };
+  if ($row['row_items'][0]['acf_fc_layout'] == 'video') {
+    echo ' video ';
+  };
   ?>"
   <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)" <?php endif; ?>>
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
