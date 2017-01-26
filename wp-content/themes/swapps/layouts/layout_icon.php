@@ -1,9 +1,9 @@
 <?php if (isset($row_item['icon']) ): ?>
-<div class="container text-center">
+<div class="container text-center icons">
   <div class="row">
-    <h2 class="heading__title">
+    <div class="icons__icon--large text-primary">
       <?php echo $row_item['icon'] ?>
-    </h2>
+    </div>
   </div>
 </div>
 <?php endif ?>

@@ -2,13 +2,31 @@
 /**
  * Template Name: Landing
  */
+
+
 ?>
 <?php $rows = get_field('field_rows'); ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
-  <section class="<?php echo $row['background_color']; if ($key != 0){ echo " home-section"; }?>"
-  <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)" <?php endif; ?>>
-      <?php foreach ($row['row_items'] as $row_item): ?>
+  <?php $class_css = ""; ?>
+  <section
+  <?php if ($row['custom_background']): ?>
+    <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)"
+      <?php $class_css .= " bg-image "; ?>
+    <?php endif; ?>
+    <?php if ($row['background_color']): ?>
+      <?php $class_css .= $row['background_color']; ?>
+    <?php endif ?>
+  <?php endif ?>
+  <?php $class_css .= ($key == 0) ?  ' sliders-main ' : ''; ?>
+  <?php
+  if ($key != 0){
+    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'text_slider') ? ' sliders-secondary ' : ' home-section ';
+    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'video') ? ' video ' : '';
+  };
+  ?>
+  class="<?php echo $class_css ?>">
+      <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
       switch($row_item['acf_fc_layout']){
         case 'title':
@@ -53,11 +71,12 @@
   <?php include ("template-home.php") ?>
 <?php endif ?>
 
-
-<section>
-  <h1>Debug Vars</h1>
-  <pre>
-    <?php echo the_field('field_row_background_color') ?>
-    <?php print_r($rows); ?>
-  </pre>
-</section>
+<?php if (WP_DEBUG): ?>
+  <section>
+    <h1>Debug Vars</h1>
+    <pre>
+      <?php echo the_field('field_row_background_color') ?>
+      <?php print_r($rows); ?>
+    </pre>
+  </section>
+<?php endif ?>

@@ -59,15 +59,7 @@
           ],
         });
         plyr.setup();
-      },
-      finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
-      }
-    },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
+
         $("a.gallery__item").attr('rel', 'gallery').fancybox({
           'transitionIn'  : 'elastic',
           'transitionOut' : 'elastic',
@@ -79,6 +71,15 @@
           'opacity': true
 
         });
+      },
+      finalize: function() {
+        // JavaScript to be fired on all pages, after page specific JS is fired
+      }
+    },
+    // Home page
+    'home': {
+      init: function() {
+        // JavaScript to be fired on the home page
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
