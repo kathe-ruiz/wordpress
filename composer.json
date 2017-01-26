@@ -15,7 +15,21 @@
                     "reference": "0.2.0"
                 }
             }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wpaasp-customizer",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/wpaasp-customizer.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
         }
+            
     ],
     "require": {
         "vlucas/phpdotenv": "2.0.*",
@@ -30,6 +44,7 @@
         "wpackagist-plugin/woocommerce-menu-bar-cart": "2.5.8.1",
         "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
         "sw-simple-slider": "0.2.0",
+        "wpaasp-customizer": "0.1.0",
         "oomphinc/composer-installers-extender": "^1.1"
 
     },
@@ -38,6 +53,7 @@
         "installer-paths": {
             "wp-content/mu-plugins/{$name}/": [
             "sw-simple-slider",
+            "wpaasp-customizer",
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",

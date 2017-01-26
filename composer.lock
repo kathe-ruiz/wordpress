@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a5dad3d45108cef1c0831be7c92c226",
-    "content-hash": "2a970d6f43fc739bff5f8c9e76214f6a",
+    "hash": "ba3f1b1335fd36cd8239096d450e5c01",
+    "content-hash": "60cbf4ed818970e380a0b2b248cb19d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -211,6 +211,16 @@
                 "environment"
             ],
             "time": "2015-05-30 16:15:01"
+        },
+        {
+            "name": "wpaasp-customizer",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:swappsco/wpaasp-customizer.git",
+                "reference": "0.1.0"
+            },
+            "type": "library"
         },
         {
             "name": "wpackagist-plugin/acf-image-crop-add-on",
