@@ -33,8 +33,6 @@ Thumbs.db
 !/wp-content/mu-plugins/advanced-custom-fields-pro
 # Forms plugin required with license
 !/wp-content/mu-plugins/formidable
-# sw-simple-slider needs to be moved to WP codex
-!/wp-content/mu-plugins/sw-simple-slider
 !/wp-content/mu-plugins/wpaasp-customizer
 
 # OPTIONAL PLUGINS that need to be in the REPO

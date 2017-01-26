@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4ca32d7ddf7519dc5abded72ddfaa25",
-    "content-hash": "5c3119128b265d910d879be85f00cbd0",
+    "hash": "9a5dad3d45108cef1c0831be7c92c226",
+    "content-hash": "2a970d6f43fc739bff5f8c9e76214f6a",
     "packages": [
         {
             "name": "composer/installers",
@@ -115,6 +115,58 @@
             "time": "2016-08-13 20:53:52"
         },
         {
+            "name": "oomphinc/composer-installers-extender",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oomphinc/composer-installers-extender.git",
+                "reference": "e29c900d3d6a851ee8261859fb39edbb1f34722e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/e29c900d3d6a851ee8261859fb39edbb1f34722e",
+                "reference": "e29c900d3d6a851ee8261859fb39edbb1f34722e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "composer/installers": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "OomphInc\\ComposerInstallersExtender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "email": "stephen@oomphinc.com",
+                    "homepage": "https://github.com/balbuf"
+                }
+            ],
+            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
+            "homepage": "http://www.oomphinc.com/",
+            "time": "2016-07-05 15:00:34"
+        },
+        {
+            "name": "sw-simple-slider",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:swappsco/sw-simple-slider.git",
+                "reference": "0.2.0"
+            },
+            "type": "library"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.0.1",
             "source": {
@@ -171,7 +223,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.10.zip",
-                "reference": null,
+                "reference": "tags/1.4.10",
                 "shasum": null
             },
             "require": {
@@ -191,7 +243,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": null,
+                "reference": "tags/5.3.4",
                 "shasum": null
             },
             "require": {
@@ -211,7 +263,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -231,7 +283,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.4.zip",
-                "reference": null,
+                "reference": "tags/1.1.4",
                 "shasum": null
             },
             "require": {
@@ -251,7 +303,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
-                "reference": null,
+                "reference": "tags/1.0.1",
                 "shasum": null
             },
             "require": {
@@ -271,7 +323,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/mailgun.1.4.1.zip",
-                "reference": null,
+                "reference": "tags/1.4.1",
                 "shasum": null
             },
             "require": {
@@ -291,7 +343,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": null,
+                "reference": "tags/2.2.6",
                 "shasum": null
             },
             "require": {
@@ -311,7 +363,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
-                "reference": null,
+                "reference": "tags/2.6.13",
                 "shasum": null
             },
             "require": {
@@ -331,7 +383,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": null,
+                "reference": "tags/2.1.1",
                 "shasum": null
             },
             "require": {
@@ -351,7 +403,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": null,
+                "reference": "tags/2.5.8.1",
                 "shasum": null
             },
             "require": {

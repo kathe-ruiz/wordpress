@@ -3,25 +3,41 @@
         {
             "type":"composer",
             "url":"https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sw-simple-slider",
+                "version": "0.2.0",
+                "source": {
+                    "url": "git@github.com:swappsco/sw-simple-slider.git",
+                    "type": "git",
+                    "reference": "0.2.0"
+                }
+            }
         }
     ],
     "require": {
-    "vlucas/phpdotenv": "2.0.*",
-    "wpackagist-plugin/addthis": "5.3.4",
-    "wpackagist-plugin/amazon-web-services": "1.0.1",
-    "wpackagist-plugin/amazon-s3-and-cloudfront": "1.1.4",
-    "wpackagist-plugin/mailgun": "1.4.1",
-    "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
-    "wpackagist-plugin/acf-image-crop-add-on": "1.4.10",
-    "wpackagist-plugin/woocommerce": "2.6.13",
-    "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1",
-    "wpackagist-plugin/woocommerce-menu-bar-cart": "2.5.8.1",
-    "wpackagist-plugin/regenerate-thumbnails": "2.2.6"
+        "vlucas/phpdotenv": "2.0.*",
+        "wpackagist-plugin/addthis": "5.3.4",
+        "wpackagist-plugin/amazon-web-services": "1.0.1",
+        "wpackagist-plugin/amazon-s3-and-cloudfront": "1.1.4",
+        "wpackagist-plugin/mailgun": "1.4.1",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
+        "wpackagist-plugin/acf-image-crop-add-on": "1.4.10",
+        "wpackagist-plugin/woocommerce": "2.6.13",
+        "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1",
+        "wpackagist-plugin/woocommerce-menu-bar-cart": "2.5.8.1",
+        "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
+        "sw-simple-slider": "0.2.0",
+        "oomphinc/composer-installers-extender": "^1.1"
 
     },
     "extra" : {
+        "installer-types": ["library"],
         "installer-paths": {
             "wp-content/mu-plugins/{$name}/": [
+            "sw-simple-slider",
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
