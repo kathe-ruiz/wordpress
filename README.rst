@@ -8,7 +8,7 @@ Wordpress project using wordpress-ansible and PHP Dot Env
 Requirements
 ************
 
-* PHP >= 5.4.x
+* PHP >= 5.5.x
 * MySQL >= 5.5.x
 * Composer
 
