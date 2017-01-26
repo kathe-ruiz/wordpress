@@ -3,8 +3,7 @@
 if ( isset($field['post_field']) && $field['post_field'] == 'post_category' && FrmAppHelper::pro_is_installed() ) {
 	echo FrmProPost::get_category_dropdown( $field, array( 'name' => $field_name, 'id' => 'placeholder_id', 'location' => 'form_builder' ) );
 } else { ?>
-	<select id="frm_dropdown_<?php echo esc_attr( $field['id'] ) ?>"
-		name="<?php echo esc_attr( $field_name ) . ( FrmField::is_option_true( $field, 'multiple' ) ? '[]' : '' ); ?>" <?php
+	<select name="<?php echo esc_attr( $field_name ) . ( FrmField::is_option_true( $field, 'multiple' ) ? '[]' : '' ); ?>" <?php
 	echo FrmField::is_option_true( $field, 'size' ) ? 'class="auto_width"' : '';
 	echo FrmField::is_option_true( $field, 'multiple' ) ? ' multiple="multiple"' : ''; ?> >
 		<?php foreach ( $field['options'] as $opt_key => $opt ) {

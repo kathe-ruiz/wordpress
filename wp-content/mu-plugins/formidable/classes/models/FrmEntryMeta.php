@@ -47,8 +47,7 @@ class FrmEntryMeta {
 
         global $wpdb;
 
-		$values = array( 'item_id' => $entry_id, 'field_id' => $field_id );
-		$where_values = $values;
+        $values = $where_values = array( 'item_id' => $entry_id, 'field_id' => $field_id );
         $values['meta_value'] = $meta_value;
         $values = apply_filters('frm_update_entry_meta', $values);
 		if ( is_array($values['meta_value']) ) {
@@ -323,8 +322,7 @@ class FrmEntryMeta {
             return;
         }
 
-		$draft_where = '';
-		$user_where = '';
+		$draft_where = $user_where = '';
         if ( ! $args['is_draft'] ) {
 			$draft_where = $wpdb->prepare( ' AND e.is_draft=%d', 0 );
         } else if ( $args['is_draft'] == 1 ) {
