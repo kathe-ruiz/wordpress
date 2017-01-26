@@ -33,7 +33,6 @@ Thumbs.db
 !/wp-content/mu-plugins/advanced-custom-fields-pro
 # Forms plugin required with license
 !/wp-content/mu-plugins/formidable
-!/wp-content/mu-plugins/wpaasp-customizer
 
 # OPTIONAL PLUGINS that need to be in the REPO
 !/wp-content/plugins/live-composer-page-builder
