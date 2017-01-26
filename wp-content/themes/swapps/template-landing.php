@@ -2,28 +2,30 @@
 /**
  * Template Name: Landing
  */
+
+
 ?>
 <?php $rows = get_field('field_rows'); ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
+  <?php $class_css = ""; ?>
   <section
-  class="<?php
-  if ($row['custom_background']) {
-    echo $row['background_color'];
-  }
-  echo ($key == 0) ?  ' sliders-main ' : '';
+  <?php if ($row['custom_background']): ?>
+    <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)"
+      <?php $class_css .= " bg-image "; ?>
+    <?php endif; ?>
+    <?php if ($row['background_color']): ?>
+      <?php $class_css .= $row['background_color']; ?>
+    <?php endif ?>
+  <?php endif ?>
+  <?php $class_css .= ($key == 0) ?  ' sliders-main ' : ''; ?>
+  <?php
   if ($key != 0){
-    if ($row['row_items'][0]['acf_fc_layout'] == 'text_slider') {
-      echo ' sliders-secondary ';
-    } else{
-      echo ' home-section ';
-    }
+    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'text_slider') ? ' sliders-secondary ' : ' home-section ';
+    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'video') ? ' video ' : '';
   };
-  if ($row['row_items'][0]['acf_fc_layout'] == 'video') {
-    echo ' video ';
-  };
-  ?>"
-  <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)" <?php endif; ?>>
+  ?>
+  class="<?php echo $class_css ?>">
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
       switch($row_item['acf_fc_layout']){
