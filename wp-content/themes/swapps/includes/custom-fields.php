@@ -1336,7 +1336,7 @@ acf_add_local_field_group(array (
                   'label' => 'Video URL',
                   'name' => 'video_url',
                   'type' => 'url',
-                  'instructions' => 'Provide a Vimeo or Youtube URL',
+                  'instructions' => 'Provide a Mp4, Vimeo or Youtube URL',
                   'required' => 0,
                   'conditional_logic' => 0,
                   'wrapper' => array (

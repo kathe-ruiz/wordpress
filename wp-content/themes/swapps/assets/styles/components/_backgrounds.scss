@@ -14,3 +14,6 @@
   background: $navbar-inverse-bg;
   @include text-contrast($navbar-inverse-bg);
 }
+.bg-image{
+  @include responsive-bg;
+}
