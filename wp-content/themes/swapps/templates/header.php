@@ -1,5 +1,5 @@
 <header class="header">
-  <nav class="navbar
+  <nav id="autocollapse" class="navbar
   <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_header_color')): ?>
   <?php echo wpaasp_options('site_options_header_color') ?>
   <?php else: ?>
@@ -7,8 +7,7 @@
   <?php endif ?>
   <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_secondary_navbar_position')): ?>
   <?php echo wpaasp_options('site_options_secondary_navbar_position') ?>
-  <?php endif ?>
-  ">
+  <?php endif ?>">
     <div class="container-fluid row-lg-centered">
       <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
