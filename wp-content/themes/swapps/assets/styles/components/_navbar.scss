@@ -125,7 +125,7 @@
       margin-right: 15px;
       //margin-top: 15px;
       @media (min-width: $screen-lg-min){
-        order: 2;        
+        order: 2;
       }
     }
     .fa{
@@ -193,5 +193,10 @@
       clear: both;
       display: none;
     }
+  }
+}
+.admin-bar{
+  .navbar-fixed-top{
+    padding-top: 35px;
   }
 }

@@ -1,12 +1,6 @@
 .image-text{
   padding: 111px 0px;
-  &__content{
-    display: flex;
-  }
-  &__content--reverse{
-    display: flex;
-    flex-direction: row-reverse;
-  }
+
   &__btn{
     text-transform: uppercase;
     margin-top: 40px;
