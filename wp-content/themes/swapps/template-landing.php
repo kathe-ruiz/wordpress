@@ -71,11 +71,12 @@
   <?php include ("template-home.php") ?>
 <?php endif ?>
 
-
-<section>
-  <h1>Debug Vars</h1>
-  <pre>
-    <?php echo the_field('field_row_background_color') ?>
-    <?php print_r($rows); ?>
-  </pre>
-</section>
+<?php if (WP_DEBUG): ?>
+  <section>
+    <h1>Debug Vars</h1>
+    <pre>
+      <?php echo the_field('field_row_background_color') ?>
+      <?php print_r($rows); ?>
+    </pre>
+  </section>
+<?php endif ?>
