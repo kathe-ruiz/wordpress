@@ -33,12 +33,8 @@
     }
     .menu-item.active{
       a{
-        background-color: $gray-dark;
-        color: $navbar-default-link-color;
-        &:hover,
-        &:focus{
-          color: $navbar-default-link-color;
-        }
+        background-color: transparent;
+        color: $brand-primary;
       }
     }
   }
