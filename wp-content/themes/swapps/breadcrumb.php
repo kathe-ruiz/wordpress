@@ -1,9 +1,9 @@
-<?php  
+<?php
 
 if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 	function swapps_breadcrumbs( $args = array() ) {
 
-		if ( is_front_page() || is_page_template('template-landing.php')) {
+		if ( is_front_page() ) {
 			return;
 		}
 
