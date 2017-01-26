@@ -31,6 +31,16 @@
         }
       }
     }
+    .menu-item.active{
+      a{
+        background-color: $gray-dark;
+        color: $navbar-default-link-color;
+        &:hover,
+        &:focus{
+          color: $navbar-default-link-color;
+        }
+      }
+    }
   }
   .navbar__btn{
     color: inherit;
@@ -86,6 +96,7 @@
   padding: 10px 0;
   @media (min-width: $grid-float-breakpoint){
     // padding-top: 0;
+
   }
   border-left:0;
   border-right: 0px;
@@ -95,6 +106,11 @@
   margin-bottom: 0px;
   &__menu{
     // margin-top: 11px;
+    .menu-item.active{
+      a{
+        border-radius: $btn-border-radius-base;
+      }
+    }
   }
   &__logo{
     @media (min-width: $grid-float-breakpoint){
@@ -160,6 +176,11 @@
     }
     &__menu{
       clear: both;
+      .menu-item.active{
+        a{
+          border-radius: 0px;
+        }
+      }
     }
     &__btn{
       &--compact{
