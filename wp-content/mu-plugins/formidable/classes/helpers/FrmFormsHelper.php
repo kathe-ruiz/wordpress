@@ -265,11 +265,14 @@ class FrmFormsHelper {
      */
 	public static function get_default_html( $loc ) {
 		if ( $loc == 'submit' ) {
+            $sending = __( 'Sending', 'formidable' );
             $draft_link = self::get_draft_link();
+            $img = '[frmurl]/images/ajax_loader.gif';
             $default_html = <<<SUBMIT_HTML
 <div class="frm_submit">
-[if back_button]<button type="submit" name="frm_prev_page" formnovalidate="formnovalidate" class="frm_prev_page" [back_hook]>[back_label]</button>[/if back_button]
-<button class="frm_button_submit" type="submit"  [button_action]>[button_label]</button>
+[if back_button]<input type="button" value="[back_label]" name="frm_prev_page" formnovalidate="formnovalidate" class="frm_prev_page" [back_hook] />[/if back_button]
+<input type="submit" value="[button_label]" [button_action] />
+<img class="frm_ajax_loading" src="$img" alt="$sending"/>
 $draft_link
 </div>
 SUBMIT_HTML;
@@ -292,29 +295,23 @@ BEFORE_HTML;
     }
 
 	public static function get_custom_submit( $html, $form, $submit, $form_action, $values ) {
-		$button = self::replace_shortcodes( $html, $form, $submit, $form_action, $values );
-		if ( ! strpos( $button, '[button_action]' ) ) {
-			echo $button;
-			return;
-		}
+        $button = self::replace_shortcodes($html, $form, $submit, $form_action, $values);
+        if ( ! strpos($button, '[button_action]') ) {
+            return;
+        }
 
-		$button_parts = explode( '[button_action]', $button );
+        $button_parts = explode('[button_action]', $button);
+        echo $button_parts[0];
+        //echo ' id="frm_submit_"';
 
-		$classes = apply_filters( 'frm_submit_button_class', array(), $form );
-		if ( ! empty( $classes ) ) {
-			$classes = implode( ' ', $classes );
-			$button_class = ' class="frm_button_submit';
-			if ( strpos( $button_parts[0], $button_class ) !== false ) {
-				$button_parts[0] = str_replace( $button_class, $button_class . ' ' . esc_attr( $classes ), $button_parts[0] );
-			} else {
-				$button_parts[0] .= ' class="' . esc_attr( $classes ) . '"';
-			}
-		}
+        $classes = apply_filters('frm_submit_button_class', array(), $form);
+        if ( ! empty($classes) ) {
+			echo ' class="' . esc_attr( implode( ' ', $classes ) ) . '"';
+        }
 
-		echo $button_parts[0];
-		do_action( 'frm_submit_button_action', $form, $form_action );
-		echo $button_parts[1];
-	}
+        do_action('frm_submit_button_action', $form, $form_action);
+        echo $button_parts[1];
+    }
 
     /**
      * Automatically add end section fields if they don't exist (2.0 migration)
@@ -328,8 +325,7 @@ BEFORE_HTML;
 		}
 
 		$end_section_values = apply_filters( 'frm_before_field_created', FrmFieldsHelper::setup_new_vars( 'end_divider', $form->id ) );
-		$open = false;
-		$prev_order = false;
+		$open = $prev_order = false;
 		$add_order = 0;
 		$last_field = false;
         foreach ( $fields as $field ) {

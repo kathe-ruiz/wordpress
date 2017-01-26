@@ -34,8 +34,7 @@
 					$sec_name = $section['name'];
 					$sec_anchor = $section['anchor'];
 				} else {
-					$sec_name = $key;
-					$sec_anchor = $key;
+					$sec_anchor = $sec_name = $key;
 				} ?>
 				<li <?php echo ( $a == $sec_anchor . '_settings' ) ? 'class="tabs active"' : '' ?>>
 					<a href="#<?php echo esc_attr( $sec_anchor ) ?>_settings"><?php echo ucfirst( $sec_name ) ?></a>
