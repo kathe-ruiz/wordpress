@@ -31,9 +31,7 @@
           <?php include 'includes/socialmedia.php' ?>
         </div>
         <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
-          <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
-        <?php else: ?>
-          <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+          <a href="tel:<?php echo wpaasp_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></a>
         <?php endif ?>
         <?php
           wp_nav_menu( array(
