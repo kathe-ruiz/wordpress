@@ -170,3 +170,286 @@ msgstr ""
 #. Template Name of the plugin/theme
 msgid "Style Guide Template"
 msgstr ""
+
+#: 404.php:3
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: base.php:15
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+
+#: breadcrumb.php:15
+msgid "Home"
+msgstr ""
+
+#: breadcrumb.php:102
+msgid "Error 404"
+msgstr ""
+
+#: functions.php:23
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: functions.php:43
+msgid "Theme Menu"
+msgstr ""
+
+#: functions.php:75
+msgid "Sliders"
+msgstr ""
+
+#: functions.php:79
+msgid "Main Slider"
+msgstr ""
+
+#: functions.php:102
+msgid "Secondary slider"
+msgstr ""
+
+#: home.php:4 index.php:3 search.php:3 template-home.php:10
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: includes/custom-fields.php:17
+msgid "Custom Background"
+msgstr ""
+
+#: includes/custom-fields.php:46
+msgid "Background Color"
+msgstr ""
+
+#: includes/custom-fields.php:78
+msgid "Background Image"
+msgstr ""
+
+#: includes/custom-fields.php:103
+msgid "Full Width Slider"
+msgstr ""
+
+#: includes/custom-fields.php:117 includes/custom-fields.php:298
+msgid "Slider"
+msgstr ""
+
+#: includes/custom-fields.php:136 includes/custom-fields.php:146
+#: includes/custom-fields.php:1125 includes/custom-fields.php:1216
+msgid "Title"
+msgstr ""
+
+#: includes/custom-fields.php:165
+msgid "Subtitle"
+msgstr ""
+
+#: includes/custom-fields.php:184 includes/custom-fields.php:196
+msgid "Text"
+msgstr ""
+
+#: includes/custom-fields.php:215
+msgid "Texts"
+msgstr ""
+
+#: includes/custom-fields.php:234
+msgid "Button"
+msgstr ""
+
+#: includes/custom-fields.php:244
+msgid "Label"
+msgstr ""
+
+#: includes/custom-fields.php:265
+msgid "Link"
+msgstr ""
+
+#: includes/custom-fields.php:284
+msgid "Text Slider"
+msgstr ""
+
+#: includes/custom-fields.php:317 includes/custom-fields.php:333
+msgid "Gallery"
+msgstr ""
+
+#: includes/custom-fields.php:352
+msgid "Images Grid"
+msgstr ""
+
+#: includes/custom-fields.php:367
+msgid "Grid Type"
+msgstr ""
+
+#: includes/custom-fields.php:391 includes/custom-fields.php:1197
+msgid "Image"
+msgstr ""
+
+#: includes/custom-fields.php:1098 includes/custom-fields.php:1393
+msgid "Icon"
+msgstr ""
+
+#: includes/custom-fields.php:1144 includes/custom-fields.php:1235
+msgid "Description"
+msgstr ""
+
+#: includes/custom-fields.php:1163
+msgid "Grid Elements"
+msgstr ""
+
+#: includes/custom-fields.php:1182
+msgid "Image Text Button"
+msgstr ""
+
+#: includes/custom-fields.php:1254
+msgid "Include button"
+msgstr ""
+
+#: includes/custom-fields.php:1273
+msgid "Button Label"
+msgstr ""
+
+#: includes/custom-fields.php:1302
+msgid "Button Link"
+msgstr ""
+
+#: includes/custom-fields.php:1329
+msgid "Video"
+msgstr ""
+
+#: includes/custom-fields.php:1336
+msgid "Video URL"
+msgstr ""
+
+#: includes/custom-fields.php:1355
+msgid "Video Title"
+msgstr ""
+
+#: includes/custom-fields.php:1374
+msgid "Video Description"
+msgstr ""
+
+#: includes/custom-fields.php:2081
+msgid "Centered Icon"
+msgstr ""
+
+#: includes/custom-fields.php:2100 includes/custom-fields.php:2109
+msgid "Map"
+msgstr ""
+
+#: includes/custom-fields.php:2128
+msgid "Marker description"
+msgstr ""
+
+#: includes/custom-fields.php:2152
+msgid "Marker image"
+msgstr ""
+
+#: includes/custom-fields.php:2173
+msgid "Row Items"
+msgstr ""
+
+#: includes/custom-fields.php:2192
+msgid "Page Rows"
+msgstr ""
+
+#: includes/custom-pagination.php:14
+msgid "«"
+msgstr ""
+
+#: includes/custom-pagination.php:15
+msgid "»"
+msgstr ""
+
+#: lib/extras.php:31
+msgid "Continued"
+msgstr ""
+
+#: lib/setup.php:30
+msgid "Primary Navigation"
+msgstr ""
+
+#: lib/setup.php:58
+msgid "Primary"
+msgstr ""
+
+#: lib/setup.php:67
+msgid "Footer"
+msgstr ""
+
+#: lib/titles.php:13
+msgid "Latest Posts"
+msgstr ""
+
+#: lib/titles.php:18
+msgid "Search Results for %s"
+msgstr ""
+
+#: lib/titles.php:20
+msgid "Not Found"
+msgstr ""
+
+#: searchform.php:8 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search …"
+msgstr ""
+
+#: templates/comments.php:9
+msgctxt "comments title"
+msgid "One response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/comments.php:19
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/comments.php:22
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/content-page.php:2
+msgid "Pages:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Swapps Theme"
+msgstr ""
+
+#. #-#-#-#-#  swapps.pot (Swapps Theme 0.2.0)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#. #-#-#-#-#  swapps.pot (Swapps Theme 0.2.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://swapps.io/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Swapps custom theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Swapps"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Home Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Landing"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Map Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Style Guide Template"
+msgstr ""
