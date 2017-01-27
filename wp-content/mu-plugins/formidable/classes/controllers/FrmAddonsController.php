@@ -71,7 +71,7 @@ class FrmAddonsController {
 			),
 			'autoresponder' => array(
 				'title'   => 'Form Action Automation',
-				'docs'    => 'schedule-autoresponder/',
+				'docs'    => 'formidable-autoresponder/',
 				'excerpt' => 'Schedule email notifications, SMS messages, and API actions.',
 			),
 			'modal' => array(
@@ -140,7 +140,7 @@ class FrmAddonsController {
 	private static function prepare_addons( &$addons ) {
 		$activate_url = '';
 		if ( current_user_can( 'activate_plugins' ) ) {
-			$activate_url = add_query_arg( array( 'action' => 'activate' ), admin_url( 'plugins.php' ) );
+			$activate_url = add_query_arg( array( 'action' => 'activate' ), network_admin_url( 'plugins.php' ) );
 		}
 
 		$loop_addons = $addons;
