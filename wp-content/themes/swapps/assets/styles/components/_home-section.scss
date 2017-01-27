@@ -4,7 +4,18 @@
     padding-bottom: 50px;
   }
   @media (min-width: $screen-sm-min){
+    padding-top: 50px;
+    .heading{
+      margin-bottom: 50px;
+    }
+  }
+  &:first-child{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
+  }
+}
+section.home-sention{
+  &:first-of-type{
+    padding-top: 100px;
   }
 }
