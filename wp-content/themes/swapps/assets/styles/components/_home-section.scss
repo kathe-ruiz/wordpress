@@ -1,7 +1,7 @@
 .home-section{
   @media (max-width: $screen-xs-max){
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   @media (min-width: $screen-sm-min){
     padding-top: 50px;
@@ -12,10 +12,5 @@
   &:first-child{
     padding-top: 100px;
     padding-bottom: 0px;
-  }
-}
-section.home-sention{
-  &:first-of-type{
-    padding-top: 100px;
   }
 }
