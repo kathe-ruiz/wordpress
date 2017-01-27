@@ -11,9 +11,14 @@
   @media (max-width: $screen-sm) {
     padding-top: 25px;
     padding-bottom: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
     &__content{
       display: block;
       text-align: center;
+    }
+    .heading__text{
+      text-align: justify;
     }
     &__btn{
       position: inherit;
