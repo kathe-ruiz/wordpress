@@ -1,10 +1,10 @@
-# Copyright (C) 2017 Roots
+# Copyright (C) 2017 Swapps
 # This file is distributed under the MIT License.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sage Starter Theme 8.5.0\n"
+"Project-Id-Version: Swapps Theme 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/swapps\n"
-"POT-Creation-Date: 2017-01-20 20:26:41+00:00\n"
+"POT-Creation-Date: 2017-01-27 13:08:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,8 +34,20 @@ msgstr ""
 msgid "Error locating %s for inclusion"
 msgstr ""
 
-#: functions.php:37
+#: functions.php:43
 msgid "Theme Menu"
+msgstr ""
+
+#: functions.php:75
+msgid "Sliders"
+msgstr ""
+
+#: functions.php:79
+msgid "Main Slider"
+msgstr ""
+
+#: functions.php:102
+msgid "Secondary slider"
 msgstr ""
 
 #: home.php:4 index.php:3 search.php:3 template-home.php:10
@@ -132,29 +144,30 @@ msgid "Pages:"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Sage Starter Theme"
+msgid "Swapps Theme"
 msgstr ""
 
+#. #-#-#-#-#  swapps.pot (Swapps Theme 0.2.0)  #-#-#-#-#
 #. Theme URI of the plugin/theme
-msgid "https://roots.io/sage/"
+#. #-#-#-#-#  swapps.pot (Swapps Theme 0.2.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://swapps.io/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
-"\">Contribute on GitHub</a>"
+msgid "Swapps custom theme"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Roots"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://roots.io/"
+msgid "Swapps"
 msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Home Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Landing"
 msgstr ""
 
 #. Template Name of the plugin/theme

@@ -13,7 +13,7 @@ acf_add_local_field_group(array (
           'ui' => 1,
           'ui_on_text' => '',
           'ui_off_text' => '',
-          'key' => 'field_58881d865122d',
+          'key' => 'field_custom_background',
           'label' => 'Custom Background',
           'name' => 'custom_background',
           'type' => 'true_false',
@@ -51,7 +51,7 @@ acf_add_local_field_group(array (
           'conditional_logic' => array (
             array (
               array (
-                'field' => 'field_58881d865122d',
+                'field' => 'field_custom_background',
                 'operator' => '==',
                 'value' => '1',
               ),
@@ -83,7 +83,7 @@ acf_add_local_field_group(array (
           'conditional_logic' => array (
             array (
               array (
-                'field' => 'field_58881d865122d',
+                'field' => 'field_custom_background',
                 'operator' => '==',
                 'value' => '1',
               ),
@@ -2232,4 +2232,13 @@ function my_acf_init() {
   acf_update_setting('google_api_key', getenv('GOOGLE_API_KEY',"AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY"));
 }
 add_action('acf/init', 'my_acf_init');
+
+
+
+function my_acf_load_field( $field ) {
+  $field['label'] = __($field['label']);
+  return $field;
+}
+// all
+add_filter('acf/load_field', 'my_acf_load_field');
 endif;
