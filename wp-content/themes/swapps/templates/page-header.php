@@ -1,6 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 
-<section class="breadcrumb">
+<section class="breadcrumb bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
