@@ -19,8 +19,12 @@
       </div>
       <div class="navbar__logo navbar-left">
         <a href="/" rel="nofollow">
-        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): ?>
-          <?php echo get_custom_logo(); ?>
+        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): 
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          $custom_logo = $image[0];
+        ?>
+        <img class="custom-logo" src="<?php echo $custom_logo; ?>" />
         <?php else: ?>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
         <?php endif ?>
