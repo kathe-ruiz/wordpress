@@ -13,8 +13,8 @@ acf_add_local_field_group(array (
           'ui' => 1,
           'ui_on_text' => '',
           'ui_off_text' => '',
-          'key' => 'field_58881d865122d',
-          'label' => 'Custom Background',
+          'key' => 'field_custom_background',
+          'label' => __('Custom Background'),
           'name' => 'custom_background',
           'type' => 'true_false',
           'instructions' => '',
@@ -43,15 +43,15 @@ acf_add_local_field_group(array (
           'placeholder' => '',
           'return_format' => 'value',
           'key' => 'field_row_background_color',
-          'label' => 'Background Color',
+          'label' => __('Background Color'),
           'name' => 'background_color',
           'type' => 'select',
-          'instructions' => 'Choose the background of the Row',
+          'instructions' => __('Choose the background of the Row'),
           'required' => 0,
           'conditional_logic' => array (
             array (
               array (
-                'field' => 'field_58881d865122d',
+                'field' => 'field_custom_background',
                 'operator' => '==',
                 'value' => '1',
               ),
@@ -65,7 +65,7 @@ acf_add_local_field_group(array (
         ),
         array (
           'return_format' => 'array',
-          'preview_size' => 'thumbnail',
+          'preview_size' => 'full',
           'library' => 'all',
           'min_width' => '',
           'min_height' => '',
@@ -75,7 +75,7 @@ acf_add_local_field_group(array (
           'max_size' => '',
           'mime_types' => '',
           'key' => 'field_row_background_image',
-          'label' => 'Background Image',
+          'label' => __('Background Image'),
           'name' => 'background_image',
           'type' => 'image',
           'instructions' => '',
@@ -83,7 +83,7 @@ acf_add_local_field_group(array (
           'conditional_logic' => array (
             array (
               array (
-                'field' => 'field_58881d865122d',
+                'field' => 'field_custom_background',
                 'operator' => '==',
                 'value' => '1',
               ),
@@ -100,7 +100,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_full_slider',
               'name' => 'full_slider',
-              'label' => 'Full Width Slider',
+              'label' => __('Full Width Slider'),
               'display' => 'row',
               'sub_fields' => array (
                 array (
@@ -114,10 +114,10 @@ acf_add_local_field_group(array (
                   'return_format' => 'object',
                   'ui' => 1,
                   'key' => 'field_full_slider',
-                  'label' => 'Slider',
+                  'label' => __('Slider'),
                   'name' => 'slider',
                   'type' => 'post_object',
-                  'instructions' => 'Choose the slider you want to Display. To add or edit sliders Click Here</a>',
+                  'instructions' => __('Choose the slider you want to Display. To add or edit sliders Click Here</a>'),
                   'required' => 1,
                   'conditional_logic' => 0,
                   'wrapper' => array (
@@ -133,7 +133,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_title',
               'name' => 'title',
-              'label' => 'Title',
+              'label' => __('Title'),
               'display' => 'block',
               'sub_fields' => array (
                 array (
@@ -143,7 +143,7 @@ acf_add_local_field_group(array (
                   'prepend' => '',
                   'append' => '',
                   'key' => 'field_title_title',
-                  'label' => 'Title',
+                  'label' => __('Title'),
                   'name' => 'title',
                   'type' => 'text',
                   'instructions' => '',
@@ -162,7 +162,7 @@ acf_add_local_field_group(array (
                   'prepend' => '',
                   'append' => '',
                   'key' => 'field_title_subtitle',
-                  'label' => 'Subtitle',
+                  'label' => __('Subtitle'),
                   'name' => 'subtitle',
                   'type' => 'text',
                   'instructions' => '',
@@ -181,7 +181,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_text',
               'name' => 'text',
-              'label' => 'Text',
+              'label' => __('Text'),
               'display' => 'table',
               'sub_fields' => array (
                 array (
@@ -193,7 +193,7 @@ acf_add_local_field_group(array (
                       'default_value' => '',
                       'delay' => 1,
                       'key' => 'field_text_text',
-                      'label' => 'Text',
+                      'label' => __('Text'),
                       'name' => 'text',
                       'type' => 'wysiwyg',
                       'instructions' => '',
@@ -209,10 +209,10 @@ acf_add_local_field_group(array (
                   'min' => 1,
                   'max' => 4,
                   'layout' => 'row',
-                  'button_label' => 'Add Text Column',
+                  'button_label' => __('Add Text Column'),
                   'collapsed' => '',
                   'key' => 'field_588681e6a62ff',
-                  'label' => 'Texts',
+                  'label' => __('Texts'),
                   'name' => 'texts',
                   'type' => 'repeater',
                   'instructions' => '',
@@ -231,7 +231,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_button',
               'name' => 'button',
-              'label' => 'Button',
+              'label' => __('Button'),
               'display' => 'table',
               'sub_fields' => array (
                 array (
@@ -241,7 +241,7 @@ acf_add_local_field_group(array (
                   'prepend' => '',
                   'append' => '',
                   'key' => 'field_button_label',
-                  'label' => 'Label',
+                  'label' => __('Label'),
                   'name' => 'label',
                   'type' => 'text',
                   'instructions' => '',
@@ -262,7 +262,7 @@ acf_add_local_field_group(array (
                   'multiple' => 0,
                   'allow_archives' => 1,
                   'key' => 'field_button_link',
-                  'label' => 'Link',
+                  'label' => __('Link'),
                   'name' => 'link',
                   'type' => 'page_link',
                   'instructions' => '',
@@ -281,7 +281,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layot_text_slider',
               'name' => 'text_slider',
-              'label' => 'Text Slider',
+              'label' => __('Text Slider'),
               'display' => 'table',
               'sub_fields' => array (
                 array (
@@ -295,7 +295,7 @@ acf_add_local_field_group(array (
                   'return_format' => 'object',
                   'ui' => 1,
                   'key' => 'field_text_slider_slider',
-                  'label' => 'Slider',
+                  'label' => __('Slider'),
                   'name' => 'slider',
                   'type' => 'post_object',
                   'instructions' => '',
@@ -314,7 +314,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_gallery',
               'name' => 'gallery',
-              'label' => 'Gallery',
+              'label' => __('Gallery'),
               'display' => 'table',
               'sub_fields' => array (
                 array (
@@ -330,10 +330,10 @@ acf_add_local_field_group(array (
                   'mime_types' => '',
                   'insert' => 'append',
                   'key' => 'field_gallery_gallery',
-                  'label' => 'Gallery',
+                  'label' => __('Gallery'),
                   'name' => 'gallery',
                   'type' => 'gallery',
-                  'instructions' => 'Choose the gallery to use',
+                  'instructions' => __('Choose the gallery to use'),
                   'required' => 0,
                   'conditional_logic' => 0,
                   'wrapper' => array (
@@ -349,7 +349,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_images_grid',
               'name' => 'images_grid',
-              'label' => 'Images Grid',
+              'label' => __('Images Grid'),
               'display' => 'block',
               'sub_fields' => array (
                 array (
@@ -364,7 +364,7 @@ acf_add_local_field_group(array (
                   'allow_null' => 0,
                   'return_format' => 'value',
                   'key' => 'field_images_grid_type',
-                  'label' => 'Grid Type',
+                  'label' => __('Grid Type'),
                   'name' => 'grid_type',
                   'type' => 'radio',
                   'instructions' => '',
@@ -388,7 +388,7 @@ acf_add_local_field_group(array (
                       'library' => 'all',
                       'retina_mode' => 'no',
                       'key' => 'field_images_grid_image',
-                      'label' => 'Image',
+                      'label' => __('Image'),
                       'name' => 'image',
                       'type' => 'image_crop',
                       'instructions' => '',
@@ -1095,7 +1095,7 @@ acf_add_local_field_group(array (
                         'fa-youtube-square' => '&#xf166; fa-youtube-square',
                       ),
                       'key' => 'field_images_grid_icon',
-                      'label' => 'Icon',
+                      'label' => __('Icon'),
                       'name' => 'font_icon',
                       'type' => 'font-awesome',
                       'instructions' => '',
@@ -1122,7 +1122,7 @@ acf_add_local_field_group(array (
                       'prepend' => '',
                       'append' => '',
                       'key' => 'field_images_grid_title',
-                      'label' => 'Title',
+                      'label' => __('Title'),
                       'name' => 'title',
                       'type' => 'text',
                       'instructions' => '',
@@ -1141,7 +1141,7 @@ acf_add_local_field_group(array (
                       'placeholder' => '',
                       'rows' => 3,
                       'key' => 'field_images_grid_description',
-                      'label' => 'Description',
+                      'label' => __('Description'),
                       'name' => 'description',
                       'type' => 'textarea',
                       'instructions' => '',
@@ -1157,10 +1157,10 @@ acf_add_local_field_group(array (
                   'min' => 1,
                   'max' => 4,
                   'layout' => 'table',
-                  'button_label' => 'Add Grid Element',
+                  'button_label' => __('Add Grid Element'),
                   'collapsed' => '',
                   'key' => 'field_grid_elements',
-                  'label' => 'Grid Elements',
+                  'label' => __('Grid Elements'),
                   'name' => 'grid_elements',
                   'type' => 'repeater',
                   'instructions' => '',
@@ -1179,7 +1179,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_grid_text_button_image',
               'name' => 'image_text_button',
-              'label' => 'Image Text Button',
+              'label' => __('Image Text Button'),
               'display' => 'block',
               'sub_fields' => array (
                 array (
@@ -1194,7 +1194,7 @@ acf_add_local_field_group(array (
                   'max_size' => '',
                   'mime_types' => '',
                   'key' => 'grid_text_button_image_image',
-                  'label' => 'Image',
+                  'label' => __('Image'),
                   'name' => 'image',
                   'type' => 'image',
                   'instructions' => '',
@@ -1213,7 +1213,7 @@ acf_add_local_field_group(array (
                   'prepend' => '',
                   'append' => '',
                   'key' => 'grid_text_button_image_title',
-                  'label' => 'Title',
+                  'label' => __('Title'),
                   'name' => 'title',
                   'type' => 'text',
                   'instructions' => '',
@@ -1232,7 +1232,7 @@ acf_add_local_field_group(array (
                   'default_value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nesciunt reiciendis natus provident impedit, autem nulla odit fugiat tempora inventore ad hic, neque ratione veritatis.',
                   'delay' => 1,
                   'key' => 'grid_text_button_image_description',
-                  'label' => 'Description',
+                  'label' => __('Description'),
                   'name' => 'description',
                   'type' => 'wysiwyg',
                   'instructions' => '',
@@ -1251,7 +1251,7 @@ acf_add_local_field_group(array (
                   'ui_on_text' => '',
                   'ui_off_text' => '',
                   'key' => 'grid_text_button_image_include_button',
-                  'label' => 'Include button',
+                  'label' => __('Include button'),
                   'name' => 'include_button',
                   'type' => 'true_false',
                   'instructions' => '',
@@ -1270,7 +1270,7 @@ acf_add_local_field_group(array (
                   'prepend' => '',
                   'append' => '',
                   'key' => 'grid_text_button_image_button_label',
-                  'label' => 'Button Label',
+                  'label' => __('Button Label'),
                   'name' => 'button_label',
                   'type' => 'text',
                   'instructions' => '',
@@ -1299,7 +1299,7 @@ acf_add_local_field_group(array (
                   'multiple' => 0,
                   'allow_archives' => 1,
                   'key' => 'grid_text_button_image_button_link',
-                  'label' => 'Button Link',
+                  'label' => __('Button Link'),
                   'name' => 'button_link',
                   'type' => 'page_link',
                   'instructions' => '',
@@ -1326,17 +1326,17 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_video',
               'name' => 'video',
-              'label' => 'Video',
+              'label' => __('Video'),
               'display' => 'block',
               'sub_fields' => array (
                 array (
                   'default_value' => '',
                   'placeholder' => '',
                   'key' => 'field_video_url',
-                  'label' => 'Video URL',
+                  'label' => __('Video URL'),
                   'name' => 'video_url',
                   'type' => 'url',
-                  'instructions' => 'Provide a Mp4, Vimeo or Youtube URL',
+                  'instructions' => __('Provide a Mp4, Vimeo or Youtube URL'),
                   'required' => 0,
                   'conditional_logic' => 0,
                   'wrapper' => array (
@@ -1352,7 +1352,7 @@ acf_add_local_field_group(array (
                   'prepend' => '',
                   'append' => '',
                   'key' => 'field_video_title',
-                  'label' => 'Video Title',
+                  'label' => __('Video Title'),
                   'name' => 'video_title',
                   'type' => 'text',
                   'instructions' => '',
@@ -1371,7 +1371,7 @@ acf_add_local_field_group(array (
                   'placeholder' => '',
                   'rows' => 3,
                   'key' => 'field_video_description',
-                  'label' => 'Video Description',
+                  'label' => __('Video Description'),
                   'name' => 'video_description',
                   'type' => 'textarea',
                   'instructions' => '',
@@ -1390,7 +1390,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_icon',
               'name' => 'icon',
-              'label' => 'Icon',
+              'label' => __('Icon'),
               'display' => 'block',
               'sub_fields' => array (
                 array (
@@ -2078,7 +2078,7 @@ acf_add_local_field_group(array (
                     'fa-youtube-square' => '&#xf166; fa-youtube-square',
                   ),
                   'key' => 'field_icon_icon',
-                  'label' => 'Centered Icon',
+                  'label' => __('Centered Icon'),
                   'name' => 'icon',
                   'type' => 'font-awesome',
                   'instructions' => '',
@@ -2097,7 +2097,7 @@ acf_add_local_field_group(array (
             array (
               'key' => 'layout_map',
               'name' => 'map',
-              'label' => 'Map',
+              'label' => __('Map'),
               'display' => 'block',
               'sub_fields' => array (
                 array (
@@ -2106,7 +2106,7 @@ acf_add_local_field_group(array (
                   'center_lng' => '',
                   'zoom' => '',
                   'key' => 'field_map_map',
-                  'label' => 'Map',
+                  'label' => __('Map'),
                   'name' => 'map',
                   'type' => 'google_map',
                   'instructions' => '',
@@ -2125,10 +2125,10 @@ acf_add_local_field_group(array (
                   'placeholder' => '',
                   'rows' => 4,
                   'key' => 'field_map_marker_description',
-                  'label' => 'Marker description',
+                  'label' => __('Marker description'),
                   'name' => 'marker_description',
                   'type' => 'textarea',
-                  'instructions' => 'Text to be displayed above the map marker',
+                  'instructions' => _('Text to be displayed above the map marker'),
                   'required' => 0,
                   'conditional_logic' => 0,
                   'wrapper' => array (
@@ -2149,7 +2149,7 @@ acf_add_local_field_group(array (
                   'max_size' => '',
                   'mime_types' => 'PNG',
                   'key' => 'field_map_marker_image',
-                  'label' => 'Marker image',
+                  'label' => __('Marker image'),
                   'name' => 'marker_image',
                   'type' => 'image',
                   'instructions' => '',
@@ -2168,12 +2168,12 @@ acf_add_local_field_group(array (
           ),
           'min' => 1,
           'max' => '',
-          'button_label' => 'Add Item',
+          'button_label' => __('Add Item'),
           'key' => 'field_row_items',
-          'label' => 'Row Items',
+          'label' => __('Row Items'),
           'name' => 'row_items',
           'type' => 'flexible_content',
-          'instructions' => 'Add the items you need for the row',
+          'instructions' => __('Add the items you need for the row'),
           'required' => 1,
           'conditional_logic' => 0,
           'wrapper' => array (
@@ -2186,13 +2186,13 @@ acf_add_local_field_group(array (
       'min' => 1,
       'max' => 0,
       'layout' => 'block',
-      'button_label' => 'Add Row',
+      'button_label' => __('Add Row'),
       'collapsed' => 'field_row_items',
       'key' => 'field_rows',
-      'label' => 'Page Rows',
+      'label' => __('Page Rows'),
       'name' => 'row',
       'type' => 'repeater',
-      'instructions' => 'Add as many rows as you need. Every Row can have one or more Row Items',
+      'instructions' => __('Add as many rows as you need. Every Row can have one or more Row Items'),
       'required' => 0,
       'conditional_logic' => 0,
       'wrapper' => array (
@@ -2232,4 +2232,5 @@ function my_acf_init() {
   acf_update_setting('google_api_key', getenv('GOOGLE_API_KEY',"AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY"));
 }
 add_action('acf/init', 'my_acf_init');
+
 endif;
