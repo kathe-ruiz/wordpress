@@ -11,30 +11,47 @@
       </div>
       <?php get_search_form(); ?>
     <?php endif; ?>
-    <?php // $main_slider = get_sw_slider('Main') ?>
 
-    <?php // if($main_slider): ?>
-      <?php // $slides = get_slides_array($main_slider); ?>
+    <?php
+      if (get_field("slider_1")) {
+        $main_slider = get_field("slider_1");
+      }
+      if (get_field("slider_2")) {
+        $secondary_slider = get_field("slider_2");
+      }
+      // if (get_field("slider_3")) {
+      //   $slider_3 = get_field("slider_3");
+      // }
+    ?>
+
+    <?php if(isset($main_slider)): ?>
+      <?php $slides = get_slides_array($main_slider); ?>
       <div class="owl-carousel owl-theme">
-        <?php // foreach ($slides as $key => $slide): ?>
+        <?php foreach ($slides as $key => $slide): ?>
           <?php
-            // $image = $slide['image'];
-            // $title = $slide['title'];
-            // $description = $slide['description'];
-            // $link = $slide['link'];
-            // $cta = $slide['call_to_action_text'];
+            $image = $slide['image'];
+            $title = $slide['title'];
+            $description = $slide['description'];
+            $link = $slide['link'];
+            $cta = $slide['call_to_action_text'];
           ?>
           <div class="item">
-              <!-- <img src="<?php //echo $image['url'] ?>" alt="<?php // echo $image['alt'] ?>" class="img-fluid">
+              <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" class="img-fluid">
               <div class="caption">
-                <?php // if ($title): ?><h2><?php // echo $title ?></h2><?php // endif ?>
-                <?php // if ($description): ?><p><?php // echo $description ?></p><?php // endif ?>
-                <?php // if ($link): ?>
-                <a href="<?php // echo $link ?>" class="btn btn-primary">
-                  <?php //if ($cta): echo $cta; endif; ?>
+                <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
+                <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
+                <?php if ($link): ?>
+                <a href="<?php echo $link ?>" class="btn btn-primary">
+                  <?php if ($cta): echo $cta; endif; ?>
                 </a>
-                <?php // endif ?>
-              </div> -->
+                <?php endif ?>
+              </div>
+            </div>
+        <?php endforeach ?>
+      </div>
+    <?php else: // Hardcoded slider ?>
+      <div class="owl-carousel owl-theme">
+          <div class="item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
               <div class="caption">
                 <h2>Título del slider</h2>
@@ -64,9 +81,8 @@
               </a>
             </div>
           </div>
-        <?php // endforeach ?>
       </div>
-    <?php // endif; ?>
+    <?php endif; ?>
   </section>
   <!-- begin titulo de seccion de dos lineas -->
   <section id="two" class="home-section two-lines">
@@ -99,6 +115,10 @@
           </h4>
         </div>
         <div id="highlights" class="owl-carousel owl-theme highlights">
+            <!-- <div class="highlight-item text-center">
+              <img class="highlight-item__image" src="" alt="">
+              <p class="highlight-item__caption"></p>
+            </div> -->
             <div class="highlight-item text-center">
               <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
               <p class="highlight-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
@@ -121,10 +141,45 @@
   </section>
   <!-- end example of section -->
 
-  <?php // $main_slider = get_sw_slider('Main') ?>
-
-  <?php // if($main_slider): ?>
     <section id="four" class="bg-primary sliders-secondary">
+      <?php if(isset($secondary_slider)): ?>
+      <?php $slides = get_slides_array($secondary_slider); ?>
+      <div class="owl-carousel owl-theme">
+      <?php foreach ($slides as $key => $slide): ?>
+        <?php
+          $image = $slide['image'];
+          $title = $slide['title'];
+          $title_2 = $slide['title_2'];
+          $description = $slide['description'];
+          $link = $slide['link'];
+          $cta = $slide['call_to_action_text'];
+        ?>
+        <div class="item">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+              <?php if ($call_to_action_text): ?>
+                <h4 class="sliders__title text-center"><?php echo $call_to_action_text ?></h4>
+              <?php endif; ?>
+              <?php if ($description): ?>
+                <p class="sliders__text text-secondary"><?php echo $description ?></p>
+              <?php endif; ?>
+              <div class="sliders__divider row">
+                <div class="col-md-6 col-md-offset-3">
+                  <hr>
+                </div>
+              </div>
+              <div class="sliders__footer">
+                <?php if ($title): ?><p><?php echo $title ?></p><?php endif; ?>
+                <?php if ($title_2): ?>
+                  <p class="text-secondary"><?php echo $title_2 ?></p>
+                <?php endif; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+      </div>
+      <?php else: // Hardcoded slider ?>
       <div class="owl-carousel owl-theme">
         <div class="item">
           <div class="row">
@@ -163,8 +218,8 @@
           </div>
         </div>
       </div>
+      <?php endif; ?>
     </section>
-  <?php // endif ?>
 
   <!-- begin example of section -->
   <section id="five" class="container home-section">
@@ -295,13 +350,17 @@
       </div>
     </div>
   </section>
-  <section id="eight" class="video">
+  <section id="eight" class="bg-image video" style="background-image: url(wp-content/themes/swapps/assets/images/video-background.png);">
     <div class="container">
       <div class="row text-center">
         <div class="heading">
           <h2 class="heading__title">Título para módulo<br>de video</h2>
         </div>
-        <i class="fa fa-play-circle video__icon" aria-hidden="true"></i>
+        <!-- <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+        </div>
+        <i class="fa fa-play-circle video__icon" aria-hidden="true"></i> -->
+        <div data-type="youtube" data-video-id="ScMzIvxBSi4"></div>
         <p class="video__text">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit. Cum, quisquam, repudiandae<br>culpa ex ipsam dolore omnis odit a alias.</p>
       </div>
     </div>
@@ -309,7 +368,9 @@
   <section id="nine" class="icons">
     <div class="container">
       <div class="row text-center">
-        <i class="fa fa-angellist fa-11x icons__item" aria-hidden="true"></i>
+        <div class="icons__icon--large">
+          <i class="fa fa-angellist fa-11x icons__item" aria-hidden="true"></i>
+        </div>
         <div class="heading text-center">
           <h2 class="heading__title">Título del módulo</h2>
           <h4 class="heading__subtitle">

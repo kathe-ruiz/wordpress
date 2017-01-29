@@ -9,6 +9,7 @@
 // bower:scss
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/plyr/src/scss/plyr.scss";
 // endbower
 
 @import "common/global";
@@ -20,6 +21,7 @@
 @import "components/fancybox";
 @import "components/backgrounds";
 @import "components/entry-meta";
+@import "components/woocommerce";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/contact-page";

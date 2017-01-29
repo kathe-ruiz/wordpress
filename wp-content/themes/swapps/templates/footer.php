@@ -17,8 +17,8 @@
               <div class="col-lg-6">
                 <div class="footer__info">
                   <span>
+                  <?php if (function_exists('wpaasp_options') && (wpaasp_options('address') || wpaasp_options('city') || wpaasp_options('country'))): ?>
                     <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i> 
-                  <?php if (function_exists('wpaasp_options') && wpaasp_options('address')): ?>
                     <span class="footer__text footer__text--light text-secondary"><?php echo wpaasp_options('address'); ?><br>
                     <?php if (wpaasp_options('city')): ?>
                       <?php echo wpaasp_options('city'); ?>,&nbsp;
@@ -29,34 +29,27 @@
                       Colombia
                     <?php endif ?>
                     </span>
-                  <?php else: ?>
-                    <span class="footer__text footer__text--light text-secondary">Carrera 100 # 5 - 169,<br>Cali, Colombia</span>
                   <?php endif ?>
                   </span>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="footer__info">
-                  <a class="footer__link" 
                     <?php if (function_exists('wpaasp_options') && wpaasp_options('email')): ?>
-                    href="mailto:<?php echo wpaasp_options('email'); ?>"
-                    <?php endif; ?>
-                  >
+                  <a class="footer__link" href="mailto:<?php echo wpaasp_options('email'); ?>">
                     <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
                     <span class="footer__text text-secondary" href="#">
-                    <?php if (function_exists('wpaasp_options') && wpaasp_options('email')): ?>
                       <?php echo wpaasp_options('email'); ?>
-                    <?php else: ?>info@misitioweb.com<?php endif ?></span>
+                    </span>
                   </a>
+                  <?php endif ?>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-1">
             <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
-              <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
-            <?php else: ?>
-              <button class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+              <a href="tel:<?php echo wpaasp_options('phone'); ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></a>
             <?php endif ?>
           </div>
         </div>
@@ -68,7 +61,7 @@
             <?php include 'includes/socialmedia.php' ?>
           </div>
           <div class="footer__copyright col-sm-12 text-right">
-            <span class="text-secondary">&copy; 2017 misitioweb.</span>
+            <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
             <span class="text-secondary">Todos los derechos reservados</span>
           </div>
         </div>

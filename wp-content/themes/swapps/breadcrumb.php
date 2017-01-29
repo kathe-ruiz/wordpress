@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 	function swapps_breadcrumbs( $args = array() ) {

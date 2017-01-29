@@ -31,6 +31,12 @@
         }
       }
     }
+    .menu-item.active{
+      a{
+        background-color: transparent;
+        color: $brand-primary;
+      }
+    }
   }
   .navbar__btn{
     color: inherit;
@@ -86,6 +92,7 @@
   padding: 10px 0;
   @media (min-width: $grid-float-breakpoint){
     // padding-top: 0;
+
   }
   border-left:0;
   border-right: 0px;
@@ -95,13 +102,19 @@
   margin-bottom: 0px;
   &__menu{
     // margin-top: 11px;
+    .menu-item.active{
+      a{
+        border-radius: $btn-border-radius-base;
+      }
+    }
   }
   &__logo{
     @media (min-width: $grid-float-breakpoint){
       //margin-top: 10px;
     }
     img{
-      max-width: 75px;
+      //max-width: 75px;
+      max-height: 45px;
       height: auto;
     }
   }
@@ -113,7 +126,7 @@
       margin-right: 15px;
       //margin-top: 15px;
       @media (min-width: $screen-lg-min){
-        order: 2;        
+        order: 2;
       }
     }
     .fa{
@@ -143,7 +156,7 @@
     &__logo{
       float: left;
       img{
-        width: 65px;
+        //width: 65px;
       }
     }
     &__toggle{
@@ -160,6 +173,11 @@
     }
     &__menu{
       clear: both;
+      .menu-item.active{
+        a{
+          border-radius: 0px;
+        }
+      }
     }
     &__btn{
       &--compact{
@@ -176,5 +194,10 @@
       clear: both;
       display: none;
     }
+  }
+}
+.admin-bar{
+  .navbar-fixed-top{
+    padding-top: 35px;
   }
 }
