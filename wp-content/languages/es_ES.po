@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-30 11:30-0500\n"
+"PO-Revision-Date: 2017-01-30 14:01-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27129,18 +27129,16 @@ msgid ""
 "An old version of WooCommerce Menu Cart is currently activated, you need to "
 "disable or uninstall it for WP Menu Cart to function properly"
 msgstr ""
-"Una versión antigua de WooCommerce Menu Cart se encuentra activa "
-"actualmente, necesita desactivarla o desinstalarla para que WP Menu Cart "
-"funcione correctamente"
+"Una versión antigua de WooCommerce Menu Cart se encuentra activa actualmente, "
+"necesita desactivarla o desinstalarla para que WP Menu Cart funcione correctamente"
 
 #: wp-menu-cart-pro.php:313
 msgid ""
-"The free version of WP Menu Cart is currently activated, you need to disable "
-"or uninstall it for WP Menu Cart Pro to function properly"
+"The free version of WP Menu Cart is currently activated, you need to disable or "
+"uninstall it for WP Menu Cart Pro to function properly"
 msgstr ""
-"La versión gratuita de WP Menu Cart se encuentra activa actualmente, "
-"necesita desactivarla o desinstalarla para que WP Menu Cart Pro funcione "
-"correctamente"
+"La versión gratuita de WP Menu Cart se encuentra activa actualmente, necesita "
+"desactivarla o desinstalarla para que WP Menu Cart Pro funcione correctamente"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-eshop.php:27
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-eshop-pro.php:49
@@ -27167,8 +27165,7 @@ msgstr "Ajustes de Plugin"
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:34
 #: includes/wpmenucart-settings-pro.php:34 includes/wpmenucart-settings.php:34
 msgid "Select which e-commerce plugin you would like Menu Cart to work with"
-msgstr ""
-"Seleccione con qué plugin de e-commerce le gustaría que Menu Cart trabaje"
+msgstr "Seleccione con qué plugin de e-commerce le gustaría que Menu Cart trabaje"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:49
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:61
@@ -27190,95 +27187,82 @@ msgstr "Visualizar icono del carrito compras."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:98
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:108
-#: includes/wpmenucart-settings-pro.php:108
-#: includes/wpmenucart-settings.php:98
+#: includes/wpmenucart-settings-pro.php:108 includes/wpmenucart-settings.php:98
 msgid "Display cart contents in menu fly-out."
 msgstr "Mostrar el contenido del carrito en el menú desplegable."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:111
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:120
-#: includes/wpmenucart-settings-pro.php:120
-#: includes/wpmenucart-settings.php:111
+#: includes/wpmenucart-settings-pro.php:120 includes/wpmenucart-settings.php:111
 msgid "Set maximum number of products to display in fly-out"
 msgstr ""
-"Establecer que la cantidad máxima de productos se muestre en el menú "
-"desplegable"
+"Establecer que la cantidad máxima de productos se muestre en el menú desplegable"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:137
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:145
-#: includes/wpmenucart-settings-pro.php:145
-#: includes/wpmenucart-settings.php:137
+#: includes/wpmenucart-settings-pro.php:145 includes/wpmenucart-settings.php:137
 msgid "Choose a cart icon."
 msgstr "Elija un icono de carrito."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:166
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:174
-#: includes/wpmenucart-settings-pro.php:174
-#: includes/wpmenucart-settings.php:166
+#: includes/wpmenucart-settings-pro.php:174 includes/wpmenucart-settings.php:166
 msgid "What would you like to display in the menu?"
 msgstr "¿Qué le gustaría que aparezca en el menú?"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:174
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:182
-#: includes/wpmenucart-settings-pro.php:182
-#: includes/wpmenucart-settings.php:174
+#: includes/wpmenucart-settings-pro.php:182 includes/wpmenucart-settings.php:174
 msgid "Items Only."
 msgstr "Sólo Items."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:175
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:183
-#: includes/wpmenucart-settings-pro.php:183
-#: includes/wpmenucart-settings.php:175
+#: includes/wpmenucart-settings-pro.php:183 includes/wpmenucart-settings.php:175
 msgid "Price Only."
 msgstr "Sólo Precio."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:176
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:184
-#: includes/wpmenucart-settings-pro.php:184
-#: includes/wpmenucart-settings.php:176
+#: includes/wpmenucart-settings-pro.php:184 includes/wpmenucart-settings.php:176
 msgid "Both price and items."
 msgstr "Tanto el precio como los items."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:183
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:191
-#: includes/wpmenucart-settings-pro.php:191
-#: includes/wpmenucart-settings.php:183
+#: includes/wpmenucart-settings-pro.php:191 includes/wpmenucart-settings.php:183
 msgid "Select the alignment that looks best with your menu."
 msgstr "Seleccione la alineación que se vea mejor en su menú."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:191
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:199
-#: includes/wpmenucart-settings-pro.php:199
-#: includes/wpmenucart-settings.php:191
+#: includes/wpmenucart-settings-pro.php:199 includes/wpmenucart-settings.php:191
 msgid "Align Left."
 msgstr "Alinear a la izquierda."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:192
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:200
-#: includes/wpmenucart-settings-pro.php:200
-#: includes/wpmenucart-settings.php:192
+#: includes/wpmenucart-settings-pro.php:200 includes/wpmenucart-settings.php:192
 msgid "Align Right."
 msgstr "Alinear a la derecha."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:193
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:201
-#: includes/wpmenucart-settings-pro.php:201
-#: includes/wpmenucart-settings.php:193
+#: includes/wpmenucart-settings-pro.php:201 includes/wpmenucart-settings.php:193
 msgid "Default Menu Alignment."
 msgstr "Alineación de menú predeterminada."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:200
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:208
-#: includes/wpmenucart-settings-pro.php:208
-#: includes/wpmenucart-settings.php:200
+#: includes/wpmenucart-settings-pro.php:208 includes/wpmenucart-settings.php:200
 msgid "Enter a custom CSS class (optional)"
 msgstr "Introducir una clase CSS personalizada (opcional)"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:221
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:658
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:600
-#: includes/wpmenucart-settings-pro.php:600
-#: includes/wpmenucart-settings.php:221 includes/wpmenucart-settings.php:664
+#: includes/wpmenucart-settings-pro.php:600 includes/wpmenucart-settings.php:221
+#: includes/wpmenucart-settings.php:664
 msgid "Menu Cart"
 msgstr "Menu Cart"
 
@@ -27289,8 +27273,7 @@ msgstr "Configuración Menu Cart"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:290
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:298
-#: includes/wpmenucart-settings-pro.php:298
-#: includes/wpmenucart-settings.php:290
+#: includes/wpmenucart-settings-pro.php:298 includes/wpmenucart-settings.php:290
 msgid "WP Menu Cart Pro"
 msgstr "WP Menu Cart Pro"
 
@@ -27312,8 +27295,7 @@ msgstr "¡20% de descuento!"
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:327
 #: includes/wpmenucart-settings.php:327
-msgid ""
-"Includes all the great standard features found in this free version plus:"
+msgid "Includes all the great standard features found in this free version plus:"
 msgstr ""
 "Incluye todas las características estándar que se encuentran en esta versión "
 "gratuita y además:"
@@ -27347,8 +27329,8 @@ msgstr "Actualizaciones automáticas sobre cualquier nueva característica"
 #: includes/wpmenucart-settings.php:338
 #, php-format
 msgid ""
-"Need to see more? %sClick here%s to check it out. Add a product to your cart "
-"and watch what happens!"
+"Need to see more? %sClick here%s to check it out. Add a product to your cart and "
+"watch what happens!"
 msgstr ""
 "¿Necesita ver más? %sHaga click aquí%s para verlo. ¡Añada un producto a su "
 "carrito y vea qué pasa!"
@@ -27366,8 +27348,7 @@ msgstr "¿Quiere su CSS personalizada?"
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:344
 #: includes/wpmenucart-settings.php:344
 msgid "We can do that for you! Just click the button below to check it out."
-msgstr ""
-"¡Podemos hacer eso por usted! Haga clic en el botón de abajo para verlo."
+msgstr "¡Podemos hacer eso por usted! Haga clic en el botón de abajo para verlo."
 
 #: bundles/wp-menu-cart/includes/wpmenucart-settings.php:346
 #: includes/wpmenucart-settings.php:346
@@ -27392,8 +27373,8 @@ msgstr "Los iconos adicionales sólo están disponibles en"
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:47
 #: includes/wpmenucart-settings-pro.php:47
 msgid ""
-"Enter your order confirmation number to receive automated updates "
-"(<i>format: #xxxxx</i>)"
+"Enter your order confirmation number to receive automated updates (<i>format: "
+"#xxxxx</i>)"
 msgstr ""
 "Ingrese su número de confirmación para recibir actualizaciones automáticas  "
 "(<i>format: #xxxxx</i>)"
@@ -27416,36 +27397,34 @@ msgid ""
 "<strong>proservice</strong> at checkout. For support, visit %s or email %s"
 msgstr ""
 "Para nuestro servicio de CSS personalizada %sHaga click aquí%s. Asegúrese de "
-"utilizar el código de descuento <strong>proservice</strong> en la pantalla "
-"de compra. Por soporte técnico, visite%s o envíenos un e-mail %s"
+"utilizar el código de descuento <strong>proservice</strong> en la pantalla de "
+"compra. Por soporte técnico, visite%s o envíenos un e-mail %s"
 
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-settings-pro.php:561
 #: includes/wpmenucart-settings-pro.php:561
 msgid ""
-"<strong>Please note:</strong> you need to open your website in a new tab/"
-"browser window after updating the cart icon for the change to be visible!"
+"<strong>Please note:</strong> you need to open your website in a new tab/browser "
+"window after updating the cart icon for the change to be visible!"
 msgstr ""
-"<strong>Nota:</strong> ¡Usted necesita abrir su sitio web en una nueva "
-"pestaña/ventana del navegador después de actualizar el icono del carrito "
-"para que el cambio sea visible!"
+"<strong>Nota:</strong> ¡Usted necesita abrir su sitio web en una nueva pestaña/"
+"ventana del navegador después de actualizar el icono del carrito para que el "
+"cambio sea visible!"
 
 #: bundles/wp-menu-cart-pro/includes/wpmenucart-updater.php:76
 #: includes/wpmenucart-updater.php:76
 msgid ""
-"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
-"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?\" "
+"onclick=\"document.location.reload(); return false;\">Try again</a>"
 msgstr ""
-"Ocurrió un Error HTTP inesperado durante la solicitud de la API.</p> <p><a "
-"href=\"?\" \"  onclick=\"document.location.reload(); return false;"
-"\">Inténtelo de nuevo</a>"
+"Ocurrió un Error HTTP inesperado durante la solicitud de la API.</p> <p><a href="
+"\"?\" \"  onclick=\"document.location.reload(); return false;\">Inténtelo de "
+"nuevo</a>"
 
-#: ../woocommerce-gateway-payulatam.php:42
-#: ../woocommerce-gateway-payulatam.php:243
+#: ../woocommerce-gateway-payulatam.php:42 ../woocommerce-gateway-payulatam.php:243
 msgid "PayU Latam"
 msgstr "PayU Latinoamérica"
 
-#: ../woocommerce-gateway-payulatam.php:43
-#: ../woocommerce-gateway-payulatam.php:244
+#: ../woocommerce-gateway-payulatam.php:43 ../woocommerce-gateway-payulatam.php:244
 msgid "The easiest way to sell and recive payments online in latinamerica"
 msgstr "La forma fácil de vender y recibir pagos por internet en Latinoamérica"
 
@@ -27478,8 +27457,8 @@ msgid ""
 "Pay securely by Credit or Debit Card or Internet Banking through PayU Latam "
 "Secure Servers."
 msgstr ""
-"Pague con tarjeta de crédito, debito o transacción bancaria de forma segura "
-"a través de los servidores seguros de PayU Latinoamérica."
+"Pague con tarjeta de crédito, debito o transacción bancaria de forma segura a "
+"través de los servidores seguros de PayU Latinoamérica."
 
 #: ../woocommerce-gateway-payulatam.php:159
 msgid "This controls the description which the user sees during checkout."
@@ -27489,8 +27468,7 @@ msgstr "Esto controla la descripción que el usuario ve al pagar."
 msgid "Merchant ID"
 msgstr "ID del Vendedor"
 
-#: ../woocommerce-gateway-payulatam.php:165
-#: ../woocommerce-gateway-payulatam.php:177
+#: ../woocommerce-gateway-payulatam.php:165 ../woocommerce-gateway-payulatam.php:177
 msgid "Given to Merchant by PayU Latam"
 msgstr "Identificación del vendedor promocionada por PayU Latinoamérica"
 
@@ -27500,11 +27478,11 @@ msgstr "ID de la Cuenta"
 
 #: ../woocommerce-gateway-payulatam.php:171
 msgid ""
-"Some Countrys (Brasil, Mexico) require this ID, Gived to you by PayU Latam "
-"on regitration."
+"Some Countrys (Brasil, Mexico) require this ID, Gived to you by PayU Latam on "
+"regitration."
 msgstr ""
-"Algunos Países (Brasil, Mexico) requieren esta información proporcionada por "
-"PayU Latinoamérica."
+"Algunos Países (Brasil, Mexico) requieren esta información proporcionada por PayU "
+"Latinoamérica."
 
 #: ../woocommerce-gateway-payulatam.php:175
 msgid "ApiKey"
@@ -27579,11 +27557,10 @@ msgstr "Pagina de regreso"
 
 #: ../woocommerce-gateway-payulatam.php:267
 msgid ""
-"Thank you for your order, please click the button below to pay with PayU "
-"Latam."
+"Thank you for your order, please click the button below to pay with PayU Latam."
 msgstr ""
-"Gracias por su orden, por favor seleccione el botón abajo para pagar con "
-"PayU Latinoamérica."
+"Gracias por su orden, por favor seleccione el botón abajo para pagar con PayU "
+"Latinoamérica."
 
 #: ../woocommerce-gateway-payulatam.php:348
 msgid ""
@@ -27609,109 +27586,86 @@ msgstr "Fallo la petición a PayU Latinoamérica"
 msgid "Payment error: Amounts do not match (Amount "
 msgstr "Error al pagar: Cantidades no coinciden (Cantidad "
 
-#: ../woocommerce-gateway-payulatam.php:485
-#: ../woocommerce-gateway-payulatam.php:487
-#: ../woocommerce-gateway-payulatam.php:595
-#: ../woocommerce-gateway-payulatam.php:597
-#: ../woocommerce-gateway-payulatam.php:705
-#: ../woocommerce-gateway-payulatam.php:707
+#: ../woocommerce-gateway-payulatam.php:485 ../woocommerce-gateway-payulatam.php:487
+#: ../woocommerce-gateway-payulatam.php:595 ../woocommerce-gateway-payulatam.php:597
+#: ../woocommerce-gateway-payulatam.php:705 ../woocommerce-gateway-payulatam.php:707
 #, php-format
 msgid "Validation error: PayU Latam amounts do not match (gross %s)."
 msgstr ""
 "Error de Validación: La cantidad pagada en PayU Latinoamérica  no coincide "
 "(Cantidad %s)."
 
-#: ../woocommerce-gateway-payulatam.php:499
-#: ../woocommerce-gateway-payulatam.php:500
-#: ../woocommerce-gateway-payulatam.php:609
-#: ../woocommerce-gateway-payulatam.php:610
-#: ../woocommerce-gateway-payulatam.php:719
-#: ../woocommerce-gateway-payulatam.php:720
+#: ../woocommerce-gateway-payulatam.php:499 ../woocommerce-gateway-payulatam.php:500
+#: ../woocommerce-gateway-payulatam.php:609 ../woocommerce-gateway-payulatam.php:610
+#: ../woocommerce-gateway-payulatam.php:719 ../woocommerce-gateway-payulatam.php:720
 #, php-format
 msgid "Validation error: Payment in PayU Latam comes from another id (%s)."
 msgstr "Error de Validación: El pago en PayU fue hecho a otro Vendedor (%s)."
 
-#: ../woocommerce-gateway-payulatam.php:508
-#: ../woocommerce-gateway-payulatam.php:618
+#: ../woocommerce-gateway-payulatam.php:508 ../woocommerce-gateway-payulatam.php:618
 msgid "Payer PayU Latam email"
 msgstr "Correo Electrónico del comprador en PayU Latinoamérica"
 
-#: ../woocommerce-gateway-payulatam.php:510
-#: ../woocommerce-gateway-payulatam.php:620
+#: ../woocommerce-gateway-payulatam.php:510 ../woocommerce-gateway-payulatam.php:620
 #: ../woocommerce-gateway-payulatam.php:730
 msgid "Transaction ID"
 msgstr "ID de la transacción"
 
-#: ../woocommerce-gateway-payulatam.php:512
-#: ../woocommerce-gateway-payulatam.php:622
+#: ../woocommerce-gateway-payulatam.php:512 ../woocommerce-gateway-payulatam.php:622
 #: ../woocommerce-gateway-payulatam.php:732
 msgid "Trasability Code"
 msgstr "Código de Trazabilidad"
 
-#: ../woocommerce-gateway-payulatam.php:516
-#: ../woocommerce-gateway-payulatam.php:626
+#: ../woocommerce-gateway-payulatam.php:516 ../woocommerce-gateway-payulatam.php:626
 #: ../woocommerce-gateway-payulatam.php:742
 msgid "Payment type"
 msgstr "Metodo de Pago Usado"
 
-#: ../woocommerce-gateway-payulatam.php:519
-#: ../woocommerce-gateway-payulatam.php:629
+#: ../woocommerce-gateway-payulatam.php:519 ../woocommerce-gateway-payulatam.php:629
 #: ../woocommerce-gateway-payulatam.php:745
 msgid "PayU Latam payment approved"
 msgstr "Pago Aprobado por PayU Latinoamérica"
 
-#: ../woocommerce-gateway-payulatam.php:520
-#: ../woocommerce-gateway-payulatam.php:630
+#: ../woocommerce-gateway-payulatam.php:520 ../woocommerce-gateway-payulatam.php:630
 #: ../woocommerce-gateway-payulatam.php:746
 msgid "PayU Latam Payment Approved"
 msgstr "Pago Aprobado por PayU Latinoamérica"
 
-#: ../woocommerce-gateway-payulatam.php:526
-#: ../woocommerce-gateway-payulatam.php:527
-#: ../woocommerce-gateway-payulatam.php:634
-#: ../woocommerce-gateway-payulatam.php:635
-#: ../woocommerce-gateway-payulatam.php:750
-#: ../woocommerce-gateway-payulatam.php:751
+#: ../woocommerce-gateway-payulatam.php:526 ../woocommerce-gateway-payulatam.php:527
+#: ../woocommerce-gateway-payulatam.php:634 ../woocommerce-gateway-payulatam.php:635
+#: ../woocommerce-gateway-payulatam.php:750 ../woocommerce-gateway-payulatam.php:751
 #, php-format
 msgid "Payment pending: %s"
 msgstr "Pago Pendiente: %s"
 
-#: ../woocommerce-gateway-payulatam.php:532
-#: ../woocommerce-gateway-payulatam.php:640
+#: ../woocommerce-gateway-payulatam.php:532 ../woocommerce-gateway-payulatam.php:640
 #: ../woocommerce-gateway-payulatam.php:756
 msgid "Payment complete."
 msgstr "Pago Completado en PayU Latinoamérica"
 
-#: ../woocommerce-gateway-payulatam.php:557
-#: ../woocommerce-gateway-payulatam.php:562
-#: ../woocommerce-gateway-payulatam.php:563
-#: ../woocommerce-gateway-payulatam.php:648
+#: ../woocommerce-gateway-payulatam.php:557 ../woocommerce-gateway-payulatam.php:562
+#: ../woocommerce-gateway-payulatam.php:563 ../woocommerce-gateway-payulatam.php:648
 #: ../woocommerce-gateway-payulatam.php:764
 #, php-format
 msgid "Payment rejected via PayU Latam. Error type: %s"
 msgstr "Pago Rechazado por PayU Latinoamérica. Tipo de error: %s"
 
-#: ../woocommerce-gateway-payulatam.php:558
-#: ../woocommerce-gateway-payulatam.php:649
+#: ../woocommerce-gateway-payulatam.php:558 ../woocommerce-gateway-payulatam.php:649
 #: ../woocommerce-gateway-payulatam.php:765
 #, php-format
 msgid "Payment rejected via PayU Latam. Error type: %s."
 msgstr "Pago Rechazado por PayU Latinoamérica. Tipo de error: %s"
 
-#: ../woocommerce-gateway-payulatam.php:584
-#: ../woocommerce-gateway-payulatam.php:694
+#: ../woocommerce-gateway-payulatam.php:584 ../woocommerce-gateway-payulatam.php:694
 msgid "Aborting, Order #"
 msgstr "Cancelando, Orden #"
 
-#: ../woocommerce-gateway-payulatam.php:592
-#: ../woocommerce-gateway-payulatam.php:702
+#: ../woocommerce-gateway-payulatam.php:592 ../woocommerce-gateway-payulatam.php:702
 msgid "Payment error: Amounts do not match (amount "
 msgstr "Error al pagar: Las cantidades no coinciden (cantidad "
 
-#: ../woocommerce-gateway-payulatam.php:653
-#: ../woocommerce-gateway-payulatam.php:654
-#: ../woocommerce-gateway-payulatam.php:769
-#: ../woocommerce-gateway-payulatam.php:770
+#: ../woocommerce-gateway-payulatam.php:653 ../woocommerce-gateway-payulatam.php:654
+#: ../woocommerce-gateway-payulatam.php:769 ../woocommerce-gateway-payulatam.php:770
 msgid "Payment rejected via PayU Latam."
 msgstr "Pago Rechazado por PayU Latinoamérica."
 
@@ -27784,4 +27738,3 @@ msgstr ""
 #: woocommerce-dropdown-cart.php:127
 msgid "Popup align:"
 msgstr ""
-
