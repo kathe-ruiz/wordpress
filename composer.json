@@ -43,6 +43,7 @@
         "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1",
         "wpackagist-plugin/woocommerce-menu-bar-cart": "2.5.8.1",
         "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
+        "wpackagist-plugin/smtp-mailer": "1.0.2",
         "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3",
         "sw-simple-slider": "0.2.0",
         "wpaasp-customizer": "0.1.0",
