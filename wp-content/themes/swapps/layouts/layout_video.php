@@ -7,7 +7,7 @@
     <?php endif; ?>
     <i class="fa fa-play-circle video__icon" aria-hidden="true"></i>
     <?php if (isset($row_item['video_url']) ): ?>
-      <div class="video__player" style="display: none;">
+      <div class="video__player">
       <?php $video_url = $row_item['video_url']; ?>
       <?php $video_id = ''; ?>
       <?php if(stripos($video_url, "youtube.com") !== false): 
