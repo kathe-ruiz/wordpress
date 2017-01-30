@@ -19,6 +19,12 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        var players = plyr.setup();
+        $('.video__icon').click(function() {
+          $(this).hide();
+          $('.video__player').show();
+          players[0].play();
+        })
         $('#highlights').owlCarousel({
           items: 4,
           loop: true,
@@ -58,7 +64,6 @@
             "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
           ],
         });
-        plyr.setup();
 
         $("a.gallery__item").attr('rel', 'gallery').fancybox({
           'transitionIn'  : 'elastic',
