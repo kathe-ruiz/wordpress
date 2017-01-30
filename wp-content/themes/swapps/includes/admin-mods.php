@@ -2,7 +2,7 @@
 // Remove options not required by users
 add_action( 'admin_menu', 'my_remove_menus', 999 );
 function my_remove_menus() {
-	if(WP_DEBUG == False):
+	if(WP_DEBUG == false):
         remove_menu_page( 'plugins.php' );
         remove_menu_page( 'update-core.php' );
         remove_menu_page( 'options-general.php' );
