@@ -58,7 +58,8 @@
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
-            "wpackagist-plugin/acf-image-crop-add-on"
+            "wpackagist-plugin/acf-image-crop-add-on",
+            "wpackagist-plugin/smtp-mailer"
             ]
         }
     }
