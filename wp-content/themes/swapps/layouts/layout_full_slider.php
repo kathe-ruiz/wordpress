@@ -12,6 +12,7 @@
     <?php
       $image = $slide['image'];
       $title = $slide['title'];
+      $subtitle = $slide['title_2'];
       $description = $slide['description'];
       $link = $slide['link'];
       $cta = $slide['call_to_action_text'];
@@ -21,6 +22,7 @@
         <?php if ($title || $description): ?>
         <div class="caption">
           <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
+          <?php if ($subtitle): ?><h4><?php echo $subtitle ?></h4><?php endif ?>
           <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
           <?php if ($link): ?>
           <a href="<?php echo $link ?>" class="btn btn-primary">
