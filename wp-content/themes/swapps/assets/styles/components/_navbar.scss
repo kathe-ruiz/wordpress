@@ -202,6 +202,9 @@
   }
 }
 #autocollapse.collapsed{
+  .row-lg-centered{
+    display: block;
+  }
   .navbar-header {
     float: none;
   }
