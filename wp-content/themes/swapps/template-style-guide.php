@@ -41,7 +41,7 @@
             <button class="navbar__btn btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
             <div id="myNavbar" class="navbar__menu collapse navbar-collapse navbar-right text-uppercase">
               <ul id="menu-main-menu" class="nav navbar-nav">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a title="Inicio" href="#">Inicio</a>
                 </li>
                 <li class="menu-item">
@@ -82,7 +82,7 @@
             <button class="navbar__btn btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
             <div id="myNavbar" class="navbar__menu collapse navbar-collapse navbar-right text-uppercase">
               <ul id="menu-main-menu" class="nav navbar-nav">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a title="Inicio" href="#">Inicio</a>
                 </li>
                 <li class="menu-item">
@@ -123,7 +123,7 @@
             <button class="navbar__btn btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
             <div id="myNavbar" class="navbar__menu collapse navbar-collapse navbar-right text-uppercase">
               <ul id="menu-main-menu" class="nav navbar-nav">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a title="Inicio" href="#">Inicio</a>
                 </li>
                 <li class="menu-item">
