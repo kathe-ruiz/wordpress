@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0701415875dde9a93b42f2e0932846af",
-    "content-hash": "409ec7684fd3ad624af357b551baca09",
+    "hash": "e9f6b08413d03a735d434bea46832cb3",
+    "content-hash": "4f299cfe14a3d49019df1ac19239afd5",
     "packages": [
         {
             "name": "composer/installers",
@@ -233,7 +233,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.10.zip",
-                "reference": "tags/1.4.10",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -253,7 +253,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": "tags/5.3.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -273,7 +273,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -313,7 +313,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
-                "reference": "tags/1.0.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -333,7 +333,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/mailgun.1.5.7.1.zip",
-                "reference": "tags/1.5.7.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -353,7 +353,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": "tags/2.2.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -373,7 +373,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
-                "reference": "tags/2.6.13",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -393,7 +393,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": "tags/2.1.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -413,7 +413,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": "tags/2.5.8.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -421,6 +421,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/woocommerce-menu-bar-cart/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-payu-latam-gateway",
+            "version": "1.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-payu-latam-gateway/",
+                "reference": "tags/1.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-payu-latam-gateway/"
         }
     ],
     "packages-dev": [],

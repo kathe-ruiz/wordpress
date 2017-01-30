@@ -2,8 +2,6 @@
 /**
  * Template Name: Landing
  */
-
-
 ?>
 <?php $rows = get_field('field_rows'); ?>
 <?php if ($rows): ?>
