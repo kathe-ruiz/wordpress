@@ -99,7 +99,9 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eum! Voluptatibus aliquid, nihil sint, molestiae dolore, non minima numquam natus praesentium similique cum provident sunt magni, eum suscipit explicabo illum.
         </div>
       </div>
-      <button class="two-lines__btn text-uppercase btn btn-primary">leer más</button>
+      <div class="text-center">
+        <button class="two-lines__btn text-uppercase btn btn-primary">leer más</button>
+      </div>
     </div>
   </section>
   <!-- end titulo de seccion de dos lineas -->

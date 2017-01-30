@@ -5,7 +5,9 @@
         <h2 class="heading__title"><?php echo $row_item['video_title'] ?></h2>
       </div>
     <?php endif; ?>
+    <i class="fa fa-play-circle video__icon" aria-hidden="true"></i>
     <?php if (isset($row_item['video_url']) ): ?>
+      <div class="video__player">
       <?php $video_url = $row_item['video_url']; ?>
       <?php $video_id = ''; ?>
       <?php if(stripos($video_url, "youtube.com") !== false): 
@@ -23,6 +25,7 @@
           <source src="<?php echo $video_url ?>" type="video/<?php echo $video_extension ?>">
         </video>
       <?php endif; ?>
+      </div>
     <?php endif; ?>
     <?php if (isset($row_item['video_description']) ): ?>
       <p class="video__text"><?php echo strip_tags($row_item['video_description']) ?></p>
