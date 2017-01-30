@@ -1230,7 +1230,7 @@ p.demo_store {
     margin: 0;
     padding: .25em 0 .25em 22px;
     text-indent: -22px;
-    list-style: none
+    list-style: none;
 }
 .woocommerce ul#shipping_method .amount {
     font-weight: 700
@@ -1820,6 +1820,15 @@ p.demo_store {
   .wc-proceed-to-checkout{
     .checkout-button.button.alt.wc-forward{
       float: right;
+    }
+  }
+}
+.woocommerce{
+  ul#shipping_method{
+    li{
+      label{
+        display: initial;
+      }
     }
   }
 }

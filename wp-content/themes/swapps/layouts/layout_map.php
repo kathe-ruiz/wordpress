@@ -10,6 +10,7 @@
       });
 
       var contentString = "<?php echo trim(preg_replace('/\s\s+/', ' ', $row_item['marker_description']));?>";
+      contentString = '<div id="content" class="map-info"><div id="bodyContent"><br><p class="map-info__text text-secondary">'+contentString+'</p></div></div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
