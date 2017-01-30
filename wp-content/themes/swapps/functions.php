@@ -46,6 +46,7 @@ register_nav_menus( array(
 
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
+require_once('includes/admin-mods.php');
 
 function get_social_accounts()
 {
@@ -56,10 +57,10 @@ function get_social_accounts()
     'vimeo' => '#'
   );
   if (function_exists('wpaasp_options')) {
-    $accounts['facebook'] = (wpaasp_options('social_facebook')) ?: $accounts['facebook'];
-    $accounts['twitter'] = (wpaasp_options('social_twitter')) ?: $accounts['twitter'];
-    $accounts['instagram'] = (wpaasp_options('social_instagram')) ?: $accounts['instagram'];
-    $accounts['vimeo'] = (wpaasp_options('social_vimeo')) ?: $accounts['vimeo'];
+    $accounts['facebook'] = (wpaasp_options('social_facebook')) ?: null;
+    $accounts['twitter'] = (wpaasp_options('social_twitter')) ?: null;
+    $accounts['instagram'] = (wpaasp_options('social_instagram')) ?: null;
+    $accounts['vimeo'] = (wpaasp_options('social_vimeo')) ?: null;
   }
   return $accounts;
 }
@@ -153,5 +154,5 @@ if (!function_exists('loop_columns')) {
     return 3; // 3 products per row
   }
 }
-// Display 24 products per page. Goes in functions.php
+// Display 9 products per page. Goes in functions.php
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );

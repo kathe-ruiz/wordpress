@@ -4,13 +4,13 @@ if ( ! defined('ABSPATH') ) {
 }
 
 class FrmAppHelper {
-	public static $db_version = 41; //version of the database we are moving to
-	public static $pro_db_version = 37; //deprecated
+	public static $db_version = 35; //version of the database we are moving to
+	public static $pro_db_version = 37;
 
 	/**
 	 * @since 2.0
 	 */
-	public static $plug_version = '2.03';
+	public static $plug_version = '2.02.13';
 
     /**
      * @since 1.07.02
@@ -864,7 +864,7 @@ class FrmAppHelper {
      * @return string The base Google APIS url for the current version of jQuery UI
      */
     public static function jquery_ui_base_url() {
-		$url = 'http' . ( is_ssl() ? 's' : '' ) . '://ajax.googleapis.com/ajax/libs/jqueryui/' . self::script_version( 'jquery-ui-core', '1.11.4' );
+		$url = 'http' . ( is_ssl() ? 's' : '' ) . '://ajax.googleapis.com/ajax/libs/jqueryui/' . self::script_version('jquery-ui-core');
         $url = apply_filters('frm_jquery_ui_base_url', $url);
         return $url;
     }
@@ -872,24 +872,25 @@ class FrmAppHelper {
     /**
      * @param string $handle
      */
-	public static function script_version( $handle, $default = 0 ) {
-		global $wp_scripts;
-		if ( ! $wp_scripts ) {
-			return $default;
-		}
+	public static function script_version( $handle ) {
+        global $wp_scripts;
+    	if ( ! $wp_scripts ) {
+    	    return false;
+    	}
 
-		$ver = $default;
-		if ( ! isset( $wp_scripts->registered[ $handle ] ) ) {
-			return $ver;
-		}
+        $ver = 0;
 
-		$query = $wp_scripts->registered[ $handle ];
-		if ( is_object( $query ) ) {
-			$ver = $query->ver;
-		}
+        if ( ! isset( $wp_scripts->registered[ $handle ] ) ) {
+            return $ver;
+        }
 
-		return $ver;
-	}
+        $query = $wp_scripts->registered[ $handle ];
+    	if ( is_object( $query ) ) {
+    	    $ver = $query->ver;
+    	}
+
+    	return $ver;
+    }
 
 	public static function js_redirect( $url ) {
 		return '<script type="text/javascript">window.location="' . esc_url_raw( $url ) . '"</script>';
@@ -962,7 +963,7 @@ class FrmAppHelper {
 				$alt_post_name = substr( $key, 0, 200 - ( strlen( $suffix ) + 1 ) ) . $suffix;
 				$key_check = FrmDb::get_var( $table_name, array( $column => $alt_post_name, 'ID !' => $id ), $column );
 				$suffix++;
-			} while ( $key_check || is_numeric( $key_check ) );
+			} while ($key_check || is_numeric($key_check));
 			$key = $alt_post_name;
         }
         return $key;
@@ -1147,7 +1148,7 @@ class FrmAppHelper {
 	 * @return boolean|int
 	 */
 	public static function custom_style_value( $post_values ) {
-		if ( ! empty( $post_values ) && isset( $post_values['options']['custom_style'] ) ) {
+		if ( $post_values && isset( $post_values['options']['custom_style'] ) ) {
 			$custom_style = absint( $post_values['options']['custom_style'] );
 		} else {
 			$frm_settings = FrmAppHelper::get_settings();

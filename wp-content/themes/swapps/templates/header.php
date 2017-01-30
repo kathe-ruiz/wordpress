@@ -1,5 +1,5 @@
 <header class="header">
-  <nav class="navbar
+  <nav id="autocollapse" class="navbar
   <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_header_color')): ?>
   <?php echo wpaasp_options('site_options_header_color') ?>
   <?php else: ?>
@@ -7,8 +7,7 @@
   <?php endif ?>
   <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_secondary_navbar_position')): ?>
   <?php echo wpaasp_options('site_options_secondary_navbar_position') ?>
-  <?php endif ?>
-  ">
+  <?php endif ?>">
     <div class="container-fluid row-lg-centered">
       <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -19,8 +18,12 @@
       </div>
       <div class="navbar__logo navbar-left">
         <a href="/" rel="nofollow">
-        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): ?>
-          <?php echo get_custom_logo(); ?>
+        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): 
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          $custom_logo = $image[0];
+        ?>
+        <img class="custom-logo" src="<?php echo $custom_logo; ?>" />
         <?php else: ?>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
         <?php endif ?>
@@ -31,9 +34,7 @@
           <?php include 'includes/socialmedia.php' ?>
         </div>
         <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
-          <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></button>
-        <?php else: ?>
-          <button class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone">+57 (350) 316-8388</span></button>
+          <a href="tel:<?php echo wpaasp_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></a>
         <?php endif ?>
         <?php
           wp_nav_menu( array(

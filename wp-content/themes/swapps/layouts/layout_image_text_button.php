@@ -1,8 +1,8 @@
 <?php $position = $key % 2 ?>
 
-<div class="container">
-  <div class="row <?php echo (!$position) ? 'image-text__content' : 'image-text__content--reverse' ?> ">
-    <div class="col-sm-6">
+<div class="container image-text">
+  <div class="row image-text__content">
+    <div class="col-sm-6 <?php echo ($position) ? ' pull-right ' : ' pull-left ' ?>">
     <?php if ($row_item['image']): ?>
       <img class="image-text__image center-block img-responsive" src="<?php echo $row_item['image']['url']; ?>" alt="">
     <?php endif ?>

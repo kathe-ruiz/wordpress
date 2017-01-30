@@ -1,10 +1,10 @@
-# Copyright (C) 2017 Roots
+# Copyright (C) 2017 Swapps
 # This file is distributed under the MIT License.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sage Starter Theme 8.5.0\n"
+"Project-Id-Version: Swapps Theme 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/swapps\n"
-"POT-Creation-Date: 2017-01-20 20:26:41+00:00\n"
+"POT-Creation-Date: 2017-01-27 14:25:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,12 +34,190 @@ msgstr ""
 msgid "Error locating %s for inclusion"
 msgstr ""
 
-#: functions.php:37
+#: functions.php:43
 msgid "Theme Menu"
+msgstr ""
+
+#: functions.php:75
+msgid "Sliders"
+msgstr ""
+
+#: functions.php:79
+msgid "Main Slider"
+msgstr ""
+
+#: functions.php:102
+msgid "Secondary slider"
 msgstr ""
 
 #: home.php:4 index.php:3 search.php:3 template-home.php:10
 msgid "Sorry, no results were found."
+msgstr ""
+
+#: includes/custom-fields.php:17
+msgid "Custom Background"
+msgstr ""
+
+#: includes/custom-fields.php:46
+msgid "Background Color"
+msgstr ""
+
+#: includes/custom-fields.php:49
+msgid "Choose the background of the Row"
+msgstr ""
+
+#: includes/custom-fields.php:78
+msgid "Background Image"
+msgstr ""
+
+#: includes/custom-fields.php:103
+msgid "Full Width Slider"
+msgstr ""
+
+#: includes/custom-fields.php:117 includes/custom-fields.php:298
+msgid "Slider"
+msgstr ""
+
+#: includes/custom-fields.php:120
+msgid ""
+"Choose the slider you want to Display. To add or edit sliders Click Here</a>"
+msgstr ""
+
+#: includes/custom-fields.php:136 includes/custom-fields.php:146
+#: includes/custom-fields.php:1125 includes/custom-fields.php:1216
+msgid "Title"
+msgstr ""
+
+#: includes/custom-fields.php:165
+msgid "Subtitle"
+msgstr ""
+
+#: includes/custom-fields.php:184 includes/custom-fields.php:196
+msgid "Text"
+msgstr ""
+
+#: includes/custom-fields.php:215
+msgid "Texts"
+msgstr ""
+
+#: includes/custom-fields.php:234
+msgid "Button"
+msgstr ""
+
+#: includes/custom-fields.php:244
+msgid "Label"
+msgstr ""
+
+#: includes/custom-fields.php:265
+msgid "Link"
+msgstr ""
+
+#: includes/custom-fields.php:284
+msgid "Text Slider"
+msgstr ""
+
+#: includes/custom-fields.php:317 includes/custom-fields.php:333
+msgid "Gallery"
+msgstr ""
+
+#: includes/custom-fields.php:336
+msgid "Choose the gallery to use"
+msgstr ""
+
+#: includes/custom-fields.php:352
+msgid "Images Grid"
+msgstr ""
+
+#: includes/custom-fields.php:367
+msgid "Grid Type"
+msgstr ""
+
+#: includes/custom-fields.php:391 includes/custom-fields.php:1197
+msgid "Image"
+msgstr ""
+
+#: includes/custom-fields.php:1098 includes/custom-fields.php:1393
+msgid "Icon"
+msgstr ""
+
+#: includes/custom-fields.php:1144 includes/custom-fields.php:1235
+msgid "Description"
+msgstr ""
+
+#: includes/custom-fields.php:1163
+msgid "Grid Elements"
+msgstr ""
+
+#: includes/custom-fields.php:1182
+msgid "Image Text Button"
+msgstr ""
+
+#: includes/custom-fields.php:1254
+msgid "Include button"
+msgstr ""
+
+#: includes/custom-fields.php:1273
+msgid "Button Label"
+msgstr ""
+
+#: includes/custom-fields.php:1302
+msgid "Button Link"
+msgstr ""
+
+#: includes/custom-fields.php:1329
+msgid "Video"
+msgstr ""
+
+#: includes/custom-fields.php:1336
+msgid "Video URL"
+msgstr ""
+
+#: includes/custom-fields.php:1339
+msgid "Provide a Mp4, Vimeo or Youtube URL"
+msgstr ""
+
+#: includes/custom-fields.php:1355
+msgid "Video Title"
+msgstr ""
+
+#: includes/custom-fields.php:1374
+msgid "Video Description"
+msgstr ""
+
+#: includes/custom-fields.php:2081
+msgid "Centered Icon"
+msgstr ""
+
+#: includes/custom-fields.php:2100 includes/custom-fields.php:2109
+msgid "Map"
+msgstr ""
+
+#: includes/custom-fields.php:2128
+msgid "Marker description"
+msgstr ""
+
+#: includes/custom-fields.php:2131
+msgid "Text to be displayed above the map marker"
+msgstr ""
+
+#: includes/custom-fields.php:2152
+msgid "Marker image"
+msgstr ""
+
+#: includes/custom-fields.php:2173
+msgid "Row Items"
+msgstr ""
+
+#: includes/custom-fields.php:2176
+msgid "Add the items you need for the row"
+msgstr ""
+
+#: includes/custom-fields.php:2192
+msgid "Page Rows"
+msgstr ""
+
+#: includes/custom-fields.php:2195
+msgid "Add as many rows as you need. Every Row can have one or more Row Items"
 msgstr ""
 
 #: includes/custom-pagination.php:14
@@ -88,26 +266,6 @@ msgctxt "placeholder"
 msgid "Search …"
 msgstr ""
 
-#: swapps_default_menu.php:27
-msgid "HOME"
-msgstr ""
-
-#: swapps_default_menu.php:28
-msgid "ABOUT"
-msgstr ""
-
-#: swapps_default_menu.php:29
-msgid "SERVICES"
-msgstr ""
-
-#: swapps_default_menu.php:30
-msgid "BLOG"
-msgstr ""
-
-#: swapps_default_menu.php:31
-msgid "CONTACT US"
-msgstr ""
-
 #: templates/comments.php:9
 msgctxt "comments title"
 msgid "One response to &ldquo;%2$s&rdquo;"
@@ -132,29 +290,30 @@ msgid "Pages:"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Sage Starter Theme"
+msgid "Swapps Theme"
 msgstr ""
 
+#. #-#-#-#-#  swapps.pot (Swapps Theme 0.2.0)  #-#-#-#-#
 #. Theme URI of the plugin/theme
-msgid "https://roots.io/sage/"
+#. #-#-#-#-#  swapps.pot (Swapps Theme 0.2.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://swapps.io/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
-"\">Contribute on GitHub</a>"
+msgid "Swapps custom theme"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Roots"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://roots.io/"
+msgid "Swapps"
 msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Home Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Landing"
 msgstr ""
 
 #. Template Name of the plugin/theme

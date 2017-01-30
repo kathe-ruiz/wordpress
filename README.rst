@@ -8,7 +8,7 @@ Wordpress project using wordpress-ansible and PHP Dot Env
 Requirements
 ************
 
-* PHP >= 5.4.x
+* PHP >= 5.5.x
 * MySQL >= 5.5.x
 * Composer
 
@@ -35,6 +35,7 @@ Create .env file with the following variables and complete according to the need
     DB_NAME="database_name"
     DB_USER="root"
     DB_PASSWORD=""
+    WP_DEBUG=true
     DB_HOST="127.0.0.1"
     AWS_ACCESS_KEY_ID=""
     AWS_SECRET_ACCESS_KEY=""

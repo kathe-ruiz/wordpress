@@ -11,7 +11,7 @@
                         "ui": 1,
                         "ui_on_text": "",
                         "ui_off_text": "",
-                        "key": "field_58881d865122d",
+                        "key": "field_custom_background",
                         "label": "Custom Background",
                         "name": "custom_background",
                         "type": "true_false",
@@ -49,7 +49,7 @@
                         "conditional_logic": [
                             [
                                 {
-                                    "field": "field_58881d865122d",
+                                    "field": "field_custom_background",
                                     "operator": "==",
                                     "value": "1"
                                 }
@@ -81,7 +81,7 @@
                         "conditional_logic": [
                             [
                                 {
-                                    "field": "field_58881d865122d",
+                                    "field": "field_custom_background",
                                     "operator": "==",
                                     "value": "1"
                                 }

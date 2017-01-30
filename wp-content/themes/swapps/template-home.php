@@ -45,7 +45,7 @@
                   <?php if ($cta): echo $cta; endif; ?>
                 </a>
                 <?php endif ?>
-              </div> 
+              </div>
             </div>
         <?php endforeach ?>
       </div>
@@ -99,7 +99,9 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eum! Voluptatibus aliquid, nihil sint, molestiae dolore, non minima numquam natus praesentium similique cum provident sunt magni, eum suscipit explicabo illum.
         </div>
       </div>
-      <button class="two-lines__btn text-uppercase btn btn-primary">leer más</button>
+      <div class="text-center">
+        <button class="two-lines__btn text-uppercase btn btn-primary">leer más</button>
+      </div>
     </div>
   </section>
   <!-- end titulo de seccion de dos lineas -->
@@ -350,7 +352,7 @@
       </div>
     </div>
   </section>
-  <section id="eight" class="video">
+  <section id="eight" class="bg-image video" style="background-image: url(wp-content/themes/swapps/assets/images/video-background.png);">
     <div class="container">
       <div class="row text-center">
         <div class="heading">
@@ -368,7 +370,9 @@
   <section id="nine" class="icons">
     <div class="container">
       <div class="row text-center">
-        <i class="fa fa-angellist fa-11x icons__item" aria-hidden="true"></i>
+        <div class="icons__icon--large">
+          <i class="fa fa-angellist fa-11x icons__item" aria-hidden="true"></i>
+        </div>
         <div class="heading text-center">
           <h2 class="heading__title">Título del módulo</h2>
           <h4 class="heading__subtitle">

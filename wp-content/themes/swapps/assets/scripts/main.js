@@ -19,6 +19,12 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        var players = plyr.setup();
+        $('.video__icon').click(function() {
+          $(this).hide();
+          $('.video__player').show();
+          players[0].play();
+        })
         $('#highlights').owlCarousel({
           items: 4,
           loop: true,
@@ -58,7 +64,6 @@
             "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
           ],
         });
-        plyr.setup();
 
         $("a.gallery__item").attr('rel', 'gallery').fancybox({
           'transitionIn'  : 'elastic',
@@ -71,6 +76,15 @@
           'opacity': true
 
         });
+        function autocollapse(){
+          var navbar = $('#autocollapse');
+          navbar.removeClass('collapsed'); // set standart view
+          if(navbar.innerHeight() > 76) // check if we've got 2 lines
+            navbar.addClass('collapsed'); // force collapse mode
+        }
+
+        $(document).on('ready', autocollapse);
+        $(window).on('resize', autocollapse);
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
