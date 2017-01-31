@@ -57,11 +57,12 @@ function get_social_accounts()
     'vimeo' => '#'
   );
   if (function_exists('wpaasp_options')) {
-    $accounts['facebook'] = (wpaasp_options('social_facebook')) ?: null;
-    $accounts['twitter'] = (wpaasp_options('social_twitter')) ?: null;
-    $accounts['instagram'] = (wpaasp_options('social_instagram')) ?: null;
-    $accounts['vimeo'] = (wpaasp_options('social_vimeo')) ?: null;
+    $accounts['facebook'] = (sw_options('social_facebook')) ?: null;
+    $accounts['twitter'] = (sw_options('social_twitter')) ?: null;
+    $accounts['instagram'] = (sw_options('social_instagram')) ?: null;
+    $accounts['vimeo'] = (sw_options('social_vimeo')) ?: null;
   }
+  var_dump($accounts);
   return $accounts;
 }
 
