@@ -26,3 +26,11 @@
     @extend .btn, .btn-primary-withoutborder;
   }
 }
+.frm_form_field.form-field {
+  display: block !important;
+  float: none !important;
+  clear: both !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
