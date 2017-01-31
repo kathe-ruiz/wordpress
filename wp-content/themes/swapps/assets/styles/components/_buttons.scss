@@ -20,6 +20,26 @@
 .btn-danger-outline {
   @include button-variant-outline($btn-danger-color, $btn-danger-bg, $btn-danger-bg);
 }
+
+// Improvements for button when the section have bg-primary background.
+.bg-primary{
+  .btn{
+    background-color: contrast_function($brand-primary)  !important;
+    @include text-contrast(contrast_function($brand-primary));
+    &:focus,
+    &.focus {
+      background-color: darken(contrast_function($brand-primary), 5%);
+      border-color: darken(contrast_function($brand-primary), 15%);
+    }
+    &:hover {
+      background-color: darken(contrast_function($brand-primary), 5%);
+      border-color: darken(contrast_function($brand-primary), 10%);
+    }
+  }
+}
+
+
+
 .btn-primary-withoutborder{
   @extend .btn;
   @extend .btn-primary;
