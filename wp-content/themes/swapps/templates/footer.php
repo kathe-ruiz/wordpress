@@ -8,7 +8,7 @@
               <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
                 <?php echo get_custom_footer_logo(); ?>
               <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive center-block footer__logo__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive center-block footer__logo__img">
               <?php endif ?>
             </div>
           </div>
