@@ -1,12 +1,12 @@
 <header class="header">
   <nav id="autocollapse" class="navbar
-  <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_header_color')): ?>
-  <?php echo wpaasp_options('site_options_header_color') ?>
+  <?php if (function_exists('sw_options') && sw_options('site_options_header_color')): ?>
+  <?php echo sw_options('site_options_header_color') ?>
   <?php else: ?>
   navbar--transparent
   <?php endif ?>
-  <?php if (function_exists('wpaasp_options') && wpaasp_options('site_options_secondary_navbar_position')): ?>
-  <?php echo wpaasp_options('site_options_secondary_navbar_position') ?>
+  <?php if (function_exists('sw_options') && sw_options('site_options_secondary_navbar_position')): ?>
+  <?php echo sw_options('site_options_secondary_navbar_position') ?>
   <?php endif ?>">
     <div class="container-fluid row-lg-centered">
       <?php
@@ -36,8 +36,8 @@
         <div class="navbar__socialmedia socialmedia">
           <?php include 'includes/socialmedia.php' ?>
         </div>
-        <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
-          <a href="tel:<?php echo wpaasp_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></a>
+        <?php if (function_exists('sw_options') && sw_options('phone')): ?>
+          <a href="tel:<?php echo sw_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
         <?php endif ?>
         <?php
           wp_nav_menu( array(
