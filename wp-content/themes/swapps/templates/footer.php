@@ -56,7 +56,6 @@
       </div>
       <div class="col-md-3 col-sm-4">
         <div class="row">
-          <!-- <div class="socialmedia footer__socialmedia col-sm-8 col-sm-push-4 col-md-6 col-md-push-6"> -->
           <div class="socialmedia footer__socialmedia col-xs-12">
             <?php include 'includes/socialmedia.php' ?>
           </div>

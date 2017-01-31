@@ -9,13 +9,16 @@
   <?php echo wpaasp_options('site_options_secondary_navbar_position') ?>
   <?php endif ?>">
     <div class="container-fluid row-lg-centered">
-      <div class="navbar-header navbar__toggle">
+      <?php
+      if ( has_nav_menu( 'primary_navigation' ) ) {?>
+        <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
       </div>
+      <?php } ?>
       <div class="navbar__logo navbar-left">
         <a href="/" rel="nofollow">
         <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): 
