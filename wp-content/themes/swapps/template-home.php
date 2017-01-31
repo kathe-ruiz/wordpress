@@ -52,7 +52,7 @@
     <?php else: // Hardcoded slider ?>
       <div class="owl-carousel owl-theme">
           <div class="item">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-1.jpg" alt="Slider image" class="img-fluid">
+              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/slider-1.jpg" alt="Slider image" class="img-fluid">
               <div class="caption">
                 <h2>Título del slider</h2>
                 <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -62,7 +62,7 @@
               </div>
           </div>
           <div class="item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner.png" alt="Slider image" class="img-fluid">
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/banners/banner.png" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
               <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/banner-2.png" alt="Slider image" class="img-fluid">
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/banners/banner-2.png" alt="Slider image" class="img-fluid">
             <div class="caption">
               <h2>Título del slider</h2>
               <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -122,19 +122,19 @@
               <p class="highlight-item__caption"></p>
             </div> -->
             <div class="highlight-item text-center">
-              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 2 copia 2.jpg" alt="">
               <p class="highlight-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
             <div class="highlight-item text-center">
-              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 4.jpg" alt="">
               <p class="highlight-item__caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
             </div>
             <div class="highlight-item text-center">
-              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 7 copia.jpg" alt="">
               <p class="highlight-item__caption">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="highlight-item text-center">
-              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
+              <img class="highlight-item__image" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 9.jpg" alt="">
               <p class="highlight-item__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
         </div>
@@ -240,79 +240,79 @@
         <div class="gallery text-center">
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 11.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 11.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 11.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 9.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 9.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 17.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 17.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 17.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 4.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg">
-                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 19.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg">
-                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 13.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg">
-                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 7 copia.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg">
-                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 9 copia.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 4.jpg" alt="">
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 19.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 21.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 19.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 13.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 4 copia 2.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 13.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 7 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 15.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 7 copia.jpg" alt="">
               </a>
             </div>
             <div class="col-md-3 col-xs-6">
-              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 9 copia.jpg">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/galery/Capa 2 copia 2.jpg" alt="">
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 9 copia.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-xs-6">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 21.jpg">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 21.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 4 copia 2.jpg">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 4 copia 2.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 15.jpg">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 15.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <a class="gallery__item" href="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 2 copia 2.jpg">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <img class="gallery__item-image img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/galery/Capa 2 copia 2.jpg" alt="">
               </a>
             </div>
           </div>
@@ -325,7 +325,7 @@
     <div class="container">
       <div class="row image-text__content">
         <div class="col-sm-6">
-          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img.png" alt="">
+          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/img.png" alt="">
         </div>
         <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
@@ -339,7 +339,7 @@
     <div class="container">
       <div class="row image-text__content">
         <div class="col-sm-6 visible-xs">
-          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-1.png" alt="">
+          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/img-1.png" alt="">
         </div>
         <div class="col-sm-6">
           <h2 class="heading__title">Título para un módulo<br>con imágen</h2>
@@ -347,7 +347,7 @@
           <button class="image-text__btn btn btn-primary">más información</button>
         </div>
         <div class="col-sm-6 hidden-xs">
-          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/img-1.png" alt="">
+          <img class="image-text__image center-block img-responsive" src="<?php echo get_template_directory_uri(); ?>/dist/images/img-1.png" alt="">
         </div>
       </div>
     </div>

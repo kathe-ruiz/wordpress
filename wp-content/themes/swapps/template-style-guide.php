@@ -27,7 +27,7 @@
             </div>
             <div class="navbar__logo navbar-left">
               <a href="/" rel="nofollow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive">
               </a>
             </div>
             <div class="navbar__socialmedia socialmedia">
@@ -68,7 +68,7 @@
             </div>
             <div class="navbar__logo navbar-left">
               <a href="/" rel="nofollow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-green.png" class="img-responsive">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-green.png" class="img-responsive">
               </a>
             </div>
             <div class="navbar__socialmedia socialmedia">
@@ -109,7 +109,7 @@
             </div>
             <div class="navbar__logo navbar-left">
               <a href="/" rel="nofollow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-green.png" class="img-responsive">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-green.png" class="img-responsive">
               </a>
             </div>
             <div class="navbar__socialmedia socialmedia">
