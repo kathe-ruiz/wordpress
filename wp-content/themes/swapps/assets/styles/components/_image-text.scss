@@ -8,6 +8,9 @@
   &.one{
     background:$body-other-bg;
   }
+  .heading__title{
+    margin-top: 0px;
+  }
   @media (max-width: $screen-sm) {
     padding-top: 25px;
     padding-bottom: 55px;
