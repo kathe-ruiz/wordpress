@@ -7,6 +7,21 @@
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
   <?php $class_css = ""; ?>
+  <?php if (!primary_landing_menu() and count($rows) > 2 and $key===1): ?>
+    <nav class="navbar navbar-secondary navbar--dark">
+      <ul id="menu-menu-secundario" class="nav navbar-nav pull-right">
+        <?php foreach ($rows as $nav_item_key => $value): ?>
+            <?php if ($nav_item_key > 0): ?>
+              <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-59 current_page_item menu-item-88">
+                <a title="home-2" href="<?php echo get_permalink() ?>#<?php echo "menu-$nav_item_key"; ?>">
+                <?php echo "menu-$nav_item_key"; ?>
+                </a>
+              </li>
+            <?php endif ?>
+        <?php endforeach ?>
+      </ul>
+    </nav>
+  <?php endif ?>
   <section
   <?php if ($row['custom_background']): ?>
     <?php if($row['background_image']): ?> style="background-image: url(<?php echo $row['background_image']['url']; ?>)"
@@ -23,6 +38,7 @@
     $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'video') ? ' video ' : '';
   };
   ?>
+  id="<?php echo "menu-$key"; ?>"
   class="<?php echo $class_css ?>">
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
