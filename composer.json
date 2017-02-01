@@ -28,6 +28,31 @@
                     "reference": "0.2.2"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wp-plugin-swapps",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-swapps.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields-pro",
+                "version": "5.5.5",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
+                    "type": "git",
+                    "reference": "5.5.5"
+                }
+            }
+
         }
             
     ],
@@ -46,6 +71,8 @@
         "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3",
         "sw-simple-slider": "0.2.0",
         "sw-customizer": "0.2.2",
+        "wp-plugin-swapps": "0.1.0",
+        "advanced-custom-fields-pro": "5.5.5",
         "oomphinc/composer-installers-extender": "^1.1"
 
     },
@@ -55,6 +82,8 @@
             "wp-content/mu-plugins/{$name}/": [
             "sw-simple-slider",
             "sw-customizer",
+            "wp-plugin-swapps",
+            "advanced-custom-fields-pro",
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
