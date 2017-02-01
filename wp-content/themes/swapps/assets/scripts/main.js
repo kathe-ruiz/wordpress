@@ -94,6 +94,32 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+            scrollTop: target.offset().top - 10
+            }, 1300);
+            return false;
+          }
+          }
+        });
+        });
+        $(document).ready(function(){
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 250) {
+          $("#nav-sec").addClass('show');
+          $("#nav-sec").removeClass('hidden');
+          } else {
+          $("#nav-sec").removeClass('show');
+          $("#nav-sec").addClass('hidden');
+          /*$(".navbar-fixed-top").css("background-color", "");*/
+          }
+        });
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

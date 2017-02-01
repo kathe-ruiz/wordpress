@@ -8,7 +8,7 @@
   <?php foreach ($rows as $key => $row): ?>
   <?php $class_css = ""; ?>
   <?php if (!primary_landing_menu() and count($rows) > 2 and $key===1): ?>
-    <nav class="navbar navbar-secondary navbar--dark">
+    <nav class="navbar navbar-secondary navbar--dark hidden" id="nav-sec">
       <ul id="menu-menu-secundario" class="nav navbar-nav pull-right">
         <?php foreach ($rows as $nav_item_key => $value): ?>
             <?php if ($nav_item_key > 0): ?>
