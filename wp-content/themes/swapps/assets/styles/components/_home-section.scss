@@ -12,6 +12,8 @@
   }
   &:first-child{
     padding-top: 100px;
-    padding-bottom: 0px;
+  }
+  .container:not(:last-child) {
+      margin-bottom: 2.5em;
   }
 }

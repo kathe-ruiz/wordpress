@@ -16,12 +16,21 @@
       <?php $class_css .= $row['background_color']; ?>
     <?php endif ?>
   <?php endif ?>
-  <?php $class_css .= ($key == 0) ?  ' sliders-main ' : ''; ?>
-  <?php
-  if ($key != 0){
-    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'text_slider') ? ' sliders-secondary ' : ' home-section ';
-    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'video') ? ' video ' : '';
-  };
+  <?php 
+  switch ($row['row_items'][0]['acf_fc_layout']){
+    case 'full_slider':
+    $class_css .= ' sliders-main ';
+    break;
+    case 'text_slider':
+    $class_css .= ' sliders-secondary ';
+    break;
+    case 'video':
+    $class_css .= ' video ';
+    break;
+    default:
+    $class_css .= ' home-section ';
+    break;
+  } 
   ?>
   class="<?php echo $class_css ?>">
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
