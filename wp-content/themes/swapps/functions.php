@@ -39,11 +39,6 @@ require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
 require_once('includes/custom-pagination.php');
 
-register_nav_menus( array(
-  'primary' => __( 'Theme Menu', 'wordpress' ),
-) );
-//End Register Custom Navigator
-
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 require_once('includes/admin-mods.php');
