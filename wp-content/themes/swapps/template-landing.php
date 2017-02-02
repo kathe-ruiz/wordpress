@@ -42,6 +42,9 @@
     case 'video':
     $class_css .= ' video ';
     break;
+    case 'map':
+    $class_css .= ' map ';
+    break;
     default:
     $class_css .= ' home-section ';
     break;
