@@ -64,6 +64,12 @@ function get_social_accounts()
 // Header image. Should be moved to plugin, check later. (Phase 3)
 // require get_template_directory() . '/includes/custom-header.php';
 
+function my_acf_init() {
+  acf_update_setting('google_api_key', 'AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY');
+}
+
+add_action('acf/init', 'my_acf_init');
+
 // For set sliders in the homepage
 if( function_exists('acf_add_local_field_group') ):
 
