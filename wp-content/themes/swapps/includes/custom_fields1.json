@@ -25,25 +25,6 @@
                         }
                     },
                     {
-                        "default_value": "",
-                        "maxlength": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "key": "field_58937677a22ac",
-                        "label": "Section Name",
-                        "name": "section_name",
-                        "type": "text",
-                        "instructions": "",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        }
-                    },
-                    {
                         "multiple": 0,
                         "allow_null": 0,
                         "choices": {
@@ -124,9 +105,7 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -272,12 +251,8 @@
                                         }
                                     },
                                     {
-                                        "post_type": [
-
-                                        ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "post_type": [],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "allow_archives": 1,
@@ -308,9 +283,7 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -1312,12 +1285,8 @@
                                         }
                                     },
                                     {
-                                        "post_type": [
-
-                                        ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "post_type": [],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "allow_archives": 1,

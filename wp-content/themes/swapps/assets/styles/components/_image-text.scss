@@ -1,5 +1,5 @@
 .image-text{
-  padding: 111px 0px;
+  // padding: 111px 0px;
 
   &__btn{
     text-transform: uppercase;
@@ -26,6 +26,11 @@
     &__btn{
       position: inherit;
       margin-top: 10px;
+    }
+    &__content{
+      .col-sm-6{
+        float: none !important;
+      }
     }
   }
 }

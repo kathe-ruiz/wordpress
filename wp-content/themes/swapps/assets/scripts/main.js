@@ -85,6 +85,38 @@
 
         $(document).on('ready', autocollapse);
         $(window).on('resize', autocollapse);
+
+        $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            if ($('#nav-sec').hasClass('fx')) {
+              $('html, body').animate({
+              scrollTop: target.offset().top - 130
+              }, 1000);
+            }else{
+              $('html, body').animate({
+              scrollTop: target.offset().top - 50
+              }, 1000);
+            }
+            return false;
+          }
+          }
+        });
+        });
+        $(document).ready(function(){
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 350) {
+          $("#nav-sec").addClass('vivible');
+          $("#nav-sec").removeClass('not-vivible');
+          } else {
+          $("#nav-sec").removeClass('vivible');
+          $("#nav-sec").addClass('not-vivible');
+          }
+        });
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -94,32 +126,6 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-        $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-            scrollTop: target.offset().top - 50
-            }, 1000);
-            return false;
-          }
-          }
-        });
-        });
-        $(document).ready(function(){
-        $(window).scroll(function() {
-          if ($(document).scrollTop() > 550) {
-          $("#nav-sec").addClass('vivible');
-          $("#nav-sec").removeClass('not-vivible');
-          } else {
-          $("#nav-sec").removeClass('vivible');
-          $("#nav-sec").addClass('not-vivible');
-          /*$(".navbar-fixed-top").css("background-color", "");*/
-          }
-        });
-        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

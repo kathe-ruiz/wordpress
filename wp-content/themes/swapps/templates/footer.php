@@ -8,7 +8,7 @@
               <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
                 <?php echo get_custom_footer_logo(); ?>
               <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="img-responsive center-block footer__logo__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive center-block footer__logo__img">
               <?php endif ?>
             </div>
           </div>
@@ -17,14 +17,14 @@
               <div class="col-lg-6">
                 <div class="footer__info">
                   <span>
-                  <?php if (function_exists('wpaasp_options') && (wpaasp_options('address') || wpaasp_options('city') || wpaasp_options('country'))): ?>
+                  <?php if (function_exists('sw_options') && (sw_options('address') || sw_options('city') || sw_options('country'))): ?>
                     <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i> 
-                    <span class="footer__text footer__text--light text-secondary"><?php echo wpaasp_options('address'); ?><br>
-                    <?php if (wpaasp_options('city')): ?>
-                      <?php echo wpaasp_options('city'); ?>,&nbsp;
+                    <span class="footer__text footer__text--light text-secondary"><?php echo sw_options('address'); ?><br>
+                    <?php if (sw_options('city')): ?>
+                      <?php echo sw_options('city'); ?>,&nbsp;
                     <?php endif ?>
-                    <?php if (wpaasp_options('country')): ?>
-                      <?php echo wpaasp_options('country'); ?>
+                    <?php if (sw_options('country')): ?>
+                      <?php echo sw_options('country'); ?>
                     <?php else: ?>
                       Colombia
                     <?php endif ?>
@@ -35,11 +35,11 @@
               </div>
               <div class="col-lg-6">
                 <div class="footer__info">
-                    <?php if (function_exists('wpaasp_options') && wpaasp_options('email')): ?>
-                  <a class="footer__link" href="mailto:<?php echo wpaasp_options('email'); ?>">
+                    <?php if (function_exists('sw_options') && sw_options('email')): ?>
+                  <a class="footer__link" href="mailto:<?php echo sw_options('email'); ?>">
                     <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
                     <span class="footer__text text-secondary" href="#">
-                      <?php echo wpaasp_options('email'); ?>
+                      <?php echo sw_options('email'); ?>
                     </span>
                   </a>
                   <?php endif ?>
@@ -48,8 +48,8 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-1">
-            <?php if (function_exists('wpaasp_options') && wpaasp_options('phone')): ?>
-              <a href="tel:<?php echo wpaasp_options('phone'); ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo wpaasp_options('phone'); ?></span></a>
+            <?php if (function_exists('sw_options') && sw_options('phone')): ?>
+              <a href="tel:<?php echo sw_options('phone'); ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
             <?php endif ?>
           </div>
         </div>

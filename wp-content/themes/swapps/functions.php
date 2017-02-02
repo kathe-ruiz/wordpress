@@ -41,7 +41,7 @@ require_once('includes/custom-pagination.php');
 
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
-require_once('includes/admin-mods.php');
+// require_once('includes/admin-mods.php');
 
 function get_social_accounts()
 {

@@ -8,15 +8,15 @@
   <?php foreach ($rows as $key => $row): ?>
   <?php $class_css = ""; ?>
   <?php if (!primary_landing_menu() and count($rows) > 2 and $key===1): ?>
-    <nav class="navbar navbar-secondary navbar--dark not-vivible" id="nav-sec">
-      <ul id="menu-menu-secundario" class="nav navbar-nav pull-right">
+    <nav class="hidden-sm navbar navbar-secondary navbar--dark not-vivible <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>" id="nav-sec">
+      <ul id="menu-menu-secundario" class="nav navbar-nav <?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo "pull-right";?><?php else: ?><?php echo "navbar-center"?><?php endif ?>">
         <?php foreach ($rows as $nav_item_key => $value): ?>
             <?php if ($nav_item_key > 0): ?>
-              <li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-59 current_page_item menu-item-88">
-                <a title="home-2" href="<?php echo get_permalink() ?>#<?php echo "menu-$nav_item_key"; ?>">
-                <?php echo "menu-$nav_item_key"; ?>
-                </a>
-              </li>
+              <?php if ($value['section_name']) : ?>
+                <li id="menu-item-<?php echo "$nav_item_key"; ?>" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-<?php echo "$nav_item_key"; ?> current_page_item menu-item-<?php echo "$nav_item_key"; ?>">
+                  <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($value['section_name']); else: echo "menu-$nav_item_key"; endif ?>"><?php echo ($value['section_name']); ?></a>
+                </li>
+              <?php endif ?>
             <?php endif ?>
         <?php endforeach ?>
       </ul>
@@ -31,14 +31,23 @@
       <?php $class_css .= $row['background_color']; ?>
     <?php endif ?>
   <?php endif ?>
-  <?php $class_css .= ($key == 0) ?  ' sliders-main ' : ''; ?>
-  <?php
-  if ($key != 0){
-    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'text_slider') ? ' sliders-secondary ' : ' home-section ';
-    $class_css .= ($row['row_items'][0]['acf_fc_layout'] == 'video') ? ' video ' : '';
-  };
+  <?php 
+  switch ($row['row_items'][0]['acf_fc_layout']){
+    case 'full_slider':
+    $class_css .= ' sliders-main ';
+    break;
+    case 'text_slider':
+    $class_css .= ' sliders-secondary ';
+    break;
+    case 'video':
+    $class_css .= ' video ';
+    break;
+    default:
+    $class_css .= ' home-section ';
+    break;
+  } 
   ?>
-  id="<?php echo "menu-$key"; ?>"
+  id="<?php if (($row['section_name'])): echo ($row['section_name']); else: echo "menu-$key"; endif ?>"
   class="<?php echo $class_css ?>">
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
