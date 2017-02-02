@@ -73,7 +73,8 @@
         "sw-customizer": "0.2.2",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
-        "oomphinc/composer-installers-extender": "^1.1"
+        "oomphinc/composer-installers-extender": "^1.1",
+        "yoast/wordpress-seo": "^4.2"
 
     },
     "extra" : {
