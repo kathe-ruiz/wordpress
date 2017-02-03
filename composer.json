@@ -53,6 +53,19 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "formidable",
+                "version": "2.02.13",
+                "source": {
+                    "url": "git@github.com:swappsco/formidable.git",
+                    "type": "git",
+                    "reference": "2.02.13"
+                }
+            }
+
         }
             
     ],
@@ -73,6 +86,7 @@
         "sw-customizer": "0.2.2",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
+        "formidable": "2.02.13",
         "oomphinc/composer-installers-extender": "^1.1",
         "yoast/wordpress-seo": "^4.2"
 
@@ -85,6 +99,7 @@
             "sw-customizer",
             "wp-plugin-swapps",
             "advanced-custom-fields-pro",
+            "formidable",
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
