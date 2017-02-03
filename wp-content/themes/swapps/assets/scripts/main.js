@@ -24,7 +24,7 @@
           $(this).hide();
           $('.video__player').show();
           players[0].play();
-        })
+        });
         $('#highlights').owlCarousel({
           items: 4,
           loop: true,
@@ -79,8 +79,9 @@
         function autocollapse(){
           var navbar = $('#autocollapse');
           navbar.removeClass('collapsed'); // set standart view
-          if(navbar.innerHeight() > 76) // check if we've got 2 lines
-            navbar.addClass('collapsed'); // force collapse mode
+          if(navbar.innerHeight() > 76){ // check if we've got 2 lines
+            navbar.addClass('collapsed');// force collapse mode
+          }
         }
 
         $(document).on('ready', autocollapse);
@@ -88,7 +89,7 @@
 
         $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {

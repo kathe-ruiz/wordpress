@@ -14,8 +14,9 @@
         <?php foreach ($rows as $nav_item_key => $value): ?>
             <?php if ($nav_item_key > 0): ?>
               <?php if ($value['section_name']) : ?>
+                <?php $string_menu = preg_replace('/\s+/', '', $value['section_name']);?>
                 <li id="menu-item-<?php echo "$nav_item_key"; ?>" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-<?php echo "$nav_item_key"; ?> current_page_item menu-item-<?php echo "$nav_item_key"; ?>">
-                  <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($value['section_name']); else: echo "menu-$nav_item_key"; endif ?>"><?php echo ($value['section_name']); ?></a>
+                  <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($string_menu); else: echo "menu-$nav_item_key"; endif ?>"><?php echo ($value['section_name']); ?></a>
                 </li>
               <?php endif ?>
             <?php endif ?>
@@ -51,7 +52,8 @@
     break;
   } 
   ?>
-  id="<?php if (($row['section_name'])): echo ($row['section_name']); else: echo "menu-$key"; endif ?>"
+  <?php $string_menu = preg_replace('/\s+/', '', $row['section_name']);?>
+  id="<?php if (($row['section_name'])): echo ($string_menu); else: echo "menu-$key"; endif ?>"
   class="<?php echo $class_css ?>">
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
