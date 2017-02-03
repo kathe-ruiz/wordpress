@@ -8,7 +8,8 @@
   <?php foreach ($rows as $key => $row): ?>
   <?php $class_css = ""; ?>
   <?php if (!primary_landing_menu() and count($rows) > 2 and $key===1): ?>
-    <nav class="hidden-sm navbar navbar-secondary navbar--dark not-vivible <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>" id="nav-sec">
+    <nav class="hidden-sm navbar navbar-secondary not-vivible <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>
+      <?php if (function_exists('sw_options') && sw_options('site_options_secundary_color')): ?><?php echo sw_options('site_options_secundary_color') ?><?php else: ?>navbar--transparent<?php endif?>" id="nav-sec">
       <ul id="menu-menu-secundario" class="nav navbar-nav <?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo "pull-right";?><?php else: ?><?php echo "navbar-center"?><?php endif ?>">
         <?php foreach ($rows as $nav_item_key => $value): ?>
             <?php if ($nav_item_key > 0): ?>
