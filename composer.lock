@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d1c6d05e750c0f94bafac9c5da5c70d7",
-    "content-hash": "eed5f59cc0179c1f5676b34c8363ad17",
+    "hash": "b9dda930366473497992d472092fa26a",
+    "content-hash": "7f88e0f8a2ba0ba4768564e83b8fdee1",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -267,7 +267,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.10.zip",
-                "reference": null,
+                "reference": "tags/1.4.10",
                 "shasum": null
             },
             "require": {
@@ -275,6 +275,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/acf-image-crop-add-on/"
+        },
+        {
+            "name": "wpackagist-plugin/acf-link-picker-field",
+            "version": "1.2.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-link-picker-field/",
+                "reference": "tags/1.2.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-link-picker-field.1.2.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-link-picker-field/"
         },
         {
             "name": "wpackagist-plugin/addthis",
@@ -287,7 +307,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": null,
+                "reference": "tags/5.3.4",
                 "shasum": null
             },
             "require": {
@@ -307,7 +327,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -327,7 +347,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.5.zip",
-                "reference": null,
+                "reference": "tags/1.1.5",
                 "shasum": null
             },
             "require": {
@@ -347,7 +367,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
-                "reference": null,
+                "reference": "tags/1.0.1",
                 "shasum": null
             },
             "require": {
@@ -367,7 +387,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": null,
+                "reference": "tags/2.2.6",
                 "shasum": null
             },
             "require": {
@@ -387,7 +407,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -407,7 +427,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
-                "reference": null,
+                "reference": "tags/2.6.13",
                 "shasum": null
             },
             "require": {
@@ -427,7 +447,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": null,
+                "reference": "tags/2.1.1",
                 "shasum": null
             },
             "require": {
@@ -447,7 +467,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": null,
+                "reference": "tags/2.5.8.1",
                 "shasum": null
             },
             "require": {
@@ -467,7 +487,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
-                "reference": null,
+                "reference": "tags/1.2.3",
                 "shasum": null
             },
             "require": {
