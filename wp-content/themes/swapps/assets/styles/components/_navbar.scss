@@ -288,13 +288,15 @@
     .menu-item{
       display: inline-block;
       float: none;
-      a{
-        color: $gray-dark;
-        &:hover,
-        &:focus{
-          color: $brand-primary;
-        }
-      }
+    }
+  }
+}
+#nav-sec.navbar--light{
+  a{
+    color: $gray-dark;
+    &:hover,
+    &:focus{
+      color: $brand-primary;
     }
   }
 }

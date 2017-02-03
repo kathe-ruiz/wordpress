@@ -40,9 +40,9 @@
             <ul id="menu-menu-secundario" class="nav navbar-nav pull-right">
               <?php foreach ($rows as $key => $value): ?>
                 <?php if ($value['section_name']) : ?>
+                  <?php $string_menu = preg_replace('/\s+/', '', $value['section_name']);?>
                   <li id="menu-item-<?php echo "$key"; ?>" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-<?php echo "$key"; ?> current_page_item menu-item-<?php echo "$key"; ?>">
-                    
-                    <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($value['section_name']); else: echo "menu-$key"; endif ?>"><?php echo ($value['section_name']); ?></a>
+                    <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($string_menu); else: echo "menu-$key"; endif ?>"><?php echo ($value['section_name']); ?></a>
                   </li>
                 <?php endif ?>
               <?php endforeach ?>
