@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e3299850163f73c79ebd08ba298c17f5",
-    "content-hash": "eda7ef6ed5fb0686d0cb9c9a43e04a2f",
+    "hash": "df8d1374c65aa3b981d16a32e498eae9",
+    "content-hash": "4601e261de3aad54cf595116a48b8549",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -267,7 +267,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.10.zip",
-                "reference": "tags/1.4.10",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -307,7 +307,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": "tags/5.3.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -327,7 +327,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -347,7 +347,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.5.zip",
-                "reference": "tags/1.1.5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -367,7 +367,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
-                "reference": "tags/1.0.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -387,7 +387,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": "tags/2.2.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -407,7 +407,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -447,7 +447,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
-                "reference": "tags/2.6.13",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -467,7 +467,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": "tags/2.1.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -487,7 +487,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": "tags/2.5.8.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -507,7 +507,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
-                "reference": "tags/1.2.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
