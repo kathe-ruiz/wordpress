@@ -39,11 +39,6 @@ require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
 require_once('includes/custom-pagination.php');
 
-register_nav_menus( array(
-  'primary' => __( 'Theme Menu', 'wordpress' ),
-) );
-//End Register Custom Navigator
-
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 // require_once('includes/admin-mods.php');
@@ -152,3 +147,15 @@ if (!function_exists('loop_columns')) {
 }
 // Display 9 products per page. Goes in functions.php
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );
+
+
+if (!function_exists('primary_landing_menu')) {
+  function primary_landing_menu()
+  {
+    if (!has_nav_menu('primary_navigation') and have_rows('field_rows')) {
+      return get_field('field_rows') ;
+    } else {
+      return False;
+    }
+  }
+}

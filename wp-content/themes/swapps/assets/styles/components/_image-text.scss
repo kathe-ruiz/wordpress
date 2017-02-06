@@ -27,5 +27,10 @@
       position: inherit;
       margin-top: 10px;
     }
+    &__content{
+      .col-sm-6{
+        float: none !important;
+      }
+    }
   }
 }

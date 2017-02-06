@@ -6,22 +6,18 @@
   navbar--transparent
   <?php endif ?>
   <?php if (function_exists('sw_options') && sw_options('site_options_secondary_navbar_position')): ?>
-  <?php echo sw_options('site_options_secondary_navbar_position') ?>
-  <?php endif ?>">
+  <?php echo sw_options('site_options_secondary_navbar_position') ?><?php endif ?>">
     <div class="container-fluid row-lg-centered">
-      <?php
-      if ( has_nav_menu( 'primary_navigation' ) ) {?>
-        <div class="navbar-header navbar__toggle">
+      <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
       </div>
-      <?php } ?>
       <div class="navbar__logo navbar-left">
         <a href="/" rel="nofollow">
-        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )): 
+        <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )):
           $custom_logo_id = get_theme_mod( 'custom_logo' );
           $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
           $custom_logo = $image[0];
@@ -39,6 +35,20 @@
         <?php if (function_exists('sw_options') && sw_options('phone')): ?>
           <a href="tel:<?php echo sw_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
         <?php endif ?>
+        <?php if ($rows = primary_landing_menu()): ?>
+          <div class="navbar__menu collapse navbar-collapse" id="myNavbar">
+            <ul id="menu-menu-secundario" class="nav navbar-nav pull-right">
+              <?php foreach ($rows as $key => $value): ?>
+                <?php if ($value['section_name']) : ?>
+                  <?php $string_menu = preg_replace('/\s+/', '', $value['section_name']);?>
+                  <li id="menu-item-<?php echo "$key"; ?>" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-<?php echo "$key"; ?> current_page_item menu-item-<?php echo "$key"; ?>">
+                    <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($string_menu); else: echo "menu-$key"; endif ?>"><?php echo ($value['section_name']); ?></a>
+                  </li>
+                <?php endif ?>
+              <?php endforeach ?>
+            </ul>
+          </div>
+        <?php else: ?>
         <?php
           wp_nav_menu( array(
             'menu'              => 'primary_navigation',
@@ -53,6 +63,7 @@
             'walker'            => new wp_bootstrap_navwalker())
           );
         ?>
+        <?php endif ?>
       </div>
     </div>
   </nav>

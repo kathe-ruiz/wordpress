@@ -275,3 +275,60 @@
     display: none;
   }
 }
+/* ======= STYLES FOR SECUNDARY NAVBAR ======= */
+#nav-sec{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: all .5s ease-in-out;
+  #menu-menu-secundario.navbar-center{
+    width: 100%;
+    float: none;
+    text-align: center;
+    .menu-item{
+      display: inline-block;
+      float: none;
+    }
+  }
+}
+#nav-sec.navbar--light{
+  a{
+    color: $gray-dark;
+    &:hover,
+    &:focus{
+      color: $brand-primary;
+    }
+  }
+}
+#nav-sec.fx{
+  top: 73px;
+  padding: 0px;
+}
+.admin-bar{
+  #nav-sec.fx{
+    top: 105px;
+  }
+  #nav-sec{
+    top: 32px;
+  }
+}
+#nav-sec.not-vivible{
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+#nav-sec.vivible{
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+}
+#menu-menu-secundario{
+  .menu-item{
+    text-transform: uppercase;
+  }
+  @media (max-width: $screen-md) {
+    width: 100%;
+    float: none !important;
+  }
+}
+/* ======= STYLES FOR SECUNDARY NAVBAR ======= */
