@@ -1,4 +1,4 @@
-<footer class="footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--transparent<?php endif?>">
+<footer class="footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
   <div class="container-fluid">
     <div class="row row-sm-centered">
       <div class="col-md-9 col-sm-8">

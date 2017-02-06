@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "df8d1374c65aa3b981d16a32e498eae9",
-    "content-hash": "4601e261de3aad54cf595116a48b8549",
+    "hash": "ac19ed492598b191efc5b1d4423b4638",
+    "content-hash": "374bf31fb3ef327ea28902b38731ee6f",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -178,11 +178,11 @@
         },
         {
             "name": "sw-customizer",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:swappsco/sw-customizer.git",
-                "reference": "0.2.2"
+                "reference": "0.2.3"
             },
             "type": "library"
         },
@@ -287,7 +287,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-link-picker-field.1.2.8.zip",
-                "reference": "tags/1.2.8",
+                "reference": null,
                 "shasum": null
             },
             "require": {
