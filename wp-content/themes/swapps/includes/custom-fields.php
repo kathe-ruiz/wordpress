@@ -230,17 +230,10 @@ acf_add_local_field_group(array (
                   ),
                 ),
                 array (
-                  'post_type' => array (
-                  ),
-                  'taxonomy' => array (
-                  ),
-                  'allow_null' => 0,
-                  'multiple' => 0,
-                  'allow_archives' => 1,
                   'key' => 'field_button_link',
                   'label' => 'Link',
                   'name' => 'link',
-                  'type' => 'page_link',
+                  'type' => 'link_picker',
                   'instructions' => '',
                   'required' => 1,
                   'conditional_logic' => 0,
@@ -1267,17 +1260,10 @@ acf_add_local_field_group(array (
                   ),
                 ),
                 array (
-                  'post_type' => array (
-                  ),
-                  'taxonomy' => array (
-                  ),
-                  'allow_null' => 0,
-                  'multiple' => 0,
-                  'allow_archives' => 1,
                   'key' => 'grid_text_button_image_button_link',
                   'label' => 'Button Link',
                   'name' => 'button_link',
-                  'type' => 'page_link',
+                  'type' => 'link_picker',
                   'instructions' => '',
                   'required' => 0,
                   'conditional_logic' => array (

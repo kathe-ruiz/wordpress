@@ -82,14 +82,15 @@
         "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
         "wpackagist-plugin/smtp-mailer": "1.0.2",
         "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3",
+        "wpackagist-plugin/acf-link-picker-field": "^1.2",
         "sw-simple-slider": "0.2.0",
         "sw-customizer": "0.2.2",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
         "formidable": "2.02.13",
         "oomphinc/composer-installers-extender": "^1.1",
-        "yoast/wordpress-seo": "^4.2"
-
+        "yoast/wordpress-seo": "^4.2",
+        "wpackagist-plugin/toolbar-publish-button": "^1.6"
     },
     "extra" : {
         "installer-types": ["library"],
@@ -104,6 +105,7 @@
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
+            "wpackagist-plugin/acf-link-picker-field",
             "wpackagist-plugin/smtp-mailer"
             ]
         }
