@@ -26,7 +26,7 @@ Thumbs.db
 *.tgz
 # ignore everything in the "wp-content" directory, except:
 /wp-content/uploads
-/wp-content/mu-plugins/*
+/wp-content/mu-plugins/mustuse-loader.php
 /wp-content/plugins/*
 
 # ACF PRO Licensed plugin that needs to be included in repo
