@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ccdb175d46f703ace79797ec7dc951f",
-    "content-hash": "a2c86f4b97b363164d5197f06da3f042",
+    "hash": "e3299850163f73c79ebd08ba298c17f5",
+    "content-hash": "eda7ef6ed5fb0686d0cb9c9a43e04a2f",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -287,7 +287,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-link-picker-field.1.2.8.zip",
-                "reference": null,
+                "reference": "tags/1.2.8",
                 "shasum": null
             },
             "require": {
@@ -415,6 +415,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/smtp-mailer/"
+        },
+        {
+            "name": "wpackagist-plugin/toolbar-publish-button",
+            "version": "1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/toolbar-publish-button/",
+                "reference": "tags/1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/toolbar-publish-button.1.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/toolbar-publish-button/"
         },
         {
             "name": "wpackagist-plugin/woocommerce",
