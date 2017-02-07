@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b821a168b54e79a05f52fc007e55a045",
-    "content-hash": "dafbf124e2732fd23c179248c2f0bea9",
+    "hash": "7369e481fae8d0a933645118e888081a",
+    "content-hash": "1f7a148fd6b29b4cc237e7d39355054e",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -347,7 +347,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.5.zip",
-                "reference": null,
+                "reference": "tags/1.1.5",
                 "shasum": null
             },
             "require": {
@@ -387,7 +387,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": null,
+                "reference": "tags/2.2.6",
                 "shasum": null
             },
             "require": {
@@ -407,7 +407,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -438,15 +438,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "2.6.13",
+            "version": "2.6.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/2.6.13"
+                "reference": "tags/2.6.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.14.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -507,7 +507,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
-                "reference": null,
+                "reference": "tags/1.2.3",
                 "shasum": null
             },
             "require": {
