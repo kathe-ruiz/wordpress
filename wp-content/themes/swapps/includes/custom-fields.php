@@ -23,7 +23,7 @@ acf_add_local_field_group(array (
       'return_format' => 'value',
       'key' => 'field_58988f2f45ea2',
       'label' => 'Landing Page Menu',
-      'name' => 'landign_page_menu',
+      'name' => 'landing_page_menu',
       'type' => 'select',
       'instructions' => '',
       'required' => 0,
@@ -230,10 +230,17 @@ acf_add_local_field_group(array (
                   ),
                 ),
                 array (
+                  'post_type' => array (
+                  ),
+                  'taxonomy' => array (
+                  ),
+                  'allow_null' => 0,
+                  'multiple' => 0,
+                  'allow_archives' => 1,
                   'key' => 'field_button_link',
                   'label' => 'Link',
                   'name' => 'link',
-                  'type' => 'link_picker',
+                  'type' => 'page_link',
                   'instructions' => '',
                   'required' => 1,
                   'conditional_logic' => 0,
@@ -1260,10 +1267,17 @@ acf_add_local_field_group(array (
                   ),
                 ),
                 array (
+                  'post_type' => array (
+                  ),
+                  'taxonomy' => array (
+                  ),
+                  'allow_null' => 0,
+                  'multiple' => 0,
+                  'allow_archives' => 1,
                   'key' => 'grid_text_button_image_button_link',
                   'label' => 'Button Link',
                   'name' => 'button_link',
-                  'type' => 'link_picker',
+                  'type' => 'page_link',
                   'instructions' => '',
                   'required' => 0,
                   'conditional_logic' => array (

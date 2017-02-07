@@ -3,26 +3,31 @@
  * Template Name: Landing
  */
 ?>
-<?php $rows = get_field('field_rows'); ?>
+<?php 
+  $rows = get_field('field_rows'); 
+  $lan = get_field('field_58988f2f45ea2');
+?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
   <?php $class_css = ""; ?>
   <?php if (!primary_landing_menu() and count($rows) > 2 and $key===1): ?>
-    <nav class="hidden-sm navbar navbar-secondary not-vivible <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>
-      <?php if (function_exists('sw_options') && sw_options('site_options_secondary_color')): ?><?php echo sw_options('site_options_secondary_color') ?><?php else: ?>navbar--transparent<?php endif?>" id="nav-sec">
-      <ul id="menu-menu-secundario" class="nav navbar-nav <?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo "pull-right";?><?php else: ?><?php echo "navbar-center"?><?php endif ?>">
-        <?php foreach ($rows as $nav_item_key => $value): ?>
-            <?php if ($nav_item_key > 0): ?>
-              <?php if ($value['section_name']) : ?>
-                <?php $string_menu = preg_replace('/\s+/', '', $value['section_name']);?>
-                <li id="menu-item-<?php echo "$nav_item_key"; ?>" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-<?php echo "$nav_item_key"; ?> current_page_item menu-item-<?php echo "$nav_item_key"; ?>">
-                  <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($string_menu); else: echo "menu-$nav_item_key"; endif ?>"><?php echo ($value['section_name']); ?></a>
-                </li>
+    <?php if ($lan == 'Secondary Navbar'): ?>
+      <nav class="hidden-sm navbar navbar-secondary not-vivible <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>
+        <?php if (function_exists('sw_options') && sw_options('site_options_secondary_color')): ?><?php echo sw_options('site_options_secondary_color') ?><?php else: ?>navbar--transparent<?php endif?>" id="nav-sec">
+        <ul id="menu-menu-secundario" class="nav navbar-nav <?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo "pull-right";?><?php else: ?><?php echo "navbar-center"?><?php endif ?>">
+          <?php foreach ($rows as $nav_item_key => $value): ?>
+              <?php if ($nav_item_key > 0): ?>
+                <?php if ($value['section_name']) : ?>
+                  <?php $string_menu = preg_replace('/\s+/', '', $value['section_name']);?>
+                  <li id="menu-item-<?php echo "$nav_item_key"; ?>" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-<?php echo "$nav_item_key"; ?> current_page_item menu-item-<?php echo "$nav_item_key"; ?>">
+                    <a title="<?php echo ($value['section_name']); ?>" href="<?php echo get_permalink() ?>#<?php if (($value['section_name'])): echo ($string_menu); else: echo "menu-$nav_item_key"; endif ?>"><?php echo ($value['section_name']); ?></a>
+                  </li>
+                <?php endif ?>
               <?php endif ?>
-            <?php endif ?>
-        <?php endforeach ?>
-      </ul>
-    </nav>
+          <?php endforeach ?>
+        </ul>
+      </nav>
+    <?php endif ?>
   <?php endif ?>
   <section
   <?php if ($row['custom_background']): ?>
