@@ -61,10 +61,15 @@
   background: rgba(#000, 0.85);
   @extend .navbar-default;
   .navbar__menu{
+    .active {
+      color: $brand-primary;
+      background-color: contrast_function($brand-primary) !important;
+    }
     .menu-item{
       a{
         &:hover,
         &:focus{
+          background-color: contrast_function($brand-primary);
           color: $brand-primary;
         }
       }
