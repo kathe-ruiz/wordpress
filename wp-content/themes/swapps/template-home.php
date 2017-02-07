@@ -11,7 +11,7 @@
       </div>
       <?php get_search_form(); ?>
     <?php endif; ?>
-
+    <?php if (function_exists('get_field')): ?>
     <?php
       if (get_field("slider_1")) {
         $main_slider = get_field("slider_1");
@@ -19,36 +19,40 @@
       if (get_field("slider_2")) {
         $secondary_slider = get_field("slider_2");
       }
-      // if (get_field("slider_3")) {
-      //   $slider_3 = get_field("slider_3");
-      // }
     ?>
-
-    <?php if(isset($main_slider)): ?>
+    <?php else: ?>
+      <?php
+        $main_slider = False;
+        $secondary_slider = False;
+       ?>
+    <?php endif ?>
+    <?php if($main_slider): ?>
       <?php $slides = get_slides_array($main_slider); ?>
-      <div class="owl-carousel owl-theme">
-        <?php foreach ($slides as $key => $slide): ?>
-          <?php
-            $image = $slide['image'];
-            $title = $slide['title'];
-            $description = $slide['description'];
-            $link = $slide['link'];
-            $cta = $slide['call_to_action_text'];
-          ?>
-          <div class="item">
-              <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" class="img-fluid">
-              <div class="caption">
-                <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
-                <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
-                <?php if ($link): ?>
-                <a href="<?php echo $link ?>" class="btn btn-primary">
-                  <?php if ($cta): echo $cta; endif; ?>
-                </a>
-                <?php endif ?>
+      <?php if ($slides): ?>
+        <div class="owl-carousel owl-theme">
+          <?php foreach ($slides as $key => $slide): ?>
+            <?php
+              $image = $slide['image'];
+              $title = $slide['title'];
+              $description = $slide['description'];
+              $link = $slide['link'];
+              $cta = $slide['call_to_action_text'];
+            ?>
+            <div class="item">
+                <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" class="img-fluid">
+                <div class="caption">
+                  <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
+                  <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
+                  <?php if ($link): ?>
+                  <a href="<?php echo $link ?>" class="btn btn-primary">
+                    <?php if ($cta): echo $cta; endif; ?>
+                  </a>
+                  <?php endif ?>
+                </div>
               </div>
-            </div>
-        <?php endforeach ?>
-      </div>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
     <?php else: // Hardcoded slider ?>
       <div class="owl-carousel owl-theme">
           <div class="item">
@@ -144,43 +148,45 @@
   <!-- end example of section -->
 
     <section id="four" class="bg-primary sliders-secondary">
-      <?php if(isset($secondary_slider)): ?>
+      <?php if($secondary_slider): ?>
       <?php $slides = get_slides_array($secondary_slider); ?>
-      <div class="owl-carousel owl-theme">
-      <?php foreach ($slides as $key => $slide): ?>
-        <?php
-          $image = $slide['image'];
-          $title = $slide['title'];
-          $title_2 = $slide['title_2'];
-          $description = $slide['description'];
-          $link = $slide['link'];
-          $cta = $slide['call_to_action_text'];
-        ?>
-        <div class="item">
-          <div class="row">
-            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
-              <?php if ($call_to_action_text): ?>
-                <h4 class="sliders__title text-center"><?php echo $call_to_action_text ?></h4>
-              <?php endif; ?>
-              <?php if ($description): ?>
-                <p class="sliders__text text-secondary"><?php echo $description ?></p>
-              <?php endif; ?>
-              <div class="sliders__divider row">
-                <div class="col-md-6 col-md-offset-3">
-                  <hr>
+        <?php if ($slides): ?>
+          <div class="owl-carousel owl-theme">
+          <?php foreach ($slides as $key => $slide): ?>
+            <?php
+              $image = $slide['image'];
+              $title = $slide['title'];
+              $title_2 = $slide['title_2'];
+              $description = $slide['description'];
+              $link = $slide['link'];
+              $cta = $slide['call_to_action_text'];
+            ?>
+            <div class="item">
+              <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+                  <?php if ($call_to_action_text): ?>
+                    <h4 class="sliders__title text-center"><?php echo $call_to_action_text ?></h4>
+                  <?php endif; ?>
+                  <?php if ($description): ?>
+                    <p class="sliders__text text-secondary"><?php echo $description ?></p>
+                  <?php endif; ?>
+                  <div class="sliders__divider row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <hr>
+                    </div>
+                  </div>
+                  <div class="sliders__footer">
+                    <?php if ($title): ?><p><?php echo $title ?></p><?php endif; ?>
+                    <?php if ($title_2): ?>
+                      <p class="text-secondary"><?php echo $title_2 ?></p>
+                    <?php endif; ?>
+                  </div>
                 </div>
               </div>
-              <div class="sliders__footer">
-                <?php if ($title): ?><p><?php echo $title ?></p><?php endif; ?>
-                <?php if ($title_2): ?>
-                  <p class="text-secondary"><?php echo $title_2 ?></p>
-                <?php endif; ?>
-              </div>
             </div>
+          <?php endforeach; ?>
           </div>
-        </div>
-      <?php endforeach; ?>
-      </div>
+        <?php endif ?>
       <?php else: // Hardcoded slider ?>
       <div class="owl-carousel owl-theme">
         <div class="item">
@@ -321,7 +327,7 @@
     </div>
   </section>
   <!-- end example of section -->
-  <section id="six" class="image-text one">
+  <section id="six" class="image-text one home-section">
     <div class="container">
       <div class="row image-text__content">
         <div class="col-sm-6">
@@ -335,7 +341,7 @@
       </div>
     </div>
   </section>
-  <section id="seven" class="image-text two">
+  <section id="seven" class="image-text two home-section">
     <div class="container">
       <div class="row image-text__content">
         <div class="col-sm-6 visible-xs">
@@ -367,7 +373,7 @@
       </div>
     </div>
   </section>
-  <section id="nine" class="icons">
+  <section id="nine" class="icons home-section">
     <div class="container">
       <div class="row text-center">
         <div class="icons__icon--large">

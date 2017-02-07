@@ -36,7 +36,11 @@
           <a href="tel:<?php echo sw_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
         <?php endif ?>
         <?php //if ($rows = primary_landing_menu()):?>
+        <?php if (function_exists('get_field')): ?>
         <?php $lan = get_field('field_58988f2f45ea2'); ?>
+        <?php else: ?>
+        <?php $lan = False ?>
+        <?php endif ?>
         <?php if ($lan == 'Main Navbar'): ?>
           <?php $rows = get_field('field_rows');?>
           <div class="navbar__menu collapse navbar-collapse" id="myNavbar">
