@@ -21,7 +21,7 @@ acf_add_local_field_group(array (
       'ajax' => 0,
       'placeholder' => '',
       'return_format' => 'value',
-      'key' => 'field_58988f2f45ea2',
+      'key' => 'field_landing_option',
       'label' => 'Landing Page Menu',
       'name' => 'landing_page_menu',
       'type' => 'select',

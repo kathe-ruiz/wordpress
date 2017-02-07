@@ -37,12 +37,12 @@
         <?php endif ?>
         <?php //if ($rows = primary_landing_menu()):?>
         <?php if (function_exists('get_field')): ?>
-        <?php $lan = get_field('field_58988f2f45ea2'); ?>
+        <?php $landing_option = get_field('field_landing_option'); ?>
+        <?php $rows = get_field('field_rows');?>
         <?php else: ?>
-        <?php $lan = False ?>
+        <?php $landing_option = False ?>
         <?php endif ?>
-        <?php if ($lan == 'Main Navbar'): ?>
-          <?php $rows = get_field('field_rows');?>
+        <?php if ($landing_option == 'Main Navbar'): ?>
           <div class="navbar__menu collapse navbar-collapse" id="myNavbar">
             <ul id="menu-menu-secundario" class="nav navbar-nav pull-right">
               <?php foreach ($rows as $key => $value): ?>
