@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7369e481fae8d0a933645118e888081a",
-    "content-hash": "1f7a148fd6b29b4cc237e7d39355054e",
+    "hash": "c01341a9600233dad1ac1ed8df67a842",
+    "content-hash": "66c8f548591bfc9ee3128d51fc44e442",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -375,6 +375,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/amazon-web-services/"
+        },
+        {
+            "name": "wpackagist-plugin/fakerpress",
+            "version": "0.4.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fakerpress/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fakerpress/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
