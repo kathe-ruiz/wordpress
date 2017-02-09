@@ -90,8 +90,7 @@
         "formidable": "2.02.13",
         "oomphinc/composer-installers-extender": "^1.1",
         "yoast/wordpress-seo": "^4.2",
-        "wpackagist-plugin/toolbar-publish-button": "^1.6",
-        "wpackagist-plugin/fakerpress": "0.4.7"
+        "wpackagist-plugin/toolbar-publish-button": "^1.6"
     },
     "extra" : {
         "installer-types": ["library"],
