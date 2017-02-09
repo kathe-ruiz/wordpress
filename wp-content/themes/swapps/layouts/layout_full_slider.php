@@ -25,7 +25,14 @@
           <?php if ($subtitle): ?><h4><?php echo $subtitle ?></h4><?php endif ?>
           <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
           <?php if ($link): ?>
-          <a href="<?php echo $link ?>" class="btn btn-primary">
+          <a href="<?php echo $link['url'] ?>" class="btn btn-primary"
+            <?php if ($link['title']): ?>
+              title="<?php echo $link['title'] ?>"
+            <?php endif; ?>
+            <?php if ($link['target']): ?>
+              target="<?php echo $link['target'] ?>"
+            <?php endif; ?>
+          >
             <?php if ($cta): echo $cta; endif; ?>
           </a>
           <?php endif ?>
