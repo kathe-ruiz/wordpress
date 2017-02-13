@@ -41,8 +41,8 @@
           },
           nav: true,
           navText: [
-            "<img src='/wp-content/themes/swapps/assets/images/back.svg'>",
-            "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
+            "<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>",
+            "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>"
           ],
         });
         $('.owl-carousel').owlCarousel({
@@ -60,8 +60,8 @@
           },
           nav: true,
           navText: [
-            "<img src='/wp-content/themes/swapps/assets/images/back.svg'>",
-            "<img src='/wp-content/themes/swapps/assets/images/next.svg'>"
+            "<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>",
+            "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>"
           ],
         });
 
