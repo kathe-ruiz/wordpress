@@ -39,7 +39,7 @@
               dots : 4,
             }
           },
-          nav: false,
+          nav: true,
           navText: [
             "<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>",
             "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>"
@@ -58,7 +58,7 @@
                   dots : true,
               }
           },
-          nav: false,
+          nav: true,
           navText: [
             "<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>",
             "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>"
