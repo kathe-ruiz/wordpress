@@ -114,7 +114,8 @@
   &-main{
     .owl-carousel{
       .item{
-        @include responsive-slide(600px);
+        @include responsive-slide(100vh);
+        min-height: 600px;
       }
     }
   }
