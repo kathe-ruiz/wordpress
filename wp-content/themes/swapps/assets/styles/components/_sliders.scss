@@ -54,7 +54,7 @@
       }
       i.fa{
         color: #fff;
-        @media (max-width: $screen-xs-max){
+        @media (max-width: $screen-xs-max) {
           font-size: 40px;
         }
         @media (min-width: $screen-sm-min) {
