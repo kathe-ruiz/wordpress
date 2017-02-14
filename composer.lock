@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba3f1b1335fd36cd8239096d450e5c01",
-    "content-hash": "60cbf4ed818970e380a0b2b248cb19d0",
+    "hash": "5d9b26dd6b4a37378a8525ba051db691",
+    "content-hash": "d7bb4e275372cf5c832bb3ab76c53a34",
     "packages": [
         {
             "name": "composer/installers",
@@ -158,11 +158,11 @@
         },
         {
             "name": "sw-simple-slider",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:swappsco/sw-simple-slider.git",
-                "reference": "0.2.0"
+                "reference": "0.2.1"
             },
             "type": "library"
         },
@@ -243,6 +243,26 @@
             "homepage": "https://wordpress.org/plugins/acf-image-crop-add-on/"
         },
         {
+            "name": "wpackagist-plugin/acf-link-picker-field",
+            "version": "1.2.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-link-picker-field/",
+                "reference": "tags/1.2.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-link-picker-field.1.2.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-link-picker-field/"
+        },
+        {
             "name": "wpackagist-plugin/addthis",
             "version": "5.3.4",
             "source": {
@@ -293,7 +313,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.4.zip",
-                "reference": "tags/1.1.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -333,7 +353,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/mailgun.1.4.1.zip",
-                "reference": "tags/1.4.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -373,7 +393,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
-                "reference": "tags/2.6.13",
+                "reference": null,
                 "shasum": null
             },
             "require": {
