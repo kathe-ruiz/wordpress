@@ -168,3 +168,17 @@ if (!function_exists('primary_landing_menu')) {
     }
   }
 }
+if (!function_exists('get_var_if_exists')) {
+  function get_if_exists($var, $default=NULL)
+  {
+    if (isset($var) and !empty($var) and $var) {
+      return $var;
+    } else {
+      if (is_null($default)) {
+        return False;
+      } else {
+        return $default;
+      }
+    }
+  }
+}
