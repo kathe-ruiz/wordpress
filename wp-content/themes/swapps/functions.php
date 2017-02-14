@@ -154,5 +154,17 @@ if (!function_exists('loop_columns')) {
     return 3; // 3 products per row
   }
 }
-// Display 24 products per page. Goes in functions.php
+// Display 9 products per page. Goes in functions.php
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );
+
+
+if (!function_exists('primary_landing_menu')) {
+  function primary_landing_menu()
+  {
+    if (!has_nav_menu('primary_navigation') and have_rows('field_rows')) {
+      return get_field('field_rows') ;
+    } else {
+      return False;
+    }
+  }
+}
