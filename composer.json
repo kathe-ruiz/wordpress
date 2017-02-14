@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.0",
+                "version": "0.2.1",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.0"
+                    "reference": "0.2.1"
                 }
             }
 
@@ -43,7 +43,8 @@
         "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1",
         "wpackagist-plugin/woocommerce-menu-bar-cart": "2.5.8.1",
         "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
-        "sw-simple-slider": "0.2.0",
+        "wpackagist-plugin/acf-link-picker-field": "^1.2",
+        "sw-simple-slider": "0.2.1",
         "wpaasp-customizer": "0.1.0",
         "oomphinc/composer-installers-extender": "^1.1"
 
@@ -57,6 +58,7 @@
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
+            "wpackagist-plugin/acf-link-picker-field",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on"
             ]
