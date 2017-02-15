@@ -1825,10 +1825,14 @@ p.demo_store {
 }
 .woocommerce{
   ul#shipping_method{
+    text-align: left;
     li{
       label{
         display: initial;
       }
     }
+  }
+  .woocommerce-shipping-calculator{
+    text-align: left;
   }
 }
