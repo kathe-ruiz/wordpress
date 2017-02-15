@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7718300ee773ddeeb24131fa8ba5454c",
-    "content-hash": "2cc2a61e42f66ad8af18826551ad472d",
+    "hash": "218e3c271b9ca0d98b9dd21640a1949a",
+    "content-hash": "f553f9dd80ef4cf16aa6eccba591ad18",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -16,6 +16,70 @@
                 "reference": "5.5.5"
             },
             "type": "library"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "f11f22d4e60c408187c3efd8ac201c022a93cc3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/f11f22d4e60c408187c3efd8ac201c022a93cc3f",
+                "reference": "f11f22d4e60c408187c3efd8ac201c022a93cc3f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "laravel/framework": "~5.1",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6",
+                "mockery/mockery": "~0.9",
+                "nette/di": "~2.2",
+                "phpunit/phpunit": "~4.8|~5.2",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "silex/silex": "~1.3",
+                "symfony/config": "~2.4|~3.0",
+                "symfony/dependency-injection": "~2.4|~3.0",
+                "symfony/http-kernel": "~2.4|~3.0",
+                "twig/twig": "~1.12",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                },
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "time": "2017-02-09 19:27:52"
         },
         {
             "name": "composer/installers",
@@ -427,7 +491,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/toolbar-publish-button.1.6.zip",
-                "reference": null,
+                "reference": "tags/1.6",
                 "shasum": null
             },
             "require": {
@@ -447,7 +511,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.14.zip",
-                "reference": null,
+                "reference": "tags/2.6.14",
                 "shasum": null
             },
             "require": {
@@ -670,23 +734,23 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "4.2.1",
+            "version": "4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "4d7fb5977b628591ac2596ced8a0ad728962bc32"
+                "reference": "1ce691b721e9c33ae414d7a9e62c52d0da254e4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/4d7fb5977b628591ac2596ced8a0ad728962bc32",
-                "reference": "4d7fb5977b628591ac2596ced8a0ad728962bc32",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/1ce691b721e9c33ae414d7a9e62c52d0da254e4e",
+                "reference": "1ce691b721e9c33ae414d7a9e62c52d0da254e4e",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
                 "xrstf/composer-php52": "^1.0.20",
                 "yoast/api-libs": "^2.0",
-                "yoast/i18n-module": "^2.0",
+                "yoast/i18n-module": "^2.0.1",
                 "yoast/license-manager": "^1.4.0"
             },
             "require-dev": {
@@ -720,7 +784,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2017-02-02 10:36:05"
+            "time": "2017-02-14 10:07:46"
         }
     ],
     "packages-dev": [],

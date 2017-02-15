@@ -10,34 +10,29 @@
 <div class="owl-carousel owl-theme">
   <?php foreach ($slides as $key => $slide): ?>
     <?php
-      $image = $slide['image'];
-      $title = $slide['title'];
-      $subtitle = $slide['title_2'];
-      $description = $slide['description'];
-      $link = $slide['link'];
-      $cta = $slide['call_to_action_text'];
+      $image = get_if_exists($slide['image']);
+      $title = get_if_exists($slide['title']);
+      $subtitle = get_if_exists($slide['title_2']);
+      $description = get_if_exists($slide['description']);
+      $link = get_if_exists($slide['link']['url']);
+      $cta = get_if_exists($slide['link']['title']);
     ?>
     <div class="item">
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" class="img-fluid">
-        <?php if ($title || $description): ?>
+        <?php if ($title || $description || ($link and $cta)): ?>
         <div class="caption">
+        <?php if ($title || $description): ?>
           <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
           <?php if ($subtitle): ?><h4><?php echo $subtitle ?></h4><?php endif ?>
           <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
-          <?php if ($link): ?>
-          <a href="<?php echo $link['url'] ?>" class="btn btn-primary"
-            <?php if ($link['title']): ?>
-              title="<?php echo $link['title'] ?>"
-            <?php endif; ?>
-            <?php if ($link['target']): ?>
-              target="<?php echo $link['target'] ?>"
-            <?php endif; ?>
-          >
-            <?php if ($cta): echo $cta; endif; ?>
+        <?php endif ?>
+        <?php if ($link and $cta): ?>
+          <a href="<?php echo $link ?>" class="btn btn-primary">
+            <?php echo $cta; ?>
           </a>
           <?php endif ?>
         </div>
-        <?php endif ?>
+          <?php endif ?>
       </div>
   <?php endforeach ?>
 </div>

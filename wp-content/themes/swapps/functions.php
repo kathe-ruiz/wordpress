@@ -9,6 +9,10 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+use Cocur\Slugify\Slugify;
+
+$slugify = new Slugify();
+
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
@@ -156,6 +160,20 @@ if (!function_exists('primary_landing_menu')) {
       return get_field('field_rows') ;
     } else {
       return False;
+    }
+  }
+}
+if (!function_exists('get_var_if_exists')) {
+  function get_if_exists($var, $default=NULL)
+  {
+    if (isset($var) and !empty($var) and $var) {
+      return $var;
+    } else {
+      if (is_null($default)) {
+        return False;
+      } else {
+        return $default;
+      }
     }
   }
 }

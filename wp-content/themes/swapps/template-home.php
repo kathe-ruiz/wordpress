@@ -26,7 +26,7 @@
         $secondary_slider = False;
        ?>
     <?php endif ?>
-    <?php if($main_slider): ?>
+    <?php if(isset($main_slider)): ?>
       <?php $slides = get_slides_array($main_slider); ?>
       <?php if ($slides): ?>
         <div class="owl-carousel owl-theme">

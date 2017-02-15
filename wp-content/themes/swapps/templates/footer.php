@@ -18,7 +18,7 @@
                 <div class="footer__info">
                   <span>
                   <?php if (function_exists('sw_options') && (sw_options('address') || sw_options('city') || sw_options('country'))): ?>
-                    <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i> 
+                    <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i>
                     <span class="footer__text footer__text--light text-secondary"><?php echo sw_options('address'); ?><br>
                     <?php if (sw_options('city')): ?>
                       <?php echo sw_options('city'); ?>,&nbsp;
@@ -36,7 +36,7 @@
               <div class="col-lg-6">
                 <div class="footer__info">
                     <?php if (function_exists('sw_options') && sw_options('email')): ?>
-                  <a class="footer__link" href="mailto:<?php echo sw_options('email'); ?>">
+                  <a class="" href="mailto:<?php echo sw_options('email'); ?>">
                     <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
                     <span class="footer__text text-secondary" href="#">
                       <?php echo sw_options('email'); ?>

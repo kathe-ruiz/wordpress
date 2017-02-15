@@ -2299,5 +2299,5 @@ function my_acf_init() {
   acf_update_setting('google_api_key', "AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY");
 }
 add_action('acf/init', 'my_acf_init');
-
+add_image_size( 'shop_catalog', 300, 300, true );
 endif;

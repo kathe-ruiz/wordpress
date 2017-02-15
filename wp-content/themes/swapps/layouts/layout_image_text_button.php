@@ -19,7 +19,7 @@
         </div>
       <?php endif ?>
       <?php if ($row_item['include_button']): ?>
-        <a class="image-text__btn btn btn-primary" 
+        <a class="image-text__btn btn btn-primary"
            href="<?php echo $row_item['button_link']['url']; ?>"
            <?php if ($row_item['button_link']['title']): ?>
            title="<?php echo $row_item['button_link']['title'] ?>"
@@ -28,7 +28,7 @@
            target="<?php echo $row_item['button_link']['target'] ?>"
            <?php endif; ?>
         >
-        <?php echo $row_item['button_label']; ?></a>
+        <?php echo $row_item['button_link']['title']; ?></a>
       <?php endif ?>
     </div>
   </div>
