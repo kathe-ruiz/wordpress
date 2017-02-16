@@ -19,7 +19,6 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        console.log("Testing WP-167");
         var players = plyr.setup();
         $('.video__icon').click(function() {
           $(this).hide();
