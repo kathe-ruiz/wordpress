@@ -21,11 +21,11 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.2.4",
+                "version": "0.2.5",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.2.4"
+                    "reference": "0.2.5"
                 }
             }
         },
@@ -84,7 +84,7 @@
         "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
         "sw-simple-slider": "0.2.1",
-        "sw-customizer": "0.2.4",
+        "sw-customizer": "0.2.5",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
         "formidable": "2.02.13",
