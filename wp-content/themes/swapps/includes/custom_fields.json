@@ -210,25 +210,6 @@
                                 "display": "table",
                                 "sub_fields": [
                                     {
-                                        "default_value": "Read More",
-                                        "maxlength": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "key": "field_button_label",
-                                        "label": "Label",
-                                        "name": "label",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 1,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        }
-                                    },
-                                    {
                                         "post_type": [
 
                                         ],
@@ -1235,33 +1216,6 @@
                                         "instructions": "",
                                         "required": 0,
                                         "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        }
-                                    },
-                                    {
-                                        "default_value": "",
-                                        "maxlength": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "key": "grid_text_button_image_button_label",
-                                        "label": "Button Label",
-                                        "name": "button_label",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": [
-                                            [
-                                                {
-                                                    "field": "grid_text_button_image_include_button",
-                                                    "operator": "==",
-                                                    "value": "1"
-                                                }
-                                            ]
-                                        ],
                                         "wrapper": {
                                             "width": "",
                                             "class": "",

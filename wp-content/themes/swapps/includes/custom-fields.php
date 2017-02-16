@@ -211,25 +211,6 @@ acf_add_local_field_group(array (
               'display' => 'table',
               'sub_fields' => array (
                 array (
-                  'default_value' => 'Read More',
-                  'maxlength' => '',
-                  'placeholder' => '',
-                  'prepend' => '',
-                  'append' => '',
-                  'key' => 'field_button_label',
-                  'label' => 'Label',
-                  'name' => 'label',
-                  'type' => 'text',
-                  'instructions' => '',
-                  'required' => 1,
-                  'conditional_logic' => 0,
-                  'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                  ),
-                ),
-                array (
                   'key' => 'field_button_link',
                   'label' => 'Link',
                   'name' => 'link',
@@ -1226,33 +1207,6 @@ acf_add_local_field_group(array (
                   'instructions' => '',
                   'required' => 0,
                   'conditional_logic' => 0,
-                  'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                  ),
-                ),
-                array (
-                  'default_value' => '',
-                  'maxlength' => '',
-                  'placeholder' => '',
-                  'prepend' => '',
-                  'append' => '',
-                  'key' => 'grid_text_button_image_button_label',
-                  'label' => 'Button Label',
-                  'name' => 'button_label',
-                  'type' => 'text',
-                  'instructions' => '',
-                  'required' => 0,
-                  'conditional_logic' => array (
-                    array (
-                      array (
-                        'field' => 'grid_text_button_image_include_button',
-                        'operator' => '==',
-                        'value' => '1',
-                      ),
-                    ),
-                  ),
                   'wrapper' => array (
                     'width' => '',
                     'class' => '',
