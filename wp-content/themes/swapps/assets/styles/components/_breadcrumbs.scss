@@ -41,6 +41,7 @@
       color: inherit;
     }
     &:last-child{
+      word-wrap: break-word;
       @extend .breadcrumb__item--active;
     }
   }
