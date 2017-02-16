@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2da757457671639435226a1ea7cb2cd9",
-    "content-hash": "270da8399cd43aa04bf5303c443c7ff8",
+    "hash": "b74d6ad86f91e99233b36143230e5dfb",
+    "content-hash": "b7a2595c1f6e8cbe42e0d263bea20e08",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -242,11 +242,11 @@
         },
         {
             "name": "sw-customizer",
-            "version": "0.2.5",
+            "version": "0.2.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:swappsco/sw-customizer.git",
-                "reference": "0.2.5"
+                "reference": "0.2.6"
             },
             "type": "library"
         },
