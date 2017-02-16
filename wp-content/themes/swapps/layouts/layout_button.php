@@ -10,7 +10,7 @@
             target="<?php echo $row_item['link']['target'] ?>"
           <?php endif; ?>
         >
-          <?php echo $row_item['label'] ?>
+          <?php echo $row_item['link']['title'] ?>
         </a>
       </div>
     </div>
