@@ -19,6 +19,7 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        console.log("Testing WP-167");
         var players = plyr.setup();
         $('.video__icon').click(function() {
           $(this).hide();
@@ -68,8 +69,8 @@
         $("a.gallery__item").attr('rel', 'gallery').fancybox({
           'transitionIn'  : 'elastic',
           'transitionOut' : 'elastic',
-          'speedIn'   : 600, 
-          'speedOut'    : 200, 
+          'speedIn'   : 600,
+          'speedOut'    : 200,
           'overlayShow' : true,
           'showCloseButton' : true,
           'overlayColor' : '#666',
