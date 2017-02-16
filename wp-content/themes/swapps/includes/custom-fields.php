@@ -9,7 +9,6 @@ acf_add_local_field_group(array (
       'multiple' => 0,
       'allow_null' => 0,
       'choices' => array (
-        'Select' => 'Select',
         'No' => 'No',
         'Main Navbar' => 'Main Navbar',
         'Secondary Navbar' => 'Secondary Navbar',

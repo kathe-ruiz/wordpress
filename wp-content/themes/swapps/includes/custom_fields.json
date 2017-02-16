@@ -7,7 +7,6 @@
                 "multiple": 0,
                 "allow_null": 0,
                 "choices": {
-                    "Select": "Select",
                     "No": "No",
                     "Main Navbar": "Main Navbar",
                     "Secondary Navbar": "Secondary Navbar"
