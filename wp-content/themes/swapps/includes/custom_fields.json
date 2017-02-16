@@ -2219,6 +2219,48 @@
                             "class": "",
                             "id": ""
                         }
+                    },
+                    {
+                        "default_value": 10,
+                        "min": 0,
+                        "max": 150,
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_padding_top",
+                        "label": "Padding Top",
+                        "name": "padding_top",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": 10,
+                        "min": 0,
+                        "max": 150,
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_padding_bottom",
+                        "label": "Padding Bottom",
+                        "name": "padding_bottom",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
                     }
                 ],
                 "min": 1,
