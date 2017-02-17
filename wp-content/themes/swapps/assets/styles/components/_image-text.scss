@@ -9,6 +9,7 @@
     background:$body-other-bg;
   }
   .heading__title{
+    word-break: break-word;
     margin-top: 0px;
   }
   @media (max-width: $screen-sm) {
