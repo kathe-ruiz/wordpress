@@ -2,7 +2,7 @@
 Wordpress Base
 ==============
 
-Wordpress project using wordpress-ansible and PHP Dot Env
+Wordpress project using wordpress-ansible and PHP Dot Env, by swapps
 
 ************
 Requirements
