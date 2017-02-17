@@ -1,19 +1,10 @@
 .home-section{
-  @media (max-width: $screen-xs-max){
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
   @media (min-width: $screen-sm-min){
-    padding-top: 50px;
-    padding-bottom: 50px;
     .heading{
       margin-bottom: 50px;
     }
   }
-  &:first-child{
-    padding-top: 100px;
-  }
   .container:not(:last-child) {
-      margin-bottom: 2.5em;
+    margin-bottom: 2.5em;
   }
 }
