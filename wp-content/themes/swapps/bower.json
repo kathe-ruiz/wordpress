@@ -11,7 +11,8 @@
     "font-awesome": "^4.7.0",
     "owl.carousel": "^2.2.0",
     "fancybox": "^2.1.6",
-    "plyr": "^2.0.11"
+    "plyr": "^2.0.11",
+    "bootstrap-hover-dropdown": "^2.2.1"
   },
   "overrides": {
     "bootstrap-sass": {

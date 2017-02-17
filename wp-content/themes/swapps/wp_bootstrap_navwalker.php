@@ -62,10 +62,9 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
       $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
       if($args->has_children && $depth === 0) { 
         $class_names .= ' dropdown';
-      } 
-          elseif($args->has_children && $depth > 0) {
-            $class_names .= ' dropdown-submenu';
-          }
+      }elseif($args->has_children && $depth > 0) {
+        $class_names .= ' dropdown-submenu';
+      }
       if ( in_array( 'current-menu-item', $classes ) )
         $class_names .= ' active';
       $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
@@ -79,11 +78,13 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
       $atts['href']   = ! empty( $item->url )     ? $item->url : '';
       // If item has_children add atts to a.
       if ( $args->has_children) {
-        $atts['class']      = 'dropdown-toggle disabled';
-        $atts['data-hover'] = 'dropdown';
-        /*$atts['data-toggle']  = 'dropdown';*/
+        $atts['href']        = '#';
+        $atts['class']       = 'dropdown-toggle';
+        $atts['data-toggle'] = 'dropdown';
+        $atts['data-hover']  = 'dropdown';
         $atts['data-close-others'] = 'false';
-        /*$atts['aria-haspopup']  = 'true';*/
+        $atts['aria-haspopup']     = 'true';
+        /*$atts['data-delay']   ='1000';*/
       } else {
         $atts['href'] =! empty( $item->url ) ? $item->url : '';
       }
