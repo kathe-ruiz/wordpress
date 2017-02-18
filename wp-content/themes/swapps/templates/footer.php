@@ -9,9 +9,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive center-block footer__logo__img">
             <?php endif ?>
           </div>
+          <?php if (function_exists('sw_options') && (sw_options('address') || sw_options('city') || sw_options('country'))): ?>
           <div class="footer__info">
             <span>
-            <?php if (function_exists('sw_options') && (sw_options('address') || sw_options('city') || sw_options('country'))): ?>
               <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i>
               <span class="footer__text footer__text--light text-secondary"><?php echo sw_options('address'); ?><br>
               <?php if (sw_options('city')): ?>
@@ -23,24 +23,24 @@
                 Colombia
               <?php endif ?>
               </span>
-            <?php endif ?>
             </span>
           </div>
+          <?php endif ?>
+          <?php if (function_exists('sw_options') && sw_options('email')): ?>
           <div class="footer__info">
-              <?php if (function_exists('sw_options') && sw_options('email')): ?>
-              <a class="" href="mailto:<?php echo sw_options('email'); ?>">
-                <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
-                <span class="footer__text text-secondary" href="#">
-                  <?php echo sw_options('email'); ?>
-                </span>
-              </a>
-              <?php endif ?>
+            <a class="" href="mailto:<?php echo sw_options('email'); ?>">
+              <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
+              <span class="footer__text text-secondary" href="#">
+                <?php echo sw_options('email'); ?>
+              </span>
+            </a>
           </div>
+          <?php endif ?>
+          <?php if (function_exists('sw_options') && sw_options('phone')): ?>
           <div class="footer__phone">
-            <?php if (function_exists('sw_options') && sw_options('phone')): ?>
               <a href="tel:<?php echo sw_options('phone'); ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
-            <?php endif ?>
           </div>
+          <?php endif ?>
           <div class="footer__right">
             <div class="socialmedia footer__socialmedia">
               <?php include 'includes/socialmedia.php' ?>
