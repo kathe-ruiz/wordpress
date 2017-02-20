@@ -1,11 +1,11 @@
 $navbar-top-border:        3px;
 
-$paragraphs-font-family:    "Montserrat" !default;
+$paragraphs-font-family:    $font-family-base;
 $paragraphs-font-weight:    300 !default;
 $paragraphs-line-height:    1.6 !default;
 $paragraphs-color:          inherit !default;
 
-$paragraphs-secondary-font-family:    "Playfair Display" !default;
+$paragraphs-secondary-font-family:    $paragraphsfontname !default;
 $paragraphs-secondary-font-weight:    400 !default;
 
 $button-without-border-radius:  0px;

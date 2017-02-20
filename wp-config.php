@@ -85,6 +85,9 @@ define('WP_DEBUG', $wp_debug);
 define( 'DBI_AWS_ACCESS_KEY_ID', getenv('AWS_ACCESS_KEY_ID') );
 define( 'DBI_AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
 
+if (WP_DEBUG == false) {
+	$_SERVER['HTTPS']='on';
+}
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -93,3 +96,6 @@ define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+define('FONT_NAME', getenv("MAIN_FONT_NAME")?:"Montserrat");
+define('PARAGRAPHS_SECONDARY_FONT_NAME', getenv("PARAGRAPHS_SECONDARY_FONT_NAME")?:"Playfair Display");
