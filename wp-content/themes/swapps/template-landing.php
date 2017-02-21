@@ -71,6 +71,9 @@
         case 'title':
         include('layouts/layout_title.php');
         break;
+        case 'space':
+        include('layouts/layout_space.php');
+        break;
         case 'text':
         include('layouts/layout_text.php');
         break;
