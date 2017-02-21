@@ -15,4 +15,7 @@
     font-size: $font-size-h4;
     line-height: 23px;
   }
+  @media (max-width: $screen-sm){
+    margin-bottom: 10px;
+  }
 }
