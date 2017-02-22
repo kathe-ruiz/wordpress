@@ -83,8 +83,6 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
         $atts['data-toggle'] = 'dropdown';
         $atts['data-hover']  = 'dropdown';
         $atts['data-close-others'] = 'false';
-        $atts['aria-haspopup']     = 'true';
-        /*$atts['data-delay']   ='1000';*/
       } else {
         $atts['href'] =! empty( $item->url ) ? $item->url : '';
       }

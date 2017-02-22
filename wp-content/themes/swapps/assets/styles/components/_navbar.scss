@@ -328,6 +328,33 @@
 }
 /* ======= STYLES FOR SECONDARY NAVBAR ======= */
 /* ======= STYLES FOR DROPDOWN ======= */
+.navbar__menu:not(.in){
+  .dropdown{
+    li{
+      a{
+        &:hover{
+          background: transparent;
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+  li.dropdown-submenu{
+    position: relative;
+    ul.dropdown-menu{
+      top: 0;
+      right: 100%;
+      float: none;
+      left: auto;
+    }
+    &.open{
+      a.dropdown-toggle{
+        background: transparent;
+        color: $brand-primary;
+      }
+    }
+  }
+}
 .nav.navbar-nav{
   li.dropdown-submenu{
     a.dropdown-toggle{
@@ -341,7 +368,7 @@
   .current-menu-ancestor.current-menu-parent,
   .current-menu-ancestor{
     > a{
-      color: $brand-primary;
+      color: $brand-primary !important;
     }
     li.active{
       a{
