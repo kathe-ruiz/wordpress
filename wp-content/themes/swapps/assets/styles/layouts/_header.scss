@@ -1,12 +1,12 @@
 @import "components/navbar";
 @import "components/socialmedia";
-.header{
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 2;
-}
-// Workaround for Wordpress admin bar
-.admin-bar .header {
-    margin-top: 32px;
+.admin-bar{
+    .navbar-fixed-top{
+      @media (min-width: $screen-sm-min) {
+        top: 32px;
+      }
+      @media (max-width: $screen-sm-min) {
+        top: 46px;
+      }
+    }
 }

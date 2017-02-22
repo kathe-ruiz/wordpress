@@ -3,14 +3,19 @@
   &__title{
     line-height: 42px;
     margin-bottom: 16px;
+    word-wrap: break-word;
   }
   &__subtitle{
     color: $subtitle-color;
     font-family: $paragraphs-secondary-font-family;
     font-weight: $paragraphs-secondary-font-weight;
+    word-wrap: break-word;
   }
   &__text{
     font-size: $font-size-h4;
     line-height: 23px;
+  }
+  @media (max-width: $screen-sm){
+    margin-bottom: 10px;
   }
 }

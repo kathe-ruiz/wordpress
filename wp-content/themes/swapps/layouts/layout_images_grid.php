@@ -14,7 +14,7 @@ if($total < 3){
   <?php foreach ($row_item['grid_elements'] as $grid_element): ?>
     <?php if($row_item['grid_type']=='images'): ?>
       <div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center highlight-item ">
-        <img src="<?php echo $grid_element['image']['url'] ?>" class="highlight-item__image img-responsive">
+        <img src="<?php echo $grid_element['image']['url'] ?>" class="highlight-item__image img-responsive center-block">
         <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
         <p class="icons__text"><?php echo $grid_element['description'] ?></p>
       </div>

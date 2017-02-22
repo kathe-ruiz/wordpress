@@ -7,7 +7,6 @@
                 "multiple": 0,
                 "allow_null": 0,
                 "choices": {
-                    "Select": "Select",
                     "No": "No",
                     "Main Navbar": "Main Navbar",
                     "Secondary Navbar": "Secondary Navbar"
@@ -209,25 +208,6 @@
                                 "label": "Button",
                                 "display": "table",
                                 "sub_fields": [
-                                    {
-                                        "default_value": "Read More",
-                                        "maxlength": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "key": "field_button_label",
-                                        "label": "Label",
-                                        "name": "label",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 1,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        }
-                                    },
                                     {
                                         "post_type": [
 
@@ -1242,33 +1222,6 @@
                                         }
                                     },
                                     {
-                                        "default_value": "",
-                                        "maxlength": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "key": "grid_text_button_image_button_label",
-                                        "label": "Button Label",
-                                        "name": "button_label",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": [
-                                            [
-                                                {
-                                                    "field": "grid_text_button_image_include_button",
-                                                    "operator": "==",
-                                                    "value": "1"
-                                                }
-                                            ]
-                                        ],
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        }
-                                    },
-                                    {
                                         "post_type": [
 
                                         ],
@@ -2260,6 +2213,48 @@
                                 }
                             ]
                         ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": 10,
+                        "min": 0,
+                        "max": 150,
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_padding_top",
+                        "label": "Padding Top",
+                        "name": "padding_top",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": 10,
+                        "min": 0,
+                        "max": 150,
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_padding_bottom",
+                        "label": "Padding Bottom",
+                        "name": "padding_bottom",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
                             "class": "",

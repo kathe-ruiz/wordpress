@@ -11,7 +11,7 @@
  */
 use Cocur\Slugify\Slugify;
 
-$slugify = new Slugify();
+
 
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
@@ -175,5 +175,13 @@ if (!function_exists('get_var_if_exists')) {
         return $default;
       }
     }
+  }
+}
+
+if (!function_exists('slugify')) {
+  function slugify($var)
+  {
+    $slugify = new Slugify();
+    return $slugify->slugify($var);
   }
 }
