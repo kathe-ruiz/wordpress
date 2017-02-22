@@ -1,5 +1,14 @@
 @import "components/footer";
 .footer{
+  &__info, &__phone{
+    flex: 2;
+  }
+  &__logo{
+    flex: 1;
+  }
+  &__right{
+    margin-left: auto;
+  }
   @media (min-width: $screen-sm-min){
     padding-bottom: 20px;
     padding-left: 15px;
