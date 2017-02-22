@@ -1161,6 +1161,20 @@
                                                     "class": "",
                                                     "id": ""
                                                 }
+                                            },
+                                            {
+                                                "key": "field_58ad97c3899ca",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "type": "link_picker",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                }
                                             }
                                         ],
                                         "min": 1,
