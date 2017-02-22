@@ -359,18 +359,20 @@ acf_add_local_field_group(array (
                 array (
                   'sub_fields' => array (
                     array (
-                      'force_crop' => 'yes',
-                      'crop_type' => 'hard',
+                      'return_format' => 'array',
                       'preview_size' => 'full',
-                      'save_format' => 'object',
-                      'save_in_media_library' => 'yes',
-                      'target_size' => 'custom',
                       'library' => 'all',
-                      'retina_mode' => 'no',
+                      'min_width' => 300,
+                      'min_height' => 300,
+                      'min_size' => '',
+                      'max_width' => '',
+                      'max_height' => '',
+                      'max_size' => '',
+                      'mime_types' => '',
                       'key' => 'field_images_grid_image',
                       'label' => 'Image',
                       'name' => 'image',
-                      'type' => 'image_crop',
+                      'type' => 'image',
                       'instructions' => '',
                       'required' => 0,
                       'conditional_logic' => array (
@@ -387,8 +389,6 @@ acf_add_local_field_group(array (
                         'class' => '',
                         'id' => '',
                       ),
-                      'width' => 320,
-                      'height' => 240,
                     ),
                     array (
                       'enqueue_fa' => 0,

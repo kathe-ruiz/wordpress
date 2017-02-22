@@ -13,14 +13,16 @@ if($total < 3){
   <div class="row highlights">
   <?php foreach ($row_item['grid_elements'] as $grid_element): ?>
     <?php if($row_item['grid_type']=='images'): ?>
+        <?php /*print_r($grid_element['image']['sizes']);*/
+      ?>
       <div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center highlight-item ">
         <?php if ($grid_element['link']['url']):?>
           <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
-            <img src="<?php echo $grid_element['image']['url'] ?>" class="highlight-item__image img-responsive center-block">
+            <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
           </a>
         <?php else: ?>
-          <img src="<?php echo $grid_element['image']['url'] ?>" class="highlight-item__image img-responsive center-block">
-        <?php endif ?>
+          <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
+        <?php endif ?> 
         <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
         <p class="icons__text"><?php echo $grid_element['description'] ?></p>
       </div>
