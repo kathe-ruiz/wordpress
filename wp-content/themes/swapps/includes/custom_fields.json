@@ -105,6 +105,37 @@
                                 "max": ""
                             },
                             {
+                                "key": "layout_space",
+                                "name": "space",
+                                "label": "Space",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "default_value": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_space",
+                                        "label": "Space Layout",
+                                        "name": "space_layout",
+                                        "type": "number",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
                                 "key": "layout_title",
                                 "name": "title",
                                 "label": "Title",

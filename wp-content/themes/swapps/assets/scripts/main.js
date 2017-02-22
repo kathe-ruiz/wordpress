@@ -128,6 +128,9 @@
           }
         });
         });
+        $(window).click(function() {
+          $('#myNavbar.collapse.in').removeClass('in');
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
