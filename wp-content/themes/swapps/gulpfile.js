@@ -82,6 +82,8 @@ var revManifest = path.dist + 'assets.json';
 //   .pipe(gulp.dest(path.dist + 'styles'))
 // ```
 var rgb_color = convert.hex.rgb(process.env.HEX_COLOR ? process.env.HEX_COLOR:'00ab61');
+var main_font_name = process.env.MAIN_FONT_NAME ? process.env.MAIN_FONT_NAME:'Montserrat';
+var paragraphs_fontname = process.env.PARAGRAPHS_SECONDARY_FONT_NAME ? process.env.PARAGRAPHS_SECONDARY_FONT_NAME:'Playfair Display';
 var cssTasks = function(filename) {
   return lazypipe()
     .pipe(function() {
@@ -96,7 +98,9 @@ var cssTasks = function(filename) {
     .pipe(function(){return sassVariables({
                 $primaryred: rgb_color[0],
                 $primarygreen: rgb_color[1],
-                $primaryblue: rgb_color[2]
+                $primaryblue: rgb_color[2],
+                $fontname: main_font_name,
+                $paragraphsfontname: paragraphs_fontname
              });})
     .pipe(function() {
       return gulpif('*.scss', sass({
@@ -261,7 +265,7 @@ gulp.task('watch', function() {
       blacklist: ['/wp-admin/**']
     }
   });
-  gulp.watch([path.source + 'styles/**/*'], ['styles']);
+  gulp.watch([path.source + 'styles/**/*', '../../../.env'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);

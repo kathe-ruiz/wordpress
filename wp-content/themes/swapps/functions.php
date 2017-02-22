@@ -9,6 +9,10 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+use Cocur\Slugify\Slugify;
+
+
+
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
@@ -39,28 +43,19 @@ require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
 require_once('includes/custom-pagination.php');
 
-register_nav_menus( array(
-  'primary' => __( 'Theme Menu', 'wordpress' ),
-) );
-//End Register Custom Navigator
-
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
-require_once('includes/admin-mods.php');
+// require_once('includes/admin-mods.php');
 
 function get_social_accounts()
 {
-  $accounts = array(
-    'facebook' => '//facebook.com/swappsco',
-    'twitter' => '//twitter.com/swappsco',
-    'instagram' => '#',
-    'vimeo' => '#'
-  );
-  if (function_exists('wpaasp_options')) {
-    $accounts['facebook'] = (wpaasp_options('social_facebook')) ?: null;
-    $accounts['twitter'] = (wpaasp_options('social_twitter')) ?: null;
-    $accounts['instagram'] = (wpaasp_options('social_instagram')) ?: null;
-    $accounts['vimeo'] = (wpaasp_options('social_vimeo')) ?: null;
+  $accounts = array();
+  if (function_exists('sw_options')) {
+    $accounts['facebook'] = (sw_options('social_facebook')) ?: null;
+    $accounts['twitter'] = (sw_options('social_twitter')) ?: null;
+    $accounts['instagram'] = (sw_options('social_instagram')) ?: null;
+    $accounts['vimeo'] = (sw_options('social_vimeo')) ?: null;
+    $accounts['linkedin'] = (sw_options('social_linkedin')) ?: null;
   }
   return $accounts;
 }
@@ -180,5 +175,13 @@ if (!function_exists('get_var_if_exists')) {
         return $default;
       }
     }
+  }
+}
+
+if (!function_exists('slugify')) {
+  function slugify($var)
+  {
+    $slugify = new Slugify();
+    return $slugify->slugify($var);
   }
 }

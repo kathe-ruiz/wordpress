@@ -1,6 +1,6 @@
 .two-lines{
 
-  &__block{
+  &__block:not(:last-child){
     margin-bottom: 60px;
   }
   &__text{
@@ -33,7 +33,6 @@
     }
     &__btn{
       font-size: $font-size-base;
-      float: left;
     }
   }
 }

@@ -1,5 +1,5 @@
 .image-text{
-  padding: 111px 0px;
+  // padding: 111px 0px;
 
   &__btn{
     text-transform: uppercase;
@@ -7,6 +7,10 @@
   }
   &.one{
     background:$body-other-bg;
+  }
+  .heading__title{
+    word-break: break-word;
+    margin-top: 0px;
   }
   @media (max-width: $screen-sm) {
     padding-top: 25px;
@@ -23,6 +27,11 @@
     &__btn{
       position: inherit;
       margin-top: 10px;
+    }
+    &__content{
+      .col-sm-6{
+        float: none !important;
+      }
     }
   }
 }

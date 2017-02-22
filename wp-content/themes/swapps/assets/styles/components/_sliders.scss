@@ -44,13 +44,27 @@
 
     .owl-prev, .owl-next{
       position: relative;
+      padding: 0;
+      padding-bottom: 3px;
+      opacity: 0.5;
       &:hover{
         background-color: rgba(180,180,180,0.4);
         border-radius: 50%;
+        opacity: 1;
+      }
+      i.fa{
+        color: #fff;
+        @media (max-width: $screen-xs-max) {
+          font-size: 40px;
+        }
+        @media (min-width: $screen-sm-min) {
+          font-size: 70px;
+          padding: 0;
+        }
       }
       img{
         @media (max-width: $screen-xs-max) {
-          width: 24px;
+          width: 20px;
         }
         @media (min-width: $screen-sm-min) {
           width: 40px;
@@ -60,10 +74,22 @@
     .owl-prev{
       float: left;
       left: $slider-nav-position;
+      padding-left: 11px;
+      padding-right: 16px;
+      @media (max-width: $screen-xs-max) {
+        padding-left: 8px;
+        padding-right: 13px;
+      }
     }
     .owl-next{
       float: right;
       right: $slider-nav-position;
+      padding-left: 16px;
+      padding-right: 11px;
+      @media (max-width: $screen-xs-max) {
+        padding-left: 13px;
+        padding-right: 8px;
+      }
     }
   }
   .owl-dots{
@@ -96,7 +122,8 @@
   &-main{
     .owl-carousel{
       .item{
-        @include responsive-slide(600px);
+        @include responsive-slide(100vh);
+        min-height: 600px;
       }
     }
   }

@@ -18,6 +18,7 @@ $loader = require __DIR__ . '/vendor/autoload.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', getenv('DB_NAME'));
@@ -92,3 +93,6 @@ define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+define('FONT_NAME', getenv("MAIN_FONT_NAME")?:"Montserrat");
+define('PARAGRAPHS_SECONDARY_FONT_NAME', getenv("PARAGRAPHS_SECONDARY_FONT_NAME")?:"Playfair Display");

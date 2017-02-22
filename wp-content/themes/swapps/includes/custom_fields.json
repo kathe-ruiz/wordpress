@@ -4,17 +4,42 @@
         "title": "Landing Fields",
         "fields": [
             {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "No": "No",
+                    "Main Navbar": "Main Navbar",
+                    "Secondary Navbar": "Secondary Navbar"
+                },
+                "default_value": [
+                    "Select"
+                ],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_landing_option",
+                "label": "Landing Page Menu",
+                "name": "landing_page_menu",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
                 "sub_fields": [
                     {
-                        "default_value": 0,
-                        "message": "",
-                        "ui": 1,
-                        "ui_on_text": "",
-                        "ui_off_text": "",
-                        "key": "field_custom_background",
-                        "label": "Custom Background",
-                        "name": "custom_background",
-                        "type": "true_false",
+                        "placement": "top",
+                        "endpoint": 0,
+                        "key": "field_58988742c0cc6",
+                        "label": "Row Content",
+                        "name": "",
+                        "type": "tab",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": 0,
@@ -25,68 +50,18 @@
                         }
                     },
                     {
-                        "multiple": 0,
-                        "allow_null": 0,
-                        "choices": {
-                            "bg-light": "Light",
-                            "bg-medium": "Medium",
-                            "bg-dark": "Dark",
-                            "bg-primary": "Brand Color"
-                        },
-                        "default_value": [
-                            "light"
-                        ],
-                        "ui": 0,
-                        "ajax": 0,
+                        "default_value": "",
+                        "maxlength": "",
                         "placeholder": "",
-                        "return_format": "value",
-                        "key": "field_row_background_color",
-                        "label": "Background Color",
-                        "name": "background_color",
-                        "type": "select",
-                        "instructions": "Choose the background of the Row",
-                        "required": 0,
-                        "conditional_logic": [
-                            [
-                                {
-                                    "field": "field_custom_background",
-                                    "operator": "==",
-                                    "value": "1"
-                                }
-                            ]
-                        ],
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        }
-                    },
-                    {
-                        "return_format": "array",
-                        "preview_size": "thumbnail",
-                        "library": "all",
-                        "min_width": "",
-                        "min_height": "",
-                        "min_size": "",
-                        "max_width": "",
-                        "max_height": "",
-                        "max_size": "",
-                        "mime_types": "",
-                        "key": "field_row_background_image",
-                        "label": "Background Image",
-                        "name": "background_image",
-                        "type": "image",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_58937677a22ac",
+                        "label": "Section Name",
+                        "name": "section_name",
+                        "type": "text",
                         "instructions": "",
                         "required": 0,
-                        "conditional_logic": [
-                            [
-                                {
-                                    "field": "field_custom_background",
-                                    "operator": "==",
-                                    "value": "1"
-                                }
-                            ]
-                        ],
+                        "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
                             "class": "",
@@ -105,7 +80,9 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [],
+                                        "taxonomy": [
+
+                                        ],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -232,27 +209,12 @@
                                 "display": "table",
                                 "sub_fields": [
                                     {
-                                        "default_value": "Read More",
-                                        "maxlength": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "key": "field_button_label",
-                                        "label": "Label",
-                                        "name": "label",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 1,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        }
-                                    },
-                                    {
-                                        "post_type": [],
-                                        "taxonomy": [],
+                                        "post_type": [
+
+                                        ],
+                                        "taxonomy": [
+
+                                        ],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "allow_archives": 1,
@@ -283,7 +245,9 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [],
+                                        "taxonomy": [
+
+                                        ],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -315,8 +279,8 @@
                                         "library": "all",
                                         "min": 4,
                                         "max": "",
-                                        "min_width": "",
-                                        "min_height": "",
+                                        "min_width": 300,
+                                        "min_height": 300,
                                         "min_size": "",
                                         "max_width": "",
                                         "max_height": "",
@@ -1258,35 +1222,12 @@
                                         }
                                     },
                                     {
-                                        "default_value": "",
-                                        "maxlength": "",
-                                        "placeholder": "",
-                                        "prepend": "",
-                                        "append": "",
-                                        "key": "grid_text_button_image_button_label",
-                                        "label": "Button Label",
-                                        "name": "button_label",
-                                        "type": "text",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": [
-                                            [
-                                                {
-                                                    "field": "grid_text_button_image_include_button",
-                                                    "operator": "==",
-                                                    "value": "1"
-                                                }
-                                            ]
+                                        "post_type": [
+
                                         ],
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        }
-                                    },
-                                    {
-                                        "post_type": [],
-                                        "taxonomy": [],
+                                        "taxonomy": [
+
+                                        ],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "allow_archives": 1,
@@ -2167,6 +2108,152 @@
                         "type": "flexible_content",
                         "instructions": "Add the items you need for the row",
                         "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "placement": "top",
+                        "endpoint": 0,
+                        "key": "field_5898871dc0cc5",
+                        "label": "Row Options",
+                        "name": "",
+                        "type": "tab",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": 0,
+                        "message": "",
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "key": "field_custom_background",
+                        "label": "Custom Background",
+                        "name": "custom_background",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "bg-light": "Light",
+                            "bg-medium": "Medium",
+                            "bg-dark": "Dark",
+                            "bg-primary": "Brand Color"
+                        },
+                        "default_value": [
+                            "light"
+                        ],
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "key": "field_row_background_color",
+                        "label": "Background Color",
+                        "name": "background_color",
+                        "type": "select",
+                        "instructions": "Choose the background of the Row",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_custom_background",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "key": "field_row_background_image",
+                        "label": "Background Image",
+                        "name": "background_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_custom_background",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": 10,
+                        "min": 0,
+                        "max": 150,
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_padding_top",
+                        "label": "Padding Top",
+                        "name": "padding_top",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
+                        "default_value": 10,
+                        "min": 0,
+                        "max": 150,
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "key": "field_padding_bottom",
+                        "label": "Padding Bottom",
+                        "name": "padding_bottom",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",

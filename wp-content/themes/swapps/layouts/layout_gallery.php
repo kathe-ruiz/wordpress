@@ -14,8 +14,8 @@
           <?php foreach ($row_item['gallery'] as $item): ?>
             <?php
               $image = $item['url'];
-              $size = isset($item['sizes']['shop_catalog']) ?
-                  $item['sizes']['shop_catalog'] : $item['sizes']['medium'] ;
+              $size = $item['sizes']['shop_catalog'];
+              $size = get_if_exists($item['sizes']['shop_catalog'], $default=$item['sizes']['medium']);
               $width = $item['sizes']['shop_catalog-width'];
               $height = $item['sizes']['shop_catalog-height'];
             ?>

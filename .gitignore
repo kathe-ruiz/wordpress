@@ -30,9 +30,9 @@ Thumbs.db
 /wp-content/plugins/*
 
 # ACF PRO Licensed plugin that needs to be included in repo
-!/wp-content/mu-plugins/advanced-custom-fields-pro
+#!/wp-content/mu-plugins/advanced-custom-fields-pro
 # Forms plugin required with license
-!/wp-content/mu-plugins/formidable
+#!/wp-content/mu-plugins/formidable
 
 # OPTIONAL PLUGINS that need to be in the REPO
 !/wp-content/plugins/live-composer-page-builder
@@ -45,3 +45,4 @@ Thumbs.db
 
 /vendor/
 !.gitkeep
+./readme.html

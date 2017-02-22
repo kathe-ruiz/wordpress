@@ -9,3 +9,28 @@
     border-radius: $button-without-border-radius;
   }
 }
+.form-field{
+  input, textarea{
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+.frm-show-form{
+  .form-field{
+    @extend .form-group, .form-group-sm;
+  }
+  input:not([type=submit]), textarea{
+    @extend .form-control;
+  }
+  input[type=submit]{
+    @extend .btn, .btn-primary-withoutborder;
+  }
+}
+.frm_form_field.form-field {
+  display: block !important;
+  float: none !important;
+  clear: both !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
