@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.1",
+                "version": "0.2.2",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.1"
+                    "reference": "0.2.2"
                 }
             }
 
@@ -83,7 +83,7 @@
         "wpackagist-plugin/smtp-mailer": "1.0.2",
         "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
-        "sw-simple-slider": "0.2.1",
+        "sw-simple-slider": "0.2.2",
         "sw-customizer": "0.2.6",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",

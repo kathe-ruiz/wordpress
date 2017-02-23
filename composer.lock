@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b74d6ad86f91e99233b36143230e5dfb",
-    "content-hash": "b7a2595c1f6e8cbe42e0d263bea20e08",
+    "hash": "88376a99b0bf262f01257479d6fc1fc9",
+    "content-hash": "4c978590e81f86a24f1bda5a6df2183f",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -252,11 +252,11 @@
         },
         {
             "name": "sw-simple-slider",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:swappsco/sw-simple-slider.git",
-                "reference": "0.2.1"
+                "reference": "0.2.2"
             },
             "type": "library"
         },
