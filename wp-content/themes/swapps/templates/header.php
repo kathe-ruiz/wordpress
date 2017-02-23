@@ -24,7 +24,7 @@
         ?>
         <img class="custom-logo" src="<?php echo $custom_logo; ?>" />
         <?php else: ?>
-          <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive">
+          <div class="logo-name"><?php echo get_bloginfo( 'name' ) ?></div>
         <?php endif ?>
         </a>
       </div>
