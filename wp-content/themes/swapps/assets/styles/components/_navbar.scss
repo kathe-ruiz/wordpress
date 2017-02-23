@@ -379,3 +379,12 @@
   }
 }
 /* ======= STYLES FOR DROPDOWN ======= */
+/* +++++++ Styles for space +++++++ */
+.header.not-fixed{
+  position: relative;
+  z-index: 9;
+}
+.wrap.not-fixed{
+  margin-top: -70px;
+}
+/* +++++++ Styles for space +++++++ */
