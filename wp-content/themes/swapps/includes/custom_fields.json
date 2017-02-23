@@ -368,18 +368,20 @@
                                     {
                                         "sub_fields": [
                                             {
-                                                "force_crop": "yes",
-                                                "crop_type": "hard",
+                                                "return_format": "array",
                                                 "preview_size": "full",
-                                                "save_format": "object",
-                                                "save_in_media_library": "yes",
-                                                "target_size": "custom",
                                                 "library": "all",
-                                                "retina_mode": "no",
+                                                "min_width": 300,
+                                                "min_height": 300,
+                                                "min_size": "",
+                                                "max_width": "",
+                                                "max_height": "",
+                                                "max_size": "",
+                                                "mime_types": "",
                                                 "key": "field_images_grid_image",
                                                 "label": "Image",
                                                 "name": "image",
-                                                "type": "image_crop",
+                                                "type": "image",
                                                 "instructions": "",
                                                 "required": 0,
                                                 "conditional_logic": [
@@ -395,9 +397,7 @@
                                                     "width": "",
                                                     "class": "",
                                                     "id": ""
-                                                },
-                                                "width": 320,
-                                                "height": 240
+                                                }
                                             },
                                             {
                                                 "enqueue_fa": 0,
@@ -1133,6 +1133,20 @@
                                                 "label": "Description",
                                                 "name": "description",
                                                 "type": "textarea",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                }
+                                            },
+                                            {
+                                                "key": "field_58ad97c3899ca",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "type": "link_picker",
                                                 "instructions": "",
                                                 "required": 0,
                                                 "conditional_logic": 0,

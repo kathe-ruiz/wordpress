@@ -13,16 +13,32 @@ if($total < 3){
   <div class="row highlights">
   <?php foreach ($row_item['grid_elements'] as $grid_element): ?>
     <?php if($row_item['grid_type']=='images'): ?>
+        <?php /*print_r($grid_element['image']['sizes']);*/
+      ?>
       <div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center highlight-item ">
-        <img src="<?php echo $grid_element['image']['url'] ?>" class="highlight-item__image img-responsive center-block">
+        <?php if ($grid_element['link']['url']):?>
+          <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
+            <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
+          </a>
+        <?php else: ?>
+          <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
+        <?php endif ?> 
         <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
         <p class="icons__text"><?php echo $grid_element['description'] ?></p>
       </div>
     <?php elseif($row_item['grid_type']=='icons'): ?>
       <div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center">
-        <div class="icons__icon text-primary">
-          <?php echo $grid_element['font_icon'] ?>
-        </div>
+        <?php if ($grid_element['link']['url']):?>
+          <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
+            <div class="icons__icon text-primary">
+              <?php echo $grid_element['font_icon'] ?>
+            </div>
+          </a>
+        <?php else: ?>
+          <div class="icons__icon text-primary">
+            <?php echo $grid_element['font_icon'] ?>
+          </div>
+        <?php endif ?>
         <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
         <p class="icons__text"><?php echo $grid_element['description'] ?></p>
       </div>
