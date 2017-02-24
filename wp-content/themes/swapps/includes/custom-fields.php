@@ -73,9 +73,9 @@ acf_add_local_field_group(array (
         array (
           'layouts' => array (
             array (
-              'key' => 'layout_full_slider',
-              'name' => 'full_slider',
-              'label' => 'Full Width Slider',
+              'key' => 'layout_image_slider',
+              'name' => 'image_slider',
+              'label' => 'Image Slider',
               'display' => 'row',
               'sub_fields' => array (
                 array (
@@ -88,13 +88,69 @@ acf_add_local_field_group(array (
                   'multiple' => 0,
                   'return_format' => 'object',
                   'ui' => 1,
-                  'key' => 'field_full_slider',
+                  'key' => 'field_image_slider',
                   'label' => 'Slider',
                   'name' => 'slider',
                   'type' => 'post_object',
                   'instructions' => 'Choose the slider you want to Display. To add or edit sliders Click Here</a>',
                   'required' => 1,
                   'conditional_logic' => 0,
+                  'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                  ),
+                ),
+                array (
+                  'multiple' => 0,
+                  'allow_null' => 0,
+                  'choices' => array (
+                    'full' => 'Fullscreen',
+                    'fixed' => 'Fixed Height',
+                  ),
+                  'default_value' => array (
+                    0 => 'full',
+                  ),
+                  'ui' => 0,
+                  'ajax' => 0,
+                  'placeholder' => '',
+                  'return_format' => 'value',
+                  'key' => 'field_slider_type',
+                  'label' => 'Slider type',
+                  'name' => 'slider_type',
+                  'type' => 'select',
+                  'instructions' => '',
+                  'required' => 0,
+                  'conditional_logic' => 0,
+                  'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                  ),
+                ),
+                array (
+                  'default_value' => '',
+                  'min' => '100',
+                  'max' => '',
+                  'step' => '',
+                  'placeholder' => '',
+                  'prepend' => '',
+                  'append' => '',
+                  'key' => 'field_slider_height',
+                  'label' => 'Height',
+                  'name' => 'slider_height',
+                  'type' => 'number',
+                  'instructions' => '',
+                  'required' => 1,
+                  'conditional_logic' => array (
+                    array (
+                      array (
+                        'field' => 'field_slider_type',
+                        'operator' => '==',
+                        'value' => 'fixed',
+                      ),
+                    ),
+                  ),
                   'wrapper' => array (
                     'width' => '',
                     'class' => '',

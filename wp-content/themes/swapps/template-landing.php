@@ -45,7 +45,7 @@
 "
   <?php
   switch ($row['row_items'][0]['acf_fc_layout']){
-    case 'full_slider':
+    case 'image_slider':
     $class_css .= ' sliders-main ';
     break;
     case 'text_slider':
@@ -78,8 +78,8 @@
         case 'text':
         include('layouts/layout_text.php');
         break;
-        case 'full_slider':
-        include('layouts/layout_full_slider.php');
+        case 'image_slider':
+        include('layouts/layout_image_slider.php');
         break;
         case 'button':
         include('layouts/layout_button.php');
