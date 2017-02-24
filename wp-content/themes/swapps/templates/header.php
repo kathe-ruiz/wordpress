@@ -60,7 +60,7 @@
           wp_nav_menu( array(
             'menu'              => 'primary_navigation',
             'theme_location'    => 'primary_navigation',
-            'depth'             => 4,
+            'depth'             => 0,
             'container'         => 'div',
             'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
             'container_id'      => 'myNavbar',
