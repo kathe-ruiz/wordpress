@@ -19,11 +19,17 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        var players = plyr.setup();
-        $('.video__icon').click(function() {
-          $(this).hide();
-          $('.video__player').show();
-          players[0].play();
+        var players = plyr.setup('.video__player');
+        $( ".setvideo" ).on( "click", function() {
+          x = this.getAttribute("data-target");
+          $(x).modal();
+          $(x).on('shown.bs.modal', function (e){
+            $(x+' .video__player').show();
+            /*$(x+' .video__player .plyr__play-large').trigger( "click" );*/
+          });
+          /*$(x).on('hidden.bs.modal', function (e) {
+            $(x+' .video__player .plyr__play-large').trigger( "click" );
+          });*/
         });
         $('#highlights').owlCarousel({
           items: 4,

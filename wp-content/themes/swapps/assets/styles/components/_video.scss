@@ -31,4 +31,24 @@
       line-height: 84px;
     }
   }
+  .modal{
+    .modal-content{
+      .modal-header{
+        padding: 0;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+        border-bottom: 0px;
+        right: 0;
+        margin-right: 7px;
+        .close{
+          color: $brand-primary;
+          font-size: 35px;
+        }
+      }
+      .modal-body{
+        padding: 0px;
+      }
+    }
+  }
 }
