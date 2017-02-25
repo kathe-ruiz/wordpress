@@ -6,14 +6,14 @@
         <h2 class="heading__title"><?php echo $row_item['video_title'] ?></h2>
       </div>
     <?php endif; ?>
-    <i class="fa fa-play-circle video__icon setvideo" aria-hidden="true" data-target="#myop-<?php echo $video_id ?>"></i>
+    <i class="fa fa-play-circle video__icon" aria-hidden="true" data-target="#video-<?php echo $video_id ?>"></i>
     <?php if (isset($row_item['video_description']) ): ?>
       <p class="video__text"><?php echo strip_tags($row_item['video_description']) ?></p>
     <?php endif; ?>
   </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" tabindex="-1" role="dialog" id="myop-<?php echo $video_id ?>">
+<div class="modal fade video__modal" tabindex="-1" role="dialog" id="video-<?php echo $video_id ?>">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">

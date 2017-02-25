@@ -19,17 +19,17 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        var players = plyr.setup('.video__player');
-        $( ".setvideo" ).on( "click", function() {
-          modal_id = this.getAttribute("data-target");
-          $(modal_id).modal();
-          $(modal_id).on('shown.bs.modal', function (e){
-            $(modal_id+' .video__player').show();
-            plyr.get(modal_id)[0].play();
-          });
-          $(modal_id).on('hide.bs.modal', function (e) {
-            plyr.get(modal_id)[0].pause();
-          });
+        plyr.setup();
+        $( ".video__icon" ).on( "click", function() {
+          $(this.dataset.target).modal();
+        });
+        // Play video on modal open
+        $('.video__modal').on('shown.bs.modal', function (e){
+          plyr.get('#' + this.id)[0].play();
+        });
+        // Pause video on modal close
+        $('.video__modal').on('hide.bs.modal', function (e) {
+          plyr.get('#' + this.id)[0].pause();
         });
         $('#highlights').owlCarousel({
           items: 4,
