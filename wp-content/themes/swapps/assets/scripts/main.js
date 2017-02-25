@@ -21,15 +21,15 @@
         // JavaScript to be fired on all pages
         var players = plyr.setup('.video__player');
         $( ".setvideo" ).on( "click", function() {
-          x = this.getAttribute("data-target");
-          $(x).modal();
-          $(x).on('shown.bs.modal', function (e){
-            $(x+' .video__player').show();
-            /*$(x+' .video__player .plyr__play-large').trigger( "click" );*/
+          modal_id = this.getAttribute("data-target");
+          $(modal_id).modal();
+          $(modal_id).on('shown.bs.modal', function (e){
+            $(modal_id+' .video__player').show();
+            plyr.get(modal_id)[0].play();
           });
-          /*$(x).on('hidden.bs.modal', function (e) {
-            $(x+' .video__player .plyr__play-large').trigger( "click" );
-          });*/
+          $(modal_id).on('hide.bs.modal', function (e) {
+            plyr.get(modal_id)[0].pause();
+          });
         });
         $('#highlights').owlCarousel({
           items: 4,

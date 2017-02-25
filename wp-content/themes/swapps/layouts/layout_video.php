@@ -1,5 +1,4 @@
-<?php $video_id = uniqid();
-?>
+<?php $video_id = uniqid(); ?>
 <div class="container">
   <div class="row text-center">
     <?php if (isset($row_item['video_title']) ): ?>
