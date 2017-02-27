@@ -10,6 +10,8 @@
   }else{
     $landing_option = False;
   }
+
+  get_template_part( 'nav' ); 
 ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>

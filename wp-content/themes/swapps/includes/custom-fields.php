@@ -34,6 +34,30 @@ acf_add_local_field_group(array (
       ),
     ),
     array (
+      'layout' => 'vertical',
+      'choices' => array (
+        'No' => 'No',
+        'Yes' => 'Yes',
+      ),
+      'default_value' => '',
+      'other_choice' => 0,
+      'save_other_choice' => 0,
+      'allow_null' => 0,
+      'return_format' => 'value',
+      'key' => 'field_breadcrumbs_option',
+      'label' => 'Breadcrumbs',
+      'name' => 'breadcrumbs',
+      'type' => 'radio',
+      'instructions' => '',
+      'required' => 0,
+      'conditional_logic' => 0,
+      'wrapper' => array (
+        'width' => '',
+        'class' => '',
+        'id' => '',
+      ),
+    ),
+    array (
       'sub_fields' => array (
         array (
           'placement' => 'top',
