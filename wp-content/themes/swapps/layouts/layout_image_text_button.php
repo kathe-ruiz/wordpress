@@ -19,16 +19,18 @@
         </div>
       <?php endif ?>
       <?php if ($row_item['include_button']): ?>
-        <a class="image-text__btn btn btn-primary"
-           href="<?php echo $row_item['button_link']['url']; ?>"
-           <?php if ($row_item['button_link']['title']): ?>
-           title="<?php echo $row_item['button_link']['title'] ?>"
-           <?php endif; ?>
-           <?php if ($row_item['button_link']['target']): ?>
-           target="<?php echo $row_item['button_link']['target'] ?>"
-           <?php endif; ?>
-        >
-        <?php echo $row_item['button_link']['title']; ?></a>
+        <?php if (($row_item['button_link']['url']) and (($row_item['button_link']['title']) != "")): ?>
+          <a class="image-text__btn btn btn-primary"
+             href="<?php echo $row_item['button_link']['url']; ?>"
+             <?php if ($row_item['button_link']['title']): ?>
+             title="<?php echo $row_item['button_link']['title'] ?>"
+             <?php endif; ?>
+             <?php if ($row_item['button_link']['target']): ?>
+             target="<?php echo $row_item['button_link']['target'] ?>"
+             <?php endif; ?>
+          >
+          <?php echo $row_item['button_link']['title']; ?></a>
+        <?php endif; ?>
       <?php endif ?>
     </div>
   </div>
