@@ -35,7 +35,7 @@
       </nav>
     <?php endif ?>
   <?php endif ?>
-  <section style="padding-top:<?php print_r($row['padding_top']);?>px;padding-bottom:<?php print_r($row['padding_bottom']);?>px;
+  <section style="padding-top:<?php echo($row['padding_top']);?>px;padding-bottom:<?php echo($row['padding_bottom']);?>px;
   <?php if ($row['custom_background']): ?>
     <?php if($row['background_image']): ?> background-image: url(<?php echo $row['background_image']['url']; ?>)
       <?php $class_css .= " bg-image "; ?>
