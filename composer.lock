@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b74d6ad86f91e99233b36143230e5dfb",
-    "content-hash": "b7a2595c1f6e8cbe42e0d263bea20e08",
+    "hash": "bcab2ba01a0c425adbd373759cfc3083",
+    "content-hash": "dc19c3b340a6eec6459b9e2755b3c0d2",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -371,7 +371,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": "tags/5.3.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -441,6 +441,26 @@
             "homepage": "https://wordpress.org/plugins/amazon-web-services/"
         },
         {
+            "name": "wpackagist-plugin/duplicate-post",
+            "version": "3.1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicate-post/",
+                "reference": "tags/3.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
             "name": "wpackagist-plugin/regenerate-thumbnails",
             "version": "2.2.6",
             "source": {
@@ -451,7 +471,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": "tags/2.2.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -531,7 +551,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": "tags/2.1.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -551,7 +571,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": "tags/2.5.8.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -571,7 +591,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
-                "reference": "tags/1.2.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -689,16 +709,16 @@
         },
         {
             "name": "yoast/license-manager",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/License-Manager.git",
-                "reference": "2b3588aeed60c573bb622edd0f1144e0ee206bcf"
+                "reference": "bbd295b63a693d58ecb501b59b60a506a74aa225"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/License-Manager/zipball/2b3588aeed60c573bb622edd0f1144e0ee206bcf",
-                "reference": "2b3588aeed60c573bb622edd0f1144e0ee206bcf",
+                "url": "https://api.github.com/repos/Yoast/License-Manager/zipball/bbd295b63a693d58ecb501b59b60a506a74aa225",
+                "reference": "bbd295b63a693d58ecb501b59b60a506a74aa225",
                 "shasum": ""
             },
             "type": "library",
@@ -730,20 +750,20 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-11-11 11:18:13"
+            "time": "2017-02-28 09:22:38"
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "4.3",
+            "version": "4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "1ce691b721e9c33ae414d7a9e62c52d0da254e4e"
+                "reference": "b4b581eb41960b4835e871d69033a715fe14fd3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/1ce691b721e9c33ae414d7a9e62c52d0da254e4e",
-                "reference": "1ce691b721e9c33ae414d7a9e62c52d0da254e4e",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/b4b581eb41960b4835e871d69033a715fe14fd3b",
+                "reference": "b4b581eb41960b4835e871d69033a715fe14fd3b",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +804,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2017-02-14 10:07:46"
+            "time": "2017-02-28 09:49:38"
         }
     ],
     "packages-dev": [],
