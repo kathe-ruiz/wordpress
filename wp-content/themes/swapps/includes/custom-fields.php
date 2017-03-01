@@ -2327,6 +2327,44 @@ acf_add_local_field_group(array (
           ),
         ),
         array (
+          'multiple' => 0,
+          'allow_null' => 0,
+          'choices' => array (
+            'None' => 'None',
+            'blur(5px)' => 'Blur',
+            'opacity(.5)' => 'Opacity',
+            'sepia(1)' => 'Sepia',
+            'grayscale(1)' => 'Grayscale',
+          ),
+          'default_value' => array (
+            0 => 'None',
+          ),
+          'ui' => 0,
+          'ajax' => 0,
+          'placeholder' => '',
+          'return_format' => 'value',
+          'key' => 'field_image_filter',
+          'label' => 'Image Filter',
+          'name' => 'image_filter',
+          'type' => 'select',
+          'instructions' => 'Choose the filter of the Image',
+          'required' => 0,
+          'conditional_logic' => array (
+            array (
+              array (
+                'field' => 'field_custom_background',
+                'operator' => '==',
+                'value' => '1',
+              ),
+            ),
+          ),
+          'wrapper' => array (
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+        ),
+        array (
           'default_value' => 10,
           'min' => 0,
           'max' => 150,

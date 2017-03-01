@@ -2345,6 +2345,44 @@
                         }
                     },
                     {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "None": "None",
+                            "blur(5px)": "Blur",
+                            "opacity(.5)": "Opacity",
+                            "sepia(1)": "Sepia",
+                            "grayscale(1)": "Grayscale"
+                        },
+                        "default_value": [
+                            "None"
+                        ],
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "key": "field_image_filter",
+                        "label": "Image Filter",
+                        "name": "image_filter",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_custom_background",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
                         "default_value": 10,
                         "min": 0,
                         "max": 150,

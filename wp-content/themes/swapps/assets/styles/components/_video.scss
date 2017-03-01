@@ -3,6 +3,9 @@
   padding-bottom: 120px;
   padding-top: 95px;
   color: $subscribe-text-color;
+  .relative{
+    position: relative;
+  }
   .heading{
     &__title{
       padding-bottom: 30px;

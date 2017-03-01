@@ -1,6 +1,6 @@
 <?php $video_id = uniqid(); ?>
 <div class="container">
-  <div class="row text-center">
+  <div class="row text-center relative">
     <?php if (isset($row_item['video_title']) ): ?>
       <div class="heading">
         <h2 class="heading__title"><?php echo $row_item['video_title'] ?></h2>
