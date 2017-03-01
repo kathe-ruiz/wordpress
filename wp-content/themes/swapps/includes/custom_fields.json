@@ -34,16 +34,16 @@
             {
                 "layout": "vertical",
                 "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
+                    "no": "No",
+                    "yes": "Yes"
                 },
-                "default_value": "",
+                "default_value": "no",
                 "other_choice": 0,
                 "save_other_choice": 0,
                 "allow_null": 0,
                 "return_format": "value",
                 "key": "field_breadcrumbs_option",
-                "label": "Breadcrumbs",
+                "label": "Remove breadcrumbs?",
                 "name": "breadcrumbs",
                 "type": "radio",
                 "instructions": "",
