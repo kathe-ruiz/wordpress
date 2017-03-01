@@ -10,6 +10,8 @@
   }else{
     $landing_option = False;
   }
+
+  get_template_part( 'nav' ); 
 ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
@@ -33,11 +35,8 @@
       </nav>
     <?php endif ?>
   <?php endif ?>
-  <section style="padding-top:<?php print_r($row['padding_top']);?>px;padding-bottom:<?php print_r($row['padding_bottom']);?>px;
+  <section style="position:relative;padding-top:<?php echo($row['padding_top']);?>px;padding-bottom:<?php echo($row['padding_bottom']);?>px;
   <?php if ($row['custom_background']): ?>
-    <?php if($row['background_image']): ?> background-image: url(<?php echo $row['background_image']['url']; ?>)
-      <?php $class_css .= " bg-image "; ?>
-    <?php endif; ?>
     <?php if ($row['background_color']): ?>
       <?php $class_css .= $row['background_color']; ?>
     <?php endif ?>
@@ -45,7 +44,7 @@
 "
   <?php
   switch ($row['row_items'][0]['acf_fc_layout']){
-    case 'full_slider':
+    case 'image_slider':
     $class_css .= ' sliders-main ';
     break;
     case 'text_slider':
@@ -66,17 +65,25 @@
   <?php $string_menu = slugify($row['section_name']);?>
   id="<?php if (($row['section_name'])): echo ($string_menu); else: echo "menu-$key"; endif ?>"
   class="<?php echo $class_css ?>" >
+    <?php if ($row['custom_background']): ?>
+      <?php if($row['background_image']): ?>
+        <div class="filter-image bg-image" style="background-image: url(<?php echo $row['background_image']['url']; ?>);filter:<?php echo $row['image_filter'];?>;"></div>
+      <?php endif; ?>
+    <?php endif ?>
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>
       <?php
       switch($row_item['acf_fc_layout']){
         case 'title':
         include('layouts/layout_title.php');
         break;
+        case 'space':
+        include('layouts/layout_space.php');
+        break;
         case 'text':
         include('layouts/layout_text.php');
         break;
-        case 'full_slider':
-        include('layouts/layout_full_slider.php');
+        case 'image_slider':
+        include('layouts/layout_image_slider.php');
         break;
         case 'button':
         include('layouts/layout_button.php');

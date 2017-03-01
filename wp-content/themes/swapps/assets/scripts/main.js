@@ -19,11 +19,17 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        var players = plyr.setup();
-        $('.video__icon').click(function() {
-          $(this).hide();
-          $('.video__player').show();
-          players[0].play();
+        plyr.setup();
+        $( ".video__icon" ).on( "click", function() {
+          $(this.dataset.target).modal();
+        });
+        // Play video on modal open
+        $('.video__modal').on('shown.bs.modal', function (e){
+          plyr.get('#' + this.id)[0].play();
+        });
+        // Pause video on modal close
+        $('.video__modal').on('hide.bs.modal', function (e) {
+          plyr.get('#' + this.id)[0].pause();
         });
         $('#highlights').owlCarousel({
           items: 4,
@@ -127,6 +133,9 @@
           $("#nav-sec").addClass('not-vivible');
           }
         });
+        });
+        $(window).click(function() {
+          $('#myNavbar.collapse.in').removeClass('in');
         });
       },
       finalize: function() {

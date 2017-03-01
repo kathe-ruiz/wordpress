@@ -3,6 +3,9 @@
   padding-bottom: 120px;
   padding-top: 95px;
   color: $subscribe-text-color;
+  .relative{
+    position: relative;
+  }
   .heading{
     &__title{
       padding-bottom: 30px;
@@ -20,7 +23,26 @@
     padding-top: 50px;
   }
   &__player{
-    display: none;
+  }
+  &__modal{
+    .modal-content{
+      .modal-header{
+        padding: 0;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+        border-bottom: 0px;
+        right: 0;
+        margin-right: 7px;
+        .close{
+          color: $brand-primary;
+          font-size: 35px;
+        }
+      }
+      .modal-body{
+        padding: 0px;
+      }
+    }
   }
   @media (max-width: $screen-sm){
     padding-bottom: 95px;
@@ -29,6 +51,14 @@
     &__icon{
       font-size: 7em;
       line-height: 84px;
+    }
+    &__modal{
+      .modal-dialog{
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
     }
   }
 }

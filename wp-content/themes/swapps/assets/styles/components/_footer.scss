@@ -60,6 +60,7 @@
       font-size: 30px;
       margin-top: 0;
       margin-bottom: 0;
+      margin: 0px;
       @media (max-width: 576px){
         font-size: 20px;
       }
@@ -77,8 +78,9 @@
     }
   }
   &__copyright{
+    clear: both;
     .text-secondary{
-      display: inline-block;
+      display: block;
     }
     @media (max-width: $screen-xs-max){
       text-align: center;

@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header<?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo " not-fixed"; ?><?php endif ?>">
   <nav id="autocollapse" class="navbar
   <?php if (function_exists('sw_options') && sw_options('site_options_header_color')): ?>
   <?php echo sw_options('site_options_header_color') ?>
@@ -24,7 +24,7 @@
         ?>
         <img class="custom-logo" src="<?php echo $custom_logo; ?>" />
         <?php else: ?>
-          <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive">
+          <div class="logo-name"><?php echo get_bloginfo( 'name' ) ?></div>
         <?php endif ?>
         </a>
       </div>
@@ -60,7 +60,7 @@
           wp_nav_menu( array(
             'menu'              => 'primary_navigation',
             'theme_location'    => 'primary_navigation',
-            'depth'             => 4,
+            'depth'             => 0,
             'container'         => 'div',
             'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
             'container_id'      => 'myNavbar',
