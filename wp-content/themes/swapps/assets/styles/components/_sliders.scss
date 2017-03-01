@@ -138,6 +138,11 @@
       width: 100%;
     }
 
+    .owl-stage{
+      display: flex;
+      align-items: center;
+    }
+
     text-align: center;
     @media (max-width: $screen-md-min) {
       text-align: left;
