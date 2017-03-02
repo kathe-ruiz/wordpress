@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bcab2ba01a0c425adbd373759cfc3083",
-    "content-hash": "dc19c3b340a6eec6459b9e2755b3c0d2",
+    "hash": "e17687b48e96b30a408325cba709ff7d",
+    "content-hash": "3202f2f1ccd1d86b5e3a7f57c3ecd8de",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -459,6 +459,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
+            "name": "wpackagist-plugin/google-tag-manager",
+            "version": "1.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-tag-manager/",
+                "reference": "tags/1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-tag-manager.1.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-tag-manager/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
