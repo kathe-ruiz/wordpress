@@ -19,6 +19,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <div class="document">
     <?php if (!is_front_page()): get_template_part('templates/page', 'header'); endif; ?>
     <div class="wrap container<?php if (!Setup\display_sidebar() ) :  echo '-fluid'; endif; ?><?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo " not-fixed"; ?><?php endif ?>" role="document">
       <div class="content row">
@@ -32,6 +33,7 @@ use Roots\Sage\Wrapper;
         <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
+    </div>
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
