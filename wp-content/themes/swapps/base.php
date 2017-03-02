@@ -38,7 +38,11 @@ use Roots\Sage\Wrapper;
       wp_footer();
     ?>
     <script type="text/javascript" id="cookieinfo"
-      src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.">
+      src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.') ?>"
+      <?php if (get_locale() == "es_ES"): ?>
+        data-moreinfo="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)"
+      <?php endif ?>
+      >
     </script>
   </body>
 </html>
