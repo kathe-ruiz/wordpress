@@ -7,6 +7,9 @@ p{
 .text-secondary{
   font-family: $paragraphs-secondary-font-family;
   font-weight: $paragraphs-secondary-font-weight;
+  p{
+    font-family: inherit;
+  }
 }
 body{
   -webkit-font-smoothing: antialiased;

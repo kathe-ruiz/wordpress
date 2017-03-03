@@ -1,6 +1,6 @@
 <footer class="footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row row-md-centered">
           <div class="footer__logo">
             <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
               <?php echo get_custom_footer_logo(); ?>

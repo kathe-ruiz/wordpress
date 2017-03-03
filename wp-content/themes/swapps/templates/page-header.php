@@ -1,9 +1,9 @@
 <?php use Roots\Sage\Titles; ?>
 <?php 
   if (function_exists('get_field')){
-    $landing_option = get_field('field_breadcrumbs_option');
+    $enable_breadcrumbs = ( get_field('field_breadcrumbs_option') == 'yes') ? true : false ;
   }
-  if ($landing_option == 'Yes'):?>
+  if ( $enable_breadcrumbs ): ?>
     <section class="breadcrumb bg-primary">
       <div class="container">
         <div class="row">
