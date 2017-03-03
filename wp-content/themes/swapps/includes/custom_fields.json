@@ -2222,6 +2222,38 @@
                                 ],
                                 "min": "",
                                 "max": ""
+                            },
+                            {
+                                "key": "layout_subscription",
+                                "name": "subscription",
+                                "label": "Subscription",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "post_type": [
+                                            "mc4wp-form"
+                                        ],
+                                        "taxonomy": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "return_format": "object",
+                                        "ui": 1,
+                                        "key": "field_sign_up",
+                                        "label": "Sign-up form",
+                                        "name": "sign_up",
+                                        "type": "post_object",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
                             }
                         ],
                         "min": 1,

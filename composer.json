@@ -94,7 +94,8 @@
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
         "oomphinc/composer-installers-extender": "^1.1",
-        "cocur/slugify": "^2.4"
+        "cocur/slugify": "^2.4",
+        "wpackagist-plugin/mailchimp-for-wp": "^4.0"
 
     },
     "extra" : {
@@ -109,6 +110,7 @@
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
+            "wpackagist-plugin/mailchimp-for-wp",
             "wpackagist-plugin/acf-link-picker-field",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
