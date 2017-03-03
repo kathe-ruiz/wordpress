@@ -19,6 +19,14 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        function stickyFooter() {
+          var footer_height = document.querySelector('.footer').offsetHeight;
+          document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
+          document.querySelector('.footer').style.marginTop = "-" + footer_height + "px";
+        }
+        $(window).on('load resize', function () {
+          stickyFooter();
+        });
         plyr.setup();
         $( ".video__icon" ).on( "click", function() {
           $(this.dataset.target).modal();
