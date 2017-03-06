@@ -42,3 +42,13 @@
     vertical-align: middle !important;
   }
 }
+.submit-container,
+.submit-wrap,
+.button-container,
+.button-wrap{
+  input,
+  button{
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}
