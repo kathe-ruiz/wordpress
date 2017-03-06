@@ -125,6 +125,27 @@
                                         }
                                     },
                                     {
+                                        "default_value": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": "",
+                                        "placeholder": "5000",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_image_slider_timeout",
+                                        "label": "Timeout",
+                                        "name": "timeout",
+                                        "type": "number",
+                                        "instructions": "Time between slides in miliseconds",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
                                         "multiple": 0,
                                         "allow_null": 0,
                                         "choices": {
@@ -369,6 +390,27 @@
                                         "type": "post_object",
                                         "instructions": "",
                                         "required": 1,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
+                                        "default_value": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": "",
+                                        "placeholder": "5000",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_text_slider_timeout",
+                                        "label": "Timeout",
+                                        "name": "timeout",
+                                        "type": "number",
+                                        "instructions": "Time between slides in miliseconds",
+                                        "required": 0,
                                         "conditional_logic": 0,
                                         "wrapper": {
                                             "width": "",

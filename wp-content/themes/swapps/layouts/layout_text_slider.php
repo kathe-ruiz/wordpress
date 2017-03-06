@@ -1,6 +1,35 @@
 <?php if(isset($row_item['slider'])): ?>
 <?php $slides = get_slides_array($row_item['slider']); ?>
-<div class="owl-carousel owl-theme">
+<?php $slider_id = uniqid(); ?>
+<script>
+// Initialize slider
+  jQuery(document).ready(function() {
+    jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 0,
+      responsiveClass: true,
+      responsive : {
+          0 : {
+              dots : false,
+          },
+          768 : {
+              dots : true,
+          }
+      },
+      nav: true,
+      navText: [
+        "<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>",
+        "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>"
+      ],
+      autoplay:true,
+      <?php if ($row_item['timeout']): ?>
+      autoplayTimeout:<?php echo $row_item['timeout'] ?>
+      <?php endif; ?>
+    });
+  })
+</script>
+<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
 <?php foreach ($slides as $key => $slide): ?>
   <?php
     $image = $slide['image'];
