@@ -126,6 +126,27 @@ acf_add_local_field_group(array (
                   ),
                 ),
                 array (
+                  'default_value' => '',
+                  'min' => '',
+                  'max' => '',
+                  'step' => '',
+                  'placeholder' => 5000,
+                  'prepend' => '',
+                  'append' => '',
+                  'key' => 'field_timeout',
+                  'label' => 'Timeout',
+                  'name' => 'timeout',
+                  'type' => 'number',
+                  'instructions' => 'Time between slides in miliseconds',
+                  'required' => 0,
+                  'conditional_logic' => 0,
+                  'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                  ),
+                ),
+                array (
                   'multiple' => 0,
                   'allow_null' => 0,
                   'choices' => array (
