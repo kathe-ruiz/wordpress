@@ -109,6 +109,9 @@
         case 'map':
         include('layouts/layout_map.php');
         break;
+        case 'label':
+        include('layouts/layout_label.php');
+        break;
       }
       ?>
       <?php endforeach ?>
