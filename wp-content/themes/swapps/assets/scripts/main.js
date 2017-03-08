@@ -24,8 +24,19 @@
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
           document.querySelector('.footer').style.marginTop = "-" + footer_height + "px";
         }
+        // Fix for KocoJeans
+        function fillRemainingSpace(){
+          var footerHeight = document.querySelector('.footer').offsetHeight;
+          var contentHeight = document.querySelector('.content').offsetHeight;
+          var totalHeight = footerHeight + contentHeight;
+          if(totalHeight < window.innerHeight){
+            var fill = window.innerHeight - totalHeight;
+            document.querySelector('section').style.paddingBottom = fill + "px";
+          }
+        }
         $(window).on('load resize', function () {
           stickyFooter();
+          fillRemainingSpace();
         });
         plyr.setup();
         $( ".video__icon" ).on( "click", function() {
