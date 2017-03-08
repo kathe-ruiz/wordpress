@@ -24,7 +24,7 @@
         ?>
         <img class="custom-logo" src="<?php echo $custom_logo; ?>" />
         <?php else: ?>
-          <div class="logo-name"><?php echo get_bloginfo( 'name' ) ?></div>
+          <div class="logo-name"><strong><?php echo get_bloginfo( 'name' ) ?></strong></div>
         <?php endif ?>
         </a>
       </div>

@@ -5,7 +5,7 @@
             <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
               <?php echo get_custom_footer_logo(); ?>
             <?php else: ?>
-              <div class="logo-name"><?php echo get_bloginfo( 'name' ) ?></div>
+              <div class="logo-name"><strong><?php echo get_bloginfo( 'name' ) ?></strong></div>
             <?php endif ?>
           </div>
           <div class="footer__info">
