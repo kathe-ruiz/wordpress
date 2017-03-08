@@ -397,6 +397,15 @@
     }
   }
 }
+/* Logo name color */
+.logo-name{
+  .navbar--dark &, .navbar--transparent &{
+    color: $white-text;
+  }
+  .navbar--light &{
+    color: $gray-dark;
+  }
+}
 /* ======= STYLES FOR DROPDOWN ======= */
 /* +++++++ Styles for space +++++++ */
 .header.not-fixed{
