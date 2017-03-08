@@ -3,6 +3,7 @@
   background: -webkit-linear-gradient(rgba(#000, .7), transparent);
   background: -o-linear-gradient(rgba(#000, .7), transparent);
   background: linear-gradient(rgba(#000, .7), transparent);
+
   .navbar__socialmedia{
     .socialmedia__item{
       .socialmedia__link{
@@ -15,6 +16,8 @@
     }
   }
 }
+
+
 .navbar--light{
   background: rgba(#FFF, 0.9);
   @extend .navbar-default;
@@ -60,6 +63,7 @@
 .navbar--dark{
   background: rgba(#000, 0.85);
   @extend .navbar-default;
+
   .navbar__menu{
     .active {
       color: $brand-primary;

@@ -83,7 +83,7 @@ var revManifest = path.dist + 'assets.json';
 // ```
 var rgb_color = convert.hex.rgb(process.env.HEX_COLOR ? process.env.HEX_COLOR:'00ab61');
 var main_font_name = process.env.MAIN_FONT_NAME ? process.env.MAIN_FONT_NAME:'Montserrat';
-var paragraphs_fontname = process.env.PARAGRAPHS_SECONDARY_FONT_NAME ? process.env.PARAGRAPHS_SECONDARY_FONT_NAME:'Playfair Display';
+var paragraphs_fontname = process.env.PARAGRAPHS_SECONDARY_FONT_NAME ? process.env.PARAGRAPHS_SECONDARY_FONT_NAME:'PlayfairDisplay';
 var cssTasks = function(filename) {
   return lazypipe()
     .pipe(function() {

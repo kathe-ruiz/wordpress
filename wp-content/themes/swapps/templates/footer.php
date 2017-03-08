@@ -5,7 +5,7 @@
             <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
               <?php echo get_custom_footer_logo(); ?>
             <?php else: ?>
-              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="img-responsive center-block footer__logo__img">
+              <div class="logo-name"><?php echo get_bloginfo( 'name' ) ?></div>
             <?php endif ?>
           </div>
           <div class="footer__info">
@@ -47,7 +47,7 @@
               <span class="text-secondary">Todos los derechos reservados</span>
             </div>
           </div>
-          
+
     </div>
     <div class="row text-center">
       <a class="brand-link text-secondary" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by Swapps</a>
