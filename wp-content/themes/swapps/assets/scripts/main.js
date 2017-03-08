@@ -38,6 +38,10 @@
           stickyFooter();
           fillRemainingSpace();
         });
+        // Hide navbar collapse button if there are no items in menu
+        if(document.querySelectorAll('.menu-item').length == 0){
+          document.querySelector('.navbar-toggle').style.display = 'none';
+        }
         plyr.setup();
         $( ".video__icon" ).on( "click", function() {
           $(this.dataset.target).modal();
