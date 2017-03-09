@@ -30,14 +30,14 @@
         color: $gray-dark;
         &:hover,
         &:focus{
-          color: $brand-primary;
+          color: contrast_function($navbar-default-link-color);
         }
       }
     }
     .menu-item.active{
       a{
         background-color: transparent;
-        color: $brand-primary;
+        color: darken( $navbar-default-link-color, 60% );
       }
     }
   }
@@ -63,7 +63,6 @@
 .navbar--dark{
   background: rgba(#000, 0.85);
   @extend .navbar-default;
-
   .navbar__menu{
     .active {
       color: $brand-primary;
