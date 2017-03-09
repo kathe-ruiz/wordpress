@@ -99,10 +99,6 @@
 }
 .navbar{
   padding: 10px 0;
-  @media (min-width: $grid-float-breakpoint){
-    // padding-top: 0;
-
-  }
   border-left:0;
   border-right: 0px;
   border-bottom: 0px;
@@ -110,7 +106,6 @@
   border-color: $brand-primary;
   margin-bottom: 0px;
   &__menu{
-    // margin-top: 11px;
     .menu-item.active{
       a{
         border-radius: $btn-border-radius-base;
@@ -121,7 +116,6 @@
     @media (min-width: $grid-float-breakpoint){
     }
     img{
-      //max-width: 75px;
       max-height: 45px;
       height: auto;
     }
@@ -149,13 +143,11 @@
     color: $navbar-default-link-color;
     &--compact{
       margin-right: 15px;
-      //margin-top: 15px;
       @media (min-width: $screen-lg-min){
         order: 2;
       }
     }
     .fa{
-      color: $brand-primary;
       vertical-align: middle;
       font-size: $font-size-h3;
     }
@@ -173,15 +165,10 @@
     @media (min-width: $screen-lg-min) {
       order: 3;
     }
-    &__block{
-      //margin-top: 20px;
-    }
   }
   @media (max-width: $grid-float-breakpoint-max) {
     &__logo{
       float: left;
-      img{
-      }
     }
     &__toggle{
       float: right;
