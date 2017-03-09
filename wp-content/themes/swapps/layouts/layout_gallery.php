@@ -11,6 +11,11 @@
     <div class="col-md-12">
       <div class="gallery text-center">
         <div class="row">
+        <?php if ($row_item['title']): ?>
+          <div class="heading">
+            <h2 class="heading__title"><?php echo($row_item['title']) ?></h2>
+          </div>
+        <?php endif ?>
           <?php foreach ($row_item['gallery'] as $item): ?>
             <?php
               $image = $item['url'];
@@ -27,6 +32,13 @@
             </div>
           <?php endforeach ?>
         </div>
+        <?php if ($row_item['title']): ?>
+          <div class="row">
+            <div class="gallery__description">
+              <?php echo($row_item['description']) ?>
+            </div>
+          </div>
+        <?php endif ?>
       </div>
     </div>
   </div>

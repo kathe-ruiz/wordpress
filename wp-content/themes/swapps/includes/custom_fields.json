@@ -420,6 +420,25 @@
                                 "display": "table",
                                 "sub_fields": [
                                     {
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_title_gallery",
+                                        "label": "Title",
+                                        "name": "title",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
                                         "library": "all",
                                         "min": 4,
                                         "max": "",
@@ -436,6 +455,25 @@
                                         "name": "gallery",
                                         "type": "gallery",
                                         "instructions": "Choose the gallery to use",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
+                                        "default_value": "",
+                                        "new_lines": "wpautop",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "rows": "",
+                                        "key": "field_description_gallery",
+                                        "label": "Description",
+                                        "name": "description",
+                                        "type": "textarea",
+                                        "instructions": "",
                                         "required": 0,
                                         "conditional_logic": 0,
                                         "wrapper": {
