@@ -20,7 +20,7 @@
     <?php if ($landing_option == 'Secondary Navbar'): ?>
       <nav class="hidden-xs hidden-sm navbar navbar-secondary not-vivible <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>
         <?php if (function_exists('sw_options') && sw_options('site_options_secondary_color')): ?><?php echo sw_options('site_options_secondary_color') ?><?php else: ?>navbar--transparent<?php endif?>" id="nav-sec">
-        <ul id="menu-menu-secundario" class="nav navbar-nav <?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo "pull-right";?><?php else: ?><?php echo "navbar-center"?><?php endif ?>">
+        <ul id="menu-menu-secundario" class="menu-secundario nav navbar-nav <?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo "pull-right";?><?php else: ?><?php echo "navbar-center"?><?php endif ?>">
           <?php foreach ($rows as $nav_item_key => $value): ?>
               <?php if ($nav_item_key > 0): ?>
                 <?php if ($value['section_name']) : ?>

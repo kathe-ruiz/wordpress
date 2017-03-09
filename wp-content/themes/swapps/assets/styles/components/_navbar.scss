@@ -207,7 +207,7 @@
   }
 }
 
-#autocollapse.collapsed{
+.autocollapse-class.collapsed{
   .row-lg-centered{
     display: block;
   }
@@ -276,12 +276,12 @@
   }
 }
 /* ======= STYLES FOR SECONDARY NAVBAR ======= */
-#nav-sec{
+.navbar-secondary{
   position: fixed;
   width: 100%;
   top: 0px;
   transition: all .5s ease-in-out;
-  #menu-menu-secundario.navbar-center{
+  .menu-secundario.navbar-center{
     width: 100%;
     float: none;
     text-align: center;
@@ -291,7 +291,7 @@
     }
   }
 }
-#nav-sec.navbar--light{
+.navbar-secondary.navbar--light{
   a{
     color: $gray-dark;
     &:hover,
@@ -300,29 +300,29 @@
     }
   }
 }
-#nav-sec.fx{
+.navbar-secondary.fx{
   top: 73px;
   padding: 0px;
 }
 .admin-bar{
-  #nav-sec.fx{
+  .navbar-secondary.fx{
     top: 100px;
   }
-  #nav-sec{
+  .navbar-secondary{
     top: 32px;
   }
 }
-#nav-sec.not-vivible{
+.navbar-secondary.not-vivible{
   opacity: 0;
   visibility: hidden;
   z-index: 0;
 }
-#nav-sec.vivible{
+.navbar-secondary.vivible{
   opacity: 1;
   visibility: visible;
   z-index: 999;
 }
-#menu-menu-secundario{
+.menu-secundario{
   .menu-item{
     text-transform: uppercase;
   }
