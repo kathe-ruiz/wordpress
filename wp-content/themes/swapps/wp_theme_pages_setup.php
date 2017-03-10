@@ -35,4 +35,29 @@
 // update_option( 'show_on_front', 'page' );
 // // // Set the blog page
 // update_option( 'page_for_posts', $blog_page );
+function the_slug_exists($post_name) {
+  global $wpdb;
+  if($wpdb->get_row("SELECT post_name FROM wp_posts WHERE post_name = '" . $post_name . "'", 'ARRAY_A')) {
+    return true;
+  } else {
+    return false;
+  }
+}
+// create the blog page
+if (isset($_GET['activated']) && is_admin()){
+  $page_title = 'Politica de uso de cookies';
+  $page_content = '';
+  $page_check = get_page_by_title($page_title);
+  $page = array(
+    'post_type' => 'page',
+    'post_title' => $page_title,
+    'post_content' => $page_content,
+    'post_status' => 'publish',
+    'post_author' => 1,
+    'post_slug' => 'politica_cookies'
+  );
+  if(!isset($page_check->ID) && !the_slug_exists('politica_cookies')){
+    $page_id = wp_insert_post($page);
+  }
+}
 ?>

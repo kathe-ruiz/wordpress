@@ -129,7 +129,7 @@
                                         "min": "",
                                         "max": "",
                                         "step": "",
-                                        "placeholder": "5000",
+                                        "placeholder": 5000,
                                         "prepend": "",
                                         "append": "",
                                         "key": "field_image_slider_timeout",
@@ -174,7 +174,7 @@
                                     },
                                     {
                                         "default_value": "",
-                                        "min": "100",
+                                        "min": 100,
                                         "max": "",
                                         "step": "",
                                         "placeholder": "",
@@ -341,19 +341,10 @@
                                 "display": "table",
                                 "sub_fields": [
                                     {
-                                        "post_type": [
-
-                                        ],
-                                        "taxonomy": [
-
-                                        ],
-                                        "allow_null": 0,
-                                        "multiple": 0,
-                                        "allow_archives": 1,
                                         "key": "field_button_link",
                                         "label": "Link",
                                         "name": "link",
-                                        "type": "page_link",
+                                        "type": "link_picker",
                                         "instructions": "",
                                         "required": 1,
                                         "conditional_logic": 0,
@@ -402,7 +393,7 @@
                                         "min": "",
                                         "max": "",
                                         "step": "",
-                                        "placeholder": "5000",
+                                        "placeholder": 5000,
                                         "prepend": "",
                                         "append": "",
                                         "key": "field_text_slider_timeout",
@@ -429,6 +420,25 @@
                                 "display": "table",
                                 "sub_fields": [
                                     {
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_title_gallery",
+                                        "label": "Title",
+                                        "name": "title",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
                                         "library": "all",
                                         "min": 4,
                                         "max": "",
@@ -445,6 +455,25 @@
                                         "name": "gallery",
                                         "type": "gallery",
                                         "instructions": "Choose the gallery to use",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
+                                        "default_value": "",
+                                        "new_lines": "wpautop",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "rows": "",
+                                        "key": "field_description_gallery",
+                                        "label": "Description",
+                                        "name": "description",
+                                        "type": "textarea",
+                                        "instructions": "",
                                         "required": 0,
                                         "conditional_logic": 0,
                                         "wrapper": {
@@ -1389,19 +1418,10 @@
                                         }
                                     },
                                     {
-                                        "post_type": [
-
-                                        ],
-                                        "taxonomy": [
-
-                                        ],
-                                        "allow_null": 0,
-                                        "multiple": 0,
-                                        "allow_archives": 1,
                                         "key": "grid_text_button_image_button_link",
                                         "label": "Button Link",
                                         "name": "button_link",
-                                        "type": "page_link",
+                                        "type": "link_picker",
                                         "instructions": "",
                                         "required": 0,
                                         "conditional_logic": [
@@ -2254,6 +2274,35 @@
                                         "type": "image",
                                         "instructions": "",
                                         "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "layout_label",
+                                "name": "label",
+                                "label": "Label",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_label_text",
+                                        "label": "Text",
+                                        "name": "text",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 1,
                                         "conditional_logic": 0,
                                         "wrapper": {
                                             "width": "",
