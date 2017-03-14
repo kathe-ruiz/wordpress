@@ -1,6 +1,17 @@
 .gallery{
+
   [class^="col-"] {
       padding: 1px;
+  }
+  .heading__title{
+    padding-bottom: 20px;
+  }
+  &__description{
+    padding: 25px 0px;
+    p{
+      font-size: 19px;
+      margin-bottom: 0px;
+    }
   }
   &__item-image {
     filter: none; /* IE6-9 */

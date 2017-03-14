@@ -24,9 +24,24 @@
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
           document.querySelector('.footer').style.marginTop = "-" + footer_height + "px";
         }
+        // Fix for KocoJeans
+        function fillRemainingSpace(){
+          var footerHeight = document.querySelector('.footer').offsetHeight;
+          var contentHeight = document.querySelector('.content').offsetHeight;
+          var totalHeight = footerHeight + contentHeight;
+          if(totalHeight < window.innerHeight){
+            var fill = window.innerHeight - totalHeight;
+            document.querySelector('section').style.paddingBottom = fill + "px";
+          }
+        }
         $(window).on('load resize', function () {
           stickyFooter();
+          fillRemainingSpace();
         });
+        // Hide navbar collapse button if there are no items in menu
+        if(document.querySelectorAll('.menu-item').length == 0){
+          document.querySelector('.navbar-toggle').style.display = 'none';
+        }
         plyr.setup();
         $( ".video__icon" ).on( "click", function() {
           $(this.dataset.target).modal();

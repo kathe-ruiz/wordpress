@@ -39,12 +39,30 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
-    <script type="text/javascript" id="cookieinfo"
-      src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.') ?>"
-      <?php if (get_locale() == "es_ES"): ?>
-        data-moreinfo="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)"
-      <?php endif ?>
-      >
-    </script>
+    <?php if (function_exists('sw_options')): ?>
+      <script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php if (sw_options('cookies_message')) {
+           echo sw_options('cookies_message');
+        }else{
+          _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.');
+          } ?>"
+        <?php if (sw_options('cookies_link')):?>
+          data-moreinfo="<?php echo get_permalink(sw_options('cookies_link'));?>"
+        <?php else: ?>
+          <?php if (get_locale() == "es_ES"): ?>
+            data-moreinfo="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)"
+          <?php endif; ?>
+        <?php endif; ?>
+        >
+      </script>
+    <?php else: ?>
+      <script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.'); ?>"
+          <?php if (get_locale() == "es_ES"): ?>
+            data-moreinfo="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)"
+          <?php endif; ?>
+        >
+      </script>
+    <?php endif; ?>
   </body>
 </html>

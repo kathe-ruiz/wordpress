@@ -56,3 +56,19 @@ $color-star:               #ffd700;
     @include text-contrast($brand-footer);
   }
 }
+.text-xs-center{
+  @media (max-width: $screen-xs-max){
+    text-align: center;
+  }
+}
+.text-sm-center{
+  @media (max-width: $screen-sm-max){
+    text-align: center;
+  }
+}
+.text-md-center{
+  @media (max-width: $screen-md-max){
+    text-align: center;
+  }
+}
+
