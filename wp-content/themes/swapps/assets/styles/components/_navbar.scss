@@ -16,8 +16,6 @@
     }
   }
 }
-
-
 .navbar--light{
   background: rgba(#FFF, 0.9);
   @extend .navbar-default;
@@ -30,14 +28,14 @@
         color: $gray-dark;
         &:hover,
         &:focus{
-          color: $brand-primary;
+          color: contrast_function($navbar-default-link-color);
         }
       }
     }
     .menu-item.active{
       a{
         background-color: transparent;
-        color: $brand-primary;
+        color: darken( $navbar-default-link-color, 60% );
       }
     }
   }
@@ -63,7 +61,6 @@
 .navbar--dark{
   background: rgba(#000, 0.85);
   @extend .navbar-default;
-
   .navbar__menu{
     .active {
       color: $brand-primary;
@@ -99,10 +96,6 @@
 }
 .navbar{
   padding: 10px 0;
-  @media (min-width: $grid-float-breakpoint){
-    // padding-top: 0;
-
-  }
   border-left:0;
   border-right: 0px;
   border-bottom: 0px;
@@ -110,7 +103,6 @@
   border-color: $brand-primary;
   margin-bottom: 0px;
   &__menu{
-    // margin-top: 11px;
     .menu-item.active{
       a{
         border-radius: $btn-border-radius-base;
@@ -121,7 +113,6 @@
     @media (min-width: $grid-float-breakpoint){
     }
     img{
-      //max-width: 75px;
       max-height: 45px;
       height: auto;
     }
@@ -149,13 +140,11 @@
     color: $navbar-default-link-color;
     &--compact{
       margin-right: 15px;
-      //margin-top: 15px;
       @media (min-width: $screen-lg-min){
         order: 2;
       }
     }
     .fa{
-      color: $brand-primary;
       vertical-align: middle;
       font-size: $font-size-h3;
     }
@@ -173,15 +162,10 @@
     @media (min-width: $screen-lg-min) {
       order: 3;
     }
-    &__block{
-      //margin-top: 20px;
-    }
   }
   @media (max-width: $grid-float-breakpoint-max) {
     &__logo{
       float: left;
-      img{
-      }
     }
     &__toggle{
       float: right;
@@ -221,7 +205,7 @@
   }
 }
 
-#autocollapse.collapsed{
+.autocollapse-class.collapsed{
   .row-lg-centered{
     display: block;
   }
@@ -290,12 +274,12 @@
   }
 }
 /* ======= STYLES FOR SECONDARY NAVBAR ======= */
-#nav-sec{
+.navbar-secondary{
   position: fixed;
   width: 100%;
   top: 0px;
   transition: all .5s ease-in-out;
-  #menu-menu-secundario.navbar-center{
+  .menu-secundario.navbar-center{
     width: 100%;
     float: none;
     text-align: center;
@@ -305,7 +289,7 @@
     }
   }
 }
-#nav-sec.navbar--light{
+.navbar-secondary.navbar--light{
   a{
     color: $gray-dark;
     &:hover,
@@ -314,29 +298,29 @@
     }
   }
 }
-#nav-sec.fx{
+.navbar-secondary.fx{
   top: 73px;
   padding: 0px;
 }
 .admin-bar{
-  #nav-sec.fx{
+  .navbar-secondary.fx{
     top: 100px;
   }
-  #nav-sec{
+  .navbar-secondary{
     top: 32px;
   }
 }
-#nav-sec.not-vivible{
+.navbar-secondary.not-vivible{
   opacity: 0;
   visibility: hidden;
   z-index: 0;
 }
-#nav-sec.vivible{
+.navbar-secondary.vivible{
   opacity: 1;
   visibility: visible;
   z-index: 999;
 }
-#menu-menu-secundario{
+.menu-secundario{
   .menu-item{
     text-transform: uppercase;
   }
@@ -395,6 +379,15 @@
         color: $brand-primary;
       }
     }
+  }
+}
+/* Logo name color */
+.logo-name{
+  .navbar--dark &, .navbar--transparent &{
+    color: $white-text;
+  }
+  .navbar--light &{
+    color: $gray-dark;
   }
 }
 /* ======= STYLES FOR DROPDOWN ======= */
