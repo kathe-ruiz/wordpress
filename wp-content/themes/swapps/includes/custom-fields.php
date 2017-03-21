@@ -2561,6 +2561,56 @@ acf_add_local_field_group(array (
   'description' => '',
 ));
 
+acf_add_local_field_group(array (
+  'key' => 'group_landing_phone',
+  'title' => 'Landing phone number',
+  'fields' => array (
+    array (
+      'default_value' => '',
+      'maxlength' => '',
+      'placeholder' => '',
+      'prepend' => '',
+      'append' => '',
+      'key' => 'field_phone',
+      'label' => 'Phone number',
+      'name' => 'phone_number',
+      'type' => 'text',
+      'instructions' => '',
+      'required' => 0,
+      'conditional_logic' => 0,
+      'wrapper' => array (
+        'width' => '',
+        'class' => '',
+        'id' => '',
+      ),
+    ),
+  ),
+  'location' => array (
+    array (
+      array (
+        'param' => 'page_type',
+        'operator' => '==',
+        'value' => 'front_page',
+      ),
+    ),
+  ),
+  'menu_order' => 0,
+  'position' => 'normal',
+  'style' => 'default',
+  'label_placement' => 'top',
+  'instruction_placement' => 'label',
+  'hide_on_screen' => array (
+    0 => 'the_content',
+    1 => 'excerpt',
+    2 => 'custom_fields',
+    3 => 'discussion',
+    4 => 'comments',
+    5 => 'featured_image',
+  ),
+  'active' => 1,
+  'description' => '',
+));
+
 function my_acf_init() {
   //acf_update_setting('google_api_key', getenv('GOOGLE_API_KEY',"AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY"));
   acf_update_setting('google_api_key', "AIzaSyCkyAIZ32b8OJi50ZUxPNx19G_82fecJDY");
