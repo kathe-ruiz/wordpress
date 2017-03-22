@@ -16,6 +16,9 @@
     }
   }
 }
+.navbar--light .navbar-nav .open .dropdown-menu>li>a{
+  color: $gray-dark;
+}
 .navbar--light{
   background: rgba(#FFF, 0.9);
   @extend .navbar-default;
