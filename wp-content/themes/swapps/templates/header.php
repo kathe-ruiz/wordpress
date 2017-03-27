@@ -32,8 +32,9 @@
         <div class="navbar__socialmedia socialmedia">
           <?php include 'includes/socialmedia.php' ?>
         </div>
-        <?php if (function_exists('sw_options') && sw_options('phone')): ?>
-          <a href="tel:<?php echo sw_options('phone'); ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
+        <?php $phone = sw_get_phone(); ?>
+        <?php if ($phone): ?>
+          <a href="tel:<?php echo $phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
         <?php endif ?>
         <?php //if ($rows = primary_landing_menu()):?>
         <?php if (function_exists('get_field')): ?>

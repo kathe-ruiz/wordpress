@@ -24,8 +24,9 @@
             <?php else: ?>
               'info@misitioweb.com<br>'+
             <?php endif ?>
-            <?php if (function_exists('sw_options') && sw_options('phone')): ?>
-              '<?php echo sw_options('phone'); ?><br>'+
+            <?php $phone = sw_get_phone(); ?>
+            <?php if ($phone): ?>
+              '<?php echo $phone; ?><br>'+
             <?php else: ?>
               '+57 (350) 316-8388<br>'+
             <?php endif ?>

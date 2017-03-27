@@ -33,9 +33,10 @@
             </a>
           <?php endif ?>
           </div>
-          <?php if (function_exists('sw_options') && sw_options('phone')): ?>
+          <?php $phone = sw_get_phone(); ?>
+          <?php if ($phone): ?>
           <div class="footer__phone">
-              <a href="tel:<?php echo sw_options('phone'); ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo sw_options('phone'); ?></span></a>
+              <a href="tel:<?php echo $phone; ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
           </div>
           <?php endif ?>
           <div class="footer__right">
