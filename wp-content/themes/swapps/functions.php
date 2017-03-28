@@ -46,6 +46,9 @@ require_once('includes/custom-pagination.php');
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 // require_once('includes/admin-mods.php');
+require 'widgets/subscribe_widget.php';
+
+
 
 function get_social_accounts()
 {
@@ -192,9 +195,11 @@ if (!function_exists('sw_get_phone')) {
     $front_page_id = (int)get_option('page_on_front');
     if (function_exists('get_field') && get_field( 'field_phone', $front_page_id )):
       $phone = get_field( 'field_phone', $front_page_id );
-    elseif (function_exists('sw_options') && sw_options('phone')):      
+    elseif (function_exists('sw_options') && sw_options('phone')):
       $phone = sw_options('phone');
     endif;
     return $phone;
   }
 }
+
+add_action( 'widgets_init', 'register_suscribe_widget' );
