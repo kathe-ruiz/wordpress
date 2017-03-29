@@ -1,4 +1,4 @@
-<header class="header<?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo " not-fixed"; ?><?php endif ?>">
+<header class="header">
   <nav id="autocollapse" class="autocollapse-class navbar
   <?php if (function_exists('sw_options') && sw_options('site_options_header_color')): ?>
   <?php echo sw_options('site_options_header_color') ?>
