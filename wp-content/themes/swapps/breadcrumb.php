@@ -94,7 +94,7 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 		} elseif ( is_year() ) {
 			$html .= '<li class="breadcrumb__item item-current item-year"><span class="breadcrumb__bread bread-current bread-year">' . get_the_date( 'Y' ) . '</span></li>';
 		} elseif ( is_archive() ) {
-			$custom_tax_name = get_queried_object()->name;
+			$custom_tax_name = get_queried_object()->label;
 			$html .= '<li class="breadcrumb__item item-current item-archive"><span class="breadcrumb__bread bread-current bread-archive">' . esc_html( $custom_tax_name ) . '</span></li>';
 		} elseif ( is_search() ) {
 			$html .= '<li class="breadcrumb__item item-current item-search"><span class="breadcrumb__bread bread-current bread-search">Search results for: ' . get_search_query() . '</span></li>';
