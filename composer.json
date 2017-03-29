@@ -57,6 +57,19 @@
         {
             "type": "package",
             "package": {
+                "name": "sitepress-multilingual-cms",
+                "version": "3.6.3",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "formidable",
                 "version": "2.02.13",
                 "source": {
@@ -90,6 +103,7 @@
         "sw-customizer": "0.2.7",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
+        "sitepress-multilingual-cms": "3.6.3",
         "formidable": "2.02.13",
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
