@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b42f81e6016e78ccc4cd2cfbf3a06e23",
-    "content-hash": "050104994d4357476237e907fb7bdaef",
+    "hash": "d67820e022b53bc981cd9922c5997d4b",
+    "content-hash": "442a746fbde80925ecc4358c3ce5a71a",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -19,16 +19,16 @@
         },
         {
             "name": "cocur/slugify",
-            "version": "v2.4",
+            "version": "v2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
-                "reference": "f11f22d4e60c408187c3efd8ac201c022a93cc3f"
+                "reference": "e8167e9a3236044afebd6e8ab13ebeb3ec9ca145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/f11f22d4e60c408187c3efd8ac201c022a93cc3f",
-                "reference": "f11f22d4e60c408187c3efd8ac201c022a93cc3f",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/e8167e9a3236044afebd6e8ab13ebeb3ec9ca145",
+                "reference": "e8167e9a3236044afebd6e8ab13ebeb3ec9ca145",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "symfony/config": "~2.4|~3.0",
                 "symfony/dependency-injection": "~2.4|~3.0",
                 "symfony/http-kernel": "~2.4|~3.0",
-                "twig/twig": "~1.12",
+                "twig/twig": "~1.26|~2.0",
                 "zendframework/zend-modulemanager": "~2.2",
                 "zendframework/zend-servicemanager": "~2.2",
                 "zendframework/zend-view": "~2.2"
@@ -79,7 +79,7 @@
                 "slug",
                 "slugify"
             ],
-            "time": "2017-02-09 19:27:52"
+            "time": "2017-03-23 21:52:55"
         },
         {
             "name": "composer/installers",
@@ -239,6 +239,16 @@
             "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
             "homepage": "http://www.oomphinc.com/",
             "time": "2016-07-05 15:00:34"
+        },
+        {
+            "name": "sitepress-multilingual-cms",
+            "version": "3.6.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                "reference": "master"
+            },
+            "type": "library"
         },
         {
             "name": "sw-customizer",
@@ -402,16 +412,16 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/1.1.5"
+                "reference": "tags/1.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.5.zip",
-                "reference": "tags/1.1.5",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.6.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -422,16 +432,16 @@
         },
         {
             "name": "wpackagist-plugin/amazon-web-services",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-web-services/",
-                "reference": "tags/1.0.1"
+                "reference": "tags/1.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
-                "reference": "tags/1.0.1",
+                "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.2.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -793,17 +803,59 @@
             "time": "2017-02-28 09:22:38"
         },
         {
-            "name": "yoast/wordpress-seo",
-            "version": "4.4",
+            "name": "yoast/whip",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "b4b581eb41960b4835e871d69033a715fe14fd3b"
+                "url": "https://github.com/Yoast/whip.git",
+                "reference": "192a294cd62d861aeecf19112bee0a83072de830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/b4b581eb41960b4835e871d69033a715fe14fd3b",
-                "reference": "b4b581eb41960b4835e871d69033a715fe14fd3b",
+                "url": "https://api.github.com/repos/Yoast/whip/zipball/192a294cd62d861aeecf19112bee0a83072de830",
+                "reference": "192a294cd62d861aeecf19112bee0a83072de830",
+                "shasum": ""
+            },
+            "require": {
+                "xrstf/composer-php52": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^3.6.12"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/facades/wordpress.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com"
+                }
+            ],
+            "description": "A WordPress package to nudge users to upgrade their software versions (starting with PHP)",
+            "time": "2017-03-21 10:28:35"
+        },
+        {
+            "name": "yoast/wordpress-seo",
+            "version": "4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/wordpress-seo.git",
+                "reference": "f103074c4293a3e7be592bf2493ce6d1280d2650"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/f103074c4293a3e7be592bf2493ce6d1280d2650",
+                "reference": "f103074c4293a3e7be592bf2493ce6d1280d2650",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +863,8 @@
                 "xrstf/composer-php52": "^1.0.20",
                 "yoast/api-libs": "^2.0",
                 "yoast/i18n-module": "^2.0.1",
-                "yoast/license-manager": "^1.4.0"
+                "yoast/license-manager": "^1.4.0",
+                "yoast/whip": "1.0.1"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -844,7 +897,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2017-02-28 09:49:38"
+            "time": "2017-03-21 10:30:40"
         }
     ],
     "packages-dev": [],
