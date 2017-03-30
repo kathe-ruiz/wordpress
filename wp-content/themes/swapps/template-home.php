@@ -416,10 +416,11 @@
           <h4 class="heading__subtitle">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.
           </h4>
         </div>
-        <div class="subscribes__content text-center">
-          <input type="text" class="subscribes__input form-control" placeholder="Correo electrónico">
-          <button class="subscribes__btn text-uppercase btn btn-primary">suscribirse</button>
-        </div>
+        <?php if( function_exists( 'mc4wp_show_form' ) ) { mc4wp_show_form(); } ?>
+        <!-- <div class="subscribes__content text-center">
+          <input type="email" name="EMAIL" class="subscribes__input form-control" placeholder="Correo electrónico" required />
+          <input type="submit" class="subscribes__btn text-uppercase btn btn-primary" value="Suscribirse" />
+        </div> -->
       </div>
     </div>
   </section>

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d67820e022b53bc981cd9922c5997d4b",
-    "content-hash": "442a746fbde80925ecc4358c3ce5a71a",
+    "hash": "3b2463b089f3c12f626fdf2856987f9e",
+    "content-hash": "9742179cb81f69c1b81c2c8e5b0d7c1d",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -381,7 +381,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": null,
+                "reference": "tags/5.3.4",
                 "shasum": null
             },
             "require": {
@@ -461,7 +461,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.1.2.zip",
-                "reference": null,
+                "reference": "tags/3.1.2",
                 "shasum": null
             },
             "require": {
@@ -481,7 +481,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-tag-manager.1.0.2.zip",
-                "reference": null,
+                "reference": "tags/1.0.2",
                 "shasum": null
             },
             "require": {
@@ -489,6 +489,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-tag-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/mailchimp-for-wp",
+            "version": "4.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailchimp-for-wp/",
+                "reference": "tags/4.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.4.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/"
         },
         {
             "name": "wpackagist-plugin/ninja-forms",
@@ -501,7 +521,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.30.zip",
-                "reference": null,
+                "reference": "tags/3.0.30",
                 "shasum": null
             },
             "require": {
@@ -521,7 +541,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": null,
+                "reference": "tags/2.2.6",
                 "shasum": null
             },
             "require": {
@@ -561,7 +581,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/toolbar-publish-button.1.6.zip",
-                "reference": null,
+                "reference": "tags/1.6",
                 "shasum": null
             },
             "require": {
@@ -581,7 +601,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.14.zip",
-                "reference": null,
+                "reference": "tags/2.6.14",
                 "shasum": null
             },
             "require": {
@@ -601,7 +621,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": null,
+                "reference": "tags/2.1.1",
                 "shasum": null
             },
             "require": {
@@ -621,7 +641,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": null,
+                "reference": "tags/2.5.8.1",
                 "shasum": null
             },
             "require": {
@@ -641,7 +661,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
-                "reference": null,
+                "reference": "tags/1.2.3",
                 "shasum": null
             },
             "require": {
