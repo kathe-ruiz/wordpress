@@ -2,8 +2,8 @@
 if( function_exists('acf_add_local_field_group') ):
   
 acf_add_local_field_group(array (
-  'key' => 'group_category_background',
-  'title' => 'Category Background',
+  'key' => 'group_header_options',
+  'title' => 'Header Options',
   'fields' => array (
     array (
       'return_format' => 'url',
@@ -16,11 +16,30 @@ acf_add_local_field_group(array (
       'max_height' => '',
       'max_size' => '',
       'mime_types' => '',
-      'key' => 'field_category_background',
-      'label' => 'Category Background',
-      'name' => 'category_background',
+      'key' => 'field_header_background',
+      'label' => 'Header Background',
+      'name' => 'header_background',
       'type' => 'image',
       'instructions' => '',
+      'required' => 0,
+      'conditional_logic' => 0,
+      'wrapper' => array (
+        'width' => '',
+        'class' => '',
+        'id' => '',
+      ),
+    ),
+    array (
+      'default_value' => '',
+      'new_lines' => 'wpautop',
+      'maxlength' => '',
+      'placeholder' => '',
+      'rows' => 4,
+      'key' => 'field_header_description',
+      'label' => 'Header Description',
+      'name' => 'header_description',
+      'type' => 'textarea',
+      'instructions' => 'Description to show on the header of the page. If it\'s a category, you can leave this field blank and fill the category description instead.',
       'required' => 0,
       'conditional_logic' => 0,
       'wrapper' => array (
@@ -36,6 +55,13 @@ acf_add_local_field_group(array (
         'param' => 'taxonomy',
         'operator' => '==',
         'value' => 'category',
+      ),
+    ),
+    array (
+      array (
+        'param' => 'page_type',
+        'operator' => '==',
+        'value' => 'posts_page',
       ),
     ),
   ),
@@ -55,6 +81,7 @@ acf_add_local_field_group(array (
   'active' => 1,
   'description' => '',
 ));
+
 acf_add_local_field_group(array (
   'key' => 'group_landing_fields',
   'title' => 'Landing Fields',

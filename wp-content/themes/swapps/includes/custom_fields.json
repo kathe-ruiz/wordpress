@@ -1,7 +1,7 @@
 [
     {
-        "key": "group_category_background",
-        "title": "Category Background",
+        "key": "group_header_options",
+        "title": "Header Options",
         "fields": [
             {
                 "return_format": "url",
@@ -14,11 +14,30 @@
                 "max_height": "",
                 "max_size": "",
                 "mime_types": "",
-                "key": "field_category_background",
-                "label": "Category Background",
-                "name": "category_background",
+                "key": "field_header_background",
+                "label": "Header Background",
+                "name": "header_background",
                 "type": "image",
                 "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "new_lines": "wpautop",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": 4,
+                "key": "field_header_description",
+                "label": "Header Description",
+                "name": "header_description",
+                "type": "textarea",
+                "instructions": "Description to show on the header of the page. If it's a category, you can leave this field blank and fill the category description instead.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
