@@ -1,5 +1,78 @@
 [
     {
+        "key": "group_header_options",
+        "title": "Header Options",
+        "fields": [
+            {
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 500,
+                "min_height": 400,
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "key": "field_header_background",
+                "label": "Header Background",
+                "name": "header_background",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "new_lines": "wpautop",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": 4,
+                "key": "field_header_description",
+                "label": "Header Description",
+                "name": "header_description",
+                "type": "textarea",
+                "instructions": "Description to show on the header of the page. If it's a category, you can leave this field blank and fill the category description instead.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "category"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "featured_image"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
         "key": "group_landing_fields",
         "title": "Landing Fields",
         "fields": [
