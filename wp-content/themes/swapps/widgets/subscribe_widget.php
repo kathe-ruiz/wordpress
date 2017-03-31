@@ -7,7 +7,7 @@ class SuscribeWidget extends WP_Widget {
   public function __construct() {
     $widget_ops = array(
       'classname' => 'Suscribewidget',
-      'description' => __('This is a widget that render a suscriber to a newsletter form'),
+      'description' => __('This widget renders a subscription form for a newsletter'),
     );
     parent::__construct( 'suscribe_widget', 'Suscribe Widget', $widget_ops );
   }
