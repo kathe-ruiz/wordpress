@@ -10,7 +10,7 @@ acf_add_local_field_group(array (
       'preview_size' => 'medium',
       'library' => 'all',
       'min_width' => 500,
-      'min_height' => 400,
+      'min_height' => 200,
       'min_size' => '',
       'max_width' => '',
       'max_height' => '',
