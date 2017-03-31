@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "10af677e70f55867da54c1a9166f581c",
+    "hash": "340bb47fcd2737fd6cbfce3f57636174",
+    "content-hash": "9c79930b4a037a572abde2e45975a614",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -78,7 +79,7 @@
                 "slug",
                 "slugify"
             ],
-            "time": "2017-03-23T21:52:55+00:00"
+            "time": "2017-03-23 21:52:55"
         },
         {
             "name": "composer/installers",
@@ -185,7 +186,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "formidable",
@@ -199,16 +200,16 @@
         },
         {
             "name": "oomphinc/composer-installers-extender",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oomphinc/composer-installers-extender.git",
-                "reference": "e29c900d3d6a851ee8261859fb39edbb1f34722e"
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/e29c900d3d6a851ee8261859fb39edbb1f34722e",
-                "reference": "e29c900d3d6a851ee8261859fb39edbb1f34722e",
+                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
                 "shasum": ""
             },
             "require": {
@@ -237,7 +238,7 @@
             ],
             "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
             "homepage": "http://www.oomphinc.com/",
-            "time": "2016-07-05T15:00:34+00:00"
+            "time": "2017-03-31 16:57:39"
         },
         {
             "name": "sitepress-multilingual-cms",
@@ -265,7 +266,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:swappsco/sw-simple-slider.git",
-                "reference": "0.2.1"
+                "reference": "0.2.3"
             },
             "type": "library"
         },
@@ -317,7 +318,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01T10:05:43+00:00"
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "wp-plugin-swapps",
@@ -340,7 +341,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-image-crop-add-on.1.4.10.zip",
-                "reference": "tags/1.4.10",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -360,7 +361,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/acf-link-picker-field.1.2.8.zip",
-                "reference": "tags/1.2.8",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -380,7 +381,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/addthis.5.3.4.zip",
-                "reference": "tags/5.3.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -399,8 +400,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.zip?timestamp=1477160585",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -460,7 +461,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.1.2.zip",
-                "reference": "tags/3.1.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -480,7 +481,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-tag-manager.1.0.2.zip",
-                "reference": "tags/1.0.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -520,7 +521,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.0.30.zip",
-                "reference": "tags/3.0.30",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -540,7 +541,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": "tags/2.2.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -555,12 +556,12 @@
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/smtp-mailer/",
-                "reference": "trunk"
+                "reference": "tags/1.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.1.0.2.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -580,7 +581,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/toolbar-publish-button.1.6.zip",
-                "reference": "tags/1.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -600,7 +601,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.14.zip",
-                "reference": "tags/2.6.14",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -620,7 +621,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-dropdown-cart.2.1.1.zip",
-                "reference": "tags/2.1.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -640,7 +641,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-menu-bar-cart.2.5.8.1.zip",
-                "reference": "tags/2.5.8.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -660,7 +661,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/woocommerce-payu-latam-gateway.1.2.3.zip",
-                "reference": "tags/1.2.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -698,7 +699,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-04-16T21:52:24+00:00"
+            "time": "2016-04-16 21:52:24"
         },
         {
             "name": "yoast/api-libs",
@@ -736,7 +737,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-07-14T10:25:59+00:00"
+            "time": "2015-07-14 10:25:59"
         },
         {
             "name": "yoast/i18n-module",
@@ -774,7 +775,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2017-02-02T11:32:53+00:00"
+            "time": "2017-02-02 11:32:53"
         },
         {
             "name": "yoast/license-manager",
@@ -819,7 +820,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2017-02-28T09:22:38+00:00"
+            "time": "2017-02-28 09:22:38"
         },
         {
             "name": "yoast/whip",
@@ -861,7 +862,7 @@
                 }
             ],
             "description": "A WordPress package to nudge users to upgrade their software versions (starting with PHP)",
-            "time": "2017-03-21T10:28:35+00:00"
+            "time": "2017-03-21 10:28:35"
         },
         {
             "name": "yoast/wordpress-seo",
@@ -916,7 +917,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2017-03-21T10:30:40+00:00"
+            "time": "2017-03-21 10:30:40"
         }
     ],
     "packages-dev": [],
