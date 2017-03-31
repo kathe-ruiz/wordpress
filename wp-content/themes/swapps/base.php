@@ -27,7 +27,7 @@ use Roots\Sage\Wrapper;
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar <?php if (!is_front_page()): echo 'col-sm-4'; endif; ?>">
+          <aside class="sidebar <?php if (Setup\display_sidebar()): echo 'col-sm-4'; endif; ?>">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
