@@ -4,13 +4,23 @@
     $enable_breadcrumbs = ( get_field('field_breadcrumbs_option') == 'yes') ? true : false ;
   }
   if ( $enable_breadcrumbs ): ?>
-    <section class="breadcrumb bg-primary">
+    <?php 
+    if (function_exists('get_fields')){
+      $obj = get_queried_object();
+      $header_fields = get_fields($obj);
+      $background = $header_fields['header_background'];
+      $description = ($header_fields['header_description']) ?: category_description();
+    }
+    ?>
+    <section class="breadcrumb <?php if(sw_options('site_options_secondary_navbar_position')): echo "sticky-header"; endif; ?> bg-primary"
+      <?php if($background): ?> style="background-image: url(<?php echo $background ?>);"<?php endif; ?>>
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <!-- <h4 class="breadcrumb__item">Inicio <small>></small> Blog</h4>
             <h1 class="breadcrumb__item breadcrumb__item--active"><?//= Titles\title(); ?></h1> -->
               <?php swapps_breadcrumbs(); ?>
+              <?php echo ($description) ?: '' ; ?>
           </div>
         </div>
       </div>

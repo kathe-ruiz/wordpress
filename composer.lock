@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0a5a7b3b85128d770bdcf6cb1e1b08c",
+    "content-hash": "10af677e70f55867da54c1a9166f581c",
     "packages": [
         {
             "name": "advanced-custom-fields-pro",
@@ -238,6 +238,16 @@
             "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
             "homepage": "http://www.oomphinc.com/",
             "time": "2016-07-05T15:00:34+00:00"
+        },
+        {
+            "name": "sitepress-multilingual-cms",
+            "version": "3.6.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                "reference": "master"
+            },
+            "type": "library"
         },
         {
             "name": "sw-customizer",

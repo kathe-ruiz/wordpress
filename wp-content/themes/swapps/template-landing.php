@@ -112,6 +112,9 @@
         case 'label':
         include('layouts/layout_label.php');
         break;
+        case 'subscription':
+        include('layouts/layout_subscribe.php');
+        break;
       }
       ?>
       <?php endforeach ?>

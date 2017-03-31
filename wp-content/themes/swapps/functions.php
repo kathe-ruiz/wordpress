@@ -203,3 +203,14 @@ if (!function_exists('sw_get_phone')) {
 }
 
 add_action( 'widgets_init', 'register_suscribe_widget' );
+// Shortcode to generate HTML of subscribe form
+function render_subscribe_form()
+{
+  ob_start();
+  get_template_part('templates/subscribe', 'form');
+  $html = ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+add_shortcode( 'sw-subscribe-form', 'render_subscribe_form' );

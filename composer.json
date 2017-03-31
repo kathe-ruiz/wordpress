@@ -57,6 +57,19 @@
         {
             "type": "package",
             "package": {
+                "name": "sitepress-multilingual-cms",
+                "version": "3.6.3",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "formidable",
                 "version": "2.02.13",
                 "source": {
@@ -91,12 +104,12 @@
         "sw-customizer": "0.2.7",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
+        "sitepress-multilingual-cms": "3.6.3",
         "formidable": "2.02.13",
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
         "oomphinc/composer-installers-extender": "^1.1",
         "cocur/slugify": "^2.4"
-
     },
     "extra" : {
         "installer-types": ["library"],
@@ -110,6 +123,7 @@
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
+            "wpackagist-plugin/mailchimp-for-wp",
             "wpackagist-plugin/acf-link-picker-field",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
