@@ -3,7 +3,7 @@
 if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 	function swapps_breadcrumbs( $args = array() ) {
 
-		if ( is_front_page() ) {
+		if ( is_front_page() && get_option('show_on_front') == 'page' ) {
 			return;
 		}
 
@@ -22,9 +22,11 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 		// Open the breadcrumbs
 		$html = '<ul id="' . esc_attr( $args['breadcrumbs_id'] ) . '" class="' . esc_attr( $args['breadcrumbs_classes'] ) . '">';
 
-		// Add Homepage link & separator (always present)
-		$html .= '<li class="breadcrumb__item item-home"><a class="breadcrumb__bread bread-link bread-home" href="' . get_home_url() . '" title="' . esc_attr( $args['home_title'] ) . '">' . esc_html( $args['home_title'] ) . '</a></li>';
-		$html .= $separator;
+		// Add Homepage link & separator (always present except when front page is posts page)
+		if ( !( is_front_page() && is_home() ) ){
+			$html .= '<li class="breadcrumb__item item-home"><a class="breadcrumb__bread bread-link bread-home" href="' . get_home_url() . '" title="' . esc_attr( $args['home_title'] ) . '">' . esc_html( $args['home_title'] ) . '</a></li>';
+			$html .= $separator;
+		}
 
 		// Post
 		if ( is_singular( 'post' ) ) {
