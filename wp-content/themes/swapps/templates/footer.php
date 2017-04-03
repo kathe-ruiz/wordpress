@@ -53,7 +53,7 @@
           </div>
 
     </div>
-    <div class="row text-center">
+    <div class="row text-center brandlink__row">
       <a class="brand-link text-secondary" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by Swapps</a>
     </div>
   </div>

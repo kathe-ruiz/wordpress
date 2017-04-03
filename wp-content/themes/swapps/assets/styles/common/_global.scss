@@ -50,10 +50,13 @@ $color-star:               #ffd700;
     margin-bottom: 0px;
   }
 }
-.brand-link{
-  color: inherit;
-  &:hover{
-    @include text-contrast($brand-footer);
+.brandlink__row{
+  padding-top: 40px;
+  .brand-link{
+    color: inherit;
+    &:hover{
+      @include text-contrast($brand-footer);
+    }
   }
 }
 .text-xs-center{
