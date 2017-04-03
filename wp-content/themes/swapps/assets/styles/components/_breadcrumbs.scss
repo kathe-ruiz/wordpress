@@ -42,7 +42,7 @@
       color: inherit;
     }
     &:last-child{
-      word-wrap: break-word;
+      word-wrap: normal;
       @extend .breadcrumb__item--active;
     }
   }
