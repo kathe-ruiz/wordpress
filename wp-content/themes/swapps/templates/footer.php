@@ -1,5 +1,8 @@
 <footer class="footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
   <div class="container-fluid">
+    <div class="row">
+      <?php dynamic_sidebar('sidebar-footer'); ?>
+    </div>
     <div class="row row-md-centered">
           <div class="footer__logo">
             <?php if (function_exists('get_custom_footer_logo') && get_theme_mod( 'custom_footer_logo' )): ?>
@@ -45,7 +48,7 @@
             </div>
             <div class="footer__copyright text-right">
               <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
-              <span class="text-secondary">Todos los derechos reservados</span>
+              <span class="text-secondary"><?php _e('Todos los derechos reservados', 'sage') ?></span>
             </div>
           </div>
 

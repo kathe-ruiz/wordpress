@@ -13,7 +13,7 @@
     }
     ?>
     <section class="breadcrumb <?php if(sw_options('site_options_secondary_navbar_position')): echo "sticky-header"; endif; ?> bg-primary"
-      <?php if($background): ?> style="background-image: url(<?php echo $background ?>);"<?php endif; ?>>
+      <?php if($background): ?> style="background-image: url(<?php echo $background ?>); background-size: cover;"<?php endif; ?>>
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
