@@ -8,8 +8,8 @@
       if (function_exists('sw_options') && sw_options('blog_description')) {
         $custom_description = sw_options('blog_description');
       }
-      if (function_exists('sw_options') && sw_options('blog_header_image')) {
-        $background = sw_options('blog_header_image');
+      if (function_exists('sw_options') && function_exists('get_blog_header_image')) {
+        $background = get_blog_header_image()[0];
         // jariza in this line  I need setup $background var with a URL
       }
       $description = $custom_description ?: category_description();
