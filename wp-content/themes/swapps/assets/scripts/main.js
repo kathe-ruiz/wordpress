@@ -31,7 +31,7 @@
           var totalHeight = footerHeight + contentHeight;
           if(totalHeight < window.innerHeight){
             var fill = window.innerHeight - totalHeight;
-            document.querySelector('section').style.paddingBottom = fill + "px";
+            document.querySelector('.document section:not(.breadcrumb)').style.paddingBottom = fill + "px";
           }
         }
         $(window).on('load resize', function () {

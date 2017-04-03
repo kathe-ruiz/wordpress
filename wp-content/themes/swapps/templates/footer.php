@@ -48,7 +48,7 @@
             </div>
             <div class="footer__copyright text-right">
               <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
-              <span class="text-secondary">Todos los derechos reservados</span>
+              <span class="text-secondary"><?php _e('Todos los derechos reservados', 'sage') ?></span>
             </div>
           </div>
 
