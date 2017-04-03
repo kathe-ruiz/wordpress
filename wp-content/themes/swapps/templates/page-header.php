@@ -9,7 +9,7 @@
         $custom_description = sw_options('blog_description');
       }
       if (function_exists('sw_options') && function_exists('get_blog_header_image')) {
-        $background = get_blog_header_image()[0];
+        $background = isset(get_blog_header_image()[0]) ? get_blog_header_image()[0] : False;
         // jariza in this line  I need setup $background var with a URL
       }
       $description = $custom_description ?: category_description();

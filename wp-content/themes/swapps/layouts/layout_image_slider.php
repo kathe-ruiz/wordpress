@@ -50,6 +50,11 @@
       $cta = get_if_exists($slide['link']['title']);
 
       $style = '';
+
+      if(get_fields($row_item['slider'])['slider_type'] == 'full_responsive'){
+        $type = 'full_responsive';
+      }
+
       switch ( $type ) {
         case 'full':
           $style = "min-height: 600px";
@@ -57,11 +62,15 @@
         case 'fixed':
           $style = "height: {$height}px";
           break;
+        case 'full_responsive':
+          $style = "";
+          break;
+
         default:
           break;
       }
     ?>
-    <div class="item"<?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>> 
+    <div class="item"<?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
         <?php if ($title || $description || ($link and $cta)): ?>
         <div class="caption">
