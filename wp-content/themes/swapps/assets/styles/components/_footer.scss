@@ -5,7 +5,8 @@
         height: auto;
       @media (min-width: $screen-sm-min){
         max-width: 100%;
-        width: 100px;
+        width: auto;
+        max-height: 100%;
       }
       @media (max-width: $screen-xs-max){
         min-width: 5rem;

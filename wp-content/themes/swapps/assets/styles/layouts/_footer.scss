@@ -1,6 +1,7 @@
 @import "components/footer";
 .footer{
   &__info, &__phone{
+    margin: 0 10px;
   }
   &__logo{
     float: left;
@@ -14,9 +15,7 @@
     margin-bottom: 10px;
   }
   &__phone{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50% , 0);
+
   }
   &__right{
     margin-left: auto;
@@ -31,6 +30,7 @@
   @media (min-width: $screen-lg-min){
     &__info{
       position: relative;
+      max-width: 30%;
     }
   }
   @media (max-width: $grid-float-breakpoint) {
@@ -74,7 +74,7 @@
     }
   }
 }
-// Sticky footer styles here 
+// Sticky footer styles here
 /*
  * Flex method
  */
