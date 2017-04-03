@@ -103,7 +103,12 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 		} elseif ( is_404() ) {
 			$html .= '<li class="breadcrumb__item item-current item-error"><span class="breadcrumb__bread bread-current">' . __( 'Error 404' ) . '</span></li>';
 		} elseif ( is_home() ) {
+      // Put name
+      if (function_exists('sw_options') && sw_options('blog_header')) {
+        $html .= '<li class="breadcrumb__item item-current item-posts"><span class="breadcrumb__bread bread-current">' . sw_options('blog_header') . '</span></li>';
+      } else{
 			$html .= '<li class="breadcrumb__item item-current item-posts"><span class="breadcrumb__bread bread-current">' . esc_html( get_the_title( get_option( 'page_for_posts' ) ) ) . '</span></li>';
+      }
 		}
 
 		$html .= '</ul>';
