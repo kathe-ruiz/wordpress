@@ -22,7 +22,9 @@
             <!-- <h4 class="breadcrumb__item">Inicio <small>></small> Blog</h4>
             <h1 class="breadcrumb__item breadcrumb__item--active"><?//= Titles\title(); ?></h1> -->
               <?php swapps_breadcrumbs(); ?>
-              <?php echo ($description) ?: '' ; ?>
+              <p class="breadcrumb-description">
+                <?php echo ($description) ?: '' ; ?>
+              </p>
           </div>
         </div>
       </div>
