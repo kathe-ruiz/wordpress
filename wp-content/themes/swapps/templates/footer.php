@@ -51,7 +51,7 @@
             </div>
             <div class="footer__copyright text-right">
               <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
-              <span class="text-secondary"><?php _e('Todos los derechos reservados', 'sage') ?></span>
+              <span class="text-secondary"><?php _e('All rights reserved') ?></span>
             </div>
           </div>
 
@@ -61,3 +61,5 @@
     </div>
   </div>
 </footer>
+
+0
