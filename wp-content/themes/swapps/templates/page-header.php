@@ -7,6 +7,8 @@
     <?php
       if (function_exists('sw_options') && sw_options('blog_description')) {
         $custom_description = sw_options('blog_description');
+      } else {
+        $custom_description = False;
       }
       if (function_exists('sw_options') && function_exists('get_blog_header_image')) {
         $background = isset(get_blog_header_image()[0]) ? get_blog_header_image()[0] : False;
