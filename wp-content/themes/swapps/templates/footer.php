@@ -1,5 +1,10 @@
-<footer class="footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
-  <div class="container-fluid">
+<footer id="footer">
+    <?php if ( is_active_sidebar( 'pre_footer' ) ) : ?>
+    <div id="pre-footer" class="widget-area" role="complementary">
+      <?php dynamic_sidebar( 'pre_footer' ); ?>
+    </div><!-- #pre-footer -->
+  <?php endif; ?>
+  <div class="container-fluid footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
     <div class="row">
       <?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
@@ -28,11 +33,9 @@
             </span>
           <?php endif ?>
           <?php if (function_exists('sw_options') && sw_options('email')): ?>
-            <a class="" href="mailto:<?php echo sw_options('email'); ?>">
+            <a class="footer__link" href="mailto:<?php echo sw_options('email'); ?>">
               <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
-              <span class="footer__text text-secondary" href="#">
-                <?php echo sw_options('email'); ?>
-              </span>
+              <span class="footer__text text-secondary" href="#"><?php echo sw_options('email'); ?></span>
             </a>
           <?php endif ?>
           </div>
@@ -58,3 +61,5 @@
     </div>
   </div>
 </footer>
+
+0

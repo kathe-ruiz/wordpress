@@ -11,7 +11,7 @@
     $landing_option = False;
   }
 
-  get_template_part( 'nav' ); 
+  get_template_part( 'nav' );
 ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
@@ -45,7 +45,10 @@
   <?php
   switch ($row['row_items'][0]['acf_fc_layout']){
     case 'image_slider':
-    $class_css .= ' sliders-main ';
+      if(get_fields($row['row_items'][0]['slider'])['slider_type'] != 'full_responsive'){
+        $class_css .= ' sliders-main ';
+      }
+
     break;
     case 'text_slider':
     $class_css .= ' sliders-secondary ';

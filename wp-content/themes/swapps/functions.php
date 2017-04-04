@@ -217,3 +217,22 @@ function render_subscribe_form()
 }
 
 add_shortcode( 'sw-subscribe-form', 'render_subscribe_form' );
+
+/**
+ *
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function pre_footer_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Pre Footer',
+    'id'            => 'pre_footer',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="rounded">',
+    'after_title'   => '</h2>',
+  ) );
+
+}
+add_action( 'widgets_init', 'pre_footer_widgets_init' );
