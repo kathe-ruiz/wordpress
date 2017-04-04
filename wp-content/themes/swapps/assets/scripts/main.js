@@ -22,7 +22,7 @@
         function stickyFooter() {
           var footer_height = document.querySelector('.footer').offsetHeight;
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
-          document.querySelector('.footer').style.marginTop = "-" + footer_height + "px";
+          document.querySelector('#footer').style.marginTop = "-" + footer_height + "px";
         }
         // Fix for KocoJeans
         function fillRemainingSpace(){
