@@ -21,6 +21,12 @@
     vertical-align: middle;
     text-align: left;
   }
+  &__info &__link:hover{
+    text-decoration: none;
+  }
+  &__info &__link:hover &__text{
+    text-decoration: underline;
+  }
   &__info &__icon{
     color: $brand-primary;
     margin-right: 5px;
@@ -37,12 +43,12 @@
       }
     }
   }
-  &__info &__link{
-    color: #fff;
-    &:hover{
-      color: #fff;
-    }
-  }
+  // &__info &__link{
+  //   color: #fff;
+  //   &:hover{
+  //     color: #fff;
+  //   }
+  // }
   &__text{
     @media (min-width: $screen-sm-min) and (max-width: $screen-md-max){
       font-size: 1.25vw;
