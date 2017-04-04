@@ -4,13 +4,13 @@
     &__img{
         height: auto;
       @media (min-width: $screen-sm-min){
-        max-width: 100%;
+        max-width: 500px;
         width: auto;
         max-height: 100%;
       }
       @media (max-width: $screen-xs-max){
         min-width: 80%;
-        max-width: 100%;
+        max-width: 500px;
       }
     }
   }
