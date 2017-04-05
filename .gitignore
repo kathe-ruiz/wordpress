@@ -48,3 +48,4 @@ Thumbs.db
 ./readme.html
 
 composer.json
+composer.lock
