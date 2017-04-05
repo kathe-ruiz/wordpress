@@ -46,3 +46,5 @@ Thumbs.db
 /vendor/
 !.gitkeep
 ./readme.html
+
+composer.json
