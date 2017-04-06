@@ -177,9 +177,7 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -441,9 +439,7 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -2345,6 +2341,35 @@
                                         "label": "Marker image",
                                         "name": "marker_image",
                                         "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "58e52208fad87",
+                                "name": "events",
+                                "label": "Events",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_58e52263fad8b",
+                                        "label": "Title",
+                                        "name": "title",
+                                        "type": "text",
                                         "instructions": "",
                                         "required": 0,
                                         "conditional_logic": 0,
