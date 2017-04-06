@@ -1,0 +1,128 @@
+{
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sw-simple-slider",
+                "version": "0.2.1",
+                "source": {
+                    "url": "git@github.com:swappsco/sw-simple-slider.git",
+                    "type": "git",
+                    "reference": "0.2.1"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sw-customizer",
+                "version": "0.3.0",
+                "source": {
+                    "url": "git@github.com:swappsco/sw-customizer.git",
+                    "type": "git",
+                    "reference": "0.3.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wp-plugin-swapps",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-swapps.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields-pro",
+                "version": "5.5.5",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
+                    "type": "git",
+                    "reference": "5.5.5"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "formidable",
+                "version": "2.02.13",
+                "source": {
+                    "url": "git@github.com:swappsco/formidable.git",
+                    "type": "git",
+                    "reference": "2.02.13"
+                }
+            }
+
+        }
+            
+    ],
+    "require": {
+        "vlucas/phpdotenv": "2.4.*",
+        "wpackagist-plugin/addthis": "5.3.4",
+        "wpackagist-plugin/amazon-web-services": "^1.0",
+        "wpackagist-plugin/amazon-s3-and-cloudfront": "^1.1",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
+        "wpackagist-plugin/acf-image-crop-add-on": "1.4.10",
+        "wpackagist-plugin/woocommerce": "2.6.14",
+        "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1",
+        "wpackagist-plugin/woocommerce-menu-bar-cart": "2.5.8.1",
+        "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
+        "wpackagist-plugin/smtp-mailer": "1.0.2",
+        "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3",
+        "wpackagist-plugin/acf-link-picker-field": "^1.2",
+        "wpackagist-plugin/duplicate-post": "3.1.2",
+        "wpackagist-plugin/google-tag-manager": "1.0.2",
+        "wpackagist-plugin/ninja-forms": "3.0.30",
+        "sw-simple-slider": "0.2.1",
+        "sw-customizer": "0.3.0",
+        "wp-plugin-swapps": "0.1.0",
+        "advanced-custom-fields-pro": "5.5.5",
+        "formidable": "2.02.13",
+        "yoast/wordpress-seo": "^4.2",
+        "wpackagist-plugin/toolbar-publish-button": "^1.6",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "cocur/slugify": "^2.4"
+        {% if plan_data['plugins'] is defined %}
+            {% for key, value in plan_data['plugins'].iteritems() %}
+            , "{{ key }}": "{{ value }}"
+            {% endfor%}
+        {% endif %}
+    },
+    "extra" : {
+        "installer-types": ["library"],
+        "installer-paths": {
+            "wp-content/mu-plugins/{$name}/": [
+            "sw-simple-slider",
+            "sw-customizer",
+            "wp-plugin-swapps",
+            "advanced-custom-fields-pro",
+            "formidable",
+            "wpackagist-plugin/amazon-web-services",
+            "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "wpackagist-plugin/mailgun",
+            "wpackagist-plugin/acf-link-picker-field",
+            "wpackagist-plugin/advanced-custom-fields-font-awesome",
+            "wpackagist-plugin/acf-image-crop-add-on",
+            "wpackagist-plugin/smtp-mailer"
+            {% if plan_data['plugins'] is defined %}
+                {% for key, value in plan_data['plugins'].iteritems() %}
+                , "{{ key }}"
+                {% endfor%}
+            {% endif %}
+            ]
+        }
+    }
+}
