@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-12">
         <!-- box events -->
-        <div class="event event-<?php echo $event->event_id ?>">
+        <div class="event-item event-<?php echo $event->event_id ?>">
           <div class="row">
             <!-- rigth box -->
             <div class="col-xs-12 col-md-3 col-lg-2 featured">

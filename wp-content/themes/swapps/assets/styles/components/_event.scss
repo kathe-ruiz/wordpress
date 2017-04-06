@@ -1,5 +1,5 @@
 $color: $brand-primary;
-.event{
+.event-item{
   border-width: 1px;
   border-color: rgb(227, 227, 227);
   border-style: solid;
@@ -85,7 +85,7 @@ $color: $brand-primary;
 }
 
 @media(min-width:$screen-sm-max){
-  .event{
+  .event-item{
     .row{
       margin-left: 0;
       position: relative;
