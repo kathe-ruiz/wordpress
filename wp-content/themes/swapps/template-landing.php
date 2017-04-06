@@ -118,6 +118,9 @@
         case 'subscription':
         include('layouts/layout_subscribe.php');
         break;
+        case 'events':
+        include('layouts/layout_events.php');
+        break;
       }
       ?>
       <?php endforeach ?>
@@ -128,11 +131,8 @@
 <?php endif ?>
 
 <?php if (WP_DEBUG): ?>
-  <section>
+  <section class="container-fluid">
     <h1>Debug Vars</h1>
-    <pre>
-      <?php echo the_field('field_row_background_color') ?>
-      <?php print_r($rows); ?>
-    </pre>
+    <pre><?php print_r($rows); ?></pre>
   </section>
 <?php endif ?>
