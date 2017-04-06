@@ -57,6 +57,7 @@ function get_social_accounts()
     $accounts['facebook'] = (sw_options('social_facebook')) ?: null;
     $accounts['twitter'] = (sw_options('social_twitter')) ?: null;
     $accounts['instagram'] = (sw_options('social_instagram')) ?: null;
+    $accounts['youtube'] = (sw_options('social_youtube')) ?: null;
     $accounts['vimeo'] = (sw_options('social_vimeo')) ?: null;
     $accounts['linkedin'] = (sw_options('social_linkedin')) ?: null;
   }
