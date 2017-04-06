@@ -236,3 +236,11 @@ function pre_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'pre_footer_widgets_init' );
+
+
+
+if (!function_exists('format_date_array')) {
+  function format_date_array($var, $format = "D d F Y"){
+    return preg_split('/[\s,]+/', date_format(date_create($var), $format));
+  }
+}
