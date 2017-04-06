@@ -236,3 +236,17 @@ function pre_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'pre_footer_widgets_init' );
+
+function internal_pages_sidebar_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Internal Pages Sidebar',
+    'id'            => 'internal_pages_sidebar',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="rounded">',
+    'after_title'   => '</h2>',
+  ) );
+
+}
+add_action( 'widgets_init', 'internal_pages_sidebar_widgets_init' );
