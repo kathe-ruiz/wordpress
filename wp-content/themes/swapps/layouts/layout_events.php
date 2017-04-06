@@ -11,7 +11,7 @@
             <div class="col-xs-12 col-md-3 col-lg-2 featured">
               <div class="wrapper">
                 <div class="title">
-                  <?php _e('<span>UPCOMMING</span><span>EVENTS</span>') ?>
+                  <?php _e('<span>UPCOMING</span><span>EVENTS</span>') ?>
                 </div>
                 <div class="link">
                   <a href="<?php echo site_url('events/' . $event->slug); ?>"><?php _e('Click here to Register') ?></a>
@@ -59,5 +59,3 @@
     </div>
   </div>
 <?php endif ?>
-
-
