@@ -5,9 +5,9 @@
   <?php endwhile; ?>
 </div>	
 <?php if ( is_active_sidebar( 'internal_pages_sidebar' ) ) : ?>
-    <div id="pre-footer" class="widget-area col-md-4" role="complementary">
+    <aside id="internal-sidebar" class="widget-area col-md-4" role="complementary">
       <?php dynamic_sidebar( 'internal_pages_sidebar' ); ?>
-    </div>
+    </aside>
 <?php endif; ?>
 
 </div>
