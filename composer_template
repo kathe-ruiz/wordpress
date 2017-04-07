@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.1",
+                "version": "0.2.5",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.1"
+                    "reference": "0.2.5"
                 }
             }
 
@@ -21,11 +21,11 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.2.7",
+                "version": "0.3.1",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.2.7"
+                    "reference": "0.3.1"
                 }
             }
         },
@@ -53,6 +53,18 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sitepress-multilingual-cms",
+                "version": "3.6.3",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         },
         {
             "type": "package",
@@ -86,16 +98,21 @@
         "wpackagist-plugin/duplicate-post": "3.1.2",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/ninja-forms": "3.0.30",
-        "sw-simple-slider": "0.2.1",
-        "sw-customizer": "0.2.7",
+        "sw-simple-slider": "0.2.5",
+        "sw-customizer": "0.3.1",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
+        "sitepress-multilingual-cms": "3.6.3",
         "formidable": "2.02.13",
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
         "oomphinc/composer-installers-extender": "^1.1",
         "cocur/slugify": "^2.4"
-
+        {% if plan_data['plugins'] is defined %}
+            {% for key, value in plan_data['plugins'].iteritems() %}
+            , "{{ key }}": "{{ value }}"
+            {% endfor%}
+        {% endif %}
     },
     "extra" : {
         "installer-types": ["library"],
@@ -109,10 +126,16 @@
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
+            "wpackagist-plugin/mailchimp-for-wp",
             "wpackagist-plugin/acf-link-picker-field",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
             "wpackagist-plugin/smtp-mailer"
+            {% if plan_data['plugins'] is defined %}
+                {% for key, value in plan_data['plugins'].iteritems() %}
+                , "{{ key }}"
+                {% endfor%}
+            {% endif %}
             ]
         }
     }

@@ -79,12 +79,10 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
  */
 function display_sidebar() {
   static $display;
-
-  isset($display) || $display = !in_array(true, [
+  $return_array = [
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
-    is_front_page(),
     is_page(),
     is_post_type_archive('product'),
     is_tax( 'product_cat' ),
@@ -94,7 +92,11 @@ function display_sidebar() {
     is_page_template('template-map.php'),
     is_page_template('template-home.php'),
     is_page_template('template-landing.php'),
-  ]);
+  ];
+  if (function_exists('sw_options') && !(sw_options('sidebar_frontpage'))) {
+    array_push($return_array, is_front_page());
+  }
+  isset($display) || $display = !in_array(true, $return_array);
 
   return apply_filters('sage/display_sidebar', $display);
 }

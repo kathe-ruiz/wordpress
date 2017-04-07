@@ -3,7 +3,7 @@
 if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 	function swapps_breadcrumbs( $args = array() ) {
 
-		if ( is_front_page() ) {
+		if ( is_front_page() && get_option('show_on_front') == 'page' ) {
 			return;
 		}
 
@@ -22,9 +22,11 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 		// Open the breadcrumbs
 		$html = '<ul id="' . esc_attr( $args['breadcrumbs_id'] ) . '" class="' . esc_attr( $args['breadcrumbs_classes'] ) . '">';
 
-		// Add Homepage link & separator (always present)
-		$html .= '<li class="breadcrumb__item item-home"><a class="breadcrumb__bread bread-link bread-home" href="' . get_home_url() . '" title="' . esc_attr( $args['home_title'] ) . '">' . esc_html( $args['home_title'] ) . '</a></li>';
-		$html .= $separator;
+		// Add Homepage link & separator (always present except when front page is posts page)
+		if ( !( is_front_page() && is_home() ) ){
+			$html .= '<li class="breadcrumb__item item-home"><a class="breadcrumb__bread bread-link bread-home" href="' . get_home_url() . '" title="' . esc_attr( $args['home_title'] ) . '">' . esc_html( $args['home_title'] ) . '</a></li>';
+			$html .= $separator;
+		}
 
 		// Post
 		if ( is_singular( 'post' ) ) {
@@ -101,7 +103,12 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
 		} elseif ( is_404() ) {
 			$html .= '<li class="breadcrumb__item item-current item-error"><span class="breadcrumb__bread bread-current">' . __( 'Error 404' ) . '</span></li>';
 		} elseif ( is_home() ) {
+      // Put name
+      if (function_exists('sw_options') && sw_options('blog_header')) {
+        $html .= '<li class="breadcrumb__item item-current item-posts"><span class="breadcrumb__bread bread-current">' . sw_options('blog_header') . '</span></li>';
+      } else{
 			$html .= '<li class="breadcrumb__item item-current item-posts"><span class="breadcrumb__bread bread-current">' . esc_html( get_the_title( get_option( 'page_for_posts' ) ) ) . '</span></li>';
+      }
 		}
 
 		$html .= '</ul>';
