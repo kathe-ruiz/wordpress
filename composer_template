@@ -8,7 +8,7 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.1",
+                "version": "0.2.5",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
