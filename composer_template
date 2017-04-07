@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.1",
+                "version": "0.2.5",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.1"
+                    "reference": "0.2.5"
                 }
             }
 
@@ -21,11 +21,11 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.3.0",
+                "version": "0.3.1",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.3.0"
+                    "reference": "0.3.1"
                 }
             }
         },
@@ -53,6 +53,18 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sitepress-multilingual-cms",
+                "version": "3.6.3",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         },
         {
             "type": "package",
@@ -86,8 +98,9 @@
         "wpackagist-plugin/duplicate-post": "3.1.2",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/ninja-forms": "3.0.30",
-        "sw-simple-slider": "0.2.1",
-        "sw-customizer": "0.3.0",
+        "wpackagist-plugin/mailchimp-for-wp": "4.1.0",
+        "sw-simple-slider": "0.2.5",
+        "sw-customizer": "0.3.1",
         "wp-plugin-swapps": "0.1.0",
         "advanced-custom-fields-pro": "5.5.5",
         "formidable": "2.02.13",
