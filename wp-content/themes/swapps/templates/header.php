@@ -16,7 +16,8 @@
         </button>
       </div>
       <div class="navbar__logo navbar-left">
-        <a href="/" rel="nofollow">
+        <?php $header_link = (function_exists('sw_options') && sw_options('logo_link')) ? sw_options('logo_link') : '/' ?>
+        <a href="<?php echo $header_link; ?>" rel="nofollow">
         <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_logo' )):
           $custom_logo_id = get_theme_mod( 'custom_logo' );
           $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
