@@ -21,7 +21,7 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.3.2,
+                "version": "0.3.2",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
