@@ -6,4 +6,12 @@
     margin-top: 28px;
     margin-bottom: 26px;
   }
+  .entry-author{
+    margin-bottom: 3em;
+    .avatar{
+      @media (max-width: $screen-sm-max){
+        margin-bottom: 2em;
+      }
+    }
+  }
 }

@@ -22,6 +22,46 @@
         <?php endif; ?>
       </div>
     </header>
+    <div class="entry-meta">
+      <span class="entry-meta__item">
+        <i class="entry-meta__icon fa fa-lg fa-folder-open-o" aria-hidden="true"></i>
+        <span class="entry-meta__text">
+          <?php $posttags = get_the_tags();
+          if ($posttags):
+            $last = end($posttags);
+            foreach($posttags as $tag){
+              echo '<a class="entry-meta__link" href="'. get_tag_link($tag->term_id) .'">'. $tag->name .'</a>';
+              $separator = ($tag === $last) ? '.' : ', ' ;
+              echo $separator;
+            }
+          else:
+            echo "No tags.";
+          endif;
+          ?>
+        </span>
+      </span>
+    </div>
+    <div class="entry-author">
+      <div class="row">
+        <div class="col-xs-12 heading-underline">
+          <h3 class="heading-underline__title">About the author</h3>
+        </div>
+      </div>
+      <div class="row author">
+        <div class="col-xs-12 col-md-3">
+          <?php echo get_avatar(
+            $post->post_author,
+            300, '', false,
+            array('class' => array("img-circle", "img-responsive", "center-block"))
+          ); ?>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <p class="author-description">
+            <?php the_author_meta('description', $post->post_author) ?>
+          </p>
+        </div>
+      </div>
+    </div>
     <footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
