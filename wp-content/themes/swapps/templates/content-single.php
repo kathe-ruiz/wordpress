@@ -41,6 +41,27 @@
         </span>
       </span>
     </div>
+    <div class="entry-author">
+      <div class="row">
+        <div class="col-xs-12 heading-underline">
+          <h3 class="heading-underline__title">About the author</h3>
+        </div>
+      </div>
+      <div class="row author">
+        <div class="col-xs-12 col-md-3">
+          <?php echo get_avatar(
+            $post->post_author,
+            300, '', false,
+            array('class' => array("img-circle", "img-responsive", "center-block"))
+          ); ?>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <p class="author-description">
+            <?php the_author_meta('description', $post->post_author) ?>
+          </p>
+        </div>
+      </div>
+    </div>
     <footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
