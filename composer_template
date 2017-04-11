@@ -37,7 +37,7 @@
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-swapps.git",
                     "type": "git",
-                    "reference": "0.1.0"
+                    "reference": "0.1.1"
                 }
             }
         },
@@ -101,7 +101,7 @@
         "wpackagist-plugin/mailchimp-for-wp": "4.1.0",
         "sw-simple-slider": "0.2.5",
         "sw-customizer": "0.3.2",
-        "wp-plugin-swapps": "0.1.0",
+        "wp-plugin-swapps": "0.1.1",
         "advanced-custom-fields-pro": "5.5.5",
         "formidable": "2.02.13",
         "yoast/wordpress-seo": "^4.2",
