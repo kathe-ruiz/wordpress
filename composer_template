@@ -33,7 +33,7 @@
             "type": "package",
             "package": {
                 "name": "wp-plugin-swapps",
-                "version": "0.1.0",
+                "version": "0.1.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-swapps.git",
                     "type": "git",
