@@ -18,11 +18,12 @@ $use_honeypot = $options->get_option( 'use_honeypot' );
 </div>
 					
 <?php if( $opp->should_allow_rvsps() ): ?>
-<div class="loading volunteer-opp-message help-block"><?php _e( 'Please wait...', 'wired-impact-volunteer-management' ); ?></div>
-<div class="success volunteer-opp-message help-block"><?php _e( 'Thanks for signing up. You\'ll receive a confirmation email shortly.', 'wired-impact-volunteer-management' ); ?></div>
-<div class="already-rsvped volunteer-opp-message help-block"><?php _e( 'It looks like you already signed up for this opportunity.', 'wired-impact-volunteer-management' ); ?></div>
-<div class="rsvp-closed volunteer-opp-message help-block"><?php _e( 'We\'re sorry, but we weren\'t able to sign you up. We have no more open spots.', 'wired-impact-volunteer-management' ); ?></div>
-<div class="error volunteer-opp-message help-block"><?php _e( 'Please fill in every field and make sure you entered a valid email address.', 'wired-impact-volunteer-management' ); ?></div>
+<div class="loading volunteer-opp-message"><?php _e( 'Please wait...', 'wired-impact-volunteer-management' ); ?></div>
+<div class="success volunteer-opp-message"><?php _e( 'Thanks for signing up. You\'ll receive a confirmation email shortly.', 'wired-impact-volunteer-management' ); ?></div>
+<div class="already-rsvped volunteer-opp-message"><?php _e( 'It looks like you already signed up for this opportunity.', 'wired-impact-volunteer-management' ); ?></div>
+<div class="rsvp-closed volunteer-opp-message"><?php _e( 'We\'re sorry, but we weren\'t able to sign you up. We have no more open spots.', 'wired-impact-volunteer-management' ); ?></div>
+<div class="error volunteer-opp-message"><?php _e( 'Please fill in every field and make sure you entered a valid email address.', 'wired-impact-volunteer-management' ); ?></div>
+<br>
 
 <form id="wivm-sign-up-form" class="form-horizontal" method="POST" url="<?php the_permalink(); ?>">
 	<?php wp_nonce_field( 'wivm_sign_up_form_nonce', 'wivm_sign_up_form_nonce_field' ); ?>
