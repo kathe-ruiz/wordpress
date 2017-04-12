@@ -15,3 +15,14 @@
     }
   }
 }
+#wivm-sign-up-form{
+  padding-bottom: 2em;
+  input[type=submit] {
+    float: none;
+  }
+  input[type=text], input[type=email]{
+    border-radius: 0;
+    box-shadow: none;
+    padding: 6px 12px;
+  }
+}

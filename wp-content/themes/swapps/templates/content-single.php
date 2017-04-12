@@ -22,6 +22,7 @@
         <?php endif; ?>
       </div>
     </header>
+    <?php if (get_post_type() != 'volunteer_opp'): ?>
     <div class="entry-meta">
       <span class="entry-meta__item">
         <i class="entry-meta__icon fa fa-lg fa-folder-open-o" aria-hidden="true"></i>
@@ -64,5 +65,7 @@
     </div>
     <footer>
     <?php comments_template('/templates/comments.php'); ?>
+    </footer>
+    <?php endif; ?>
   </article>
 <?php endwhile; ?>
