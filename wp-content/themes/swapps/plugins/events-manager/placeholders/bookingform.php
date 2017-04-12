@@ -44,65 +44,71 @@ if( !$is_open && !is_user_logged_in() && $EM_Event->get_bookings()->is_open(true
 	<?php else: ?>
 		<?php echo $EM_Notices; ?>
 		<?php if( $tickets_count > 0) : ?>
-			<?php //Tickets exist, so we show a booking form. ?>
-			<form class="em-booking-form" name='booking-form' method='post' action='<?php echo apply_filters('em_booking_form_action_url',''); ?>#em-booking'>
-			 	<input type='hidden' name='action' value='booking_add'/>
-			 	<input type='hidden' name='event_id' value='<?php echo $EM_Event->get_bookings()->event_id; ?>'/>
-			 	<input type='hidden' name='_wpnonce' value='<?php echo wp_create_nonce('booking_add'); ?>'/>
-				<?php 
-					// Tickets Form
-					if( $show_tickets && ($can_book || get_option('dbem_bookings_tickets_show_loggedout')) && ($tickets_count > 1 || get_option('dbem_bookings_tickets_single_form')) ){ //show if more than 1 ticket, or if in forced ticket list view mode
-						do_action('em_booking_form_before_tickets', $EM_Event); //do not delete
-						//Show multiple tickets form to user, or single ticket list if settings enable this
-						//If logged out, can be allowed to see this in settings witout the register form 
-						em_locate_template('forms/bookingform/tickets-list.php',true, array('EM_Event'=>$EM_Event));
-						do_action('em_booking_form_after_tickets', $EM_Event); //do not delete
-						$show_tickets = false;
-					}
-				?>
-				<?php if( $can_book ): ?>
-					<div class='em-booking-form-details'>
+			<div class="row">
+				<?php //Tickets exist, so we show a booking form. ?>
+				<div class="col-md-6">
+					<form class="em-booking-form" name='booking-form' method='post' action='<?php echo apply_filters('em_booking_form_action_url',''); ?>#em-booking'>
+					 	<input type='hidden' name='action' value='booking_add'/>
+					 	<input type='hidden' name='event_id' value='<?php echo $EM_Event->get_bookings()->event_id; ?>'/>
+					 	<input type='hidden' name='_wpnonce' value='<?php echo wp_create_nonce('booking_add'); ?>'/>
 						<?php 
-							if( $show_tickets && $available_tickets_count == 1 && !get_option('dbem_bookings_tickets_single_form') ){
+							// Tickets Form
+							if( $show_tickets && ($can_book || get_option('dbem_bookings_tickets_show_loggedout')) && ($tickets_count > 1 || get_option('dbem_bookings_tickets_single_form')) ){ //show if more than 1 ticket, or if in forced ticket list view mode
 								do_action('em_booking_form_before_tickets', $EM_Event); //do not delete
-								//show single ticket form, only necessary to show to users able to book (or guests if enabled)
-								$EM_Ticket = $EM_Event->get_bookings()->get_available_tickets()->get_first();
-								em_locate_template('forms/bookingform/ticket-single.php',true, array('EM_Event'=>$EM_Event, 'EM_Ticket'=>$EM_Ticket));
+								//Show multiple tickets form to user, or single ticket list if settings enable this
+								//If logged out, can be allowed to see this in settings witout the register form 
+								em_locate_template('forms/bookingform/tickets-list.php',true, array('EM_Event'=>$EM_Event));
 								do_action('em_booking_form_after_tickets', $EM_Event); //do not delete
-							} 
-						?>
-						<?php
-							do_action('em_booking_form_before_user_details', $EM_Event);
-							if( has_action('em_booking_form_custom') ){ 
-								//Pro Custom Booking Form. You can create your own custom form by hooking into this action and setting the option above to true
-								do_action('em_booking_form_custom', $EM_Event); //do not delete
-							}else{
-								//If you just want to modify booking form fields, you could do so here
-								em_locate_template('forms/bookingform/booking-fields.php',true, array('EM_Event'=>$EM_Event));
+								$show_tickets = false;
 							}
-							do_action('em_booking_form_after_user_details', $EM_Event);
 						?>
-						<?php do_action('em_booking_form_footer', $EM_Event); //do not delete ?>
-						<div class="em-booking-buttons">
-							<?php if( preg_match('/https?:\/\//',get_option('dbem_bookings_submit_button')) ): //Settings have an image url (we assume). Use it here as the button.?>
-							<input type="image" src="<?php echo get_option('dbem_bookings_submit_button'); ?>" class="em-booking-submit" id="em-booking-submit" />
-							<?php else: //Display normal submit button ?>
-							<input type="submit" class="btn btn-primary-withoutborder em-booking-submit" id="em-booking-submit" value="<?php echo esc_attr(get_option('dbem_bookings_submit_button')); ?>" />
-							<?php endif; ?>
-						</div>
-						<?php do_action('em_booking_form_footer_after_buttons', $EM_Event); //do not delete ?>
-					</div>
-				<?php else: ?>
-					<p class="em-booking-form-details"><?php echo get_option('dbem_booking_feedback_log_in'); ?></p>
-				<?php endif; ?>
-			</form>	
-			<?php 
-			if( !is_user_logged_in() && get_option('dbem_bookings_login_form') ){
-				//User is not logged in, show login form (enabled on settings page)
-				em_locate_template('forms/bookingform/login.php',true, array('EM_Event'=>$EM_Event));
-			}
-			?>
-			<br class="clear" style="clear:left;" />  
+						<?php if( $can_book ): ?>
+							<div class='em-booking-form-details'>
+								<?php 
+									if( $show_tickets && $available_tickets_count == 1 && !get_option('dbem_bookings_tickets_single_form') ){
+										do_action('em_booking_form_before_tickets', $EM_Event); //do not delete
+										//show single ticket form, only necessary to show to users able to book (or guests if enabled)
+										$EM_Ticket = $EM_Event->get_bookings()->get_available_tickets()->get_first();
+										em_locate_template('forms/bookingform/ticket-single.php',true, array('EM_Event'=>$EM_Event, 'EM_Ticket'=>$EM_Ticket));
+										do_action('em_booking_form_after_tickets', $EM_Event); //do not delete
+									} 
+								?>
+								<?php
+									do_action('em_booking_form_before_user_details', $EM_Event);
+									if( has_action('em_booking_form_custom') ){ 
+										//Pro Custom Booking Form. You can create your own custom form by hooking into this action and setting the option above to true
+										do_action('em_booking_form_custom', $EM_Event); //do not delete
+									}else{
+										//If you just want to modify booking form fields, you could do so here
+										em_locate_template('forms/bookingform/booking-fields.php',true, array('EM_Event'=>$EM_Event));
+									}
+									do_action('em_booking_form_after_user_details', $EM_Event);
+								?>
+								<?php do_action('em_booking_form_footer', $EM_Event); //do not delete ?>
+								<div class="em-booking-buttons">
+									<?php if( preg_match('/https?:\/\//',get_option('dbem_bookings_submit_button')) ): //Settings have an image url (we assume). Use it here as the button.?>
+									<input type="image" src="<?php echo get_option('dbem_bookings_submit_button'); ?>" class="em-booking-submit" id="em-booking-submit" />
+									<?php else: //Display normal submit button ?>
+									<input type="submit" class="btn btn-primary-withoutborder em-booking-submit" id="em-booking-submit" value="<?php echo esc_attr(get_option('dbem_bookings_submit_button')); ?>" />
+									<?php endif; ?>
+								</div>
+								<?php do_action('em_booking_form_footer_after_buttons', $EM_Event); //do not delete ?>
+							</div>
+						<?php else: ?>
+							<p class="em-booking-form-details"><?php echo get_option('dbem_booking_feedback_log_in'); ?></p>
+						<?php endif; ?>
+					</form>	
+				</div>
+				<div class="col-md-6">
+					<?php 
+					if( !is_user_logged_in() && get_option('dbem_bookings_login_form') ){
+						//User is not logged in, show login form (enabled on settings page)
+						em_locate_template('forms/bookingform/login.php',true, array('EM_Event'=>$EM_Event));
+					}
+					?>
+				</div>
+				<br class="clear" style="clear:left;" />  
+			</div>
 		<?php endif; ?>
 	<?php endif; ?>
 </div>
