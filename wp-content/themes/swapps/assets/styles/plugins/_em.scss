@@ -1,6 +1,6 @@
 // Event Manager custom styles
-.em-booking-form {
-  display: inline-block;
+.single-event .event{
+  @extend .container;
 }
 .em-booking-login {
   margin: 0 !important;
