@@ -30,7 +30,7 @@
 // The next code need improvements
 
 @import "components/comments";
-// @import "components/forms";
+@import "components/forms";
 @import "components/grid";
 // @import "components/wp-classes";
 
@@ -38,3 +38,5 @@
 @import "layouts/pages";
 @import "layouts/posts";
 // @import "layouts/tinymce";
+
+@import "plugins/em";

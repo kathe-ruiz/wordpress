@@ -87,6 +87,7 @@ function display_sidebar() {
     is_post_type_archive('product'),
     is_tax( 'product_cat' ),
     is_tax( 'product_tag' ),
+    ( 'event' == get_post_type() ),
     is_singular('product'),
     is_page_template('template-style-guide.php'),
     is_page_template('template-map.php'),
