@@ -117,7 +117,7 @@
         "advanced-custom-fields-pro": "5.5.5",
         "flexi-pages-widget": "1.7.4",
         "formidable": "2.02.13",
-        {% if wp_blog_enabled is defined and wp_blog_enabled|bool %}
+        {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
         "yoast/wordpress-seo": "^4.2",
