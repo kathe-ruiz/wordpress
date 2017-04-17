@@ -69,6 +69,18 @@
         {
             "type": "package",
             "package": {
+                "name": "flexi-pages-widget",
+                "version": "1.7.3",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-flexi-pages-widget.git",
+                    "type": "git",
+                    "reference": "1.7.3"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "formidable",
                 "version": "2.02.13",
                 "source": {
@@ -103,6 +115,7 @@
         "sw-customizer": "0.3.2",
         "wp-plugin-swapps": "0.1.1",
         "advanced-custom-fields-pro": "5.5.5",
+        "flexi-pages-widget": "1.7.3",
         "formidable": "2.02.13",
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
@@ -122,6 +135,7 @@
             "sw-customizer",
             "wp-plugin-swapps",
             "advanced-custom-fields-pro",
+            "flexi-pages-widget",
             "formidable",
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
