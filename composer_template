@@ -70,11 +70,11 @@
             "type": "package",
             "package": {
                 "name": "flexi-pages-widget",
-                "version": "1.7.3",
+                "version": "1.7.4",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-flexi-pages-widget.git",
                     "type": "git",
-                    "reference": "1.7.3"
+                    "reference": "1.7.4"
                 }
             }
         },
