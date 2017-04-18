@@ -77,9 +77,19 @@
                     "reference": "2.02.13"
                 }
             }
-
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "formidable-bootstrap",
+                "version": "1.01.02",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-formidable-bootstrap.git",
+                    "type": "git",
+                    "reference": "1.01.02"
+                }
+            }
         }
-            
     ],
     "require": {
         "vlucas/phpdotenv": "2.4.*",
@@ -104,6 +114,7 @@
         "wp-plugin-swapps": "0.1.1",
         "advanced-custom-fields-pro": "5.5.5",
         "formidable": "2.02.13",
+        "formidable-bootstrap": "1.01.02",
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -123,6 +134,7 @@
             "wp-plugin-swapps",
             "advanced-custom-fields-pro",
             "formidable",
+            "formidable-bootstrap",
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
