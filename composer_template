@@ -89,9 +89,19 @@
                     "reference": "2.02.13"
                 }
             }
-
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "formidable-bootstrap",
+                "version": "1.01.02",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-formidable-bootstrap.git",
+                    "type": "git",
+                    "reference": "1.01.02"
+                }
+            }
         }
-            
     ],
     "require": {
         "vlucas/phpdotenv": "2.4.*",
@@ -117,6 +127,7 @@
         "advanced-custom-fields-pro": "5.5.5",
         "flexi-pages-widget": "1.7.4",
         "formidable": "2.02.13",
+        "formidable-bootstrap": "1.01.02",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
@@ -140,6 +151,7 @@
             "advanced-custom-fields-pro",
             "flexi-pages-widget",
             "formidable",
+            "formidable-bootstrap",
             {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
             "wpackagist-plugin/disable-blogging",
             {% endif %}
