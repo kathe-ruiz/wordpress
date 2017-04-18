@@ -128,6 +128,9 @@
         "flexi-pages-widget": "1.7.4",
         "formidable": "2.02.13",
         "formidable-bootstrap": "1.01.02",
+        {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
+        "wpackagist-plugin/disable-blogging": "2.0.4",
+        {% endif %}
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/toolbar-publish-button": "^1.6",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -149,6 +152,9 @@
             "flexi-pages-widget",
             "formidable",
             "formidable-bootstrap",
+            {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
+            "wpackagist-plugin/disable-blogging",
+            {% endif %}
             "wpackagist-plugin/amazon-web-services",
             "wpackagist-plugin/amazon-s3-and-cloudfront",
             "wpackagist-plugin/mailgun",
