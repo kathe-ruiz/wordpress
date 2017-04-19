@@ -162,6 +162,7 @@
             "wpackagist-plugin/acf-link-picker-field",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
+            "wpackagist-plugin/toolbar-publish-button",
             "wpackagist-plugin/smtp-mailer"
             {% if plan_data['plugins'] is defined %}
                 {% for key, value in plan_data['plugins'].iteritems() %}
