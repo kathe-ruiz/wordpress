@@ -21,11 +21,11 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.3.3",
+                "version": "0.3.4",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.3.3"
+                    "reference": "0.3.4"
                 }
             }
         },
@@ -118,7 +118,7 @@
         "wpackagist-plugin/ninja-forms": "3.0.30",
         "wpackagist-plugin/mailchimp-for-wp": "4.1.0",
         "sw-simple-slider": "0.2.5",
-        "sw-customizer": "0.3.3",
+        "sw-customizer": "0.3.4",
         "wp-plugin-swapps": "0.1.3",
         "advanced-custom-fields-pro": "5.5.5",
         "flexi-pages-widget": "1.7.4",
