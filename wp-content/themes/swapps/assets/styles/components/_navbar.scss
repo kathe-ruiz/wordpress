@@ -97,6 +97,10 @@
     }
   }
 }
+.navbar--brand{
+  @extend .navbar-default;
+  background: $brand-primary;
+}
 .navbar{
   padding: 10px 0;
   border-left:0;
