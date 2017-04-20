@@ -259,3 +259,12 @@ if (!function_exists('format_date_array')) {
     return preg_split('/[\s,]+/', date_format(date_create($var), $format));
   }
 }
+
+// Override Yoast SEO meta title formatting on front page
+function sw_site_title($title) {
+  if (is_front_page()) {
+    $title = get_bloginfo('name');
+  }
+  return $title;
+}
+add_filter('wpseo_title', 'sw_site_title');
