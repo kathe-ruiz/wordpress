@@ -22,7 +22,7 @@
         function stickyFooter() {
           var footer_height = document.querySelector('.footer').offsetHeight;
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
-          document.querySelector('.footer').style.marginTop = "-" + footer_height + "px";
+          document.querySelector('#footer').style.marginTop = "-" + footer_height + "px";
         }
         // Fix for KocoJeans
         function fillRemainingSpace(){
@@ -31,7 +31,7 @@
           var totalHeight = footerHeight + contentHeight;
           if(totalHeight < window.innerHeight){
             var fill = window.innerHeight - totalHeight;
-            document.querySelector('section').style.paddingBottom = fill + "px";
+            document.querySelector('.document section:not(.breadcrumb)').style.paddingBottom = fill + "px";
           }
         }
         $(window).on('load resize', function () {
@@ -117,7 +117,7 @@
         $(window).on('resize', autocollapse);
 
       $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
+        $('.navbar a[href*="#"]:not([href="#"])').click(function() {
           if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

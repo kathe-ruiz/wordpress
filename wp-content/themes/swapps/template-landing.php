@@ -11,7 +11,7 @@
     $landing_option = False;
   }
 
-  get_template_part( 'nav' ); 
+  get_template_part( 'nav' );
 ?>
 <?php if ($rows): ?>
   <?php foreach ($rows as $key => $row): ?>
@@ -45,7 +45,10 @@
   <?php
   switch ($row['row_items'][0]['acf_fc_layout']){
     case 'image_slider':
-    $class_css .= ' sliders-main ';
+      if(get_fields($row['row_items'][0]['slider'])['slider_type'] != 'full_responsive'){
+        $class_css .= ' sliders-main ';
+      }
+
     break;
     case 'text_slider':
     $class_css .= ' sliders-secondary ';
@@ -112,6 +115,12 @@
         case 'label':
         include('layouts/layout_label.php');
         break;
+        case 'subscription':
+        include('layouts/layout_subscribe.php');
+        break;
+        case 'events':
+        include('layouts/layout_events.php');
+        break;
       }
       ?>
       <?php endforeach ?>
@@ -122,11 +131,8 @@
 <?php endif ?>
 
 <?php if (WP_DEBUG): ?>
-  <section>
+  <section class="container-fluid">
     <h1>Debug Vars</h1>
-    <pre>
-      <?php echo the_field('field_row_background_color') ?>
-      <?php print_r($rows); ?>
-    </pre>
+    <pre><?php print_r($rows); ?></pre>
   </section>
 <?php endif ?>

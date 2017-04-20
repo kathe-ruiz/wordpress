@@ -1,5 +1,78 @@
 [
     {
+        "key": "group_header_options",
+        "title": "Header Options",
+        "fields": [
+            {
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 500,
+                "min_height": 200,
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "key": "field_header_background",
+                "label": "Header Background",
+                "name": "header_background",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "new_lines": "wpautop",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": 4,
+                "key": "field_header_description",
+                "label": "Header Description",
+                "name": "header_description",
+                "type": "textarea",
+                "instructions": "Description to show on the header of the page. If it's a category, you can leave this field blank and fill the category description instead.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "category"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "featured_image"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
         "key": "group_landing_fields",
         "title": "Landing Fields",
         "fields": [
@@ -104,9 +177,7 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -368,9 +439,7 @@
                                         "post_type": [
                                             "slider"
                                         ],
-                                        "taxonomy": [
-
-                                        ],
+                                        "taxonomy": [],
                                         "allow_null": 0,
                                         "multiple": 0,
                                         "return_format": "object",
@@ -522,8 +591,8 @@
                                                 "return_format": "array",
                                                 "preview_size": "full",
                                                 "library": "all",
-                                                "min_width": 300,
-                                                "min_height": 300,
+                                                "min_width": 200,
+                                                "min_height": 200,
                                                 "min_size": "",
                                                 "max_width": "",
                                                 "max_height": "",
@@ -2286,6 +2355,35 @@
                                 "max": ""
                             },
                             {
+                                "key": "58e52208fad87",
+                                "name": "events",
+                                "label": "Events",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "key": "field_58e52263fad8b",
+                                        "label": "Title",
+                                        "name": "title",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
                                 "key": "layout_label",
                                 "name": "label",
                                 "label": "Label",
@@ -2303,6 +2401,38 @@
                                         "type": "text",
                                         "instructions": "",
                                         "required": 1,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "layout_subscription",
+                                "name": "subscription",
+                                "label": "Subscription",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "post_type": [
+                                            "mc4wp-form"
+                                        ],
+                                        "taxonomy": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "return_format": "object",
+                                        "ui": 1,
+                                        "key": "field_sign_up",
+                                        "label": "Sign-up form",
+                                        "name": "sign_up",
+                                        "type": "post_object",
+                                        "instructions": "",
+                                        "required": 0,
                                         "conditional_logic": 0,
                                         "wrapper": {
                                             "width": "",

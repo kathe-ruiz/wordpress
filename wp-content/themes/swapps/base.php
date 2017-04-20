@@ -20,14 +20,14 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="document">
-    <?php if (!is_front_page()): get_template_part('templates/page', 'header'); endif; ?>
-    <div class="wrap container<?php if (!Setup\display_sidebar() ) :  echo '-fluid'; endif; ?><?php if(!sw_options('site_options_secondary_navbar_position')): ?><?php echo " not-fixed"; ?><?php endif ?>" role="document">
+    <?php if (!(is_front_page() && get_option('show_on_front') == 'page') ): get_template_part('templates/page', 'header'); endif; ?>
+    <div class="wrap container<?php if (!Setup\display_sidebar() ) :  echo '-fluid'; endif; ?>" role="document">
       <div class="content row">
-        <main class="main <?php if (Setup\display_sidebar()): echo 'col-sm-8'; endif; ?>">
+        <main class="main <?php echo $col_size = (Setup\display_sidebar()) ? 'col-sm-8' : '' ; ?>">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar <?php if (!is_front_page()): echo 'col-sm-4'; endif; ?>">
+          <aside class="sidebar <?php if (Setup\display_sidebar()): echo 'col-sm-4'; endif; ?>">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>

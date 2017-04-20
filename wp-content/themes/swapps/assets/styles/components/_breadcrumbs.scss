@@ -1,14 +1,20 @@
 .breadcrumb{
   border-radius: 0;
   margin-bottom: 50px;
-
-  @media (min-width: $screen-lg-desktop) {
-    padding-top: 79px;
+  @media (max-width: $screen-sm-max){
+    padding: 20px 0;
   }
-  @media (max-width: $screen-md-max) {
-    padding-top: 69px;
+  @media (min-width: $screen-md-min){
+    padding: 40px 0;
   }
-  padding-bottom: 0;
+  &.sticky-header{
+    @media (min-width: $screen-lg-desktop) {
+      padding-top: 99px;
+    }
+    @media (max-width: $screen-md-max) {
+      padding-top: 89px;
+    }
+  }
 
   &__item--active{
     display: block;
@@ -24,12 +30,7 @@
 #breadcrumbs{
   list-style:none;
   padding-left: 0;
-  @media (max-width: $screen-sm-max){
-    margin: 20px 0;
-  }
-  @media (min-width: $screen-md-min){
-    margin: 40px 0;
-  }
+  
   li{
     display:inline-block;
     vertical-align:middle;
@@ -41,7 +42,7 @@
       color: inherit;
     }
     &:last-child{
-      word-wrap: break-word;
+      word-wrap: normal;
       @extend .breadcrumb__item--active;
     }
   }

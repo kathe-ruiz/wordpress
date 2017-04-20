@@ -17,6 +17,7 @@
 @import "components/sliders";
 @import "components/buttons";
 @import "components/home-section";
+@import "components/event";
 @import "components/fancybox";
 @import "components/backgrounds";
 @import "components/entry-meta";
@@ -29,7 +30,7 @@
 // The next code need improvements
 
 @import "components/comments";
-// @import "components/forms";
+@import "components/forms";
 @import "components/grid";
 // @import "components/wp-classes";
 
@@ -37,3 +38,5 @@
 @import "layouts/pages";
 @import "layouts/posts";
 // @import "layouts/tinymce";
+
+@import "plugins/em";

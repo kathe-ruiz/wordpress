@@ -27,38 +27,25 @@
     width: 100%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-
-    .owl-next{
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 7px;
-      padding-right: 3px;
-    }
-    .owl-prev{
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 3px;
-      padding-right: 7px;
-    }
-
-
     .owl-prev, .owl-next{
       position: relative;
       padding: 0;
       padding-bottom: 3px;
       opacity: 0.5;
+      border-radius: 50%;
+      transition: all .4s ease-in-out;
+      background: transparent;
       &:hover{
         background-color: rgba(180,180,180,0.4);
-        border-radius: 50%;
         opacity: 1;
       }
       i.fa{
         color: #fff;
         @media (max-width: $screen-xs-max) {
-          font-size: 40px;
+          font-size: 35px;
         }
         @media (min-width: $screen-sm-min) {
-          font-size: 70px;
+          font-size: 65px;
           padding: 0;
         }
       }
@@ -74,21 +61,29 @@
     .owl-prev{
       float: left;
       left: $slider-nav-position;
-      padding-left: 11px;
-      padding-right: 16px;
+      padding-left: 16px;
+      padding-right: 22px;
+      padding-top: 6px;
+      padding-bottom: 6px;
       @media (max-width: $screen-xs-max) {
         padding-left: 8px;
         padding-right: 13px;
+        padding-top: 4px;
+        padding-bottom: 4px;
       }
     }
     .owl-next{
       float: right;
       right: $slider-nav-position;
-      padding-left: 16px;
-      padding-right: 11px;
+      padding-right: 16px;
+      padding-left: 22px;
+      padding-top: 6px;
+      padding-bottom: 6px;
       @media (max-width: $screen-xs-max) {
         padding-left: 13px;
         padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
       }
     }
   }

@@ -46,6 +46,9 @@ require_once('includes/custom-pagination.php');
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 // require_once('includes/admin-mods.php');
+require 'widgets/subscribe_widget.php';
+
+
 
 function get_social_accounts()
 {
@@ -54,6 +57,7 @@ function get_social_accounts()
     $accounts['facebook'] = (sw_options('social_facebook')) ?: null;
     $accounts['twitter'] = (sw_options('social_twitter')) ?: null;
     $accounts['instagram'] = (sw_options('social_instagram')) ?: null;
+    $accounts['youtube'] = (sw_options('social_youtube')) ?: null;
     $accounts['vimeo'] = (sw_options('social_vimeo')) ?: null;
     $accounts['linkedin'] = (sw_options('social_linkedin')) ?: null;
   }
@@ -196,8 +200,71 @@ if (!function_exists('sw_get_phone')) {
       $phone = sw_options('phone');
     endif;
     if (!isset($phone)) {
-      $phone = "";
+      $phone = False;
     }
     return $phone;
   }
 }
+
+add_action( 'widgets_init', 'register_suscribe_widget' );
+// Shortcode to generate HTML of subscribe form
+function render_subscribe_form()
+{
+  ob_start();
+  get_template_part('templates/subscribe', 'form');
+  $html = ob_get_contents();
+  ob_end_clean();
+  return $html;
+}
+
+add_shortcode( 'sw-subscribe-form', 'render_subscribe_form' );
+
+/**
+ *
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function pre_footer_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Pre Footer',
+    'id'            => 'pre_footer',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="rounded">',
+    'after_title'   => '</h2>',
+  ) );
+
+}
+add_action( 'widgets_init', 'pre_footer_widgets_init' );
+
+
+function internal_pages_sidebar_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Internal Pages Sidebar',
+    'id'            => 'internal_pages_sidebar',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="rounded">',
+    'after_title'   => '</h2>',
+  ) );
+
+}
+add_action( 'widgets_init', 'internal_pages_sidebar_widgets_init' );
+
+
+if (!function_exists('format_date_array')) {
+  function format_date_array($var, $format = "D d F Y"){
+    return preg_split('/[\s,]+/', date_format(date_create($var), $format));
+  }
+}
+
+// Override Yoast SEO meta title formatting on front page
+function sw_site_title($title) {
+  if (is_front_page()) {
+    $title = get_bloginfo('name');
+  }
+  return $title;
+}
+add_filter('wpseo_title', 'sw_site_title');

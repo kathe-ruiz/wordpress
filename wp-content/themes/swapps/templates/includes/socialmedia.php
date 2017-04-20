@@ -22,6 +22,13 @@
     </a>
   </li>
   <?php endif ?>
+  <?php if (isset($accounts['youtube'])): ?>
+  <li class="socialmedia__item">
+    <a href="<?php echo $accounts['youtube'] ?>" class="socialmedia__link" target="_blank">
+      <i class="fa fa-youtube" aria-hidden="true"></i>
+    </a>
+  </li>
+  <?php endif ?>
   <?php if (isset($accounts['vimeo'])): ?>
   <li class="socialmedia__item">
     <a href="<?php echo $accounts['vimeo'] ?>" class="socialmedia__link" target="_blank">
