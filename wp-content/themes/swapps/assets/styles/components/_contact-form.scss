@@ -1,54 +1,57 @@
-.contact-form{
-  &__div{
-  }
-  &__label{
-    font-weight: 200;
-  }
-  &__input,
-  &__textarea{
-    border-radius: $button-without-border-radius;
-  }
-}
-.form-field{
-  input, textarea{
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-}
-.frm-show-form{
-  .form-field{
-    @extend .form-group, .form-group-sm;
-  }
-  input:not([type=submit]), textarea{
-    @extend .form-control;
-  }
-  input[type=submit]{
-    @extend .btn, .btn-primary-withoutborder;
-  }
-}
-.frm_form_field.form-field {
-  display: block !important;
-  float: none !important;
-  clear: both !important;
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-.frm_radio{
-  input{
-    display: inline-block !important;
-    height: auto !important;
-    margin: 0 !important;
-    margin-right: 5px !important;
-    vertical-align: middle !important;
-  }
-}
-.submit-container,
-.submit-wrap,
-.button-container,
-.button-wrap{
-  input,
-  button{
-    @extend .btn;
-    @extend .btn-primary;
-  }
-}
+// This file is commented advantaged of plugin https://github.com/swappsco/wp-plugin-formidable-bootstrap
+//
+//   .contact-form{
+//   &__div{
+//   }
+//   &__label{
+//     font-weight: 200;
+//   }
+//   &__input,
+//   &__textarea{
+//     border-radius: $button-without-border-radius;
+//   }
+// }
+// .form-field{
+//   input, textarea{
+//     border-radius: 0;
+//     box-shadow: none;
+//   }
+// }
+// .frm-show-form{
+//   .form-field{
+//     @extend .form-group, .form-group-sm;
+//   }
+//   input:not([type=submit]), textarea{
+//     @extend .form-control;
+//   }
+//   input[type=submit]{
+//     @extend .btn, .btn-primary-withoutborder;
+//   }
+// }
+// .frm_form_field.form-field {
+//   display: block;
+//   float: none;
+//   clear: both;
+//   margin-left: 0px;
+//   margin-right: 0px;
+// }
+// .frm_radio{
+//   input{
+//     display: inline-block;
+//     height: auto;
+//     margin: 0;
+//     margin-right: 5px;
+//     vertical-align: middle;
+//   }
+// }
+// .submit-container,
+// .submit-wrap,
+// .button-container,
+// .button-wrap{
+//   input,
+//   button{
+//     @extend .btn;
+//     @extend .btn-primary;
+//   }
+// }
+

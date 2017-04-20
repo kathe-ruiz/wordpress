@@ -148,7 +148,7 @@
   <!-- end example of section -->
 
     <section id="four" class="bg-primary sliders-secondary">
-      <?php if($secondary_slider): ?>
+      <?php if(isset($secondary_slider)): ?>
       <?php $slides = get_slides_array($secondary_slider); ?>
         <?php if ($slides): ?>
           <div class="owl-carousel owl-theme">

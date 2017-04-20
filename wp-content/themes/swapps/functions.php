@@ -192,9 +192,12 @@ if (!function_exists('sw_get_phone')) {
     $front_page_id = (int)get_option('page_on_front');
     if (function_exists('get_field') && get_field( 'field_phone', $front_page_id )):
       $phone = get_field( 'field_phone', $front_page_id );
-    elseif (function_exists('sw_options') && sw_options('phone')):      
+    elseif (function_exists('sw_options') && sw_options('phone')):
       $phone = sw_options('phone');
     endif;
+    if (!isset($phone)) {
+      $phone = "";
+    }
     return $phone;
   }
 }
