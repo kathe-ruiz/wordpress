@@ -11,25 +11,31 @@
 
 ?>
 
-        </main><!-- #main -->
+    </main><!-- #main -->
 
-    </div><!-- /#container -->
+  </div><!-- /#container -->
 
-	<div class="sub-footer">
-        <div class="container">
-            <div class="row">
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 center-block">
+          <?php get_template_part( '/template-parts/social-menu', 'footer' ); ?>
+        </div>
 
-                <div class="col-md-5">
-                    <p><?php echo sprintf( esc_html__( 'Ocin Lite designed by %s', 'ocin-lite' ), '<a rel="nofollow" rel="designer" href="https://www.quemalabs.com/">Quema Labs</a>' ); ?>.
-                    </p>
-                </div>
-                <div class="col-md-7">
-                    <?php get_template_part( '/template-parts/social-menu', 'footer' ); ?>
-                </div>
-
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .sub-footer -->
+      </div><!-- .row -->
+      <div class="logo-swapps text-center"><a href="https://www.swapps.io/" target="_blank"><span style="
+        font-size: 10px;
+      ">Powered by  </span><img src="https://www.dejusticia.org/wp-content/mu-plugins/dejusticia-core/powered-by-swapps.png"><span style="color: #98979a;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        font-weight: 800;
+        vertical-align: sub;">sw</span><span style="color: #757476;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        font-weight: 800;
+        vertical-align: sub;">apps</span></a></div>
+    </div><!-- .container -->
+  </div><!-- .sub-footer -->
 
 
 <?php wp_footer(); ?>
