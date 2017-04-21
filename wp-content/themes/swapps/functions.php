@@ -199,7 +199,7 @@ if (!function_exists('sw_get_phone')) {
     elseif (function_exists('sw_options') && sw_options('phone')):
       $phone = sw_options('phone');
     endif;
-    if (!isset($phone)) {
+    if (!isset($phone)){
       $phone = False;
     }
     return $phone;
