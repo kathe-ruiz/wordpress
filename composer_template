@@ -137,6 +137,11 @@
             , "{{ key }}": "{{ value }}"
             {% endfor%}
         {% endif %}
+        {% if plan_data['not_mu_plugins'] is defined %}
+            {% for key, value in plan_data['not_mu_plugins'].iteritems() %}
+            , "{{ key }}": "{{ value }}"
+            {% endfor%}
+        {% endif %}
     },
     "extra" : {
         "installer-types": ["library"],
