@@ -45,11 +45,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.5.5",
+                "version": "5.5.11",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.5.5"
+                    "reference": "5.5.11"
                 }
             }
 
@@ -58,7 +58,7 @@
             "type": "package",
             "package": {
                 "name": "sitepress-multilingual-cms",
-                "version": "3.6.3",
+                "version": "3.7.0",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-wpml.git",
                     "type": "git",
@@ -82,11 +82,11 @@
             "type": "package",
             "package": {
                 "name": "formidable",
-                "version": "2.02.13",
+                "version": "2.03.07",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "2.02.13"
+                    "reference": "2.03.07"
                 }
             }
         },
@@ -105,33 +105,25 @@
     ],
     "require": {
         "vlucas/phpdotenv": "2.4.*",
-        "wpackagist-plugin/addthis": "5.3.4",
-        "wpackagist-plugin/amazon-web-services": "^1.0",
-        "wpackagist-plugin/amazon-s3-and-cloudfront": "^1.1",
+        "cocur/slugify": "^2.4",
+        "advanced-custom-fields-pro": "5.5.11",
+        "wpackagist-plugin/addthis": "5.3.5",
         "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
-        "wpackagist-plugin/acf-image-crop-add-on": "1.4.10",
-        "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
-        "wpackagist-plugin/smtp-mailer": "1.0.2",
+        "wpackagist-plugin/acf-image-crop-add-on": "1.4.11",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
-        "wpackagist-plugin/duplicate-post": "3.1.2",
+        "wpackagist-plugin/smtp-mailer": "1.0.3",
+        "wpackagist-plugin/duplicate-post": "3.2",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
-        "wpackagist-plugin/ninja-forms": "3.0.30",
-        "wpackagist-plugin/mailchimp-for-wp": "4.1.0",
+        "wpackagist-plugin/ninja-forms": "3.0.34"
         "sw-simple-slider": "0.2.5",
         "sw-customizer": "0.3.4",
         "wp-plugin-swapps": "0.1.3",
-        "advanced-custom-fields-pro": "5.5.5",
-        "flexi-pages-widget": "1.7.4",
-        "formidable": "2.02.13",
-        "formidable-bootstrap": "1.01.02",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
         "yoast/wordpress-seo": "^4.2",
         "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "1.2.6",
-        "wpackagist-plugin/toolbar-publish-button": "^1.6",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "cocur/slugify": "^2.4"
+        "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
             {% for key, value in plan_data['plugins'].iteritems() %}
             , "{{ key }}": "{{ value }}"
@@ -147,24 +139,21 @@
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/mu-plugins/{$name}/": [
-            "sw-simple-slider",
-            "sw-customizer",
-            "wp-plugin-swapps",
             "advanced-custom-fields-pro",
             "flexi-pages-widget",
-            "formidable",
-            "formidable-bootstrap",
             {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
             "wpackagist-plugin/disable-blogging",
             {% endif %}
-            "wpackagist-plugin/amazon-web-services",
-            "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "wpackagist-plugin/mailgun",
             "wpackagist-plugin/acf-link-picker-field",
+            "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
-            "wpackagist-plugin/toolbar-publish-button",
-            "wpackagist-plugin/smtp-mailer"
+            "wpackagist-plugin/ninja-forms",
+            "wpackagist-plugin/smtp-mailer",
+            "sw-simple-slider",
+            "sw-customizer",
+            "wp-plugin-swapps",
+            "yoast/wordpress-seo"
             {% if plan_data['plugins'] is defined %}
                 {% for key, value in plan_data['plugins'].iteritems() %}
                 , "{{ key }}"
