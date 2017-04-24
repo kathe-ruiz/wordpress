@@ -54,7 +54,13 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
         }
       }
       $html .= '<li class="breadcrumb__item item-current item-' . $post->ID . '"><span class="breadcrumb__bread bread-current" title="' . esc_attr( get_the_title() ) . '"> ' . esc_html( get_the_title() ) . '</span></li>';
-    } elseif ( is_singular( 'attachment' ) ) {
+
+    }elseif ( is_post_type_archive('product') ) {
+      $shop_page_id = wc_get_page_id( 'shop' );
+      $title['title'] = get_the_title( $shop_page_id );
+      $html .= '<li class="breadcrumb__item item-current item-' . $post->ID . '"><span class="breadcrumb__bread bread-current" title="' . esc_attr( get_the_title() ) . '"> ' . esc_html( $title['title'] ) . '</span></li>';
+
+    }elseif ( is_singular( 'attachment' ) ) {
 
       $parent_id        = $post->post_parent;
       $parent_title     = get_the_title( $parent_id );
