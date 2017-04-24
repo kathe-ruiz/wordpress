@@ -20,6 +20,19 @@
         {
             "type": "package",
             "package": {
+                "name": "woocommerce-tu-compra",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-woocommerce-tu-compra.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "sw-customizer",
                 "version": "0.3.4",
                 "source": {

@@ -67,13 +67,11 @@
   .navbar__menu{
     .active {
       color: $brand-primary;
-      background-color: contrast_function($brand-primary) !important;
     }
     .menu-item{
       a{
         &:hover,
         &:focus{
-          background-color: contrast_function($brand-primary);
           color: $brand-primary;
         }
       }
