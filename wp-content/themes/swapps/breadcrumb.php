@@ -58,7 +58,24 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
     }elseif ( is_post_type_archive('product') ) {
       $shop_page_id = wc_get_page_id( 'shop' );
       $title['title'] = get_the_title( $shop_page_id );
-      $html .= '<li class="breadcrumb__item item-current item-' . $post->ID . '"><span class="breadcrumb__bread bread-current" title="' . esc_attr( get_the_title() ) . '"> ' . esc_html( $title['title'] ) . '</span></li>';
+      $html .= '<li class="breadcrumb__item item-current item-' . $shop_page_id . '"><span class="breadcrumb__bread bread-current" title="' . $title['title'] . '"> ' . esc_html( $title['title'] ) . '</span></li>';
+
+    }elseif ( (is_singular('product') )) {
+      $shop_page_id = wc_get_page_id( 'shop' );
+      $title['title'] = get_the_title( $shop_page_id );
+      $permalink['link'] = get_permalink( $shop_page_id );
+      $html .= '<li class="breadcrumb__item item-' . $shop_page_id . '"><a class="breadcrumb__bread bread-link bread-item-' . $shop_page_id . '" href="' . $permalink['link'] . '" title="' . $title['title'] . '">' . $title['title'] . '</a></li>';
+      $html .= $separator;
+      $html .= '<li class="breadcrumb__item item-current item-cat"><span class="breadcrumb__bread bread-current bread-cat" title="' . esc_attr( get_the_title() ) . '">' . esc_html( get_the_title() ) . '</span></li>';
+
+    }elseif ( (is_tax( 'product_cat' ) || is_tax('product_tag')) ) {
+      $shop_page_id = wc_get_page_id( 'shop' );
+      $title['title'] = get_the_title( $shop_page_id );
+      $permalink['link'] = get_permalink( $shop_page_id );
+      $category = get_queried_object();
+      $html .= '<li class="breadcrumb__item item-' . $shop_page_id . '"><a class="breadcrumb__bread bread-link bread-item-' . $shop_page_id . '" href="' . $permalink['link'] . '" title="' . $title['title'] . '">' . $title['title'] . '</a></li>';
+      $html .= $separator;
+      $html .= '<li class="breadcrumb__item item-current item-cat"><span class="breadcrumb__bread bread-current bread-cat" title="' . esc_attr( $category->name ) . '">' . esc_html( $category->name ) . '</span></li>';
 
     }elseif ( is_singular( 'attachment' ) ) {
 
