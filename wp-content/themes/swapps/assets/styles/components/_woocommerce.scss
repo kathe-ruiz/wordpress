@@ -257,49 +257,49 @@ p.demo_store {
   box-shadow: none;
 }
 .woocommerce div.product div.images div.thumbnails {
-    padding-top: 1em
+  padding-top: 1em
 }
 .woocommerce div.product div.social {
-    text-align: right;
-    margin: 0 0 1em
+  text-align: right;
+  margin: 0 0 1em
 }
 .woocommerce div.product div.social span {
-    margin: 0 0 0 2px
+  margin: 0 0 0 2px
 }
 .woocommerce div.product div.social span span {
-    margin: 0
+  margin: 0
 }
 .woocommerce div.product div.social span .stButton .chicklets {
-    padding-left: 16px;
-    width: 0
+  padding-left: 16px;
+  width: 0
 }
 .woocommerce div.product div.social iframe {
-    float: left;
-    margin-top: 3px
+  float: left;
+  margin-top: 3px
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs {
-    list-style: none;
-    padding: 0 0 0 1em;
-    margin: 0 0 1.618em;
-    overflow: hidden;
-    position: relative;
-    border-bottom: 1px solid $border-tabs-woocommerce;
+  list-style: none;
+  padding: 0 0 0 1em;
+  margin: 0 0 1.618em;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid $border-tabs-woocommerce;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
-    border: 1px solid $border-tabs-woocommerce;
-    background-color: $bg-tabs-woocommerce;
-    display: inline-block;
-    position: relative;
-    z-index: 0;
-    margin: 0 -5px;
-    padding: 0 1em;
-    font-weight: 400;
+  border: 1px solid $border-tabs-woocommerce;
+  background-color: $bg-tabs-woocommerce;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  margin: 0 -5px;
+  padding: 0 1em;
+  font-weight: 400;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
-    display: inline-block;
-    padding: 10px 0;
-    color: $text-woocommerce;
-    text-decoration: none
+  display: inline-block;
+  padding: 10px 0;
+  color: $text-woocommerce;
+  text-decoration: none
 }
 .woocommerce div.product form.cart:after,
 .woocommerce div.product form.cart:before,
@@ -1834,5 +1834,14 @@ p.demo_store {
   }
   .woocommerce-shipping-calculator{
     text-align: left;
+  }
+}
+.woocommerce button.button.alt.disabled{
+  background: $brand-primary;
+  border: 1px solid;
+  font-weight: 400;
+  &:hover,
+  &:focus{
+    background: $brand-primary;
   }
 }
