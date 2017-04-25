@@ -27,3 +27,6 @@ body{
 .alignright{
   float: right;
 }
+.vertical-center{
+  @include position-vertical-align();
+}
