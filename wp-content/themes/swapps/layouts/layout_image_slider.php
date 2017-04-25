@@ -37,7 +37,7 @@
       autoplayTimeout:<?php echo $row_item['timeout'] ?>
       <?php endif; ?>
     });
-  })
+  });
 </script>
 <div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
   <?php foreach ($slides as $key => $slide): ?>
@@ -70,7 +70,9 @@
           break;
       }
     ?>
-    <div class="item"<?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
+    <div class="item item-<?php echo $type ?>"
+      <?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
+      <?php if ( isset($image) && $image ): ?>
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
         <?php if ($title || $description || ($link and $cta)): ?>
         <div class="caption">

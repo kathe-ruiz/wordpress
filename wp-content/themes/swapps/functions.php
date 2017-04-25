@@ -261,10 +261,16 @@ if (!function_exists('format_date_array')) {
 }
 
 // Override Yoast SEO meta title formatting on front page
+add_filter( 'wpseo_title', 'sw_site_title' );
 function sw_site_title($title) {
-  if (is_front_page()) {
-    $title = get_bloginfo('name');
+  global $post;
+
+  // Retrieve front page value for Yoast SEO title 
+  $page_title = WPSEO_Meta::get_value( 'title', $post->ID );
+  // Show site name if title is not set
+  if ( is_front_page() && !$page_title ) {
+    $title = get_bloginfo( 'name' );
   }
+
   return $title;
 }
-add_filter('wpseo_title', 'sw_site_title');
