@@ -54,7 +54,7 @@
           <span class="text-secondary"><?php _e('All rights reserved') ?></span>
         </div>
         <div class="footer__powered-by">
-          <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by <img src="<?php echo get_template_directory_uri(); ?>/dist/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img"><span class="footer__sw">sw</span><span class="footer__apps">apps</span></a>
+          <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img"><span class="footer__sw">sw</span><span class="footer__apps">apps</span></a>
         </div>
       </div>
     </div>
