@@ -1,12 +1,19 @@
+<?php if (function_exists('sw_options')): ?>
+  <?php $navbar_class = (sw_options('site_options_header_color')) ? : 'navbar--transparent' ; ?>
+  <?php if ($navbar_class != 'navbar--transparent'): ?>
+    <?php $default_opacity = ($navbar_class == 'navbar--light') ? '0.9' : '0.85' ?>
+    <?php $opacity = ( sw_options('site_options_header_opacity') &&
+                       (int)sw_options('site_options_header_opacity') >= 0 &&
+                       (int)sw_options('site_options_header_opacity') <= 100) ? ((int)sw_options('site_options_header_opacity') / 100) : $default_opacity ; ?>
+  <?php endif; ?>
+<?php endif; ?>
 <header class="header">
-  <nav id="autocollapse" class="autocollapse-class navbar
-  <?php if (function_exists('sw_options') && sw_options('site_options_header_color')): ?>
-  <?php echo sw_options('site_options_header_color') ?>
-  <?php else: ?>
-  navbar--transparent
-  <?php endif ?>
+  <nav id="autocollapse" class="autocollapse-class navbar  <?php echo $navbar_class ?>
   <?php if (function_exists('sw_options') && sw_options('site_options_secondary_navbar_position')): ?>
-  <?php echo sw_options('site_options_secondary_navbar_position') ?><?php endif ?>">
+  <?php echo sw_options('site_options_secondary_navbar_position') ?><?php endif ?>"
+  <?php if ( isset($opacity) && $opacity ): ?>
+  style="background: rgba(<?php echo $base_color = ($navbar_class == 'navbar--light') ? '255,255,255' : '0,0,0' ?>, <?php echo $opacity ?>);"
+  <?php endif ?>>
     <div class="container-fluid row-lg-centered">
       <div class="navbar-header navbar__toggle">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
