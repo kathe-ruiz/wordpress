@@ -121,6 +121,9 @@
         case 'events':
         include('layouts/layout_events.php');
         break;
+        case 'woocommerce_widget':
+        include('layouts/layout_woocommerce_widget.php');
+        break;
       }
       ?>
       <?php endforeach ?>
