@@ -21,11 +21,24 @@
             "type": "package",
             "package": {
                 "name": "woocommerce-tu-compra",
-                "version": "0.1.1",
+                "version": "0.1.2",
                 "source": {
                     "url": "git@github.com:swappsco/wp-woocommerce-tu-compra.git",
                     "type": "git",
-                    "reference": "0.1.1"
+                    "reference": "0.1.2"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wp-accountant",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-accountant.git",
+                    "type": "git",
+                    "reference": "0.1.0"
                 }
             }
 
