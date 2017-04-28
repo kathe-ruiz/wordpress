@@ -8,14 +8,17 @@ if($total < 3){
   $grid_size = 12/$total;
   $offset_size = 0;
 }
+// Cache first element in array to apply offset only to it
+reset($row_item['grid_elements']);
+$first = key($row_item['grid_elements']);
 ?>
 <div class="container">
   <div class="row highlights">
-  <?php foreach ($row_item['grid_elements'] as $grid_element): ?>
+  <?php foreach ($row_item['grid_elements'] as $key => $grid_element): ?>
     <?php if($row_item['grid_type']=='images'): ?>
         <?php /*print_r($grid_element['image']['sizes']);*/
       ?>
-      <div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center highlight-item ">
+      <div class="col-md-<?php echo $grid_size ?> <?php if ($key === $first): ?> col-md-offset-<?php echo $offset_size ?><?php endif; ?> text-center highlight-item">
         <?php if ($grid_element['link']['url']):?>
           <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
             <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
@@ -27,7 +30,7 @@ if($total < 3){
         <p class="icons__text"><?php echo $grid_element['description'] ?></p>
       </div>
     <?php elseif($row_item['grid_type']=='icons'): ?>
-      <div class="col-md-<?php echo $grid_size ?> col-md-offset-<?php echo $offset_size ?> text-center">
+      <div class="col-md-<?php echo $grid_size ?> <?php if ($key === $first): ?>col-md-offset-<?php echo $offset_size ?><?php endif; ?> text-center">
         <?php if ($grid_element['link']['url']):?>
           <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
             <div class="icons__icon text-primary">
