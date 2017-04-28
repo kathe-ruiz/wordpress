@@ -12,3 +12,36 @@
 .form-control{
   padding: 6px 12px;
 }
+form.frm-show-form{
+  .frm_form_field,
+  .form-field{
+    margin-left: 0px !important;
+    float: none !important;
+    display: block;
+  }
+  .frm_section_heading{
+  }
+  .frm_radio{
+    &:first-child{
+      margin-top: 5px;
+    }
+    input{
+      width: 17px !important;
+      height: 17px;
+      vertical-align: sub !important;
+    }
+  }
+  .frm_dropzone.dz-clickable.frm_single_upload{
+    margin-top: 14px;
+    border-style: solid;
+    border-width: 1px;
+    max-width: 100%;
+    .frm_upload_text{
+      color: #111;
+    }
+  }
+  .border_radio{
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 17px;
+  }
+}
