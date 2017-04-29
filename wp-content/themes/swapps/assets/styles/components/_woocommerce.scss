@@ -1846,3 +1846,24 @@ p.demo_store {
     background: $brand-primary;
   }
 }
+/* ===== Styles quickly shopping button ====== */
+.wcqb_button,
+.wc_quick_buy_button{
+  @extend .button;
+  @extend .add_to_cart_button;
+}
+li.product{
+  .wcqb_button,
+  .wc_quick_buy_button{
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+.content-woocommerce{
+  .wcqb_button,
+  .wc_quick_buy_button{
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+}
+/* ===== End styles quickly shopping button ====== */

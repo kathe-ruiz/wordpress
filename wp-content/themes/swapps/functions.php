@@ -274,3 +274,176 @@ function sw_site_title($title) {
 
   return $title;
 }
+/**
+ * Adds Image_Widget widget.
+ */
+class Image_Widget extends WP_Widget {
+
+  /**
+   * Register widget with WordPress.
+   */
+  function __construct() {
+    // Add Widget scripts
+    add_action('admin_enqueue_scripts', array($this, 'scripts'));
+    parent::__construct('image_picker', // Base ID
+      __( 'Image Picker', 'text_domain' ), // Name
+      array( 'description' => __( 'Widget with media files', 'text_domain' ), ) // Args
+     );
+  }
+  public function scripts(){
+    wp_enqueue_script( 'media-upload' );
+    wp_enqueue_media();
+    wp_enqueue_script('our_admin', get_template_directory_uri() . '/dist/scripts/our_admin.js', array('jquery'));
+  }
+  /**
+   * Front-end display of widget.
+   *
+   * @see WP_Widget::widget()
+   *
+   * @param array $args     Widget arguments.
+   * @param array $instance Saved values from database.
+   */
+  public function widget( $args, $instance ) {
+    // Our variables from the widget settings
+    $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( '', 'text_domain' ) : $instance['title'] );
+    $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
+    $image2 = ! empty( $instance['image2'] ) ? $instance['image2'] : '';
+    $image3 = ! empty( $instance['image3'] ) ? $instance['image3'] : '';
+    $image4 = ! empty( $instance['image4'] ) ? $instance['image4'] : '';
+    $link1 = ! empty( $instance['link1'] ) ? $instance['link1'] : '';
+    $link2 = ! empty( $instance['link2'] ) ? $instance['link2'] : '';
+    $link3 = ! empty( $instance['link3'] ) ? $instance['link3'] : '';
+    $link4 = ! empty( $instance['link4'] ) ? $instance['link4'] : '';
+    ob_start();
+    echo $args['before_widget'];
+    if ( ! empty( $instance['title'] ) ) {
+      echo $args['before_title'] . $title . $args['after_title'];
+    }
+    ?>
+    <div class="container-fluid">
+      <div class="grid js-masonry">
+      <?php if($image): ?>
+        <div class="grid-item">
+          <a href="<?php echo esc_url($link1); ?>" target="_blank">
+            <img src="<?php echo esc_url($image); ?>" alt="image" class="img-responsive center-block">
+          </a>
+        </div>
+      <?php endif; ?>
+      <?php if($image2): ?>
+        <div class="grid-item">
+          <a href="<?php echo esc_url($link2); ?>" target="_blank">
+            <img src="<?php echo esc_url($image2); ?>" alt="image" class="img-responsive center-block">
+          </a>
+        </div>
+      <?php endif; ?>
+      <?php if($image3): ?>
+        <div class="grid-item">
+          <a href="<?php echo esc_url($link3); ?>" target="_blank">
+            <img src="<?php echo esc_url($image3); ?>" alt="image" class="img-responsive center-block">
+          </a>
+        </div>
+      <?php endif; ?>
+      <?php if($image4): ?>
+        <div class="grid-item">
+          <a href="<?php echo esc_url($link4); ?>" target="_blank">
+            <img src="<?php echo esc_url($image4); ?>" alt="image" class="img-responsive center-block">
+          </a>
+        </div>
+      <?php endif; ?>
+      </div>
+    </div>
+    <?php
+    echo $args['after_widget'];
+    ob_end_flush();
+  }
+  /**
+   * Back-end widget form.
+   *
+   * @see WP_Widget::form()
+   *
+   * @param array $instance Previously saved values from database.
+   */
+  public function form( $instance ) {
+    $title = ! empty( $instance['title'] ) ? $instance['title'] : __( '', 'text_domain' );
+    $image = ! empty( $instance['image'] ) ? $instance['image'] : '';
+    $image2 = ! empty( $instance['image2'] ) ? $instance['image2'] : '';
+    $image3 = ! empty( $instance['image3'] ) ? $instance['image3'] : '';
+    $image4 = ! empty( $instance['image4'] ) ? $instance['image4'] : '';
+    $link1 = ! empty( $instance['link1'] ) ? $instance['link1'] : '';
+    $link2 = ! empty( $instance['link2'] ) ? $instance['link2'] : '';
+    $link3 = ! empty( $instance['link3'] ) ? $instance['link3'] : '';
+    $link4 = ! empty( $instance['link4'] ) ? $instance['link4'] : '';
+     ?>
+    <br>
+    <div>
+      <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+    </div>
+    <br>
+    <div>
+      <label for="<?php echo $this->get_field_id( 'link1' ); ?>"><?php _e( 'First Image:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'link1' ); ?>" name="<?php echo $this->get_field_name( 'link1' ); ?>" type="url" value="<?php echo esc_url( $link1 ); ?>" />
+    <br><br>
+      <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>"/>
+      <br><br>
+      <button class="upload_image_button button button-primary">Choose Image</button>
+    </div>
+    <br>
+    <div>
+        <label for="<?php echo $this->get_field_id( 'link2' ); ?>"><?php _e( 'Second Image:' ); ?></label>
+        <input class="widefat" id="<?php echo $this->get_field_id( 'link2' ); ?>" name="<?php echo $this->get_field_name( 'link2' ); ?>" type="url" value="<?php echo esc_url( $link2 ); ?>" />
+      <br><br>
+      <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image2' ); ?>" name="<?php echo $this->get_field_name( 'image2' ); ?>" type="text" value="<?php echo esc_url( $image2 ); ?>"/>
+      <br><br>
+      <button class="upload_image_button button button-primary">Choose Image</button>
+    </div>
+    <br>
+    <div>
+      <label for="<?php echo $this->get_field_id( 'link3' ); ?>"><?php _e( 'Third Image:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'link3' ); ?>" name="<?php echo $this->get_field_name( 'link3' ); ?>" type="url" value="<?php echo esc_url( $link3 ); ?>" />
+      <br><br>
+      <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image3' ); ?>" name="<?php echo $this->get_field_name( 'image3' ); ?>" type="text" value="<?php echo esc_url( $image3 ); ?>"/>
+      <br><br>
+      <button class="upload_image_button button button-primary">Choose Image</button>
+    </div>
+    <br>
+    <div>
+      <label for="<?php echo $this->get_field_id( 'link4' ); ?>"><?php _e( 'Fourth Image:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'link4' ); ?>" name="<?php echo $this->get_field_name( 'link4' ); ?>" type="url" value="<?php echo esc_url( $link4 ); ?>" />
+      <br><br>
+      <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image4' ); ?>" name="<?php echo $this->get_field_name( 'image4' ); ?>" type="text" value="<?php echo esc_url( $image4 ); ?>"/>
+      <br><br>
+      <button class="upload_image_button button button-primary">Choose Image</button>
+    </div>
+     <?php
+  }
+  /**
+   * Sanitize widget form values as they are saved.
+   *
+   * @see WP_Widget::update()
+   *
+   * @param array $new_instance Values just sent to be saved.
+   * @param array $old_instance Previously saved values from database.
+   *
+   * @return array Updated safe values to be saved.
+   */
+  public function update( $new_instance, $old_instance ) {
+    $instance = array();
+    $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+    $instance['image'] = ( ! empty( $new_instance['image'] ) ) ? $new_instance['image'] : '';
+    $instance['image2'] = ( ! empty( $new_instance['image2'] ) ) ? $new_instance['image2'] : '';
+    $instance['image3'] = ( ! empty( $new_instance['image3'] ) ) ? $new_instance['image3'] : '';
+    $instance['image4'] = ( ! empty( $new_instance['image4'] ) ) ? $new_instance['image4'] : '';
+    $instance['link1'] = ( ! empty( $new_instance['link1'] ) ) ? strip_tags( $new_instance['link1'] ) : '';
+    $instance['link2'] = ( ! empty( $new_instance['link2'] ) ) ? strip_tags( $new_instance['link2'] ) : '';
+    $instance['link3'] = ( ! empty( $new_instance['link3'] ) ) ? strip_tags( $new_instance['link3'] ) : '';
+    $instance['link4'] = ( ! empty( $new_instance['link4'] ) ) ? strip_tags( $new_instance['link4'] ) : '';
+  return $instance;
+}
+
+} // class Image_Widget
+// register Image_Widget widget
+function register_image_widget() {
+  register_widget( 'Image_Widget' );
+}
+add_action( 'widgets_init', 'register_image_widget' );

@@ -20,6 +20,12 @@
         padding: 2rem;
       }
     }
+    // Videos 
+    .video__player{
+      &, .plyr{
+        height: 100%;
+      }
+    }
   }
   .owl-nav{
     position: absolute;
