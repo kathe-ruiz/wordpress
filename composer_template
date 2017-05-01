@@ -155,12 +155,15 @@
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
               reached {{ i }}
-              {% if supported_plugins|selectattr(i) %}
+              {% for j in supported_plugins %}
+                {% if i in j %}
+                  {{ j }}
                 it is in the list
-                {% for key, value in supported_plugins[i].iteritems() %}
-                , "{{ key }}": "{{ value }}"
-                {% endfor %}
-              {% endif %}
+                  {% for key, value in j.iteritems() %}
+                    , "{{ key }}": "{{ value }}"
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
             {% endfor%}
         {% endif %}
         {% if plan_data['mu_plugins'] is defined %}
