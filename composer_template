@@ -158,11 +158,12 @@
               {% for j in supported_plugins %}
                 {% if i in j %}
                   {{ j }}
-                it is in the list
-                {% for k in j[i] %}
-                  {% for l in v %}
-                    {% for key,value in l.iteritems() %}
-                      , "{{ key }}": "{{ value }}"
+                  it is in the list
+                  {% for k in j[i] %}
+                    {% for l in v %}
+                      {% for key,value in l.iteritems() %}
+                        , "{{ key }}": "{{ value }}"
+                      {% endfor %}
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
