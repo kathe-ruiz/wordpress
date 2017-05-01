@@ -154,8 +154,8 @@
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
-              reached i
-              {% if i in supported_plugins %}
+              reached {{ i }}
+              {% if i in supported_plugins.keys() %}
                 it is in the list
                 {% for key, value in supported_plugins[i].iteritems() %}
                 , "{{ key }}": "{{ value }}"
@@ -166,7 +166,7 @@
         {% if plan_data['mu_plugins'] is defined %}
             {% for i in plan_data['mu_plugins'] %}
               reached i
-              {% if i in supported_plugins %}
+              {% if i in supported_plugins.keys() %}
                 it is in the list
                 {% for key, value in supported_plugins[i].iteritems() %}
                 , "{{ key }}": "{{ value }}"
