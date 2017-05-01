@@ -155,7 +155,7 @@
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
               reached {{ i }}
-              {% if supported_plugins|selectattr(i)|length > 0 %}
+              {% if supported_plugins|selectattr(i) %}
                 it is in the list
                 {% for key, value in supported_plugins[i].iteritems() %}
                 , "{{ key }}": "{{ value }}"
