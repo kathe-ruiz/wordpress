@@ -162,7 +162,7 @@
                   {% for k in j[i] %}
                     {% for l in k %}
                       {% for key in l %}
-                        , "{{ key }}": "{{ value }}"
+                        , "{{ key }}": "{{ key }}"
                       {% endfor %}
                     {% endfor %}
                   {% endfor %}
