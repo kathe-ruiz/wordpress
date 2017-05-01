@@ -190,6 +190,14 @@
                 {% endfor%}
             {% endif %}
             ]
+            "wp-content/plugins/{$name}/": [
+            "wp-dummy-plugin"
+            {% if plan_data['not_mu_plugins'] is defined %}
+                {% for key, value in plan_data['not_mu_plugins'].iteritems() %}
+                , "{{ key }}"
+                {% endfor%}
+            {% endif %}
+            ]
         }
     }
 }
