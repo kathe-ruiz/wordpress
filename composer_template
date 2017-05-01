@@ -159,7 +159,7 @@
                 {% if i in j %}
                   {{ j }}
                 it is in the list
-                  {% for key, value in j.iteritems() %}
+                  {% for key, value in j.0.iteritems() %}
                     , "{{ key }}": "{{ value }}"
                   {% endfor %}
                 {% endif %}
