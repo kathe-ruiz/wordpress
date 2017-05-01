@@ -155,7 +155,7 @@
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
               reached {{ i }}
-              {% if i in supported_plugins %}
+              {% if i in supported_plugins|selectattr(dict.itervalues().next()) %}
                 it is in the list
                 {% for key, value in supported_plugins[i].iteritems() %}
                 , "{{ key }}": "{{ value }}"
