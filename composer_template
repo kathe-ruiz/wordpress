@@ -161,7 +161,7 @@
                   it is in the list
                   {% for k in j[i] %}
                     {% for l in k %}
-                      {% for key,value in l %}
+                      {% for key in l %}
                         , "{{ key }}": "{{ value }}"
                       {% endfor %}
                     {% endfor %}
