@@ -160,7 +160,7 @@
                   {{ j }}
                   it is in the list
                   {% for k in j[i] %}
-                    {% for l in v %}
+                    {% for l in k %}
                       {% for key,value in l.iteritems() %}
                         , "{{ key }}": "{{ value }}"
                       {% endfor %}
