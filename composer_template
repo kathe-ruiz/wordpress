@@ -215,7 +215,7 @@
             {% endfor%}
                 {% if i in supported_plugins %}
                   {% for key, value in supported_plugins[i].iteritems() %}
-                  , "{{ key }}": "{{ value }}"
+                  , "{{ key }}"
                   {% endfor %}
                 {% endif %}
               {% endfor%}
@@ -229,7 +229,7 @@
                 {% if i in j %}
                   {% for k in j[i] %}
                     {% for key, value in k.iteritems() %}
-                      , "{{ key }}",
+                      , "{{ key }}"
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
