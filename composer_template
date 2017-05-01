@@ -189,7 +189,7 @@
                 , "{{ key }}"
                 {% endfor%}
             {% endif %}
-            ]
+            ],
             "wp-content/plugins/{$name}/": [
             "wp-dummy-plugin"
             {% if plan_data['not_mu_plugins'] is defined %}
