@@ -153,13 +153,21 @@
         "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "1.2.6",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
-            {% for key, value in plan_data['plugins'].iteritems() %}
-            , "{{ key }}": "{{ value }}"
+            {% for i in plan_data['plugins'] %}
+              {% if i in supported_plugins %}
+                {% for key, value in supported_plugins[i].iteritems() %}
+                , "{{ key }}": "{{ value }}"
+                {% endfor %}
+              {% endif %}
             {% endfor%}
         {% endif %}
-        {% if plan_data['not_mu_plugins'] is defined %}
-            {% for key, value in plan_data['not_mu_plugins'].iteritems() %}
-            , "{{ key }}": "{{ value }}"
+        {% if plan_data['mu_plugins'] is defined %}
+            {% for i in plan_data['mu_plugins'] %}
+              {% if i in supported_plugins %}
+                {% for key, value in supported_plugins[i].iteritems() %}
+                , "{{ key }}": "{{ value }}"
+                {% endfor %}
+              {% endif %}
             {% endfor%}
         {% endif %}
     },
@@ -184,18 +192,26 @@
             "sw-customizer",
             "wp-plugin-swapps",
             "yoast/wordpress-seo"
-            {% if plan_data['plugins'] is defined %}
-                {% for key, value in plan_data['plugins'].iteritems() %}
-                , "{{ key }}"
-                {% endfor%}
+            {% if plan_data['mu_plugins'] is defined %}
+              {% for i in plan_data['mu_plugins'] %}
+                {% if i in supported_plugins %}
+                  {% for key, value in supported_plugins[i].iteritems() %}
+                  , "{{ key }}": "{{ value }}"
+                  {% endfor %}
+                {% endif %}
+              {% endfor%}
             {% endif %}
             ],
             "wp-content/plugins/{$name}/": [
             "wp-dummy-plugin"
-            {% if plan_data['not_mu_plugins'] is defined %}
-                {% for key, value in plan_data['not_mu_plugins'].iteritems() %}
-                , "{{ key }}"
-                {% endfor%}
+            {% if plan_data['mu_plugins'] is defined %}
+              {% for i in plan_data['plugins'] %}
+                {% if i in supported_plugins %}
+                  {% for key, value in supported_plugins[i].iteritems() %}
+                  , "{{ key }}": "{{ value }}"
+                  {% endfor %}
+                {% endif %}
+              {% endfor%}
             {% endif %}
             ]
         }
