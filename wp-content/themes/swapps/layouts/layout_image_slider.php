@@ -11,6 +11,8 @@
 <?php $type = $row_item['slider_type']; ?>
 <?php $height = ($type == 'fixed') ? $row_item['slider_height'] : '' ; ?>
 <?php $slider_id = uniqid(); ?>
+
+<?php if($type !== 'smart'): ?>
 <script>
 // Initialize slider
   jQuery(document).ready(function() {
@@ -112,3 +114,23 @@
     </div>
   <?php endforeach; ?>
 </div>
+<?php else: ?>
+<script>
+jQuery(document).ready(function(){
+  jQuery('.bxslider').bxSlider({
+    pager:false,
+    speed:1000,
+    auto:true,
+    pause:5000,
+    autoHover:true,
+    nextText: "<i class='fa fa-angle-right fa-4x' aria-hidden='true'></i>",
+    prevText: "<i class='fa fa-angle-left fa-4x' aria-hidden='true'></i>"
+  });
+});
+</script>
+<ul class="bxslider">
+  <?php foreach ($slides as $key => $slide): ?>
+    <li><img src="<?php echo $slide['image']['url'] ?>" /></li>
+  <?php endforeach; ?>
+</ul>
+<?php endif; ?>
