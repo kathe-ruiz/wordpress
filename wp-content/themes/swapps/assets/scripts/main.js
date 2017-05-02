@@ -44,24 +44,26 @@
         }
         // Initialize videos and save the instances in a variable
         players = plyr.setup();
-        players.forEach(function (player) {
-          // Check if video is into a slider
-          var plyrNode = player.getContainer();
-          var container = plyrNode.parentNode.parentNode;
-          if(!container.classList.contains('item-full_responsive')){
-            player.on('ready', function(event) {
-              if (plyrNode.classList.contains('plyr--youtube') || 
-                  plyrNode.classList.contains('plyr--vimeo')) {
-                plyrNode.querySelector('iframe').style.maxHeight = container.offsetHeight + 'px';
-              }
-              else{
-                plyrNode.querySelector('.plyr__video-wrapper').style.height = '100%'; 
-                plyrNode.querySelector('video').classList.toggle('vertical-center');
-                plyrNode.querySelector('video').style.maxHeight = '100%';
-              }
-            });
-          }
-        });
+        if (players) {
+          players.forEach(function (player) {
+            // Check if video is into a slider
+            var plyrNode = player.getContainer();
+            var container = plyrNode.parentNode.parentNode;
+            if(!container.classList.contains('item-full_responsive')){
+              player.on('ready', function(event) {
+                if (plyrNode.classList.contains('plyr--youtube') ||
+                    plyrNode.classList.contains('plyr--vimeo')) {
+                  plyrNode.querySelector('iframe').style.maxHeight = container.offsetHeight + 'px';
+                }
+                else{
+                  plyrNode.querySelector('.plyr__video-wrapper').style.height = '100%';
+                  plyrNode.querySelector('video').classList.toggle('vertical-center');
+                  plyrNode.querySelector('video').style.maxHeight = '100%';
+                }
+              });
+            }
+          });
+        }
         $( ".video__icon" ).on( "click", function() {
           $(this.dataset.target).modal();
         });
