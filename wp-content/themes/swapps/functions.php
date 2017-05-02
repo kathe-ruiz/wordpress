@@ -381,36 +381,48 @@ class Image_Widget extends WP_Widget {
     </div>
     <br>
     <div>
-      <label for="<?php echo $this->get_field_id( 'link1' ); ?>"><?php _e( 'First Image:' ); ?></label>
+      <label><?php _e( 'First Image:' ); ?></label>
+      <br>
+      <label for="<?php echo $this->get_field_id( 'link1' ); ?>"><?php _e( 'Link:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'link1' ); ?>" name="<?php echo $this->get_field_name( 'link1' ); ?>" type="url" value="<?php echo esc_url( $link1 ); ?>" />
-    <br><br>
+      <br><br>
+      <label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php _e( 'Image:' ); ?></label>
       <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" type="text" value="<?php echo esc_url( $image ); ?>"/>
       <br><br>
       <button class="upload_image_button button button-primary">Choose Image</button>
     </div>
     <br>
     <div>
-        <label for="<?php echo $this->get_field_id( 'link2' ); ?>"><?php _e( 'Second Image:' ); ?></label>
-        <input class="widefat" id="<?php echo $this->get_field_id( 'link2' ); ?>" name="<?php echo $this->get_field_name( 'link2' ); ?>" type="url" value="<?php echo esc_url( $link2 ); ?>" />
+      <label><?php _e( 'Second Image:' ); ?></label>
+      <br>
+      <label for="<?php echo $this->get_field_id( 'link2' ); ?>"><?php _e( 'Link:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'link2' ); ?>" name="<?php echo $this->get_field_name( 'link2' ); ?>" type="url" value="<?php echo esc_url( $link2 ); ?>" />
       <br><br>
+      <label for="<?php echo $this->get_field_id( 'image2' ); ?>"><?php _e( 'Image:' ); ?></label>
       <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image2' ); ?>" name="<?php echo $this->get_field_name( 'image2' ); ?>" type="text" value="<?php echo esc_url( $image2 ); ?>"/>
       <br><br>
       <button class="upload_image_button button button-primary">Choose Image</button>
     </div>
     <br>
     <div>
-      <label for="<?php echo $this->get_field_id( 'link3' ); ?>"><?php _e( 'Third Image:' ); ?></label>
+      <label><?php _e( 'Third Image:' ); ?></label>
+      <br>
+      <label for="<?php echo $this->get_field_id( 'link3' ); ?>"><?php _e( 'Link:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'link3' ); ?>" name="<?php echo $this->get_field_name( 'link3' ); ?>" type="url" value="<?php echo esc_url( $link3 ); ?>" />
       <br><br>
+      <label for="<?php echo $this->get_field_id( 'image3' ); ?>"><?php _e( 'Image:' ); ?></label>
       <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image3' ); ?>" name="<?php echo $this->get_field_name( 'image3' ); ?>" type="text" value="<?php echo esc_url( $image3 ); ?>"/>
       <br><br>
       <button class="upload_image_button button button-primary">Choose Image</button>
     </div>
     <br>
     <div>
-      <label for="<?php echo $this->get_field_id( 'link4' ); ?>"><?php _e( 'Fourth Image:' ); ?></label>
+      <label><?php _e( 'Fourth Image:' ); ?></label>
+      <br>
+      <label for="<?php echo $this->get_field_id( 'link4' ); ?>"><?php _e( 'Link:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'link4' ); ?>" name="<?php echo $this->get_field_name( 'link4' ); ?>" type="url" value="<?php echo esc_url( $link4 ); ?>" />
       <br><br>
+      <label for="<?php echo $this->get_field_id( 'image4' ); ?>"><?php _e( 'Image:' ); ?></label>
       <input class="widefat" readonly id="<?php echo $this->get_field_id( 'image4' ); ?>" name="<?php echo $this->get_field_name( 'image4' ); ?>" type="text" value="<?php echo esc_url( $image4 ); ?>"/>
       <br><br>
       <button class="upload_image_button button button-primary">Choose Image</button>
