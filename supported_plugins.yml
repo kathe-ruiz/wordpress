@@ -15,7 +15,7 @@ supported_plugins:
 - "woocommerce-payu-latam-gateway":
     - "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3"
 - "woocommerce-tu-compra":
-    - "woocommerce-tu-compra": "0.1.3"
+    - "woocommerce-tu-compra": "0.1.4"
 - "wp-accountant":
     - "wp-accountant": "0.1.0"
 - "woocommerce-quick-buy":
