@@ -1,0 +1,16 @@
+input.um-button, a.um-button, *.um-form-field{
+  border-radius: 0 !important;
+}
+input.um-button, a.um-button{
+  border-bottom-width: 1px !important;
+}
+.um-field-checkbox.active:not(.um-field-radio-state-disabled) i{
+  color: $brand-primary !important;
+}
+input[type="submit"].um-button{
+  background-color: $brand-primary !important;
+  @include text-contrast($brand-primary, "true");
+  &:hover{
+    background-color: darken($brand-primary, 3%) !important;
+  }
+}
