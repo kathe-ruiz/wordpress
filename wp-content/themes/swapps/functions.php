@@ -293,7 +293,7 @@ class Image_Widget extends WP_Widget {
   public function scripts(){
     wp_enqueue_script( 'media-upload' );
     wp_enqueue_media();
-    wp_enqueue_script('our_admin', get_template_directory_uri() . '/dist/scripts/our_admin.js', array('jquery'));
+    wp_enqueue_script('our_admin', get_template_directory_uri() . '/assets/scripts/our_admin.js', array('jquery'));
   }
   /**
    * Front-end display of widget.
@@ -415,6 +415,7 @@ class Image_Widget extends WP_Widget {
       <br><br>
       <button class="upload_image_button button button-primary">Choose Image</button>
     </div>
+    <br><br>
      <?php
   }
   /**
