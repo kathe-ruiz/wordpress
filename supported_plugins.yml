@@ -6,3 +6,11 @@ supported_plugins:
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3"
 - "si-contact-form":
     - "wpackagist-plugin/si-contact-form": "4.0.50"
+- "woocommerce":
+    - "wpackagist-plugin/woocommerce": "3.0.5"
+- "woocommerce-dropdown-cart":
+    - "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1"
+- "woocommerce-menu-bar-cart":
+    - "wpackagist-plugin/woocommerce-menu-bar-cart": "2.6.0"
+- "woocommerce-payu-latam-gateway":
+    - "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3"
