@@ -130,7 +130,7 @@ jQuery(document).ready(function(){
 </script>
 <ul class="bxslider">
   <?php foreach ($slides as $key => $slide): ?>
-    <li><img src="<?php echo $slide['image']['url'] ?>" /></li>
+    <li class="bxslider__item"><img class="bxslider__img" src="<?php echo $slide['image']['url'] ?>" /></li>
   <?php endforeach; ?>
 </ul>
 <?php endif; ?>
