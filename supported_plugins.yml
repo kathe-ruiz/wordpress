@@ -40,3 +40,5 @@ supported_plugins:
     - "formidable-bootstrap": "1.01.02"
 - "kirki":
     - "wpackagist-plugin/kirki": "2.3.7"
+- "wp-menu-cart":
+    - "wpackagist-plugin/wp-menu-cart": "2.6.0"
