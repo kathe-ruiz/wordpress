@@ -19,7 +19,12 @@ Color brightness is determined by the following formula:
   }
 }
 
-@mixin text-contrast($n) {
-  color: contrast_function($n);
+@mixin text-contrast($n, $force:"") {
+  @if $force == "true"{
+    color: contrast_function($n) !important;
+  }
+  @else{
+    color: contrast_function($n);
+  }
 }
 
