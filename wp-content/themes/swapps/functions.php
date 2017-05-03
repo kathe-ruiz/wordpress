@@ -321,7 +321,7 @@ class Image_Widget extends WP_Widget {
     }
     ?>
     <div class="container-fluid">
-      <div class="grid js-masonry">
+      <div class="grid">
       <?php if($image): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link1); ?>" target="_blank">

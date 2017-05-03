@@ -21,7 +21,7 @@
 
   <meta name="description" content="We are currently performing some quick updates. This site will be back soon.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="wp-content/themes/swapps/assets/images/swapps/swapps.ico">
+  <link rel="shortcut icon" href="/wp-content/themes/swapps/assets/images/swapps/swapps.ico">
   <meta property="og:url" content="" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Maintenance Mode" />
@@ -56,7 +56,7 @@
   
   html{
     height:100%;
-    background: #ffffff url(wp-content/themes/swapps/assets/images/maintenance.jpeg); no-repeat center bottom fixed;
+    background: #ffffff url(/wp-content/themes/swapps/assets/images/maintenance.jpeg); no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,7 +64,7 @@
   }
   .cspio:before {
     content: '';
-    background: url(wp-content/themes/swapps/assets/images/content-bg-cover.png);
+    background: url(/wp-content/themes/swapps/assets/images/content-bg-cover.png);
     position: absolute;
     left: 0;
     right: 0;
@@ -296,7 +296,7 @@
   <div id="cspio-page">
     <div id="cspio-content">
       
-      <img id="cspio-logo" src="wp-content/themes/swapps/assets/images/swapps/logo-swapps-vertical.png">
+      <img id="cspio-logo" src="/wp-content/themes/swapps/assets/images/swapps/logo-swapps-vertical.png">
                   
       <h1 id="cspio-headline">Maintenance Mode</h1>                 
       
