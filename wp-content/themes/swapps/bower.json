@@ -37,6 +37,15 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
+    },
+    "bx-slider.js": {
+      "main": [
+        "./dist/vendor/jquery.fitvids.js",
+        "./dist/jquery.bxslider.js",
+        "./dist/jquery.bxslider.css",
+        "./dist/images/bx_loader.gif",
+        "./dist/images/controls.png"
+      ]
     }
   },
   "devDependencies": {}

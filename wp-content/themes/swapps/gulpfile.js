@@ -288,7 +288,7 @@ gulp.task('build', function(callback) {
 gulp.task('wiredep', function() {
   var wiredep = require('wiredep').stream;
   return gulp.src(project.css)
-    .pipe(wiredep({ exclude: ['jquery.bxslider.css'] }))
+    .pipe(wiredep())
     .pipe(changed(path.source + 'styles', {
       hasChanged: changed.compareSha1Digest
     }))
