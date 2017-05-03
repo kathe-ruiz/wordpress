@@ -221,7 +221,9 @@
                                         "allow_null": 0,
                                         "choices": {
                                             "full": "Fullscreen",
-                                            "fixed": "Fixed Height"
+                                            "full_responsive": "Responsive",
+                                            "fixed": "Fixed Height",
+                                            "smart": "Smart Resize"
                                         },
                                         "default_value": [
                                             "full"

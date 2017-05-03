@@ -1,0 +1,26 @@
+---
+supported_plugins:
+- "events":
+    - "wpackagist-plugin/events-manager": "5.6.6.1"
+- "volunteer-management":
+    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3"
+- "si-contact-form":
+    - "wpackagist-plugin/si-contact-form": "4.0.50"
+- "woocommerce":
+    - "wpackagist-plugin/woocommerce": "3.0.5"
+- "woocommerce-dropdown-cart":
+    - "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1"
+- "woocommerce-menu-bar-cart":
+    - "wpackagist-plugin/woocommerce-menu-bar-cart": "2.6.0"
+- "woocommerce-payu-latam-gateway":
+    - "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3"
+- "woocommerce-tu-compra":
+    - "woocommerce-tu-compra": "0.1.4"
+- "wp-accountant":
+    - "wp-accountant": "0.1.0"
+- "woocommerce-quick-buy":
+    - "wpackagist-plugin/woocommerce-quick-buy": "1.5"
+- "ultimate-member":
+    - "wpackagist-plugin/ultimate-member": "1.3.84"
+- "sitepress-multilingual-cms":
+    - "sitepress-multilingual-cms": "3.6.3"
