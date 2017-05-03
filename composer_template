@@ -183,23 +183,7 @@
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/mu-plugins/{$name}/": [
-            "advanced-custom-fields-pro",
-            "flexi-pages-widget",
-            {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
-            "wpackagist-plugin/disable-blogging",
-            {% endif %}
-            "wpackagist-plugin/acf-link-picker-field",
-            "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
-            "wpackagist-plugin/advanced-custom-fields-font-awesome",
-            "wpackagist-plugin/acf-image-crop-add-on",
-            "wpackagist-plugin/coming-soon",
-            "wpackagist-plugin/floating-publish-button",
-            "wpackagist-plugin/ninja-forms",
-            "wpackagist-plugin/smtp-mailer",
-            "sw-simple-slider",
-            "sw-customizer",
-            "wp-plugin-swapps",
-            "yoast/wordpress-seo"
+            "wp-plugin-swapps"
             {% if plan_data['mu_plugins'] is defined %}
               {% for i in plan_data['mu_plugins'] %}
             {% for i in plan_data['mu_plugins'] %}
@@ -222,7 +206,23 @@
             {% endif %}
             ],
             "wp-content/plugins/{$name}/": [
-            "wp-dummy-plugin"
+            "wp-dummy-plugin",
+            "advanced-custom-fields-pro",
+            "flexi-pages-widget",
+            {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
+            "wpackagist-plugin/disable-blogging",
+            {% endif %}
+            "wpackagist-plugin/acf-link-picker-field",
+            "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
+            "wpackagist-plugin/advanced-custom-fields-font-awesome",
+            "wpackagist-plugin/acf-image-crop-add-on",
+            "wpackagist-plugin/coming-soon",
+            "wpackagist-plugin/floating-publish-button",
+            "wpackagist-plugin/ninja-forms",
+            "wpackagist-plugin/smtp-mailer",
+            "sw-simple-slider",
+            "sw-customizer",
+            "yoast/wordpress-seo"
             {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
               {% for j in supported_plugins %}
