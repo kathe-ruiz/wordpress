@@ -38,5 +38,5 @@ supported_plugins:
     - "formidable": "2.03.07"
 - "formidable-bootstrap":
     - "formidable-bootstrap": "1.01.02"
-- "wpackagist-plugin/kirki":
+- "kirki":
     - "wpackagist-plugin/kirki": "2.3.7"
