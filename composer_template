@@ -59,11 +59,11 @@
             "type": "package",
             "package": {
                 "name": "wp-plugin-swapps",
-                "version": "0.1.3",
+                "version": "0.1.4",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-swapps.git",
                     "type": "git",
-                    "reference": "0.1.3"
+                    "reference": "0.1.4"
                 }
             }
         },
@@ -145,7 +145,7 @@
         "wpackagist-plugin/ninja-forms": "3.0.34",
         "sw-simple-slider": "0.2.6",
         "sw-customizer": "0.3.5",
-        "wp-plugin-swapps": "0.1.3",
+        "wp-plugin-swapps": "0.1.4",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
