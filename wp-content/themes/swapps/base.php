@@ -39,6 +39,11 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
+    <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
+    <?php if (is_plugin_active('ultimate-member/index.php')): ?>
+      <?php get_template_part('templates/modal', 'login') ?>
+      <?php get_template_part('templates/modal', 'signup') ?>
+    <?php endif ?>
     <?php if (function_exists('sw_options')): ?>
       <script type="text/javascript" id="cookieinfo"
         src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php if (sw_options('cookies_message')) {
