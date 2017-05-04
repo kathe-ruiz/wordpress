@@ -19,6 +19,9 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $.fn.exists = function () {
+            return this.length !== 0;
+        }
         function stickyFooter() {
           var footer_height = document.querySelector('.footer').offsetHeight;
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";

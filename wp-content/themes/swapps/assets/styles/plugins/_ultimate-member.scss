@@ -43,3 +43,17 @@ input[type="submit"].um-button{
 .um-profile.um-viewing .um-form{
   border: 1px solid #ccc;
 }
+.um-user-modal{
+  .modal-content{
+    border-radius: 0;
+  }
+  .modal-header{
+    background-color: $brand-primary;
+    @include text-contrast($brand-primary, "true");
+  }
+  .modal-body{
+    min-height:420px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+}
