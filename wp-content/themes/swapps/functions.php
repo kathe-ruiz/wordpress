@@ -42,9 +42,11 @@ require_once('wp_bootstrap_navwalker.php');
 require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
 require_once('includes/custom-pagination.php');
+require_once('includes/navbar-user-button.php');
 
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
+require_once('includes/sw_maintenance_mode.php');
 // require_once('includes/admin-mods.php');
 require 'widgets/subscribe_widget.php';
 
@@ -322,6 +324,8 @@ class Image_Widget extends WP_Widget {
     ?>
     <div class="container-fluid">
       <div class="grid">
+        <div class="gutter-sizer"></div>
+        <div class="grid-sizer"></div>
       <?php if($image): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link1); ?>" target="_blank">
@@ -460,3 +464,9 @@ function register_image_widget() {
   register_widget( 'Image_Widget' );
 }
 add_action( 'widgets_init', 'register_image_widget' );
+
+function add_signin_nav_item($items) {
+  $item = get_navbar_login();
+  return $items .= $item;
+}
+add_filter('wp_nav_menu_items','add_signin_nav_item');

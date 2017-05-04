@@ -82,6 +82,9 @@ define('WPLANG', '');
 $wp_debug = filter_var(getenv('WP_DEBUG'), FILTER_VALIDATE_BOOLEAN);
 define('WP_DEBUG', $wp_debug);
 
+$suspended = filter_var(getenv('SUSPENDED'), FILTER_VALIDATE_BOOLEAN);
+define('SUSPENDED', $suspended);
+
 define( 'DBI_AWS_ACCESS_KEY_ID', getenv('AWS_ACCESS_KEY_ID') );
 define( 'DBI_AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
 define('SUPERUSER', getenv("SUPERUSER")?:"");
