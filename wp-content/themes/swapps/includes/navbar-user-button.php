@@ -3,7 +3,7 @@
   include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
   if (is_plugin_active('ultimate-member/index.php')):
     ob_start(); ?>
-    <li class="menu-item">
+    <li class="menu-item menu-item-users">
     <?php if (!is_user_logged_in()): ?>
       <a data-toggle="modal" data-target="#modal-login" title="<?php _e('Sign in'); ?>">
         <?php _e('Sign in'); ?>
