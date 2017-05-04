@@ -42,3 +42,7 @@ supported_plugins:
     - "wpackagist-plugin/kirki": "2.3.7"
 - "wp-menu-cart":
     - "wpackagist-plugin/wp-menu-cart": "2.6.0"
+- "import-meetup-events":
+    - "wpackagist-plugin/import-meetup-events": "1.1.1"
+- "simple-301-redirects":
+    - "wpackagist-plugin/simple-301-redirects": "1.07"
