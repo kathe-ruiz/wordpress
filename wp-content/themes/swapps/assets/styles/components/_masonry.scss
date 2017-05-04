@@ -31,13 +31,13 @@
   padding: 10px;
 }
 .gutter-sizer { width: 0%; }
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-md) {
   .grid-sizer,
   .grid-item { 
     width: 50%;
   }
 }
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-sm) {
   .grid-sizer,
   .grid-item { 
     width: 100%;
