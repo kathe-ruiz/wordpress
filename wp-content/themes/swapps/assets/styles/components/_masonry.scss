@@ -1,11 +1,11 @@
-.grid { /* Masonry container */
+/* .grid { Masonry container
   column-count: 3;
   margin: 1em 0;
   padding: 0;
   column-gap: 0em;
   font-size: .85em;
   transition: all .5s ease-in-out;
-  .grid-item { /* Masonry bricks or child elements */
+  .grid-item { Masonry bricks or child elements
     margin: 0.5em;
     width: auto;
     box-sizing: border-box;
@@ -22,5 +22,24 @@
 @media (max-width: $screen-xs) {
   .grid {
     column-count: 1;
+  }
+} */
+/* fluid 4 columns, 4% gutter */
+.grid-sizer,
+.grid-item { 
+  width: 33.33333333%;
+  padding: 10px;
+}
+.gutter-sizer { width: 0%; }
+@media (max-width: $screen-sm) {
+  .grid-sizer,
+  .grid-item { 
+    width: 50%;
+  }
+}
+@media (max-width: $screen-xs) {
+  .grid-sizer,
+  .grid-item { 
+    width: 100%;
   }
 }
