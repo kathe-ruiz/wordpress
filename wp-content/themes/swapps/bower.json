@@ -14,9 +14,21 @@
     "fancybox": "^2.1.6",
     "plyr": "^2.0.11",
     "bootstrap-hover-dropdown": "^2.2.1",
-    "packery": "^2.1.1"
+    "packery": "^2.1.1",
+    "masonry": "^4.2.0"
   },
   "overrides": {
+    "masonry": {
+      "main": [
+        "./dist/masonry.pkgd.js"
+      ]
+    },
+    "prism": {
+      "main": [
+        "./prism.js",
+        "./themes/prism.css"
+      ]
+    },
     "outlayer": {
       "main": [
         "item.js",
@@ -61,6 +73,7 @@
         "./dist/images/controls.png"
       ]
     }
+
   },
   "devDependencies": {}
 }
