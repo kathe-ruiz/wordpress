@@ -1870,6 +1870,19 @@ p.demo_store {
     }
   }
 }
+.content-woocommerce{
+  .owl-stage-outer{
+      overflow: hidden;
+    .owl-stage{
+      .owl-item{
+        display:none;
+      }
+      .owl-item.active{
+        display:inline-block;
+      }
+    }
+  }
+}
 /* ===== Styles quickly shopping button ====== */
 .wcqb_button,
 .wc_quick_buy_button{
