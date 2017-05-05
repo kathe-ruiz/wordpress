@@ -1989,6 +1989,29 @@ Payments Options
 .ql_payments_options ul li i {
   cursor: default;
 }
+.logo-swapps a:hover {
+  text-decoration: none;
+}
+.logo-swapps .powered {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.logo-swapps .sw {
+  color: #98979a;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: 800;
+  vertical-align: sub;
+  font-size: 18px;
+}
+.logo-swapps .apps {
+  color: #757476;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: 800;
+  vertical-align: sub;
+  font-size: 18px;
+}
 /*
 ==========================================
 5. Comments
