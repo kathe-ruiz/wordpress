@@ -83,3 +83,8 @@ $color-star:               #ffd700;
     -ms-flex-align: center;
     align-items: center;
 }
+
+input[type="button"], input[type="submit"], button{
+  @extend .btn;
+  @extend .btn-primary;
+}

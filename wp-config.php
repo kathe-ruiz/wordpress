@@ -87,6 +87,9 @@ define( 'DBI_AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
 define('SUPERUSER', getenv("SUPERUSER")?:"");
 define('WP_PAGES_LIMIT', getenv("WP_PAGES_LIMIT")?:null);
 
+define('ACCOUNTANT_API_URL', getenv("ACCOUNTANT_API_URL")?:null);
+define('ACCOUNTANT_API_TOKEN', getenv("ACCOUNTANT_API_TOKEN")?:null);
+
 define('SSL_ON', filter_var(getenv('SSL_ON'), FILTER_VALIDATE_BOOLEAN));
 
 if (SSL_ON == true) {

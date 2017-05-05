@@ -22,6 +22,8 @@
 @import "components/backgrounds";
 @import "components/entry-meta";
 @import "components/woocommerce";
+@import "components/_tu-compra";
+@import "components/masonry";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/contact-page";
@@ -39,4 +41,5 @@
 @import "layouts/posts";
 // @import "layouts/tinymce";
 
-@import "plugins/em";
+@import "plugins/events-manager";
+@import "plugins/ultimate-member";

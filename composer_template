@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.5",
+                "version": "0.2.6",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.5"
+                    "reference": "0.2.6"
                 }
             }
 
@@ -21,9 +21,22 @@
             "type": "package",
             "package": {
                 "name": "woocommerce-tu-compra",
-                "version": "0.1.0",
+                "version": "0.1.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-woocommerce-tu-compra.git",
+                    "type": "git",
+                    "reference": "0.1.5"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wp-accountant",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-accountant.git",
                     "type": "git",
                     "reference": "0.1.0"
                 }
@@ -34,11 +47,11 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.3.4",
+                "version": "0.3.5",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.3.4"
+                    "reference": "0.3.5"
                 }
             }
         },
@@ -46,11 +59,11 @@
             "type": "package",
             "package": {
                 "name": "wp-plugin-swapps",
-                "version": "0.1.3",
+                "version": "0.1.4",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-swapps.git",
                     "type": "git",
-                    "reference": "0.1.3"
+                    "reference": "0.1.4"
                 }
             }
         },
@@ -130,9 +143,9 @@
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/floating-publish-button": "1.0.6",
         "wpackagist-plugin/ninja-forms": "3.0.34",
-        "sw-simple-slider": "0.2.5",
-        "sw-customizer": "0.3.4",
-        "wp-plugin-swapps": "0.1.3",
+        "sw-simple-slider": "0.2.6",
+        "sw-customizer": "0.3.5",
+        "wp-plugin-swapps": "0.1.4",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
@@ -140,13 +153,29 @@
         "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "1.2.6",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
-            {% for key, value in plan_data['plugins'].iteritems() %}
-            , "{{ key }}": "{{ value }}"
+            {% for i in plan_data['plugins'] %}
+              {% for j in supported_plugins %}
+                {% if i in j %}
+                  {% for k in j[i] %}
+                    {% for key, value in k.iteritems() %}
+                      , "{{ key }}": "{{ value}}"
+                    {% endfor %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
             {% endfor%}
         {% endif %}
-        {% if plan_data['not_mu_plugins'] is defined %}
-            {% for key, value in plan_data['not_mu_plugins'].iteritems() %}
-            , "{{ key }}": "{{ value }}"
+        {% if plan_data['mu_plugins'] is defined %}
+            {% for i in plan_data['mu_plugins'] %}
+              {% for j in supported_plugins %}
+                {% if i in j %}
+                  {% for k in j[i] %}
+                    {% for key, value in k.iteritems() %}
+                      , "{{ key }}": "{{ value}}"
+                    {% endfor %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
             {% endfor%}
         {% endif %}
     },
@@ -154,6 +183,30 @@
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/mu-plugins/{$name}/": [
+            "wp-plugin-swapps"
+            {% if plan_data['mu_plugins'] is defined %}
+              {% for i in plan_data['mu_plugins'] %}
+            {% for i in plan_data['mu_plugins'] %}
+              {% for j in supported_plugins %}
+                {% if i in j %}
+                  {% for k in j[i] %}
+                    {% for key, value in k.iteritems() %}
+                      , "{{ key }}",
+                    {% endfor %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endfor%}
+                {% if i in supported_plugins %}
+                  {% for key, value in supported_plugins[i].iteritems() %}
+                  , "{{ key }}"
+                  {% endfor %}
+                {% endif %}
+              {% endfor%}
+            {% endif %}
+            ],
+            "wp-content/plugins/{$name}/": [
+            "wp-dummy-plugin",
             "advanced-custom-fields-pro",
             "flexi-pages-widget",
             {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
@@ -169,12 +222,19 @@
             "wpackagist-plugin/smtp-mailer",
             "sw-simple-slider",
             "sw-customizer",
-            "wp-plugin-swapps",
             "yoast/wordpress-seo"
             {% if plan_data['plugins'] is defined %}
-                {% for key, value in plan_data['plugins'].iteritems() %}
-                , "{{ key }}"
-                {% endfor%}
+            {% for i in plan_data['plugins'] %}
+              {% for j in supported_plugins %}
+                {% if i in j %}
+                  {% for k in j[i] %}
+                    {% for key, value in k.iteritems() %}
+                      , "{{ key }}"
+                    {% endfor %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endfor%}
             {% endif %}
             ]
         }

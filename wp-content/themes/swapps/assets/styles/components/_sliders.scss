@@ -20,6 +20,12 @@
         padding: 2rem;
       }
     }
+    // Videos 
+    .video__player{
+      &, .plyr{
+        height: 100%;
+      }
+    }
   }
   .owl-nav{
     position: absolute;
@@ -181,5 +187,40 @@
         }
       }
     }
+  }
+}
+.bxslider{
+  &__item{
+    overflow: hidden;
+  }
+  &__img{
+    @media (max-width: $screen-sm-max){
+      max-width: 125% !important;
+      width: 125% !important;
+    }
+    @media (max-width: $screen-xs-max){
+      max-width: 150% !important;
+      width: 150% !important;
+    }
+    height: auto !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+  }
+}
+.bx-wrapper{
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+.bx-wrapper .bx-controls-direction a{
+  text-indent: 0;
+  transition: color 0.2s;
+  &, &:focus{
+    color: #fff;
+  }
+  &:hover{
+    color: $brand-primary;
   }
 }

@@ -221,7 +221,9 @@
                                         "allow_null": 0,
                                         "choices": {
                                             "full": "Fullscreen",
-                                            "fixed": "Fixed Height"
+                                            "full_responsive": "Responsive",
+                                            "fixed": "Fixed Height",
+                                            "smart": "Smart Resize"
                                         },
                                         "default_value": [
                                             "full"
@@ -2439,6 +2441,35 @@
                                             "class": "",
                                             "id": ""
                                         }
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "layout_woocommerce_widge",
+                                "name": "woocommerce_widget",
+                                "label": "Woocommerce Widget",
+                                "display": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_woocommerce_widge",
+                                        "label": "Woocommerce-Widget",
+                                        "name": "woocommerce-widget",
+                                        "type": "wysiwyg",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
                                     }
                                 ],
                                 "min": "",

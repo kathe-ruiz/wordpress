@@ -42,7 +42,28 @@
         if(document.querySelectorAll('.menu-item').length == 0){
           document.querySelector('.navbar-toggle').style.display = 'none';
         }
-        plyr.setup();
+        // Initialize videos and save the instances in a variable
+        players = plyr.setup();
+        if (players) {
+          players.forEach(function (player) {
+            // Check if video is into a slider
+            var plyrNode = player.getContainer();
+            var container = plyrNode.parentNode.parentNode;
+            if(!container.classList.contains('item-full_responsive')){
+              player.on('ready', function(event) {
+                if (plyrNode.classList.contains('plyr--youtube') ||
+                    plyrNode.classList.contains('plyr--vimeo')) {
+                  plyrNode.querySelector('iframe').style.maxHeight = container.offsetHeight + 'px';
+                }
+                else{
+                  plyrNode.querySelector('.plyr__video-wrapper').style.height = '100%';
+                  plyrNode.querySelector('video').classList.toggle('vertical-center');
+                  plyrNode.querySelector('video').style.maxHeight = '100%';
+                }
+              });
+            }
+          });
+        }
         $( ".video__icon" ).on( "click", function() {
           $(this.dataset.target).modal();
         });

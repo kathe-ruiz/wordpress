@@ -1989,6 +1989,29 @@ Payments Options
 .ql_payments_options ul li i {
   cursor: default;
 }
+.logo-swapps a:hover {
+  text-decoration: none;
+}
+.logo-swapps .powered {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.logo-swapps .sw {
+  color: #98979a;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: 800;
+  vertical-align: sub;
+  font-size: 18px;
+}
+.logo-swapps .apps {
+  color: #757476;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: 800;
+  vertical-align: sub;
+  font-size: 18px;
+}
 /*
 ==========================================
 5. Comments
@@ -4504,6 +4527,28 @@ Payments Options
 }
 .single-product .summary-bottom div.sharedaddy h3.sd-title {
   display: none!important;
+}
+.woocommerce ul#shipping_method {
+  text-align: left;
+}
+.woocommerce ul#shipping_method li input {
+  width: 50px;
+  display: inline-block;
+}
+.woocommerce ul#shipping_method li label {
+  display: initial;
+}
+.woocommerce .woocommerce-shipping-calculator {
+  text-align: left;
+}
+.woocommerce .checkout #ship-to-different-address-checkbox {
+  position: relative;
+  float: right !important;
+  margin-top: 2px !important;
+}
+.woocommerce #payment ul.payment_methods li,
+.woocommerce-page #payment ul.payment_methods li {
+  padding: 1em 2em 1em 3.5em;
 }
 /*
 ==========================================
