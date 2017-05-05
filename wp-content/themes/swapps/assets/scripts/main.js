@@ -21,7 +21,7 @@
         // JavaScript to be fired on all pages
         $.fn.exists = function () {
             return this.length !== 0;
-        }
+        };
         function stickyFooter() {
           var footer_height = document.querySelector('.footer').offsetHeight;
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
@@ -42,7 +42,7 @@
           fillRemainingSpace();
         });
         // Hide navbar collapse button if there are no items in menu
-        if(document.querySelectorAll('.menu-item').length == 0){
+        if(document.querySelectorAll('.menu-item').length === 0){
           document.querySelector('.navbar-toggle').style.display = 'none';
         }
         // Initialize videos and save the instances in a variable
