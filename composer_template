@@ -21,11 +21,11 @@
             "type": "package",
             "package": {
                 "name": "woocommerce-tu-compra",
-                "version": "0.1.4",
+                "version": "0.1.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-woocommerce-tu-compra.git",
                     "type": "git",
-                    "reference": "0.1.4"
+                    "reference": "0.1.5"
                 }
             }
 
