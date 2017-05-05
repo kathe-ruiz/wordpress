@@ -23,17 +23,13 @@
         </div>
 
       </div><!-- .row -->
-      <div class="logo-swapps text-center"><a href="https://www.swapps.io/" target="_blank"><span style="
-        font-size: 10px;
-      ">Powered by  </span><img src="https://www.dejusticia.org/wp-content/mu-plugins/dejusticia-core/powered-by-swapps.png"><span style="color: #98979a;
-        text-transform: uppercase;
-        letter-spacing: -2px;
-        font-weight: 800;
-        vertical-align: sub;">sw</span><span style="color: #757476;
-        text-transform: uppercase;
-        letter-spacing: -2px;
-        font-weight: 800;
-        vertical-align: sub;">apps</span></a></div>
+      <div class="logo-swapps text-center">
+        <a href="https://www.swapps.io/" target="_blank">
+          <span class="powered">Powered by  </span>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img">
+          <span class="sw">sw</span><span class="apps">apps</span>
+        </a>
+      </div>
     </div><!-- .container -->
   </div><!-- .sub-footer -->
 
