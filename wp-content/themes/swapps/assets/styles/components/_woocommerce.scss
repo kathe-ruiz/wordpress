@@ -1882,6 +1882,17 @@ p.demo_store {
       }
     }
   }
+  .a3dg-navbar-control{
+    display:none;
+  }
+  .a3dg-nav{
+    .fa{
+      border: 0px !important;
+      &:before{
+        font-size: 45px !important;
+      }
+    }
+  }
 }
 /* ===== Styles quickly shopping button ====== */
 .wcqb_button,
