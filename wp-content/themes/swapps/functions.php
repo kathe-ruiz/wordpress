@@ -469,4 +469,4 @@ function add_signin_nav_item($items) {
   $item = get_navbar_login();
   return $items .= $item;
 }
-// add_filter('wp_nav_menu_items','add_signin_nav_item');
+add_filter('wp_nav_menu_items','add_signin_nav_item');
