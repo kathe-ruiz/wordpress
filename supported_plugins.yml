@@ -23,7 +23,7 @@ supported_plugins:
 - "ultimate-member":
     - "wpackagist-plugin/ultimate-member": "1.3.84"
 - "sitepress-multilingual-cms":
-    - "sitepress-multilingual-cms": "3.6.3"
+    - "sitepress-multilingual-cms": "3.7.0"
 - "amp":
     - "wpackagist-plugin/amp": "0.4.2"
 - "glue-for-yoast-seo-amp":
