@@ -24,8 +24,8 @@ function wp_suspended_mode(){
         '{{background}}' => 'wp-content/themes/swapps/assets/images/swapps/Business-card-Swapps.jpg',
       ),
       'suspended' => array(
-        '{{title}}' => 'Suspended Mode',
-        '{{description}}' => 'We are currently performing some quick updates. This site will be back soon.',
+        '{{title}}' => 'Sitio Suspendido',
+        '{{description}}' => 'Este sitio se encuentra suspendido.',
         '{{logo}}' => 'wp-content/themes/swapps/assets/images/swapps/logo-swapps-vertical.png',
         '{{background}}' => '/wp-content/themes/swapps/assets/images/maintenance.jpeg',
       )
