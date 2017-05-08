@@ -89,4 +89,4 @@ function wp_suspended_mode(){
     return false;
   }
 }
-add_action( 'template_redirect', 'wp_suspended_mode');
+add_action( 'template_redirect', 'wp_suspended_mode', 9);
