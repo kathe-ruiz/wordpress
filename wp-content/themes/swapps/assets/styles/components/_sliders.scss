@@ -20,7 +20,7 @@
         padding: 2rem;
       }
     }
-    // Videos 
+    // Videos
     .video__player{
       &, .plyr{
         height: 100%;
@@ -115,6 +115,9 @@
         background: $brand-primary;
       }
     }
+  }
+  .plyr__video-embed {
+    height: 100%;
   }
 }
 
