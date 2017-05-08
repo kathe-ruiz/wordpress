@@ -36,8 +36,9 @@
       ],
       autoplay:true,
       <?php if ($row_item['timeout']): ?>
-      autoplayTimeout:<?php echo $row_item['timeout'] ?>
+      autoplayTimeout:<?php echo $row_item['timeout'] ?>,
       <?php endif; ?>
+      autoHeight:true
     });
   });
 </script>
@@ -138,19 +139,19 @@ jQuery(document).ready(function(){
 </script>
 <ul class="bxslider">
   <?php foreach ($slides as $key => $slide): ?>
-  <?php 
+  <?php
     $image = get_if_exists($slide['image']);
     $video = get_if_exists($slide['video']);
     $title = get_if_exists($slide['title']);
     $subtitle = get_if_exists($slide['title_2']);
     $description = get_if_exists($slide['description']);
     $link = get_if_exists($slide['link']['url']);
-    $cta = get_if_exists($slide['link']['title']); 
+    $cta = get_if_exists($slide['link']['title']);
   ?>
   <?php if ( isset($image) && $image ): ?>
     <li class="bxslider__item">
-      <img class="bxslider__img" 
-           src="<?php echo $image['url'] ?>" 
+      <img class="bxslider__img"
+           src="<?php echo $image['url'] ?>"
            alt="<?php echo $image['alt'] ?>"
            title="<?php echo $title ?><?php if ($subtitle): echo ' - ' .$subtitle; endif; ?>"/>
     </li>
