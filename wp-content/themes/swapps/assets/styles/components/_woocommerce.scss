@@ -1934,7 +1934,7 @@ li.product{
   }
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-lg) {
   .woocommerce.columns-4{
     ul.products{
       li.product{
@@ -1953,7 +1953,7 @@ li.product{
     }
   }
 }
-@media (max-width: $screen-sm-max){
+@media (max-width: $screen-md-max){
   .woocommerce.columns-4{
     ul.products{
       li.product{
