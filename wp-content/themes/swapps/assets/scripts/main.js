@@ -19,6 +19,9 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $.fn.exists = function () {
+            return this.length !== 0;
+        };
         function stickyFooter() {
           var footer_height = document.querySelector('.footer').offsetHeight;
           document.querySelector('.wrap').style.paddingBottom = footer_height + "px";
@@ -31,7 +34,9 @@
           var totalHeight = footerHeight + contentHeight;
           if(totalHeight < window.innerHeight){
             var fill = window.innerHeight - totalHeight;
-            document.querySelector('.document section:not(.breadcrumb)').style.paddingBottom = fill + "px";
+            if (document.querySelector('.document section:not(.breadcrumb)')){
+              document.querySelector('.document section:not(.breadcrumb)').style.paddingBottom = fill + "px";
+            }
           }
         }
         $(window).on('load resize', function () {
@@ -39,7 +44,7 @@
           fillRemainingSpace();
         });
         // Hide navbar collapse button if there are no items in menu
-        if(document.querySelectorAll('.menu-item').length == 0){
+        if(document.querySelectorAll('.menu-item').length === 0){
           document.querySelector('.navbar-toggle').style.display = 'none';
         }
         // Initialize videos and save the instances in a variable
@@ -181,9 +186,20 @@
         $(window).click(function() {
           $('#myNavbar.collapse.in').removeClass('in');
         });
+        $('.grid').masonry({
+          // options
+          resize: true,
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          gutter: '.gutter-sizer',
+          percentPosition: true
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+        if ($('.um-field-error').exists()) {
+          $('.um-field-error').closest('.modal').modal('show');
+        }
       }
     },
     // Home page

@@ -8,11 +8,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.6",
+                "version": "0.2.7",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.6"
+                    "reference": "0.2.7"
                 }
             }
 
@@ -51,7 +51,7 @@
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.3.5"
+                    "reference": "0.3.6"
                 }
             }
         },
@@ -59,11 +59,11 @@
             "type": "package",
             "package": {
                 "name": "wp-plugin-swapps",
-                "version": "0.1.4",
+                "version": "0.1.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-swapps.git",
                     "type": "git",
-                    "reference": "0.1.4"
+                    "reference": "0.1.5"
                 }
             }
         },
@@ -143,9 +143,9 @@
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/floating-publish-button": "1.0.6",
         "wpackagist-plugin/ninja-forms": "3.0.34",
-        "sw-simple-slider": "0.2.6",
+        "sw-simple-slider": "0.2.7",
         "sw-customizer": "0.3.5",
-        "wp-plugin-swapps": "0.1.4",
+        "wp-plugin-swapps": "0.1.5",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}

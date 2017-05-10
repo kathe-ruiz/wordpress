@@ -108,6 +108,9 @@
   border-color: $brand-primary;
   margin-bottom: 0px;
   &__menu{
+    .menu-item:hover{
+      cursor: pointer;
+    }
     .menu-item.active{
       a{
         border-radius: $btn-border-radius-base;

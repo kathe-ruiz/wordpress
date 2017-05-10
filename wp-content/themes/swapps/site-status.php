@@ -17,15 +17,15 @@
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Maintenance Mode</title>
+  <title>{{title}}</title>
 
-  <meta name="description" content="We are currently performing some quick updates. This site will be back soon.">
+  <meta name="description" content="{{description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/wp-content/themes/swapps/assets/images/swapps/swapps.ico">
   <meta property="og:url" content="" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Maintenance Mode" />
-  <meta property="og:description" content="We are currently performing some quick updates. This site will be back soon." />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
   
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -56,7 +56,7 @@
   
   html{
     height:100%;
-    background: #ffffff url(/wp-content/themes/swapps/assets/images/maintenance.jpeg); no-repeat center bottom fixed;
+    background: #ffffff url({{background}}); no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -296,11 +296,11 @@
   <div id="cspio-page">
     <div id="cspio-content">
       
-      <img id="cspio-logo" src="/wp-content/themes/swapps/assets/images/swapps/logo-swapps-vertical.png">
+      <img id="cspio-logo" src="{{logo}}">
                   
-      <h1 id="cspio-headline">Maintenance Mode</h1>                 
+      <h1 id="cspio-headline">{{title}}</h1>                 
       
-      <div id="cspio-description">We are currently performing some quick updates. This site will be back soon.</div>                 
+      <div id="cspio-description">{{description}}</div>                 
       
       <!-- <form id="cspio-form" action="" method="post">
         <div id="cspio-field-wrapper">
@@ -316,10 +316,10 @@
       <!-- <span id="cspio-privacy-policy-txt">We promise to never spam you.</span> -->
                                                                                     
       <div id="cspio-socialprofiles">
-        <a href="//www.facebook.com/swapps.co" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
-        <a href="//www.twitter.com/swappsco" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>      
-        <a href="//www.linkedin.com/company/2823859" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>      
-        <a href="mailto:hi@swapps.co" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>      
+        <a href="{{facebook}}" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+        <a href="{{twitter}}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>      
+        <a href="{{linkedin}}" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>      
+        <a href="{{email}}" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>      
       </div>
                                                                                                           
     </div><!-- end of #cspio-content -->

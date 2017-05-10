@@ -13,9 +13,36 @@
     "bx-slider.js": "^4.2.12",
     "fancybox": "^2.1.6",
     "plyr": "^2.0.11",
-    "bootstrap-hover-dropdown": "^2.2.1"
+    "bootstrap-hover-dropdown": "^2.2.1",
+    "packery": "^2.1.1",
+    "masonry": "^4.2.0"
   },
   "overrides": {
+    "masonry": {
+      "main": [
+        "./dist/masonry.pkgd.js"
+      ]
+    },
+    "prism": {
+      "main": [
+        "./prism.js",
+        "./themes/prism.css"
+      ]
+    },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    },
+    "packery": {
+      "main": [
+        "js/rect.js",
+        "js/packer.js",
+        "js/item.js",
+        "js/packery.js"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
@@ -25,7 +52,6 @@
         "./assets/javascripts/bootstrap/carousel.js",
         "./assets/javascripts/bootstrap/collapse.js",
         "./assets/javascripts/bootstrap/dropdown.js",
-        "./assets/javascripts/bootstrap/modal.js",
         "./assets/javascripts/bootstrap/tooltip.js",
         "./assets/javascripts/bootstrap/popover.js",
         "./assets/javascripts/bootstrap/scrollspy.js",
@@ -47,6 +73,7 @@
         "./dist/images/controls.png"
       ]
     }
+
   },
   "devDependencies": {}
 }

@@ -1,4 +1,5 @@
 {
+  "main": true,
   "dependencies": {
     "main.js": {
       "files": [
@@ -23,5 +24,8 @@
   },
   "config": {
     "devUrl": "http://wp-project.dev"
+  },
+  "exclude": {
+    "bower": ["outlayer", "doc-ready", "fizzy-ui-utils", "get-style-property", "get-size", "matches-selector", "eventEmitter", "eventie"]
   }
 }
