@@ -129,3 +129,16 @@
     margin: 0 10px;
   }
 }
+.after-footer{
+  padding: 40px 0;
+  background: $gray-base;
+  color: lighten($navbar-inverse-bg, 28.5%);
+  &__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__brand{
+      margin-left: 40px;
+    }
+  }
+}

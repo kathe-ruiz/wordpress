@@ -60,3 +60,14 @@
     </div>
   </div>
 </footer>
+<div class="after-footer">
+  <div class="container">
+    <div class="row">
+      <div class="after-footer__flex">
+        <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
+        <span class="text-secondary"><?php _e('All rights reserved') ?></span>
+        <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img"><span class="footer__sw">sw</span><span class="footer__apps">apps</span></a>
+      </div>
+    </div>
+  </div>
+</div>
