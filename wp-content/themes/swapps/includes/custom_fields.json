@@ -383,6 +383,30 @@
                                                     "class": "",
                                                     "id": ""
                                                 }
+                                            },
+                                            {
+                                                "layout": "vertical",
+                                                "choices": {
+                                                    "main": "Main",
+                                                    "secondary": "Secondary"
+                                                },
+                                                "default_value": "main",
+                                                "other_choice": 0,
+                                                "save_other_choice": 0,
+                                                "allow_null": 0,
+                                                "return_format": "value",
+                                                "key": "field_text_font",
+                                                "label": "Font",
+                                                "name": "font",
+                                                "type": "radio",
+                                                "instructions": "Font family to be used on this text.",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                }
                                             }
                                         ],
                                         "min": 1,
