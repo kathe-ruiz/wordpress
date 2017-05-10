@@ -129,6 +129,30 @@
     margin: 0 10px;
   }
 }
+.after-footer{
+  padding: 40px 0;
+  background: $gray-base;
+  color: lighten($navbar-inverse-bg, 28.5%);
+  &__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__brand{
+      margin-left: 40px;
+    }
+  }
+  @media (max-width: $screen-sm){
+    &__flex{
+      display: block;
+      text-align: center;
+    }
+    .footer__brand{
+      display: block;
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+  }
+}
 .footer.navbar--light{
   .socialmedia__link{
     color: inherit;
