@@ -23,6 +23,9 @@
   }
   &__powered-by{
     text-align: right;
+    @media (max-width: $screen-md){
+      text-align: center;
+    }
   }
   &__brand{
     color: inherit;

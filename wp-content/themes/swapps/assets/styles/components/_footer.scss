@@ -141,6 +141,17 @@
       margin-left: 40px;
     }
   }
+  @media (max-width: $screen-sm){
+    &__flex{
+      display: block;
+      text-align: center;
+    }
+    .footer__brand{
+      display: block;
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+  }
 }
 .footer.navbar--light{
   .socialmedia__link{
