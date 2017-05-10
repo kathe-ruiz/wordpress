@@ -1925,8 +1925,11 @@ li.product{
       min-height: 1px;
       margin: 0;
       text-align: center;
-      padding: 15px 0;
+      padding: 0;
+      padding-bottom: 15px;
       transition: all .5s ease-in-out;
+      clear: initial;
+
       &:hover{
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
       }
@@ -1943,10 +1946,17 @@ li.product{
       }
     }
   }
+  .woocommerce.columns-3{
+    ul.products{
+      li.product{
+        width: 29.3333%!important;
+        margin: 2%;
+      }
+    }
+  }
   .woocommerce.columns-2{
     ul.products{
       li.product{
-        width: 50% !important;
         width: 46%!important;
         margin: 2%;
       }
@@ -1954,14 +1964,8 @@ li.product{
   }
 }
 @media (max-width: $screen-md-max){
-  .woocommerce.columns-4{
-    ul.products{
-      li.product{
-        width: 46%!important;
-        margin: 2%;
-      }
-    }
-  }
+  .woocommerce.columns-4,
+  .woocommerce.columns-3,
   .woocommerce.columns-2{
     ul.products{
       li.product{
@@ -1971,20 +1975,14 @@ li.product{
     }
   }
 }
-@media (max-width: $screen-xs-max){
-  .woocommerce.columns-4{
-    ul.products{
-      li.product{
-        width: 100% !important;
-        margin: 2% 0;
-      }
-    }
-  }
+@media (max-width: $screen-xs){
+  .woocommerce.columns-4,
+  .woocommerce.columns-3,
   .woocommerce.columns-2{
     ul.products{
       li.product{
-        width: 100% !important;
-        margin: 2% 0;
+        width: 96% !important;
+        margin: 2%;
       }
     }
   }
