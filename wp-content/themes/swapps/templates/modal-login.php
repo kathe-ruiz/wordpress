@@ -18,16 +18,12 @@ $form_id = isset( $forms[0]->ID ) ? $forms[0]->ID: 0;
 <script>
 jQuery('#modal-login').on('shown.bs.modal', function (event) {
   if ( jQuery('.um-login .um-button.um-alt').exists() ) {
-    console.log('Login page');
     modal = jQuery(this);
     jQuery('.um-login .um-button.um-alt')[0].dataset.toggle = "modal";
     jQuery('.um-login .um-button.um-alt').attr("href", "#modal-signup");
     jQuery('.um-login .um-button.um-alt').on('click', function (event) {
       modal.modal('hide');
     });
-  }
-  else{
-    console.log('wut');
   }
 });
 </script>

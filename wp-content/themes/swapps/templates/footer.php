@@ -54,7 +54,16 @@
           <span class="text-secondary"><?php _e('All rights reserved') ?></span>
         </div>
         <div class="footer__powered-by">
-          <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img"><span class="footer__sw">sw</span><span class="footer__apps">apps</span></a>
+          <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by 
+            <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')):
+                $ttt = sw_options('site_options_footer_color');
+                if ( $ttt == 'navbar--light'):?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps-white.png" alt="powered by swapps" class="footer__brand-img">
+                <?php else:?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img">
+                <?php endif; ?>
+            <?php endif; ?>
+            <span class="footer__sw">sw</span><span class="footer__apps">apps</span></a>
         </div>
       </div>
     </div>

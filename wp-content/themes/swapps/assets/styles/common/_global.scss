@@ -84,7 +84,7 @@ $color-star:               #ffd700;
     align-items: center;
 }
 
-input[type="button"], input[type="submit"], button:not(.search-form__submit):not(.navbar-toggle){
+input[type="submit"]{
   @extend .btn;
   @extend .btn-primary;
 }
