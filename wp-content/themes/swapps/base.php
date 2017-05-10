@@ -21,9 +21,9 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="document">
     <?php if (!(is_front_page() && get_option('show_on_front') == 'page') ): get_template_part('templates/page', 'header'); endif; ?>
-    <div class="wrap container<?php if (!Setup\display_sidebar() ) :  echo '-fluid'; endif; ?>" role="document">
+    <div class="wrap container<?php if (!Setup\display_sidebar() && (is_page_template('template-landing.php') || is_page_template('template-home.php')) ) :  echo '-fluid'; endif; ?>" role="document">
       <div class="content row">
-        <main class="main <?php echo $col_size = (Setup\display_sidebar()) ? 'col-sm-8' : '' ; ?>">
+        <main class="main <?php echo $col_size = (Setup\display_sidebar()) ? 'col-sm-8' : ( !(is_page_template('template-landing.php') || is_page_template('template-home.php')) ? 'col-sm-12' : '' ) ; ?>">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>

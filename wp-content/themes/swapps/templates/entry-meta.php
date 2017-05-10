@@ -13,7 +13,7 @@
       <?= get_the_author(); ?>
     </a>
   </span>
-  <?php if (get_post_type() != 'volunteer_opp'): ?>
+  <?php if (get_post_type() == 'post'): ?>
   <span class="entry-meta__item entry-meta__item--right">
     <a class="entry-meta__text entry-meta__link" href="<?php echo get_permalink(). '#comments'; ?>">
       <i class="fa fa-lg fa-comment-o entry-meta__icon" aria-hidden="true"></i>
