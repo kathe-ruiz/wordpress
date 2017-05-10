@@ -50,3 +50,15 @@ Run the project ::
     sudo php -S 0.0.0.0:8888
 
 View in the browser at http://localhost:8888
+
+
+License
+===============
+
+Copyright (C) Smart Web Apps SAS - All Rights Reserved
+
+Unauthorized copying of this repository and it's files, via any medium is strictly prohibited
+
+Proprietary and confidential.
+
+Owned by Swapps <hi@swapps.co>
