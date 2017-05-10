@@ -19,7 +19,6 @@ $form_id = isset( $forms[0]->ID ) ? $forms[0]->ID: 0;
 <script>
 jQuery('#modal-signup').on('shown.bs.modal', function (event) {
   if ( jQuery('.um-register .um-button.um-alt').exists() ){
-    console.log('Register page');
     modal = jQuery(this);
     jQuery('.um-register .um-button.um-alt')[0].dataset.toggle = "modal";
     jQuery('.um-register .um-button.um-alt').attr("href", "#modal-login");
