@@ -396,3 +396,8 @@
   }
 }
 /* ======= STYLES FOR DROPDOWN ======= */
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+} 
