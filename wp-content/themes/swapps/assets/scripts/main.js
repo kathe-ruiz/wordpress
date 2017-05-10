@@ -197,6 +197,9 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+        if ($('.um-field-error').exists()) {
+          $('.um-field-error').closest('.modal').modal('show');
+        }
       }
     },
     // Home page
