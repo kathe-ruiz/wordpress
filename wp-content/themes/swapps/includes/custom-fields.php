@@ -2678,6 +2678,38 @@ acf_add_local_field_group(array (
           ),
         ),
         array (
+          'default_value' => 0,
+          'message' => 'Cover',
+          'ui' => 0,
+          'ui_on_text' => '',
+          'ui_off_text' => '',
+          'key' => 'field_image_cover',
+          'label' => 'Image cover',
+          'name' => 'image_cover',
+          'type' => 'true_false',
+          'instructions' => 'Choose if the image should be covered by a dark overlay.',
+          'required' => 0,
+          'conditional_logic' => array (
+            array (
+              array (
+                'field' => 'field_custom_background',
+                'operator' => '==',
+                'value' => '1',
+              ),
+              array (
+                'field' => 'field_image_filter',
+                'operator' => '==',
+                'value' => 'None',
+              ),
+            ),
+          ),
+          'wrapper' => array (
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+        ),
+        array (
           'default_value' => 10,
           'min' => 0,
           'max' => 150,
