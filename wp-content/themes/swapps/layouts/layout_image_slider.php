@@ -16,7 +16,7 @@
 <script>
 // Initialize slider
   jQuery(document).ready(function() {
-    jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
+    var carousel = jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
       items: 1,
       loop: true,
       margin: 0,
@@ -40,6 +40,20 @@
       <?php endif; ?>
       autoHeight:true
     });
+    // This is a improve when slider have a video
+    var players = plyr.setup();
+    if (players.length>0) {
+      players.forEach(function(player){
+        player.on('play', function(event) {
+          carousel.trigger('stop.owl.autoplay');
+        });
+      });
+      carousel.on('changed.owl.carousel', function(event){
+        players.forEach(function(player){
+          player.stop();
+        });
+      });
+    };
   });
 </script>
 <div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
@@ -180,3 +194,4 @@ jQuery(document).ready(function(){
   <?php endforeach; ?>
 </ul>
 <?php endif; ?>
+

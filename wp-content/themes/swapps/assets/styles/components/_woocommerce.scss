@@ -409,7 +409,9 @@ p.demo_store {
     margin: 0 0 1em;
     padding: 0;
     list-style: none;
-    clear: both
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
 }
 .woocommerce .products ul:after,
 .woocommerce .products ul:before,
