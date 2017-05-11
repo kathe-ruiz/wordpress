@@ -1928,8 +1928,6 @@ li.product{
       padding: 0;
       padding-bottom: 15px;
       transition: all .5s ease-in-out;
-      clear: initial;
-
       &:hover{
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
       }
@@ -1971,6 +1969,7 @@ li.product{
       li.product{
         width: 46%!important;
         margin: 2%;
+        clear: initial;
       }
     }
   }
