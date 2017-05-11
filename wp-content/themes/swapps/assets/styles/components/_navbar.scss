@@ -404,3 +404,8 @@
     display: block;
   }
 } 
+.navbar__btn--compact[href^="tel"]{
+  @media (max-width: $screen-xs-max), (min-width: $screen-md-min){
+    margin-right: 10px;
+  }
+}

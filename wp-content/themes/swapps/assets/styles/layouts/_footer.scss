@@ -15,17 +15,19 @@
     margin-bottom: 10px;
   }
   &__phone{
-
   }
   &__right{
     margin-left: auto;
     float: right;
   }
   &__powered-by{
+<<<<<<< HEAD
     text-align: right;
     @media (max-width: $screen-md){
       text-align: center;
     }
+=======
+>>>>>>> 0.14.5
   }
   &__brand{
     color: inherit;
