@@ -64,6 +64,7 @@
       $title = get_if_exists($slide['title']);
       $subtitle = get_if_exists($slide['title_2']);
       $description = get_if_exists($slide['description']);
+      $button_design = get_if_exists($slide['button_design']);
       $link = get_if_exists($slide['link']['url']);
       $cta = get_if_exists($slide['link']['title']);
 
@@ -100,9 +101,15 @@
             <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
           <?php endif ?>
           <?php if ($link and $cta): ?>
+            <?php if ( $button_design == 'Basic' ):?>
             <a href="<?php echo $link ?>" class="btn btn-primary">
               <?php echo $cta; ?>
             </a>
+            <?php else: ?>
+              <a href="<?php echo $link ?>" class="btn btn-ecommerce">
+              <span><?php echo $cta; ?></span>
+            </a>
+            <?php endif ?>
           <?php endif ?>
         </div>
         <?php endif; ?>
