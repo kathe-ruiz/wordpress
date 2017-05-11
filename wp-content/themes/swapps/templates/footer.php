@@ -42,7 +42,11 @@
       <?php $phone = sw_get_phone(); ?>
       <?php if ($phone): ?>
       <div class="footer__phone">
-          <a href="tel:<?php echo $phone; ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
+        <a href="tel:<?php echo $phone; ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
+        <?php $secondary_phone = sw_get_phone('secondary'); ?>
+        <?php if ($secondary_phone): ?>
+          <a href="tel:<?php echo $secondary_phone; ?>" class="footer__btn navbar__btn btn btn-primary-outline btn-sm"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $secondary_phone; ?></span></a>
+        <?php endif ?>
       </div>
       <?php endif ?>
       <div class="footer__right">
