@@ -41,3 +41,7 @@
   position: absolute;
   top: 0;
 }
+.filter-image + .container{
+  z-index: 999999;
+  position: relative;
+}
