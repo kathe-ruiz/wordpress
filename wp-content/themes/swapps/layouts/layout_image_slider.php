@@ -50,7 +50,7 @@
       });
       carousel.on('changed.owl.carousel', function(event){
         players.forEach(function(player){
-          player.stop();
+          player.pause();
         });
       });
     };
