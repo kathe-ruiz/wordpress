@@ -289,7 +289,7 @@ class Image_Widget extends WP_Widget {
     add_action('admin_enqueue_scripts', array($this, 'scripts'));
     parent::__construct('image_picker', // Base ID
       __( 'Image Picker', 'text_domain' ), // Name
-      array( 'description' => __( 'Widget with media files', 'text_domain' ), ) // Args
+      array( 'description' => __( 'Widget para subir imagenes, con este widget podras publicar aununcion para tu sitio web.', 'text_domain' ), ) // Args
      );
   }
   public function scripts(){
