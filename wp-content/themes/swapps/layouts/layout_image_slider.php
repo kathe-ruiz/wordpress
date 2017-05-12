@@ -16,7 +16,7 @@
 <script>
 // Initialize slider
   jQuery(document).ready(function() {
-    jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
+    var carousel = jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
       items: 1,
       loop: true,
       margin: 0,
@@ -40,6 +40,20 @@
       <?php endif; ?>
       autoHeight:true
     });
+    // This is a improve when slider have a video
+    var players = plyr.setup();
+    if (players.length>0) {
+      players.forEach(function(player){
+        player.on('play', function(event) {
+          carousel.trigger('stop.owl.autoplay');
+        });
+      });
+      carousel.on('changed.owl.carousel', function(event){
+        players.forEach(function(player){
+          player.pause();
+        });
+      });
+    };
   });
 </script>
 <div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
@@ -50,6 +64,7 @@
       $title = get_if_exists($slide['title']);
       $subtitle = get_if_exists($slide['title_2']);
       $description = get_if_exists($slide['description']);
+      $button_design = get_if_exists($slide['button_design']);
       $link = get_if_exists($slide['link']['url']);
       $cta = get_if_exists($slide['link']['title']);
 
@@ -86,9 +101,15 @@
             <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
           <?php endif ?>
           <?php if ($link and $cta): ?>
+            <?php if ( $button_design == 'Basic' ):?>
             <a href="<?php echo $link ?>" class="btn btn-primary">
               <?php echo $cta; ?>
             </a>
+            <?php else: ?>
+              <a href="<?php echo $link ?>" class="btn btn-ecommerce">
+              <span><?php echo $cta; ?></span>
+            </a>
+            <?php endif ?>
           <?php endif ?>
         </div>
         <?php endif; ?>
@@ -173,3 +194,4 @@ jQuery(document).ready(function(){
   <?php endforeach; ?>
 </ul>
 <?php endif; ?>
+

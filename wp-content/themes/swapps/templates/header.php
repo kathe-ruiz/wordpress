@@ -44,6 +44,10 @@
         <?php if ($phone): ?>
           <a href="tel:<?php echo $phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
         <?php endif ?>
+        <?php $secondary_phone = sw_get_phone('secondary'); ?>
+        <?php if ($secondary_phone): ?>
+          <a href="tel:<?php echo $secondary_phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $secondary_phone; ?></span></a>
+        <?php endif ?>
         <?php //if ($rows = primary_landing_menu()):?>
         <?php if (function_exists('get_field')): ?>
         <?php $landing_option = get_field('field_landing_option'); ?>
