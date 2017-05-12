@@ -187,7 +187,6 @@
           $('#myNavbar.collapse.in').removeClass('in');
         });
         $('.grid').masonry({
-          // options
           resize: true,
           itemSelector: '.grid-item',
           columnWidth: '.grid-sizer',
