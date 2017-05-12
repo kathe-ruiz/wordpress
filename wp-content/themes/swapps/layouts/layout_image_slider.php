@@ -101,14 +101,14 @@
             <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
           <?php endif ?>
           <?php if ($link and $cta): ?>
-            <?php if ( $button_design == 'Basic' ):?>
-            <a href="<?php echo $link ?>" class="btn btn-primary">
-              <?php echo $cta; ?>
-            </a>
-            <?php else: ?>
+            <?php if ( $button_design == 'E-commerce' ):?>
               <a href="<?php echo $link ?>" class="btn btn-ecommerce">
-              <span><?php echo $cta; ?></span>
-            </a>
+                <span><?php echo $cta; ?></span>
+              </a>
+            <?php else: ?>
+              <a href="<?php echo $link ?>" class="btn btn-primary">
+                <?php echo $cta; ?>
+              </a>
             <?php endif ?>
           <?php endif ?>
         </div>
