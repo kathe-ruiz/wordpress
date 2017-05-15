@@ -1,3 +1,4 @@
+@import "components/swbi";
 %widget-list-item{
   border-bottom: none;
   border-left: none;
@@ -8,7 +9,7 @@
   font-weight: 300;
   padding: 1.3rem 0;
 }
-.widget{
+.widget:not(.footer__widget){
   ul{
     list-style-type: none;
     padding-left: 0;
