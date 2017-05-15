@@ -20,7 +20,7 @@
   color: $gray-dark;
 }
 .navbar--light{
-  background: rgba(#FFF, 0.9);
+  background: $footer-color-light;
   @extend .navbar-default;
   .icon-bar{
     background-color: #000 !important;
@@ -62,7 +62,7 @@
   }
 }
 .navbar--dark{
-  background: rgba(#000, 0.85);
+  background: $footer-color-dark;
   @extend .navbar-default;
   .navbar__menu{
     .active {

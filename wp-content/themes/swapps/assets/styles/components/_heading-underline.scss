@@ -4,6 +4,19 @@
     a{
       color: inherit;
     }
+    &--footer{
+      margin-top: 0;
+      font-size: 1.5em;
+      .footer.navbar--dark &{
+        @include text-contrast($footer-color-dark);
+      }
+      .footer.navbar--light &{
+        @include text-contrast($footer-color-light);
+      }
+      .footer.navbar--brand &{
+        @include text-contrast($brand-primary);
+      }
+    }
   }
   &:after{
     content: '';
@@ -11,6 +24,9 @@
     width: 80px;
     height: 3px;
     background: $brand-primary;
+    .footer.navbar--brand &{
+      background: contrast_function($brand-primary);
+    }
   }
   margin-bottom: 32px;
   @media (max-width: $screen-sm) {
