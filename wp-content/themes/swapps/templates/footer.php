@@ -6,7 +6,9 @@
   <?php endif; ?>
   <div class="container-fluid footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
     <div class="row">
-      <?php dynamic_sidebar('sidebar-footer'); ?>
+      <div class="footer__sidebar">
+        <?php dynamic_sidebar('sidebar-footer'); ?>
+      </div>
     </div>
     <div class="row row-md-centered">
       <div class="footer__logo">
