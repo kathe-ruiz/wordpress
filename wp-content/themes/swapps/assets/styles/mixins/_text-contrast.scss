@@ -28,3 +28,11 @@ Color brightness is determined by the following formula:
   }
 }
 
+@function relative_contrast($color, $amount){
+  @if contrast_function($color) == #000{
+    @return lighten($color, $amount);
+  }
+  @else {
+    @return darken($color, $amount);
+  }
+}

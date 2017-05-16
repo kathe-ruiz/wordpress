@@ -1,9 +1,9 @@
 <div class="swbi">
-  <div class="footer__info">
+  <div class="info">
     <?php if (function_exists('sw_options') && (sw_options('address') || sw_options('city') || sw_options('country'))): ?>
-      <span class="footer__address">
-        <i class="footer__icon fa footer__icon--3x fa-map-marker" aria-hidden="true"></i>
-        <span class="footer__text footer__text--light text-secondary"><?php echo sw_options('address'); ?><br>
+      <div class="textitem">
+        <i class="textitem__icon fa fa-3x fa-map-marker" aria-hidden="true"></i>
+        <span class="textitem__text textitem__text--light text-secondary"><?php echo sw_options('address'); ?><br>
         <?php if (sw_options('city')): ?>
           <?php echo sw_options('city'); ?>,&nbsp;
         <?php endif ?>
@@ -13,29 +13,33 @@
           Colombia
         <?php endif ?>
         </span>
-      </span>
+      </div>
     <?php endif ?>
     <?php if (function_exists('sw_options') && sw_options('email')): ?>
-      <a class="footer__link" href="mailto:<?php echo sw_options('email'); ?>">
-        <i class="footer__icon fa footer__icon--2x fa-envelope" aria-hidden="true"></i>
-        <span class="footer__text text-secondary" href="#"><?php echo sw_options('email'); ?></span>
-      </a>
+      <div class="textitem">
+        <a class="textitem__link" href="mailto:<?php echo sw_options('email'); ?>">
+          <i class="textitem__icon fa fa-2x fa-envelope" aria-hidden="true"></i>
+          <span class="textitem__text text-secondary" href="#"><?php echo sw_options('email'); ?></span>
+        </a>
+      </div>
     <?php endif ?>
     <?php $phone = sw_get_phone(); ?>
     <?php $secondary_phone = sw_get_phone('secondary'); ?>
-    <br>
     <?php if ($phone): ?>
-      <a class="footer__link" href="tel:<?php echo $phone; ?>">
-        <i class="footer__icon fa footer__icon--2x fa-phone" aria-hidden="true"></i>
-        <span class="footer__text text-secondary" href="#"><?php echo $phone; ?></span>
-      </a>
+      <div class="textitem">
+        <a class="textitem__link" href="tel:<?php echo $phone; ?>">
+          <i class="textitem__icon fa fa-3x fa-phone" aria-hidden="true"></i>
+          <span class="textitem__text text-secondary" href="#"><?php echo $phone; ?></span>
+        </a>
+      </div>
     <?php endif ?>
-    <br>
     <?php if ($secondary_phone): ?>
-      <a class="footer__link" href="tel:<?php echo $secondary_phone; ?>">
-        <i class="footer__icon fa footer__icon--2x fa-phone" aria-hidden="true"></i>
-        <span class="footer__text text-secondary" href="#"><?php echo $secondary_phone; ?></span>
-      </a>
+      <div class="textitem">
+        <a class="textitem__link" href="tel:<?php echo $secondary_phone; ?>">
+          <i class="textitem__icon fa fa-3x fa-phone" aria-hidden="true"></i>
+          <span class="textitem__text text-secondary" href="#"><?php echo $secondary_phone; ?></span>
+        </a>
+      </div>
     <?php endif ?>
   </div>
   <div class="socialmedia footer__socialmedia">
