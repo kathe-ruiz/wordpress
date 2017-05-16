@@ -1,5 +1,9 @@
 .footer{
+  position: relative;
   color: lighten($navbar-inverse-bg, 28.5%);
+  >.row{
+    position: relative;
+  }
   &__logo{
     &__img{
         height: auto;
@@ -12,6 +16,16 @@
         max-height: 70px;;
       }
     }
+  }
+  &__footer-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
   }
   &__info{
   }
