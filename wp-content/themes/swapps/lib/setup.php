@@ -73,7 +73,7 @@ function widgets_init() {
   ]);
 
   register_sidebar([
-    'name'          => __('Woocommerce-Banner', 'sage'),
+    'name'          => __('Woocommerce-Advertisement', 'sage'),
     'id'            => 'sidebar-woocommcerce',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',

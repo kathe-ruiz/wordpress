@@ -1,6 +1,6 @@
-<?php if ( function_exists( dynamic_sidebar( 'Woocommerce Banner ' ) ) ) : ?>
+<?php if ( function_exists( dynamic_sidebar( 'Woocommerce Advertisement' ) ) ) : ?>
   <div class="widget-area woocommerce-banner">
-    <?php dynamic_sidebar( 'Woocommerce Banner' ); ?>
+    <?php dynamic_sidebar( 'Woocommerce Advertisement' ); ?>
   </div>
 <!-- Woocommerce Banner -->
 <?php endif; ?>
