@@ -6,7 +6,7 @@ class SuscribeWidget extends WP_Widget {
    */
   public function __construct() {
     $widget_ops = array(
-      'classname' => 'Suscribewidget',
+      'classname' => 'widget_suscribe',
       'description' => __('This widget renders a subscription form for a newsletter'),
     );
     parent::__construct( 'suscribe_widget', 'Suscribe Widget', $widget_ops );
@@ -20,8 +20,9 @@ class SuscribeWidget extends WP_Widget {
    */
   public function widget( $args, $instance ) {
     // outputs the content of the widget
-    echo "<div class='panel'>";
     echo $args['before_widget'];
+    echo "<div class='panel panel-primary'>";
+    echo "<div class='panel-body'>";
     if ( ! empty( $instance['title'] ) ) {
         echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
     }
@@ -29,8 +30,8 @@ class SuscribeWidget extends WP_Widget {
         echo apply_filters( 'widget_description', $instance['description'] );
     }
     echo do_shortcode('[mc4wp_form]');
+    echo "</div></div>";
     echo $args['after_widget'];
-    echo "</div>";
   }
 
   /**
