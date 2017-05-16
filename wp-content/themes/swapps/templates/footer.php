@@ -1,6 +1,6 @@
 <?php if (function_exists('sw_options')): ?>
   <?php $default_opacity_footer = 1; ?>
-  <?php $opacity_footer = ( sw_options('site_options_footer_opacity') && (int)sw_options('site_options_footer_opacity') >= 0 && (int)sw_options('site_options_footer_opacity') <= 100) ? ((int)sw_options('site_options_footer_opacity') / 100) : $default_opacity_footer ; ?>
+  <?php $opacity_footer = ( (int)sw_options('site_options_footer_opacity') >= 0 && (int)sw_options('site_options_footer_opacity') <= 100 && sw_options('site_options_footer_opacity') != '') ? ((int)sw_options('site_options_footer_opacity') / 100) : $default_opacity_footer ; ?>
 <?php endif; ?>
 <footer id="footer">
     <?php if ( is_active_sidebar( 'pre_footer' ) ) : ?>
@@ -13,7 +13,7 @@
     $custom_logo_id = get_theme_mod( 'custom_footer_bakcground' );
     $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     $custom_logo = $image[0];?>
-      <div style="background:url(<?php echo $custom_logo; ?>);<?php if ( isset($opacity_footer) && $opacity_footer ): ?>opacity:<?php echo $opacity_footer; ?>;<?php endif; ?>" class="footer__footer-background">
+      <div style="background:url(<?php echo $custom_logo; ?>);<?php if ( isset($opacity_footer) ): ?>opacity:<?php echo $opacity_footer; ?>;<?php endif; ?>" class="footer__footer-background">
       </div>
     <?php endif;?>
     <?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
