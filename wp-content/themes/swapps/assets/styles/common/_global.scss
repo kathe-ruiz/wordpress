@@ -39,6 +39,12 @@ $bg-tabs-woocommerce:      #f3f3f3;
 $color-star:               #ffd700;
 /*  */
 
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base * 1 !default;
+$btn-border-radius-small:        $border-radius-base * 1.25 !default;
+$btn-border-radius-large:        $border-radius-base * 1.50 !default;
+
+
 .error404{
   .main{
     min-height: calc(80vh - 150px);

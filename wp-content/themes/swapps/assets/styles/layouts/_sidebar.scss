@@ -1,3 +1,4 @@
+@import "components/swbi";
 %widget-list-item{
   border-bottom: none;
   border-left: none;
@@ -8,7 +9,7 @@
   font-weight: 300;
   padding: 1.3rem 0;
 }
-.widget{
+.widget:not(.footer__widget){
   ul{
     list-style-type: none;
     padding-left: 0;
@@ -26,4 +27,59 @@
     color: inherit;
     @extend .divider--list, %widget-list-item;
   }
+}
+.widget_suscribe{
+  .footer.navbar--dark &, .footer.navbar--light &{
+    .panel-primary{
+      background: $brand-primary;
+      @include text-contrast($brand-primary);
+      .heading-underline__title{
+        @include text-contrast($brand-primary);
+      }
+      .heading-underline:after{
+        background: darken($brand-primary, 15%);
+      }
+      .subscribes__btn{
+        background: darken($brand-primary, 15%);
+      }
+    }
+  }
+  .footer.navbar--brand &{
+    .panel-primary{
+      background: contrast_function($brand-primary);
+      color: $brand-primary;
+      .heading-underline__title{
+        color: $brand-primary;
+      }
+      .heading-underline:after{
+        background: $brand-primary;
+      }
+      .subscribes__input{
+        border: 1px solid $brand-primary;
+      }
+    }
+  }
+  .panel{
+    &-primary{
+      border-radius: 4px;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    &-body{
+      padding: 2em;
+    }
+  }
+  .mc4wp-form{
+    margin-top: 2em;
+  }
+  .subscribes{
+    &__input{
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    &__input, &__btn{
+      width: 100%;
+    }
+  }
+
 }

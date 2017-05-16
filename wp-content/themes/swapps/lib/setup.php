@@ -76,7 +76,7 @@ function widgets_init() {
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget footer__widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<div class="heading-underline"><h3 class="heading-underline__title heading-underline__title--footer">',
+    'before_title'  => '<div class="heading-underline heading-underline--footer"><h3 class="heading-underline__title">',
     'after_title'   => '</h3></div>'
   ]);
 
