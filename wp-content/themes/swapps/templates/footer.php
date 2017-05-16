@@ -3,10 +3,10 @@
   <?php $opacity_footer = ( (int)sw_options('site_options_footer_opacity') >= 0 && (int)sw_options('site_options_footer_opacity') <= 100 && sw_options('site_options_footer_opacity') != '') ? ((int)sw_options('site_options_footer_opacity') / 100) : $default_opacity_footer ; ?>
 <?php endif; ?>
 <footer id="footer">
-    <?php if ( is_active_sidebar( 'pre_footer' ) ) : ?>
-    <div id="pre-footer" class="widget-area" role="complementary">
-      <?php dynamic_sidebar( 'pre_footer' ); ?>
-    </div><!-- #pre-footer -->
+  <?php if ( is_active_sidebar( 'pre_footer' ) ) : ?>
+  <div id="pre-footer" class="widget-area" role="complementary">
+    <?php dynamic_sidebar( 'pre_footer' ); ?>
+  </div><!-- #pre-footer -->
   <?php endif; ?>
   <div class="container-fluid footer <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')): ?><?php echo sw_options('site_options_footer_color') ?><?php else: ?>navbar--light<?php endif?>">
     <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_footer_bakcground' )):
@@ -89,36 +89,38 @@
     <?php endif; ?>
   </div>
 </footer>
-<?php if (function_exists('sw_options') && sw_options('site_options_footer_color')):
-  $color_foot = sw_options('site_options_footer_color');
-  if ( $color_foot == 'navbar--light'):?>
+<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?>
+  <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')):
+    $color_foot = sw_options('site_options_footer_color');
+    if ( $color_foot == 'navbar--light'):?>
     <div class="after-footer white">
-  <?php elseif ($color_foot == 'navbar--dark'):?>
+    <?php elseif ($color_foot == 'navbar--dark'):?>
     <div class="after-footer dark">
-  <?php else:?>
+    <?php else:?>
     <div class="after-footer gray">
+    <?php endif; ?>
   <?php endif; ?>
-<?php endif; ?>
-  <div class="container">
-    <div class="row">
-      <div class="after-footer__flex">
-        <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
-        <span class="text-secondary"><?php _e('All rights reserved') ?></span>
-        <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">
-          Powered by 
-          <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')):
-              $ttt = sw_options('site_options_footer_color');
-              if ( $ttt == 'navbar--light'):?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps-white.png" alt="powered by swapps" class="footer__brand-img">
-              <?php elseif ($ttt == 'navbar--dark'):?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img">
-              <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps-orange.ico" alt="powered by swapps" class="footer__brand-img">
+      <div class="container">
+        <div class="row">
+          <div class="after-footer__flex">
+            <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
+            <span class="text-secondary"><?php _e('All rights reserved') ?></span>
+            <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">
+              Powered by 
+              <?php if (function_exists('sw_options') && sw_options('site_options_footer_color')):
+                  $ttt = sw_options('site_options_footer_color');
+                  if ( $ttt == 'navbar--light'):?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps-white.png" alt="powered by swapps" class="footer__brand-img">
+                  <?php elseif ($ttt == 'navbar--dark'):?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps.png" alt="powered by swapps" class="footer__brand-img">
+                  <?php else: ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/powered-by-swapps-orange.ico" alt="powered by swapps" class="footer__brand-img">
+                  <?php endif; ?>
               <?php endif; ?>
-          <?php endif; ?>
-          <span class="footer__sw">sw</span><span class="footer__apps">apps</span>
-        </a>
+              <span class="footer__sw">sw</span><span class="footer__apps">apps</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+<?php endif; ?>
