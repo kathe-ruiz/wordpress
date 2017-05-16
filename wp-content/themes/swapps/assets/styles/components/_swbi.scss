@@ -1,0 +1,22 @@
+.swbi{
+  margin-top: 1em;
+  .footer__info{
+    max-width: none;
+    float: none;
+  }
+  &__mail{
+
+  }
+  &__phone{
+    a{
+    }
+  }
+  &__location{
+
+  }
+  .socialmedia{
+    .socialmedia__block{
+      float: none !important;
+    }
+  }
+}

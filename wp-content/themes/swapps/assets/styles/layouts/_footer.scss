@@ -128,19 +128,3 @@ html, body {
 .document {
   min-height: 100%;
 }
-.footer__sidebar{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 1em 0;
-  .footer__widget{
-    flex: 1;
-    width: 300px;
-    padding: 0 1em;
-  }
-  @media (min-width: $screen-sm-min) {
-    .footer__widget + .footer__widget{
-      border-left: 1px solid #ccc;
-    }
-  }
-}
