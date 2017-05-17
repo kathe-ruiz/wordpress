@@ -27,7 +27,7 @@ class SuscribeWidget extends WP_Widget {
         echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
     }
     if ( ! empty( $instance['description'] ) ) {
-        echo apply_filters( 'widget_description', $instance['description'] );
+        echo '<p>'. apply_filters( 'widget_description', $instance['description'] ) .'</p>';
     }
     echo do_shortcode('[mc4wp_form]');
     echo "</div></div>";

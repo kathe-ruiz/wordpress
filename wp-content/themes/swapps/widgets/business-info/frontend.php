@@ -3,15 +3,12 @@
     <?php if (function_exists('sw_options') && (sw_options('address') || sw_options('city') || sw_options('country'))): ?>
       <div class="textitem">
         <i class="textitem__icon fa fa-3x fa-map-marker" aria-hidden="true"></i>
-        <span class="textitem__text textitem__text--light text-secondary"><?php echo sw_options('address'); ?><br>
-        <?php if (sw_options('city')): ?>
-          <?php echo sw_options('city'); ?>,&nbsp;
+        <?php if (sw_options('address')): ?>
+        <span class="textitem__text textitem__text--light text-secondary"><?php echo sw_options('address'); ?>
         <?php endif ?>
-        <?php if (sw_options('country')): ?>
-          <?php echo sw_options('country'); ?>
-        <?php else: ?>
-          Colombia
-        <?php endif ?>
+        <?php $location = array(sw_options('city'), sw_options('country')); ?>
+        <?php if (sw_options('address') && array_filter($location)): ?><br><?php endif ?>
+        <?php if (array_filter($location)): ?><?php echo implode(',&nbsp', array_filter($location)) ?><?php endif ?>
         </span>
       </div>
     <?php endif ?>
