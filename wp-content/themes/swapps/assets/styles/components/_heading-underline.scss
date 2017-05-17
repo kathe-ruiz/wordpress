@@ -13,6 +13,7 @@
     }
     .footer.navbar--brand &{
       background: contrast_function($brand-primary);
+      // background: relative_contrast($brand-primary, 15%);
     }
   }
   &__title{

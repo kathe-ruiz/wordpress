@@ -87,4 +87,9 @@
       </div>
     </div>
   </nav>
+  <?php if ( is_active_sidebar( 'sidebar-after-header' ) ) : ?>
+    <div id="after-header" class="widget-area after-header <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?>">
+      <?php dynamic_sidebar( 'sidebar-after-header' ); ?>
+    </div>
+  <?php endif ?>
 </header>
