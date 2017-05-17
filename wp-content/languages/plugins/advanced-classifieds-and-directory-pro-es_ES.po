@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Advanced Classifieds and Directory Pro\n"
 "POT-Creation-Date: 2017-03-04 16:45+0530\n"
-"PO-Revision-Date: 2017-05-17 12:45-0500\n"
+"PO-Revision-Date: 2017-05-17 14:16-0500\n"
 "Last-Translator: Julian <jbonilla@swapps.co>\n"
 "Language-Team: Swapps <hi@swapps.co>\n"
 "Language: es\n"
@@ -137,7 +137,7 @@ msgstr "No Encontrado en Papelera"
 
 #: admin/class-acadp-admin-fields.php:52
 msgid "acadp_fields"
-msgstr ""
+msgstr "acadp_fields"
 
 #: admin/class-acadp-admin-fields.php:53
 #: admin/class-acadp-admin-listings.php:60
@@ -220,7 +220,7 @@ msgstr "Buscar Anuncio"
 
 #: admin/class-acadp-admin-listings.php:59
 msgid "acadp_listings"
-msgstr ""
+msgstr "acadp_listings"
 
 #: admin/class-acadp-admin-listings.php:142
 msgid "Listing Details"
@@ -383,7 +383,7 @@ msgstr "No se encuentran pagos en papelera"
 
 #: admin/class-acadp-admin-payments.php:52
 msgid "acadp_payments"
-msgstr ""
+msgstr "acadp_payments"
 
 #: admin/class-acadp-admin-payments.php:124
 msgid "All payments"
@@ -1912,6 +1912,9 @@ msgid ""
 "flush the rewrite rules by visiting Settings > Permalinks. Otherwise you'll "
 "still see the old links."
 msgstr ""
+"NOTA: Asegúrese de actualizar las reglas de escritura yendo a Ajustes > "
+"Enlaces permanentes luego de editar los campos en esta sección. De otra "
+"forma seguirá viendo los enlaces antiguos."
 
 #: admin/class-acadp-admin-settings.php:2366
 msgid "Featured listings will always appear on top of regular listings."
@@ -2213,7 +2216,7 @@ msgstr "Seleccionar una categoría"
 #: admin/partials/listings/acadp-admin-listing-details-display.php:45
 #: public/partials/user/acadp-public-edit-listing-display.php:220
 msgid "How much do you want it to be listed for?"
-msgstr "¿Por cuanto tiempo quiere que figure?"
+msgstr "¿Por cuánto quiere que figure?"
 
 #: admin/partials/listings/acadp-admin-listing-images-display.php:45
 #: public/partials/user/acadp-public-edit-listing-display.php:195
@@ -2306,9 +2309,9 @@ msgid ""
 "payment reference. Your order won't get approved until the funds have "
 "cleared in our account."
 msgstr ""
-"Haga su pago directamente en nuestra cuenta bancaria, utilice su ID de "
-"pedido comoReferencia de pago. Su pedido no será aprobado hasta que los "
-"fondos seanreflejados en nuestra cuenta."
+"Realice su pago directamente en nuestra cuenta bancaria. Por favor use el ID "
+"de su órden como referencia de pago. Su órden no será aprobada hasta que los "
+"fondos se reflejen en nuestra cuenta."
 
 #: includes/class-acadp-activator.php:133
 msgid ""
@@ -2324,6 +2327,17 @@ msgid ""
 "\n"
 "If we don't receive your payment within 48 hrs, we will cancel the order."
 msgstr ""
+"Realice su pago directamente en nuestra cuenta bancaria. Por favor use el ID "
+"de su órden como referencia de pago. Su órden no será aprobada hasta que los "
+"fondos se reflejen en nuestra cuenta.\n"
+"\n"
+"Detalles de la cuenta :\n"
+"\n"
+"Nombre de cuenta : NOMBRE DE CUENTA\n"
+"Número de cuenta : NÚMERO DE CUENTA\n"
+"Banco : NOMBRE DE BANCO\n"
+"\n"
+"Si no recibimos su pago en 48 horas, cancelaremos la órden."
 
 #: includes/class-acadp-activator.php:138
 msgid ""
@@ -2508,6 +2522,31 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"La órden se ha creado.\n"
+"\n"
+"Esta notificación es para la órden #{order_id} en el sitio {site_name}.\n"
+"\n"
+"Realice su pago directamente en nuestra cuenta bancaria. Por favor use el ID "
+"de su órden como referencia de pago. Su órden no será aprobada hasta que los "
+"fondos se reflejen en nuestra cuenta.\n"
+"\n"
+"Detalles de la cuenta :\n"
+"\n"
+"Nombre de cuenta : NOMBRE DE CUENTA\n"
+"Número de cuenta : NÚMERO DE CUENTA\n"
+"Banco : NOMBRE BANCO\n"
+"\n"
+"Si no hemos recibido su pago en 48 horas, cancelaremos la órden.\n"
+"Puede ver los detalles de su órden directamente yendo al siguiente enlace "
+"después de iniciar sesión:\n"
+"{order_page}\n"
+"\n"
+"{order_details}\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:182
 msgid "[{site_name}] Order completed"
@@ -2560,6 +2599,17 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Usted ha recibido una respuesta a su oferta en {listing_url}.\n"
+"\n"
+"Nombre: {sender_name}\n"
+"Correo electrónico: {sender_email}\n"
+"Mensaje: {message}\n"
+"Hora: {now}\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:207 includes/functions-acadp-html.php:33
 msgid "I agree to the terms and conditions"
@@ -2632,6 +2682,11 @@ msgid ""
 ">Listing Status:{listing_status}<br /><br />Please do not respond to this "
 "message. It is automatically generated and is for information purposes only."
 msgstr ""
+"Estimado Administrador,<br /><br />Ha recibido un nuevo anuncio en el sitio "
+"{site_name}.<br />Este correo contiene los detalles del anuncio:<br /><br /"
+">ID:{listing_id}<br />Título:{listing_title}<br />Estado:{listing_status}"
+"<br /><br />Por favor no responda a este mensaje. Es generado "
+"automáticamente y únicamente con fines de información."
 
 #: includes/functions-acadp-email.php:278
 msgid "[{site_name}] Listing \"{listing_title}\" edited"
@@ -2646,6 +2701,12 @@ msgid ""
 "><br />Please do not respond to this message. It is automatically generated "
 "and is for information purposes only."
 msgstr ""
+"Estimado Administrador,<br /><br />Esta notificación es para el anuncio en "
+"el sitio {site_name} \"{listing_title}\" y se ha editado.<br />Este correo "
+"contiene los detalles del anuncio:<br /><br />ID:{listing_id}<br />Título:"
+"{listing_title}<br />Estado:{listing_status}<br /><br />Por favor no "
+"responda a este mensaje. Es generado automáticamente y únicamente con fines "
+"de información."
 
 #: includes/functions-acadp-email.php:373
 msgid "[{site_name}] Listing \"{listing_title}\" expired"
@@ -2660,6 +2721,12 @@ msgid ""
 ">Please do not respond to this message. It is automatically generated and is "
 "for information purposes only."
 msgstr ""
+"Estimado Administrador,<br /><br />Esta notificación es para el anuncio en "
+"el sitio {site_name} \"{listing_title}\" y ha expirado.<br />Este correo "
+"contiene los detalles del anuncio:<br /><br />ID:{listing_id}<br />Título:"
+"{listing_title}<br />Expired on:{expiration_date}<br /><br />Por favor no "
+"responda a este mensaje. Es generado automáticamente y únicamente con fines "
+"de información."
 
 #: includes/functions-acadp-email.php:524
 msgid "[{site_name}] A new order has been created on your website"
@@ -2674,6 +2741,12 @@ msgid ""
 "<br /><br />Please do not respond to this message. It is automatically "
 "generated and is for information purposes only."
 msgstr ""
+"Estimado Administrador,<br /><br />The order is now created.<br /><br />Esta "
+"notificación es para la órden #{order_id} en el sitio {site_name}.<br /"
+">Puede ver los detalles de la órden directamente yendo al siguiente enlace "
+"después de iniciar sesión:<br />{order_page}<br /><br />{order_details}<br /"
+"><br />Por favor no responda a este mensaje. Es generado automáticamente y "
+"únicamente con fines de información."
 
 #: includes/functions-acadp-email.php:674
 msgid ""
@@ -2693,6 +2766,13 @@ msgid ""
 "><br />Please do not respond to this message. It is automatically generated "
 "and is for information purposes only."
 msgstr ""
+"Estimado Administrador,<br /><br />Una notificación de pago fue recibida con "
+"estado Completado. La órden ha sido confirmada.<br /><br />Esta notificación "
+"es para la órden #{order_id} en el sitio {site_name}.<br />Puede ver los "
+"detalles de la órden directamente yendo al siguiente enlace después de "
+"iniciar sesión:<br />{order_page}<br /><br />{order_details}<br /><br />Por "
+"favor no responda a este mensaje. Es generado automáticamente y únicamente "
+"con fines de información."
 
 #: includes/functions-acadp-email.php:788
 msgid ""
@@ -2702,10 +2782,16 @@ msgid ""
 "{now}<br /><br />This is just a copy of the original email and was already "
 "sent to the listing owner. You don't have to reply this unless necessary."
 msgstr ""
+"Estimado Administrador,<br /><br />Un anuncio en su sitio {site_name} "
+"recibió un mensaje.<br /><br />URL: {listing_url}<br /><br />Nombre: "
+"{sender_name}<br />Correo electrónico: {sender_email}<br />Mensaje: {message}"
+"<br />Hora: {now}<br /><br />Esta es solo una copia del correo original y ya "
+"fue enviada al propietario del anuncio. No responda este correo a menos que "
+"sea necesario."
 
 #: includes/functions-acadp-email.php:898
 msgid "[{site_name}] Report Abuse via \"{listing_title}\""
-msgstr ""
+msgstr "[{site_name}] Reportar Abuso por \"{listing_title}\""
 
 #: includes/functions-acadp-email.php:901
 msgid ""
@@ -2713,6 +2799,9 @@ msgid ""
 "at {listing_url}.<br /><br />Name: {sender_name}<br />Email: {sender_email}"
 "<br />Message: {message}<br />Time: {now}"
 msgstr ""
+"Estimado Administrador,<br /><br />Este es un correo de reporte de abuso "
+"para un anuncio en {listing_url}.<br /><br />Nombre: {sender_name}<br /"
+">Correo electrónico: {sender_email}<br />Mensaje: {message}<br />Hora: {now}"
 
 #: includes/functions-acadp-email.php:936
 msgid "Item(s)"
@@ -2862,7 +2951,7 @@ msgstr "Página %d de %d"
 #: public/partials/search/acadp-public-search-form-vertical-display.php:43
 #: public/partials/user/acadp-public-edit-listing-display.php:20
 msgid "Select a category"
-msgstr "Seleccione una categoría"
+msgstr "Seleccionar categoría"
 
 #: includes/functions-acadp-permalinks.php:325
 #: public/partials/listings/acadp-public-listings-grid-display.php:121
