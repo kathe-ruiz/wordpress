@@ -1,10 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Advanced Classifieds and Directory Pro\n"
-"POT-Creation-Date: 2017-03-04 16:45+0530\n"
-"PO-Revision-Date: 2017-05-16 07:32-0500\n"
+"POT-Creation-Date: 2017-05-17 08:55-0500\n"
+"PO-Revision-Date: 2017-05-17 10:23-0500\n"
 "Last-Translator: Julian <jbonilla@swapps.co>\n"
 "Language-Team: Swapps <hi@swapps.co>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_x\n"
-"Language: es\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/class-acadp-admin-categories.php:35
@@ -25,8 +25,8 @@ msgstr "Categorías"
 
 #: admin/class-acadp-admin-categories.php:36
 #: admin/partials/listings/acadp-admin-listing-details-display.php:12
-#: includes/class-acadp-activator.php:246
 #: public/partials/user/acadp-public-edit-listing-display.php:16
+#: includes/class-acadp-activator.php:246
 msgid "Category"
 msgstr "Categoría"
 
@@ -173,6 +173,94 @@ msgstr "Buscable"
 msgid "Order"
 msgstr "Orden"
 
+#: admin/class-acadp-admin.php:56
+#: admin/partials/listings/acadp-admin-listing-images-display.php:29
+#: public/partials/user/acadp-public-manage-listings-display.php:114
+msgid "Edit"
+msgstr "Editar"
+
+#: admin/class-acadp-admin.php:57
+#: admin/partials/listings/acadp-admin-listing-images-display.php:31
+#: public/class-acadp-public-user.php:623
+#: public/partials/user/acadp-public-edit-listing-display.php:178
+msgid "Delete Permanently"
+msgstr "Eliminar Permanentemente"
+
+#: admin/class-acadp-admin.php:79
+msgid "ADVANCED CLASSIFIEDS & DIRECTORY PRO"
+msgstr "CLASIFICADOS AVANZADOS & DIRECTORIO PRO"
+
+#: admin/class-acadp-admin.php:80
+msgid "Read our Online Documentation"
+msgstr "Lea nuestra documentación en línea."
+
+#: admin/class-acadp-admin.php:80
+msgid "Get help from our Support"
+msgstr "Obtenga ayuda de nuestro soporte"
+
+#: admin/class-acadp-admin.php:81
+msgid "Check our Premium Add-ons"
+msgstr "Consulte nuestros complementos Premium"
+
+#: admin/class-acadp-admin-locations.php:38
+#: admin/class-acadp-admin-locations.php:40
+#: includes/class-acadp-activator.php:247
+#: widgets/locations/class-acadp-widget-locations.php:164
+msgid "Locations"
+msgstr "Ubicaciones"
+
+#: admin/class-acadp-admin-locations.php:39
+#: admin/partials/listings/acadp-admin-contact-details-display.php:20
+#: public/partials/user/acadp-public-edit-listing-display.php:92
+#: includes/class-acadp-activator.php:248
+msgid "Location"
+msgstr "Ubicación"
+
+#: admin/class-acadp-admin-locations.php:41
+#: admin/class-acadp-admin-listings.php:620
+msgid "All Locations"
+msgstr "Todas las Ubicaciones"
+
+#: admin/class-acadp-admin-locations.php:42
+msgid "Parent Location"
+msgstr "Ubicación Superior"
+
+#: admin/class-acadp-admin-locations.php:43
+msgid "Parent Location:"
+msgstr "Ubicación Superior:"
+
+#: admin/class-acadp-admin-locations.php:44
+msgid "New Location Name"
+msgstr "Nombre de Nueva Ubicación"
+
+#: admin/class-acadp-admin-locations.php:45
+msgid "Add New Location"
+msgstr "Agregar Nueva Ubicación"
+
+#: admin/class-acadp-admin-locations.php:46
+msgid "Edit Location"
+msgstr "Editar Ubicación"
+
+#: admin/class-acadp-admin-locations.php:47
+msgid "Update Location"
+msgstr "Actualizar Ubicación"
+
+#: admin/class-acadp-admin-locations.php:48
+msgid "View Location"
+msgstr "Ver Ubicación"
+
+#: admin/class-acadp-admin-locations.php:49
+msgid "Separate Locations with commas"
+msgstr "Separar Ubicaciones con comas"
+
+#: admin/class-acadp-admin-locations.php:50
+msgid "Add or remove Locations"
+msgstr "Agregar o eliminar ubicaciones"
+
+#: admin/class-acadp-admin-locations.php:53
+msgid "Search Locations"
+msgstr "Buscar Ubicación"
+
 #: admin/class-acadp-admin-listings.php:35
 #: includes/class-acadp-activator.php:244
 #: widgets/listings/class-acadp-widget-listings.php:84
@@ -193,8 +281,8 @@ msgid "All Listings"
 msgstr "Todos los Listados"
 
 #: admin/class-acadp-admin-listings.php:40
-#: includes/functions-acadp-permalinks.php:162
 #: public/partials/user/acadp-public-manage-listings-display.php:26
+#: includes/functions-acadp-permalinks.php:162
 msgid "Add New Listing"
 msgstr "Agregar Nuevo Listado"
 
@@ -239,11 +327,6 @@ msgstr "Imágenes"
 msgid "Video"
 msgstr "Video"
 
-#: admin/class-acadp-admin-listings.php:620
-#: admin/class-acadp-admin-locations.php:41
-msgid "All Locations"
-msgstr "Todas las Ubicaciones"
-
 #: admin/class-acadp-admin-listings.php:641
 msgid "All listings"
 msgstr "Todos los Listados"
@@ -273,155 +356,15 @@ msgstr "Expira el"
 
 #: admin/class-acadp-admin-listings.php:712
 #: admin/class-acadp-admin-payments.php:177
-#: public/partials/payments/acadp-public-payment-history-display.php:19
 #: public/partials/user/acadp-public-manage-listings-display.php:78
+#: public/partials/payments/acadp-public-payment-history-display.php:19
 msgid "Status"
 msgstr "Estado"
 
 #: admin/class-acadp-admin-listings.php:746
 #, php-format
 msgid "%s ago"
-msgstr ""
-
-#: admin/class-acadp-admin-locations.php:38
-#: admin/class-acadp-admin-locations.php:40
-#: includes/class-acadp-activator.php:247
-#: widgets/locations/class-acadp-widget-locations.php:164
-msgid "Locations"
-msgstr "Ubicaciones"
-
-#: admin/class-acadp-admin-locations.php:39
-#: admin/partials/listings/acadp-admin-contact-details-display.php:20
-#: includes/class-acadp-activator.php:248
-#: public/partials/user/acadp-public-edit-listing-display.php:92
-msgid "Location"
-msgstr "Ubicación"
-
-#: admin/class-acadp-admin-locations.php:42
-msgid "Parent Location"
-msgstr "Ubicación Superior"
-
-#: admin/class-acadp-admin-locations.php:43
-msgid "Parent Location:"
-msgstr "Ubicación Superior:"
-
-#: admin/class-acadp-admin-locations.php:44
-msgid "New Location Name"
-msgstr "Nombre de Nueva Ubicación"
-
-#: admin/class-acadp-admin-locations.php:45
-msgid "Add New Location"
-msgstr "Agregar Nueva Ubicación"
-
-#: admin/class-acadp-admin-locations.php:46
-msgid "Edit Location"
-msgstr "Editar Ubicación"
-
-#: admin/class-acadp-admin-locations.php:47
-msgid "Update Location"
-msgstr "Actualizar Ubicación"
-
-#: admin/class-acadp-admin-locations.php:48
-msgid "View Location"
-msgstr "Ver Ubicación"
-
-#: admin/class-acadp-admin-locations.php:49
-msgid "Separate Locations with commas"
-msgstr "Separar Ubicaciones con comas"
-
-#: admin/class-acadp-admin-locations.php:50
-msgid "Add or remove Locations"
-msgstr "Agregar o eliminar ubicaciones"
-
-#: admin/class-acadp-admin-locations.php:53
-msgid "Search Locations"
-msgstr "Buscar Ubicación"
-
-#: admin/class-acadp-admin-payments.php:35
-#: admin/class-acadp-admin-payments.php:37
-#: admin/class-acadp-admin-payments.php:39
-#: includes/class-acadp-activator.php:258
-msgid "Payment History"
-msgstr "Historial de Pagos"
-
-#: admin/class-acadp-admin-payments.php:36
-#: admin/class-acadp-admin-payments.php:38
-msgid "Payment"
-msgstr "Pagos"
-
-#: admin/class-acadp-admin-payments.php:40
-msgid "Add New Payment"
-msgstr "Agregar Nuevo Pago"
-
-#: admin/class-acadp-admin-payments.php:42
-msgid "New Payment"
-msgstr "Nuevo Pago"
-
-#: admin/class-acadp-admin-payments.php:43
-msgid "Edit Payment"
-msgstr "Editar Pago"
-
-#: admin/class-acadp-admin-payments.php:44
-msgid "Update Payment"
-msgstr "Actualizar Pago"
-
-#: admin/class-acadp-admin-payments.php:45
-msgid "View Payment"
-msgstr "Ver Pago"
-
-#: admin/class-acadp-admin-payments.php:46
-msgid "Search Payment"
-msgstr "Buscar Pago"
-
-#: admin/class-acadp-admin-payments.php:47
-msgid "No payments found"
-msgstr "No se encuentran pagos"
-
-#: admin/class-acadp-admin-payments.php:48
-msgid "No payments found in Trash"
-msgstr "No se encuentran pagos en papelera"
-
-#: admin/class-acadp-admin-payments.php:52
-msgid "acadp_payments"
-msgstr ""
-
-#: admin/class-acadp-admin-payments.php:124
-msgid "All payments"
-msgstr "Todos los pagos"
-
-#: admin/class-acadp-admin-payments.php:170
-#: public/partials/payments/acadp-public-payment-history-display.php:13
-msgid "Order ID"
-msgstr "ID de Orden"
-
-#: admin/class-acadp-admin-payments.php:171
-#: public/partials/payments/acadp-public-payment-history-display.php:14
-msgid "Details"
-msgstr "Detalles"
-
-#: admin/class-acadp-admin-payments.php:172
-#: public/partials/payments/acadp-public-payment-history-display.php:15
-msgid "Amount"
-msgstr "Cantidad"
-
-#: admin/class-acadp-admin-payments.php:174
-#: public/partials/payments/acadp-public-payment-history-display.php:17
-msgid "Transaction ID"
-msgstr "ID de Transacción"
-
-#: admin/class-acadp-admin-payments.php:175
-msgid "Customer"
-msgstr "Cliente"
-
-#: admin/class-acadp-admin-payments.php:176
-#: public/partials/payments/acadp-public-payment-history-display.php:18
-#: public/partials/payments/acadp-public-payment-receipt-display.php:40
-msgid "Date"
-msgstr "Fecha"
-
-#: admin/class-acadp-admin-payments.php:312
-msgid "Error updating post."
-msgstr "Error actualizando publicación"
+msgstr "Hace %s"
 
 #: admin/class-acadp-admin-settings.php:64
 #: admin/class-acadp-admin-settings.php:65
@@ -446,15 +389,15 @@ msgstr "Monetizar"
 
 #: admin/class-acadp-admin-settings.php:98
 #: admin/partials/listings/acadp-admin-contact-details-display.php:63
-#: public/partials/listing/acadp-public-listing-display.php:217
 #: public/partials/user/acadp-public-edit-listing-display.php:120
+#: public/partials/listing/acadp-public-listing-display.php:217
 #: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:22
 msgid "Email"
 msgstr "Correo electrónico"
 
 #: admin/class-acadp-admin-settings.php:99
 msgid "Misc"
-msgstr ""
+msgstr "Otros"
 
 #: admin/class-acadp-admin-settings.php:133
 #: admin/class-acadp-admin-settings.php:1244
@@ -741,11 +684,11 @@ msgstr "Conteo de Vistas"
 
 #: admin/class-acadp-admin-settings.php:498
 msgid "Turn on listing renewal option?"
-msgstr "¿Activar la opción de renovación de la lista?"
+msgstr "¿Activar la opción de renovación de anuncios?"
 
 #: admin/class-acadp-admin-settings.php:511
 msgid "Delete expired Listings (in days)"
-msgstr "Eliminar listados expirados (en días)"
+msgstr "Eliminar anuncios vencidos (en días)"
 
 #: admin/class-acadp-admin-settings.php:518
 msgid ""
@@ -757,7 +700,7 @@ msgstr ""
 
 #: admin/class-acadp-admin-settings.php:531
 msgid "All Listings / Search Results page"
-msgstr "Todos los listados / Página de resultados de la búsqueda"
+msgstr "Todos los anuncios / Página de resultados de la búsqueda"
 
 #: admin/class-acadp-admin-settings.php:538
 msgid "Display options"
@@ -766,7 +709,7 @@ msgstr "Opciones de Pantalla"
 #: admin/class-acadp-admin-settings.php:546
 #: admin/class-acadp-admin-settings.php:564
 msgid "List view"
-msgstr "Vista de Listado"
+msgstr "Vista de Lista"
 
 #: admin/class-acadp-admin-settings.php:547
 #: admin/class-acadp-admin-settings.php:565
@@ -788,32 +731,32 @@ msgstr "Vista por defecto"
 
 #: admin/class-acadp-admin-settings.php:573
 msgid "Include results from"
-msgstr "Incluir resultados de"
+msgstr "Incluír resultados de"
 
 #: admin/class-acadp-admin-settings.php:581
 msgid "Child categories"
-msgstr "Categoría inferior"
+msgstr "Categorías inferiores"
 
 #: admin/class-acadp-admin-settings.php:582
 msgid "Child locations"
-msgstr "Categoría inferior"
+msgstr "Ubicaciones inferiores"
 
 #: admin/class-acadp-admin-settings.php:589
 msgid "Order listings by"
-msgstr "Ordenar listados por"
+msgstr "Ordenar anuncios por"
 
 #: admin/class-acadp-admin-settings.php:597
 #: admin/class-acadp-admin-settings.php:1360
 #: admin/class-acadp-admin-settings.php:1437
 #: public/partials/user/acadp-public-edit-listing-display.php:47
-#: widgets/categories/views/acadp-widget-admin-categories-display.php:9
-#: widgets/listing-address/views/acadp-widget-admin-listing-address-display.php:9
 #: widgets/listing-contact/views/acadp-widget-admin-listing-contact-display.php:9
+#: widgets/categories/views/acadp-widget-admin-categories-display.php:9
 #: widgets/listing-video/views/acadp-widget-admin-listing-video-display.php:9
+#: widgets/search/views/acadp-widget-admin-search-display.php:9
+#: widgets/locations/views/acadp-widget-admin-locations-display.php:9
 #: widgets/listings/views/acadp-widget-admin-listings-display.php:9
 #: widgets/listings/views/acadp-widget-admin-listings-display.php:76
-#: widgets/locations/views/acadp-widget-admin-locations-display.php:9
-#: widgets/search/views/acadp-widget-admin-search-display.php:9
+#: widgets/listing-address/views/acadp-widget-admin-listing-address-display.php:9
 msgid "Title"
 msgstr "Título"
 
@@ -830,7 +773,7 @@ msgstr "Precio"
 
 #: admin/class-acadp-admin-settings.php:607
 msgid "Sort listings by"
-msgstr "Ordenar listados por"
+msgstr "Ordenar anuncios por"
 
 #: admin/class-acadp-admin-settings.php:615
 #: admin/class-acadp-admin-settings.php:781
@@ -849,28 +792,31 @@ msgstr "Descendente"
 #: admin/class-acadp-admin-settings.php:829
 #: widgets/listings/views/acadp-widget-admin-listings-display.php:127
 msgid "Number of columns"
-msgstr "Numero de Columnas"
+msgstr "Número de Columnas"
 
 #: admin/class-acadp-admin-settings.php:630
+msgid "Enter the number of columns you like to have in the \"Grid\" view."
+msgstr "Ingrese el número de columnas que desea tener en la página \"Grid\"."
+
 #: admin/class-acadp-admin-settings.php:636
 msgid "Listings per page"
-msgstr "Listados por página"
+msgstr "Anuncios por página"
 
 #: admin/class-acadp-admin-settings.php:643
 msgid ""
 "Number of listings to show per page. Use a value of \"0\" to show all "
 "listings."
 msgstr ""
-"Numero de listados que se muestran por pagina. Use un valor de \"0\" para "
+"Numero de anuncios que se muestran por pagina. Use un valor de \"0\" para "
 "mostrarlos todos"
 
 #: admin/class-acadp-admin-settings.php:649
 msgid "Show / Hide (in header)"
-msgstr "Mostrar / Esconder (en cabezote)"
+msgstr "Mostrar / Esconder (en la cabecera)"
 
 #: admin/class-acadp-admin-settings.php:657
 msgid "Listings count"
-msgstr "Conteo de Listados"
+msgstr "Conteo de Anuncios"
 
 #: admin/class-acadp-admin-settings.php:658
 msgid "Views selector"
@@ -878,7 +824,7 @@ msgstr "Selector de Vistas"
 
 #: admin/class-acadp-admin-settings.php:659
 msgid "\"Sort by\" dropdown"
-msgstr "\"Organizar por\" desplegable"
+msgstr "Dropdown \"Organizar por\" "
 
 #: admin/class-acadp-admin-settings.php:666
 msgid "Show / Hide (in each listing)"
@@ -958,7 +904,7 @@ msgstr "Nombre"
 #: admin/class-acadp-admin-settings.php:766
 #: admin/class-acadp-admin-settings.php:866
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: admin/class-acadp-admin-settings.php:773
 msgid "Sort categories by"
@@ -1101,6 +1047,8 @@ msgid ""
 "This is the page where all the categories are displayed. The "
 "[acadp_categories] short code must be on this page."
 msgstr ""
+"Esta es la página donde se muestran todas las categorías. El código "
+"[acadp_categories] debe estar en esta página."
 
 #: admin/class-acadp-admin-settings.php:1041
 msgid "Single category page"
@@ -1111,6 +1059,8 @@ msgid ""
 "This is the page where the listings from a particular category is displayed. "
 "The [acadp_category] short code must be on this page."
 msgstr ""
+"Esta es la página donde se muestran los anuncios de una categoría "
+"específica. El código [acadp_category] debe estar en esta página."
 
 #: admin/class-acadp-admin-settings.php:1055
 #: admin/class-acadp-admin-settings.php:2181
@@ -1122,6 +1072,8 @@ msgid ""
 "This is the page where all the locations are displayed. The "
 "[acadp_locations] short code must be on this page."
 msgstr ""
+"Esta es la página donde se muestran todas las ubicaciones. El código "
+"[acadp_locations] debe estar en esta página."
 
 #: admin/class-acadp-admin-settings.php:1069
 msgid "Single location page"
@@ -1217,21 +1169,51 @@ msgid "Checkout page"
 msgstr "Página de Comprobación"
 
 #: admin/class-acadp-admin-settings.php:1175
+msgid ""
+"This is the checkout page where users will complete their purchases. The "
+"[acadp_checkout] short code must be on this page."
+msgstr ""
+"Esta es la página de pago donde los usuarios completarán sus compras. El "
+"código [acadp_checkout] debe estar en esta página."
+
 #: admin/class-acadp-admin-settings.php:1181
 msgid "Payment receipt page"
 msgstr "Página de Pago Recibido"
 
 #: admin/class-acadp-admin-settings.php:1189
+msgid ""
+"This is the page users are sent to after completing their payments. The "
+"[acadp_payment_receipt] short code must be on this page."
+msgstr ""
+"Esta es la página donde los usuarios son redirigidos después de terminar sus "
+"pagos. El código [acadp_payment_receipt] debe estar en esta página."
+
 #: admin/class-acadp-admin-settings.php:1195
 msgid "Failed Transaction Page"
 msgstr "Página Transacción fallida"
 
 #: admin/class-acadp-admin-settings.php:1203
+msgid ""
+"This is the page users are sent to if their transaction is cancelled or "
+"fails. The [acadp_payment_errors]...[/acadp_payment_errors] short code must "
+"be on this page."
+msgstr ""
+"Esta es la página donde los usuarios son redirigidos si hay algún error en "
+"la transacción. El código [acadp_payment_errors]...[/acadp_payment_errors] "
+"debe estar en esta página."
+
 #: admin/class-acadp-admin-settings.php:1209
 msgid "Payment history page"
 msgstr "Página de Historial de Pagos"
 
 #: admin/class-acadp-admin-settings.php:1217
+msgid ""
+"This is the page where the users can view their payment history. The "
+"[acadp_payment_history] short code must be on this page."
+msgstr ""
+"Esta es la página donde los usuarios pueden ver su historial de pagos. El "
+"código [acadp_payment_history] debe estar en esta página."
+
 #: admin/class-acadp-admin-settings.php:1251
 #: admin/class-acadp-admin-settings.php:1424
 msgid "Enable / Disable"
@@ -1413,6 +1395,15 @@ msgid "Display email address fields publicly?"
 msgstr "¿Mostrar los campos de dirección de correo electrónico públicamente?"
 
 #: admin/class-acadp-admin-settings.php:1602
+msgid ""
+"Shows the email address of the listing owner to all web users. NOT "
+"RECOMMENDED as this increases spam to the address and allows spam bots to "
+"harvest it for future use."
+msgstr ""
+"Muestra el correo electrónico del dueño del anuncio a todos los usuarios "
+"web. NO SE RECOMIENDA ya que aumenta el spam para los correos y permite a "
+"los bots de spam guardarlos para uso futuro."
+
 #: admin/class-acadp-admin-settings.php:1615
 msgid "Listing submitted email ( confirmation )"
 msgstr "Listado correo electrónico enviado ( confirmación ) "
@@ -1675,7 +1666,7 @@ msgstr "Nombre del Remitente"
 
 #: admin/class-acadp-admin-settings.php:2087
 msgid "Sender's email address"
-msgstr "email del Remitente"
+msgstr "Email del Remitente"
 
 #: admin/class-acadp-admin-settings.php:2088
 msgid "Contact message"
@@ -1683,20 +1674,22 @@ msgstr "Mensaje de Contacto"
 
 #: admin/class-acadp-admin-settings.php:2117
 msgid "Permalink slugs"
-msgstr ""
+msgstr "Slugs de enlaces permanentes"
 
 #: admin/class-acadp-admin-settings.php:2124
 #: admin/class-acadp-admin-settings.php:2178
 msgid "Listing detail page"
-msgstr "Pagina de listados detallados "
+msgstr "Página de detalle del anuncio"
 
 #: admin/class-acadp-admin-settings.php:2131
 msgid "Replaces the SLUG value used by custom post type \"acadp_listings\"."
 msgstr ""
+"Reemplaza el valor SLUG usado por el post type personalizado \"acadp_listings"
+"\"."
 
 #: admin/class-acadp-admin-settings.php:2144
 msgid "Socialshare buttons"
-msgstr "Botones de socialshare "
+msgstr "Botones de compartir en redes sociales"
 
 #: admin/class-acadp-admin-settings.php:2151
 msgid "Enable services"
@@ -1759,7 +1752,7 @@ msgstr "Habilitar reCAPTCHA"
 
 #: admin/class-acadp-admin-settings.php:2250
 msgid "New Listing form"
-msgstr "Nuevo formulario de listado"
+msgstr "Nuevo formulario de anuncio"
 
 #: admin/class-acadp-admin-settings.php:2251
 msgid "Contact forms"
@@ -1767,7 +1760,7 @@ msgstr "Formulario de Contacto"
 
 #: admin/class-acadp-admin-settings.php:2252
 msgid "Report abuse form"
-msgstr "Reportar formulario de abuso"
+msgstr "Formulario de reportar abuso"
 
 #: admin/class-acadp-admin-settings.php:2259
 msgid "Site key"
@@ -1779,11 +1772,11 @@ msgstr "Clave Secreta"
 
 #: admin/class-acadp-admin-settings.php:2290
 msgid "Terms of agreement"
-msgstr "Terminos del Acuerdo "
+msgstr "Términos del Acuerdo "
 
 #: admin/class-acadp-admin-settings.php:2297
 msgid "Agree to terms"
-msgstr "Aceptar terminos"
+msgstr "Aceptar términos"
 
 #: admin/class-acadp-admin-settings.php:2304
 msgid ""
@@ -1795,7 +1788,7 @@ msgstr ""
 
 #: admin/class-acadp-admin-settings.php:2310
 msgid "Agree to terms label"
-msgstr "Aceptar la etiqueta de terminos "
+msgstr "Aceptar la etiqueta de términos "
 
 #: admin/class-acadp-admin-settings.php:2317
 msgid "Label shown next to the agree to terms check box."
@@ -1924,56 +1917,98 @@ msgid "Select a page"
 msgstr "Seleccionar página"
 
 #: admin/class-acadp-admin-settings.php:2706
-#: public/partials/search/acadp-public-search-form-inline-display.php:25
 #: public/partials/search/acadp-public-search-form-vertical-display.php:21
 #: public/partials/search/acadp-public-search-form-vertical-display.php:24
+#: public/partials/search/acadp-public-search-form-inline-display.php:25
 #: public/partials/user/acadp-public-edit-listing-display.php:95
 msgid "Select a location"
 msgstr "Seleccionar ubicación"
 
-#: admin/class-acadp-admin.php:56
-#: admin/partials/listings/acadp-admin-listing-images-display.php:29
-#: public/partials/user/acadp-public-manage-listings-display.php:114
-msgid "Edit"
-msgstr "Editar"
+#: admin/class-acadp-admin-payments.php:35
+#: admin/class-acadp-admin-payments.php:37
+#: admin/class-acadp-admin-payments.php:39
+#: includes/class-acadp-activator.php:258
+msgid "Payment History"
+msgstr "Historial de Pagos"
 
-#: admin/class-acadp-admin.php:57
-#: admin/partials/listings/acadp-admin-listing-images-display.php:31
-#: public/class-acadp-public-user.php:623
-#: public/partials/user/acadp-public-edit-listing-display.php:178
-msgid "Delete Permanently"
-msgstr "Eliminar Permanentemente"
+#: admin/class-acadp-admin-payments.php:36
+#: admin/class-acadp-admin-payments.php:38
+msgid "Payment"
+msgstr "Pagos"
 
-#: admin/class-acadp-admin.php:79
-msgid "ADVANCED CLASSIFIEDS & DIRECTORY PRO"
-msgstr "CLASIFICADOS AVANZADOS & DIRECTORIO PRO"
+#: admin/class-acadp-admin-payments.php:40
+msgid "Add New Payment"
+msgstr "Agregar Nuevo Pago"
 
-#: admin/class-acadp-admin.php:80
-msgid "Read our Online Documentation"
-msgstr "Lea nuestra documentación online."
+#: admin/class-acadp-admin-payments.php:42
+msgid "New Payment"
+msgstr "Nuevo Pago"
 
-#: admin/class-acadp-admin.php:80
-msgid "Get help from our Support"
-msgstr "Obtenga ayuda desde nuestro soporte"
+#: admin/class-acadp-admin-payments.php:43
+msgid "Edit Payment"
+msgstr "Editar Pago"
 
-#: admin/class-acadp-admin.php:81
-msgid "Check our Premium Add-ons"
-msgstr "Consulte nuestros complementos Premium"
+#: admin/class-acadp-admin-payments.php:44
+msgid "Update Payment"
+msgstr "Actualizar Pago"
 
-#: admin/partials/categories/acadp-admin-image-field-display.php:10
-#: admin/partials/categories/acadp-admin-image-field-display.php:21
-msgid "Image"
-msgstr "Imagen"
+#: admin/class-acadp-admin-payments.php:45
+msgid "View Payment"
+msgstr "Ver Pago"
 
-#: admin/partials/categories/acadp-admin-image-field-display.php:14
-#: admin/partials/categories/acadp-admin-image-field-display.php:31
-msgid "Add Image"
-msgstr "Agregar imagen"
+#: admin/class-acadp-admin-payments.php:46
+msgid "Search Payment"
+msgstr "Buscar Pago"
 
-#: admin/partials/categories/acadp-admin-image-field-display.php:15
-#: admin/partials/categories/acadp-admin-image-field-display.php:32
-msgid "Remove Image"
-msgstr "Eliminar Imagen"
+#: admin/class-acadp-admin-payments.php:47
+msgid "No payments found"
+msgstr "No se encuentran pagos"
+
+#: admin/class-acadp-admin-payments.php:48
+msgid "No payments found in Trash"
+msgstr "No se encuentran pagos en papelera"
+
+#: admin/class-acadp-admin-payments.php:52
+msgid "acadp_payments"
+msgstr ""
+
+#: admin/class-acadp-admin-payments.php:124
+msgid "All payments"
+msgstr "Todos los pagos"
+
+#: admin/class-acadp-admin-payments.php:170
+#: public/partials/payments/acadp-public-payment-history-display.php:13
+msgid "Order ID"
+msgstr "ID de Orden"
+
+#: admin/class-acadp-admin-payments.php:171
+#: public/partials/payments/acadp-public-payment-history-display.php:14
+msgid "Details"
+msgstr "Detalles"
+
+#: admin/class-acadp-admin-payments.php:172
+#: public/partials/payments/acadp-public-payment-history-display.php:15
+msgid "Amount"
+msgstr "Cantidad"
+
+#: admin/class-acadp-admin-payments.php:174
+#: public/partials/payments/acadp-public-payment-history-display.php:17
+msgid "Transaction ID"
+msgstr "ID de Transacción"
+
+#: admin/class-acadp-admin-payments.php:175
+msgid "Customer"
+msgstr "Cliente"
+
+#: admin/class-acadp-admin-payments.php:176
+#: public/partials/payments/acadp-public-payment-history-display.php:18
+#: public/partials/payments/acadp-public-payment-receipt-display.php:40
+msgid "Date"
+msgstr "Fecha"
+
+#: admin/class-acadp-admin-payments.php:312
+msgid "Error updating post."
+msgstr "Error actualizando publicación"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:12
 msgid "Field Type"
@@ -1985,19 +2020,19 @@ msgstr "Texto"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:18
 msgid "Text Area"
-msgstr "Area de Texto"
+msgstr "Área de Texto"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:19
 msgid "Select"
-msgstr "Seleccionar"
+msgstr "Select"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:20
 msgid "Checkbox"
-msgstr "Caja"
+msgstr "Checkbox"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:21
 msgid "Radio Button"
-msgstr "Boton de Radio"
+msgstr "Radio Button"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:22
 msgid "URL"
@@ -2005,11 +2040,11 @@ msgstr "URL"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:28
 msgid "Field Instructions"
-msgstr "Campo de Instrucciones"
+msgstr "Instrucciones del campo"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:29
 msgid "Instructions for authors. Shown when submitting data"
-msgstr "Instrucciones para autores. Mostrar cuando esten cargando información"
+msgstr "Instrucciones para autores. Se muestra al ingresar información"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:37
 msgid "Required?"
@@ -2021,7 +2056,7 @@ msgstr "¿Requerido?"
 #: admin/partials/fields/acadp-admin-field-details-display.php:158
 #: admin/partials/fields/acadp-admin-field-options-display.php:30
 msgid "Yes"
-msgstr "Si"
+msgstr "Sí"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:46
 #: admin/partials/fields/acadp-admin-field-details-display.php:107
@@ -2037,7 +2072,7 @@ msgstr "Opciones"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:55
 msgid "Enter each choice on a new line."
-msgstr "Ingresar cada opcion en una nueva linea"
+msgstr "Ingresar cada opción en una nueva linea"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:56
 msgid "Red"
@@ -2049,11 +2084,11 @@ msgstr "Azul"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:58
 msgid "red : Red"
-msgstr "Rojo"
+msgstr "rojo : Rojo"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:59
 msgid "blue : Blue"
-msgstr "Azul"
+msgstr "azul : Azul"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:68
 #: admin/partials/fields/acadp-admin-field-details-display.php:79
@@ -2072,7 +2107,7 @@ msgstr "Ingresar cada valor por defecto en una nueva linea"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:97
 msgid "Allow Null?"
-msgstr "¿Permitir Nula?"
+msgstr "¿Permitir vacío?"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:98
 msgid ""
@@ -2100,23 +2135,48 @@ msgstr "Establece la altura del área de texto"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:136
 msgid "Open link in a new window?"
-msgstr "¿Abrir link en una nueva ventana?"
+msgstr "¿Abrir enlace en una nueva ventana?"
 
 #: admin/partials/fields/acadp-admin-field-details-display.php:152
 msgid "Use rel=\"nofollow\" when displaying the link?"
-msgstr ""
+msgstr "¿Usar rel=\"nofollow\" al mostrar el enlace?"
 
 #: admin/partials/fields/acadp-admin-field-options-display.php:12
 msgid "Order No."
-msgstr "Orden No."
+msgstr "Órden No."
 
 #: admin/partials/fields/acadp-admin-field-options-display.php:13
 msgid "Fields are created in order from lowest to highest"
-msgstr "Los campos son creados en orden del menor al mayor"
+msgstr "Los campos son creados en orden de menor a mayor"
 
 #: admin/partials/fields/acadp-admin-field-options-display.php:23
 msgid "Include this field in the search form?"
-msgstr "¿Incluir este campo en el formulario de busquedas?"
+msgstr "¿Incluir este campo en el formulario de búsqueda?"
+
+#: admin/partials/categories/acadp-admin-image-field-display.php:10
+#: admin/partials/categories/acadp-admin-image-field-display.php:21
+msgid "Image"
+msgstr "Imagen"
+
+#: admin/partials/categories/acadp-admin-image-field-display.php:14
+#: admin/partials/categories/acadp-admin-image-field-display.php:31
+msgid "Add Image"
+msgstr "Agregar imagen"
+
+#: admin/partials/categories/acadp-admin-image-field-display.php:15
+#: admin/partials/categories/acadp-admin-image-field-display.php:32
+msgid "Remove Image"
+msgstr "Eliminar Imagen"
+
+#: admin/partials/listings/acadp-admin-listing-details-display.php:19
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:39
+msgid "Select a Category"
+msgstr "Seleccionar una categoría"
+
+#: admin/partials/listings/acadp-admin-listing-details-display.php:45
+#: public/partials/user/acadp-public-edit-listing-display.php:220
+msgid "How much do you want it to be listed for?"
+msgstr "¿Por cuanto tiempo quiere que figure?"
 
 #: admin/partials/listings/acadp-admin-contact-details-display.php:12
 #: public/partials/user/acadp-public-edit-listing-display.php:87
@@ -2148,27 +2208,13 @@ msgstr "Sitio Web"
 msgid "Don't show the Map"
 msgstr "No mostrar el mapa"
 
-#: admin/partials/listings/acadp-admin-custom-fields-display.php:45
-#: public/partials/search/acadp-public-custom-fields-inline-display.php:41
-#: public/partials/search/acadp-public-custom-fields-vertical-display.php:36
-#: public/partials/user/acadp-public-custom-fields-display.php:49
-msgid "Select an Option"
-msgstr "Seleccionar una opción"
+#: admin/partials/listings/acadp-admin-listing-video-display.php:12
+msgid "Your Video URL"
+msgstr "URL del Video"
 
-#: admin/partials/listings/acadp-admin-listing-details-display.php:19
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:39
-msgid "Select a Category"
-msgstr "Seleccionar una categoría"
-
-#: admin/partials/listings/acadp-admin-listing-details-display.php:45
-#: public/partials/user/acadp-public-edit-listing-display.php:220
-msgid "How much do you want it to be listed for?"
-msgstr "¿Por cuanto tiempo quiere que figure?"
-
-#: admin/partials/listings/acadp-admin-listing-images-display.php:45
-#: public/partials/user/acadp-public-edit-listing-display.php:195
-msgid "Upload Image"
-msgstr "Subir Imagen"
+#: admin/partials/listings/acadp-admin-listing-video-display.php:13
+msgid "Only YouTube &  Vimeo URLs"
+msgstr "Solo URLs de Youtube & Vimeo"
 
 #: admin/partials/listings/acadp-admin-listing-submitbox-display.php:11
 msgid "Expiration"
@@ -2230,13 +2276,611 @@ msgstr "Diciembre"
 msgid "Mark as"
 msgstr "Marcar como"
 
-#: admin/partials/listings/acadp-admin-listing-video-display.php:12
-msgid "Your Video URL"
-msgstr "URL del Video"
+#: admin/partials/listings/acadp-admin-custom-fields-display.php:45
+#: public/partials/search/acadp-public-custom-fields-inline-display.php:41
+#: public/partials/search/acadp-public-custom-fields-vertical-display.php:36
+#: public/partials/user/acadp-public-custom-fields-display.php:49
+msgid "Select an Option"
+msgstr "Seleccionar una opción"
 
-#: admin/partials/listings/acadp-admin-listing-video-display.php:13
-msgid "Only YouTube &  Vimeo URLs"
-msgstr "Solo URLs de Youtube & Vimeo"
+#: admin/partials/listings/acadp-admin-listing-images-display.php:45
+#: public/partials/user/acadp-public-edit-listing-display.php:195
+msgid "Upload Image"
+msgstr "Subir Imagen"
+
+#: public/class-acadp-public-user.php:66
+#: public/class-acadp-public-listing.php:227
+#: public/class-acadp-public-listing.php:265
+msgid "Invalid Captcha: Please try again."
+msgstr "Captcha inválido: Intente nuevamente."
+
+#: public/class-acadp-public-user.php:405
+#: public/class-acadp-public-user.php:1341
+#: public/class-acadp-public-categories.php:89
+#: public/class-acadp-public-categories.php:393
+#: public/class-acadp-public-locations.php:90
+#: public/class-acadp-public-locations.php:387
+#: public/class-acadp-public-listings.php:344
+#: public/class-acadp-public-payments.php:339
+#: public/class-acadp-public-search.php:100
+#: public/class-acadp-public-search.php:481
+msgid "No Results Found."
+msgstr "Sin resultados."
+
+#: public/class-acadp-public-user.php:469
+#: public/class-acadp-public-user.php:998
+#: public/class-acadp-public-payments.php:297
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tiene los permisos necesarios para acceder a esta página."
+
+#: public/class-acadp-public-user.php:639
+msgid "Invalid file format"
+msgstr "Formato de archivo inválido"
+
+#: public/class-acadp-public-user.php:714
+#: public/partials/user/acadp-public-edit-listing-display.php:249
+msgid "Save Draft"
+msgstr "Guardar Borrador"
+
+#: public/class-acadp-public.php:298
+msgid "You can't leave Captcha Code empty"
+msgstr "El código Captcha no puede estar vacío"
+
+#: public/class-acadp-public.php:299
+msgid "Sorry, you need to login first."
+msgstr "Lo sentimos, primero debe iniciar sesión."
+
+#: public/class-acadp-public.php:300
+#: public/partials/payments/acadp-public-checkout-display.php:71
+msgid "Proceed to payment"
+msgstr "Ir al pago"
+
+#: public/class-acadp-public.php:301
+msgid "Finish submission"
+msgstr "Terminar"
+
+#: public/class-acadp-public-payments.php:105
+#: public/class-acadp-public-payments.php:278
+msgid "Sorry, something went wrong."
+msgstr "Lo sentimos, algo salió mal."
+
+#: public/class-acadp-public-payments.php:140
+#, php-format
+msgid "[Order] Listing #%d"
+msgstr "[Órden] Anuncio #%d"
+
+#: public/class-acadp-public-listing.php:215
+#: public/class-acadp-public-listing.php:253
+msgid "Your message sent successfully."
+msgstr "Su mensaje fue enviado con éxito."
+
+#: public/class-acadp-public-listing.php:220
+#: public/class-acadp-public-listing.php:258
+msgid "Sorry! Please try again."
+msgstr "¡Lo sentimos! Por favor intente nuevamente."
+
+#: public/partials/categories/acadp-public-categories-text-list-display.php:23
+#: public/partials/categories/acadp-public-categories-image-grid-display.php:28
+#: public/partials/categories/acadp-public-categories-image-grid-display.php:36
+#: public/partials/locations/acadp-public-locations-display.php:23
+#: includes/functions-acadp-general.php:792
+#: includes/functions-acadp-general.php:876
+#, php-format
+msgid "View all posts in %s"
+msgstr "Ver todas las publicaciones en %s"
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:15
+#: public/partials/search/acadp-public-search-form-inline-display.php:17
+msgid "Enter your keyword here ..."
+msgstr "Ingrese su búsqueda ..."
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:40
+#: public/partials/search/acadp-public-search-form-vertical-display.php:43
+#: public/partials/search/acadp-public-search-form-inline-display.php:48
+#: public/partials/user/acadp-public-edit-listing-display.php:20
+#: includes/functions-acadp-html.php:491
+msgid "Select a category"
+msgstr "Seleccione una categoría"
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:64
+#: public/partials/search/acadp-public-search-form-inline-display.php:78
+msgid "Price Range"
+msgstr "Rango de precio"
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:67
+#: public/partials/search/acadp-public-search-form-inline-display.php:81
+msgid "min"
+msgstr "mín."
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:70
+#: public/partials/search/acadp-public-search-form-inline-display.php:84
+msgid "max"
+msgstr "máx."
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:77
+#: public/partials/search/acadp-public-search-form-inline-display.php:94
+#: includes/class-acadp-activator.php:249
+#: widgets/search/class-acadp-widget-search.php:143
+msgid "Search Listings"
+msgstr "Buscar anuncios"
+
+#: public/partials/search/acadp-public-search-form-vertical-display.php:78
+#: public/partials/search/acadp-public-search-form-inline-display.php:95
+#: public/partials/user/acadp-public-manage-listings-display.php:22
+msgid "Reset"
+msgstr "Limpiar"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:12
+msgid "Choose category"
+msgstr "Escoger categoría"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:43
+msgid "Listing details"
+msgstr "Detalles del anuncio"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:81
+#: public/partials/listing/acadp-public-listing-display.php:186
+msgid "Contact details"
+msgstr "Detalles de contacto"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:203
+msgid "Video URL"
+msgstr "URL del video"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:206
+msgid "Only YouTube & Vimeo URLs"
+msgstr "Solo URLs de YouTube & Vimeo"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:214
+msgid "Your price"
+msgstr "Su precio"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:226
+msgid ""
+"You can adjust your price anytime you like, even after your listing is "
+"published."
+msgstr ""
+"Puede cambiar el precio en cualquier momento, incluso después de haber "
+"publicado su anuncio"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:235
+msgid "Complete listing"
+msgstr "Completar anuncio"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:254
+msgid "Preview"
+msgstr "Previsualizar"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:258
+msgid "Place Listing"
+msgstr "Poner anuncio"
+
+#: public/partials/user/acadp-public-edit-listing-display.php:260
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:19
+msgid "Search by title"
+msgstr "Buscar por título"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:21
+msgid "Search"
+msgstr "Buscar"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:50
+#: public/partials/listings/acadp-public-listings-list-display.php:87
+#: public/partials/listings/acadp-public-listings-map-display.php:91
+#: public/partials/listings/acadp-public-listings-grid-display.php:97
+#: public/partials/listing/acadp-public-listing-display.php:21
+#: widgets/listings/views/acadp-widget-public-listings-thumbnail-display.php:39
+#: widgets/listings/views/acadp-widget-public-listings-map-display.php:33
+#: widgets/listings/views/acadp-widget-public-listings-media-display.php:41
+#, php-format
+msgid "Posted %s ago"
+msgstr "Publicado hace %s"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:66
+#: public/partials/listings/acadp-public-listings-list-display.php:115
+#: public/partials/listings/acadp-public-listings-map-display.php:119
+#: public/partials/listings/acadp-public-listings-grid-display.php:125
+#: public/partials/listing/acadp-public-listing-display.php:39
+#: widgets/listings/views/acadp-widget-public-listings-thumbnail-display.php:63
+#: widgets/listings/views/acadp-widget-public-listings-map-display.php:57
+#: widgets/listings/views/acadp-widget-public-listings-media-display.php:65
+#, php-format
+msgid "%d views"
+msgstr "Visto %d veces"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:95
+msgid "Renew"
+msgstr "Renovar"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:101
+msgid "Promote"
+msgstr "Promocionar"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:106
+msgid "Retry Payment"
+msgstr "Reintentar pago"
+
+#: public/partials/user/acadp-public-manage-listings-display.php:118
+msgid "Delete"
+msgstr "Borrar"
+
+#: public/partials/user/acadp-public-user-dashboard-display.php:25
+msgid "Total Listings"
+msgstr "Anuncios totales"
+
+#: public/partials/user/acadp-public-user-dashboard-display.php:33
+msgid "Active Listings"
+msgstr "Anuncios Activos"
+
+#: public/partials/listings/acadp-public-listings-list-display.php:19
+#: public/partials/listings/acadp-public-listings-map-display.php:19
+#: public/partials/listings/acadp-public-listings-grid-display.php:19
+#, php-format
+msgid "%d item(s) found"
+msgstr "%d ítem(s) encontrado(s)"
+
+#: public/partials/listings/acadp-public-listings-list-display.php:29
+#: public/partials/listings/acadp-public-listings-map-display.php:29
+#: public/partials/listings/acadp-public-listings-grid-display.php:29
+msgid "View as"
+msgstr "Ver como"
+
+#: public/partials/listings/acadp-public-listings-list-display.php:48
+#: public/partials/listings/acadp-public-listings-map-display.php:48
+#: public/partials/listings/acadp-public-listings-grid-display.php:48
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: public/partials/listings/acadp-public-listings-list-display.php:94
+#: public/partials/listings/acadp-public-listings-map-display.php:98
+#: public/partials/listings/acadp-public-listings-grid-display.php:104
+#: public/partials/listing/acadp-public-listing-display.php:35
+#: widgets/listings/views/acadp-widget-public-listings-thumbnail-display.php:46
+#: widgets/listings/views/acadp-widget-public-listings-map-display.php:40
+#: widgets/listings/views/acadp-widget-public-listings-media-display.php:48
+msgid "by"
+msgstr "por"
+
+#: public/partials/listings/acadp-public-listings-list-display.php:111
+#: public/partials/listings/acadp-public-listings-map-display.php:115
+#: public/partials/listings/acadp-public-listings-grid-display.php:121
+#: includes/functions-acadp-permalinks.php:325
+msgid "Remove from favourites"
+msgstr "Eliminar de favoritos"
+
+#: public/partials/payments/acadp-public-checkout-display.php:9
+msgid ""
+"Please review your order, and click Purchase once you are ready to proceed."
+msgstr "Por favor revise su órden, y haga clic en Comprar cuando esté listo."
+
+#: public/partials/payments/acadp-public-checkout-display.php:51
+#, php-format
+msgid "Payable amount [%s]"
+msgstr "Cantidad a pagar [%s]"
+
+#: public/partials/payments/acadp-public-checkout-display.php:58
+msgid "Choose payment method"
+msgstr "Escoger método de pago"
+
+#: public/partials/payments/acadp-public-checkout-display.php:70
+msgid "Not now"
+msgstr "No ahora"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:9
+msgid "Thank you for your order!"
+msgstr "¡Gracias por su órden!"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:21
+msgid "ORDER"
+msgstr "ÓRDEN"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:26
+msgid "Total Amount"
+msgstr "Cantidad total"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:54
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:65
+msgid "Payment Status"
+msgstr "Estado de pago"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:75
+msgid "Transaction Key"
+msgstr "Clave de transacción"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:82
+msgid "ITEMS"
+msgstr "ITEMS"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:85
+msgid "NAME"
+msgstr "NOMBRE"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:86
+msgid "PRICE"
+msgstr "PRECIO"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:100
+#: includes/functions-acadp-email.php:952
+#, php-format
+msgid "Total amount [%s]"
+msgstr "Total [%s]"
+
+#: public/partials/payments/acadp-public-payment-receipt-display.php:105
+msgid "View all my listings"
+msgstr "Ver todos mis anuncios"
+
+#: public/partials/listing/acadp-public-listing-display.php:124
+msgid "Check all listings by this user"
+msgstr "Ver todos los anuncios de este usuario"
+
+#: public/partials/listing/acadp-public-listing-display.php:144
+msgid "Report Abuse"
+msgstr "Reportar Abuso"
+
+#: public/partials/listing/acadp-public-listing-display.php:148
+msgid "Your Complaint"
+msgstr "Su reclamo"
+
+#: public/partials/listing/acadp-public-listing-display.php:149
+#: public/partials/listing/acadp-public-listing-display.php:222
+#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:27
+msgid "Message"
+msgstr "Mensaje"
+
+#: public/partials/listing/acadp-public-listing-display.php:155
+msgid "Close"
+msgstr "Cerrar"
+
+#: public/partials/listing/acadp-public-listing-display.php:156
+#: public/partials/listing/acadp-public-listing-display.php:228
+#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:33
+msgid "Submit"
+msgstr "Enviar"
+
+#: public/partials/listing/acadp-public-listing-display.php:203
+#: widgets/listing-contact/class-acadp-widget-listing-contact.php:122
+msgid "Contact this listing owner"
+msgstr "Contactar al dueño de este anuncio"
+
+#: public/partials/listing/acadp-public-listing-display.php:206
+#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:11
+msgid "Please, login to contact this listing owner."
+msgstr "Por favor inicie sesión para contactar al dueño de este anuncio"
+
+#: public/partials/listing/acadp-public-listing-display.php:211
+#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:16
+msgid "Your Name"
+msgstr "Su nombre"
+
+#: public/partials/listing/acadp-public-listing-display.php:216
+#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:21
+msgid "Your E-mail Address"
+msgstr "Su correo electrónico"
+
+#: public/partials/listing/acadp-public-listing-display.php:221
+#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:26
+msgid "Your Message"
+msgstr "Su Mensaje"
+
+#: includes/functions-acadp-general.php:48
+msgid "Forgot your password?"
+msgstr "¿Olvidó su contraseña?"
+
+#: includes/functions-acadp-general.php:49
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+#: includes/functions-acadp-general.php:244
+msgid "Created"
+msgstr "Creado"
+
+#: includes/functions-acadp-general.php:246
+msgid "Completed"
+msgstr "Completado"
+
+#: includes/functions-acadp-general.php:247
+msgid "Failed"
+msgstr "Fallido"
+
+#: includes/functions-acadp-general.php:248
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: includes/functions-acadp-general.php:249
+msgid "Refunded"
+msgstr "Reembolsado"
+
+#: includes/functions-acadp-general.php:281
+msgid "Set to Created"
+msgstr "Establecer como Creado"
+
+#: includes/functions-acadp-general.php:282
+msgid "Set to Pending"
+msgstr "Establecer como Pendiente"
+
+#: includes/functions-acadp-general.php:283
+msgid "Set to Completed"
+msgstr "Establecer como Completado"
+
+#: includes/functions-acadp-general.php:284
+msgid "Set to Failed"
+msgstr "Establecer como Fallido"
+
+#: includes/functions-acadp-general.php:285
+msgid "Set to Cancelled"
+msgstr "Establecer como Cancelado"
+
+#: includes/functions-acadp-general.php:286
+msgid "Set to Refunded"
+msgstr "Establecer como Reembolsado"
+
+#: includes/functions-acadp-general.php:677
+msgid "List"
+msgstr "Lista"
+
+#: includes/functions-acadp-general.php:680
+msgid "Grid"
+msgstr "Cuadrícula"
+
+#: includes/functions-acadp-general.php:683
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:116
+msgid "Map"
+msgstr "Mapa"
+
+#: includes/functions-acadp-general.php:972
+msgid "A to Z ( title )"
+msgstr "A a Z (título)"
+
+#: includes/functions-acadp-general.php:973
+msgid "Z to A ( title )"
+msgstr "Z a A (título)"
+
+#: includes/functions-acadp-general.php:974
+msgid "Recently added ( latest )"
+msgstr "Recientemente agregado (últimos)"
+
+#: includes/functions-acadp-general.php:975
+msgid "Date added ( oldest )"
+msgstr "Fecha de creación (más antiguos)"
+
+#: includes/functions-acadp-general.php:976
+msgid "Price ( low to high )"
+msgstr "Precio (menor a mayor)"
+
+#: includes/functions-acadp-general.php:977
+msgid "Price ( high to low )"
+msgstr "Precio (mayor a menor)"
+
+#: includes/functions-acadp-general.php:981
+msgid "Most viewed"
+msgstr "Más vistos"
+
+#: includes/functions-acadp-general.php:982
+msgid "Less viewed"
+msgstr "Menos vistos"
+
+#: includes/functions-acadp-general.php:1190
+msgid "Offline Payment"
+msgstr "Pago sin conexión"
+
+#: includes/functions-acadp-email.php:134
+#: includes/functions-acadp-email.php:273
+msgid "Active"
+msgstr "Activo"
+
+#: includes/functions-acadp-email.php:134
+#: includes/functions-acadp-email.php:273
+msgid "Pending review"
+msgstr "Pendiente de revisión"
+
+#: includes/functions-acadp-email.php:139
+msgid "[{site_name}] New Listing received"
+msgstr "[{site_name}] Nuevo anuncio recibido"
+
+#: includes/functions-acadp-email.php:142
+msgid ""
+"Dear Administrator,<br /><br />You have received a new listing on the "
+"website {site_name}.<br />This e-mail contains the listing details:<br /"
+"><br />Listing ID:{listing_id}<br />Listing Title:{listing_title}<br /"
+">Listing Status:{listing_status}<br /><br />Please do not respond to this "
+"message. It is automatically generated and is for information purposes only."
+msgstr ""
+
+#: includes/functions-acadp-email.php:278
+msgid "[{site_name}] Listing \"{listing_title}\" edited"
+msgstr "[{site_name}] Anuncio \"{listing_title}\" editado"
+
+#: includes/functions-acadp-email.php:281
+msgid ""
+"Dear Administrator,<br /><br />This notification was for the listing on the "
+"website {site_name} \"{listing_title}\" and is edited.<br />This e-mail "
+"contains the listing details:<br /><br />Listing ID:{listing_id}<br /"
+">Listing Title:{listing_title}<br />Listing Status:{listing_status}<br /"
+"><br />Please do not respond to this message. It is automatically generated "
+"and is for information purposes only."
+msgstr ""
+
+#: includes/functions-acadp-email.php:373
+msgid "[{site_name}] Listing \"{listing_title}\" expired"
+msgstr "[{site_name}] Anuncio \"{listing_title}\" vencido"
+
+#: includes/functions-acadp-email.php:376
+msgid ""
+"Dear Administrator,<br /><br />This notification was for the listing on the "
+"website {site_name} \"{listing_title}\" and is expired.<br />This e-mail "
+"contains the listing details:<br /><br />Listing ID:{listing_id}<br /"
+">Listing Title:{listing_title}<br />Expired on:{expiration_date}<br /><br /"
+">Please do not respond to this message. It is automatically generated and is "
+"for information purposes only."
+msgstr ""
+
+#: includes/functions-acadp-email.php:524
+msgid "[{site_name}] A new order has been created on your website"
+msgstr "[{site_name}] Se ha creado una nueva órden en su sitio"
+
+#: includes/functions-acadp-email.php:527
+msgid ""
+"Dear Administrator,<br /><br />The order is now created.<br /><br />This "
+"notification was for the order #{order_id} on the website {site_name}.<br /"
+">You can access the order details directly by clicking on the link below "
+"after logging in your back end:<br />{order_page}<br /><br />{order_details}"
+"<br /><br />Please do not respond to this message. It is automatically "
+"generated and is for information purposes only."
+msgstr ""
+
+#: includes/functions-acadp-email.php:674
+msgid ""
+"[{site_name}] Payment notification : payment Completed for order no."
+"{order_id}"
+msgstr ""
+"[{site_name}] Notificación de pago : Pago completado para la órden no."
+"{order_id}"
+
+#: includes/functions-acadp-email.php:677
+msgid ""
+"Dear Administrator,<br /><br />A Payment notification was received with the "
+"status Completed. The order is now confirmed.<br /><br />This notification "
+"was for the order #{order_id} on the website {site_name}.<br />You can "
+"access the order details directly by clicking on the link below after "
+"logging in your back end:<br />{order_page}<br /><br />{order_details}<br /"
+"><br />Please do not respond to this message. It is automatically generated "
+"and is for information purposes only."
+msgstr ""
+
+#: includes/functions-acadp-email.php:785
+#: includes/class-acadp-activator.php:186
+msgid "[{site_name}] Contact via \"{listing_title}\""
+msgstr "[{site_name}] Contacto a través de \"{listing_title}\""
+
+#: includes/functions-acadp-email.php:788
+msgid ""
+"Dear Administrator,<br /><br />A listing on your website {site_name} "
+"received a message.<br /><br />Listing URL: {listing_url}<br /><br />Name: "
+"{sender_name}<br />Email: {sender_email}<br />Message: {message}<br />Time: "
+"{now}<br /><br />This is just a copy of the original email and was already "
+"sent to the listing owner. You don't have to reply this unless necessary."
+msgstr ""
+
+#: includes/functions-acadp-email.php:898
+msgid "[{site_name}] Report Abuse via \"{listing_title}\""
+msgstr ""
+
+#: includes/functions-acadp-email.php:901
+msgid ""
+"Dear Administrator,<br /><br />This is an email abuse report for a listing "
+"at {listing_url}.<br /><br />Name: {sender_name}<br />Email: {sender_email}"
+"<br />Message: {message}<br />Time: {now}"
+msgstr ""
+
+#: includes/functions-acadp-email.php:936
+msgid "Item(s)"
+msgstr "Ítem(s)"
 
 #: includes/class-acadp-activator.php:61
 msgid "New"
@@ -2285,7 +2929,7 @@ msgstr ""
 
 #: includes/class-acadp-activator.php:152
 msgid "[{site_name}] Listing \"{listing_title}\" received"
-msgstr "[{sitio_nombre}] Listado \"{listado_titulo}\" recibido"
+msgstr "[{site_name}] Anuncio \"{listing_title}\" recibido"
 
 #: includes/class-acadp-activator.php:153
 msgid ""
@@ -2297,10 +2941,17 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Su anuncio \"{listing_title}\" ha sido recibido y está pendiente de "
+"revisión. Esta revisión tomará máximo 48 horas.\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:156
 msgid "[{site_name}] Listing \"{listing_title}\" published"
-msgstr ""
+msgstr "[{site_name}] Anuncio \"{listing_title}\" publicado"
 
 #: includes/class-acadp-activator.php:157
 msgid ""
@@ -2312,11 +2963,18 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Su anuncio \"{listing_title}\" ya está disponible en {listing_url} y es "
+"visible al público.\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:161
 #: includes/class-acadp-activator.php:165
 msgid "[{site_name}] {listing_title} - Expiration notice"
-msgstr ""
+msgstr "[{site_name}] {listing_title} - Aviso de vencimiento"
 
 #: includes/class-acadp-activator.php:162
 msgid ""
@@ -2328,6 +2986,13 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Su anuncio \"{listing_title}\" está próximo a vencer en {site_link}. Puede "
+"renovarlo aquí: {renewal_link}.\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:166
 msgid ""
@@ -2340,10 +3005,18 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Su anuncio \"{listing_title}\" en la categoría \"{category_name}\" venció el "
+"{expiration_date}. Para renovarlo diríjase al siguiente enlace.\n"
+"{renewal_link}\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:170
 msgid "[{site_name}] {listing_title} - Expiration reminder"
-msgstr ""
+msgstr "[{site_name}] {listing_title} - Recordatorio de vencimiento"
 
 #: includes/class-acadp-activator.php:171
 msgid ""
@@ -2357,11 +3030,19 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Vimos que no ha renovado su anuncio \"{listing_title}\" en la categoría "
+"\"{category_name}\" en {site_link} y queríamos recordarle que venció el "
+"{expiration_date}. Recuerde que aún puede renovarlo aquí: {renewal_link}.\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:174
 #: includes/class-acadp-activator.php:178
 msgid "[{site_name}] Thank you for your order"
-msgstr ""
+msgstr "[{site_name}] Gracias por su órden"
 
 #: includes/class-acadp-activator.php:175
 msgid ""
@@ -2379,6 +3060,19 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"La órden ha sido creada.\n"
+"\n"
+"Esta notificación es sobre la órden #{order_id} en el sitio {site_name}.\n"
+"Puede ver los detalles de la órden directamente al hacer clic en el "
+"siguiente enlace después de iniciar sesión:\n"
+"{order_page}\n"
+"\n"
+"{order_details}\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:179
 msgid ""
@@ -2411,7 +3105,7 @@ msgstr ""
 
 #: includes/class-acadp-activator.php:182
 msgid "[{site_name}] Order completed"
-msgstr ""
+msgstr "[{site_name}] órden completada"
 
 #: includes/class-acadp-activator.php:183
 msgid ""
@@ -2428,11 +3122,18 @@ msgid ""
 "Thanks,\n"
 "The Administrator of {site_name}"
 msgstr ""
-
-#: includes/class-acadp-activator.php:186
-#: includes/functions-acadp-email.php:785
-msgid "[{site_name}] Contact via \"{listing_title}\""
-msgstr ""
+"Estimado(a) {name},\n"
+"\n"
+"Su reciente órden #{order_id} en {site_name} ha sido completada.\n"
+"\n"
+"Puede ver los detalles de la órden directamente al hacer clic en el "
+"siguiente enlace después de iniciar sesión:\n"
+"{order_page}\n"
+"\n"
+"{order_details}\n"
+"\n"
+"Gracias,\n"
+"Administración de {site_name}"
 
 #: includes/class-acadp-activator.php:187
 msgid ""
@@ -2453,858 +3154,281 @@ msgstr ""
 msgid "I agree to the terms and conditions"
 msgstr "Acepto los términos y condiciones"
 
-#: includes/class-acadp-activator.php:249
-#: public/partials/search/acadp-public-search-form-inline-display.php:94
-#: public/partials/search/acadp-public-search-form-vertical-display.php:77
-#: widgets/search/class-acadp-widget-search.php:143
-msgid "Search Listings"
-msgstr ""
-
 #: includes/class-acadp-activator.php:250
 msgid "User Listings"
-msgstr ""
+msgstr "Anuncios del Usuario"
 
 #: includes/class-acadp-activator.php:251
 msgid "User Dashboard"
-msgstr ""
+msgstr "Panel del usuario"
 
 #: includes/class-acadp-activator.php:252
 msgid "Listing Form"
-msgstr ""
+msgstr "Formulario de Anuncios"
 
 #: includes/class-acadp-activator.php:253
 msgid "Manage Listings"
-msgstr ""
+msgstr "Administrar anuncios"
 
 #: includes/class-acadp-activator.php:254
 msgid "Favourite Listings"
-msgstr ""
+msgstr "Anuncios favoritos"
 
 #: includes/class-acadp-activator.php:255
 msgid "Checkout"
-msgstr ""
+msgstr "Pagar"
 
 #: includes/class-acadp-activator.php:256
 msgid "Payment Receipt"
-msgstr ""
+msgstr "Recibo de pago"
 
 #: includes/class-acadp-activator.php:257
 msgid "Transaction Failed"
-msgstr ""
+msgstr "Transacción Rechazada"
 
 #: includes/class-acadp-activator.php:257
 msgid "Your transaction failed, please try again or contact site support."
 msgstr ""
-
-#: includes/functions-acadp-email.php:134
-#: includes/functions-acadp-email.php:273
-msgid "Active"
-msgstr ""
-
-#: includes/functions-acadp-email.php:134
-#: includes/functions-acadp-email.php:273
-msgid "Pending review"
-msgstr ""
-
-#: includes/functions-acadp-email.php:139
-msgid "[{site_name}] New Listing received"
-msgstr ""
-
-#: includes/functions-acadp-email.php:142
-msgid ""
-"Dear Administrator,<br /><br />You have received a new listing on the "
-"website {site_name}.<br />This e-mail contains the listing details:<br /"
-"><br />Listing ID:{listing_id}<br />Listing Title:{listing_title}<br /"
-">Listing Status:{listing_status}<br /><br />Please do not respond to this "
-"message. It is automatically generated and is for information purposes only."
-msgstr ""
-
-#: includes/functions-acadp-email.php:278
-msgid "[{site_name}] Listing \"{listing_title}\" edited"
-msgstr ""
-
-#: includes/functions-acadp-email.php:281
-msgid ""
-"Dear Administrator,<br /><br />This notification was for the listing on the "
-"website {site_name} \"{listing_title}\" and is edited.<br />This e-mail "
-"contains the listing details:<br /><br />Listing ID:{listing_id}<br /"
-">Listing Title:{listing_title}<br />Listing Status:{listing_status}<br /"
-"><br />Please do not respond to this message. It is automatically generated "
-"and is for information purposes only."
-msgstr ""
-
-#: includes/functions-acadp-email.php:373
-msgid "[{site_name}] Listing \"{listing_title}\" expired"
-msgstr ""
-
-#: includes/functions-acadp-email.php:376
-msgid ""
-"Dear Administrator,<br /><br />This notification was for the listing on the "
-"website {site_name} \"{listing_title}\" and is expired.<br />This e-mail "
-"contains the listing details:<br /><br />Listing ID:{listing_id}<br /"
-">Listing Title:{listing_title}<br />Expired on:{expiration_date}<br /><br /"
-">Please do not respond to this message. It is automatically generated and is "
-"for information purposes only."
-msgstr ""
-
-#: includes/functions-acadp-email.php:524
-msgid "[{site_name}] A new order has been created on your website"
-msgstr ""
-
-#: includes/functions-acadp-email.php:527
-msgid ""
-"Dear Administrator,<br /><br />The order is now created.<br /><br />This "
-"notification was for the order #{order_id} on the website {site_name}.<br /"
-">You can access the order details directly by clicking on the link below "
-"after logging in your back end:<br />{order_page}<br /><br />{order_details}"
-"<br /><br />Please do not respond to this message. It is automatically "
-"generated and is for information purposes only."
-msgstr ""
-
-#: includes/functions-acadp-email.php:674
-msgid ""
-"[{site_name}] Payment notification : payment Completed for order no."
-"{order_id}"
-msgstr ""
-
-#: includes/functions-acadp-email.php:677
-msgid ""
-"Dear Administrator,<br /><br />A Payment notification was received with the "
-"status Completed. The order is now confirmed.<br /><br />This notification "
-"was for the order #{order_id} on the website {site_name}.<br />You can "
-"access the order details directly by clicking on the link below after "
-"logging in your back end:<br />{order_page}<br /><br />{order_details}<br /"
-"><br />Please do not respond to this message. It is automatically generated "
-"and is for information purposes only."
-msgstr ""
-
-#: includes/functions-acadp-email.php:788
-msgid ""
-"Dear Administrator,<br /><br />A listing on your website {site_name} "
-"received a message.<br /><br />Listing URL: {listing_url}<br /><br />Name: "
-"{sender_name}<br />Email: {sender_email}<br />Message: {message}<br />Time: "
-"{now}<br /><br />This is just a copy of the original email and was already "
-"sent to the listing owner. You don't have to reply this unless necessary."
-msgstr ""
-
-#: includes/functions-acadp-email.php:898
-msgid "[{site_name}] Report Abuse via \"{listing_title}\""
-msgstr ""
-
-#: includes/functions-acadp-email.php:901
-msgid ""
-"Dear Administrator,<br /><br />This is an email abuse report for a listing "
-"at {listing_url}.<br /><br />Name: {sender_name}<br />Email: {sender_email}"
-"<br />Message: {message}<br />Time: {now}"
-msgstr ""
-
-#: includes/functions-acadp-email.php:936
-msgid "Item(s)"
-msgstr ""
-
-#: includes/functions-acadp-email.php:952
-#: public/partials/payments/acadp-public-payment-receipt-display.php:100
-#, php-format
-msgid "Total amount [%s]"
-msgstr ""
-
-#: includes/functions-acadp-general.php:48
-msgid "Forgot your password?"
-msgstr ""
-
-#: includes/functions-acadp-general.php:49
-msgid "Create an account"
-msgstr ""
-
-#: includes/functions-acadp-general.php:244
-msgid "Created"
-msgstr ""
-
-#: includes/functions-acadp-general.php:246
-msgid "Completed"
-msgstr ""
-
-#: includes/functions-acadp-general.php:247
-msgid "Failed"
-msgstr ""
-
-#: includes/functions-acadp-general.php:248
-msgid "Cancelled"
-msgstr ""
-
-#: includes/functions-acadp-general.php:249
-msgid "Refunded"
-msgstr ""
-
-#: includes/functions-acadp-general.php:281
-msgid "Set to Created"
-msgstr ""
-
-#: includes/functions-acadp-general.php:282
-msgid "Set to Pending"
-msgstr ""
-
-#: includes/functions-acadp-general.php:283
-msgid "Set to Completed"
-msgstr ""
-
-#: includes/functions-acadp-general.php:284
-msgid "Set to Failed"
-msgstr ""
-
-#: includes/functions-acadp-general.php:285
-msgid "Set to Cancelled"
-msgstr ""
-
-#: includes/functions-acadp-general.php:286
-msgid "Set to Refunded"
-msgstr ""
-
-#: includes/functions-acadp-general.php:677
-msgid "List"
-msgstr ""
-
-#: includes/functions-acadp-general.php:680
-msgid "Grid"
-msgstr ""
-
-#: includes/functions-acadp-general.php:683
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:116
-msgid "Map"
-msgstr ""
-
-#: includes/functions-acadp-general.php:792
-#: includes/functions-acadp-general.php:876
-#: public/partials/categories/acadp-public-categories-image-grid-display.php:28
-#: public/partials/categories/acadp-public-categories-image-grid-display.php:36
-#: public/partials/categories/acadp-public-categories-text-list-display.php:23
-#: public/partials/locations/acadp-public-locations-display.php:23
-#, php-format
-msgid "View all posts in %s"
-msgstr ""
-
-#: includes/functions-acadp-general.php:972
-msgid "A to Z ( title )"
-msgstr ""
-
-#: includes/functions-acadp-general.php:973
-msgid "Z to A ( title )"
-msgstr ""
-
-#: includes/functions-acadp-general.php:974
-msgid "Recently added ( latest )"
-msgstr ""
-
-#: includes/functions-acadp-general.php:975
-msgid "Date added ( oldest )"
-msgstr ""
-
-#: includes/functions-acadp-general.php:976
-msgid "Price ( low to high )"
-msgstr ""
-
-#: includes/functions-acadp-general.php:977
-msgid "Price ( high to low )"
-msgstr ""
-
-#: includes/functions-acadp-general.php:981
-msgid "Most viewed"
-msgstr ""
-
-#: includes/functions-acadp-general.php:982
-msgid "Less viewed"
-msgstr ""
-
-#: includes/functions-acadp-general.php:1190
-msgid "Offline Payment"
-msgstr ""
+"Su transacción falló, por favor intente nuevamente o solicite ayuda con un "
+"administrador."
 
 #: includes/functions-acadp-html.php:143
 msgid "Google+"
-msgstr ""
+msgstr "Google+"
 
 #: includes/functions-acadp-html.php:153
 msgid "Pin It"
-msgstr ""
+msgstr "Fijar"
 
 #: includes/functions-acadp-html.php:445
 msgid "&laquo;"
-msgstr ""
+msgstr "&laquo;"
 
 #: includes/functions-acadp-html.php:446
 msgid "&raquo;"
-msgstr ""
+msgstr "&raquo;"
 
 #: includes/functions-acadp-html.php:458
 #, php-format
 msgid "Page %d of %d"
-msgstr ""
-
-#: includes/functions-acadp-html.php:491
-#: public/partials/search/acadp-public-search-form-inline-display.php:48
-#: public/partials/search/acadp-public-search-form-vertical-display.php:40
-#: public/partials/search/acadp-public-search-form-vertical-display.php:43
-#: public/partials/user/acadp-public-edit-listing-display.php:20
-msgid "Select a category"
-msgstr ""
-
-#: includes/functions-acadp-permalinks.php:325
-#: public/partials/listings/acadp-public-listings-grid-display.php:121
-#: public/partials/listings/acadp-public-listings-list-display.php:111
-#: public/partials/listings/acadp-public-listings-map-display.php:115
-msgid "Remove from favourites"
-msgstr ""
-
-#: public/class-acadp-public-categories.php:89
-#: public/class-acadp-public-categories.php:393
-#: public/class-acadp-public-listings.php:344
-#: public/class-acadp-public-locations.php:90
-#: public/class-acadp-public-locations.php:387
-#: public/class-acadp-public-payments.php:339
-#: public/class-acadp-public-search.php:100
-#: public/class-acadp-public-search.php:481
-#: public/class-acadp-public-user.php:405
-#: public/class-acadp-public-user.php:1341
-msgid "No Results Found."
-msgstr ""
-
-#: public/class-acadp-public-listing.php:215
-#: public/class-acadp-public-listing.php:253
-msgid "Your message sent successfully."
-msgstr ""
-
-#: public/class-acadp-public-listing.php:220
-#: public/class-acadp-public-listing.php:258
-msgid "Sorry! Please try again."
-msgstr ""
-
-#: public/class-acadp-public-listing.php:227
-#: public/class-acadp-public-listing.php:265
-#: public/class-acadp-public-user.php:66
-msgid "Invalid Captcha: Please try again."
-msgstr ""
-
-#: public/class-acadp-public-payments.php:105
-#: public/class-acadp-public-payments.php:278
-msgid "Sorry, something went wrong."
-msgstr ""
-
-#: public/class-acadp-public-payments.php:140
-#, php-format
-msgid "[Order] Listing #%d"
-msgstr ""
-
-#: public/class-acadp-public-payments.php:297
-#: public/class-acadp-public-user.php:469
-#: public/class-acadp-public-user.php:998
-msgid "You do not have sufficient permissions to access this page."
-msgstr ""
-
-#: public/class-acadp-public-user.php:639
-msgid "Invalid file format"
-msgstr ""
-
-#: public/class-acadp-public-user.php:714
-#: public/partials/user/acadp-public-edit-listing-display.php:249
-msgid "Save Draft"
-msgstr ""
-
-#: public/class-acadp-public.php:298
-msgid "You can't leave Captcha Code empty"
-msgstr ""
-
-#: public/class-acadp-public.php:299
-msgid "Sorry, you need to login first."
-msgstr ""
-
-#: public/class-acadp-public.php:300
-#: public/partials/payments/acadp-public-checkout-display.php:71
-msgid "Proceed to payment"
-msgstr ""
-
-#: public/class-acadp-public.php:301
-msgid "Finish submission"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:21
-#: public/partials/listings/acadp-public-listings-grid-display.php:97
-#: public/partials/listings/acadp-public-listings-list-display.php:87
-#: public/partials/listings/acadp-public-listings-map-display.php:91
-#: public/partials/user/acadp-public-manage-listings-display.php:50
-#: widgets/listings/views/acadp-widget-public-listings-map-display.php:33
-#: widgets/listings/views/acadp-widget-public-listings-media-display.php:41
-#: widgets/listings/views/acadp-widget-public-listings-thumbnail-display.php:39
-#, php-format
-msgid "Posted %s ago"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:35
-#: public/partials/listings/acadp-public-listings-grid-display.php:104
-#: public/partials/listings/acadp-public-listings-list-display.php:94
-#: public/partials/listings/acadp-public-listings-map-display.php:98
-#: widgets/listings/views/acadp-widget-public-listings-map-display.php:40
-#: widgets/listings/views/acadp-widget-public-listings-media-display.php:48
-#: widgets/listings/views/acadp-widget-public-listings-thumbnail-display.php:46
-msgid "by"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:39
-#: public/partials/listings/acadp-public-listings-grid-display.php:125
-#: public/partials/listings/acadp-public-listings-list-display.php:115
-#: public/partials/listings/acadp-public-listings-map-display.php:119
-#: public/partials/user/acadp-public-manage-listings-display.php:66
-#: widgets/listings/views/acadp-widget-public-listings-map-display.php:57
-#: widgets/listings/views/acadp-widget-public-listings-media-display.php:65
-#: widgets/listings/views/acadp-widget-public-listings-thumbnail-display.php:63
-#, php-format
-msgid "%d views"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:124
-msgid "Check all listings by this user"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:144
-msgid "Report Abuse"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:148
-msgid "Your Complaint"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:149
-#: public/partials/listing/acadp-public-listing-display.php:222
-#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:27
-msgid "Message"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:155
-msgid "Close"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:156
-#: public/partials/listing/acadp-public-listing-display.php:228
-#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:33
-msgid "Submit"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:186
-#: public/partials/user/acadp-public-edit-listing-display.php:81
-msgid "Contact details"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:203
-#: widgets/listing-contact/class-acadp-widget-listing-contact.php:122
-msgid "Contact this listing owner"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:206
-#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:11
-msgid "Please, login to contact this listing owner."
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:211
-#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:16
-msgid "Your Name"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:216
-#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:21
-msgid "Your E-mail Address"
-msgstr ""
-
-#: public/partials/listing/acadp-public-listing-display.php:221
-#: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:26
-msgid "Your Message"
-msgstr ""
-
-#: public/partials/listings/acadp-public-listings-grid-display.php:19
-#: public/partials/listings/acadp-public-listings-list-display.php:19
-#: public/partials/listings/acadp-public-listings-map-display.php:19
-#, php-format
-msgid "%d item(s) found"
-msgstr ""
-
-#: public/partials/listings/acadp-public-listings-grid-display.php:29
-#: public/partials/listings/acadp-public-listings-list-display.php:29
-#: public/partials/listings/acadp-public-listings-map-display.php:29
-msgid "View as"
-msgstr ""
-
-#: public/partials/listings/acadp-public-listings-grid-display.php:48
-#: public/partials/listings/acadp-public-listings-list-display.php:48
-#: public/partials/listings/acadp-public-listings-map-display.php:48
-msgid "Sort by"
-msgstr ""
-
-#: public/partials/payments/acadp-public-checkout-display.php:9
-msgid ""
-"Please review your order, and click Purchase once you are ready to proceed."
-msgstr ""
-
-#: public/partials/payments/acadp-public-checkout-display.php:51
-#, php-format
-msgid "Payable amount [%s]"
-msgstr ""
-
-#: public/partials/payments/acadp-public-checkout-display.php:58
-msgid "Choose payment method"
-msgstr ""
-
-#: public/partials/payments/acadp-public-checkout-display.php:70
-msgid "Not now"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:9
-msgid "Thank you for your order!"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:21
-msgid "ORDER"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:26
-msgid "Total Amount"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:54
-msgid "Payment Method"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:65
-msgid "Payment Status"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:75
-msgid "Transaction Key"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:82
-msgid "ITEMS"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:85
-msgid "NAME"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:86
-msgid "PRICE"
-msgstr ""
-
-#: public/partials/payments/acadp-public-payment-receipt-display.php:105
-msgid "View all my listings"
-msgstr ""
-
-#: public/partials/search/acadp-public-search-form-inline-display.php:17
-#: public/partials/search/acadp-public-search-form-vertical-display.php:15
-msgid "Enter your keyword here ..."
-msgstr ""
-
-#: public/partials/search/acadp-public-search-form-inline-display.php:78
-#: public/partials/search/acadp-public-search-form-vertical-display.php:64
-msgid "Price Range"
-msgstr ""
-
-#: public/partials/search/acadp-public-search-form-inline-display.php:81
-#: public/partials/search/acadp-public-search-form-vertical-display.php:67
-msgid "min"
-msgstr ""
-
-#: public/partials/search/acadp-public-search-form-inline-display.php:84
-#: public/partials/search/acadp-public-search-form-vertical-display.php:70
-msgid "max"
-msgstr ""
-
-#: public/partials/search/acadp-public-search-form-inline-display.php:95
-#: public/partials/search/acadp-public-search-form-vertical-display.php:78
-#: public/partials/user/acadp-public-manage-listings-display.php:22
-msgid "Reset"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:12
-msgid "Choose category"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:43
-msgid "Listing details"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:203
-msgid "Video URL"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:206
-msgid "Only YouTube & Vimeo URLs"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:214
-msgid "Your price"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:226
-msgid ""
-"You can adjust your price anytime you like, even after your listing is "
-"published."
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:235
-msgid "Complete listing"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:254
-msgid "Preview"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:258
-msgid "Place Listing"
-msgstr ""
-
-#: public/partials/user/acadp-public-edit-listing-display.php:260
-msgid "Save Changes"
-msgstr ""
-
-#: public/partials/user/acadp-public-manage-listings-display.php:19
-msgid "Search by title"
-msgstr ""
-
-#: public/partials/user/acadp-public-manage-listings-display.php:21
-msgid "Search"
-msgstr ""
-
-#: public/partials/user/acadp-public-manage-listings-display.php:95
-msgid "Renew"
-msgstr ""
-
-#: public/partials/user/acadp-public-manage-listings-display.php:101
-msgid "Promote"
-msgstr ""
-
-#: public/partials/user/acadp-public-manage-listings-display.php:106
-msgid "Retry Payment"
-msgstr ""
-
-#: public/partials/user/acadp-public-manage-listings-display.php:118
-msgid "Delete"
-msgstr ""
-
-#: public/partials/user/acadp-public-user-dashboard-display.php:25
-msgid "Total Listings"
-msgstr ""
-
-#: public/partials/user/acadp-public-user-dashboard-display.php:33
-msgid "Active Listings"
-msgstr ""
-
-#: widgets/categories/class-acadp-widget-categories.php:47
-msgid "ACADP Categories"
-msgstr ""
-
-#: widgets/categories/class-acadp-widget-categories.php:50
-msgid "A list of \"Advanced Classifieds and Directory Pro\" Categories."
-msgstr ""
-
-#: widgets/categories/views/acadp-widget-admin-categories-display.php:14
-#: widgets/categories/views/acadp-widget-admin-categories-display.php:17
-#: widgets/locations/views/acadp-widget-admin-locations-display.php:14
-#: widgets/locations/views/acadp-widget-admin-locations-display.php:17
-msgid "Select Parent"
-msgstr ""
-
-#: widgets/categories/views/acadp-widget-admin-categories-display.php:34
-msgid ""
-"Show only the immediate children of the selected category. Displays all the "
-"top level categories if no parent is selected."
-msgstr ""
-
-#: widgets/categories/views/acadp-widget-admin-categories-display.php:39
-msgid "Hide Empty Categories"
-msgstr ""
-
-#: widgets/categories/views/acadp-widget-admin-categories-display.php:44
-#: widgets/locations/views/acadp-widget-admin-locations-display.php:45
-msgid "Show Listing Counts"
-msgstr ""
-
-#: widgets/listing-address/class-acadp-widget-listing-address.php:47
-msgid "ACADP Listing Address"
-msgstr ""
-
-#: widgets/listing-address/class-acadp-widget-listing-address.php:50
-msgid "\"Advanced Classifieds & Directory Pro\" Listing Address and Map."
-msgstr ""
-
-#: widgets/listing-address/class-acadp-widget-listing-address.php:142
-msgid "Listing Address"
-msgstr ""
+msgstr "Página %d de %d"
 
 #: widgets/listing-contact/class-acadp-widget-listing-contact.php:47
 msgid "ACADP Listing Contact"
-msgstr ""
+msgstr "ACADP Contacto de anuncio"
 
 #: widgets/listing-contact/class-acadp-widget-listing-contact.php:50
 msgid ""
 "Contact us form to contact \"Advanced Classifieds & Directory Pro\" listing "
 "owners."
 msgstr ""
+"Formulario de contacto para contactar dueños de anuncios \"Advanced "
+"Classifieds & Directory Pro\""
+
+#: widgets/categories/class-acadp-widget-categories.php:47
+msgid "ACADP Categories"
+msgstr "ACADP Categorías"
+
+#: widgets/categories/class-acadp-widget-categories.php:50
+msgid "A list of \"Advanced Classifieds and Directory Pro\" Categories."
+msgstr "Una lista de categorías de \"Advanced Classifieds and Directory Pro\""
+
+#: widgets/categories/views/acadp-widget-admin-categories-display.php:14
+#: widgets/categories/views/acadp-widget-admin-categories-display.php:17
+#: widgets/locations/views/acadp-widget-admin-locations-display.php:14
+#: widgets/locations/views/acadp-widget-admin-locations-display.php:17
+msgid "Select Parent"
+msgstr "Seleccionar superior"
+
+#: widgets/categories/views/acadp-widget-admin-categories-display.php:34
+msgid ""
+"Show only the immediate children of the selected category. Displays all the "
+"top level categories if no parent is selected."
+msgstr ""
+"Mostrar solo los descendientes inmediatos de la categoría seleccionada. "
+"Muestra todas las categorías superiores si no se ha seleccionado una."
+
+#: widgets/categories/views/acadp-widget-admin-categories-display.php:39
+msgid "Hide Empty Categories"
+msgstr "Ocultar categorías vacías"
+
+#: widgets/categories/views/acadp-widget-admin-categories-display.php:44
+#: widgets/locations/views/acadp-widget-admin-locations-display.php:45
+msgid "Show Listing Counts"
+msgstr "Mostrar contador de anuncios"
 
 #: widgets/listing-video/class-acadp-widget-listing-video.php:47
 msgid "ACADP Listing Video"
-msgstr ""
+msgstr "ACADP Video de anuncio"
 
 #: widgets/listing-video/class-acadp-widget-listing-video.php:50
 msgid "\"Advanced Classifieds & Directory Pro\" Listing Video."
-msgstr ""
+msgstr "\"Advanced Classifieds & Directory Pro\" Video de anuncio."
 
 #: widgets/listing-video/class-acadp-widget-listing-video.php:138
 msgid "Listing Video"
-msgstr ""
+msgstr "Video de anuncio"
 
-#: widgets/listings/class-acadp-widget-listings.php:112
-msgid "ACADP Listings"
-msgstr ""
+#: widgets/search/class-acadp-widget-search.php:47
+msgid "ACADP Search"
+msgstr "ACADP Búsqueda"
 
-#: widgets/listings/class-acadp-widget-listings.php:115
-msgid "Displays \"Advanced Classifieds and Directory Pro\" Listings."
-msgstr ""
+#: widgets/search/class-acadp-widget-search.php:50
+msgid "\"Advanced Classifieds & Directory Pro\" Search Form."
+msgstr "\"Advanced Classifieds & Directory Pro\" Formulario de búsqueda."
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:15
-msgid "Filter by Location"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:14
+msgid "Style"
+msgstr "Estilo"
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:36
-msgid "Filter by Category"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:18
+msgid "Vertical"
+msgstr "Vertical"
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:56
-msgid "Related Listings"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:19
+msgid "Inline"
+msgstr "En línea"
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:62
-msgid "Featured Only"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:31
+msgid "Search by Category"
+msgstr "Buscar por categoría"
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:67
-msgid "Limit"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:37
+msgid "Search by Location"
+msgstr "Buscar por ubicación"
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:72
-msgid "Order By"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:43
+msgid "Search by Custom Fields"
+msgstr "Buscar por campos personalizados"
 
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:80
-msgid "Random"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:95
-msgid "ASC"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:96
-msgid "DESC"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:111
-msgid "View"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:115
-msgid "Standard"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:134
-msgid "Show Image"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:138
-msgid "Image Position"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:142
-msgid "Top"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:143
-msgid "Left"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:156
-msgid "Show Description"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:161
-msgid "Show Category"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:167
-msgid "Show Location"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:174
-msgid "Show Price"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:180
-msgid "Show Date"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:185
-msgid "Show User"
-msgstr ""
-
-#: widgets/listings/views/acadp-widget-admin-listings-display.php:190
-msgid "Show Views"
-msgstr ""
+#: widgets/search/views/acadp-widget-admin-search-display.php:49
+msgid "Search by Price"
+msgstr "Buscar por precio"
 
 #: widgets/locations/class-acadp-widget-locations.php:47
 msgid "ACADP Locations"
-msgstr ""
+msgstr "ACADP Ubicaciones"
 
 #: widgets/locations/class-acadp-widget-locations.php:50
 msgid "A list of \"Advanced Classifieds and Directory Pro\" Locations."
-msgstr ""
+msgstr "Una lista de ubicaciones \"Advanced Classifieds and Directory Pro\" "
 
 #: widgets/locations/views/acadp-widget-admin-locations-display.php:35
 msgid ""
 "Show only the immediate children of the selected location. Displays all the "
 "top level locations if no parent is selected."
 msgstr ""
+"Mostrar solo los descendientes inmediatos de la ubicación seleccionada. "
+"Muestra todas las ubicaciones superiores si no se ha seleccionado una."
 
 #: widgets/locations/views/acadp-widget-admin-locations-display.php:40
 msgid "Hide Empty Locations"
-msgstr ""
+msgstr "Ocultar ubicaciones vacías"
 
-#: widgets/search/class-acadp-widget-search.php:47
-msgid "ACADP Search"
-msgstr ""
+#: widgets/listings/class-acadp-widget-listings.php:112
+msgid "ACADP Listings"
+msgstr "ACADP Anuncios"
 
-#: widgets/search/class-acadp-widget-search.php:50
-msgid "\"Advanced Classifieds & Directory Pro\" Search Form."
-msgstr ""
+#: widgets/listings/class-acadp-widget-listings.php:115
+msgid "Displays \"Advanced Classifieds and Directory Pro\" Listings."
+msgstr "Muestra anuncios de \"Advanced Classifieds and Directory Pro\""
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:14
-msgid "Style"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:15
+msgid "Filter by Location"
+msgstr "Filtrar por Ubicación"
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:18
-msgid "Vertical"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:36
+msgid "Filter by Category"
+msgstr "Filtrar por Categoría"
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:19
-msgid "Inline"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:56
+msgid "Related Listings"
+msgstr "Anuncios Relacionados"
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:31
-msgid "Search by Category"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:62
+msgid "Featured Only"
+msgstr "Solo destacados"
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:37
-msgid "Search by Location"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:67
+msgid "Limit"
+msgstr "Límite"
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:43
-msgid "Search by Custom Fields"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:72
+msgid "Order By"
+msgstr "Ordenar por"
 
-#: widgets/search/views/acadp-widget-admin-search-display.php:49
-msgid "Search by Price"
-msgstr ""
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:80
+msgid "Random"
+msgstr "Aleatorio"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:95
+msgid "ASC"
+msgstr "ASC"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:96
+msgid "DESC"
+msgstr "DESC"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:111
+msgid "View"
+msgstr "Vista"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:115
+msgid "Standard"
+msgstr "Estándar"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:134
+msgid "Show Image"
+msgstr "Mostrar imagen"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:138
+msgid "Image Position"
+msgstr "Posición de imagen"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:142
+msgid "Top"
+msgstr "Arriba"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:143
+msgid "Left"
+msgstr "Izquierda"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:156
+msgid "Show Description"
+msgstr "Mostrar descripción"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:161
+msgid "Show Category"
+msgstr "Mostrar categoría"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:167
+msgid "Show Location"
+msgstr "Mostrar ubicación"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:174
+msgid "Show Price"
+msgstr "Mostrar precio"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:180
+msgid "Show Date"
+msgstr "Mostrar fecha"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:185
+msgid "Show User"
+msgstr "Mostrar usuario"
+
+#: widgets/listings/views/acadp-widget-admin-listings-display.php:190
+msgid "Show Views"
+msgstr "Mostrar vistas"
+
+#: widgets/listing-address/class-acadp-widget-listing-address.php:47
+msgid "ACADP Listing Address"
+msgstr "ACADP Dirección de anuncio"
+
+#: widgets/listing-address/class-acadp-widget-listing-address.php:50
+msgid "\"Advanced Classifieds & Directory Pro\" Listing Address and Map."
+msgstr "\"Advanced Classifieds & Directory Pro\" Dirección y mapa de anuncio."
+
+#: widgets/listing-address/class-acadp-widget-listing-address.php:142
+msgid "Listing Address"
+msgstr "DIrección de Anuncios"
