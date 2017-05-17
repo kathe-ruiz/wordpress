@@ -1,12 +1,29 @@
 @import "components/navbar";
 @import "components/socialmedia";
 .admin-bar{
-    .navbar-fixed-top{
-      @media (min-width: $screen-sm-min) {
-        top: 32px;
-      }
-      @media (max-width: $screen-sm-min) {
-        top: 46px;
+  .navbar-fixed-top{
+    @media (min-width: $screen-sm-min) {
+      top: 32px;
+    }
+    @media (max-width: $screen-sm-min) {
+      top: 46px;
+    }
+  }
+}
+.after-header{
+  .menu{
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 10px 0px;
+    .menu-item{
+      display: inline-block;
+      border: none;
+      a{
+        padding: 10px 15px;
       }
     }
+  }
+  &.fx{
+    padding-top: 73px;
+  }
 }
