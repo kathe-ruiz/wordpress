@@ -25,7 +25,7 @@ class BusinessInfoWidget extends WP_Widget {
         echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
     }
     if ( ! empty( $instance['description'] ) ) {
-        echo apply_filters( 'widget_description', $instance['description'] );
+        echo '<p>'. apply_filters( 'widget_description', $instance['description'] ) .'</p>';
     }
     ob_start();
     get_template_part('widgets/business-info/frontend');
