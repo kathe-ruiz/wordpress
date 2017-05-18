@@ -85,6 +85,9 @@
 }
 /* Footer sidebar */
 $footer-widget-border-color: #ccc;
+/* Widgets per row in responsive (for mobile all widgets take full width) */
+$widgets-row-tablet: 2;
+$widgets-row-desktop: 4;
 .footer__sidebar{
   color: $gray-light;
   display: flex;
@@ -118,13 +121,13 @@ $footer-widget-border-color: #ccc;
     padding: 0 2em;
     @media (min-width: $screen-md-min) {
       width: 25%;
-      &:not(:nth-child(4n+1)){
+      &:not(:nth-child(#{$widgets-row-desktop}n+1)){
         border-left: 1px solid $footer-widget-border-color;
       }
-      &:nth-child(n+4){
+      &:nth-child(n+#{$widgets-row-desktop+1}){
         padding-top: 1.5em;
       }
-      &:nth-child(4n+1):last-child{
+      &:nth-child(#{$widgets-row-desktop}n+1):last-child{
         text-align: center;
         ul{
           padding: 0;
@@ -140,13 +143,13 @@ $footer-widget-border-color: #ccc;
     }
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       width: 50%;
-      &:nth-child(2n){
+      &:nth-child(#{$widgets-row-tablet}n){
         border-left: 1px solid $footer-widget-border-color;
       }
-      &:nth-child(n+2){
+      &:nth-child(n+#{$widgets-row-tablet+1}){
         padding-top: 1.5em;
       }
-      &:nth-child(2n+1):last-child{
+      &:nth-child(#{$widgets-row-tablet}n+1):last-child{
         text-align: center;
         ul{
           padding: 0;

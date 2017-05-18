@@ -50,4 +50,13 @@
   &.after-color-brand-primary{
     color: $brand-primary;
   }
+  &.background-dark{
+    background: #000;
+  }
+  &.background-light{
+    background: #fff;
+  }
+  &.background-brand-primary{
+    background: $brand-primary;
+  }
 }
