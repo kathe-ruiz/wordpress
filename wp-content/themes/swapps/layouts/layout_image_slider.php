@@ -102,7 +102,7 @@ switch ($slider_style) {
           break;
       }
     ?>
-    <div class="item item-<?php echo $type ?><?php if($slider_style == 'center'): ?> bg-cover<?php endif ?>"
+    <div class="item item-<?php echo $type ?><?php if($slider_style == 'center' && !$video): ?> bg-cover<?php endif ?>"
       <?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
       <?php if ( isset($image) && $image ): ?>
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
