@@ -5,6 +5,7 @@
       background-color: rgba(0,0,0,.5);
       color: #fff;
       position: absolute;
+      z-index: 10;
       @media (min-width: $screen-sm-min){
         top: 50%;
         left: 10%;
@@ -252,6 +253,9 @@
     transform: translateX(-50%);
     min-width: 100%;
   }
+}
+.bx-caption{
+  z-index: 10;
 }
 .bx-wrapper{
   box-shadow: none;
