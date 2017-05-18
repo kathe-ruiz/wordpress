@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: Ultimate Member 1.1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-29 22:35+0200\n"
-"PO-Revision-Date: 2015-05-18 22:30-0300\n"
+"PO-Revision-Date: 2017-05-18 09:41-0500\n"
 "Last-Translator: Mariano Talbot <mariano@talbot.com.ar>\n"
 "Language-Team: Ultimate Member <umplugin@gmail.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -1140,8 +1140,7 @@ msgstr "Actualizar"
 #: admin/templates/modal/dynamic_new_field.php:15
 #: admin/templates/modal/dynamic_new_group.php:15 core/um-actions-profile.php:202
 #: core/um-actions-profile.php:316 core/um-actions-profile.php:326
-#: core/um-actions-profile.php:464 core/um-fields.php:1280
-#: core/um-fields.php:1365
+#: core/um-actions-profile.php:464 core/um-fields.php:1280 core/um-fields.php:1365
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -1505,8 +1504,7 @@ msgstr "Notificaciones"
 
 #: core/um-account.php:37 core/um-actions-account.php:31
 #: core/um-actions-account.php:66 core/um-actions-account.php:124
-#: core/um-actions-account.php:172 core/um-builtin.php:888
-#: core/um-builtin.php:891
+#: core/um-actions-account.php:172 core/um-builtin.php:888 core/um-builtin.php:891
 msgid "Delete Account"
 msgstr "Eliminar cuenta"
 
@@ -1894,8 +1892,7 @@ msgstr "Sube una foto de la portada"
 msgid "Upload photo"
 msgstr "Subir foto"
 
-#: core/um-actions-profile.php:324 core/um-fields.php:1246
-#: core/um-fields.php:1279
+#: core/um-actions-profile.php:324 core/um-fields.php:1246 core/um-fields.php:1279
 msgid "Change photo"
 msgstr "Cambiar foto"
 
@@ -3884,117 +3881,7 @@ msgstr ""
 "Esta herramienta le permite migrar tus fotos de usuario personalizados de "
 "BuddyPress para usar con Ultimate Member"
 
-#~ msgid ""
-#~ "Are you sure you want to delete the selected user(s)? The following users "
-#~ "will be deleted: (%s) <strong>This cannot be undone!</strong>"
-#~ msgstr ""
-#~ "¿Seguro que quieres eliminar los usuarios seleccionados?, Los siguientes "
-#~ "usuarios se eliminarán: (% s) <strong>Esto no se puede deshacer!</strong>"
-
-#~ msgid "Yes! Delete"
-#~ msgstr "Sí, borrar"
-
-#~ msgid "You must check %s."
-#~ msgstr "Usted debe verificar %s."
-
-#~ msgid "Thank you!"
-#~ msgstr "¡Muchas gracias!"
-
-#~ msgid "Your account is awaiting e-mail verifications."
-#~ msgstr "Su cuenta está pendiente de verificación de correo electrónico."
-
-#~ msgid "Countries"
-#~ msgstr "Países"
-
-#~ msgid "Field Border Style"
-#~ msgstr "Estilo de borde de campo"
-
-#~ msgid ""
-#~ "Help us improve Ultimate Member’s compatibility with other plugins and "
-#~ "themes by allowing us to track non-sensitive data on your site. Click <a "
-#~ "href=\"https://ultimatemember.com/tracking/\" target=\"_blank\">here</a> to "
-#~ "see what data we track."
-#~ msgstr ""
-#~ "Ayúdanos a mejorar la compatibilidad de Ultimate Member con otros plugins y "
-#~ "temas permitiendo un seguimiento de los datos no sensibles en su sitio. Haga "
-#~ "clic <a href=\"https://ultimatemember.com/tracking/\" target=\"_blank"
-#~ "\">aquí</a> para consultar los datos de los que hacemos un seguimiento."
-
-#~ msgid "Theme Compatibility Issue."
-#~ msgstr "Problema de compatibilidad del tema."
-
-#~ msgid "Regisration Date"
-#~ msgstr "Fecha de registro"
-
-#~ msgid "Do not allow"
-#~ msgstr "No permitir"
-
-#~ msgid ""
-#~ "This tool enables you to migrate your custom user photos from BuddyPress to "
-#~ "use with Ultimate Member."
-#~ msgstr ""
-#~ "Esta herramienta le permite migrar tus fotos de usuario personalizada de "
-#~ "BuddyPress para usar con Ultimate Member"
-
-#~ msgid "WordPress Role"
-#~ msgstr "Rol WordPress"
-
-#~ msgid "This is the membership role set by WordPress"
-#~ msgstr "Este es el rol de miembros establecido por WordPress"
-
-#~ msgid "Status"
-#~ msgstr "Estado"
-
-#~ msgid "This is current user status in your membership site"
-#~ msgstr "Este es el estado de afiliación del usuario actual en su sitio"
-
-#~ msgid ""
-#~ "If you want to contribute this translation to the plugin, please add it on "
-#~ "our <a href=\"https://ultimatemember.com/forums/\"><forums</a>."
-#~ msgstr ""
-#~ "Si quieres contribuir con esta traducción del plugin, por favor entra en "
-#~ "nuestro <a href=\"https://ultimatemember.com/forums/topic/spanish-language-"
-#~ "es-es/\"><foro</a>."
-
-#~ msgid "Recent Members"
-#~ msgstr "Miembros recientes"
-
-#~ msgid "Users Awaiting Review"
-#~ msgstr "Usuarios pendientes de revisión"
-
-#~ msgid "No users are awaiting manual verification so far."
-#~ msgstr "No hay usuarios esperando verificación manual en este momento."
-
-#~ msgid "Pending e-mail confirmation"
-#~ msgstr "A la espera de la confirmación por e-mail"
-
-#~ msgid "No users are awaiting e-mail validation yet."
-#~ msgstr ""
-#~ "No hay usuarios que estén en espera de validación de correo electrónico "
-#~ "todavía."
-
-#~ msgid "Recently Deactivated"
-#~ msgstr "Usuarios desactivados recientemente"
-
-#~ msgid "No users have been deactivated recently."
-#~ msgstr "Ningún usuario a sido desactivado recientemente."
-
-#~ msgid "Confirm New %s"
-#~ msgstr "Confirmar nueva %s"
-
-#~ msgid "Please create a team.php template in admin templates."
-#~ msgstr ""
-#~ "Por favor, cree una plantilla team.php en plantillas de administración."
-
-#~ msgid "outdatedBrowser_page_message"
-#~ msgstr ""
-#~ "The site you are visiting can only be viewed using a modern browser. Please "
-#~ "upgrade your browser to increase safety and your browsing experience. Choose "
-#~ "one of the browsers above. If you don't care <a href=\"?"
-#~ "forwardOutdatedBrowser=1\">click here</a>"
-
-#~ msgid "404_page_message"
-#~ msgstr ""
-#~ "The Page you are looking for doesn't exist or an other error occurred. <a "
-#~ "href=\"javascript:history.go(-1)\">Go back</a>, or head over to <a href=\"%s"
-#~ "\">%s</a> to choose a new direction."
+#: admin/core/um-admin-users.php:35 core/um-actions-account.php:378
+#: core/um-actions-account.php:413
+msgid "View profile"
+msgstr "Ver perfil"
