@@ -11,6 +11,19 @@
 <?php $type = $row_item['slider_type']; ?>
 <?php $height = ($type == 'fixed') ? $row_item['slider_height'] : '' ; ?>
 <?php $slider_id = uniqid(); ?>
+<?php $slider_style = $row_item['slider_style'] ?>
+<?php
+switch ($slider_style) {
+  case 1:
+    $slider_style = 'left';
+    break;
+  case 2:
+    $slider_style = 'center';
+    break;
+  default:
+    $slider_style = 'left';
+    break;
+} ?>
 
 <?php if($type !== 'smart'): ?>
 <script>
@@ -94,7 +107,7 @@
       <?php if ( isset($image) && $image ): ?>
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
         <?php if ($title || $description || ($link and $cta)): ?>
-        <div class="caption">
+        <div class="caption caption--<?php echo $slider_style; ?>">
           <?php if ($title || $description): ?>
             <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
             <?php if ($subtitle): ?><h4><?php echo $subtitle ?></h4><?php endif ?>
