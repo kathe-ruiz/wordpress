@@ -1858,7 +1858,9 @@ p.demo_store {
         transition: all .3s ease-in-out;
         &:hover,
         &:focus{
-          background: $brand-primary;
+          background: transparent;
+          color: $brand-primary;
+          border: 1px solid $brand-primary;
         }
       }
       a{
