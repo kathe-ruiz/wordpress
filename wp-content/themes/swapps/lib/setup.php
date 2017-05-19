@@ -63,13 +63,21 @@ function widgets_init() {
     'after_title'   => '</h3></div>'
   ]);
 
+  register_sidebar( array(
+    'name'          => 'Pre Footer',
+    'id'            => 'pre_footer',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="rounded">',
+    'after_title'   => '</h2>',
+  ) );
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
+    'before_widget' => '<section class="widget footer__widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<div class="heading-underline heading-underline--footer"><h3 class="heading-underline__title">',
+    'after_title'   => '</h3></div>'
   ]);
 
   register_sidebar([
@@ -80,8 +88,27 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
+
+  register_sidebar([
+    'name'          => __('After Header', 'sage'),
+    'id'            => 'sidebar-after-header',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar( array(
+    'name'          => 'Internal Pages Sidebar',
+    'id'            => 'internal_pages_sidebar',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="rounded">',
+    'after_title'   => '</h2>',
+  ) );
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
+
 
 /**
  * Determine which pages should NOT display the sidebar

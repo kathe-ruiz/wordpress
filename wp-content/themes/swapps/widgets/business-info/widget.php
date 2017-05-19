@@ -1,15 +1,15 @@
 <?php
-class SuscribeWidget extends WP_Widget {
+class BusinessInfoWidget extends WP_Widget {
 
   /**
    * Sets up the widgets name etc
    */
   public function __construct() {
     $widget_ops = array(
-      'classname' => 'Suscribewidget',
-      'description' => __('This widget renders a subscription form for a newsletter'),
+      'classname' => 'swbi_widget',
+      'description' => __('Display basic business information for contact'),
     );
-    parent::__construct( 'suscribe_widget', 'Suscribe Widget', $widget_ops );
+    parent::__construct( 'business_info_widget', 'Business Info Widget', $widget_ops );
   }
 
   /**
@@ -20,17 +20,19 @@ class SuscribeWidget extends WP_Widget {
    */
   public function widget( $args, $instance ) {
     // outputs the content of the widget
-    echo "<div class='panel'>";
     echo $args['before_widget'];
     if ( ! empty( $instance['title'] ) ) {
         echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
     }
     if ( ! empty( $instance['description'] ) ) {
-        echo apply_filters( 'widget_description', $instance['description'] );
+        echo '<p>'. apply_filters( 'widget_description', $instance['description'] ) .'</p>';
     }
-    echo do_shortcode('[mc4wp_form]');
+    ob_start();
+    get_template_part('widgets/business-info/frontend');
+    $html = ob_get_contents();
+    ob_end_clean();
+    echo $html;
     echo $args['after_widget'];
-    echo "</div>";
   }
 
   /**
@@ -70,7 +72,7 @@ class SuscribeWidget extends WP_Widget {
   }
 }
 
-
-function register_suscribe_widget() {
-    register_widget( 'SuscribeWidget' );
+function swbi_register_widget() {
+    register_widget( 'BusinessInfoWidget' );
 }
+add_action( 'widgets_init', 'swbi_register_widget' );

@@ -48,7 +48,8 @@ require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 require_once('includes/sw_maintenance_mode.php');
 // require_once('includes/admin-mods.php');
-require 'widgets/subscribe_widget.php';
+require 'widgets/subscribe/widget.php';
+require 'widgets/business-info/widget.php';
 
 
 
@@ -221,40 +222,6 @@ function render_subscribe_form()
 
 add_shortcode( 'sw-subscribe-form', 'render_subscribe_form' );
 
-/**
- *
- * Register our sidebars and widgetized areas.
- *
- */
-function pre_footer_widgets_init() {
-
-  register_sidebar( array(
-    'name'          => 'Pre Footer',
-    'id'            => 'pre_footer',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="rounded">',
-    'after_title'   => '</h2>',
-  ) );
-
-}
-add_action( 'widgets_init', 'pre_footer_widgets_init' );
-
-
-function internal_pages_sidebar_widgets_init() {
-
-  register_sidebar( array(
-    'name'          => 'Internal Pages Sidebar',
-    'id'            => 'internal_pages_sidebar',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="rounded">',
-    'after_title'   => '</h2>',
-  ) );
-
-}
-add_action( 'widgets_init', 'internal_pages_sidebar_widgets_init' );
-
 
 if (!function_exists('format_date_array')) {
   function format_date_array($var, $format = "D d F Y"){
@@ -267,7 +234,7 @@ add_filter( 'wpseo_title', 'sw_site_title' );
 function sw_site_title($title) {
   global $post;
 
-  // Retrieve front page value for Yoast SEO title 
+  // Retrieve front page value for Yoast SEO title
   $page_title = WPSEO_Meta::get_value( 'title', $post->ID );
   // Show site name if title is not set
   if ( is_front_page() && !$page_title ) {

@@ -87,4 +87,24 @@
       </div>
     </div>
   </nav>
+  <?php 
+    $default_after = 'brand-primary';
+    $color_after = (function_exists('sw_options') && sw_options('site_options_after_header_color')) ? sw_options('site_options_after_header_color') : $default_after ; 
+    $default_background = 'light';
+    $background_header = (function_exists('sw_options') && sw_options('site_options_after_header_background_color')) ? sw_options('site_options_after_header_background_color') : $default_background ; 
+    ?>
+  <?php if ( is_active_sidebar( 'sidebar-after-header' ) ) : ?>
+    <div id="after-header" class="widget-area after-header after-color-<?php echo $color_after;?> <?php if(sw_options('site_options_secondary_navbar_position')): ?><?php echo "fx"; ?><?php endif ?> background-<?php echo $background_header;?>">
+      <?php if (function_exists('get_custom_logo') && get_theme_mod( 'custom_after_header_image' )):
+      $custom_logo_id = get_theme_mod( 'custom_after_header_image' );
+      $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+      $custom_logo = $image[0];?>
+      <?php print_r(sw_options('site_options_after_header_background_color')) ?>
+        <div style="background:url(<?php echo $custom_logo; ?>);" class="after-header__background">
+        </div>
+      <?php endif;?>
+      <?php dynamic_sidebar( 'sidebar-after-header' ); 
+      ?>
+    </div>
+  <?php endif ?>
 </header>
