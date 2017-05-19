@@ -1,5 +1,11 @@
 .highlight-item{
+  @media (max-width: $screen-sm-max) {
+    & + &{
+      margin-top: 1em;
+    }
+  }
   &__image{
+    max-width: 60%;
   }
   &__caption{
     @media (max-width: $screen-xs-max){
@@ -13,6 +19,12 @@
   }
 }
 .highlights{
+  &.row{
+    @media (min-width: $screen-md-min){
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
   .owl-nav{
     top: 40%;
     transform: translateY(-40%);

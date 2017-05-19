@@ -1,7 +1,7 @@
 <?php function get_navbar_login() {
   $html = '';
   include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
-  if (is_plugin_active('ultimate-member/index.php')):
+  if (is_plugin_active('ultimate-member/index.php') && function_exists('um_get_option')):
     ob_start(); ?>
     <li class="menu-item menu-item-users">
     <?php if (!is_user_logged_in()): ?>

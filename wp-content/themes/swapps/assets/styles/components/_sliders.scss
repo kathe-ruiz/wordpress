@@ -5,6 +5,7 @@
       background-color: rgba(0,0,0,.5);
       color: #fff;
       position: absolute;
+      z-index: 10;
       @media (min-width: $screen-sm-min){
         top: 50%;
         left: 10%;
@@ -15,10 +16,19 @@
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-        transform: translateX(-50%, -50%);
+        transform: translate(-50%, -50%);
         text-align: center;
         padding: 2rem;
       }
+      &--center{
+        text-align: center;
+        background-color: transparent;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
     }
     // Videos
     .video__player{
@@ -243,6 +253,9 @@
     transform: translateX(-50%);
     min-width: 100%;
   }
+}
+.bx-caption{
+  z-index: 10;
 }
 .bx-wrapper{
   box-shadow: none;

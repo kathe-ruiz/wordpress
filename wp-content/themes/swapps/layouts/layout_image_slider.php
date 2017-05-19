@@ -11,6 +11,19 @@
 <?php $type = $row_item['slider_type']; ?>
 <?php $height = ($type == 'fixed') ? $row_item['slider_height'] : '' ; ?>
 <?php $slider_id = uniqid(); ?>
+<?php $slider_style = $row_item['slider_style'] ?>
+<?php
+switch ($slider_style) {
+  case 1:
+    $slider_style = 'left';
+    break;
+  case 2:
+    $slider_style = 'center';
+    break;
+  default:
+    $slider_style = 'left';
+    break;
+} ?>
 
 <?php if($type !== 'smart'): ?>
 <script>
@@ -56,7 +69,7 @@
     };
   });
 </script>
-<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
+<div id="slider-<?php echo $slider_id; ?>" class="sw-slider owl-carousel owl-theme">
   <?php foreach ($slides as $key => $slide): ?>
     <?php
       $image = get_if_exists($slide['image']);
@@ -89,12 +102,12 @@
           break;
       }
     ?>
-    <div class="item item-<?php echo $type ?>"
+    <div class="item item-<?php echo $type ?><?php if($slider_style == 'center' && !$video): ?> bg-cover<?php endif ?>"
       <?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
       <?php if ( isset($image) && $image ): ?>
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
         <?php if ($title || $description || ($link and $cta)): ?>
-        <div class="caption">
+        <div class="caption caption--<?php echo $slider_style; ?>">
           <?php if ($title || $description): ?>
             <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
             <?php if ($subtitle): ?><h4><?php echo $subtitle ?></h4><?php endif ?>
@@ -158,7 +171,7 @@ jQuery(document).ready(function(){
   });
 });
 </script>
-<ul class="bxslider">
+<ul id="slider-<?php echo $slider_id; ?>" class="sw-slider bxslider">
   <?php foreach ($slides as $key => $slide): ?>
   <?php
     $image = get_if_exists($slide['image']);
@@ -170,7 +183,7 @@ jQuery(document).ready(function(){
     $cta = get_if_exists($slide['link']['title']);
   ?>
   <?php if ( isset($image) && $image ): ?>
-    <li class="bxslider__item">
+    <li class="bxslider__item <?php if($slider_style == 'center'): ?> bg-cover<?php endif ?>">
       <img class="bxslider__img"
            src="<?php echo $image['url'] ?>"
            alt="<?php echo $image['alt'] ?>"
