@@ -650,6 +650,30 @@ acf_add_local_field_group(array (
                   ),
                 ),
                 array (
+                  'layout' => 'vertical',
+                  'choices' => array (
+                    'grid' => 'Grid',
+                    'carousel' => 'Carousel',
+                  ),
+                  'default_value' => 'grid',
+                  'other_choice' => 0,
+                  'save_other_choice' => 0,
+                  'allow_null' => 0,
+                  'return_format' => 'value',
+                  'key' => 'field_images_grid_style',
+                  'label' => 'Style',
+                  'name' => 'grid_style',
+                  'type' => 'radio',
+                  'instructions' => '',
+                  'required' => 0,
+                  'conditional_logic' => 0,
+                  'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                  ),
+                ),
+                array (
                   'sub_fields' => array (
                     array (
                       'return_format' => 'array',

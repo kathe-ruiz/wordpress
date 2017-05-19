@@ -12,40 +12,59 @@ if($total < 3){
 reset($row_item['grid_elements']);
 $first = key($row_item['grid_elements']);
 ?>
+<?php if ($row_item['grid_style'] == 'grid'): ?>
 <div class="container">
-  <div class="row highlights">
+<?php elseif ($row_item['grid_style'] == 'carousel'): ?>
+<script>
+  jQuery(document).ready(function() {
+    jQuery('.highlights').owlCarousel({
+      items: 4,
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive : {
+          0 : {
+            items: 1,
+            dots : false,
+          },
+          768 : {
+              dots : true,
+          }
+      },
+      nav: true,
+      navText: [
+        "<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>",
+        "<i class='fa fa-angle-right fa-lg' aria-hidden='true'></i>"
+      ],
+    });
+  });
+</script>
+<?php endif; ?>
+  <div class="highlights <?php echo $grid_style = ($row_item['grid_style'] == 'grid') ? 'row' :
+                                ( ($row_item['grid_style'] == 'carousel') ? 'owl-carousel' : '' ); ?>">
   <?php foreach ($row_item['grid_elements'] as $key => $grid_element): ?>
-    <?php if($row_item['grid_type']=='images'): ?>
-        <?php /*print_r($grid_element['image']['sizes']);*/
-      ?>
-      <div class="col-md-<?php echo $grid_size ?> <?php if ($key === $first): ?> col-md-offset-<?php echo $offset_size ?><?php endif; ?> text-center highlight-item">
-        <?php if ($grid_element['link']['url']):?>
-          <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
-            <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
-          </a>
-        <?php else: ?>
-          <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>" class="highlight-item__image img-responsive center-block">
-        <?php endif ?> 
-        <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
-        <p class="icons__text"><?php echo $grid_element['description'] ?></p>
-      </div>
-    <?php elseif($row_item['grid_type']=='icons'): ?>
-      <div class="col-md-<?php echo $grid_size ?> <?php if ($key === $first): ?>col-md-offset-<?php echo $offset_size ?><?php endif; ?> text-center">
-        <?php if ($grid_element['link']['url']):?>
-          <a href="<?php echo $grid_element['link']['url']?>" target="<?php echo $grid_element['link']['target']?>" title="<?php echo $grid_element['link']['title']?>">
-            <div class="icons__icon text-primary">
-              <?php echo $grid_element['font_icon'] ?>
-            </div>
-          </a>
-        <?php else: ?>
-          <div class="icons__icon text-primary">
-            <?php echo $grid_element['font_icon'] ?>
-          </div>
-        <?php endif ?>
-        <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
-        <p class="icons__text"><?php echo $grid_element['description'] ?></p>
-      </div>
-    <?php endif ?>
+
+    <div class="<?php if($row_item['grid_style']=='grid'): ?>col-md-<?php echo $grid_size ?><?php if ($key === $first): ?> col-md-offset-<?php echo $offset_size ?><?php endif; ?><?php endif; ?> text-center <?php if($row_item['grid_type']=='images'): ?>highlight-item<?php endif; ?>">
+      <?php if ($grid_element['link']['url']):?>
+        <a href="<?php echo $grid_element['link']['url']?>"
+           target="<?php echo $grid_element['link']['target']?>"
+           title="<?php echo $grid_element['link']['title']?>">
+      <?php endif; ?>
+      <?php if($row_item['grid_type']=='images'): ?>
+        <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>"
+             class="highlight-item__image img-responsive center-block">
+      <?php elseif ($row_item['grid_type']=='icons'): ?>
+        <div class="icons__icon text-primary">
+          <?php echo $grid_element['font_icon'] ?>
+        </div>
+      <?php endif; ?>
+      <?php if ($grid_element['link']['url']):?></a><?php endif; ?>
+      <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
+      <p class="icons__text"><?php echo $grid_element['description'] ?></p>
+    </div>
+
   <?php endforeach ?>
   </div>
+<?php if ($row_item['grid_style'] == 'grid'): ?>
 </div>
+<?php endif; ?>
