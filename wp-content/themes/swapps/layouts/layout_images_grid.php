@@ -4,8 +4,11 @@ $total = count($row_item['grid_elements']);
 if($total < 3){
   $grid_size = 4;
   $offset_size = (12 - $total * $grid_size)/2;
-}else{
+}elseif($total <= 4){
   $grid_size = 12/$total;
+  $offset_size = 0;
+}else{
+  $grid_size = 3;
   $offset_size = 0;
 }
 // Cache first element in array to apply offset only to it
@@ -21,14 +24,20 @@ $first = key($row_item['grid_elements']);
       items: 4,
       loop: true,
       margin: 10,
+      <?php if ($row_item['grid_autoplay']): ?>
+      autoplay: true,
+      autoplayHoverPause: true,
+      <?php if ($row_item['grid_timeout']): ?>
+      autoplayTimeout:<?php echo $row_item['grid_timeout'] ?>,
+      <?php endif; ?>
+      <?php endif; ?>
+      dots: false,
       responsiveClass: true,
       responsive : {
           0 : {
             items: 1,
-            dots : false,
           },
           768 : {
-              dots : true,
           }
       },
       nav: true,
@@ -44,7 +53,7 @@ $first = key($row_item['grid_elements']);
                                 ( ($row_item['grid_style'] == 'carousel') ? 'owl-carousel' : '' ); ?>">
   <?php foreach ($row_item['grid_elements'] as $key => $grid_element): ?>
 
-    <div class="<?php if($row_item['grid_style']=='grid'): ?>col-md-<?php echo $grid_size ?><?php if ($key === $first): ?> col-md-offset-<?php echo $offset_size ?><?php endif; ?><?php endif; ?> text-center <?php if($row_item['grid_type']=='images'): ?>highlight-item<?php endif; ?>">
+    <div class="<?php if($row_item['grid_style']=='grid'): ?>col-md-<?php echo $grid_size ?><?php if ($key === $first): ?> col-md-offset-<?php echo $offset_size ?><?php endif; ?><?php endif; ?> text-center highlight-item">
       <?php if ($grid_element['link']['url']):?>
         <a href="<?php echo $grid_element['link']['url']?>"
            target="<?php echo $grid_element['link']['target']?>"
