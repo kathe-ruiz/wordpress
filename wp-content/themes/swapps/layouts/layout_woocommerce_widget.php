@@ -4,7 +4,7 @@
   </div>
 <!-- Woocommerce Banner -->
 <?php endif; ?>
-<div class="container">
+<div class="container woo-ban">
   <div class="row two-lines__block">
     <div class="col-md-<?php echo $grid_size ?> text-left two-lines__text">
       <?php echo $row_item['woocommerce-widget'] ?>

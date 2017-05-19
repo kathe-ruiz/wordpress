@@ -69,7 +69,11 @@ switch ($slider_style) {
     };
   });
 </script>
+<?php if ($type == 'fixed' && $height != '') :?>
+<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme fixed-size">
+<?php else: ?>
 <div id="slider-<?php echo $slider_id; ?>" class="sw-slider owl-carousel owl-theme">
+<?php endif; ?>
   <?php foreach ($slides as $key => $slide): ?>
     <?php
       $image = get_if_exists($slide['image']);

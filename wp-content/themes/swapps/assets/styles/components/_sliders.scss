@@ -1,5 +1,18 @@
 .owl-carousel{
   position: relative;
+  &.fixed-size{
+    .owl-item{
+      background: #000;
+      .item{
+        img{
+          min-width: 0;
+          min-height: 0;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
   .item{
     .caption{
       background-color: rgba(0,0,0,.5);
@@ -48,8 +61,8 @@
       transition: all .5s ease-in-out;
       &:before{
         transition: all .5s ease-in-out;
-        font-family: Fontawesome;
-        content: "\f07a";
+        font-family: icomoon!important;
+        content: "\e900";
         background-color: $brand-primary;
         font-size: 28px;
         margin: 0 10px 0 -36px;
