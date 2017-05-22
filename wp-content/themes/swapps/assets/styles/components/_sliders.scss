@@ -18,6 +18,7 @@
       background-color: rgba(0,0,0,.5);
       color: #fff;
       position: absolute;
+      z-index: 10;
       @media (min-width: $screen-sm-min){
         top: 50%;
         left: 10%;
@@ -60,8 +61,8 @@
       transition: all .5s ease-in-out;
       &:before{
         transition: all .5s ease-in-out;
-        font-family: Fontawesome;
-        content: "\f07a";
+        font-family: icomoon!important;
+        content: "\e900";
         background-color: $brand-primary;
         font-size: 28px;
         margin: 0 10px 0 -36px;
@@ -265,6 +266,9 @@
     transform: translateX(-50%);
     min-width: 100%;
   }
+}
+.bx-caption{
+  z-index: 10;
 }
 .bx-wrapper{
   box-shadow: none;
