@@ -62,6 +62,30 @@ function widgets_init() {
     'before_title'  => '<div class="heading-underline"><h3 class="heading-underline__title heading-underline__title--sidebar">',
     'after_title'   => '</h3></div>'
   ]);
+  register_sidebar([
+    'name'          => __('Pre Header'),
+    'id'            => 'sidebar-pre-header',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+  register_sidebar([
+    'name'          => __('Header'),
+    'id'            => 'sidebar-header',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+  register_sidebar([
+    'name'          => __('After Header'),
+    'id'            => 'sidebar-after-header',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
 
   register_sidebar( array(
     'name'          => 'Pre Footer',
@@ -83,15 +107,6 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Woocommerce-Advertisement', 'sage'),
     'id'            => 'sidebar-woocommcerce',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ]);
-
-  register_sidebar([
-    'name'          => __('After Header', 'sage'),
-    'id'            => 'sidebar-after-header',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
