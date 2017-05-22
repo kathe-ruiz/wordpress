@@ -99,7 +99,6 @@
       $custom_logo_id = get_theme_mod( 'custom_after_header_image' );
       $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       $custom_logo = $image[0];?>
-      <?php print_r(sw_options('site_options_after_header_background_color')) ?>
         <div style="background:url(<?php echo $custom_logo; ?>);" class="after-header__background">
         </div>
       <?php endif;?>
