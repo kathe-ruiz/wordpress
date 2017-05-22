@@ -72,7 +72,7 @@ switch ($slider_style) {
 <?php if ($type == 'fixed' && $height != '') :?>
 <div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme fixed-size">
 <?php else: ?>
-<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
+<div id="slider-<?php echo $slider_id; ?>" class="sw-slider owl-carousel owl-theme">
 <?php endif; ?>
   <?php foreach ($slides as $key => $slide): ?>
     <?php
@@ -106,7 +106,7 @@ switch ($slider_style) {
           break;
       }
     ?>
-    <div class="item item-<?php echo $type ?>"
+    <div class="item item-<?php echo $type ?><?php if($slider_style == 'center' && !$video): ?> bg-cover<?php endif ?>"
       <?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
       <?php if ( isset($image) && $image ): ?>
         <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
@@ -175,7 +175,7 @@ jQuery(document).ready(function(){
   });
 });
 </script>
-<ul class="bxslider">
+<ul id="slider-<?php echo $slider_id; ?>" class="sw-slider bxslider">
   <?php foreach ($slides as $key => $slide): ?>
   <?php
     $image = get_if_exists($slide['image']);
@@ -187,7 +187,7 @@ jQuery(document).ready(function(){
     $cta = get_if_exists($slide['link']['title']);
   ?>
   <?php if ( isset($image) && $image ): ?>
-    <li class="bxslider__item">
+    <li class="bxslider__item <?php if($slider_style == 'center'): ?> bg-cover<?php endif ?>">
       <img class="bxslider__img"
            src="<?php echo $image['url'] ?>"
            alt="<?php echo $image['alt'] ?>"
