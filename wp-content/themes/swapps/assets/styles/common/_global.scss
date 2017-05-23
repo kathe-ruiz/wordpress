@@ -1,4 +1,6 @@
 $navbar-top-border:        3px;
+$background-color-buy-button:    #000;
+$color-text-buy-button:         #fff;
 
 $paragraphs-font-family:    $font-family-base;
 $paragraphs-font-weight:    300 !default;
@@ -96,4 +98,7 @@ $btn-border-radius-large:        $border-radius-base * 1.50 !default;
 input[type="submit"]{
   @extend .btn;
   @extend .btn-primary;
+}
+.cookieinfo-close{
+  float: left !important;
 }

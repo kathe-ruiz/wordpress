@@ -48,8 +48,8 @@
       transition: all .5s ease-in-out;
       &:before{
         transition: all .5s ease-in-out;
-        font-family: Fontawesome;
-        content: "\f07a";
+        font-family: icomoon!important;
+        content: "\e900";
         background-color: $brand-primary;
         font-size: 28px;
         margin: 0 10px 0 -36px;

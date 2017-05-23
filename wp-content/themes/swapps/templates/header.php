@@ -45,8 +45,10 @@
           <a href="tel:<?php echo $phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
         <?php endif ?>
         <?php $secondary_phone = sw_get_phone('secondary'); ?>
-        <?php if ($secondary_phone): ?>
-          <a href="tel:<?php echo $secondary_phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $secondary_phone; ?></span></a>
+        <?php if (function_exists('sw_options') && sw_options('checkbox_phone')): ?>
+          <?php if ($secondary_phone): ?>
+            <a href="tel:<?php echo $secondary_phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $secondary_phone; ?></span></a>
+          <?php endif ?>
         <?php endif ?>
         <?php //if ($rows = primary_landing_menu()):?>
         <?php if (function_exists('get_field')): ?>
@@ -99,7 +101,6 @@
       $custom_logo_id = get_theme_mod( 'custom_after_header_image' );
       $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       $custom_logo = $image[0];?>
-      <?php print_r(sw_options('site_options_after_header_background_color')) ?>
         <div style="background:url(<?php echo $custom_logo; ?>);" class="after-header__background">
         </div>
       <?php endif;?>
