@@ -6,6 +6,11 @@
   &__text{
     font-weight: 300;
     font-size: $font-size-h4;
+    line-height: 1.444;
+    color: $text-color;
+    p{
+      line-height: inherit;
+    }
   }
   &__btn{
     letter-spacing: 2px;
