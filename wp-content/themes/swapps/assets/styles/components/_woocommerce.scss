@@ -1979,6 +1979,22 @@ li.product{
       clear: initial;
       &:hover{
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        a.add_to_cart_button{
+          height: auto;
+          opacity: 1;
+        }
+        .quick_buy_container{
+          height: auto;
+        }
+      }
+      a.add_to_cart_button{
+        height: 0px;
+        transition: all .0s ease-in-out;
+        overflow: hidden;
+        opacity: 0;
+      }
+      .quick_buy_container{
+        height: 0px;
       }
     }
   }
