@@ -119,11 +119,11 @@ switch ($slider_style) {
           <?php endif ?>
           <?php if ($link and $cta): ?>
             <?php if ( $button_design == 'E-commerce' ):?>
-              <a href="<?php echo $link ?>" class="btn btn-ecommerce">
+              <a href="<?php echo $link ?>" class="btn uppercase btn-ecommerce">
                 <span><?php echo $cta; ?></span>
               </a>
             <?php else: ?>
-              <a href="<?php echo $link ?>" class="btn btn-primary">
+              <a href="<?php echo $link ?>" class="btn uppercase btn-primary">
                 <?php echo $cta; ?>
               </a>
             <?php endif ?>
