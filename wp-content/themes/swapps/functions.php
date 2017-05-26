@@ -291,8 +291,6 @@ class Image_Widget extends WP_Widget {
     ?>
     <div class="container-fluid">
       <div class="grid">
-        <div class="gutter-sizer"></div>
-        <div class="grid-sizer"></div>
       <?php if($image): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link1); ?>" target="_blank">
@@ -307,20 +305,20 @@ class Image_Widget extends WP_Widget {
           </a>
         </div>
       <?php endif; ?>
-      <?php if($image3): ?>
         <div class="grid-item">
-          <a href="<?php echo esc_url($link3); ?>" target="_blank">
-            <img src="<?php echo esc_url($image3); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
-          </a>
+          <?php if($image3 and $image4): ?>
+            <div class="item">
+              <a href="<?php echo esc_url($link3); ?>" target="_blank">
+                <img src="<?php echo esc_url($image3); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
+              </a>
+            </div>
+            <div class="item">
+              <a href="<?php echo esc_url($link4); ?>" target="_blank">
+                <img src="<?php echo esc_url($image4); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
+              </a>
+            </div>
+          <?php endif; ?>
         </div>
-      <?php endif; ?>
-      <?php if($image4): ?>
-        <div class="grid-item">
-          <a href="<?php echo esc_url($link4); ?>" target="_blank">
-            <img src="<?php echo esc_url($image4); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
-          </a>
-        </div>
-      <?php endif; ?>
       </div>
     </div>
     <?php

@@ -100,9 +100,12 @@ input[type="submit"]{
   @extend .btn;
   @extend .btn-primary;
 }
-.cookieinfo-close{
-  float: left !important;
-}
 .uppercase{
   text-transform: uppercase;
+}
+.cookieinfo{
+  z-index: 9999999 !important;
+  .cookieinfo-close{
+    float: left !important;
+  }
 }

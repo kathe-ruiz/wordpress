@@ -15,7 +15,7 @@ supported_plugins:
 - "woocommerce-menu-bar-cart":
     - "wpackagist-plugin/woocommerce-menu-bar-cart": "2.6.0"
 - "woocommerce-payu-latam-gateway":
-    - "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3"
+    - "woocommerce-payu": "0.1.0"
 - "woocommerce-tu-compra":
     - "woocommerce-tu-compra": "0.1.5"
 - "wp-accountant":

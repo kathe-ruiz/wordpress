@@ -33,6 +33,19 @@
         {
             "type": "package",
             "package": {
+                "name": "woocommerce-payu",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/woocommerce-payu.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "wp-accountant",
                 "version": "0.1.4",
                 "source": {
