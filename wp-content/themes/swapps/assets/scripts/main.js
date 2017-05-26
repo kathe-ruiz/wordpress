@@ -187,11 +187,8 @@
           $('#myNavbar.collapse.in').removeClass('in');
         });
         $('.grid').masonry({
-          resize: true,
           itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          gutter: '.gutter-sizer',
-          percentPosition: true
+          gutter: '.gutter-sizer'
         });
       },
       finalize: function() {
