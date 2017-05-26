@@ -1983,18 +1983,11 @@ li.product{
           height: auto;
           opacity: 1;
         }
-        .quick_buy_container{
-          height: auto;
-        }
       }
       a.add_to_cart_button{
-        height: 0px;
-        transition: all .0s ease-in-out;
+        transition: all .5s ease-in-out;
         overflow: hidden;
         opacity: 0;
-      }
-      .quick_buy_container{
-        height: 0px;
       }
     }
   }
