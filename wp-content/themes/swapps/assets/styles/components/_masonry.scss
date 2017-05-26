@@ -1,51 +1,56 @@
-.grid-sizer,
-.grid-item {
-  width: 33.33333333%;
-  padding: 10px;
-  float: left;
-  &:last-child{
-    top: auto !important;
-    bottom: 0;
-  }
-}
-.gutter-sizer { width: 0%; }
-@media (max-width: $screen-md) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-
-  }
-}
-@media (max-width: $screen-sm) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-}
-/* .grid {
-  column-count: 3;
-  column-gap: 1em;
+.grid {
+  display: flex;
   transition: all .5s ease-in-out;
-  column-fill: initial;
-  padding: 2em 0px;
+  padding: 1em;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .grid-item {
   width: 100%;
+  position: relative;
   padding: 1em;
+  .item{
+    &:last-child{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1em;
+    }
+  }
 }
 @media (max-width: $screen-md) {
   .grid{
-    column-count: 2;
+    display: block;
     .grid-item {
-      display: inline-flex;
+      width: 50%;
+      float: left;
+      padding: 1em;
+      &:last-child{
+        width: 100%;
+        padding: 0;
+      }
+      .item{
+        width: 50%;
+        float: left;
+        padding: 1em;
+        &:last-child{
+          position: inherit;
+        }
+      }
     }
   }
 }
 @media (max-width: $screen-sm) {
   .grid{
-    column-count: 1;
+    display: block;
     .grid-item {
-      display: block;
+      width: 100%;
+      float: none;
+      .item{
+        width: 100%;
+        float: none;
+      }
     }
   }
-}  */
+}
