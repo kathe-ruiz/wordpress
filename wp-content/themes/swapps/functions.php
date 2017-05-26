@@ -290,7 +290,8 @@ class Image_Widget extends WP_Widget {
     }
     ?>
     <div class="container-fluid">
-      <div class="grid">
+      <div class="grid"
+  data-masonry-options='{ "itemSelector": ".grid-item"}'>
         <div class="gutter-sizer"></div>
         <div class="grid-sizer"></div>
       <?php if($image): ?>
