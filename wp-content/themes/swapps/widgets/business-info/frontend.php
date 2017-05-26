@@ -4,7 +4,7 @@
       <div class="textitem">
         <i class="textitem__icon fa fa-3x fa-map-marker" aria-hidden="true"></i>
         <?php if (sw_options('address')): ?>
-        <span class="textitem__text textitem__text--light text-secondary capitalize"><?php echo sw_options('address'); ?>
+        <span class="textitem__text textitem__text--light text-secondary text-capitalize"><?php echo sw_options('address'); ?>
         <?php endif ?>
         <?php $location = array(sw_options('city'), sw_options('country')); ?>
         <?php if (sw_options('address') && array_filter($location)): ?><br><?php endif ?>
