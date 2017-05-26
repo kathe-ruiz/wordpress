@@ -30,7 +30,7 @@
           $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
           $custom_logo = $image[0];
         ?>
-        <img class="custom-logo" src="<?php echo $custom_logo; ?>" />
+        <img class="custom-logo" src="<?php echo $custom_logo; ?>" alt="Logo"/>
         <?php else: ?>
           <div class="logo-name"><strong><?php echo get_bloginfo( 'name' ) ?></strong></div>
         <?php endif ?>
