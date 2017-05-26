@@ -169,12 +169,11 @@ $widgets-row-desktop: 4;
         margin-top: 2em;
       }
     }
-    &.widget_nav_menu{
-      ul{
-        padding-left: 1em;
-        @media (max-width: $screen-xs-max){
-          list-style-type: none;
-        }
+    // Footer widget elements
+    ul{
+      padding-left: 1em;
+      @media (max-width: $screen-xs-max){
+        list-style-type: none;
       }
       li{
         color: $brand-primary;
@@ -184,19 +183,47 @@ $widgets-row-desktop: 4;
         .footer.navbar--brand &{
           @include text-contrast($brand-primary);
         }
-      }
-      a{
-        .footer.navbar--dark &{
-          @include text-contrast($footer-color-dark);
-        }
-        .footer.navbar--light &{
-          @include text-contrast($footer-color-light);
-        }
-        .footer.navbar--brand &{
-          @include text-contrast($brand-primary);
+        a{
+          .footer.navbar--dark &{
+            @include text-contrast($footer-color-dark);
+          }
+          .footer.navbar--light &{
+            @include text-contrast($footer-color-light);
+          }
+          .footer.navbar--brand &{
+            @include text-contrast($brand-primary);
+          }
         }
       }
     }
+    // &.widget_nav_menu{
+    //   ul{
+    //     padding-left: 1em;
+    //     @media (max-width: $screen-xs-max){
+    //       list-style-type: none;
+    //     }
+    //   }
+    //   li{
+    //     color: $brand-primary;
+    //     font-family: $paragraphs-secondary-font-family;
+    //     font-size: 18px;
+    //     line-height: 2;
+    //     .footer.navbar--brand &{
+    //       @include text-contrast($brand-primary);
+    //     }
+    //   }
+    //   a{
+    //     .footer.navbar--dark &{
+    //       @include text-contrast($footer-color-dark);
+    //     }
+    //     .footer.navbar--light &{
+    //       @include text-contrast($footer-color-light);
+    //     }
+    //     .footer.navbar--brand &{
+    //       @include text-contrast($brand-primary);
+    //     }
+    //   }
+    // }
   }
   .textwidget{
     margin: 0;
@@ -210,3 +237,5 @@ $widgets-row-desktop: 4;
     }
   }
 }
+
+
