@@ -435,3 +435,19 @@ function add_signin_nav_item($items) {
   return $items .= $item;
 }
 add_filter('wp_nav_menu_items','add_signin_nav_item');
+
+function is_acadp() {
+  global $post;
+  if ( isset($post->ID) && in_array( $post->ID, get_option('acadp_page_settings') ) )
+    return true;
+  return false;
+}
+
+function display_internal_sidebar() {
+  if (is_active_sidebar( 'internal_pages_sidebar' ) && 
+      !is_ultimatemember() &&
+      !is_acadp()) {
+    return true;
+  }
+  return false;
+} 
