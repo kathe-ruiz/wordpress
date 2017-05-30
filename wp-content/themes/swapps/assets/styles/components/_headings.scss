@@ -4,17 +4,25 @@
     line-height: 1.2;
     margin-bottom: 16px;
     word-wrap: break-word;
-    color: $title-color;
   }
   &__subtitle{
     font-family: $paragraphs-secondary-font-family;
     font-weight: $paragraphs-secondary-font-weight;
     word-wrap: break-word;
     line-height: 1.2;
-    color: $subtitle-color;
   }
   &__text{
     font-size: $font-size-h4;
     line-height: 23px;
+  }
+}
+.home-section:not(.bg-dark):not(.bg-primary){
+  .heading{
+    &__title{
+      color: $title-color;
+    }
+    &__subtitle{
+      color: $subtitle-color;
+    }
   }
 }
