@@ -1,23 +1,56 @@
-.grid-sizer,
+.grid {
+  display: flex;
+  transition: all .5s ease-in-out;
+  padding: 1em;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .grid-item {
-  width: 33.33333333%;
-  padding: 10px;
-  &:last-child{
-    top: auto !important;
-    bottom: 0;
+  width: 100%;
+  position: relative;
+  padding: 1em;
+  .item{
+    &:last-child{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1em;
+    }
   }
 }
-.gutter-sizer { width: 0%; }
 @media (max-width: $screen-md) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-
+  .grid{
+    display: block;
+    .grid-item {
+      width: 50%;
+      float: left;
+      padding: 1em;
+      &:last-child{
+        width: 100%;
+        padding: 0;
+      }
+      .item{
+        width: 50%;
+        float: left;
+        padding: 1em;
+        &:last-child{
+          position: inherit;
+        }
+      }
+    }
   }
 }
 @media (max-width: $screen-sm) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
+  .grid{
+    display: block;
+    .grid-item {
+      width: 100%;
+      float: none;
+      .item{
+        width: 100%;
+        float: none;
+      }
+    }
   }
 }

@@ -4,7 +4,7 @@
   <div class="row image-text__content">
     <div class="col-sm-6 <?php echo ($position) ? ' pull-right ' : ' pull-left ' ?>">
     <?php if ($row_item['image']): ?>
-      <img class="image-text__image center-block img-responsive" src="<?php echo $row_item['image']['url']; ?>" alt="">
+      <img class="image-text__image center-block img-responsive" src="<?php echo $row_item['image']['url']; ?>" alt="<?php echo $row_item['image']['name']; ?>">
     <?php endif ?>
     </div>
     <div class="col-sm-6">

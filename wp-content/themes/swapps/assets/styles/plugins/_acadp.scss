@@ -1,0 +1,23 @@
+.acadp{
+  @media (min-width: $screen-md-min){
+    &-media{
+      display: flex;
+    }
+    &-contact-detail{
+      display: flex; 
+      flex-direction: column; 
+      height: 100%;
+      .map{
+        flex: 2;
+      }
+      .address{
+        flex: 1;
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max){
+    .map .embed-responsive{
+      margin-bottom: 15px;
+    }
+  }
+}

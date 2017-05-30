@@ -69,7 +69,11 @@ switch ($slider_style) {
     };
   });
 </script>
+<?php if ($type == 'fixed' && $height != '') :?>
+<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme fixed-size">
+<?php else: ?>
 <div id="slider-<?php echo $slider_id; ?>" class="sw-slider owl-carousel owl-theme">
+<?php endif; ?>
   <?php foreach ($slides as $key => $slide): ?>
     <?php
       $image = get_if_exists($slide['image']);
@@ -105,7 +109,7 @@ switch ($slider_style) {
     <div class="item item-<?php echo $type ?><?php if($slider_style == 'center' && !$video): ?> bg-cover<?php endif ?>"
       <?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
       <?php if ( isset($image) && $image ): ?>
-        <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
+        <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['title'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
         <?php if ($title || $description || ($link and $cta)): ?>
         <div class="caption caption--<?php echo $slider_style; ?>">
           <?php if ($title || $description): ?>
@@ -115,11 +119,11 @@ switch ($slider_style) {
           <?php endif ?>
           <?php if ($link and $cta): ?>
             <?php if ( $button_design == 'E-commerce' ):?>
-              <a href="<?php echo $link ?>" class="btn btn-ecommerce">
+              <a href="<?php echo $link ?>" class="btn uppercase btn-ecommerce">
                 <span><?php echo $cta; ?></span>
               </a>
             <?php else: ?>
-              <a href="<?php echo $link ?>" class="btn btn-primary">
+              <a href="<?php echo $link ?>" class="btn uppercase btn-primary">
                 <?php echo $cta; ?>
               </a>
             <?php endif ?>

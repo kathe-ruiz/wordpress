@@ -291,36 +291,34 @@ class Image_Widget extends WP_Widget {
     ?>
     <div class="container-fluid">
       <div class="grid">
-        <div class="gutter-sizer"></div>
-        <div class="grid-sizer"></div>
       <?php if($image): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link1); ?>" target="_blank">
-            <img src="<?php echo esc_url($image); ?>" alt="image" class="img-responsive center-block">
+            <img src="<?php echo esc_url($image); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
           </a>
         </div>
       <?php endif; ?>
       <?php if($image2): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link2); ?>" target="_blank">
-            <img src="<?php echo esc_url($image2); ?>" alt="image" class="img-responsive center-block">
+            <img src="<?php echo esc_url($image2); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
           </a>
         </div>
       <?php endif; ?>
-      <?php if($image3): ?>
         <div class="grid-item">
-          <a href="<?php echo esc_url($link3); ?>" target="_blank">
-            <img src="<?php echo esc_url($image3); ?>" alt="image" class="img-responsive center-block">
-          </a>
+          <?php if($image3 and $image4): ?>
+            <div class="item">
+              <a href="<?php echo esc_url($link3); ?>" target="_blank">
+                <img src="<?php echo esc_url($image3); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
+              </a>
+            </div>
+            <div class="item">
+              <a href="<?php echo esc_url($link4); ?>" target="_blank">
+                <img src="<?php echo esc_url($image4); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
+              </a>
+            </div>
+          <?php endif; ?>
         </div>
-      <?php endif; ?>
-      <?php if($image4): ?>
-        <div class="grid-item">
-          <a href="<?php echo esc_url($link4); ?>" target="_blank">
-            <img src="<?php echo esc_url($image4); ?>" alt="image" class="img-responsive center-block">
-          </a>
-        </div>
-      <?php endif; ?>
       </div>
     </div>
     <?php
@@ -437,3 +435,19 @@ function add_signin_nav_item($items) {
   return $items .= $item;
 }
 add_filter('wp_nav_menu_items','add_signin_nav_item');
+
+function is_acadp() {
+  global $post;
+  if ( isset($post->ID) && in_array( $post->ID, get_option('acadp_page_settings') ) )
+    return true;
+  return false;
+}
+
+function display_internal_sidebar() {
+  if (is_active_sidebar( 'internal_pages_sidebar' ) && 
+      !is_ultimatemember() &&
+      !is_acadp()) {
+    return true;
+  }
+  return false;
+} 

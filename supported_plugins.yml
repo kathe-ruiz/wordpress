@@ -15,11 +15,11 @@ supported_plugins:
 - "woocommerce-menu-bar-cart":
     - "wpackagist-plugin/woocommerce-menu-bar-cart": "2.6.0"
 - "woocommerce-payu-latam-gateway":
-    - "wpackagist-plugin/woocommerce-payu-latam-gateway": "1.2.3"
+    - "woocommerce-payu": "0.1.0"
 - "woocommerce-tu-compra":
     - "woocommerce-tu-compra": "0.1.5"
 - "wp-accountant":
-    - "wp-accountant": "0.1.3"
+    - "wp-accountant": "0.1.4"
 - "woocommerce-quick-buy":
     - "wpackagist-plugin/woocommerce-quick-buy": "1.5"
 - "ultimate-member":
@@ -33,7 +33,7 @@ supported_plugins:
 - "jetpack":
     - "wpackagist-plugin/jetpack": "4.9"
 - "mailchimp-for-wp":
-    - "wpackagist-plugin/mailchimp-for-wp": "4.1.1"
+    - "wpackagist-plugin/mailchimp-for-wp": "4.1.3"
 - "wpackagist-plugin/wp-user-avatar":
     - "wpackagist-plugin/wp-user-avatar": "2.0.8"
 - "formidable":

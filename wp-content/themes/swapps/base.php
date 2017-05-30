@@ -19,6 +19,12 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <!-- Heading tags for SEO -->
+    <h1 class="hidden"><?php echo (is_front_page() || is_home()) ? get_bloginfo('name') : get_the_title() ?></h1>
+    <?php if (is_front_page()): ?>
+    <h2 class="hidden"><?php echo get_bloginfo('description'); ?></h2>
+    <?php endif; ?>
+
     <div class="document">
     <?php if (!(is_front_page() && get_option('show_on_front') == 'page') ): get_template_part('templates/page', 'header'); endif; ?>
     <div class="wrap container<?php if (!Setup\display_sidebar() && (is_page_template('template-landing.php') || is_page_template('template-home.php')) ) :  echo '-fluid'; endif; ?>" role="document">

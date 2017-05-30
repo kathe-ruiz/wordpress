@@ -186,13 +186,6 @@
         $(window).click(function() {
           $('#myNavbar.collapse.in').removeClass('in');
         });
-        $('.grid').masonry({
-          resize: true,
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          gutter: '.gutter-sizer',
-          percentPosition: true
-        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
