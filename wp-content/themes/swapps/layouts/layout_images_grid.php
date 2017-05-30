@@ -61,7 +61,7 @@ $first = key($row_item['grid_elements']);
       <?php endif; ?>
       <?php if($row_item['grid_type']=='images'): ?>
         <img src="<?php echo $grid_element['image']['sizes']['shop_catalog'] ?>"
-             class="highlight-item__image img-responsive center-block">
+             class="img-responsive center-block" alt="<?php echo $grid_element['image']['name']; ?>">
       <?php elseif ($row_item['grid_type']=='icons'): ?>
         <div class="icons__icon text-primary">
           <?php echo $grid_element['font_icon'] ?>

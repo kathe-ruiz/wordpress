@@ -186,9 +186,6 @@
         $(window).click(function() {
           $('#myNavbar.collapse.in').removeClass('in');
         });
-        /*$('.grid').masonry({
-          itemSelector: '.grid-item'
-        });*/
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

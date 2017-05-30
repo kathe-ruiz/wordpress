@@ -294,14 +294,14 @@ class Image_Widget extends WP_Widget {
       <?php if($image): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link1); ?>" target="_blank">
-            <img src="<?php echo esc_url($image); ?>" alt="image" class="img-responsive center-block">
+            <img src="<?php echo esc_url($image); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
           </a>
         </div>
       <?php endif; ?>
       <?php if($image2): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link2); ?>" target="_blank">
-            <img src="<?php echo esc_url($image2); ?>" alt="image" class="img-responsive center-block">
+            <img src="<?php echo esc_url($image2); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
           </a>
         </div>
       <?php endif; ?>
@@ -309,12 +309,12 @@ class Image_Widget extends WP_Widget {
           <?php if($image3 and $image4): ?>
             <div class="item">
               <a href="<?php echo esc_url($link3); ?>" target="_blank">
-                <img src="<?php echo esc_url($image3); ?>" alt="image" class="img-responsive center-block">
+                <img src="<?php echo esc_url($image3); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
               </a>
             </div>
             <div class="item">
               <a href="<?php echo esc_url($link4); ?>" target="_blank">
-                <img src="<?php echo esc_url($image4); ?>" alt="image" class="img-responsive center-block">
+                <img src="<?php echo esc_url($image4); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
               </a>
             </div>
           <?php endif; ?>

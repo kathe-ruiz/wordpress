@@ -1,11 +1,14 @@
 .two-lines{
-
   &__block:not(:last-child){
     margin-bottom: 60px;
   }
   &__text{
     font-weight: 300;
     font-size: $font-size-h4;
+    line-height: 1.444;
+    p{
+      line-height: inherit;
+    }
   }
   &__btn{
     letter-spacing: 2px;
@@ -33,6 +36,13 @@
     }
     &__btn{
       font-size: $font-size-base;
+    }
+  }
+}
+.home-section:not(.bg-dark):not(.bg-primary){
+  .two-lines{
+    &__text{
+      color: $text-color;
     }
   }
 }
