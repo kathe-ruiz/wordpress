@@ -21,3 +21,32 @@
     }
   }
 }
+.acadp-price-block,
+.acadp-listings-price{
+  &.rent{
+    .label{
+      background: $brand-primary;
+      color: #fff;
+      font-family: inherit;
+      font-weight: 500;
+      border-radius: 0px;
+    }
+  }
+  &.sale{
+    .label{
+      background: #eea236;
+      color: #fff;
+      font-family: inherit;
+      font-weight: 500;
+      border-radius: 0px;
+    }
+  }
+  &.not-type{
+    .label{
+      color: #333;
+      font-family: inherit;
+      font-weight: 500;
+      border-radius: 0px;
+    }
+  }
+}
