@@ -46,10 +46,20 @@
             
             <!-- Price -->
             <?php if( $can_show_price ) : ?>
-                <div class="pull-right text-right acadp-price-block">
+                <?php 
+                  $sale = "sale";
+                  $rent = "rent";
+                  if (isset($post_meta['175'][0])) {
+                    $type_offert = ( $post_meta['175'][0] ) ? $sale : $rent ; 
+                  }
+                  else{
+                    $type_offert = "not-type";
+                  }
+                ?>
+                <div class="pull-right text-right acadp-price-block <?php echo $type_offert;?>">
                     <?php
                         $price = acadp_format_amount( $post_meta['price'][0] );						
-                        echo '<p class="lead acadp-no-margin">'.acadp_currency_filter( $price ).'</p>';
+                        echo '<p class="lead acadp-no-margin"><span class="label">'.acadp_currency_filter( $price ).'</span></p>';
                     ?>
                 </div>
             <?php endif; ?>
