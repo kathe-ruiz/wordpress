@@ -137,14 +137,14 @@ switch ($slider_style) {
               $video_type = 'youtube';
               parse_str( parse_url( $video, PHP_URL_QUERY ), $q );
               $video_id = $q['v']; ?>
-            <div data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
+            <div class="sw-media-player" data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
             <?php elseif (stripos($video, "vimeo.com") !== false):
               $video_type = 'vimeo';
               $video_id = (int) substr(parse_url($video, PHP_URL_PATH), 1); ?>
-            <div data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
+            <div class="sw-media-player" data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
           <?php else: ?>
             <?php $video_extension = pathinfo($video, PATHINFO_EXTENSION) ?>
-            <video poster="" controls>
+            <video class="sw-media-player" poster="" controls>
               <source src="<?php echo $video ?>" type="video/<?php echo $video_extension ?>">
             </video>
           <?php endif; ?>
