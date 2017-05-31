@@ -444,9 +444,12 @@ function is_acadp() {
 }
 
 function display_internal_sidebar() {
-  if (is_active_sidebar( 'internal_pages_sidebar' ) && 
-      !is_ultimatemember() &&
-      !is_acadp()) {
+  if ( is_active_sidebar( 'internal_pages_sidebar' ) ) {
+    if ( (function_exists('is_ultimatemember') && is_ultimatemember()) || 
+         (function_exists('is_acadp') && is_acadp()) 
+    ) {
+      return false;
+    }
     return true;
   }
   return false;
