@@ -51,6 +51,7 @@ require_once('includes/sw_maintenance_mode.php');
 require 'widgets/subscribe/widget.php';
 require 'widgets/business-info/widget.php';
 require 'widgets/pre-header-info/widget.php';
+require 'widgets/custom-menu/widget.php';
 
 
 
