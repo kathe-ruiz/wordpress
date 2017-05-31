@@ -4,12 +4,14 @@
     line-height: 1.2;
     margin-bottom: 16px;
     word-wrap: break-word;
+    font-size: 40px;
   }
   &__subtitle{
     font-family: $paragraphs-secondary-font-family;
     font-weight: $paragraphs-secondary-font-weight;
     word-wrap: break-word;
-    line-height: 1.2;
+    line-height: 1.333;
+    font-size: 18px;
   }
   &__text{
     font-size: $font-size-h4;
