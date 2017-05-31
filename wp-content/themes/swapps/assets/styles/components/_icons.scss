@@ -16,9 +16,11 @@
     font-weight: 500;
   }
   &__text{
-    font-size: ($font-size-h4 - 2);
-    font-family: $paragraphs-secondary-font-family;
-    font-weight: $paragraphs-secondary-font-weight;
+    font-size: ($font-size-h4 - 3);
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 28px;
   }
   @media (max-width: $screen-sm) {
     padding-bottom: 20px;

@@ -1452,25 +1452,6 @@
                                                 }
                                             },
                                             {
-                                                "key": "field_images_grid_title",
-                                                "label": "Title",
-                                                "name": "title",
-                                                "type": "text",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": 0,
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
-                                                "default_value": "",
-                                                "maxlength": "",
-                                                "placeholder": "",
-                                                "prepend": "",
-                                                "append": ""
-                                            },
-                                            {
                                                 "key": "field_images_grid_description",
                                                 "label": "Description",
                                                 "name": "description",
