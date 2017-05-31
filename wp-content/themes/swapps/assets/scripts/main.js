@@ -48,7 +48,7 @@
           document.querySelector('.navbar-toggle').style.display = 'none';
         }
         // Initialize videos and save the instances in a variable
-        players = plyr.setup();
+        players = plyr.setup('sw-media-player');
         if (players) {
           players.forEach(function (player) {
             // Check if video is into a slider
