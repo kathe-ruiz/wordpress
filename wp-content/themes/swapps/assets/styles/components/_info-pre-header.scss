@@ -1,0 +1,71 @@
+.pre-header{
+  background: $brand-primary;
+  &__swbi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    .info{
+      .textitem{
+        display: inline-block;
+        margin-top: 0px;
+        @include text-contrast($brand-primary);
+        &:first-child{
+          padding-right: 10px;
+        }
+        &:last-child{
+          border-left: 1px solid;
+          padding-left:10px; 
+        }
+        &__icon{
+          width: auto;
+          @include text-contrast($brand-primary);
+          font-size: 18px;
+        }
+        &__text{
+          font-family: Montserrat,
+          Helvetica Neue,Helvetica,
+          Arial,sans-serif;
+          font-size: 15px;
+        }
+        &__link{
+          &:hover{
+            span{
+
+            }
+          }
+        }
+        .fa-phone{
+          + span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .socialmedia{
+      &__item{
+        float: left;
+        .fa{
+          color: initial;
+          &:hover{
+            @include text-contrast($brand-primary);
+          }
+        }
+      }
+      &__link{
+        &:hover{
+          background: transparent;
+        }
+      }
+    }
+  }
+  .widget{
+    clear: both;
+    float: none;
+  }
+  @media (max-width: $screen-sm){
+    &__swbi{
+      justify-content: center;
+    }
+  }
+}
