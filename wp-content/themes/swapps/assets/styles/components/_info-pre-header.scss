@@ -43,6 +43,9 @@
       }
     }
     .socialmedia{
+      .navbar-right{
+        margin: 0;
+      }
       &__item{
         float: left;
         .fa{
