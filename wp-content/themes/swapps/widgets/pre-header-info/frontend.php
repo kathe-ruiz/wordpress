@@ -1,7 +1,6 @@
 <div class="pre-header__swbi">
   <div class="info">
     <?php $phone = sw_get_phone(); ?>
-    <?php $secondary_phone = sw_get_phone('secondary'); ?>
     <?php if ($phone): ?>
       <div class="textitem">
         <a class="textitem__link" href="tel:<?php echo $phone; ?>">

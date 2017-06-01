@@ -47,10 +47,12 @@ require_once('includes/navbar-user-button.php');
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 require_once('includes/sw_maintenance_mode.php');
+require 'includes/customizer-navbar.php';
 // require_once('includes/admin-mods.php');
 require 'widgets/subscribe/widget.php';
 require 'widgets/business-info/widget.php';
 require 'widgets/pre-header-info/widget.php';
+require 'widgets/custom-menu/widget.php';
 
 
 

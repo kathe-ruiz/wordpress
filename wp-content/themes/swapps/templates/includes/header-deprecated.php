@@ -38,7 +38,7 @@
       </div>
       <div class="wrapper row-lg-centered flex-align-right">
         <div class="navbar__socialmedia socialmedia">
-          <?php include 'includes/socialmedia.php' ?>
+          <?php include 'socialmedia.php' ?>
         </div>
         <?php $phone = sw_get_phone(); ?>
         <?php if ($phone): ?>
@@ -79,7 +79,7 @@
             'container'         => 'div',
             'container_class'   => 'navbar__menu collapse navbar-collapse navbar-right text-uppercase',
             'container_id'      => 'myNavbar',
-            'menu_class'        => 'nav navbar-nav',
+            'menu_class'        => 'sw-nav nav navbar-nav',
             // 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'fallback_cb'       => 'swapps_default_menu',
             'walker'            => new wp_bootstrap_navwalker())
