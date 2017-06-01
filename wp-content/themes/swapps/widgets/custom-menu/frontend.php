@@ -2,7 +2,8 @@
   <?php $phone = sw_get_phone(); ?>
   <?php if ($phone): ?>
   <div class="phone">
-    <a class="phone__link btn btn-sm btn-primary-outline-withoutborder" href="tel:<?php echo $phone; ?>">
+    <?php echo get_logo(); ?>
+    <a class="phone__link btn btn-sm btn-primary-outline-withoutborder hidden-xs hidden-sm" href="tel:<?php echo $phone; ?>">
       <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
       <span class="phone__text text-secondary" href="#"><?php echo $phone; ?></span>
     </a>
@@ -22,10 +23,14 @@
       'walker'            => new wp_bootstrap_navwalker())
     );
   ?>
-  <div>
+  <div class="flex-md">
     <div class="socialmedia visible-lg">
       <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
     </div>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="hidden-lg button-social" data-toggle="modal" data-target="#modal-social">
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </button>
     <div class="navbar-header navbar__toggle">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -50,4 +55,21 @@
       'walker'            => new wp_bootstrap_navwalker())
     );
   ?>
+</div>
+<!-- Modal -->
+<div id="modal-social" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Redes sociales</h4>
+      </div>
+      <div class="modal-body">
+        <div class="socialmedia">
+          <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
