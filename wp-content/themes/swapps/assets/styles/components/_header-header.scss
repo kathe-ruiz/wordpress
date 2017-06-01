@@ -25,6 +25,9 @@
       }
     }
   }
+  &.navbar--transparent{
+    background: #fff;
+  }
   .header{
     .header_widget{
       .header__swbi{
@@ -72,7 +75,7 @@
                 }
               }
             }
-            .menu-item-type-custom.menu-item-object-custom{
+            .menu-image-not-hovered{
               display: block;
               img.menu-image{
                 max-height: 45px;
@@ -153,7 +156,7 @@
         }
       }
     }
-    .menu-item-type-custom.menu-item-object-custom{
+    .menu-image-not-hovered{
       display: none;
     }
   }
