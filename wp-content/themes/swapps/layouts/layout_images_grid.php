@@ -68,6 +68,7 @@ $first = key($row_item['grid_elements']);
         </div>
       <?php endif; ?>
       <?php if ($grid_element['link']['url']):?></a><?php endif; ?>
+      <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
       <p class="icons__text"><?php echo $grid_element['description'] ?></p>
     </div>
 
