@@ -1463,7 +1463,7 @@
                                                         {
                                                             "field": "field_images_grid_type",
                                                             "operator": "!=",
-                                                            "value": "icons"
+                                                            "value": "images"
                                                         }
                                                     ]
                                                 ],

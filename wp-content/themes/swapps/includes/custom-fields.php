@@ -1473,7 +1473,7 @@ acf_add_local_field_group(array (
                           array (
                             'field' => 'field_images_grid_type',
                             'operator' => '!=',
-                            'value' => 'icons',
+                            'value' => 'images',
                           ),
                         ),
                       ),
