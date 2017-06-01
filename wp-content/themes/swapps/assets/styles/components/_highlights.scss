@@ -9,6 +9,7 @@
   }
   &__caption{
     line-height: 1.2;
+    font-weight: normal;
     @media (max-width: $screen-xs-max){
       margin-top: 20px;
       font-size: 1em;
