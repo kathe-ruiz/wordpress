@@ -1458,7 +1458,15 @@
                                                 "type": "text",
                                                 "instructions": "",
                                                 "required": 0,
-                                                "conditional_logic": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_images_grid_type",
+                                                            "operator": "!=",
+                                                            "value": "icons"
+                                                        }
+                                                    ]
+                                                ],
                                                 "wrapper": {
                                                     "width": "",
                                                     "class": "",

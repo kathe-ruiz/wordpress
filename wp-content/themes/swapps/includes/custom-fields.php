@@ -1468,7 +1468,15 @@ acf_add_local_field_group(array (
                       'type' => 'text',
                       'instructions' => '',
                       'required' => 0,
-                      'conditional_logic' => 0,
+                      'conditional_logic' => array (
+                        array (
+                          array (
+                            'field' => 'field_images_grid_type',
+                            'operator' => '!=',
+                            'value' => 'icons',
+                          ),
+                        ),
+                      ),
                       'wrapper' => array (
                         'width' => '',
                         'class' => '',
