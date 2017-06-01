@@ -7,7 +7,7 @@
     border-radius: 3px;
     border: 1px solid $brand-primary;
     max-width: 260px;
-    padding: 8px 15px;
+    padding: 8px 15px !important;
     i:before{
       color: $brand-primary;
       content: "\e900";

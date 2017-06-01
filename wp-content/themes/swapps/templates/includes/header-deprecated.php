@@ -38,7 +38,7 @@
       </div>
       <div class="wrapper row-lg-centered flex-align-right">
         <div class="navbar__socialmedia socialmedia">
-          <?php include 'includes/socialmedia.php' ?>
+          <?php include 'socialmedia.php' ?>
         </div>
         <?php $phone = sw_get_phone(); ?>
         <?php if ($phone): ?>
