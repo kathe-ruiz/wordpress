@@ -23,7 +23,7 @@
     );
   ?>
   <div>
-    <div class="socialmedia hidden-xs">
+    <div class="socialmedia visible-lg">
       <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
     </div>
     <div class="navbar-header navbar__toggle">
