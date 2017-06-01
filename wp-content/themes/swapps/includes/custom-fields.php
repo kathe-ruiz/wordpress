@@ -1462,6 +1462,33 @@ acf_add_local_field_group(array (
                       ),
                     ),
                     array (
+                      'key' => 'field_images_grid_title',
+                      'label' => 'Title',
+                      'name' => 'title',
+                      'type' => 'text',
+                      'instructions' => '',
+                      'required' => 0,
+                      'conditional_logic' => array (
+                        array (
+                          array (
+                            'field' => 'field_images_grid_type',
+                            'operator' => '!=',
+                            'value' => 'images',
+                          ),
+                        ),
+                      ),
+                      'wrapper' => array (
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                      ),
+                      'default_value' => '',
+                      'maxlength' => '',
+                      'placeholder' => '',
+                      'prepend' => '',
+                      'append' => '',
+                    ),
+                    array (
                       'key' => 'field_images_grid_description',
                       'label' => 'Description',
                       'name' => 'description',

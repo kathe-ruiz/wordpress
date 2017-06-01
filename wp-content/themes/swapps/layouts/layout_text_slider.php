@@ -33,6 +33,7 @@
 <?php foreach ($slides as $key => $slide): ?>
   <?php
     $image = $slide['image'];
+    $heading = $slide['heading'];
     $title = $slide['title'];
     $title_2 = $slide['title_2'];
     $description = $slide['description'];
@@ -41,11 +42,9 @@
   <div class="item">
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
-        <?php /* ?>
-        <?php if ($call_to_action_text): ?>
-          <h4 class="sliders__title text-center"><?php echo $call_to_action_text ?></h4>
+        <?php if ($heading): ?>
+          <h4 class="sliders__title text-center"><?php echo $heading ?></h4>
         <?php endif; ?>
-        <?php // */ ?>
         <?php if ($description): ?>
           <p class="sliders__text text-secondary"><?php echo strip_tags($description) ?></p>
         <?php endif; ?>

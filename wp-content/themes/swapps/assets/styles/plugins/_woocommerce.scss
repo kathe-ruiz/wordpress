@@ -2,3 +2,16 @@
   font-size: 28px;
   word-wrap: break-word;
 }
+.wpmenucartli{
+  a{
+    border-radius: 3px;
+    border: 1px solid $brand-primary;
+    max-width: 260px;
+    padding: 8px 15px;
+    i:before{
+      color: $brand-primary;
+      content: "\e900";
+      font-family: icomoon !important;
+    }
+  }
+}
