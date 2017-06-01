@@ -24,6 +24,9 @@
     );
   ?>
   <div class="flex-md">
+    <a class="phone__link btn btn-sm btn-primary-outline-withoutborder visible-xs visible-sm" href="tel:<?php echo $phone; ?>">
+      <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
+    </a>
     <div class="socialmedia visible-lg">
       <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
     </div>

@@ -153,22 +153,19 @@
           .flex-md{
             display: flex;
           }
+          .phone{
+            &__link {
+              padding: 5px 10px;
+            }
+            &__icon{
+              margin: 0 !important;
+              vertical-align: inherit;
+            }
+          }
         }
       }
     }
     @media (max-width: $screen-sm){
-      .phone{
-        &__link {
-          padding: 5px 10px;
-        }
-        &__icon{
-          margin: 0 !important;
-          vertical-align: inherit;
-        }
-        &__text{
-          display: none;
-        }
-      }
     }
     .menu-image-not-hovered{
       display: none;
