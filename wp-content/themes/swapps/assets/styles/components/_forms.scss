@@ -45,3 +45,31 @@ form.frm-show-form{
     padding-bottom: 17px;
   }
 }
+.nf-field-container{
+  .nf-field{
+    .nf-field-label{
+      color: $subtitle-color;
+      font-size: 16px;
+      line-height: 1.625;
+      font-family: PlayfairDisplay;
+    }
+    .nf-field-element{
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="url"]{
+        border: 1px solid #ddd;
+        min-height: 38px;
+      }
+      input[type="button"]{
+        @extend .btn;
+        @extend .btn-primary-withoutborder;
+        text-transform: uppercase;
+      }
+      textarea{
+        min-height: 144px;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+}
