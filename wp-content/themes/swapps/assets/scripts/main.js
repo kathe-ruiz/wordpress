@@ -186,6 +186,11 @@
         $(window).click(function() {
           $('#myNavbar.collapse.in').removeClass('in');
         });
+        $(document).ready(function(){
+          $('.um-profile-headericon a').on('click', function() {
+            $('.um-profile-headericon .um-dropdown').toggleClass('open');
+          });
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

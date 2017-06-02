@@ -109,3 +109,14 @@ input[type="submit"]{
     float: left !important;
   }
 }
+.um-profile-headericon{
+  .um-dropdown{
+    display: none !important;
+    .um-dropdown-hide{
+      display: none;
+    }
+  }
+  .um-dropdown.open{
+    display: block !important;
+  }
+}
