@@ -435,3 +435,14 @@
 .header .navbar-right{
   margin-right: 0;
 }
+.menu-item-users{
+  .dropdown-menu{
+    .menu-item{
+      a{
+        &:hover{
+          background: transparent;
+        }
+      }
+    }
+  }
+}

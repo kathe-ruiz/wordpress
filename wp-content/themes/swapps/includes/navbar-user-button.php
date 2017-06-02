@@ -9,9 +9,24 @@
         <?php _e('Sign in'); ?>
       </a>
     <?php else: ?>
-      <a href="<?php echo get_permalink( um_get_option('core_logout') ); ?>" title="<?php _e('Log out'); ?>">
-        <?php _e('Log out'); ?>
-      </a>
+      <a title="<?php _e('Log out'); ?>" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false"><?php $current_user = wp_get_current_user(); echo $current_user->user_login; ?> <span class="caret"></span></a>
+      <ul role="menu" class="dropdown-menu">
+        <li class="menu-item">
+          <a href="<?php echo get_permalink( um_get_option('core_account') ); ?>" title="mi cuenta">
+            <?php _e('Mi cuenta'); ?>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="<?php echo get_permalink( um_get_option('core_user') ); ?>" title="perfil">
+            <?php _e('Perfil'); ?>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="<?php echo get_permalink( um_get_option('core_logout') ); ?>" title="<?php _e('Log out'); ?>">
+            <?php _e('Log out'); ?>
+          </a>
+        </li>
+      </ul>
     <?php endif; ?>
     </li>
     <?php
