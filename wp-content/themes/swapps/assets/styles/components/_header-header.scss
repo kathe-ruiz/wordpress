@@ -1,7 +1,7 @@
 .navbar-center{
-  &.navbar--dark{
-    background: #000;
-    .header{
+  .header{
+    &.navbar--dark{
+      background: #000;
       .header_widget{
         .header__swbi{
           .phone{
@@ -27,11 +27,16 @@
         }
       }
     }
-  }
-  &.navbar--transparent{
-    background: #fff;
-  }
-  .header{
+    &.navbar--transparent{
+      background: #fff;
+    }
+    &.navbar-fixed.affix{
+      top: 0;
+      width: 100%;
+      right: 0;
+      left: 0;
+      z-index: 99;
+    }
     .header_widget{
       .header__swbi{
         display: flex;
@@ -164,16 +169,7 @@
           }
         }
       }
-    }
-    @media (max-width: $screen-sm){
-    }
-    .menu-image-not-hovered{
-      display: none;
-    }
-  }
-  @media (max-width: $screen-md){
-    &.navbar--dark{
-      .header{
+      &.navbar--dark{
         .header_widget{
           .header__sec{
             .navbar__menu{
@@ -187,12 +183,17 @@
         }
       }
     }
+    @media (max-width: $screen-sm){
+    }
+    .menu-image-not-hovered{
+      display: none;
+    }
   }
 }
 .navbar-center.navbar--transparent .navbar-nav .open .dropdown-menu>li>a{
   color: inherit;
 }
-.admin-bar .navbar-center.navbar-fixed-top {
+.admin-bar .navbar-center .navbar-fixed.affix {
   top:31px;
 }
 /* .menu-item-has-children > a:after{

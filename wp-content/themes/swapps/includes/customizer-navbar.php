@@ -2,7 +2,7 @@
   function get_css_classes(){
     $css_classes;
     if (function_exists('sw_options') && sw_options('site_options_secondary_navbar_position')){
-      $css_classes = sw_options('site_options_secondary_navbar_position');
+      $css_classes = 'navbar-fixed';
     }
     else{
       $css_classes = '';

@@ -190,6 +190,16 @@
           $('.um-profile-headericon a').on('click', function() {
             $('.um-profile-headericon .um-dropdown').toggleClass('open');
           });
+          var affixElement = '.navbar-center .navbar-fixed';
+
+          $(affixElement).affix({
+            offset: {
+              // Distance of between element and top page
+              top: function () {
+                return (this.top = $(affixElement).offset().top)
+              },
+            }
+          });
         });
       },
       finalize: function() {
