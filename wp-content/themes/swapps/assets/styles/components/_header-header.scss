@@ -36,6 +36,12 @@
       right: 0;
       left: 0;
       z-index: 99;
+      position: fixed;
+    }
+    &.navbar-fixed{
+      position: absolute;
+      z-index: 99;
+      width: 100%;
     }
     .header_widget{
       .header__swbi{
@@ -194,7 +200,7 @@
   color: inherit;
 }
 .admin-bar .navbar-center .navbar-fixed.affix {
-  top:31px;
+  top:32px;
 }
 /* .menu-item-has-children > a:after{
   content: "";
