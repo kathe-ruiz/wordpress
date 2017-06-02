@@ -28,7 +28,7 @@
             <div class="col-md-3 col-xs-6">
               <a class="gallery__item" href="<?php echo $image; ?>">
                 <i class="fa fa-search-plus" aria-hidden="true"></i>
-                <img class="gallery__item-image img-responsive" src="<?php echo $size; ?>"  width="<?php echo $width ?>" height="<?php echo $width ?>" alt="<?php echo $name; ?>">
+                <img class="gallery__image img-responsive" src="<?php echo $size; ?>"  width="<?php echo $width ?>" height="<?php echo $width ?>" alt="<?php echo $name; ?>">
               </a>
             </div>
           <?php endforeach ?>
