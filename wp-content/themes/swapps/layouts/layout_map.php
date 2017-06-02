@@ -1,3 +1,11 @@
+<?php
+$styles = '';
+if ($row_item['filter'] == 'silver') {
+  $styles = file_get_contents(
+    get_template_directory().'/includes/map_styles_silver.json'
+  );
+}
+?>
 <div id="map">
   <script>
     function initMap() {
@@ -6,6 +14,7 @@
         center: location,
         draggable: false,
         scrollwheel: false,
+        <?php echo ($styles) ? "styles: $styles," : '' ; ?>
         zoom: 15
       });
 
