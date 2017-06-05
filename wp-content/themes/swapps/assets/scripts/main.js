@@ -196,7 +196,7 @@
             offset: {
               // Distance of between element and top page
               top: function () {
-                return (this.top = $(affixElement).offset().top)
+                return (this.top = $(affixElement).offset().top);
               },
             }
           });
