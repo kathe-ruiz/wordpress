@@ -20,6 +20,7 @@
   &__text{
     font-weight: 400;
     color: $subtitle-color;
+    font-family: $paragraphs-secondary-font-family;
     font-size: ($font-size-h4 - 3);
     line-height: 1.333;
   }
