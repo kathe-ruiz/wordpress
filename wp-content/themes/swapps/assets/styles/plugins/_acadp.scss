@@ -57,3 +57,19 @@
     }
   }
 }
+.acadp-post-form #acadp-custom-fields-listings{
+  display: flex;
+  flex-wrap: wrap;
+  .form-group{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.acadp-post-form #acadp-listing-details{
+  .form-title, .form-description{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
