@@ -89,10 +89,9 @@
                 }
               }
             }
-            .menu-image-not-hovered{
-              display: block;
-              img.menu-image{
-                max-height: 45px;
+            .has-image{
+              img{
+                max-width: 200px;
               }
             }
           }
@@ -157,6 +156,17 @@
         }
       }
     }
+    @media (max-width: $screen-lg){
+      .header_widget{
+        .header__swbi{
+          .phone{
+            &__text{
+              display: none;
+            }
+          }
+        }
+      }
+    }
     @media (max-width: $screen-md) {
       .header_widget{
         .header__swbi{
@@ -167,10 +177,18 @@
           .phone{
             &__link {
               padding: 5px 10px;
+              margin: 0 2px;
             }
             &__icon{
               margin: 0 !important;
               vertical-align: inherit;
+            }
+          }
+        }
+        .navbar__menu{
+          .navbar-nav{
+            .has-image{
+              display: none;
             }
           }
         }
@@ -190,9 +208,6 @@
       }
     }
     @media (max-width: $screen-sm){
-    }
-    .menu-image-not-hovered{
-      display: none;
     }
   }
 }

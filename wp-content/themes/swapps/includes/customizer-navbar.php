@@ -41,4 +41,41 @@
       return $style;
     }
   }
+  if (!function_exists('get_phones')) {
+    function get_phones(){
+      $phone = sw_get_phone();
+      if ($phone):?>
+        <a class="phone__link btn btn-sm btn-primary-outline-withoutborder hidden-xs hidden-sm" href="tel:<?php echo $phone; ?>">
+          <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
+          <span class="phone__text text-secondary" href="#"><?php echo $phone; ?></span>
+        </a>
+      <?php endif;
+      $secondary_phone = sw_get_phone('secondary');
+      if (function_exists('sw_options') && sw_options('checkbox_phone')): 
+        if ($secondary_phone): ?>
+          <a class="phone__link btn btn-sm btn-primary-outline-withoutborder hidden-xs hidden-sm" href="tel:<?php echo $secondary_phone; ?>">
+            <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
+            <span class="phone__text text-secondary" href="#"><?php echo $secondary_phone; ?></span>
+          </a>
+        <?php endif;
+      endif;
+    }
+  }if (!function_exists('get_phones_responsive')) {
+    function get_phones_responsive(){
+      $phone = sw_get_phone();
+      if ($phone):?>
+        <a class="phone__link btn btn-sm btn-primary-outline-withoutborder visible-xs visible-sm" href="tel:<?php echo $phone; ?>">
+          <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
+        </a>
+      <?php endif;
+      $secondary_phone = sw_get_phone('secondary');
+      if (function_exists('sw_options') && sw_options('checkbox_phone')): 
+        if ($secondary_phone): ?>
+          <a class="phone__link btn btn-sm btn-primary-outline-withoutborder visible-xs visible-sm" href="tel:<?php echo $secondary_phone; ?>">
+      <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
+    </a>
+        <?php endif;
+      endif;
+    }
+  }
  ?>

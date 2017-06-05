@@ -3,10 +3,7 @@
   <?php if ($phone): ?>
   <div class="phone">
     <?php echo get_logo(); ?>
-    <a class="phone__link btn btn-sm btn-primary-outline-withoutborder hidden-xs hidden-sm" href="tel:<?php echo $phone; ?>">
-      <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
-      <span class="phone__text text-secondary" href="#"><?php echo $phone; ?></span>
-    </a>
+    <?php echo get_phones(); ?>
   </div>
   <?php endif ?>
   <?php
@@ -24,9 +21,7 @@
     );
   ?>
   <div class="flex-md">
-    <a class="phone__link btn btn-sm btn-primary-outline-withoutborder visible-xs visible-sm" href="tel:<?php echo $phone; ?>">
-      <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
-    </a>
+    <?php echo get_phones_responsive(); ?>
     <div class="socialmedia visible-lg">
       <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
     </div>
