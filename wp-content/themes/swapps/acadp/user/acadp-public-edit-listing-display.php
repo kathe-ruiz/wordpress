@@ -139,8 +139,8 @@
                 	<?php if( $has_map ) : ?>
                 		<div class="acadp-map embed-responsive embed-responsive-16by9" data-type="form">
                 			<?php
-								$latitude  = isset( $post_meta['latitude'] )  ? esc_attr( $post_meta['latitude'][0] )  : '';
-								$longitude = isset( $post_meta['longitude'] ) ? esc_attr( $post_meta['longitude'][0] ) : '';
+								$latitude  = isset( $post_meta['latitude'] )  ? esc_attr( $post_meta['latitude'][0] )  : '3.4516467';
+								$longitude = isset( $post_meta['longitude'] ) ? esc_attr( $post_meta['longitude'][0] ) : '-76.5319854';
 							?>
 	    					<div class="marker" data-latitude="<?php echo $latitude; ?>" data-longitude="<?php echo $longitude; ?>"></div>    
 	  					</div>
