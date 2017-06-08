@@ -457,3 +457,5 @@ function display_internal_sidebar() {
   }
   return false;
 } 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'gallery-image', 320, 200, true ); // Hard Crop Mode
