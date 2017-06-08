@@ -56,3 +56,5 @@ supported_plugins:
     - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.3.4"
 - "regenerate-thumbnails":
     - "wpackagist-plugin/regenerate-thumbnails": "2.2.6"
+- "anspress-question-answer":
+    - "wpackagist-plugin/anspress-question-answer": "4.0.5"
