@@ -7,9 +7,9 @@ class CustomMenuHeaderWidget extends WP_Widget {
   public function __construct() {
     $widget_ops = array(
       'classname' => 'header_widget',
-      'description' => __('Muestra un menu personalizado'),
+      'description' => __('Muestra un menu personalizado con el logo en el centro del menu'),
     );
-    parent::__construct( 'custom_menu_header_widget', 'Custom Menu Header Widget', $widget_ops );
+    parent::__construct( 'custom_menu_header_widget', 'Menu centrado', $widget_ops );
   }
 
   /**
@@ -28,7 +28,7 @@ class CustomMenuHeaderWidget extends WP_Widget {
         echo '<p>'. apply_filters( 'widget_description', $instance['description'] ) .'</p>';
     }
     ob_start();
-    get_template_part('widgets/custom-menu/frontend');
+    get_template_part('widgets/centered-menu/frontend');
     $html = ob_get_contents();
     ob_end_clean();
     echo $html;

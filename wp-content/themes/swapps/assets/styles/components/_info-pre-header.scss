@@ -72,3 +72,13 @@
     }
   }
 }
+.navbar-align-right{
+  .pre-header{
+    &__swbi{
+      justify-content: flex-end;
+    }
+    .socialmedia{
+      display: none;
+    }
+  }
+}
