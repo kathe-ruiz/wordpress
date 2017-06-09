@@ -22,6 +22,11 @@
         .phone{
           &__link{
             border-width: 2px;
+            &:hover{
+              .fa{
+                color: $white-text;
+              }
+            }
           }
           &__icon{
             color: $brand-primary;
@@ -57,5 +62,60 @@
         }
       }
     }
+    &.navbar--dark{
+      .header__right{
+        .menu{
+          .phone{
+            &__text{
+              color: $white-text;
+            }
+          }
+          .socialmedia{
+            &__link{
+              color: $white-text;
+              &:hover{
+                color: $brand-primary;
+              }
+            }
+          }
+          &__nav{
+            .navbar-nav{
+              > .menu-item{
+                > a{
+                  color: $white-text;
+                }
+                &:hover{
+                  > a{
+                    color: $brand-primary;
+                  }
+                }
+              }
+              .active,
+              .current-menu-item{
+                a{
+                  color: $brand-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.navbar-fixed.affix{
+      top: 0;
+      width: 100%;
+      right: 0;
+      left: 0;
+      z-index: 99;
+      position: fixed;
+    }
+    &.navbar-fixed{
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+    }
   }
+}
+.admin-bar .navbar-align-right .navbar-fixed.affix {
+  top:32px;
 }
