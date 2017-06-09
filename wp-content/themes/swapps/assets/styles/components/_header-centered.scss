@@ -1,0 +1,61 @@
+.navbar-align-right{
+  .header{
+    &__right{
+      padding: 15px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+        &__img{
+          max-height: 90px;
+          height: auto;
+        }
+      }
+      .menu{
+        &__phones{
+          float: left;
+        }
+        &__socialmedia{
+          float: right;
+          margin-right: 15px;
+        }
+        .phone{
+          &__link{
+            border-width: 2px;
+          }
+          &__icon{
+            color: $brand-primary;
+            font-size: 20px;
+            margin-right: 5px;
+            vertical-align: sub;
+          }
+          &__text{
+            font-family: Montserrat,
+            Helvetica Neue,
+            Helvetica,Arial,sans-serif;
+            font-size: 16px;
+          }
+        }
+        .socialmedia{
+          &__link{
+            color: initial;
+            &:hover{
+              color: $brand-primary;
+            }
+          }
+        }
+        &__nav{
+          .navbar-nav{
+            .menu-item{
+              border-top: 0px;
+              a{
+                padding-top: 6px;
+                padding-bottom: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

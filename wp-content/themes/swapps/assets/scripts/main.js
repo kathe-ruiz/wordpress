@@ -190,7 +190,7 @@
           $('.um-profile-headericon a').on('click', function() {
             $('.um-profile-headericon .um-dropdown').toggleClass('open');
           });
-          var affixElement = '.navbar-center .navbar-fixed';
+          var affixElement = 'header .navbar-fixed';
 
           $(affixElement).affix({
             offset: {

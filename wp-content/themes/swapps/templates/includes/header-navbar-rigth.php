@@ -2,8 +2,9 @@
 <div class="container-fluid pre-header">
   <?php dynamic_sidebar('sidebar-pre-header'); ?>
 </div>
-<?php dynamic_sidebar('sidebar-header'); ?>
-<?php dynamic_sidebar('sidebar-after-header'); ?>
+<div class="container-fluid header <?php echo get_css_classes(); ?>" id="navbar-main" <?php echo get_opacity(); ?>>
+  <?php dynamic_sidebar('sidebar-header'); ?>
+</div>
 </header>
 
 

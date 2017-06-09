@@ -67,7 +67,8 @@
         <?php endif;
       endif;
     }
-  }if (!function_exists('get_phones_responsive')) {
+  }
+  if (!function_exists('get_phones_responsive')) {
     function get_phones_responsive(){
       $phone = sw_get_phone();
       if ($phone):?>
