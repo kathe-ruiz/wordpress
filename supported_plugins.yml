@@ -19,7 +19,7 @@ supported_plugins:
 - "woocommerce-tu-compra":
     - "woocommerce-tu-compra": "0.1.5"
 - "wp-dors":
-    - "wp-dors": "0.1.0"
+    - "wp-dors": "0.1.1"
 - "wp-accountant":
     - "wp-accountant": "0.1.4"
 - "woocommerce-quick-buy":

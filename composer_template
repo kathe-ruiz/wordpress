@@ -84,11 +84,11 @@
             "type": "package",
             "package": {
                 "name": "wp-dors",
-                "version": "0.1.0",
+                "version": "0.1.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-dors.git",
                     "type": "git",
-                    "reference": "0.1.0"
+                    "reference": "0.1.1"
                 }
             }
         },
