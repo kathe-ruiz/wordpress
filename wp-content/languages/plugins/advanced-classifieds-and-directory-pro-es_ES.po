@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Advanced Classifieds and Directory Pro\n"
 "POT-Creation-Date: 2017-03-04 16:45+0530\n"
-"PO-Revision-Date: 2017-05-17 14:16-0500\n"
+"PO-Revision-Date: 2017-06-09 10:25-0500\n"
 "Last-Translator: Julian <jbonilla@swapps.co>\n"
 "Language-Team: Swapps <hi@swapps.co>\n"
 "Language: es\n"
@@ -3101,7 +3101,7 @@ msgstr "Detalles de contacto"
 #: public/partials/listing/acadp-public-listing-display.php:203
 #: widgets/listing-contact/class-acadp-widget-listing-contact.php:122
 msgid "Contact this listing owner"
-msgstr "Contactar al dueño de este anuncio"
+msgstr "Contactar al anunciante"
 
 #: public/partials/listing/acadp-public-listing-display.php:206
 #: widgets/listing-contact/views/acadp-widget-public-listing-contact-display.php:11
