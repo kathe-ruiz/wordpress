@@ -11,7 +11,8 @@
       .map{
         width: 100%;
         .embed-responsive{
-          padding-bottom: 80%;
+          height: 100%;
+          padding-bottom: 100%;
         }
         // flex: 2;
       }
