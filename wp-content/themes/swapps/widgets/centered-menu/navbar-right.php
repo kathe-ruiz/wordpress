@@ -12,6 +12,13 @@
     <div class="logo__name"><strong><?php echo get_bloginfo( 'name' ) ?></strong></div>
     <?php endif ?>
     </a>
+    <div class="navbar-header navbar__toggle">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
   </div>
   <div class="menu side-right">
     <div class="menu__information">
@@ -37,13 +44,6 @@
           'walker'            => new wp_bootstrap_navwalker())
         );
       ?>
-      <!-- <div class="navbar-header navbar__toggle">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div> -->
     </div>
   </div>
 </div>

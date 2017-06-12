@@ -115,6 +115,37 @@
       width: 100%;
     }
   }
+  @media (max-width: $screen-md){
+    .header{
+      &__right{
+        .logo{
+          &__img{
+          }
+        }
+        .menu{
+          &__phones{
+          }
+          &__socialmedia{
+            display: none;
+          }
+          .phone{
+            &__link{
+            }
+            &__icon{
+            }
+            &__text{
+            }
+          }
+          &__nav{
+            .navbar-nav{
+              .menu-item{
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .admin-bar .navbar-align-right .navbar-fixed.affix {
   top:32px;
