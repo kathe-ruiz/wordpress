@@ -140,7 +140,7 @@
                     <div class="panel panel-default panel-map">
                       <div class="panel-heading">
                         <p class="description-map">
-                          Arrastre el localizador hasta la ubicación donde se encuentra.Puede usar el zoom (botones de "+" y "-" en la parte inferior derecha del mapa).
+                          Arrastre el localizador hasta la ubicación donde se encuentra. Puede usar el zoom (botones de "+" y "-" en la parte inferior derecha del mapa).
                         </p>
                       </div>
                     </div>
