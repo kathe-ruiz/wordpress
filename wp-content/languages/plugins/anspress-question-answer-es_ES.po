@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/anspress-question-"
 "answer\n"
 "POT-Creation-Date: 2017-05-01 07:35:20+00:00\n"
-"PO-Revision-Date: 2017-06-07 10:48-0500\n"
+"PO-Revision-Date: 2017-06-12 11:24-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -415,7 +415,7 @@ msgstr "Estadísticas de la pregunta"
 
 #: addons/free/category.php:421
 msgid "Select a topic that best fits your question"
-msgstr ""
+msgstr "Seleccione la categoría que se relacione con su pregunta"
 
 #: addons/free/category.php:469
 #, fuzzy
@@ -1183,7 +1183,7 @@ msgstr ""
 
 #: addons/free/tag.php:382
 msgid "Type and hit enter"
-msgstr ""
+msgstr "Escriba y oprima la tecla enter"
 
 #: addons/free/tag.php:407
 msgid "Slowly type for suggestions"
@@ -3079,6 +3079,8 @@ msgid ""
 "This question is waiting for a moderator and cannot be viewed. Please check "
 "back later to see if it has been approved."
 msgstr ""
+"Esta pregunta está esperando a ser aprobada por un moderador y no puede ser "
+"vista. Por favor, revisa luego para ver si ya ha sido aprobada."
 
 #: includes/common-pages.php:72
 msgid "Sorry! you are not allowed to read this question."
@@ -3590,7 +3592,7 @@ msgstr "Recientes"
 
 #: includes/theme.php:30
 msgid "No permission"
-msgstr ""
+msgstr "Sin permisos"
 
 #: includes/theme.php:41
 msgid "Discussion on \"%s\""
