@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/anspress-question-"
 "answer\n"
 "POT-Creation-Date: 2017-05-01 07:35:20+00:00\n"
-"PO-Revision-Date: 2017-06-12 11:24-0500\n"
+"PO-Revision-Date: 2017-06-12 13:19-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -1064,7 +1064,7 @@ msgstr "Etiqueta"
 #: addons/free/tag.php:480 addons/free/tag.php:490 includes/form.php:105
 #: includes/form.php:128
 msgid "Tags"
-msgstr "Etiquedas."
+msgstr "Etiquetas."
 
 #: addons/free/tag.php:163
 #, fuzzy
@@ -1081,10 +1081,8 @@ msgstr "Los widgets en esta zona se mostrarán como barra lateral de AnsPress."
 msgid "Question Tags"
 msgstr "Preguntas"
 
-#: addons/free/tag.php:192
-#, fuzzy
 msgid "All Tags"
-msgstr "Etiquedas."
+msgstr "Todas las Etiquetas."
 
 #: addons/free/tag.php:194
 #, fuzzy
@@ -3516,10 +3514,8 @@ msgid ""
 "exists."
 msgstr ""
 
-#: includes/process-form.php:207
-#, fuzzy
 msgid "Question posted successfully. Redirecting to question"
-msgstr "Pregunta actualizada."
+msgstr "Pregunta publicada. Redirigiendo a la pregunta"
 
 #: includes/process-form.php:271
 msgid "Question updated successfully"
