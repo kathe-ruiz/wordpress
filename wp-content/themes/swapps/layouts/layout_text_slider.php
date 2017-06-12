@@ -38,6 +38,7 @@
     $title_2 = $slide['title_2'];
     $description = $slide['description'];
     $link = $slide['link'];
+    $call_to_action_text = $slide['heading'];
   ?>
   <div class="item">
     <div class="row">

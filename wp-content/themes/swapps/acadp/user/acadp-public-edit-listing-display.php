@@ -137,6 +137,13 @@
                 	</div>
                 
                 	<?php if( $has_map ) : ?>
+                    <div class="panel panel-default panel-map">
+                      <div class="panel-heading">
+                        <p class="description-map">
+                          Arrastre el localizador hasta la ubicación donde se encuentra. Puede usar el zoom (botones de "+" y "-" en la parte inferior derecha del mapa).
+                        </p>
+                      </div>
+                    </div>
                 		<div class="acadp-map embed-responsive embed-responsive-16by9" data-type="form">
                 			<?php
 								$latitude  = isset( $post_meta['latitude'] )  ? esc_attr( $post_meta['latitude'][0] )  : '3.4516467';

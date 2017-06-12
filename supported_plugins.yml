@@ -60,3 +60,11 @@ supported_plugins:
     - "wpackagist-plugin/regenerate-thumbnails": "2.2.6"
 - "anspress-question-answer":
     - "wpackagist-plugin/anspress-question-answer": "4.0.5"
+- "anspress-email":
+    - "wpackagist-plugin/anspress-email": "2.1"
+- "categories-for-anspress":
+    - "wpackagist-plugin/categories-for-anspress": "3.0.2"
+- "tags-for-anspress":
+    - "wpackagist-plugin/tags-for-anspress": "3.0.1"
+- "geodirectory":
+    - "wpackagist-plugin/geodirectory": "1.6.20"
