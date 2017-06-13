@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the GeoDirectory Core package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-13 09:57-0500\n"
+"PO-Revision-Date: 2017-06-13 10:13-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3074,7 +3074,7 @@ msgstr "Ordenar por:"
 #: geodirectory-widgets/geodirectory_cpt_categories_widget.php:272
 #: geodirectory-widgets/geodirectory_popular_widget.php:367
 msgid "A-Z"
-msgstr "Arizona"
+msgstr "A-Z"
 
 #: geodirectory-widgets/geodirectory_cpt_categories_widget.php:273
 msgid "Count"
