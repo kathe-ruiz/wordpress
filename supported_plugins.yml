@@ -3,13 +3,11 @@ supported_plugins:
 - "advanced-classifieds":
     - "wpackagist-plugin/advanced-classifieds-and-directory-pro": "1.5.7"
 - "events":
-    - "wpackagist-plugin/events-manager": "5.6.6.1"
+    - "wpackagist-plugin/events-manager": "5.7.3"
 - "volunteer-management":
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.1"
-- "si-contact-form":
-    - "wpackagist-plugin/si-contact-form": "4.0.50"
 - "woocommerce":
-    - "wpackagist-plugin/woocommerce": "3.0.7"
+    - "wpackagist-plugin/woocommerce": "3.0.8"
 - "woocommerce-dropdown-cart":
     - "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1"
 - "woocommerce-menu-bar-cart":
@@ -51,7 +49,7 @@ supported_plugins:
 - "simple-301-redirects":
     - "wpackagist-plugin/simple-301-redirects": "1.07"
 - "si-contact-form":
-    - "wpackagist-plugin/si-contact-form": "4.0.50"
+    - "wpackagist-plugin/si-contact-form": "4.0.51"
 - "wired-impact-volunteer-management":
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.1"
 - "woocommerce-dynamic-gallery":
@@ -67,4 +65,4 @@ supported_plugins:
 - "tags-for-anspress":
     - "wpackagist-plugin/tags-for-anspress": "3.0.1"
 - "geodirectory":
-    - "wpackagist-plugin/geodirectory": "1.6.20"
+    - "wpackagist-plugin/geodirectory": "1.6.21"
