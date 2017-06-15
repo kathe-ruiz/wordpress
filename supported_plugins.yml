@@ -65,4 +65,4 @@ supported_plugins:
 - "tags-for-anspress":
     - "wpackagist-plugin/tags-for-anspress": "3.0.1"
 - "geodirectory":
-    - "wpackagist-plugin/geodirectory": "1.6.20"
+    - "wpackagist-plugin/geodirectory": "1.6.21"
