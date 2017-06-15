@@ -122,7 +122,7 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
       $custom_tax_name = get_queried_object()->name;
       $html .= '<li class="breadcrumb__item item-current item-archive"><span class="breadcrumb__bread bread-current bread-archive">' . esc_html( $custom_tax_name ) . '</span></li>';
     } elseif ( is_search() ) {
-      $html .= '<li class="breadcrumb__item item-current item-search"><span class="breadcrumb__bread bread-current bread-search">Search results for: ' . get_search_query() . '</span></li>';
+      $html .= '<li class="breadcrumb__item item-current item-search"><span class="breadcrumb__bread bread-current bread-search">'.__("Search Results").'</span></li>';
     } elseif ( is_404() ) {
       $html .= '<li class="breadcrumb__item item-current item-error"><span class="breadcrumb__bread bread-current">' . __( 'Error 404' ) . '</span></li>';
     } elseif ( is_home() ) {
