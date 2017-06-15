@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the GeoDirectory Core package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-13 10:13-0500\n"
+"PO-Revision-Date: 2017-06-15 16:30-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 "Language: es\n"
 "Project-Id-Version: GeoDirectory Core\n"
 "POT-Creation-Date: \n"
@@ -19,7 +19,8 @@ msgid "Are you sure you wish to delete this listing?"
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:79
-msgid "Disable review stars for certain CPT without disabling comments on listings."
+msgid ""
+"Disable review stars for certain CPT without disabling comments on listings."
 msgstr ""
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:34
@@ -31,7 +32,11 @@ msgid "Disable overwrite by Yoast SEO titles & metas on GD pages"
 msgstr ""
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:41
-msgid "This allows to disable overwriting by Yoast SEO titles & metas on GD pages. If ticked then GD pages will use titles & metas settings from GeoDirectory > Titles & Metas. Otherwise it will use titles & metas settings from SEO > Titles & Metas."
+msgid ""
+"This allows to disable overwriting by Yoast SEO titles & metas on GD pages. "
+"If ticked then GD pages will use titles & metas settings from GeoDirectory > "
+"Titles & Metas. Otherwise it will use titles & metas settings from SEO > "
+"Titles & Metas."
 msgstr ""
 
 #: geodirectory-functions/general_functions.php:2712
@@ -71,7 +76,10 @@ msgid "Reload Countries table"
 msgstr ""
 
 #: geodirectory-admin/admin_template_tags.php:1761
-msgid "This tool will drop and re-add the countries table, it is meant to refresh the list when countries are added/removed, if you have duplicate country problems you should merge those first or you could have orphaned posts."
+msgid ""
+"This tool will drop and re-add the countries table, it is meant to refresh "
+"the list when countries are added/removed, if you have duplicate country "
+"problems you should merge those first or you could have orphaned posts."
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:78
@@ -79,7 +87,10 @@ msgid "Disable review stars for CPT"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:251
-msgid "Select Features/,Gas Central Heating,Oil Central Heating,Double Glazing,Triple Glazing,Front Garden,Garage,Private driveway,Off Road Parking,Fireplace"
+msgid ""
+"Select Features/,Gas Central Heating,Oil Central Heating,Double Glazing,"
+"Triple Glazing,Front Garden,Garage,Private driveway,Off Road Parking,"
+"Fireplace"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:267
@@ -96,11 +107,15 @@ msgid "Get Directions Link"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:327
-msgid "Adds a select input to be able to set the type of a job ie: Full Time, Part Time"
+msgid ""
+"Adds a select input to be able to set the type of a job ie: Full Time, Part "
+"Time"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:356
-msgid "Adds a select input to be able to set the type of a job Sector ie: Private Sector,Public Sector"
+msgid ""
+"Adds a select input to be able to set the type of a job Sector ie: Private "
+"Sector,Public Sector"
 msgstr ""
 
 #: geodirectory-functions/custom_functions.php:1698
@@ -120,15 +135,15 @@ msgstr ""
 
 #: geodirectory-templates/popup-forms.php:64
 msgid "Friend Email"
-msgstr ""
+msgstr "Correo electrónico de tu amigo"
 
 #: geodirectory-templates/popup-forms.php:82
 msgid "Your Email"
-msgstr ""
+msgstr "Tu Correo electrónico"
 
 #: geodirectory-templates/popup-forms.php:165
 msgid "Phone number"
-msgstr ""
+msgstr "Número de teléfono"
 
 #: geodirectory-widgets/geodirectory_cpt_categories_widget.php:296
 msgid "Don't filter for current viewing post type"
@@ -147,7 +162,9 @@ msgid "Enable marker cluster?"
 msgstr ""
 
 #: geodirectory_hooks_actions.php:1261
-msgid "Deleting the main listing of a franchise will turn all franchises in regular listings. Are you sure wish to delete this main listing?"
+msgid ""
+"Deleting the main listing of a franchise will turn all franchises in regular "
+"listings. Are you sure wish to delete this main listing?"
 msgstr ""
 
 #: geodirectory_hooks_actions.php:1304
@@ -257,11 +274,14 @@ msgid "Right"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:29
-msgid "Adds a input for a price field. This will let you filter and sort by price."
+msgid ""
+"Adds a input for a price field. This will let you filter and sort by price."
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:66
-msgid "Adds a select input to be able to set the status of a property ie: For Sale, For Rent"
+msgid ""
+"Adds a select input to be able to set the status of a property ie: For Sale, "
+"For Rent"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:78
@@ -273,7 +293,9 @@ msgid "Property Furnishing"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:95
-msgid "Adds a select input to be able to set the furnishing status of a property ie: Unfurnished, Furnished"
+msgid ""
+"Adds a select input to be able to set the furnishing status of a property "
+"ie: Unfurnished, Furnished"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:124
@@ -281,7 +303,9 @@ msgid "Adds a select input for the property type ie: Detached house, Apartment"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:136
-msgid "Select Type/,Detached house,Semi-detached house,Apartment,Bungalow,Semi-detached bungalow,Chalet,Town House,End-terrace house,Terrace house,Cottage"
+msgid ""
+"Select Type/,Detached house,Semi-detached house,Apartment,Bungalow,Semi-"
+"detached bungalow,Chalet,Town House,End-terrace house,Terrace house,Cottage"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_predefined.php:153
@@ -301,7 +325,8 @@ msgid "Adds a select input for the property features."
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:745
-msgid "Lets you use this filed as a sorting option, set from sorting options above."
+msgid ""
+"Lets you use this filed as a sorting option, set from sorting options above."
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:1893
@@ -329,7 +354,9 @@ msgid "Show Ascending Sort (low to high)"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2283
-msgid "Select if you want to show this option in the sort options. (A-Z,0-100 or OFF)"
+msgid ""
+"Select if you want to show this option in the sort options. (A-Z,0-100 or "
+"OFF)"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2310
@@ -347,7 +374,9 @@ msgstr ""
 #: geodirectory-functions/custom_fields_functions.php:2327
 #: geodirectory-functions/custom_fields_functions.php:2391
 #: geodirectory-functions/custom_fields_functions.php:2434
-msgid "This sets the option as the overall default sort value, there can be only one."
+msgid ""
+"This sets the option as the overall default sort value, there can be only "
+"one."
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2346
@@ -355,7 +384,8 @@ msgid "Show Descending Sort (high to low)"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2348
-msgid "Select if you want to show this option in the sort options. (Z-A,100-0 or ON)"
+msgid ""
+"Select if you want to show this option in the sort options. (Z-A,100-0 or ON)"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2415
@@ -367,7 +397,9 @@ msgid "Is active"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2458
-msgid "Set if this sort option is active or not, if not it will not be shown to users."
+msgid ""
+"Set if this sort option is active or not, if not it will not be shown to "
+"users."
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2757
@@ -375,11 +407,14 @@ msgid "Select if you want to show the advanced editor on add listing page."
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:2984
-msgid "Do you want to use the user defined map zoom level from the add listing page?"
+msgid ""
+"Do you want to use the user defined map zoom level from the add listing page?"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:3008
-msgid "Select if you want to `set default map` options in address section. ( Satellite Map, Hybrid Map, Terrain Map)"
+msgid ""
+"Select if you want to `set default map` options in address section. "
+"( Satellite Map, Hybrid Map, Terrain Map)"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:3045
@@ -387,7 +422,9 @@ msgid "Show latitude and longitude"
 msgstr ""
 
 #: geodirectory-functions/custom_fields_functions.php:3047
-msgid "This will show/hide the longitude fields in the address section add listing form."
+msgid ""
+"This will show/hide the longitude fields in the address section add listing "
+"form."
 msgstr ""
 
 #: geodirectory-admin/dummy-data/property_rent.php:234
@@ -469,7 +506,9 @@ msgid "Select the number of years required experience"
 msgstr ""
 
 #: geodirectory-admin/dummy-data/recruitment_jobs.php:105
-msgid "Select Experience/,No Experience Required,1 Year,2 Years,3 Years,4 Years,5 Years,6 Years,7 Years,8 Years,9 Years,10+ Years"
+msgid ""
+"Select Experience/,No Experience Required,1 Year,2 Years,3 Years,4 Years,5 "
+"Years,6 Years,7 Years,8 Years,9 Years,10+ Years"
 msgstr ""
 
 #: geodirectory-admin/dummy-data/recruitment_jobs.php:119
@@ -526,7 +565,9 @@ msgid "Use old non-styled form"
 msgstr ""
 
 #: geodirectory-admin/option-pages/design_settings_array.php:419
-msgid "Will show the old type form (not recommended unless you had added your own styles)"
+msgid ""
+"Will show the old type form (not recommended unless you had added your own "
+"styles)"
 msgstr ""
 
 #: geodirectory-admin/option-pages/design_settings_array.php:651
@@ -538,7 +579,9 @@ msgid "Disable mouse scroll on details page map tab"
 msgstr ""
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1082
-msgid "Stops the mouse scroll zooming the map (home and listings settings set from widget)"
+msgid ""
+"Stops the mouse scroll zooming the map (home and listings settings set from "
+"widget)"
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:151
@@ -563,11 +606,15 @@ msgid "Add Google analytics tracking code to site?"
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:173
-msgid "Yes <small>(this will automatically add the correct tracking code to your site)</small>"
+msgid ""
+"Yes <small>(this will automatically add the correct tracking code to your "
+"site)</small>"
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:182
-msgid "No <small>(if you already have tracking code added you should not add it again)</small>"
+msgid ""
+"No <small>(if you already have tracking code added you should not add it "
+"again)</small>"
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:191
@@ -575,7 +622,9 @@ msgid "Anonymize user IP?"
 msgstr ""
 
 #: geodirectory-admin/option-pages/general_settings_array.php:192
-msgid "In most cases this is not required, this is to comply with certain country laws such as Germany."
+msgid ""
+"In most cases this is not required, this is to comply with certain country "
+"laws such as Germany."
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:95
@@ -595,7 +644,9 @@ msgid "This will be shown below the field on the add listing form."
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:262
-msgid "This is a unique identifier used in the HTML, it MUST NOT contain spaces or special characters."
+msgid ""
+"This is a unique identifier used in the HTML, it MUST NOT contain spaces or "
+"special characters."
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:266
@@ -619,7 +670,9 @@ msgid "A default value for the field, usually blank. Ex: info@mysite.com"
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:378
-msgid "A default value for the field, usually blank. (for \"link\" this will be used as the link text)"
+msgid ""
+"A default value for the field, usually blank. (for \"link\" this will be "
+"used as the link text)"
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:414
@@ -655,7 +708,9 @@ msgid "Select locations"
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:615
-msgid "Enter text for the error message if the field is required and has not fulfilled the requirements."
+msgid ""
+"Enter text for the error message if the field is required and has not "
+"fulfilled the requirements."
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:695
@@ -675,7 +730,9 @@ msgid "Remove all data when deleted?"
 msgstr ""
 
 #: geodirectory-admin/admin_hooks_actions.php:2462
-msgid "Select the plugins that you would like to completely remove all of its data when the plugin is deleted."
+msgid ""
+"Select the plugins that you would like to completely remove all of its data "
+"when the plugin is deleted."
 msgstr ""
 
 #: geodirectory-admin/admin_template_tags.php:1495
@@ -746,7 +803,10 @@ msgstr ""
 
 #: geodirectory-admin/dummy-data/property_rent.php:104
 #: geodirectory-admin/dummy-data/property_sale.php:104
-msgid "Select Type/,Detached house,Semi-detached house,Apartment,Bungalow,Semi-detached bungalow,Chalet,Town House,End-terrace house,Terrace house,Cottage,Hotel,Land"
+msgid ""
+"Select Type/,Detached house,Semi-detached house,Apartment,Bungalow,Semi-"
+"detached bungalow,Chalet,Town House,End-terrace house,Terrace house,Cottage,"
+"Hotel,Land"
 msgstr ""
 
 #: geodirectory-admin/dummy-data/property_rent.php:118
@@ -831,7 +891,9 @@ msgstr ""
 
 #: geodirectory-admin/dummy-data/property_rent.php:195
 #: geodirectory-admin/dummy-data/property_sale.php:195
-msgid "Gas Central Heating,Oil Central Heating,Double Glazing,Triple Glazing,Front Garden,Garage,Private driveway,Off Road Parking,Fireplace"
+msgid ""
+"Gas Central Heating,Oil Central Heating,Double Glazing,Triple Glazing,Front "
+"Garden,Garage,Private driveway,Off Road Parking,Fireplace"
 msgstr ""
 
 #: geodirectory-admin/dummy-data/property_rent.php:232
@@ -852,7 +914,9 @@ msgid "Property for rent"
 msgstr ""
 
 #: geodirectory-admin/admin_dummy_data_functions.php:278
-msgid "*Hint*: Installing our Advanced Search addon FIRST will add extra search fields to non-default data types."
+msgid ""
+"*Hint*: Installing our Advanced Search addon FIRST will add extra search "
+"fields to non-default data types."
 msgstr ""
 
 #: geodirectory-admin/admin_dummy_data_functions.php:282
@@ -1015,16 +1079,28 @@ msgstr "Selecciona el formato de fecha."
 #: geodirectory-functions/custom_fields_functions.php:1016
 #: geodirectory-functions/custom_fields_functions.php:1034
 #: geodirectory-functions/custom_fields_functions.php:1093
-msgid "Column creation failed, you may have too many columns or the default value does not match with field data type."
-msgstr "Fallo al crear la columna, tienes demasiadas columnas o el valor por defecto no coincide con el tipo de datos del campo."
+msgid ""
+"Column creation failed, you may have too many columns or the default value "
+"does not match with field data type."
+msgstr ""
+"Fallo al crear la columna, tienes demasiadas columnas o el valor por defecto "
+"no coincide con el tipo de datos del campo."
 
 #: geodirectory-functions/custom_fields_functions.php:1049
-msgid "Column creation failed, you may have too many columns or the default value must have in valid date format."
-msgstr "Fallo al crear la columna, tienes demasiadas columnas o el valor por defecto no tiene un formato de fecha válida."
+msgid ""
+"Column creation failed, you may have too many columns or the default value "
+"must have in valid date format."
+msgstr ""
+"Fallo al crear la columna, tienes demasiadas columnas o el valor por defecto "
+"no tiene un formato de fecha válida."
 
 #: geodirectory-functions/custom_fields_functions.php:1064
-msgid "Column creation failed, you may have too many columns or the default value must have in valid time format."
-msgstr "Fallo al crear la columna, tienes demasiadas columnas o el valor por defecto no tiene un formato de hora válido."
+msgid ""
+"Column creation failed, you may have too many columns or the default value "
+"must have in valid time format."
+msgstr ""
+"Fallo al crear la columna, tienes demasiadas columnas o el valor por defecto "
+"no tiene un formato de hora válido."
 
 #: geodirectory-functions/custom_taxonomy_hooks_actions.php:45
 msgctxt "URL slug"
@@ -1057,7 +1133,8 @@ msgstr ""
 
 #: geodirectory-functions/general_functions.php:1713
 msgid "GeoDirectory: fetch_remote_file() failed to delete temp file."
-msgstr "GeoDirectory: fetch_remote_file() fracasó al borrar el archivo temporal."
+msgstr ""
+"GeoDirectory: fetch_remote_file() fracasó al borrar el archivo temporal."
 
 #: geodirectory-functions/general_functions.php:5009
 msgid "Page %1$d of %2$d"
@@ -1173,7 +1250,8 @@ msgstr "<h3>Mapa no cargado</h3><p>No se pudo cargar la API de Google Maps."
 
 #: geodirectory-functions/map-functions/map_template_tags.php:214
 msgid "<h3>Google Map Not Loaded</h3><p>Sorry, unable to load Google Maps API."
-msgstr "<h3>Google Map sin cargar</h3><p>No se pudo cargar la API de Google Maps."
+msgstr ""
+"<h3>Google Map sin cargar</h3><p>No se pudo cargar la API de Google Maps."
 
 #: geodirectory-functions/reviews.php:61
 msgid "Review navigation"
@@ -1250,8 +1328,12 @@ msgid "Salary"
 msgstr "Salario"
 
 #: geodirectory-admin/admin_functions.php:349
-msgid "Google Maps API KEY not set, %sclick here%s to set one OR use Open Street Maps instead."
-msgstr "CLAVE API de Google Maps sin configurar,  %sclick aquí%s para configurar una clave o para utilizar Open Street Maps en su lugar."
+msgid ""
+"Google Maps API KEY not set, %sclick here%s to set one OR use Open Street "
+"Maps instead."
+msgstr ""
+"CLAVE API de Google Maps sin configurar,  %sclick aquí%s para configurar una "
+"clave o para utilizar Open Street Maps en su lugar."
 
 #: geodirectory-admin/admin_functions.php:2323
 msgid "Toggle panel - GD Listings: Import CSV"
@@ -1282,12 +1364,23 @@ msgid "Toggle panel - GD Categories: Export CSV"
 msgstr "Panel de Ajustes - Categorías GD: Exportar CSV"
 
 #: geodirectory-admin/admin_functions.php:2912
-msgid "%s / %s item(s) could not be added due to blank title/invalid post type/invalid characters used in data."
-msgstr "%s / %s item(s) no pudieron ser añadidos derivado de que el título se dejó en blanco o se utilizó un tipo de carácter inválido."
+msgid ""
+"%s / %s item(s) could not be added due to blank title/invalid post type/"
+"invalid characters used in data."
+msgstr ""
+"%s / %s item(s) no pudieron ser añadidos derivado de que el título se dejó "
+"en blanco o se utilizó un tipo de carácter inválido."
 
 #: geodirectory-admin/admin_functions.php:2915
-msgid "%s / %s item(s) could not be added due to invalid neighbourhood data(name, latitude, longitude) or invalid location data(either location_id or city/region/country is empty)"
-msgstr "%s / %s item(s) no pudieron añadirse derivado a información geográfica inválida (nombre, latitud, longitud) o a una información de localización inválida (o ya sea que identificador de localización o  la ciudad/region/país se encuentran vacíos)"
+msgid ""
+"%s / %s item(s) could not be added due to invalid neighbourhood data(name, "
+"latitude, longitude) or invalid location data(either location_id or city/"
+"region/country is empty)"
+msgstr ""
+"%s / %s item(s) no pudieron añadirse derivado a información geográfica "
+"inválida (nombre, latitud, longitud) o a una información de localización "
+"inválida (o ya sea que identificador de localización o  la ciudad/region/"
+"país se encuentran vacíos)"
 
 #: geodirectory-admin/admin_functions.php:3087
 msgid "Preparing..."
@@ -1295,16 +1388,25 @@ msgstr "Preparando..."
 
 #: geodirectory-admin/admin_functions.php:3372
 msgid "Filesystem ERROR: Could not access filesystem."
-msgstr "ERROR de Archivos del Sistema: No se puede acceder al Sistema de Archivos."
+msgstr ""
+"ERROR de Archivos del Sistema: No se puede acceder al Sistema de Archivos."
 
 #: geodirectory-admin/admin_functions.php:3384
-msgid "ERROR: Could not create cache directory. This is usually due to inconsistent file permissions."
-msgstr "ERROR: No se pudo crear directorio caché. Esto ocurre usualmente debido a la inconsistencia en permisos de archivos."
+msgid ""
+"ERROR: Could not create cache directory. This is usually due to inconsistent "
+"file permissions."
+msgstr ""
+"ERROR: No se pudo crear directorio caché. Esto ocurre usualmente debido a la "
+"inconsistencia en permisos de archivos."
 
 #: geodirectory-admin/admin_functions.php:3486
 #: geodirectory-admin/admin_functions.php:3571
-msgid "ERROR: Could not create csv file. This is usually due to inconsistent file permissions."
-msgstr "ERROR: No se pudo crear el archivo csv.  Esto ocurre usualmente debido a la inconsistencia en permisos de archivos."
+msgid ""
+"ERROR: Could not create csv file. This is usually due to inconsistent file "
+"permissions."
+msgstr ""
+"ERROR: No se pudo crear el archivo csv.  Esto ocurre usualmente debido a la "
+"inconsistencia en permisos de archivos."
 
 #: geodirectory-admin/admin_functions.php:3805
 msgid "GD IMPORT CATEGORIES [ROW %d]:"
@@ -1313,18 +1415,27 @@ msgstr "IMPORTAR CATEGORIAS GD [ROW %d]:"
 #: geodirectory-admin/admin_functions.php:3864
 #: geodirectory-admin/admin_functions.php:4200
 msgid "Could not be added due to blank title/invalid post type"
-msgstr "No pudo ser agregado debido a un tipo de publicación inválida/título vacío"
+msgstr ""
+"No pudo ser agregado debido a un tipo de publicación inválida/título vacío"
 
 #: geodirectory-admin/admin_functions.php:3925
 #: geodirectory-admin/admin_functions.php:3934
 #: geodirectory-admin/admin_functions.php:3954
-msgid "Could not be updated due to invalid data (check & remove if any invalid characters used in data)"
-msgstr "No pudo ser actualizado debido a datos inválidos (revise y remueva cualquier carácter inválido utilizado dentro de los datos)"
+msgid ""
+"Could not be updated due to invalid data (check & remove if any invalid "
+"characters used in data)"
+msgstr ""
+"No pudo ser actualizado debido a datos inválidos (revise y remueva cualquier "
+"carácter inválido utilizado dentro de los datos)"
 
 #: geodirectory-admin/admin_functions.php:3941
 #: geodirectory-admin/admin_functions.php:3959
-msgid "Could not be added due to invalid data (check & remove if any invalid characters used in data)"
-msgstr "No pudo ser añadido debido a datos inválidos (revise y remueva cualquier carácter inválido utilizado dentro de los datos)"
+msgid ""
+"Could not be added due to invalid data (check & remove if any invalid "
+"characters used in data)"
+msgstr ""
+"No pudo ser añadido debido a datos inválidos (revise y remueva cualquier "
+"carácter inválido utilizado dentro de los datos)"
 
 #: geodirectory-admin/admin_functions.php:4053
 msgid "GD IMPORT LISTINGS [ROW %d]:"
@@ -1332,16 +1443,23 @@ msgstr "IMPORTAR PUBLICACIONES GD [ROW %d]:"
 
 #: geodirectory-admin/admin_functions.php:4054
 msgid "(check & remove if any invalid characters used in data)"
-msgstr "(revise y remueva cualquier carácter inválido utilizado dentro de los datos)"
+msgstr ""
+"(revise y remueva cualquier carácter inválido utilizado dentro de los datos)"
 
 #: geodirectory-admin/admin_functions.php:4209
 #: geodirectory-admin/admin_functions.php:4214
-msgid "Could not be added due to blank/invalid address(city, region, country, latitude, longitude)."
-msgstr "No pudo ser añadido debido a un tipo de publicación inválida/o en blanco (ciudad, región, ciudad, latitud, longitud)."
+msgid ""
+"Could not be added due to blank/invalid address(city, region, country, "
+"latitude, longitude)."
+msgstr ""
+"No pudo ser añadido debido a un tipo de publicación inválida/o en blanco "
+"(ciudad, región, ciudad, latitud, longitud)."
 
 #: geodirectory-admin/admin_functions.php:4280
 msgid "Unable to add listing, please check the listing data."
-msgstr "Incapaz de añadir publicación, por favor revise la información de la publicación."
+msgstr ""
+"Incapaz de añadir publicación, por favor revise la información de la "
+"publicación."
 
 #: geodirectory-admin/admin_functions.php:4649
 #: geodirectory-admin/admin_functions.php:4745
@@ -1353,20 +1471,35 @@ msgid "GD IMPORT LOCATIONS [ROW %d]:"
 msgstr "IMPORTAR UBICACIONES GD [ROW %d]:"
 
 #: geodirectory-admin/admin_functions.php:4654
-msgid "Could not be saved due to blank/invalid address(city, region, country, latitude, longitude)"
-msgstr "No se pudo guardar debido a la dirección en blanco/inválida (ciudad, región, país, latitud, longitud)."
+msgid ""
+"Could not be saved due to blank/invalid address(city, region, country, "
+"latitude, longitude)"
+msgstr ""
+"No se pudo guardar debido a la dirección en blanco/inválida (ciudad, región, "
+"país, latitud, longitud)."
 
 #: geodirectory-admin/admin_functions.php:4749
 msgid "GD IMPORT NEIGHBOURHOODS [ROW %d]:"
 msgstr "IMPORTAR ALREDEDORES GD [ROW %d]:"
 
 #: geodirectory-admin/admin_functions.php:4750
-msgid "Could not be saved due to invalid neighbourhood data(name, latitude, longitude) or invalid location data(either location_id or city/region/country is empty)"
-msgstr "No se pudo guardar debido a información inválida de alrededores (nombre, latitud, longitud) o una ubicación inválida (o ya sea que el identificador de ubicación, ciudad/región/país se encuentra vacío)."
+msgid ""
+"Could not be saved due to invalid neighbourhood data(name, latitude, "
+"longitude) or invalid location data(either location_id or city/region/"
+"country is empty)"
+msgstr ""
+"No se pudo guardar debido a información inválida de alrededores (nombre, "
+"latitud, longitud) o una ubicación inválida (o ya sea que el identificador "
+"de ubicación, ciudad/región/país se encuentra vacío)."
 
 #: geodirectory-admin/admin_functions.php:6191
-msgid "Saving GeoDirectory pages settings on a different language breaks pages settings. Try to save after switching to default language."
-msgstr "Guardar los parámetros de página de GeoDirectory en un idioma diferente interrumpe la configuración de páginas.  Intente grabar después de cambiar al idioma por defecto."
+msgid ""
+"Saving GeoDirectory pages settings on a different language breaks pages "
+"settings. Try to save after switching to default language."
+msgstr ""
+"Guardar los parámetros de página de GeoDirectory en un idioma diferente "
+"interrumpe la configuración de páginas.  Intente grabar después de cambiar "
+"al idioma por defecto."
 
 #: geodirectory-admin/admin_install.php:108 upgrade.php:139
 msgctxt "page_slug"
@@ -1424,8 +1557,12 @@ msgid "Enable Font Awesome"
 msgstr "Habilitar Font Awesome"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:572
-msgid "When enabled all rating images will be using font awesome rating icons as images."
-msgstr "Cuando se habilita todas las imágenes de calificación se harán utilizando íconos de calificación como imágenes."
+msgid ""
+"When enabled all rating images will be using font awesome rating icons as "
+"images."
+msgstr ""
+"Cuando se habilita todas las imágenes de calificación se harán utilizando "
+"íconos de calificación como imágenes."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:578
 msgid "Rating Icon Color"
@@ -1433,7 +1570,9 @@ msgstr "Color del Ícono de Calificación."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:579
 msgid "Enter hexadecimal color for font awesome rating icons. Default: #757575"
-msgstr "Introduzca un color hexadecimal para los íconos de calificación, utilizando font awesome. Por defecto: #757575"
+msgstr ""
+"Introduzca un color hexadecimal para los íconos de calificación, utilizando "
+"font awesome. Por defecto: #757575"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:973
 msgid "GD Lazy Load Images"
@@ -1445,7 +1584,8 @@ msgstr "Habilitar Carga Lenta de Imágenes?"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:980
 msgid "GD images will be loaded only when visible on the page"
-msgstr "Las imágenes de GD se cargarán únicamente cuando sean visibles en la página."
+msgstr ""
+"Las imágenes de GD se cargarán únicamente cuando sean visibles en la página."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1029
 #: geodirectory-admin/option-pages/design_settings_array.php:1035
@@ -1453,16 +1593,38 @@ msgid "Google Maps API KEY"
 msgstr "Clave API de Google Maps"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1037
-msgid "This is a requirement to use Google Maps, you can get a key from <a href=\"%s\" target=\"_blank\">here</a> OR you can set GD to use Open Street Maps below under Select Maps API setting.   (<a href=\"%s\" target=\"_blank\">How to add a Google API KEY?</a>)"
-msgstr "Este es un requerimiento para utilizar Google Maps, puede obtener una clave en <a href=\"%s\" target=\"_blank\">aquí</a> o puede parametrizar GD para utilizar Open Street Maps más abajo en Seleccionar Configuración de la API de Mapas.   (<a href=\"%s\" target=\"_blank\">¿Cómo agregar una CLAVE Google API?</a>)"
+msgid ""
+"This is a requirement to use Google Maps, you can get a key from <a href=\"%s"
+"\" target=\"_blank\">here</a> OR you can set GD to use Open Street Maps "
+"below under Select Maps API setting.   (<a href=\"%s\" target=\"_blank\">How "
+"to add a Google API KEY?</a>)"
+msgstr ""
+"Este es un requerimiento para utilizar Google Maps, puede obtener una clave "
+"en <a href=\"%s\" target=\"_blank\">aquí</a> o puede parametrizar GD para "
+"utilizar Open Street Maps más abajo en Seleccionar Configuración de la API "
+"de Mapas.   (<a href=\"%s\" target=\"_blank\">¿Cómo agregar una CLAVE Google "
+"API?</a>)"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1124
 msgid "Select Maps API"
 msgstr "Seleccional la API de Mapas"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1125
-msgid "- Google Maps API will force to load Google JS library only.<br>- OpenStreetMap API will force to load OpenStreetMap JS library only.<br>- Load Automatic will load Google JS library first, but if Google maps JS library not loaded it then loads the OpenStreetMap JS library to load the maps (recommended for regions where Google maps banned).<br>- Disable Maps will disable and hides maps for entire site."
-msgstr "- La API de Google Maps forzará únicamente la carga de la biblioteca JS de Google.<br>- La API OpenStreetMap forzará únicamente la carga de la biblioteca JS de OpenStreetMap.<br>- La carga automática subirá la biblioteca Google JS primero, pero si la biblioteca JS de Google maps no carga entonces será subida la biblioteca JS de OpenStreetMap para desplegar los mapas (Rrecomendado para regiones en las que Google Maps está prohibido).<br>- Desactivar Mapas inhabilitará y ocultará los mapas de todo el sitio."
+msgid ""
+"- Google Maps API will force to load Google JS library only.<br>- "
+"OpenStreetMap API will force to load OpenStreetMap JS library only.<br>- "
+"Load Automatic will load Google JS library first, but if Google maps JS "
+"library not loaded it then loads the OpenStreetMap JS library to load the "
+"maps (recommended for regions where Google maps banned).<br>- Disable Maps "
+"will disable and hides maps for entire site."
+msgstr ""
+"- La API de Google Maps forzará únicamente la carga de la biblioteca JS de "
+"Google.<br>- La API OpenStreetMap forzará únicamente la carga de la "
+"biblioteca JS de OpenStreetMap.<br>- La carga automática subirá la "
+"biblioteca Google JS primero, pero si la biblioteca JS de Google maps no "
+"carga entonces será subida la biblioteca JS de OpenStreetMap para desplegar "
+"los mapas (Rrecomendado para regiones en las que Google Maps está prohibido)."
+"<br>- Desactivar Mapas inhabilitará y ocultará los mapas de todo el sitio."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1131
 msgid "Select Map"
@@ -1485,24 +1647,44 @@ msgid "Disable Maps"
 msgstr "Inhabilitar Mapas"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:98
-msgid "(Maximum upload file size in MB, 1 MB = 1024 KB. Must be greater then 0(ZERO), for ex: 2. This setting will overwrite the max upload file size limit in image/file upload & import listings for entire GeoDirectory core + GeoDirectory plugins.)"
-msgstr "(Tamaño de archivo de carga máximo en MB, 1 MB = 1024 KB. Debe ser mayor que 0 (CERO), por ejemplo: 2.  Esta característica sobreescribirá el límite de tamaño máximo de carga para archivos de imágenes y publicaciones importadas para todo el núcleo de GeoDirectory + los plugins de GeoDirectory.) "
+msgid ""
+"(Maximum upload file size in MB, 1 MB = 1024 KB. Must be greater then "
+"0(ZERO), for ex: 2. This setting will overwrite the max upload file size "
+"limit in image/file upload & import listings for entire GeoDirectory core + "
+"GeoDirectory plugins.)"
+msgstr ""
+"(Tamaño de archivo de carga máximo en MB, 1 MB = 1024 KB. Debe ser mayor que "
+"0 (CERO), por ejemplo: 2.  Esta característica sobreescribirá el límite de "
+"tamaño máximo de carga para archivos de imágenes y publicaciones importadas "
+"para todo el núcleo de GeoDirectory + los plugins de GeoDirectory.) "
 
 #: geodirectory-admin/option-pages/general_settings_array.php:199
 msgid "Auto refresh active users?"
 msgstr "Auto refrescar usuarios activos?"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:200
-msgid "If ticked it uses the auto refresh time below, if not it never refreshes unless the refresh button is clicked."
-msgstr "Si se activa, utiliza el tiempo de actualización automática, si no, nunca se refresca a menos que se haga clic en el botón de actualización."
+msgid ""
+"If ticked it uses the auto refresh time below, if not it never refreshes "
+"unless the refresh button is clicked."
+msgstr ""
+"Si se activa, utiliza el tiempo de actualización automática, si no, nunca se "
+"refresca a menos que se haga clic en el botón de actualización."
 
 #: geodirectory-admin/option-pages/general_settings_array.php:206
 msgid "Time interval for auto refresh active users"
-msgstr "Intervalo de tiempo para actualizar automáticamente a los usuario activos."
+msgstr ""
+"Intervalo de tiempo para actualizar automáticamente a los usuario activos."
 
 #: geodirectory-admin/option-pages/general_settings_array.php:207
-msgid "Time interval in seconds to auto refresh active users. The active users will be auto refreshed after this time interval. Leave blank or use 0(zero) to disable auto refresh. Default: 5"
-msgstr "Intervalo de tiempo en segundos para actualizar automáticamente a los usuarios activos. Los usuarios activos no serán actualizados después de este intervalo de tiempo, Dejar en blanco o utilizar 0 (cero) para deshabilitar la actualización automática.  Por defecto: 5"
+msgid ""
+"Time interval in seconds to auto refresh active users. The active users will "
+"be auto refreshed after this time interval. Leave blank or use 0(zero) to "
+"disable auto refresh. Default: 5"
+msgstr ""
+"Intervalo de tiempo en segundos para actualizar automáticamente a los "
+"usuarios activos. Los usuarios activos no serán actualizados después de este "
+"intervalo de tiempo, Dejar en blanco o utilizar 0 (cero) para deshabilitar "
+"la actualización automática.  Por defecto: 5"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:132
 #: geodirectory-admin/option-pages/notifications_settings_array.php:191
@@ -1512,7 +1694,8 @@ msgstr "La Publicación se Envío Satisfactoriamente."
 #: geodirectory-admin/option-pages/notifications_settings_array.php:143
 #: geodirectory-admin/option-pages/notifications_settings_array.php:152
 msgid "Notify Admin when listing edited by Author"
-msgstr "Notificar al Administrador cuando la Publicación sea editada por el Autor."
+msgstr ""
+"Notificar al Administrador cuando la Publicación sea editada por el Autor."
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:161
 msgid "Listing edited by Author"
@@ -1523,8 +1706,18 @@ msgid "[[#site_name#]] Listing edited by Author"
 msgstr "[[#site_name#]] \tPublicación editada por el Autor"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:174
-msgid "<p>Dear Admin,</p><p>A listing [#listing_link#] has been edited by it's author [#post_author_name#].</p><br><p><b>Listing Details:</b></p><p>Listing ID: [#post_id#]</p><p>Listing URL: [#listing_link#]</p><p>Date: [#current_date#]</p><br><p>This email is just for your information.</p><p>[#site_name#]</p>"
-msgstr "<p>Estimado Admin,</p><p>Una publicación [#listing_link#] ha sido editada por su autor [#post_author_name#].</p><br><p><b>Detalles de la Publicación:</b></p><p>Publicación ID: [#post_id#]</p><p>URL de la Publicación: [#listing_link#]</p><p>Fecha: [#current_date#]</p><br><p>Este correo es únicamente para su conocimiento.</p><p>[#site_name#]</p>"
+msgid ""
+"<p>Dear Admin,</p><p>A listing [#listing_link#] has been edited by it's "
+"author [#post_author_name#].</p><br><p><b>Listing Details:</b></p><p>Listing "
+"ID: [#post_id#]</p><p>Listing URL: [#listing_link#]</p><p>Date: "
+"[#current_date#]</p><br><p>This email is just for your information.</"
+"p><p>[#site_name#]</p>"
+msgstr ""
+"<p>Estimado Admin,</p><p>Una publicación [#listing_link#] ha sido editada "
+"por su autor [#post_author_name#].</p><br><p><b>Detalles de la Publicación:</"
+"b></p><p>Publicación ID: [#post_id#]</p><p>URL de la Publicación: "
+"[#listing_link#]</p><p>Fecha: [#current_date#]</p><br><p>Este correo es "
+"únicamente para su conocimiento.</p><p>[#site_name#]</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:209
 msgid "[#site_name#] - Your new password"
@@ -1848,7 +2041,8 @@ msgstr "Micronesia, Estados Federados de"
 
 #: language.php:103
 msgid "%s : number of publish days are %s (<span id=\"%s\">%s %s</span>)"
-msgstr "%s: Número de días de publicación activa: %s (<span id=\"%s\">%s %s</span>)"
+msgstr ""
+"%s: Número de días de publicación activa: %s (<span id=\"%s\">%s %s</span>)"
 
 #: language.php:415
 msgid "Midway Islands"
@@ -1911,8 +2105,12 @@ msgid "Morocco"
 msgstr "Marruecos"
 
 #: language.php:118
-msgid "Enter Business or Listing Timing Information. <br /> eg. : <b>10.00 am to 6 pm every day</b>"
-msgstr "Introducir el horario. <br />Por ejemplo: <b>10.00 am - 6 p.m. todos los días</b>"
+msgid ""
+"Enter Business or Listing Timing Information. <br /> eg. : <b>10.00 am to 6 "
+"pm every day</b>"
+msgstr ""
+"Introducir el horario. <br />Por ejemplo: <b>10.00 am - 6 p.m. todos los "
+"días</b>"
 
 #: language.php:423
 msgid "Mozambique"
@@ -1920,39 +2118,56 @@ msgstr "Mozambique"
 
 #: language.php:119
 msgid "Enter valid Email otherwise you will face an error."
-msgstr "Introduzca una dirección de correo electrónico válida para evitar un errores."
+msgstr ""
+"Introduzca una dirección de correo electrónico válida para evitar un errores."
 
 #: language.php:424
 msgid "Myanmar"
 msgstr "Myanmar"
 
 #: language.php:120
-msgid "Click on \"Set Address on Map\" and then you can also drag pinpoint to locate the correct address"
-msgstr "Haga clic en \"Fijar dirección en el mapa\" y luego podrá recolocar la chincheta en el mapa a la ubicación exacta"
+msgid ""
+"Click on \"Set Address on Map\" and then you can also drag pinpoint to "
+"locate the correct address"
+msgstr ""
+"Haga clic en \"Fijar dirección en el mapa\" y luego podrá recolocar la "
+"chincheta en el mapa a la ubicación exacta"
 
 #: language.php:425
 msgid "Namibia"
 msgstr "Namibia"
 
 #: language.php:121
-msgid "Please enter latitude for google map perfection. eg. : <b>39.955823048131286</b>"
-msgstr "Por favor, introduce la latitud de google map exacta, por ejemplo: <b>39.955823048131286</b>"
+msgid ""
+"Please enter latitude for google map perfection. eg. : "
+"<b>39.955823048131286</b>"
+msgstr ""
+"Por favor, introduce la latitud de google map exacta, por ejemplo: "
+"<b>39.955823048131286</b>"
 
 #: language.php:426
 msgid "Nauru"
 msgstr "Nauru"
 
 #: language.php:122
-msgid "Please enter longitude for google map perfection. eg. : <b>-75.14408111572266</b>"
-msgstr "Por favor, introduce la latitud de google map exacta, por ejemplo: <b>-75.14408111572266</b>"
+msgid ""
+"Please enter longitude for google map perfection. eg. : "
+"<b>-75.14408111572266</b>"
+msgstr ""
+"Por favor, introduce la latitud de google map exacta, por ejemplo: "
+"<b>-75.14408111572266</b>"
 
 #: language.php:427
 msgid "Navassa Island"
 msgstr "Navassa Island"
 
 #: language.php:123 language.php:124
-msgid "A numeric value is required. Please make sure you have either draged the marker or clicked the button: Set Address On Map"
-msgstr "Se requiere un valor numérico. Por favor, asegúrese de que ha ya sea draged el marcador o se hace clic en el botón: Establecer Dirección On Map"
+msgid ""
+"A numeric value is required. Please make sure you have either draged the "
+"marker or clicked the button: Set Address On Map"
+msgstr ""
+"Se requiere un valor numérico. Por favor, asegúrese de que ha ya sea draged "
+"el marcador o se hace clic en el botón: Establecer Dirección On Map"
 
 #: language.php:428
 msgid "Nepal"
@@ -1976,7 +2191,8 @@ msgstr "Antillas Holandesas"
 
 #: language.php:128
 msgid "Enter facebook URL. eg. : <b>http://facebook.com/myplace</b>"
-msgstr "Introduzca facebook URL. por ejemplo. : <b>Http://facebook.com/myplace</b>"
+msgstr ""
+"Introduzca facebook URL. por ejemplo. : <b>Http://facebook.com/myplace</b>"
 
 #: language.php:431
 msgid "New Caledonia"
@@ -1984,15 +2200,20 @@ msgstr "Nueva Caledonia"
 
 #: language.php:129
 msgid "Select listing category from here. Select at least one category"
-msgstr "Seleccionar lista categoría desde aquí. Seleccione al menos una categoría"
+msgstr ""
+"Seleccionar lista categoría desde aquí. Seleccione al menos una categoría"
 
 #: language.php:432
 msgid "New Zealand"
 msgstr "Nueva Zelanda"
 
 #: language.php:130
-msgid "Tags are short keywords, with no space within.(eg: tag1, tag2, tag3) Up to 40 characters only."
-msgstr "Las etiquetas son palabras clave cortas, sin espacio interior. (Ej: tag1, tag2, tag3) hasta sólo 40 caracteres."
+msgid ""
+"Tags are short keywords, with no space within.(eg: tag1, tag2, tag3) Up to "
+"40 characters only."
+msgstr ""
+"Las etiquetas son palabras clave cortas, sin espacio interior. (Ej: tag1, "
+"tag2, tag3) hasta sólo 40 caracteres."
 
 #: language.php:433
 msgid "Nicaragua"
@@ -2007,8 +2228,12 @@ msgid "Niger"
 msgstr "Níger"
 
 #: language.php:133
-msgid "Note : You can sort images once the post is saved by clicking on \"Edit\" on the listing"
-msgstr "Nota: Puede ordenar las imágenes haciendo clic en \"Editar\" una vez que la ficha se ha guardado"
+msgid ""
+"Note : You can sort images once the post is saved by clicking on \"Edit\" on "
+"the listing"
+msgstr ""
+"Nota: Puede ordenar las imágenes haciendo clic en \"Editar\" una vez que la "
+"ficha se ha guardado"
 
 #: language.php:435
 msgid "Nigeria"
@@ -2047,8 +2272,12 @@ msgid "Norway"
 msgstr "Noruega"
 
 #: language.php:141
-msgid "Hi there, I would like to enquire about this place. I would like to ask more info about..."
-msgstr "Hola, me gustaría preguntar acerca de esta ficha. Me gustaría pedir más información sobre ..."
+msgid ""
+"Hi there, I would like to enquire about this place. I would like to ask more "
+"info about..."
+msgstr ""
+"Hola, me gustaría preguntar acerca de esta ficha. Me gustaría pedir más "
+"información sobre ..."
 
 #: language.php:440
 msgid "Oman"
@@ -2269,15 +2498,22 @@ msgstr "Usuario o contraseña Invalidos"
 
 #: language.php:208
 msgid "Registration complete. Please check your e-mail for login details."
-msgstr "Registro completo. Por favor, comprueba tu eMail para los datos de acceso."
+msgstr ""
+"Registro completo. Por favor, comprueba tu eMail para los datos de acceso."
 
 #: language.php:209
 msgid "We just sent you a new password. Kindly check your e-mail now."
-msgstr "Acabamos de enviarte una nueva contraseña. Cheque bondadoso su dirección de correo ahora."
+msgstr ""
+"Acabamos de enviarte una nueva contraseña. Cheque bondadoso su dirección de "
+"correo ahora."
 
 #: language.php:210
-msgid "A confirmation link has been sent to you via email. Kindly check your e-mail now."
-msgstr "Un enlace de confirmación se ha enviado a su correo electrónico. Cheque bondadoso su dirección de correo ahora."
+msgid ""
+"A confirmation link has been sent to you via email. Kindly check your e-mail "
+"now."
+msgstr ""
+"Un enlace de confirmación se ha enviado a su correo electrónico. Cheque "
+"bondadoso su dirección de correo ahora."
 
 #: language.php:211
 msgid "User registration has been disabled by the admin."
@@ -2288,8 +2524,12 @@ msgid "You are now logged out."
 msgstr "Ahora está desconectado."
 
 #: language.php:213
-msgid "Please enter your e-mail address as username. You will receive a new password via e-mail."
-msgstr "Introduzca su dirección de correo electrónico como nombre de usuario. Usted recibirá una nueva contraseña vía e-mail."
+msgid ""
+"Please enter your e-mail address as username. You will receive a new "
+"password via e-mail."
+msgstr ""
+"Introduzca su dirección de correo electrónico como nombre de usuario. Usted "
+"recibirá una nueva contraseña vía e-mail."
 
 #: language.php:214
 msgid "Invalid Email, Please check"
@@ -2301,7 +2541,8 @@ msgstr "Revise su correo electrónico para su nueva contraseña."
 
 #: language.php:216
 msgid "How many sample data you would like to populate on your site?"
-msgstr "¿Cuántas fichas de sitios ficticios le gustaría añadir para rellenar su web?"
+msgstr ""
+"¿Cuántas fichas de sitios ficticios le gustaría añadir para rellenar su web?"
 
 #: language.php:217
 msgid "Insert sample data please"
@@ -2312,8 +2553,12 @@ msgid "Yes Delete Please!"
 msgstr "Sí Borrar favor!"
 
 #: language.php:219
-msgid "GeoDirectory sample data has been populated on your site. Wish to delete sample data?"
-msgstr "Se han añadido con éxito sitios ficticios en su web, ¿desea borrar estos datos de ejemplo?"
+msgid ""
+"GeoDirectory sample data has been populated on your site. Wish to delete "
+"sample data?"
+msgstr ""
+"Se han añadido con éxito sitios ficticios en su web, ¿desea borrar estos "
+"datos de ejemplo?"
 
 #: language.php:220
 msgid "Please Wait! We are importing dummy data."
@@ -2348,24 +2593,46 @@ msgid "%s record(s) inserted."
 msgstr "%s registro(s) insertados."
 
 #: language.php:231
-msgid "%s out of %s record(s) could not be inserted due to blank address. Address fields post_address, post_country, post_region, post_city, post_latitude and post_longitude are mandatory fields."
-msgstr "%s de registro (s)% s no puede insertarse debido a la dirección en blanco. Los campos de dirección post_address, post_country, post_region, post_city, post_latitude y post_longitude son campos obligatorios."
+msgid ""
+"%s out of %s record(s) could not be inserted due to blank address. Address "
+"fields post_address, post_country, post_region, post_city, post_latitude and "
+"post_longitude are mandatory fields."
+msgstr ""
+"%s de registro (s)% s no puede insertarse debido a la dirección en blanco. "
+"Los campos de dirección post_address, post_country, post_region, post_city, "
+"post_latitude y post_longitude son campos obligatorios."
 
 #: language.php:233
-msgid "%s out of %s record(s) could not be inserted due to invalid address. You can import data in default location only as you do not have multilocation ad-on enabled."
-msgstr "%s de registro (s)% s no puede insertarse debido a la dirección no válida. Puede importar datos en la ubicación por defecto, para insertar datos en otras localizaciones necesita la extensión de multilocalización."
+msgid ""
+"%s out of %s record(s) could not be inserted due to invalid address. You can "
+"import data in default location only as you do not have multilocation ad-on "
+"enabled."
+msgstr ""
+"%s de registro (s)% s no puede insertarse debido a la dirección no válida. "
+"Puede importar datos en la ubicación por defecto, para insertar datos en "
+"otras localizaciones necesita la extensión de multilocalización."
 
 #: language.php:236
-msgid "%s out of %s record(s) could not be inserted due to invalid/blank post type. Only use geodirectory's post type."
-msgstr "%s de registro (s)% s no puede insertarse debido a que el Tipo de Entrada no es válido o está en blanco. Utilice sólo el Tipo de Entrada por defecto de Geodirectory."
+msgid ""
+"%s out of %s record(s) could not be inserted due to invalid/blank post type. "
+"Only use geodirectory's post type."
+msgstr ""
+"%s de registro (s)% s no puede insertarse debido a que el Tipo de Entrada no "
+"es válido o está en blanco. Utilice sólo el Tipo de Entrada por defecto de "
+"Geodirectory."
 
 #: language.php:239
 msgid "%s out of %s record(s) could not be inserted due to blank post title."
-msgstr "%s de %s registro(s) podrían no haberse incluidos ya que no se ha encontrado un título válido o el título está en blanco."
+msgstr ""
+"%s de %s registro(s) podrían no haberse incluidos ya que no se ha encontrado "
+"un título válido o el título está en blanco."
 
 #: language.php:242
-msgid "File you are uploading is not valid. First colum should be \"Post Title\"."
-msgstr "Archivo que estás subiendo no es válido. En primer colum debe ser \"Título del anuncio\"."
+msgid ""
+"File you are uploading is not valid. First colum should be \"Post Title\"."
+msgstr ""
+"Archivo que estás subiendo no es válido. En primer colum debe ser \"Título "
+"del anuncio\"."
 
 #: language.php:243
 msgid "Please upload CSV file only."
@@ -3124,11 +3391,17 @@ msgstr "Número de entradas (total)"
 
 #: geodirectory-widgets/geodirectory_listing_slider_widget.php:236
 msgid "Number of posts(shown at one time, requires a slide width to be set):"
-msgstr "Número de entradas (que se muestran a la vez, requiere ajustar el ancho de la diapositiva):"
+msgstr ""
+"Número de entradas (que se muestran a la vez, requiere ajustar el ancho de "
+"la diapositiva):"
 
 #: geodirectory-widgets/geodirectory_listing_slider_widget.php:245
-msgid "Slide width(leave blank unless showing more than one slide at a time, ex: 210):"
-msgstr "Ancho de la diapositiva (dejar en blanco a menos que muestre más de una diapositiva a la vez, por ejemplo: 210):"
+msgid ""
+"Slide width(leave blank unless showing more than one slide at a time, ex: "
+"210):"
+msgstr ""
+"Ancho de la diapositiva (dejar en blanco a menos que muestre más de una "
+"diapositiva a la vez, por ejemplo: 210):"
 
 #: geodirectory-widgets/geodirectory_listing_slider_widget.php:254
 msgid "Animation:"
@@ -3177,8 +3450,13 @@ msgid "Customize categories count to appear by default:"
 msgstr "Personalizar categorías cuentan a aparecer de forma predeterminada:"
 
 #: geodirectory-widgets/geodirectory_popular_widget.php:111
-msgid "After categories count reaches this limit option More Categories / Less Categoris will be displayed to show/hide categories. Default: 15"
-msgstr "Después de contar categorías alcanza esta opción límite Más categorías / Menos Categoris se mostrará para mostrar / ocultar categorías. Por defecto: 15"
+msgid ""
+"After categories count reaches this limit option More Categories / Less "
+"Categoris will be displayed to show/hide categories. Default: 15"
+msgstr ""
+"Después de contar categorías alcanza esta opción límite Más categorías / "
+"Menos Categoris se mostrará para mostrar / ocultar categorías. Por defecto: "
+"15"
 
 #: geodirectory-widgets/geodirectory_popular_widget.php:140
 #: geodirectory-widgets/geodirectory_popular_widget.php:143
@@ -3226,8 +3504,12 @@ msgid "GD > Recent Reviews"
 msgstr "GD > Opiniones recientes"
 
 #: geodirectory-widgets/home_map_widget.php:26
-msgid "Google Map in Home page. It will show you google map V3 for Home page with category checkbox selection."
-msgstr "Google Map en la página de inicio. Se le mostrará Google Map V3 para la página de inicio con la selección de la categoría casilla."
+msgid ""
+"Google Map in Home page. It will show you google map V3 for Home page with "
+"category checkbox selection."
+msgstr ""
+"Google Map en la página de inicio. Se le mostrará Google Map V3 para la "
+"página de inicio con la selección de la categoría casilla."
 
 #: geodirectory-widgets/home_map_widget.php:29
 msgid "GD > GMap - Home page"
@@ -3235,11 +3517,16 @@ msgstr "GD > GMap en portada"
 
 #: geodirectory-widgets/home_map_widget.php:142
 msgid "Map Width <small>(Default is : 100%) you can use px or % here</small>"
-msgstr "Ancho del mapa <small>(por defecto is: 100% y aquí puedes usar px o %)</small>"
+msgstr ""
+"Ancho del mapa <small>(por defecto is: 100% y aquí puedes usar px o %)</"
+"small>"
 
 #: geodirectory-widgets/home_map_widget.php:151
-msgid "Map Height <small>(Default is : 425px) you can use px or vh here</small>"
-msgstr "Altura del mapa <small>(por defecto es 425px y aquí puedes usar px o vh)</small>"
+msgid ""
+"Map Height <small>(Default is : 425px) you can use px or vh here</small>"
+msgstr ""
+"Altura del mapa <small>(por defecto es 425px y aquí puedes usar px o vh)</"
+"small>"
 
 #: geodirectory-widgets/home_map_widget.php:161
 #: geodirectory-widgets/listing_map_widget.php:299
@@ -3271,8 +3558,11 @@ msgid "Enable mouse scroll zoom ?"
 msgstr "¿Habilitar zoom usando la ruleta de desplazamiento del ratón?"
 
 #: geodirectory-widgets/listing_map_widget.php:103
-msgid "Google Map for Listing page. It will show you google map V3 for Listing page."
-msgstr "Google Map para la página de venta. Se le mostrará Google Map V3 para la página de venta."
+msgid ""
+"Google Map for Listing page. It will show you google map V3 for Listing page."
+msgstr ""
+"Google Map para la página de venta. Se le mostrará Google Map V3 para la "
+"página de venta."
 
 #: geodirectory-widgets/listing_map_widget.php:106
 msgid "GD > GMap - Listing page"
@@ -3280,11 +3570,13 @@ msgstr "GD > GMap - Página de Directorio"
 
 #: geodirectory-widgets/listing_map_widget.php:279
 msgid "Map Width <small>(Default is : 294) you can use px or % here</small>"
-msgstr "Ancho del mapa <small>(por defecto es 294 y aquí puedes usar px o %)</small>"
+msgstr ""
+"Ancho del mapa <small>(por defecto es 294 y aquí puedes usar px o %)</small>"
 
 #: geodirectory-widgets/listing_map_widget.php:289
 msgid "Map Height <small>(Default is : 370) you can use px or vh here</small>"
-msgstr "Alto del Mapa <small>(por defecto es: 370) se puede utilizar px o vh</small>"
+msgstr ""
+"Alto del Mapa <small>(por defecto es: 370) se puede utilizar px o vh</small>"
 
 #: geodirectory-widgets/listing_map_widget.php:360
 msgid "Map Sticky(should stick to the right of screen) ?"
@@ -3433,7 +3725,9 @@ msgstr "HTML Nombre de la variable no debe estar en blanco"
 
 #: geodirectory_hooks_actions.php:1250
 msgid "Please do not use special character and spaces in HTML Variable Name."
-msgstr "Por favor, no utilice caracteres especiales y espacios en HTML Nombre de variable."
+msgstr ""
+"Por favor, no utilice caracteres especiales y espacios en HTML Nombre de "
+"variable."
 
 #: geodirectory_hooks_actions.php:1251
 msgid "HTML Variable Name should be a unique name."
@@ -3517,7 +3811,9 @@ msgstr "Responder texto"
 
 #: geodirectory_hooks_actions.php:1285
 msgid "Please select star rating, you can't leave a review without stars."
-msgstr "Por favor, haz clic para puntuar, no se puede dejar una opinión sin estrellas."
+msgstr ""
+"Por favor, haz clic para puntuar, no se puede dejar una opinión sin "
+"estrellas."
 
 #: geodirectory_hooks_actions.php:1289
 msgid "Enable Dragging"
@@ -3529,7 +3825,8 @@ msgstr "Desactivar Arrastrando"
 
 #: geodirectory_hooks_actions.php:1291
 msgid "File size error : You tried to upload a file over %s"
-msgstr "Error con el tamaño del archivo : Intentaste subir un archivo de más de %s"
+msgstr ""
+"Error con el tamaño del archivo : Intentaste subir un archivo de más de %s"
 
 #: geodirectory_hooks_actions.php:1292
 msgid "You have reached your upload limit of %s files."
@@ -3537,7 +3834,9 @@ msgstr "Has alcanzado el límite de archivos. Limitado a %s archivos."
 
 #: geodirectory_hooks_actions.php:1293
 msgid "You may only upload %s files with this package, please try again."
-msgstr "Solo puedes subir %s archivos con este paquete, por favor, inténtalo de nuevo."
+msgstr ""
+"Solo puedes subir %s archivos con este paquete, por favor, inténtalo de "
+"nuevo."
 
 #: geodirectory_hooks_actions.php:1295
 msgid "Allowed files"
@@ -3768,8 +4067,12 @@ msgid "GD > Social Like"
 msgstr "GD > Twittear / Me gusta / G+1"
 
 #: geodirectory-functions/taxonomy_functions.php:1227
-msgid "%s scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview %s</a>"
-msgstr "%s programado para: <strong>%1$s</strong>. <a target=“_blank” href=“%2$s”>Vista previa</a>"
+msgid ""
+"%s scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview %s</a>"
+msgstr ""
+"%s programado para: <strong>%1$s</strong>. <a target=“_blank” "
+"href=“%2$s”>Vista previa</a>"
 
 #: geodirectory_widgets.php:474
 msgid "GD > Google Feedburner Subscribe"
@@ -3785,7 +4088,8 @@ msgstr "GD > Suscribirse"
 
 #: geodirectory-functions/taxonomy_functions.php:1228
 msgid "%s draft updated. <a target=\"_blank\" href=\"%s\">Preview %s</a>"
-msgstr "%s borrador actualizado. <a target=“_blank” href=“%s”>Vista previa %s</a>"
+msgstr ""
+"%s borrador actualizado. <a target=“_blank” href=“%s”>Vista previa %s</a>"
 
 #: geodirectory_widgets.php:535 geodirectory_widgets.php:536
 #: geodirectory_widgets.php:537
@@ -3901,8 +4205,11 @@ msgid "Place Category"
 msgstr "Categoría"
 
 #: geodirectory_widgets.php:1048
-msgid "This is a search widget to show advance search for gedodirectory listings."
-msgstr "Se trata de un widget de búsqueda para mostrar de búsqueda avanzada para los listados gedodirectory."
+msgid ""
+"This is a search widget to show advance search for gedodirectory listings."
+msgstr ""
+"Se trata de un widget de búsqueda para mostrar de búsqueda avanzada para los "
+"listados gedodirectory."
 
 #: geodirectory-functions/taxonomy_functions.php:1310
 msgid "Search Place Categories"
@@ -4049,12 +4356,17 @@ msgid "Address:"
 msgstr "Dirección:"
 
 #: geodirectory-functions/template_functions.php:234
-msgid "This listing does not belong to your account, please check the listing id carefully."
-msgstr "Este listado no pertenece a su cuenta, por favor revise el id listado cuidadosamente."
+msgid ""
+"This listing does not belong to your account, please check the listing id "
+"carefully."
+msgstr ""
+"Este listado no pertenece a su cuenta, por favor revise el id listado "
+"cuidadosamente."
 
 #: language.php:48
 msgid "Please enter listing address. eg. : 230 Vine Street"
-msgstr "Por favor, introduzca la dirección lista. por ejemplo. : 230 Vine Street"
+msgstr ""
+"Por favor, introduzca la dirección lista. por ejemplo. : 230 Vine Street"
 
 #: geodirectory-functions/template_functions.php:501
 msgid "No favorite listings found which match your selection."
@@ -4149,8 +4461,12 @@ msgid "Your Name"
 msgstr "Tu nombre"
 
 #: language.php:72
-msgid "Add Images : <small>(You can upload more than one images to create image gallery on detail page)</small>"
-msgstr "Añadir Imágenes: <small>(Puede subir más de imágenes para crear galería de imágenes en la página de detalle)</small>"
+msgid ""
+"Add Images : <small>(You can upload more than one images to create image "
+"gallery on detail page)</small>"
+msgstr ""
+"Añadir Imágenes: <small>(Puede subir más de imágenes para crear galería de "
+"imágenes en la página de detalle)</small>"
 
 #: geodirectory-templates/popup-forms.php:93
 msgid "Subject"
@@ -4186,7 +4502,9 @@ msgid "Add custom feature"
 msgstr "Añadir función personalizada"
 
 #: language.php:80
-msgid "<h3>No Records Found</h3><p>Sorry, no records were found. Please adjust your search criteria and try again.</p>"
+msgid ""
+"<h3>No Records Found</h3><p>Sorry, no records were found. Please adjust your "
+"search criteria and try again.</p>"
 msgstr ""
 
 #: geodirectory-widgets/geodirectory_bestof_widget.php:25
@@ -4195,8 +4513,12 @@ msgid "GD > Best of widget"
 msgstr "GD> Widget Lo mejor"
 
 #: language.php:82
-msgid "<h3>No Record Found</h3><p>Sorry, This widget can only be used on listing page.</p>"
-msgstr "<h3> Ningún Record Fue Encontrado </h3><p> Lo sentimos, Este widget sólo se puede utilizar en la página del listado. </p>"
+msgid ""
+"<h3>No Record Found</h3><p>Sorry, This widget can only be used on listing "
+"page.</p>"
+msgstr ""
+"<h3> Ningún Record Fue Encontrado </h3><p> Lo sentimos, Este widget sólo se "
+"puede utilizar en la página del listado. </p>"
 
 #: geodirectory-widgets/geodirectory_bestof_widget.php:79
 #: geodirectory-widgets/geodirectory_bestof_widget.php:326
@@ -4205,8 +4527,12 @@ msgid "Best of %s"
 msgstr "Lo mejor de %s"
 
 #: language.php:83
-msgid "<h3>No Record Found</h3><p>Sorry, This widget can only be used on place page.</p>"
-msgstr "<h3>Ningún resultado encontrado</h3><p>Lo sentimos, Este Widget sólo se puede utilizar en la página de un sitio.</p>"
+msgid ""
+"<h3>No Record Found</h3><p>Sorry, This widget can only be used on place page."
+"</p>"
+msgstr ""
+"<h3>Ningún resultado encontrado</h3><p>Lo sentimos, Este Widget sólo se "
+"puede utilizar en la página de un sitio.</p>"
 
 #: geodirectory-widgets/geodirectory_bestof_widget.php:253
 msgid " Reviews"
@@ -4239,24 +4565,46 @@ msgid "Tab Layout:"
 msgstr "Ficha Diseño:"
 
 #: language.php:92
-msgid "This is a preview of your listing and its not published yet. <br />If there is something wrong then \"Go back and edit\" or if you want to add listing then click on \"Publish\".<br> You are going to pay <b>%s</b> &  alive days are <b>%s</b> as %s listing"
-msgstr "Esta es una vista previa de su publicación, que aún no ha sido publicado. <br /> Si hay algo mal, haga clic en \"volver atrás y editar”, si le gusta como queda el anuncio haga clic en \"Publicar\".<br> Va a pagar <b>%s</b> y la publicación estará activa durante <b>%s</b> como %s directorio"
+msgid ""
+"This is a preview of your listing and its not published yet. <br />If there "
+"is something wrong then \"Go back and edit\" or if you want to add listing "
+"then click on \"Publish\".<br> You are going to pay <b>%s</b> &  alive days "
+"are <b>%s</b> as %s listing"
+msgstr ""
+"Esta es una vista previa de su publicación, que aún no ha sido publicado. "
+"<br /> Si hay algo mal, haga clic en \"volver atrás y editar”, si le gusta "
+"como queda el anuncio haga clic en \"Publicar\".<br> Va a pagar <b>%s</b> y "
+"la publicación estará activa durante <b>%s</b> como %s directorio"
 
 #: geodirectory-widgets/geodirectory_bestof_widget.php:486
 msgid "Tabs on Top"
 msgstr "Tabs on Top"
 
 #: language.php:93
-msgid "This is a preview of your listing and its not updated yet. <br />If there is something wrong then \"Go back and edit\" or if you want to update listing then click on \"Update now\""
-msgstr "Esta es una vista previa de su anuncio y que no es actualizado todavía. <br /> Si hay algo mal, luego \"volver atrás y editar\" o si desea actualizar la lista a continuación, haga clic en \"Actualizar ahora\""
+msgid ""
+"This is a preview of your listing and its not updated yet. <br />If there is "
+"something wrong then \"Go back and edit\" or if you want to update listing "
+"then click on \"Update now\""
+msgstr ""
+"Esta es una vista previa de su anuncio y que no es actualizado todavía. <br /"
+"> Si hay algo mal, luego \"volver atrás y editar\" o si desea actualizar la "
+"lista a continuación, haga clic en \"Actualizar ahora\""
 
 #: geodirectory-widgets/geodirectory_bestof_widget.php:489
 msgid "Tabs on Left"
 msgstr "Aquí en la izquierda"
 
 #: language.php:94
-msgid "This is a preview of your listing and its not published yet. <br />If there is something wrong then \"Go back and edit\" or if you want to add listing then click on \"Publish\".<br> Your %s listing will published for <b>%s</b> days"
-msgstr "Esta es una vista previa de su publicación y no ha sido actualizado todavía. <br />Si hay algo mal, puede \"volver atrás y editar\" o si lo desea puede actualizar la publicación a continuación, haga clic en \"Actualizar ahora”.<br> Su %s publicación estará publicada durante <b>%s</b> días"
+msgid ""
+"This is a preview of your listing and its not published yet. <br />If there "
+"is something wrong then \"Go back and edit\" or if you want to add listing "
+"then click on \"Publish\".<br> Your %s listing will published for <b>%s</b> "
+"days"
+msgstr ""
+"Esta es una vista previa de su publicación y no ha sido actualizado todavía. "
+"<br />Si hay algo mal, puede \"volver atrás y editar\" o si lo desea puede "
+"actualizar la publicación a continuación, haga clic en \"Actualizar ahora”."
+"<br> Su %s publicación estará publicada durante <b>%s</b> días"
 
 #: geodirectory-widgets/geodirectory_bestof_widget.php:493
 msgid "Tabs as Dropdown"
@@ -4347,7 +4695,7 @@ msgstr "Teléfono:"
 
 #: geodirectory-functions/custom_functions.php:281
 msgid "Email :"
-msgstr "eMail:"
+msgstr "Correo Electrónico:"
 
 #: geodirectory-functions/custom_functions.php:281
 msgid "Sent from"
@@ -4607,8 +4955,11 @@ msgid "Posts by "
 msgstr "Mensajes de"
 
 #: geodirectory-functions/google_analytics.php:155
-msgid "Not authorized, please click authorized in GD > Google analytic settings."
-msgstr "No autorizado, por favor autorizar en GD > General > Ajustes de Google Analitics."
+msgid ""
+"Not authorized, please click authorized in GD > Google analytic settings."
+msgstr ""
+"No autorizado, por favor autorizar en GD > General > Ajustes de Google "
+"Analitics."
 
 #: geodirectory-functions/compatibility/X.php:384
 msgid "404 (Page Not Found)"
@@ -4646,7 +4997,8 @@ msgstr "Sin categoría"
 #: geodirectory-functions/map-functions/map_on_add_listing_page.php:358
 #: geodirectory-functions/map-functions/map_on_add_listing_page.php:603
 msgid "Please choose any address of the (%s) city only."
-msgstr "Por favor, elige una dirección dentro de los márgenes de la ciudad (%s)"
+msgstr ""
+"Por favor, elige una dirección dentro de los márgenes de la ciudad (%s)"
 
 #: geodirectory-functions/custom_field_html.php:97
 #: geodirectory-functions/custom_fields_functions.php:2244
@@ -4712,10 +5064,18 @@ msgid "Select Custom Field type"
 msgstr "Seleccione el tipo de campo personalizado"
 
 #: geodirectory-functions/reviews.php:40
-msgid "1 Review <span class=\"r-title-on\">on</span> <span class=\"r-title\">&ldquo;%2$s&rdquo;</span>"
-msgid_plural "%1$s Reviews <span>on</span> <span class=\"r-title\"> &ldquo;%2$s&rdquo;</span>"
-msgstr[0] "1 Reseña <span class=\"r-title-on\">en</span> <span class=\"r-title\">&ldquo;%2$s&rdquo;</span>"
-msgstr[1] "%1$s Reseñas <span>en</span> <span class=\"r-title\"> &ldquo;%2$s&rdquo;</span>"
+msgid ""
+"1 Review <span class=\"r-title-on\">on</span> <span class=\"r-title\">&ldquo;"
+"%2$s&rdquo;</span>"
+msgid_plural ""
+"%1$s Reviews <span>on</span> <span class=\"r-title\"> &ldquo;%2$s&rdquo;</"
+"span>"
+msgstr[0] ""
+"1 Reseña <span class=\"r-title-on\">en</span> <span class=\"r-title\">&ldquo;"
+"%2$s&rdquo;</span>"
+msgstr[1] ""
+"%1$s Reseñas <span>en</span> <span class=\"r-title\"> &ldquo;%2$s&rdquo;</"
+"span>"
 
 #: geodirectory-functions/custom_fields_functions.php:2700
 msgid "Select decimal point :"
@@ -4767,8 +5127,10 @@ msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
 msgstr "<strong>ERROR:</strong> Introduzca un nombre de usuario o e-mail."
 
 #: geodirectory-functions/signup_function.php:151
-msgid "<strong>ERROR</strong>: There is no user registered with that email address."
-msgstr "<strong>ERROR:</strong> No hay ningun usuario registrado con ese e-mail."
+msgid ""
+"<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr ""
+"<strong>ERROR:</strong> No hay ningun usuario registrado con ese e-mail."
 
 #: geodirectory-functions/signup_function.php:168
 msgid "<strong>ERROR</strong>: Invalid username or e-mail."
@@ -4815,12 +5177,20 @@ msgid "Show advanced editor :"
 msgstr "Mostrar editor avanzado:"
 
 #: geodirectory-functions/signup_function.php:288
-msgid "<strong>ERROR</strong>: This username is invalid.  Please enter a valid username."
-msgstr "<strong>ERROR:</strong> Este nombre de usuario no es válido. Por favor, introduzca un nombre de usuario válido."
+msgid ""
+"<strong>ERROR</strong>: This username is invalid.  Please enter a valid "
+"username."
+msgstr ""
+"<strong>ERROR:</strong> Este nombre de usuario no es válido. Por favor, "
+"introduzca un nombre de usuario válido."
 
 #: geodirectory-functions/signup_function.php:291
-msgid "<strong>ERROR</strong>: This username is already registered, please choose another one."
-msgstr "<strong>ERROR:</strong> Este nombre de usuario ya está registrado, por favor elija otro."
+msgid ""
+"<strong>ERROR</strong>: This username is already registered, please choose "
+"another one."
+msgstr ""
+"<strong>ERROR:</strong> Este nombre de usuario ya está registrado, por favor "
+"elija otro."
 
 #: geodirectory-functions/custom_field_html.php:292
 msgid "Is active :"
@@ -4828,23 +5198,33 @@ msgstr "Está activo:"
 
 #: geodirectory-functions/signup_function.php:295
 msgid "<strong>ERROR</strong>: Please type your e-mail address."
-msgstr "<strong>ERROR:</strong> Por favor escriba su dirección de correo electrónico."
+msgstr ""
+"<strong>ERROR:</strong> Por favor escriba su dirección de correo electrónico."
 
 #: geodirectory-functions/signup_function.php:297
 msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
-msgstr "<strong>ERROR:</strong> La dirección de correo electrónico no es correcta."
+msgstr ""
+"<strong>ERROR:</strong> La dirección de correo electrónico no es correcta."
 
 #: geodirectory-functions/custom_field_html.php:331
 msgid "For admin use only? :"
 msgstr "Por administrador use solamente? :"
 
 #: geodirectory-functions/signup_function.php:300
-msgid "<strong>ERROR</strong>: This email is already registered, please choose another one."
-msgstr "<strong>ERROR:</strong> Esta dirección de correo electrónico ya está registrado, por favor elija otro."
+msgid ""
+"<strong>ERROR</strong>: This email is already registered, please choose "
+"another one."
+msgstr ""
+"<strong>ERROR:</strong> Esta dirección de correo electrónico ya está "
+"registrado, por favor elija otro."
 
 #: geodirectory-functions/signup_function.php:376
-msgid "<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the <a href=\"mailto:%s\">webmaster</a> !"
-msgstr "<strong>ERROR</strong>: No se ha podido completar el registro… debe contactar con el  <a href=“mailto:%s”>administrador</a> !"
+msgid ""
+"<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the <a "
+"href=\"mailto:%s\">webmaster</a> !"
+msgstr ""
+"<strong>ERROR</strong>: No se ha podido completar el registro… debe "
+"contactar con el  <a href=“mailto:%s”>administrador</a> !"
 
 #: geodirectory-functions/custom_field_html.php:571
 msgid "Is required :"
@@ -4859,8 +5239,12 @@ msgid "Required message:"
 msgstr "Mensaje requerido:"
 
 #: geodirectory-functions/signup_function.php:404
-msgid "<strong>SUCCESS</strong>: Thank you for registering, please check your email for your login details."
-msgstr "<strong>BIEN HECHO:</strong> Gracias por registrarse, por favor revise su correo electrónico para ver sus datos de acceso."
+msgid ""
+"<strong>SUCCESS</strong>: Thank you for registering, please check your email "
+"for your login details."
+msgstr ""
+"<strong>BIEN HECHO:</strong> Gracias por registrarse, por favor revise su "
+"correo electrónico para ver sus datos de acceso."
 
 #: geodirectory-functions/signup_function.php:489
 msgid "Sorry, that key does not appear to be valid."
@@ -4871,8 +5255,14 @@ msgid "Validation Pattern:"
 msgstr "Patrón de Validación:"
 
 #: geodirectory-functions/signup_function.php:709
-msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href='http://www.google.com/cookies.html'>enable cookies</a> to use WordPress."
-msgstr "<strong>ERROR:</strong> Las cookies están bloqueadas o no soportado por su navegador. Debe <a href='http://www.google.com/cookies.html'>habilitar las cookies</a> para usar WordPress."
+msgid ""
+"<strong>ERROR</strong>: Cookies are blocked or not supported by your "
+"browser. You must <a href='http://www.google.com/cookies.html'>enable "
+"cookies</a> to use WordPress."
+msgstr ""
+"<strong>ERROR:</strong> Las cookies están bloqueadas o no soportado por su "
+"navegador. Debe <a href='http://www.google.com/cookies.html'>habilitar las "
+"cookies</a> para usar WordPress."
 
 #: geodirectory-functions/custom_fields_functions.php:2799
 msgid "Enter regex expression for HTML5 pattern validation."
@@ -4893,8 +5283,11 @@ msgid "Add %s"
 msgstr "Añadir %s"
 
 #: geodirectory-functions/custom_fields_functions.php:2819
-msgid "Enter a extra validation message to show to the user if validation fails."
-msgstr "Introduzca un mensaje de validación adicional a mostrar a los usuarios si la validación fracasa."
+msgid ""
+"Enter a extra validation message to show to the user if validation fails."
+msgstr ""
+"Introduzca un mensaje de validación adicional a mostrar a los usuarios si la "
+"validación fracasa."
 
 #: geodirectory-functions/taxonomy_functions.php:613
 #: geodirectory-widgets/geodirectory_cpt_categories_widget.php:255
@@ -4941,8 +5334,12 @@ msgid "Custom field deleted."
 msgstr "Campo personalizado eliminado."
 
 #: geodirectory-functions/custom_fields_functions.php:2848
-msgid "Selected taxonomy name use as field name index. ex:-( post_category[gd_placecategory] )"
-msgstr "Seleccionado nombre taxonomía uso como índice de nombre del campo. post_category ex :-( [gd_placecategory])"
+msgid ""
+"Selected taxonomy name use as field name index. ex:-"
+"( post_category[gd_placecategory] )"
+msgstr ""
+"Seleccionado nombre taxonomía uso como índice de nombre del campo. "
+"post_category ex :-( [gd_placecategory])"
 
 #: geodirectory-functions/taxonomy_functions.php:1222
 msgid "%s updated."
@@ -4982,7 +5379,9 @@ msgstr "Pantalla código postal / post:"
 
 #: geodirectory-functions/custom_fields_functions.php:2926
 msgid "Select if you want to show zip/post code field in address section."
-msgstr "Seleccione si desea mostrar el campo código postal / mensaje en la sección de direcciones."
+msgstr ""
+"Seleccione si desea mostrar el campo código postal / mensaje en la sección "
+"de direcciones."
 
 #: geodirectory-functions/custom_fields_functions.php:2949
 msgid "Zip/Post code label :"
@@ -4990,7 +5389,9 @@ msgstr "Postal / Código de etiqueta de la publicación:"
 
 #: geodirectory-functions/custom_fields_functions.php:2951
 msgid "Enter zip/post code field label in address section."
-msgstr "Entrar / etiqueta del campo de código postal postal en la sección de direcciones."
+msgstr ""
+"Entrar / etiqueta del campo de código postal postal en la sección de "
+"direcciones."
 
 #: geodirectory-functions/custom_fields_functions.php:2967
 msgid "Map button label :"
@@ -5033,20 +5434,35 @@ msgid "Option Values should be separated by comma."
 msgstr "Los valores de las opciones deben estar separados por comas."
 
 #: geodirectory-functions/custom_fields_functions.php:3128
-msgid "If using for a \"tick filter\" place a / and then either a 1 for true or 0 for false"
-msgstr "Si se utiliza un \"filtro de la garrapata\" lugar a / y luego un 1 para verdadero o 0 para falso"
+msgid ""
+"If using for a \"tick filter\" place a / and then either a 1 for true or 0 "
+"for false"
+msgstr ""
+"Si se utiliza un \"filtro de la garrapata\" lugar a / y luego un 1 para "
+"verdadero o 0 para falso"
 
 #: geodirectory-functions/custom_fields_functions.php:3130
 msgid "eg: \"No Dogs Allowed/0,Dogs Allowed/1\" (Select only, not multiselect)"
-msgstr "por ejemplo: \"No se admiten perros / 0, se admiten perros / 1\" (Seleccione solamente, no MultiSelect)"
+msgstr ""
+"por ejemplo: \"No se admiten perros / 0, se admiten perros / 1\" (Seleccione "
+"solamente, no MultiSelect)"
 
 #: geodirectory-functions/custom_fields_functions.php:3133
-msgid "- If using OPTGROUP tag to grouping options, use \"{optgroup}OPTGROUP-LABEL|OPTION-1,OPTION-2{/optgroup}\""
-msgstr "- Si se utiliza la etiqueta OPTGROUP a las opciones de agrupación, utilice \"{} optgroup OPTGROUP-LABEL | OPCIÓN-1, OPCIÓN-2 {/ optgroup}\""
+msgid ""
+"- If using OPTGROUP tag to grouping options, use \"{optgroup}OPTGROUP-LABEL|"
+"OPTION-1,OPTION-2{/optgroup}\""
+msgstr ""
+"- Si se utiliza la etiqueta OPTGROUP a las opciones de agrupación, utilice "
+"\"{} optgroup OPTGROUP-LABEL | OPCIÓN-1, OPCIÓN-2 {/ optgroup}\""
 
 #: geodirectory-functions/custom_fields_functions.php:3135
-msgid "eg: \"{optgroup}Pets Allowed|No Dogs Allowed/0,Dogs Allowed/1{/optgroup},{optgroup}Sports|Cricket/Cricket,Football/Football,Hockey{/optgroup}\""
-msgstr "por ejemplo: \"{} optgroup admiten animales | No se admiten perros / 0, se admiten perros / 1 {/ optgroup}, {} optgroup Deportes | Cricket / Cricket, Fútbol / Fútbol, ​​Hockey {/ optgroup}\""
+msgid ""
+"eg: \"{optgroup}Pets Allowed|No Dogs Allowed/0,Dogs Allowed/1{/optgroup},"
+"{optgroup}Sports|Cricket/Cricket,Football/Football,Hockey{/optgroup}\""
+msgstr ""
+"por ejemplo: \"{} optgroup admiten animales | No se admiten perros / 0, se "
+"admiten perros / 1 {/ optgroup}, {} optgroup Deportes | Cricket / Cricket, "
+"Fútbol / Fútbol, ​​Hockey {/ optgroup}\""
 
 #: geodirectory-functions/custom_fields_functions.php:3165
 msgid "Date Format :"
@@ -5065,8 +5481,12 @@ msgid "%s formats"
 msgstr "%s formatos"
 
 #: geodirectory-functions/custom_fields_functions.php:3222
-msgid "Select file types to allowed for file uploading. (Select multiple file types by holding down \"Ctrl\" key.)"
-msgstr "Seleccione los tipos de archivos que permiten para la carga de archivos. (Seleccione varios tipos de archivos manteniendo pulsada la tecla \"Ctrl\".)"
+msgid ""
+"Select file types to allowed for file uploading. (Select multiple file types "
+"by holding down \"Ctrl\" key.)"
+msgstr ""
+"Seleccione los tipos de archivos que permiten para la carga de archivos. "
+"(Seleccione varios tipos de archivos manteniendo pulsada la tecla \"Ctrl\".)"
 
 #: geodirectory-functions/custom_field_html.php:657
 msgid "Custom css"
@@ -5077,8 +5497,14 @@ msgid "Upload icon :"
 msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:663
-msgid "Upload icon using media and enter its url path, or enter <a href=\"http://fortawesome.github.io/Font-Awesome/icons/\" target=\"_blank\" >font awesome </a>class eg:\"fa fa-home\""
-msgstr "Subir icono utilizando la Galería de Medios, la ruta URL, o introduciendo <a href=\"http://fontawesome.github.io/Font-Awesome/icons/\" target=\"_blank\" >font awesome </a>ejemplo de nombre de la clase:”fa fa-home\""
+msgid ""
+"Upload icon using media and enter its url path, or enter <a href=\"http://"
+"fortawesome.github.io/Font-Awesome/icons/\" target=\"_blank\" >font awesome "
+"</a>class eg:\"fa fa-home\""
+msgstr ""
+"Subir icono utilizando la Galería de Medios, la ruta URL, o introduciendo <a "
+"href=\"http://fontawesome.github.io/Font-Awesome/icons/\" target=\"_blank\" "
+">font awesome </a>ejemplo de nombre de la clase:”fa fa-home\""
 
 #: geodirectory-functions/custom_field_html.php:692
 msgid "Css class :"
@@ -5086,7 +5512,8 @@ msgstr ""
 
 #: geodirectory-functions/custom_field_html.php:694
 msgid "Enter custom css class for field custom style."
-msgstr "Introduzca la clase css personalizado para el estilo campo personalizado."
+msgstr ""
+"Introduzca la clase css personalizado para el estilo campo personalizado."
 
 #: geodirectory-functions/custom_field_html.php:739
 msgid "Posts sort options"
@@ -5177,7 +5604,8 @@ msgstr "Meta título para Página de Inicio"
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:56
 msgid "This will use the title of the page set as frontpage if left blank."
-msgstr "Se utilizará el título de la página principal en caso se deje en blanco."
+msgstr ""
+"Se utilizará el título de la página principal en caso se deje en blanco."
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:65
 msgid "Homepage meta description"
@@ -5350,8 +5778,12 @@ msgid "Enter the meta title for the search page."
 msgstr "Introduzca el título meta para la Página de Búsqueda"
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:229
-msgid "%%pt_plural%% search results for %%search_term%%, Near %%search_near%% %%sep%% %%sitename%%"
-msgstr "%%pt_plural%% resultados de búsqueda para %%search_term%%, Cerca de %%search_near%% %%sep%% %%sitename%%"
+msgid ""
+"%%pt_plural%% search results for %%search_term%%, Near %%search_near%% %%sep%"
+"% %%sitename%%"
+msgstr ""
+"%%pt_plural%% resultados de búsqueda para %%search_term%%, Cerca de %"
+"%search_near%% %%sep%% %%sitename%%"
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:234
 msgid "Search page meta description"
@@ -5363,7 +5795,9 @@ msgstr "Introduzca la descripción meta para la Página de Búsqueda."
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:239
 msgid "%%pt_plural%% search results for %%search_term%%, Near %%search_near%%"
-msgstr "%%pt_plural%% resultados de búsqueda para %%search_term%%, Cerca de %%search_near%%"
+msgstr ""
+"%%pt_plural%% resultados de búsqueda para %%search_term%%, Cerca de %"
+"%search_near%%"
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:246
 msgid "Add Listing Page Meta Settings"
@@ -5452,7 +5886,9 @@ msgstr "Autor: %%name%% %%sep%% %%sitename%%"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:595
 msgid "Select the post types to display related listing on detail page."
-msgstr "Seleccione los tipos de correos para mostrar anuncios relacionados en la página detalle."
+msgstr ""
+"Seleccione los tipos de correos para mostrar anuncios relacionados en la "
+"página detalle."
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:310
 msgid "Author page meta description"
@@ -5468,7 +5904,8 @@ msgstr "Introduzca la descripción meta para la página de autor."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:608
 msgid "Set the relation between current post to related posts."
-msgstr "Establecer la relación entre la posición actual de los mensajes relacionados."
+msgstr ""
+"Establecer la relación entre la posición actual de los mensajes relacionados."
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:319
 msgid "Author page title"
@@ -5493,7 +5930,8 @@ msgstr "%%pt_plural%% por: %%name%%"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:622
 msgid "Set the listing view of relate post on detail page"
-msgstr "Establecer la vista lista de relacionarse post en la página de detalles"
+msgstr ""
+"Establecer la vista lista de relacionarse post en la página de detalles"
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:329
 msgid "Author favorite page title"
@@ -5586,7 +6024,9 @@ msgstr "Parámetros Meta para la Página de Publicación Exitosa."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:657
 msgid "Enter number of posts to display on related posts listing"
-msgstr "Introduzca el número de puestos que se mostrará en los mensajes relacionados anuncio"
+msgstr ""
+"Introduzca el número de puestos que se mostrará en los mensajes relacionados "
+"anuncio"
 
 #: geodirectory-admin/option-pages/title_meta_settings_array.php:374
 msgid "Listing success page meta title"
@@ -5800,8 +6240,13 @@ msgid "WYSIWYG Editor Field"
 msgstr "Editor WYSIWYG Campo"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:811
-msgid "Show add listing navigation in main menu? (untick to disable) If you disable this option, none of the add listing link will appear in main navigation."
-msgstr "Mostrar añadir navegación listado en el menú principal? (Desmarque desactivar) Si desactiva esta opción, ninguno de el enlace Añadir anuncio aparecerá en la navegación principal."
+msgid ""
+"Show add listing navigation in main menu? (untick to disable) If you disable "
+"this option, none of the add listing link will appear in main navigation."
+msgstr ""
+"Mostrar añadir navegación listado en el menú principal? (Desmarque "
+"desactivar) Si desactiva esta opción, ninguno de el enlace Añadir anuncio "
+"aparecerá en la navegación principal."
 
 #: geodirectory-functions/cat-meta-functions/Tax-meta-class.php:1910
 msgid "Taxonomy Field"
@@ -5816,8 +6261,13 @@ msgid "Posts Field"
 msgstr "Mensajes Campo"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:819
-msgid "Show listing navigation in main menu? (untick to disable) If you disable this option, none of the listing link will appear in main navigation."
-msgstr "Mostrar lista de navegación en el menú principal? (Untick para desactivar) Si desactiva esta opción, ninguno de el enlace lista aparecerá en la navegación principal."
+msgid ""
+"Show listing navigation in main menu? (untick to disable) If you disable "
+"this option, none of the listing link will appear in main navigation."
+msgstr ""
+"Mostrar lista de navegación en el menú principal? (Untick para desactivar) "
+"Si desactiva esta opción, ninguno de el enlace lista aparecerá en la "
+"navegación principal."
 
 #: geodirectory-functions/cat-meta-functions/Tax-meta-class.php:1966
 msgid "Reapeater Field"
@@ -5896,8 +6346,10 @@ msgid "Schema Type"
 msgstr "Tipo de Esquema"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:917
-msgid "Option will not appear if user does not have a favorite of that post type"
-msgstr "Opción no aparecerá si el usuario no tiene un favorito de ese tipo después"
+msgid ""
+"Option will not appear if user does not have a favorite of that post type"
+msgstr ""
+"Opción no aparecerá si el usuario no tiene un favorito de ese tipo después"
 
 #: geodirectory-functions/cat-meta-functions/cat_meta.php:147
 msgid "Select the Schema to use for this category"
@@ -5912,8 +6364,12 @@ msgid "Default Image"
 msgstr "Defecto de imagen"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:930
-msgid "Option will not appear if user does not have his/her own listing of that post type"
-msgstr "Opción no aparecerá si el usuario no tiene su / su propia lista de ese tipo después"
+msgid ""
+"Option will not appear if user does not have his/her own listing of that "
+"post type"
+msgstr ""
+"Opción no aparecerá si el usuario no tiene su / su propia lista de ese tipo "
+"después"
 
 #: geodirectory-functions/cat-meta-functions/cat_meta.php:199
 msgid "Cat ID"
@@ -5999,11 +6455,16 @@ msgstr "Sube mapa icono de marcador por defecto"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1117
 msgid "Show button control on map to enable/disable dragging"
-msgstr "Mostrar control de botón en el mapa para activar / desactivar arrastrando"
+msgstr ""
+"Mostrar control de botón en el mapa para activar / desactivar arrastrando"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1118
-msgid "If checked, it displays button control to enable/disable dragging on google maps for phone devices"
-msgstr "Si está marcada, muestra control de botón para activar / desactivar arrastrando en los mapas de Google para dispositivos telefónicos"
+msgid ""
+"If checked, it displays button control to enable/disable dragging on google "
+"maps for phone devices"
+msgstr ""
+"Si está marcada, muestra control de botón para activar / desactivar "
+"arrastrando en los mapas de Google para dispositivos telefónicos"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:1142
 msgid "Show / hide post type and category on map"
@@ -6022,8 +6483,12 @@ msgid "Sender name"
 msgstr "Nombre del remitente"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:25
-msgid "(Name that will be shown as email sender when users receive emails from this site)"
-msgstr "(Nombre que se mostrará como remitente de correo electrónico cuando los usuarios reciben correos electrónicos de este sitio)"
+msgid ""
+"(Name that will be shown as email sender when users receive emails from this "
+"site)"
+msgstr ""
+"(Nombre que se mostrará como remitente de correo electrónico cuando los "
+"usuarios reciben correos electrónicos de este sitio)"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:33
 msgid "Email address"
@@ -6031,7 +6496,9 @@ msgstr "Dirección de correo electrónico"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:34
 msgid "(Emails to users will be sent via this mail ID)"
-msgstr "(Correos electrónicos a los usuarios serán enviados a través de este ID de correo)"
+msgstr ""
+"(Correos electrónicos a los usuarios serán enviados a través de este ID de "
+"correo)"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:41
 #: geodirectory-admin/option-pages/general_settings_array.php:50
@@ -6048,8 +6515,12 @@ msgid "User deleted posts go to trash"
 msgstr "Entradas borradas por el usuario."
 
 #: geodirectory-admin/option-pages/general_settings_array.php:91
-msgid "If checked a user deleted post will go to trash, otherwise it will be permanently deleted"
-msgstr "Si se selecciona, las entradas borradas por el usuario irán a la papelera en lugar de borrarse de forma permanente"
+msgid ""
+"If checked a user deleted post will go to trash, otherwise it will be "
+"permanently deleted"
+msgstr ""
+"Si se selecciona, las entradas borradas por el usuario irán a la papelera en "
+"lugar de borrarse de forma permanente"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:97
 msgid "Max upload file size(in mb)"
@@ -6065,11 +6536,13 @@ msgstr "Ajustes de Google Analytics"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:123
 msgid "Show business owner google analytics stats?"
-msgstr "¿Mostrar el propietario del negocio en las estadísticas de Google Analitycs?"
+msgstr ""
+"¿Mostrar el propietario del negocio en las estadísticas de Google Analitycs?"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:132
 msgid "Show business owner Google Analytics stats?"
-msgstr "¿Mostrar el propietario del negocio en las estadísticas de Google Analytics?"
+msgstr ""
+"¿Mostrar el propietario del negocio en las estadísticas de Google Analytics?"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:142
 msgid "Google analytics access"
@@ -6081,11 +6554,17 @@ msgstr "Configuración de búsqueda"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:230
 msgid "Limit squared distance area to X miles (helps improve search speed)"
-msgstr "Límite área distancia al cuadrado de X millas (ayuda a mejorar la velocidad de búsqueda)"
+msgstr ""
+"Límite área distancia al cuadrado de X millas (ayuda a mejorar la velocidad "
+"de búsqueda)"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:231
-msgid "Enter whole number only ex. 40 (Tokyo is largest city in the world @40 sq miles) LEAVE BLANK FOR NO DISTANCE LIMIT"
-msgstr "Ingrese número entero sólo ex. 40 (Tokio es la ciudad más grande en el mundo @ 40 millas cuadradas) dejar en blanco para NO LIMIT DISTANCIA"
+msgid ""
+"Enter whole number only ex. 40 (Tokyo is largest city in the world @40 sq "
+"miles) LEAVE BLANK FOR NO DISTANCE LIMIT"
+msgstr ""
+"Ingrese número entero sólo ex. 40 (Tokio es la ciudad más grande en el mundo "
+"@ 40 millas cuadradas) dejar en blanco para NO LIMIT DISTANCIA"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:239
 #: geodirectory-admin/option-pages/general_settings_array.php:248
@@ -6105,7 +6584,8 @@ msgstr "Kilómetros"
 #: geodirectory-admin/option-pages/general_settings_array.php:258
 #: geodirectory-admin/option-pages/general_settings_array.php:268
 msgid "If distance is less than 0.01 show distance in meters or feet"
-msgstr "Si la distancia es inferior a 0.01 muestran la distancia en metros o pies"
+msgstr ""
+"Si la distancia es inferior a 0.01 muestran la distancia en metros o pies"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:259
 msgid "Meters"
@@ -6120,16 +6600,29 @@ msgid "Add location specific text to (Near) search for Google"
 msgstr "Añadir texto específico ubicación (Cerca) búsqueda de Google"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:279
-msgid "This is usefull if your directory is limted to one location such as: New York or Australia (this setting should be blank if using default country, regions etc with multilocation addon as it will automatically add them)"
-msgstr "Esto es muy útil si el directorio se Limted a un solo lugar, como: Nueva York o Australia (este ajuste debe estar en blanco si se utiliza país predeterminado, regiones, etc con addon multilocation ya que añadirá automáticamente)"
+msgid ""
+"This is usefull if your directory is limted to one location such as: New "
+"York or Australia (this setting should be blank if using default country, "
+"regions etc with multilocation addon as it will automatically add them)"
+msgstr ""
+"Esto es muy útil si el directorio se Limted a un solo lugar, como: Nueva "
+"York o Australia (este ajuste debe estar en blanco si se utiliza país "
+"predeterminado, regiones, etc con addon multilocation ya que añadirá "
+"automáticamente)"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:286
 msgid "Individual word search limit"
 msgstr "Límite de búsqueda por palabra"
 
 #: geodirectory-admin/option-pages/general_settings_array.php:287
-msgid "With this option you can limit individual words being searched for, for example searching for `Jo Brown` would return results with words like `Jones`, you can exclude these types of small character words if you wish."
-msgstr "Con esa opción, se pueden limitar la búsqueda por palabras individuales. Por ejemplo, búsquedas como `Jo Brown` genera resultados con palabras como `Jones` - puede excluir este tipo de palabras cortas si lo desea."
+msgid ""
+"With this option you can limit individual words being searched for, for "
+"example searching for `Jo Brown` would return results with words like "
+"`Jones`, you can exclude these types of small character words if you wish."
+msgstr ""
+"Con esa opción, se pueden limitar la búsqueda por palabras individuales. Por "
+"ejemplo, búsquedas como `Jo Brown` genera resultados con palabras como "
+"`Jones` - puede excluir este tipo de palabras cortas si lo desea."
 
 #: geodirectory-admin/option-pages/general_settings_array.php:294
 msgid "Disabled"
@@ -6164,8 +6657,17 @@ msgid "List of usable shortcodes"
 msgstr "Lista de códigos cortos utilizables"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:27
-msgid "[#client_name#],[#listing_link#],[#posted_date#],[#number_of_days#],[#number_of_grace_days#],[#login_url#],[#username#],[#user_email#],[#site_name_url#],[#renew_link#],[#post_id#],[#site_name#],[#from_email#](in most cases this will be the admin email, except for popup forms)"
-msgstr "[#client_name#],[#listing_link#],[#posted_date#],[#number_of_days#],[#number_of_grace_days#],[#login_url#],[#username#],[#user_email#],[#site_name_url#],[#renew_link#],[#post_id#],[#site_name#],[#from_email#](in la mayoría de los casos este será el administrador de correo electrónico, a excepción de las formas emergentes)"
+msgid ""
+"[#client_name#],[#listing_link#],[#posted_date#],[#number_of_days#],"
+"[#number_of_grace_days#],[#login_url#],[#username#],[#user_email#],"
+"[#site_name_url#],[#renew_link#],[#post_id#],[#site_name#],[#from_email#](in "
+"most cases this will be the admin email, except for popup forms)"
+msgstr ""
+"[#client_name#],[#listing_link#],[#posted_date#],[#number_of_days#],"
+"[#number_of_grace_days#],[#login_url#],[#username#],[#user_email#],"
+"[#site_name_url#],[#renew_link#],[#post_id#],[#site_name#],[#from_email#](in "
+"la mayoría de los casos este será el administrador de correo electrónico, a "
+"excepción de las formas emergentes)"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:35
 msgid "Use advanced editor? (slow loading)"
@@ -6206,8 +6708,13 @@ msgid "Post submit success to admin email"
 msgstr "Publicar presentar el éxito de correo electrónico de administrador"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:140
-msgid "<p>Dear Admin,</p><p>A new  listing has been published [#listing_link#]. This email is just for your information.</p><br><p>[#site_name#]</p>"
-msgstr "<p>Estimado Admin,</p><p>Una nueva publicación se ha anunciado[#listing_link#]. Este correo es únicamente para su información.</p><br><p>[#site_name#]</p>"
+msgid ""
+"<p>Dear Admin,</p><p>A new  listing has been published [#listing_link#]. "
+"This email is just for your information.</p><br><p>[#site_name#]</p>"
+msgstr ""
+"<p>Estimado Admin,</p><p>Una nueva publicación se ha "
+"anunciado[#listing_link#]. Este correo es únicamente para su información.</"
+"p><br><p>[#site_name#]</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:181
 #: geodirectory-admin/option-pages/notifications_settings_array.php:183
@@ -6219,24 +6726,43 @@ msgid "Post submit success to client email"
 msgstr "Publicar presentar el éxito de cliente de correo electrónico"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:199
-msgid "<p>Dear [#client_name#],</p><p>You submitted the below listing information. This email is just for your information.</p><p>[#listing_link#]</p><br><p>Thank you for your contribution.</p><p>[#site_name#]</p>"
-msgstr "<p>Estimado [#client_name#],</p><p>Usted anunció la publicación a continuación. Este correo es solamente una confirmación.</p><p>[#listing_link#]</p><br><p>Gracias por su contribución.</p><p>[#site_name#]</p>"
+msgid ""
+"<p>Dear [#client_name#],</p><p>You submitted the below listing information. "
+"This email is just for your information.</p><p>[#listing_link#]</"
+"p><br><p>Thank you for your contribution.</p><p>[#site_name#]</p>"
+msgstr ""
+"<p>Estimado [#client_name#],</p><p>Usted anunció la publicación a "
+"continuación. Este correo es solamente una confirmación.</"
+"p><p>[#listing_link#]</p><br><p>Gracias por su contribución.</"
+"p><p>[#site_name#]</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:204
 msgid "User forgot password email"
 msgstr "El usuario olvidó la contraseña de email"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:217
-msgid "<p>Dear [#client_name#],<p><p>You requested a new password for [#site_name_url#]</p><p>[#login_details#]</p><p>You can login here: [#login_url#]</p><p>Thank you,<br /><br />[#site_name_url#].</p>"
-msgstr "<p>Estimado [#client_name#],<p><p>Usted ha solicitado una nueva contraseña para [#site_name_url#]</p><p>[#login_details#]</p><p>Puede ingresar aquí: [#login_url#]</p><p>Gracias,<br /><br />[#site_name_url#].</p>"
+msgid ""
+"<p>Dear [#client_name#],<p><p>You requested a new password for "
+"[#site_name_url#]</p><p>[#login_details#]</p><p>You can login here: "
+"[#login_url#]</p><p>Thank you,<br /><br />[#site_name_url#].</p>"
+msgstr ""
+"<p>Estimado [#client_name#],<p><p>Usted ha solicitado una nueva contraseña "
+"para [#site_name_url#]</p><p>[#login_details#]</p><p>Puede ingresar aquí: "
+"[#login_url#]</p><p>Gracias,<br /><br />[#site_name_url#].</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:221
 msgid "Registration success email"
 msgstr "Correo de confirmación de registro éxito"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:234
-msgid "<p>Dear [#client_name#],</p><p>You can log in  with the following information:</p><p>[#login_details#]</p><p>You can login here: [#login_url#]</p><p>Thank you,<br /><br />[#site_name_url#].</p>"
-msgstr "<p>Estimado [#client_name#],</p><p>Puede ingresar con la siguiente información:</p><p>[#login_details#]</p><p>Regístrese aquí: [#login_url#]</p><p>Gracias,<br /><br />[#site_name_url#].</p>"
+msgid ""
+"<p>Dear [#client_name#],</p><p>You can log in  with the following "
+"information:</p><p>[#login_details#]</p><p>You can login here: "
+"[#login_url#]</p><p>Thank you,<br /><br />[#site_name_url#].</p>"
+msgstr ""
+"<p>Estimado [#client_name#],</p><p>Puede ingresar con la siguiente "
+"información:</p><p>[#login_details#]</p><p>Regístrese aquí: [#login_url#]</"
+"p><p>Gracias,<br /><br />[#site_name_url#].</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:237
 msgid "Listing published email"
@@ -6249,8 +6775,14 @@ msgstr "Publicación Anunciada Exitosamente"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:250
 #: geodirectory-functions/post_functions.php:3047
-msgid "<p>Dear [#client_name#],</p><p>Your listing [#listing_link#] has been published. This email is just for your information.</p><p>[#listing_link#]</p><br><p>Thank you for your contribution.</p><p>[#site_name#]</p>"
-msgstr "<p>Estimado [#client_name#],</p><p>Su publicación [#listing_link#] ha sido anunciada. Esta es solamente una confirmación.</p><p>[#listing_link#]</p><br><p>Gracias por su contribución.</p><p>[#site_name#]</p>"
+msgid ""
+"<p>Dear [#client_name#],</p><p>Your listing [#listing_link#] has been "
+"published. This email is just for your information.</p><p>[#listing_link#]</"
+"p><br><p>Thank you for your contribution.</p><p>[#site_name#]</p>"
+msgstr ""
+"<p>Estimado [#client_name#],</p><p>Su publicación [#listing_link#] ha sido "
+"anunciada. Esta es solamente una confirmación.</p><p>[#listing_link#]</"
+"p><br><p>Gracias por su contribución.</p><p>[#site_name#]</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:255
 #: geodirectory-admin/option-pages/notifications_settings_array.php:257
@@ -6258,8 +6790,18 @@ msgid "Other Emails"
 msgstr "Otros correos electrónicos"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:273
-msgid "<p>Dear [#to_name#],<p><p>Your friend has sent you a message from <b>[#site_name#]</b> </p><p>===============================</p><p><b>Subject : [#subject#]</b></p><p>[#comments#] [#listing_link#]</p><p>===============================</p><p>Thank you,<br /><br />[#site_name#].</p>"
-msgstr "<p>Estimado [#to_name#],<p><p>Su amigo le ha enviado un correo de <b>[#site_name#]</b> </p><p>===============================</p><p><b>Asunto: [#subject#]</b></p><p>[#comments#] [#listing_link#]</p><p>===============================</p><p>Gracias,<br /><br />[#site_name#].</p>"
+msgid ""
+"<p>Dear [#to_name#],<p><p>Your friend has sent you a message from "
+"<b>[#site_name#]</b> </p><p>===============================</"
+"p><p><b>Subject : [#subject#]</b></p><p>[#comments#] [#listing_link#]</"
+"p><p>===============================</p><p>Thank you,<br /><br /"
+">[#site_name#].</p>"
+msgstr ""
+"<p>Estimado [#to_name#],<p><p>Su amigo le ha enviado un correo de "
+"<b>[#site_name#]</b> </p><p>===============================</p><p><b>Asunto: "
+"[#subject#]</b></p><p>[#comments#] [#listing_link#]</"
+"p><p>===============================</p><p>Gracias,<br /><br />[#site_name#]."
+"</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:277
 msgid "Email enquiry"
@@ -6270,8 +6812,16 @@ msgid "Website Enquiry"
 msgstr "Consulta sitio web"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:290
-msgid "<p>Dear [#to_name#],<p><p>An enquiry has been sent from <b>[#listing_link#]</b></p><p>===============================</p><p>[#comments#]</p><p>===============================</p><p>Thank you,<br /><br />[#site_name_url#].</p>"
-msgstr "<p>Estimado [#to_name#],<p><p>Una solicitud ha sido enviada desde <b>[#listing_link#]</b></p><p>===============================</p><p>[#comments#]</p><p>===============================</p><p>Gracias,<br /><br />[#site_name_url#].</p>"
+msgid ""
+"<p>Dear [#to_name#],<p><p>An enquiry has been sent from <b>[#listing_link#]</"
+"b></p><p>===============================</p><p>[#comments#]</"
+"p><p>===============================</p><p>Thank you,<br /><br /"
+">[#site_name_url#].</p>"
+msgstr ""
+"<p>Estimado [#to_name#],<p><p>Una solicitud ha sido enviada desde "
+"<b>[#listing_link#]</b></p><p>===============================</"
+"p><p>[#comments#]</p><p>===============================</p><p>Gracias,<br /"
+"><br />[#site_name_url#].</p>"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:296
 #: geodirectory-admin/option-pages/notifications_settings_array.php:298
@@ -6283,8 +6833,14 @@ msgid "Post submitted success"
 msgstr "Publicar presentó éxito"
 
 #: geodirectory-admin/option-pages/notifications_settings_array.php:306
-msgid "<p>Thank you, your information has been successfully received.</p><p><a href=\"[#submited_information_link#]\" >View your submitted information &raquo;</a></p><p>Thank you for visiting us at [#site_name#].</p>"
-msgstr "<p>Gracias, su información ha sido recibida correctamente.</p><p><a href=\"[#submited_information_link#]\" >Visualice su información enviada &raquo;</a></p><p>Gracias por visitar  [#site_name#].</p>"
+msgid ""
+"<p>Thank you, your information has been successfully received.</p><p><a href="
+"\"[#submited_information_link#]\" >View your submitted information &raquo;</"
+"a></p><p>Thank you for visiting us at [#site_name#].</p>"
+msgstr ""
+"<p>Gracias, su información ha sido recibida correctamente.</p><p><a href="
+"\"[#submited_information_link#]\" >Visualice su información enviada &raquo;</"
+"a></p><p>Gracias por visitar  [#site_name#].</p>"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:20
 msgid "Permalink"
@@ -6307,8 +6863,11 @@ msgid "Add full location in listing urls"
 msgstr "Añadir ubicación completa en el listado de URLs"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:39
-msgid "Add full location info with country, region and city slug in listing urls"
-msgstr "Añadir información de ubicación completa con slug de país, región y ciudad en las urls de las Publicaciones."
+msgid ""
+"Add full location info with country, region and city slug in listing urls"
+msgstr ""
+"Añadir información de ubicación completa con slug de país, región y ciudad "
+"en las urls de las Publicaciones."
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:48
 msgid "Add country and city slug in listing urls"
@@ -6316,7 +6875,8 @@ msgstr "Añadir slug de país y ciudad a las urls de las publicaciones"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:49
 msgid "Add country and city slug in listing urls (/country/city/)"
-msgstr "Añadir slug de país y ciudad a las urls de las publicaciones (/pais/ciudad/)"
+msgstr ""
+"Añadir slug de país y ciudad a las urls de las publicaciones (/pais/ciudad/)"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:57
 msgid "Add region and city slug in listing urls"
@@ -6324,7 +6884,9 @@ msgstr "Añadir slug de región y ciudad a los urls de las publicaciones"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:58
 msgid "Add region and city slug in listing urls (/region/city/)"
-msgstr "Añadir slug de región y país a las urls de las publicaciones (/región/ciudad/)"
+msgstr ""
+"Añadir slug de región y país a las urls de las publicaciones (/región/"
+"ciudad/)"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:66
 msgid "Add only city in listing urls"
@@ -6363,8 +6925,11 @@ msgid "Location and category url separator"
 msgstr "Separador para el url de Ubicación y Categoría"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:105
-msgid "Separator to show between location and category url slugs in listing urls"
-msgstr "Separador a mostrar en las publicaciones, entre localización y categoría, para aquellos slugs de url en las urls de las publicaciones."
+msgid ""
+"Separator to show between location and category url slugs in listing urls"
+msgstr ""
+"Separador a mostrar en las publicaciones, entre localización y categoría, "
+"para aquellos slugs de url en las urls de las publicaciones."
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:113
 msgid "Listing detail url separator"
@@ -6372,15 +6937,22 @@ msgstr "Separador url para el detalle de Publicación"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:114
 msgid "Separator to show before listing slug in listing detail urls"
-msgstr "Separador a mostrar antes de aquellos slugs de publicación en los detalles de publicación de urls."
+msgstr ""
+"Separador a mostrar antes de aquellos slugs de publicación en los detalles "
+"de publicación de urls."
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:124
 msgid "GeoDirectory Pages"
 msgstr "GeoDirectory: Páginas "
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:131
-msgid "Select the page to use for the GD homepage (you must also set this page in Settings>Reading>Front page for it to work)"
-msgstr "Seleccione la página a utilizar como página de inicio de GD (también debe configurar esta página en Configuración> Lectura> Página principal para que funcione)"
+msgid ""
+"Select the page to use for the GD homepage (you must also set this page in "
+"Settings>Reading>Front page for it to work)"
+msgstr ""
+"Seleccione la página a utilizar como página de inicio de GD (también debe "
+"configurar esta página en Configuración> Lectura> Página principal para que "
+"funcione)"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:138
 msgid "Add listing page"
@@ -6396,7 +6968,8 @@ msgstr "Página de previsualización de Publicaciones"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:147
 msgid "Select the page to use for listing preview"
-msgstr "Seleccione la página a utilizar para la previsualización de publicaciones"
+msgstr ""
+"Seleccione la página a utilizar para la previsualización de publicaciones"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:154
 msgid "Listing success page"
@@ -6420,7 +6993,9 @@ msgstr "Página de Términos y condiciones"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:171
 msgid "Select the page to use for Terms and Conditions (if enabled)"
-msgstr "Seleccione la página que se utilizará para Términos y Condiciones (si está disponible)"
+msgstr ""
+"Seleccione la página que se utilizará para Términos y Condiciones (si está "
+"disponible)"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:178
 msgid "Info page"
@@ -6428,7 +7003,8 @@ msgstr "Página de información"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:179
 msgid "Select the page to use for Gd general Info"
-msgstr "Seleccione la página que se utilizará para la información general de GD"
+msgstr ""
+"Seleccione la página que se utilizará para la información general de GD"
 
 #: geodirectory-admin/option-pages/permalink_settings_array.php:186
 msgid "Login page"
@@ -6455,8 +7031,11 @@ msgid "Import & export csv for GD listings & categories."
 msgstr "Importación y exportación csv para publicaciones y categorías de GD."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:272
-msgid "Enter number of days a listing will appear new.(enter 0 to disable feature)"
-msgstr "Introduzca el número de días durante los que la publicación aparecerá como \"nueva\". (Introduzca 0 para desactivar función)"
+msgid ""
+"Enter number of days a listing will appear new.(enter 0 to disable feature)"
+msgstr ""
+"Introduzca el número de días durante los que la publicación aparecerá como "
+"\"nueva\". (Introduzca 0 para desactivar función)"
 
 #: geodirectory-admin/admin_functions.php:2294
 msgid "PHP Requirements for GD Import & Export CSV"
@@ -6467,8 +7046,12 @@ msgid "Add Listing Form Settings"
 msgstr "Añadir Parametrizaciones del Formulario de Publicación"
 
 #: geodirectory-admin/admin_functions.php:2296
-msgid "Note: In case GD import & export csv not working for larger data then please check and configure following php settings."
-msgstr "Nota: En caso Importar/Exportar csv que no funcione para archivos grandes, compruebe la siguiente configuración de php."
+msgid ""
+"Note: In case GD import & export csv not working for larger data then please "
+"check and configure following php settings."
+msgstr ""
+"Nota: En caso Importar/Exportar csv que no funcione para archivos grandes, "
+"compruebe la siguiente configuración de php."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:285
 msgid "Enable \"Accept Terms and Conditions\""
@@ -6480,7 +7063,8 @@ msgstr "Configuración de PHP"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:286
 msgid "Show the \"Accept Terms and Conditions\" field on add listing."
-msgstr "Mostrar el campo \"Aceptar Términos y Condiciones\" en Agregar Publicación."
+msgstr ""
+"Mostrar el campo \"Aceptar Términos y Condiciones\" en Agregar Publicación."
 
 #: geodirectory-admin/admin_functions.php:2300
 msgid "Current Value"
@@ -6496,7 +7080,9 @@ msgstr "Valor recomendado"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:295
 msgid "Select post types to show advanced editor on add listing page."
-msgstr "Seleccionar tipos de publicación a ser mostrados en el editor avanzado en la página Agregar Publicación."
+msgstr ""
+"Seleccionar tipos de publicación a ser mostrados en el editor avanzado en la "
+"página Agregar Publicación."
 
 #: geodirectory-admin/admin_functions.php:2324
 msgid "GD Listings: Import CSV"
@@ -6586,8 +7172,13 @@ msgstr "Ancho del buscador lateral derecho"
 
 #: geodirectory-admin/admin_functions.php:2409
 #: geodirectory-admin/admin_functions.php:2526
-msgid "Please select the maximum number of entries per csv file (defaults to 5000, you might want to lower this to prevent memory issues on some installs)"
-msgstr "Por favor selecciona el máximo número de entradas por archivo csv (predeterminado a 5000, usted podría reducir esta cantidad para prevenir problemas de memoria en algunas instalaciones)"
+msgid ""
+"Please select the maximum number of entries per csv file (defaults to 5000, "
+"you might want to lower this to prevent memory issues on some installs)"
+msgstr ""
+"Por favor selecciona el máximo número de entradas por archivo csv "
+"(predeterminado a 5000, usted podría reducir esta cantidad para prevenir "
+"problemas de memoria en algunas instalaciones)"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:338
 msgid "Enter the width of right section of search page in %"
@@ -6626,7 +7217,9 @@ msgstr "GD Categorías: Importar CSV"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:365
 msgid "Enter the width of content section of search page in %"
-msgstr "Establecer el ancho del contenido de la sección de la página de búsquedas en %"
+msgstr ""
+"Establecer el ancho del contenido de la sección de la página de búsquedas en "
+"%"
 
 #: geodirectory-admin/admin_functions.php:2452
 msgid "Update item if item with cat_id/cat_slug already exists."
@@ -6658,7 +7251,9 @@ msgstr "%s Artículo(s) encontrados en total."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:382
 msgid "Enter the width of left section of search in %"
-msgstr "Establecer el ancho del contenido de la sección izquierda de la página de búsquedas en %"
+msgstr ""
+"Establecer el ancho del contenido de la sección izquierda de la página de "
+"búsquedas en %"
 
 #: geodirectory-admin/admin_functions.php:2881
 msgid "%s / %s item(s) updated."
@@ -6685,11 +7280,17 @@ msgid "Show advanced pagination details"
 msgstr "Mostrar detalles avanzados de paginación"
 
 #: geodirectory-admin/admin_functions.php:2905
-msgid "%s / %s item(s) could not be added due to blank/invalid address(city, region, country, latitude, longitude)."
-msgstr "%s / %s artículo(s) no han podido ser añadidos debido a una dirección no introducida o no válida (ciudad, región, país, latitud, longitud)."
+msgid ""
+"%s / %s item(s) could not be added due to blank/invalid address(city, "
+"region, country, latitude, longitude)."
+msgstr ""
+"%s / %s artículo(s) no han podido ser añadidos debido a una dirección no "
+"introducida o no válida (ciudad, región, país, latitud, longitud)."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:399
-msgid "This will add extra pagination info like \"Showing listings x-y of z\" after/before pagination."
+msgid ""
+"This will add extra pagination info like \"Showing listings x-y of z\" after/"
+"before pagination."
 msgstr ""
 
 #: geodirectory-admin/option-pages/design_settings_array.php:406
@@ -6719,8 +7320,14 @@ msgid "Before Pagination"
 msgstr "Antes de la paginación"
 
 #: geodirectory-admin/admin_functions.php:3301
-msgid "GeoDirectory does not have access to your filesystem, thing like import/export will not work. Please define your details in wp-config.php as explained here"
-msgstr "GeoDirectory no tiene acceso al sistema de archivos, operaciones como importar/ exportar dejarán de funcionar. Defina sus detalles en wp-config.php como se explica aquí"
+msgid ""
+"GeoDirectory does not have access to your filesystem, thing like import/"
+"export will not work. Please define your details in wp-config.php as "
+"explained here"
+msgstr ""
+"GeoDirectory no tiene acceso al sistema de archivos, operaciones como "
+"importar/ exportar dejarán de funcionar. Defina sus detalles en wp-config."
+"php como se explica aquí"
 
 #: geodirectory-admin/admin_functions.php:3636
 #: geodirectory-admin/admin_functions.php:3696
@@ -6740,7 +7347,9 @@ msgstr "No hay registros para exportar."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:427
 msgid "Show the search text box 'placeholder' value on search form."
-msgstr "Mostrar el \"marcador de posición\" para el cuadro de texto de búsqueda, en el formulario de búsqueda."
+msgstr ""
+"Mostrar el \"marcador de posición\" para el cuadro de texto de búsqueda, en "
+"el formulario de búsqueda."
 
 #: geodirectory-admin/admin_functions.php:3730
 #: geodirectory-admin/admin_hooks_actions.php:1973
@@ -6758,11 +7367,16 @@ msgstr "No se encontraron datos en el archivo csv."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:436
 msgid "Show the near text box 'placeholder' value on search form."
-msgstr "Mostrar el cuadro de texto de valor cerca de 'marcador de posición \"en el formulario de búsqueda."
+msgstr ""
+"Mostrar el cuadro de texto de valor cerca de 'marcador de posición \"en el "
+"formulario de búsqueda."
 
 #: geodirectory-admin/admin_functions.php:6119
-msgid "Please update core GeoDirectory or some addons may not function correctly."
-msgstr "Por favor actualice el núcleo de GeoDirectory o algunos addons que podrían no estar funcionando adecuadamente."
+msgid ""
+"Please update core GeoDirectory or some addons may not function correctly."
+msgstr ""
+"Por favor actualice el núcleo de GeoDirectory o algunos addons que podrían "
+"no estar funcionando adecuadamente."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:444
 msgid "Search button label"
@@ -6775,7 +7389,8 @@ msgstr "General"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:445
 msgid "Show the search button label on search form."
-msgstr "Mostrar la etiqueta del botón de búsqueda en el formulario de búsqueda."
+msgstr ""
+"Mostrar la etiqueta del botón de búsqueda en el formulario de búsqueda."
 
 #: geodirectory-admin/admin_hooks_actions.php:183
 msgid "Design"
@@ -6825,7 +7440,8 @@ msgstr "Adjuntos"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:480
 msgid "Display detail sidebar section on left side of the detail page"
-msgstr "Desplegar detalle de la sección lateral en el lado izquierdo de la página"
+msgstr ""
+"Desplegar detalle de la sección lateral en el lado izquierdo de la página"
 
 #: geodirectory-admin/admin_hooks_actions.php:241
 msgid "Information"
@@ -6852,8 +7468,12 @@ msgid "Date"
 msgstr "Fecha"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:494
-msgid "Disable Tweet, Fb Like, Google+ buttons section that displays on Detail page sidebar"
-msgstr "Desactivar Tweet, Fb Al igual, la sección de botones Google+ que se muestra en la página Detalle de la barra lateral"
+msgid ""
+"Disable Tweet, Fb Like, Google+ buttons section that displays on Detail page "
+"sidebar"
+msgstr ""
+"Desactivar Tweet, Fb Al igual, la sección de botones Google+ que se muestra "
+"en la página Detalle de la barra lateral"
 
 #: geodirectory-admin/admin_hooks_actions.php:570
 msgid "Textarea"
@@ -6885,7 +7505,9 @@ msgstr "Seleccionar"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:501
 msgid "Disable Google Analytics section that displays on Detail page sidebar"
-msgstr "Desactiar sección de Google Analytics que aparece en los detalles del lateral derecho"
+msgstr ""
+"Desactiar sección de Google Analytics que aparece en los detalles del "
+"lateral derecho"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:507
 msgid "Disable User Links section"
@@ -6896,8 +7518,12 @@ msgid "Multi Select"
 msgstr "Multi Selección"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:508
-msgid "Disable User Links section (Edit post, Favorite etc..) that displays on Detail page sidebar"
-msgstr "Desactivar Sección Enlaces del Usuario (post Editar, Favorito etc ..) que se muestra en la página Detalle de la barra lateral"
+msgid ""
+"Disable User Links section (Edit post, Favorite etc..) that displays on "
+"Detail page sidebar"
+msgstr ""
+"Desactivar Sección Enlaces del Usuario (post Editar, Favorito etc ..) que se "
+"muestra en la página Detalle de la barra lateral"
 
 #: geodirectory-admin/admin_hooks_actions.php:626
 msgid "URL"
@@ -6913,7 +7539,9 @@ msgstr "HTML"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:515
 msgid "Disable Rating Info section that displays on Detail page sidebar"
-msgstr "Sección Rating Información que se muestra en la página Detalle barra lateral Desactivar"
+msgstr ""
+"Sección Rating Información que se muestra en la página Detalle barra lateral "
+"Desactivar"
 
 #: geodirectory-admin/admin_hooks_actions.php:640
 msgid "File Upload"
@@ -6929,7 +7557,9 @@ msgstr "Gestionar %s Campos Personalizados"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:522
 msgid "Disable Listing Info section that displays on Detail page sidebar"
-msgstr "Sección Listado Información que se muestra en la página Detalle barra lateral Desactivar"
+msgstr ""
+"Sección Listado Información que se muestra en la página Detalle barra "
+"lateral Desactivar"
 
 #: geodirectory-admin/admin_hooks_actions.php:828
 msgid "Manage %s Listing Sorting Options Fields"
@@ -6949,18 +7579,29 @@ msgstr "Excluir pestañas seleccionadas de la página de detalles"
 
 #: geodirectory-admin/admin_hooks_actions.php:855
 msgid "Available sorting options for %s listing and search results"
-msgstr "Opciones de filtrado disponibles para %s los Directorios y los resultados de búsquedas"
+msgstr ""
+"Opciones de filtrado disponibles para %s los Directorios y los resultados de "
+"búsquedas"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:537
-msgid "Select tabs to exclude from the list of all appearing tabs on detail page."
-msgstr "Seleccione pestañas para excluir de la lista de todas las pestañas que aparecen en la página detalle."
+msgid ""
+"Select tabs to exclude from the list of all appearing tabs on detail page."
+msgstr ""
+"Seleccione pestañas para excluir de la lista de todas las pestañas que "
+"aparecen en la página detalle."
 
 #: geodirectory-admin/admin_hooks_actions.php:878
-msgid "Click on any box below to add a field of that type to the add %s listing form. You can use a fieldset to group your fields."
+msgid ""
+"Click on any box below to add a field of that type to the add %s listing "
+"form. You can use a fieldset to group your fields."
 msgstr ""
 
 #: geodirectory-admin/admin_hooks_actions.php:882
-msgid "Click on any box below to make it appear in the sorting option dropdown on %s listing and search results.<br />To make a field available here, go to custom fields tab and expand any field from selected fields panel and tick the checkbox saying 'Include this field in sort option'."
+msgid ""
+"Click on any box below to make it appear in the sorting option dropdown on "
+"%s listing and search results.<br />To make a field available here, go to "
+"custom fields tab and expand any field from selected fields panel and tick "
+"the checkbox saying 'Include this field in sort option'."
 msgstr ""
 
 #: geodirectory-admin/admin_hooks_actions.php:905
@@ -6968,28 +7609,50 @@ msgid "List of fields that will appear on add new %s listing form"
 msgstr ""
 
 #: geodirectory-admin/admin_hooks_actions.php:909
-msgid "List of fields that will appear in %s listing and search results sorting option dropdown box."
+msgid ""
+"List of fields that will appear in %s listing and search results sorting "
+"option dropdown box."
 msgstr ""
 
 #: geodirectory-admin/admin_hooks_actions.php:932
-msgid "Click to expand and view field related settings. You may drag and drop to arrange fields order on add %s listing form too."
-msgstr "Haga clic para expandir y ver la configuración de campos relacionados. Puedes arrastrar los campos para reordenarlos y también añadir %s formularios."
+msgid ""
+"Click to expand and view field related settings. You may drag and drop to "
+"arrange fields order on add %s listing form too."
+msgstr ""
+"Haga clic para expandir y ver la configuración de campos relacionados. "
+"Puedes arrastrar los campos para reordenarlos y también añadir %s "
+"formularios."
 
 #: geodirectory-admin/admin_hooks_actions.php:936
-msgid "Click to expand and view field related settings. You may drag and drop to arrange fields order in sorting option dropdown box on %s listing and search results page."
-msgstr "Haga Clic para expandir y ver los campos de configuración relacionados. Puedes arrastrar y soltar para reordenar los campos en el formulario en %s Directorios y resultados de búsquedas."
+msgid ""
+"Click to expand and view field related settings. You may drag and drop to "
+"arrange fields order in sorting option dropdown box on %s listing and search "
+"results page."
+msgstr ""
+"Haga Clic para expandir y ver los campos de configuración relacionados. "
+"Puedes arrastrar y soltar para reordenar los campos en el formulario en %s "
+"Directorios y resultados de búsquedas."
 
 #: geodirectory-admin/admin_hooks_actions.php:1024
-msgid "ERROR: You did not follow instructions! Now you will need to contact support to manually fix things."
-msgstr "¡No siguió las instrucciones! Ahora tendrá que ponerse en contacto con el soporte técnico para arreglar manualmente las cosas."
+msgid ""
+"ERROR: You did not follow instructions! Now you will need to contact support "
+"to manually fix things."
+msgstr ""
+"¡No siguió las instrucciones! Ahora tendrá que ponerse en contacto con el "
+"soporte técnico para arreglar manualmente las cosas."
 
 #: geodirectory-admin/admin_hooks_actions.php:1028
 msgid "ERROR: %s_ms_bak table found"
 msgstr "ERROR: %s_ms_bak tabla encontrada"
 
 #: geodirectory-admin/admin_hooks_actions.php:1030
-msgid "IMPORTANT: This can be caused by out of date core or addons, please update core + addons before trying the fix OR YOU WILL HAVE A BAD TIME!"
-msgstr "IMPORTANTE: Esto puede estar causado por un core y/o add-ons obsoletos, por favor, actualice el core + add-ons antes de ejecutar esta opción o TENDRÁ UNA MALA EXPERIENCIA!"
+msgid ""
+"IMPORTANT: This can be caused by out of date core or addons, please update "
+"core + addons before trying the fix OR YOU WILL HAVE A BAD TIME!"
+msgstr ""
+"IMPORTANTE: Esto puede estar causado por un core y/o add-ons obsoletos, por "
+"favor, actualice el core + add-ons antes de ejecutar esta opción o TENDRÁ "
+"UNA MALA EXPERIENCIA!"
 
 #: geodirectory-admin/admin_hooks_actions.php:1043
 msgid "-->FIXED: Renamed and backed up the tables"
@@ -6999,7 +7662,9 @@ msgstr "-> FIJO: Renombrando y respaldando las tablas"
 #: geodirectory-admin/admin_hooks_actions.php:1056
 #: geodirectory-admin/admin_hooks_actions.php:1066
 msgid "-->PROBLEM: Failed to rename tables, please contact support."
-msgstr "-> PROBLEMA: No se pudo renombrar las tablas, por favor contactar con soporte."
+msgstr ""
+"-> PROBLEMA: No se pudo renombrar las tablas, por favor contactar con "
+"soporte."
 
 #: geodirectory-admin/admin_hooks_actions.php:1054
 msgid "-->FIXED: restored largest table %s"
@@ -7021,7 +7686,9 @@ msgstr "-> SOLUCIONADO: Tabla borrada %s"
 #: geodirectory-admin/admin_hooks_actions.php:1083
 #: geodirectory-admin/admin_hooks_actions.php:1090
 msgid "-->PROBLEM: Delete table %s failed, please try manual delete from DB"
-msgstr "-> PROBLEMA: Fallo al eliminar la tabla %s, por favor, intenta eliminarla manualmente desde la BD"
+msgstr ""
+"-> PROBLEMA: Fallo al eliminar la tabla %s, por favor, intenta eliminarla "
+"manualmente desde la BD"
 
 #: geodirectory-admin/admin_hooks_actions.php:1093
 #: geodirectory-admin/admin_hooks_actions.php:1113
@@ -7030,16 +7697,27 @@ msgstr "-> SOLUCIONADO: Tabla %s renombrada a %s"
 
 #: geodirectory-admin/admin_hooks_actions.php:1095
 #: geodirectory-admin/admin_hooks_actions.php:1115
-msgid "-->PROBLEM: Failed to rename table %s to %s, please try manually from DB"
-msgstr "-> PROBLEMA: No se pudo cambiar el nombre de la tabla %s a %s, por favor, intentelo manualmente desde la BD"
+msgid ""
+"-->PROBLEM: Failed to rename table %s to %s, please try manually from DB"
+msgstr ""
+"-> PROBLEMA: No se pudo cambiar el nombre de la tabla %s a %s, por favor, "
+"intentelo manualmente desde la BD"
 
 #: geodirectory-admin/admin_hooks_actions.php:1099
-msgid "-->FIXED: Table contained info so we renamed %s to %s incase it is needed in future"
-msgstr "-> SOLUCIONADO: Tabla contenía información así que cambiamos el nombre %s a %s en caso que se necesite en el futuro"
+msgid ""
+"-->FIXED: Table contained info so we renamed %s to %s incase it is needed in "
+"future"
+msgstr ""
+"-> SOLUCIONADO: Tabla contenía información así que cambiamos el nombre %s a "
+"%s en caso que se necesite en el futuro"
 
 #: geodirectory-admin/admin_hooks_actions.php:1101
-msgid "-->PROBLEM: Table %s could not be renamed to %s, this table has info so may need to be reviewed manually in the DB"
-msgstr "-> PROBLEMA: Tabla %s no pudo ser renombrada a %s, esta tabla tiene información, podría ser necesario revisar manualmente la DB"
+msgid ""
+"-->PROBLEM: Table %s could not be renamed to %s, this table has info so may "
+"need to be reviewed manually in the DB"
+msgstr ""
+"-> PROBLEMA: Tabla %s no pudo ser renombrada a %s, esta tabla tiene "
+"información, podría ser necesario revisar manualmente la DB"
 
 #: geodirectory-admin/admin_hooks_actions.php:1107
 msgid "ERROR: %s table not converted"
@@ -7051,7 +7729,9 @@ msgstr "ERROR: la tabla %s no existe"
 
 #: geodirectory-admin/admin_hooks_actions.php:1135
 msgid "-->TRY: Please refresh page to run table install functions"
-msgstr "-> INTENTAR: Por favor, actualice la página para ejecutar tabla instalar funciones"
+msgstr ""
+"-> INTENTAR: Por favor, actualice la página para ejecutar tabla instalar "
+"funciones"
 
 #: geodirectory-admin/admin_hooks_actions.php:1139
 msgid "%s table converted correctly"
@@ -7080,7 +7760,9 @@ msgstr "Versión: No Encontrada"
 
 #: geodirectory-admin/admin_hooks_actions.php:1395
 msgid " Upgrade/install scripts will run on next page reload."
-msgstr "La instalación / actualización de scripts se ejecutarán en la próxima recarga de la página."
+msgstr ""
+"La instalación / actualización de scripts se ejecutarán en la próxima "
+"recarga de la página."
 
 #: geodirectory-admin/admin_hooks_actions.php:1433
 msgid "Review locations missing or broken"
@@ -7188,7 +7870,8 @@ msgstr "-> ERROR: Error al agregar la publicación"
 
 #: geodirectory-admin/admin_hooks_actions.php:1666
 msgid "Listing Preview page exists with proper setting."
-msgstr "Previsualización de Publicación ya existente con configuración adecuada."
+msgstr ""
+"Previsualización de Publicación ya existente con configuración adecuada."
 
 #: geodirectory-admin/admin_hooks_actions.php:1669
 msgid "Listing Preview page is missing."
@@ -7209,7 +7892,8 @@ msgstr "-> FALLO: Error al fijar Previsualización de Publicación"
 
 #: geodirectory-admin/admin_hooks_actions.php:1691
 msgid "Listing Success page exists with proper setting."
-msgstr "La página \"Publicación Exitosa\" existe con la configuración adecuada."
+msgstr ""
+"La página \"Publicación Exitosa\" existe con la configuración adecuada."
 
 #: geodirectory-admin/admin_hooks_actions.php:1694
 msgid "Listing Success page is missing."
@@ -7293,8 +7977,12 @@ msgid "-->FAILED: Location page fix failed"
 msgstr "-> ERROR: Ubicación página fix fracasó"
 
 #: geodirectory-admin/admin_hooks_actions.php:1827
-msgid "Fail to load custom fields in to file for translation, please check file permission:"
-msgstr "Error al cargar los campos personalizados al archivo para traducción, por favor revise los permisos de archivo:"
+msgid ""
+"Fail to load custom fields in to file for translation, please check file "
+"permission:"
+msgstr ""
+"Error al cargar los campos personalizados al archivo para traducción, por "
+"favor revise los permisos de archivo:"
 
 #: geodirectory-admin/admin_hooks_actions.php:1830
 msgid "Load custom fields in to file for translation: ok"
@@ -7376,16 +8064,27 @@ msgid "Action For Listing"
 msgstr "Acción para el registro"
 
 #: geodirectory-admin/admin_template_tags.php:524
-msgid "Post will be updated if both city and map marker position has been changed."
-msgstr "Publicar será actualizada si ambos ciudad y mapa marcador de posición ha cambiado."
+msgid ""
+"Post will be updated if both city and map marker position has been changed."
+msgstr ""
+"Publicar será actualizada si ambos ciudad y mapa marcador de posición ha "
+"cambiado."
 
 #: geodirectory-admin/admin_template_tags.php:781
 msgid "Theme Compatibility Settings"
 msgstr "Parámetros de Compatibilidad del Tema"
 
 #: geodirectory-admin/admin_template_tags.php:808
-msgid "Since Avada 3.8+ they have added hooks for compatibility for GeoDirectory so the header.php modification is no longer required. <a href=\"http://docs.wpgeodirectory.com/avada-compatibility-header-php/\" target=\"_blank\">See here</a>"
-msgstr "Dado que Avada 3.8+ ha añadido hooks para la compatibilidad con GeoDirectory de manera que, ya no sea necesaria la modificación del archivo header.php. <a href=\"http://docs.wpgeodirectory.com/avada-compatibility-header-php/\" target=\"_blank\">Más información aquí.</a>"
+msgid ""
+"Since Avada 3.8+ they have added hooks for compatibility for GeoDirectory so "
+"the header.php modification is no longer required. <a href=\"http://docs."
+"wpgeodirectory.com/avada-compatibility-header-php/\" target=\"_blank\">See "
+"here</a>"
+msgstr ""
+"Dado que Avada 3.8+ ha añadido hooks para la compatibilidad con GeoDirectory "
+"de manera que, ya no sea necesaria la modificación del archivo header.php. "
+"<a href=\"http://docs.wpgeodirectory.com/avada-compatibility-header-php/\" "
+"target=\"_blank\">Más información aquí.</a>"
 
 #: geodirectory-admin/admin_template_tags.php:812
 msgid "Select Theme Compatibility Pack"
@@ -7533,8 +8232,12 @@ msgid "Multisite DB conversion check"
 msgstr "Comprobar la conversión de la BD multi sitio"
 
 #: geodirectory-admin/admin_template_tags.php:1664
-msgid "Checks if the GD database tables have been converted to use multisite correctly."
-msgstr "Comprueba si las tablas de la base de datos de GD se han convertido para utilizar multi-sitio correctamente."
+msgid ""
+"Checks if the GD database tables have been converted to use multisite "
+"correctly."
+msgstr ""
+"Comprueba si las tablas de la base de datos de GD se han convertido para "
+"utilizar multi-sitio correctamente."
 
 #: geodirectory-admin/admin_template_tags.php:1672
 msgid "Ratings check"
@@ -7542,39 +8245,60 @@ msgstr "Comprobar calificaciones"
 
 #: geodirectory-admin/admin_template_tags.php:1674
 msgid "Checks ratings for correct location and content settings"
-msgstr "Revisa las clasificaciones para la correcta ubicación y parametrización de contenido"
+msgstr ""
+"Revisa las clasificaciones para la correcta ubicación y parametrización de "
+"contenido"
 
 #: geodirectory-admin/admin_template_tags.php:1691
 msgid "Sync GD tags"
 msgstr "Sincronizar etiquetas de GD"
 
 #: geodirectory-admin/admin_template_tags.php:1693
-msgid "This tool can be used when tags are showing in the backend but missing from the front end."
-msgstr "Esta herramienta se puede utilizar cuando las etiquetas se muestran en el backend pero están ausentes en el front end."
+msgid ""
+"This tool can be used when tags are showing in the backend but missing from "
+"the front end."
+msgstr ""
+"Esta herramienta se puede utilizar cuando las etiquetas se muestran en el "
+"backend pero están ausentes en el front end."
 
 #: geodirectory-admin/admin_template_tags.php:1730
 msgid "Sync GD Categories"
 msgstr "Sincronizar Categorías GD"
 
 #: geodirectory-admin/admin_template_tags.php:1732
-msgid "This tool can be used when categories are missing from the details table but showing in other places in the backend (only checks posts with missing category info in details table)"
-msgstr "Esta herramienta se puede utilizar cuando las categorías están ausentes en los detalles de la tabla pero se muestran en otros lugares dentro del backend (sólo verifica los mensajes con información de la categoría faltante en la tabla de detalles)"
+msgid ""
+"This tool can be used when categories are missing from the details table but "
+"showing in other places in the backend (only checks posts with missing "
+"category info in details table)"
+msgstr ""
+"Esta herramienta se puede utilizar cuando las categorías están ausentes en "
+"los detalles de la tabla pero se muestran en otros lugares dentro del "
+"backend (sólo verifica los mensajes con información de la categoría faltante "
+"en la tabla de detalles)"
 
 #: geodirectory-admin/admin_template_tags.php:1741
 msgid "Clear all GD version numbers"
 msgstr "Borrar todos los números de versión de GD"
 
 #: geodirectory-admin/admin_template_tags.php:1743
-msgid "This tool will clear all GD version numbers so any upgrade functions will run again."
-msgstr "Esta herramienta borrará todos los números de versión de GD de manera que cualquier función de actualización corra nuevamente."
+msgid ""
+"This tool will clear all GD version numbers so any upgrade functions will "
+"run again."
+msgstr ""
+"Esta herramienta borrará todos los números de versión de GD de manera que "
+"cualquier función de actualización corra nuevamente."
 
 #: geodirectory-admin/admin_template_tags.php:1750
 msgid "Load custom fields translation"
 msgstr "Cargar traducción de campos personalizados"
 
 #: geodirectory-admin/admin_template_tags.php:1752
-msgid "This tool will load strings from the database into a file to translate via po editor.Ex: custom fields"
-msgstr "Esta herramienta cargará cadenas desde la base de datos dentro de un archivo, para traducir vía po editor. Ej: campos personalizados"
+msgid ""
+"This tool will load strings from the database into a file to translate via "
+"po editor.Ex: custom fields"
+msgstr ""
+"Esta herramienta cargará cadenas desde la base de datos dentro de un "
+"archivo, para traducir vía po editor. Ej: campos personalizados"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:41
 #: geodirectory-functions/general_functions.php:1272
@@ -7627,7 +8351,8 @@ msgstr "Ancho de la sección central en la portada"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:93
 msgid "Enter the width of content section of home page in %"
-msgstr "Introducir la anchura de la sección de contenido de la página de inicio en %"
+msgstr ""
+"Introducir la anchura de la sección de contenido de la página de inicio en %"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:101
 msgid "Home left section"
@@ -7659,8 +8384,14 @@ msgid "Resize image large size"
 msgstr "Modificar tamaño de imágenes"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:126
-msgid "Use default wordpress media image large size ( %s ) for featured image upload. If unchecked then default geodirectory image large size ( 800x800 ) will be used."
-msgstr "Utilizar los valores por defecto de Wordpress para el tamaño de las imágenes (%s) para cargar imágenes principales. Si no activa la casilla, se usará el tamaño de GD por defecto 800x800."
+msgid ""
+"Use default wordpress media image large size ( %s ) for featured image "
+"upload. If unchecked then default geodirectory image large size ( 800x800 ) "
+"will be used."
+msgstr ""
+"Utilizar los valores por defecto de Wordpress para el tamaño de las imágenes "
+"(%s) para cargar imágenes principales. Si no activa la casilla, se usará el "
+"tamaño de GD por defecto 800x800."
 
 #: geodirectory-admin/option-pages/design_settings_array.php:140
 msgid "Listings"
@@ -7754,7 +8485,9 @@ msgstr "Ancho de la sección de contenido de la Publicación"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:193
 msgid "Enter the width of content section of listing page in %"
-msgstr "Introduce el ancho de la sección de contenido en la página de la Publicación en %"
+msgstr ""
+"Introduce el ancho de la sección de contenido en la página de la Publicación "
+"en %"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:201
 msgid "Listing left section"
@@ -7770,7 +8503,8 @@ msgstr "Ancho de la sección izquierda de la Publicación"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:210
 msgid "Enter the width of left section of listing in %"
-msgstr "Introduce el ancho de los sitios anunciados en el lateral izquierdo en %"
+msgstr ""
+"Introduce el ancho de los sitios anunciados en el lateral izquierdo en %"
 
 #: geodirectory-admin/option-pages/design_settings_array.php:218
 msgid "Listing bottom section"
@@ -7879,8 +8613,12 @@ msgid "Time"
 msgstr "Horario"
 
 #: geodirectory-functions/custom_fields_functions.php:3464
-msgid "Enter Business or Listing Timing Information.<br/>eg. : 10.00 am to 6 pm every day"
-msgstr "Introduce el horario de tu negocio o de tu Publicación.<br/>Por ejemplo: de 10:00 am a 6:00 pm todos los días."
+msgid ""
+"Enter Business or Listing Timing Information.<br/>eg. : 10.00 am to 6 pm "
+"every day"
+msgstr ""
+"Introduce el horario de tu negocio o de tu Publicación.<br/>Por ejemplo: de "
+"10:00 am a 6:00 pm todos los días."
 
 #: geodirectory-admin/admin_hooks_actions.php:591
 #: geodirectory-functions/custom_fields_functions.php:3478
@@ -7901,11 +8639,12 @@ msgstr "Puede introducir el número de teléfono, móvil, etc..."
 #: geodirectory-templates/popup-forms.php:156 language.php:39 language.php:64
 #: language.php:167 language.php:188
 msgid "Email"
-msgstr "Email"
+msgstr "Correo Electrónico"
 
 #: geodirectory-functions/custom_fields_functions.php:3494
 msgid "You can enter your business or listing email."
-msgstr "Puedes introducir el correo electrónico de tu negocio o de tu publicación."
+msgstr ""
+"Puedes introducir el correo electrónico de tu negocio o de tu publicación."
 
 #: geodirectory-functions/custom_fields_functions.php:3508
 #: geodirectory-functions/custom_fields_functions.php:3510
@@ -7986,30 +8725,49 @@ msgid "Your settings have been saved."
 msgstr "Sus ajustes se han guardado."
 
 #: geodirectory-admin/admin_functions.php:335
-msgid "Error: You can not add same permalinks for both Listing and Location, please try again."
-msgstr "Error: No se puede agregar los mismos enlaces permanentes para ambos Publicación y Ubicación, por favor intente de nuevo."
+msgid ""
+"Error: You can not add same permalinks for both Listing and Location, please "
+"try again."
+msgstr ""
+"Error: No se puede agregar los mismos enlaces permanentes para ambos "
+"Publicación y Ubicación, por favor intente de nuevo."
 
 #: geodirectory-admin/admin_functions.php:337
 msgid "Error: Your settings have not been saved, please try again."
-msgstr "Error: La configuración no se han guardado, por favor vuelva a intentarlo."
+msgstr ""
+"Error: La configuración no se han guardado, por favor vuelva a intentarlo."
 
 #: geodirectory-admin/admin_functions.php:353
 #: geodirectory-functions/template_functions.php:201
-msgid "Please %sclick here%s to set a default location, this will make the plugin work properly."
-msgstr "Por favor %shaz click aquí%s para establecer la ubicación por defecto, esto hará que el plugin funcione correctamente."
+msgid ""
+"Please %sclick here%s to set a default location, this will make the plugin "
+"work properly."
+msgstr ""
+"Por favor %shaz click aquí%s para establecer la ubicación por defecto, esto "
+"hará que el plugin funcione correctamente."
 
 #: geodirectory-admin/admin_functions.php:358
-msgid "CURL is not installed on this server, this can cause problems, please ask your server admin to install it."
-msgstr "CURL no está instalado en este servidor, esto puede causar problemas, consulte a su administrador del servidor para instalarlo."
+msgid ""
+"CURL is not installed on this server, this can cause problems, please ask "
+"your server admin to install it."
+msgstr ""
+"CURL no está instalado en este servidor, esto puede causar problemas, "
+"consulte a su administrador del servidor para instalarlo."
 
 #: geodirectory-admin/admin_functions.php:388
 #: geodirectory-admin/admin_functions.php:389
 msgid "Action failed. Please refresh the page and retry."
-msgstr "Error en la acción. Por favor, actualice la página y vuelva a intentarlo."
+msgstr ""
+"Error en la acción. Por favor, actualice la página y vuelva a intentarlo."
 
 #: geodirectory-admin/admin_dummy_data_functions.php:274
-msgid "Please %sclick here%s to set a default location, this will help to set location of all dummy data."
-msgstr "Por favor %shaz click aquí%s para establecer una ubicación predeterminada; esto ayudará a establecer una localización para los datos de ejemplo importados."
+msgid ""
+"Please %sclick here%s to set a default location, this will help to set "
+"location of all dummy data."
+msgstr ""
+"Por favor %shaz click aquí%s para establecer una ubicación predeterminada; "
+"esto ayudará a establecer una localización para los datos de ejemplo "
+"importados."
 
 #: geodirectory-admin/admin_dummy_data_functions.php:410
 #: geodirectory-functions/map-functions/map_on_add_listing_page.php:552
@@ -8331,8 +9089,12 @@ msgid "Default post type search on map"
 msgstr "Entrada predeterminada a buscar en el mapa"
 
 #: geodirectory-admin/admin_functions.php:1355
-msgid "Note: Tick respective post type or categories which you want to hide from home page map widget."
-msgstr "Nota: Marque respectivo tipo de correos o categorías que desea ocultar de la página principal mapa de widgets."
+msgid ""
+"Note: Tick respective post type or categories which you want to hide from "
+"home page map widget."
+msgstr ""
+"Nota: Marque respectivo tipo de correos o categorías que desea ocultar de la "
+"página principal mapa de widgets."
 
 #: geodirectory-admin/admin_functions.php:1492
 msgid "Select a page..."
@@ -8458,5 +9220,11 @@ msgid "No"
 msgstr "No"
 
 #: geodirectory-admin/admin_functions.php:2019
-msgid "Welcome to GeoDirectory, please have a look <a href=\"https://docs.wpgeodirectory.com/category/getting-started/\" target=\"_blank\">here</a> to get started. :)"
-msgstr "Bienvenido a GeoDirectory, por favor, eche un vistazo <a href=“https://docs.wpgeodirectory.com/category/getting-started/“ target=“_blank”>aquí</a> para empezar. :)"
+msgid ""
+"Welcome to GeoDirectory, please have a look <a href=\"https://docs."
+"wpgeodirectory.com/category/getting-started/\" target=\"_blank\">here</a> to "
+"get started. :)"
+msgstr ""
+"Bienvenido a GeoDirectory, por favor, eche un vistazo <a href=“https://docs."
+"wpgeodirectory.com/category/getting-started/“ target=“_blank”>aquí</a> para "
+"empezar. :)"
