@@ -47,9 +47,12 @@ require_once('includes/navbar-user-button.php');
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 require_once('includes/sw_maintenance_mode.php');
+require 'includes/customizer-navbar.php';
 // require_once('includes/admin-mods.php');
 require 'widgets/subscribe/widget.php';
 require 'widgets/business-info/widget.php';
+require 'widgets/pre-header-info/widget.php';
+require 'widgets/centered-menu/widget.php';
 
 
 
@@ -454,3 +457,11 @@ function display_internal_sidebar() {
   }
   return false;
 } 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'gallery-image', 320, 200, true ); // Hard Crop Mode
+function hide_msg__admins(){
+ if (current_user_can( 'manage_options' )) { // non-admin users
+    echo '<style>.update-nag, .updated , .notice , .error{ display: none !important; }</style>';
+  }
+}
+add_action( 'admin_head', 'hide_msg__admins');

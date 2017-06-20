@@ -410,6 +410,30 @@
                                         "placeholder": "",
                                         "prepend": "",
                                         "append": ""
+                                    },
+                                    {
+                                        "key": "field_title_style",
+                                        "label": "Style",
+                                        "name": "style",
+                                        "type": "radio",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "layout": "vertical",
+                                        "choices": {
+                                            "none": "None",
+                                            "line": "Horizontal line"
+                                        },
+                                        "default_value": "none",
+                                        "other_choice": 0,
+                                        "save_other_choice": 0,
+                                        "allow_null": 0,
+                                        "return_format": "value"
                                     }
                                 ],
                                 "min": "",
@@ -609,8 +633,8 @@
                                         "library": "all",
                                         "min": 4,
                                         "max": "",
-                                        "min_width": 300,
-                                        "min_height": 300,
+                                        "min_width": 320,
+                                        "min_height": 210,
                                         "min_size": "",
                                         "max_width": "",
                                         "max_height": "",
@@ -1458,7 +1482,15 @@
                                                 "type": "text",
                                                 "instructions": "",
                                                 "required": 0,
-                                                "conditional_logic": 0,
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_images_grid_type",
+                                                            "operator": "!=",
+                                                            "value": "images"
+                                                        }
+                                                    ]
+                                                ],
                                                 "wrapper": {
                                                     "width": "",
                                                     "class": "",
@@ -2520,6 +2552,30 @@
                                         "max_height": 60,
                                         "max_size": "",
                                         "mime_types": "PNG"
+                                    },
+                                    {
+                                        "key": "field_map_filter",
+                                        "label": "Filter",
+                                        "name": "filter",
+                                        "type": "radio",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "layout": "vertical",
+                                        "choices": {
+                                            "none": "None",
+                                            "silver": "Silver"
+                                        },
+                                        "default_value": "none",
+                                        "other_choice": 0,
+                                        "save_other_choice": 0,
+                                        "allow_null": 0,
+                                        "return_format": "value"
                                     }
                                 ],
                                 "min": "",

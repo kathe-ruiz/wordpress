@@ -62,7 +62,7 @@
   }
 }
 .navbar--dark{
-  background: $footer-color-dark;
+  background-color: rgba(0,0,0,0.902);
   @extend .navbar-default;
   .navbar__menu{
     .active {
@@ -107,6 +107,7 @@
   border-top: $navbar-top-border solid;
   border-color: $brand-primary;
   margin-bottom: 0px;
+  box-shadow: 0px 0px 8px rgba(17,17,17,0.2);
   &__menu{
     .menu-item:hover{
       cursor: pointer;
@@ -121,7 +122,7 @@
     @media (min-width: $grid-float-breakpoint){
     }
     img{
-      max-height: 45px;
+      max-height: 90px;
       height: auto;
     }
     a{
@@ -214,7 +215,7 @@
   @media (max-width: $screen-xs){
     &__logo{
       .custom-logo{
-        max-height: 38px;
+        max-height: 30px;
       }
     }
     &__toggle{
@@ -415,7 +416,7 @@
   }
 }
 /* ======= STYLES FOR DROPDOWN ======= */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   ul.nav li:hover > ul.dropdown-menu {
     display: block;
   }
@@ -424,4 +425,43 @@
   @media (max-width: $screen-xs-max), (min-width: $screen-md-min){
     margin-right: 10px;
   }
+}
+.sw-nav{
+  @media (min-width: $screen-md-min){
+    display: flex;
+    align-items: center;
+  }
+}
+.header .navbar-right{
+  margin-right: 0;
+}
+.menu-item-users{
+  .dropdown-menu{
+    .menu-item{
+      a{
+        &:hover{
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+.menu-item-btn{
+  & > a{
+    @extend .btn;
+    padding: 8px 15px !important;
+  }
+  & + &{
+    margin-left: 1em;
+  }
+  &-primary-outline > a, &-primary-outline-withoutborder > a{
+    @include text-contrast($brand-primary, "true");
+  }
+  &-primary-outline > a{
+    @extend .btn-primary-outline;
+  }
+  &-primary-outline-withoutborder > a{
+    @extend .btn-primary-outline-withoutborder;
+  }
+
 }

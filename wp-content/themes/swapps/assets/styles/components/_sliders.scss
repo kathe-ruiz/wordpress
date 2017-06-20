@@ -217,9 +217,9 @@
       letter-spacing: 2px;
     }
     .sliders__text{
-      font-size: $font-size-large * 1.6;
+      font-size: $font-size-base * 2.5;
       text-align: center;
-      line-height: 1.4;
+      line-height: 1.235;
       @media (max-width: $screen-md-min) {
         text-align: left;
       }
@@ -231,19 +231,23 @@
         border-color: $divider-color;
         margin-top: 25px;
         margin-bottom: 25px;
+        max-width: 420px;
       }
     }
     .sliders__footer{
       p{
+        margin-bottom: 0;
         &:first-child{
-          letter-spacing: 2px;
-          text-transform: uppercase;
           font-family: $paragraphs-font-family;
+          font-size: 17px;
           font-weight: 400;
-          margin-bottom: 15px;
+          letter-spacing: 2px;
+          line-height: 1.588;
+          text-transform: uppercase;
         }
         &:nth-child(n+2){
-          margin-bottom: 0;
+          font-size: 16px;
+          line-height: 1.688;
           opacity: 0.7;
         }
       }

@@ -68,8 +68,12 @@ $first = key($row_item['grid_elements']);
         </div>
       <?php endif; ?>
       <?php if ($grid_element['link']['url']):?></a><?php endif; ?>
+      <?php if ($grid_element['title'] && $row_item['grid_type']!='images'): ?>
       <h4 class="icons__title text-uppercase"><?php echo $grid_element['title'] ?></h4>
-      <p class="icons__text"><?php echo $grid_element['description'] ?></p>
+      <?php endif; ?>
+      <?php if ($grid_element['description']): ?>
+      <p class="<?php echo ($row_item['grid_type']=='images') ? 'highlight-item__caption' : 'icons__text' ; ?>"><?php echo $grid_element['description'] ?></p>
+      <?php endif; ?>
     </div>
 
   <?php endforeach ?>

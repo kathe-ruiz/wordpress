@@ -1,5 +1,8 @@
 @import "components/navbar";
 @import "components/socialmedia";
+@import "components/info-pre-header";
+@import "components/header-header";
+@import "components/header-right";
 .admin-bar{
   .navbar-fixed-top{
     @media (min-width: $screen-sm-min) {
