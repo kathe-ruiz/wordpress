@@ -20,6 +20,5 @@
   </div>
   <div class="socialmedia hidden-xs">
     <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
-    <?php //echo get_template_directory().'/templates/includes/socialmedia.php' ?>
   </div>
 </div>

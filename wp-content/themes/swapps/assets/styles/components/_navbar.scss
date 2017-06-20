@@ -446,3 +446,22 @@
     }
   }
 }
+.menu-item-btn{
+  & > a{
+    @extend .btn;
+    padding: 8px 15px !important;
+  }
+  & + &{
+    margin-left: 1em;
+  }
+  &-primary-outline > a, &-primary-outline-withoutborder > a{
+    @include text-contrast($brand-primary, "true");
+  }
+  &-primary-outline > a{
+    @extend .btn-primary-outline;
+  }
+  &-primary-outline-withoutborder > a{
+    @extend .btn-primary-outline-withoutborder;
+  }
+
+}

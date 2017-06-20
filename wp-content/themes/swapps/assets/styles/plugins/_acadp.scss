@@ -11,20 +11,26 @@
       .map{
         width: 100%;
         .embed-responsive{
-          padding-bottom: 80%;
+          height: 100%;
+          padding-bottom: 100%;
+          margin-bottom: 20px;
         }
-        // flex: 2;
       }
       .address{
         width: 100%;
-        align-self: flex-end;
-        // flex: 1;
+        align-self: center;
       }
     }
   }
   @media (max-width: $screen-sm-max){
     .map .embed-responsive{
       margin-bottom: 15px;
+    }
+  }
+  .panel-map{
+    margin-bottom: 5px !important;
+    .description-map{
+      margin-bottom: 0px;
     }
   }
 }
@@ -55,5 +61,21 @@
       font-weight: 500;
       border-radius: 0px;
     }
+  }
+}
+.acadp-post-form #acadp-custom-fields-listings{
+  display: flex;
+  flex-wrap: wrap;
+  .form-group{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.acadp-post-form #acadp-listing-details{
+  .form-title, .form-description{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

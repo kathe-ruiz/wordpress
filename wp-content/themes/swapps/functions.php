@@ -52,7 +52,7 @@ require 'includes/customizer-navbar.php';
 require 'widgets/subscribe/widget.php';
 require 'widgets/business-info/widget.php';
 require 'widgets/pre-header-info/widget.php';
-require 'widgets/custom-menu/widget.php';
+require 'widgets/centered-menu/widget.php';
 
 
 
@@ -447,10 +447,21 @@ function is_acadp() {
 }
 
 function display_internal_sidebar() {
-  if (is_active_sidebar( 'internal_pages_sidebar' ) && 
-      !is_ultimatemember() &&
-      !is_acadp()) {
+  if ( is_active_sidebar( 'internal_pages_sidebar' ) ) {
+    if ( (function_exists('is_ultimatemember') && is_ultimatemember()) || 
+         (function_exists('is_acadp') && is_acadp()) 
+    ) {
+      return false;
+    }
     return true;
   }
   return false;
 } 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'gallery-image', 320, 200, true ); // Hard Crop Mode
+function hide_msg__admins(){
+ if (current_user_can( 'manage_options' )) { // non-admin users
+    echo '<style>.update-nag, .updated , .notice , .error{ display: none !important; }</style>';
+  }
+}
+add_action( 'admin_head', 'hide_msg__admins');

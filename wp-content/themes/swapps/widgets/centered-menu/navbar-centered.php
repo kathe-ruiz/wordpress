@@ -26,9 +26,14 @@
       <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
     </div>
     <!-- Trigger the modal with a button -->
-    <button type="button" class="hidden-lg button-social" data-toggle="modal" data-target="#modal-social">
-      <i class="fa fa-share-alt" aria-hidden="true"></i>
-    </button>
+    <?php $accounts = get_social_accounts(); ?>
+    <?php if (isset($accounts) && ( $accounts != '' )): ?>
+      <?php if (isset($accounts['twitter']) or isset($accounts['facebook']) or isset($accounts['linkedin']) or isset($accounts['instagram']) or isset($accounts['vimeo']) or isset($accounts['youtube'])): ?>
+        <button type="button" class="hidden-lg button-social" data-toggle="modal" data-target="#modal-social">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </button>
+      <?php endif ?>
+    <?php endif; ?>
     <div class="navbar-header navbar__toggle">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -53,21 +58,4 @@
       'walker'            => new wp_bootstrap_navwalker())
     );
   ?>
-</div>
-<!-- Modal -->
-<div id="modal-social" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Redes sociales</h4>
-      </div>
-      <div class="modal-body">
-        <div class="socialmedia">
-          <?php include get_template_directory().'/templates/includes/socialmedia.php' ?>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>

@@ -7,9 +7,9 @@ class InfoHeaderWidget extends WP_Widget {
   public function __construct() {
     $widget_ops = array(
       'classname' => 'swih_widget',
-      'description' => __('Display'),
+      'description' => __('Muestra el telefono y correo de la empresa'),
     );
-    parent::__construct( 'info_header_widget', 'Info Header Widget', $widget_ops );
+    parent::__construct( 'info_header_widget', 'Información Pre Cabecera', $widget_ops );
   }
 
   /**

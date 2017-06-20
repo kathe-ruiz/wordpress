@@ -37,8 +37,15 @@
     function get_opacity(){
       $default_opacity = '1';
       $opacity = ( sw_options('site_options_header_opacity') && (int)sw_options('site_options_header_opacity') >= 0 && (int)sw_options('site_options_header_opacity') <= 100) ? ((int)sw_options('site_options_header_opacity') / 100) : $default_opacity ;
-      $style = 'style="opacity:'. $opacity .'"';
-      return $style;
+      $navbar = sw_options('site_options_header_color');
+      if ( $navbar == 'navbar--dark' ) {
+        $style = 'style="background:rgba(0,0,0,'. $opacity .')"';
+        return $style;
+      }
+      else{
+        $style = 'style="background:rgba(255,255,255,'. $opacity .')"';
+        return $style;
+      }
     }
   }
   if (!function_exists('get_phones')) {
@@ -60,7 +67,8 @@
         <?php endif;
       endif;
     }
-  }if (!function_exists('get_phones_responsive')) {
+  }
+  if (!function_exists('get_phones_responsive')) {
     function get_phones_responsive(){
       $phone = sw_get_phone();
       if ($phone):?>
