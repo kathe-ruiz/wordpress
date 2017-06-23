@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-24 14:29-0500\n"
+"PO-Revision-Date: 2017-06-23 10:23-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -9966,10 +9966,6 @@ msgstr ""
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/general-template.php:274
-msgid "Log out"
-msgstr "Desconectar"
-
 #. translators: 1: separator, 2: search phrase
 #: wp-includes/general-template.php:1179
 msgid "Search Results %1$s %2$s"
@@ -11902,3 +11898,68 @@ msgstr "Agregar columna de texto"
 #: includes/custom-fields.php:49
 msgid "Add Grid Element"
 msgstr "Agregar elemento de cuadrícula"
+
+#: base.php:41
+msgid ""
+"We use cookies to enhance your experience. By continuing to visit this site "
+"you agree to our use of cookies."
+msgstr ""
+"Utilizamos cookies para mejorar tu experiencia. Al permanecer en este sitio, "
+"aceptas nuestro uso de cookies."
+
+#: includes/custom-fields.php:49
+msgid "All rights reserved"
+msgstr "Todos los derechos reservados"
+
+#: swapps-core.php:19
+msgid "With your current plan, you may only create one page"
+msgid_plural "With your current plan, you may only create %s pages"
+msgstr[0] "Con su plan actual solo puede crear una página"
+msgstr[1] "Con su plan actual, solo puede crear %s páginas"
+
+#: swapps-core.php:19
+msgid "If you want to create more pages, please "
+msgstr "Si quiere crear más páginas, por favor "
+
+#: swapps-core.php:19
+msgid "upgrade your plan"
+msgstr "Actualice su plan"
+
+msgid "Identification Number"
+msgstr "Número de identificación"
+
+msgid "Identification Type"
+msgstr "Tipo de identificación"
+
+msgid "Sign in"
+msgstr "Ingresar"
+
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+msgid "TI"
+msgstr "Tarjeta de Identidad"
+
+msgid "CC"
+msgstr "Cédula de Ciudadanía"
+
+msgid "TE"
+msgstr ""
+
+msgid "NIT"
+msgstr "NIT"
+
+msgid "Passport"
+msgstr "Pasaporte"
+
+msgid "Another"
+msgstr "Otro"
+
+msgid "Civil Registration"
+msgstr "Registro Civil"
+
+msgid "Final Consumer"
+msgstr "Consumidor final"
+
+msgid "About the author"
+msgstr "Sobre el autor"

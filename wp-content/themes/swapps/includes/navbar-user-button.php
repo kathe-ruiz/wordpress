@@ -11,9 +11,9 @@
       <?php if ($page_id != $um_user_page): ?>
         <a data-toggle="modal" data-target="#modal-login" title="<?php _e('Sign in'); ?>">
       <?php else: ?>
-        <a href="<?php echo get_permalink( um_get_option('core_login') ); ?>" title="<?php _e('Sign in'); ?>">
+        <a href="<?php echo get_permalink( um_get_option('core_login') ); ?>" title="<?php _e('Sign in', 'swapps'); ?>">
       <?php endif; ?>
-        <?php _e('Sign in'); ?>
+        <?php _e('Sign in', 'swapps'); ?>
       </a>
     <?php else: ?>
       <a title="<?php _e('Log out'); ?>" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false"><?php $current_user = wp_get_current_user(); echo $current_user->user_login; ?> <span class="caret"></span></a>
