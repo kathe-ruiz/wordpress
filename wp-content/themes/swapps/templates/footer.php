@@ -70,7 +70,7 @@
         </div>
         <div class="footer__copyright text-right">
           <span class="text-secondary">&copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ) ?>.</span>
-          <span class="text-secondary"><?php _e('All rights reserved') ?></span>
+          <span class="text-secondary"><?php _e('All rights reserved', 'swapps'); ?></span>
         </div>
         <div class="footer__powered-by">
           <a class="footer__brand" href="//www.swapps.io" title="Powered by Swapps - Django Developers - Web/Mobile Developers" target="_blank">Powered by 
