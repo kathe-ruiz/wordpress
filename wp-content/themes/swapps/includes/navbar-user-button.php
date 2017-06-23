@@ -2,10 +2,17 @@
   $html = '';
   include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
   if (is_plugin_active('ultimate-member/index.php') && function_exists('um_get_option')):
+    $um_user_page = get_option('um_core_pages')['user'];
+
+    $page_id = get_the_ID();
     ob_start(); ?>
     <li class="menu-item menu-item-users">
     <?php if (!is_user_logged_in()): ?>
-      <a data-toggle="modal" data-target="#modal-login" title="<?php _e('Sign in'); ?>">
+      <?php if ($page_id != $um_user_page): ?>
+        <a data-toggle="modal" data-target="#modal-login" title="<?php _e('Sign in'); ?>">
+      <?php else: ?>
+        <a href="<?php echo get_permalink( um_get_option('core_login') ); ?>" title="<?php _e('Sign in'); ?>">
+      <?php endif; ?>
         <?php _e('Sign in'); ?>
       </a>
     <?php else: ?>
