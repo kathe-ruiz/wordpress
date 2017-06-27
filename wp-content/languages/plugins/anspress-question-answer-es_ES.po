@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/anspress-question-"
 "answer\n"
 "POT-Creation-Date: 2017-05-01 07:35:20+00:00\n"
-"PO-Revision-Date: 2017-06-23 08:07-0500\n"
+"PO-Revision-Date: 2017-06-27 13:28-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -380,9 +380,8 @@ msgid "Title of the categories page"
 msgstr "Título de la página de preguntas"
 
 #: addons/free/category.php:292
-#, fuzzy
 msgid "Category per page"
-msgstr "Usuarios por página"
+msgstr "Categoría por página"
 
 #: addons/free/category.php:293
 #, fuzzy
@@ -718,9 +717,8 @@ msgid "up voted your %cpt%"
 msgstr ""
 
 #: addons/free/notification.php:148
-#, fuzzy
 msgid "down voted your %cpt%"
-msgstr "Voto negativo"
+msgstr "Votó negativamente tu %cpt%"
 
 #: addons/free/notification.php:153
 #, fuzzy
@@ -1352,11 +1350,10 @@ msgstr "--"
 #: includes/ajax-hooks.php:100 includes/ajax-hooks.php:102
 #: includes/ajax-hooks.php:279 includes/answer-form.php:263
 #: templates/answers.php:20 templates/buddypress/question-item.php:38
-#, fuzzy
 msgid "%d Answer"
 msgid_plural "%d Answers"
-msgstr[0] "Una respuesta"
-msgstr[1] "Una respuesta"
+msgstr[0] "%d respuesta"
+msgstr[1] "%d respuestas"
 
 #: admin/class-list-table-hooks.php:292
 msgid "Content"
@@ -2208,9 +2205,8 @@ msgid "No license yet."
 msgstr ""
 
 #: admin/views/recount.php:58
-#, fuzzy
 msgid "Re-count votes"
-msgstr "Votos totales"
+msgstr "Re contar votos"
 
 #: admin/views/recount.php:60
 msgid "Re-counting all AnsPress post votes..."
@@ -2623,9 +2619,8 @@ msgid "Unselect"
 msgstr "Desmarcar"
 
 #: includes/ajax-hooks.php:185
-#, fuzzy
 msgid "Unable to trash this post"
-msgstr "Voto positivo"
+msgstr "No se pudo borrar esta entrada"
 
 #: includes/ajax-hooks.php:206 includes/class/form.php:298
 #: includes/class/form.php:306 includes/comments.php:404 includes/theme.php:365
@@ -2651,9 +2646,8 @@ msgid "Undelete"
 msgstr "Restaurar"
 
 #: includes/ajax-hooks.php:230 includes/theme.php:363
-#, fuzzy
 msgid "Restore this post"
-msgstr "Voto positivo"
+msgstr "Restaurar esta entrada"
 
 #: includes/ajax-hooks.php:231
 msgid "%s is trashed"
@@ -2687,7 +2681,7 @@ msgstr "Moderar preguntas y respuestas"
 
 #: includes/ajax-hooks.php:317 includes/theme.php:859
 msgid "Feature"
-msgstr ""
+msgstr "Destacar"
 
 #: includes/ajax-hooks.php:318
 msgid "Question is unmarked as featured."
@@ -2700,7 +2694,7 @@ msgstr "Responde a esta pregunta"
 
 #: includes/ajax-hooks.php:325 includes/theme.php:856
 msgid "Unfeature"
-msgstr ""
+msgstr "Dejar de destacar"
 
 #: includes/ajax-hooks.php:326
 msgid "Question is marked as featured."
@@ -2739,10 +2733,13 @@ msgstr "Pregunta ha sido abierta"
 #: includes/ajax-hooks.php:437
 msgid "Sorry, you are not allowed to convert this question to post"
 msgstr ""
+"Lo sentimos. No tiene los permisos para convertir esta pregunta a una entrada"
 
 #: includes/ajax-hooks.php:456
 msgid " Question \"%s\" is converted to post and its answers are trashed"
 msgstr ""
+"La pregunta \"%s\" es convertida a entrada y sus respuestas son enviadas a "
+"la papelera"
 
 #: includes/ajax-hooks.php:484
 msgid "You must be logged in to subscribe to a question"
@@ -3529,14 +3526,12 @@ msgid "Delete post permanently (cannot be restored again)"
 msgstr ""
 
 #: includes/theme.php:393
-#, fuzzy
 msgid "Convert to post"
-msgstr "Voto negativo"
+msgstr "Convertir a entrada"
 
 #: includes/theme.php:394
-#, fuzzy
 msgid "Convert this question to blog post"
-msgstr "Responde a esta pregunta"
+msgstr "Convertir esta pregunta a una entrada del blog"
 
 #: includes/theme.php:453 widgets/question_stats.php:48
 msgid "Views"
@@ -3605,13 +3600,12 @@ msgid "Failed"
 msgstr "Fallo"
 
 #: includes/upload.php:228
-#, fuzzy
 msgid "Insert to post"
-msgstr "Voto negativo"
+msgstr "Insertar en una entrada"
 
 #: includes/upload.php:281
 msgid "Insert images and attach media by %1$sselecting them%2$s"
-msgstr ""
+msgstr "Inserte imágenes y archivos adjuntos %1$sseleccionándolos%2$s"
 
 #: includes/votes.php:64
 msgid "Your vote has been removed."
@@ -3707,7 +3701,7 @@ msgstr "Ver pregunta"
 msgid "%d Vote"
 msgid_plural "%d Votes"
 msgstr[0] "%d Voto"
-msgstr[1] "%d votos"
+msgstr[1] "%d Votos"
 
 #: templates/addons/user/answer-item.php:46
 #: templates/buddypress/answer-item.php:46
@@ -3725,7 +3719,7 @@ msgstr "No hay respuestas realizadas por este usuario"
 
 #: templates/answer-form.php:24
 msgid "Write your answer.."
-msgstr "Escriba su respuesta"
+msgstr "Escriba su respuesta..."
 
 #: templates/ask.php:17
 msgid "You do not have permission to ask question."
@@ -3822,7 +3816,7 @@ msgstr "Actualizar"
 
 #: templates/functions.php:57
 msgid "Write your comment..."
-msgstr "Escribe tu comentario"
+msgstr "Escriba su comentario..."
 
 #: templates/functions.php:83
 #, fuzzy
@@ -3934,17 +3928,16 @@ msgid "View all answers"
 msgstr ""
 
 #: templates/widgets/widget-questions.php:17
-#, fuzzy
 msgid "1 Answer"
 msgid_plural "%d Answers"
 msgstr[0] "Una respuesta"
-msgstr[1] "Una respuesta"
+msgstr[1] "%d respuestas"
 
 #: templates/widgets/widget-questions.php:19
 msgid "1 Vote"
 msgid_plural "%d Votes"
-msgstr[0] "un voto"
-msgstr[1] "%d votos"
+msgstr[0] "1 Voto"
+msgstr[1] "%d Votos"
 
 #: templates/widgets/widget-questions.php:23
 msgid "No questions found."
@@ -3980,11 +3973,10 @@ msgid "Shows question stats in single question page."
 msgstr ""
 
 #: widgets/question_stats.php:48
-#, fuzzy
 msgid "One time"
 msgid_plural "%d times"
 msgstr[0] "Una vez"
-msgstr[1] "Una vez"
+msgstr[1] "%d veces"
 
 #: widgets/question_stats.php:49
 msgid "%2$s1%3$s answer"
@@ -4002,7 +3994,7 @@ msgstr "Estadísticas de la pregunta"
 
 #: widgets/questions.php:10
 msgid "(AnsPress) Questions"
-msgstr ""
+msgstr "Preguntas"
 
 #: widgets/questions.php:11
 msgid "Shows list of question shorted by option."
