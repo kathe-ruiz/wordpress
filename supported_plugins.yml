@@ -17,7 +17,7 @@ supported_plugins:
 - "woocommerce-tu-compra":
     - "woocommerce-tu-compra": "0.1.5"
 - "wp-dors":
-    - "wp-dors": "0.1.1"
+    - "wp-dors": "0.1.2"
 - "wp-accountant":
     - "wp-accountant": "0.1.4"
 - "woocommerce-quick-buy":
@@ -40,6 +40,8 @@ supported_plugins:
     - "formidable": "2.03.09"
 - "formidable-bootstrap":
     - "formidable-bootstrap": "1.01.02"
+- "formidable-pro-add-color-picker-field":
+    - "wpackagist-plugin/formidable-pro-add-color-picker-field": "1.0"
 - "kirki":
     - "wpackagist-plugin/kirki": "2.3.8"
 - "wp-menu-cart":
