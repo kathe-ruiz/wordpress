@@ -12,6 +12,9 @@ if ( ! class_exists( 'WP_CLI' ) ) {
 $update_swoptions = function($args) {
 	include_once('wp-config.php');
 	$current_options = get_option('sw_theme_options');
+	if (!$current_options) {
+		$current_options = array();
+	}
 	$json = (array)json_decode($args[0]);
 	$result = array_merge($current_options, $json);
 	update_option('sw_theme_options', $result);
