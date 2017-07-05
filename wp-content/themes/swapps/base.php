@@ -19,14 +19,20 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <!-- Heading tags for SEO -->
+    <h1 class="hidden"><?php echo (is_front_page() || is_home()) ? get_bloginfo('name') : get_the_title() ?></h1>
+    <?php if (is_front_page()): ?>
+    <h2 class="hidden"><?php echo get_bloginfo('description'); ?></h2>
+    <?php endif; ?>
+
     <div class="document">
     <?php if (!(is_front_page() && get_option('show_on_front') == 'page') ): get_template_part('templates/page', 'header'); endif; ?>
     <div class="wrap container<?php if (!Setup\display_sidebar() && (is_page_template('template-landing.php') || is_page_template('template-home.php')) ) :  echo '-fluid'; endif; ?>" role="document">
       <div class="content row">
-        <main class="main <?php echo $col_size = (Setup\display_sidebar()) ? 'col-sm-8' : ( !(is_page_template('template-landing.php') || is_page_template('template-home.php')) ? 'col-sm-12' : '' ) ; ?>">
+        <main class="main <?php echo $col_size = (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) ? 'col-sm-8' : ( !(is_page_template('template-landing.php') || is_page_template('template-home.php')) ? 'col-sm-12' : '' ) ; ?>">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
+        <?php if (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) : ?>
           <aside class="sidebar <?php if (Setup\display_sidebar()): echo 'col-sm-4'; endif; ?>">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
@@ -49,7 +55,7 @@ use Roots\Sage\Wrapper;
         src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php if (sw_options('cookies_message')) {
            echo sw_options('cookies_message');
         }else{
-          _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.');
+          _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.', 'swapps');
           } ?>"
         <?php if (sw_options('cookies_link')):?>
           data-moreinfo="<?php echo get_permalink(sw_options('cookies_link'));?>"
@@ -62,7 +68,7 @@ use Roots\Sage\Wrapper;
       </script>
     <?php else: ?>
       <script type="text/javascript" id="cookieinfo"
-        src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.'); ?>"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js" data-message="<?php _e('We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.', 'swapps'); ?>"
           <?php if (get_locale() == "es_ES"): ?>
             data-moreinfo="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)"
           <?php endif; ?>

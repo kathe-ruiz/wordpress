@@ -1,5 +1,5 @@
 <div class="container text-center">
-  <div class="row heading">
+  <div class="row heading<?php if ($row_item['style'] == 'line'): ?> heading--line<?php endif ?>">
     <div class="col-md-12">
       <?php if (isset($row_item['title']) ): ?>
         <h2 class="heading__title">

@@ -45,7 +45,7 @@
     <div class="entry-author">
       <div class="row">
         <div class="col-xs-12 heading-underline">
-          <h3 class="heading-underline__title">About the author</h3>
+          <h3 class="heading-underline__title"><?php _e('About the author') ?></h3>
         </div>
       </div>
       <div class="row author">

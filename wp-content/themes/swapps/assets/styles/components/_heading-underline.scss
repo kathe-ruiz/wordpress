@@ -1,23 +1,48 @@
 .heading-underline{
-  &__title{
-    margin-bottom: 15px;
-    a{
-      color: inherit;
-    }
-  }
+  margin-bottom: 32px;
   &:after{
     content: '';
     display: block;
     width: 80px;
     height: 3px;
     background: $brand-primary;
+    .footer__widget &{
+      @media (max-width: $screen-xs-max) {
+        margin: 0 auto;
+      }
+    }
+    .footer.navbar--brand &{
+      background: contrast_function($brand-primary);
+      // background: relative_contrast($brand-primary, 15%);
+    }
   }
-  margin-bottom: 32px;
+  &__title{
+    margin-bottom: 15px;
+    a{
+      color: inherit;
+    }
+  }
+  &--footer{
+    margin-bottom: 15px;
+  }
+  &--footer &__title{
+    margin-top: 0;
+    font-size: 1.5em;
+    .footer.navbar--dark &{
+      @include text-contrast($footer-color-dark);
+    }
+    .footer.navbar--light &{
+      @include text-contrast($footer-color-light);
+    }
+    .footer.navbar--brand &{
+      @include text-contrast($brand-primary);
+    }
+  }
   @media (max-width: $screen-sm) {
+    margin-bottom: 25px;
     &__title{
       margin-bottom: 10px;
     }
-    margin-bottom: 25px;
     &__title--sidebar{
       font-size: 24px;
     }

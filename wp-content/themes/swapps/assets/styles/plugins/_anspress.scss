@@ -1,0 +1,26 @@
+.ap-btn-ask{
+  background: $brand-primary !important;
+  &:hover{
+    background: darken($brand-primary, 10%) !important;
+  }
+}
+#anspress .ap-filter-toggle{
+  color: $brand-primary;
+}
+#ap-filters{
+  padding:3px 0;
+  #ap-filter-reset{
+    padding: 0 3px;
+  }
+}
+.ap-form{
+  .ap-btn-submit{
+    background: $brand-primary;
+    &:hover{
+      background: darken($brand-primary, 10%);
+    }
+    font-weight: bold;
+    border-radius: 2px;
+    color: #fff;
+  }
+}

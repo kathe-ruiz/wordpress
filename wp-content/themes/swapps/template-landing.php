@@ -70,7 +70,7 @@
   class="<?php echo $class_css ?>" >
     <?php if ($row['custom_background']): ?>
       <?php if($row['background_image']): ?>
-        <div class="filter-image bg-image" style="background-image: url(<?php echo $row['background_image']['url']; ?>);filter:<?php echo $row['image_filter'];?>;"></div>
+        <div class="filter-image bg-image<?php echo $cover = ($row['image_cover']) ? ' bg-cover' : '' ?>" style="background-image: url(<?php echo $row['background_image']['url']; ?>);filter:<?php echo $row['image_filter'];?>;"></div>
       <?php endif; ?>
     <?php endif ?>
       <?php foreach ($row['row_items'] as $row_item_key => $row_item): ?>

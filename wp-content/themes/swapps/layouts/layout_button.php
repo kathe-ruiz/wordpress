@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <a href="<?php echo $row_item['link']['url'] ?>" class="btn btn-primary"
+        <a href="<?php echo $row_item['link']['url'] ?>" class="btn btn-primary text-uppercase"
           <?php if ($row_item['link']['title']): ?>
             title="<?php echo $row_item['link']['title'] ?>"
           <?php endif; ?>

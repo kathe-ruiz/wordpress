@@ -11,12 +11,25 @@
 <?php $type = $row_item['slider_type']; ?>
 <?php $height = ($type == 'fixed') ? $row_item['slider_height'] : '' ; ?>
 <?php $slider_id = uniqid(); ?>
+<?php $slider_style = $row_item['slider_style'] ?>
+<?php
+switch ($slider_style) {
+  case 1:
+    $slider_style = 'left';
+    break;
+  case 2:
+    $slider_style = 'center';
+    break;
+  default:
+    $slider_style = 'left';
+    break;
+} ?>
 
 <?php if($type !== 'smart'): ?>
 <script>
 // Initialize slider
   jQuery(document).ready(function() {
-    jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
+    var carousel = jQuery('#slider-<?php echo $slider_id; ?>').owlCarousel({
       items: 1,
       loop: true,
       margin: 0,
@@ -40,9 +53,27 @@
       <?php endif; ?>
       autoHeight:true
     });
+    // This is a improve when slider have a video
+    var players = plyr.setup();
+    if (players.length>0) {
+      players.forEach(function(player){
+        player.on('play', function(event) {
+          carousel.trigger('stop.owl.autoplay');
+        });
+      });
+      carousel.on('changed.owl.carousel', function(event){
+        players.forEach(function(player){
+          player.pause();
+        });
+      });
+    };
   });
 </script>
-<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme">
+<?php if ($type == 'fixed' && $height != '') :?>
+<div id="slider-<?php echo $slider_id; ?>" class="owl-carousel owl-theme fixed-size">
+<?php else: ?>
+<div id="slider-<?php echo $slider_id; ?>" class="sw-slider owl-carousel owl-theme">
+<?php endif; ?>
   <?php foreach ($slides as $key => $slide): ?>
     <?php
       $image = get_if_exists($slide['image']);
@@ -50,6 +81,7 @@
       $title = get_if_exists($slide['title']);
       $subtitle = get_if_exists($slide['title_2']);
       $description = get_if_exists($slide['description']);
+      $button_design = get_if_exists($slide['button_design']);
       $link = get_if_exists($slide['link']['url']);
       $cta = get_if_exists($slide['link']['title']);
 
@@ -74,21 +106,27 @@
           break;
       }
     ?>
-    <div class="item item-<?php echo $type ?>"
+    <div class="item item-<?php echo $type ?><?php if($slider_style == 'center' && !$video): ?> bg-cover<?php endif ?>"
       <?php if( $style ): ?> style="<?php echo $style; ?>"<?php endif; ?>>
       <?php if ( isset($image) && $image ): ?>
-        <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
+        <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['title'] ?>"<?php if( $screen_type== 'full_responsive' ): ?> style="width: 100%;min-height: initial;"<?php endif; ?>>
         <?php if ($title || $description || ($link and $cta)): ?>
-        <div class="caption">
+        <div class="caption caption--<?php echo $slider_style; ?>">
           <?php if ($title || $description): ?>
             <?php if ($title): ?><h2><?php echo $title ?></h2><?php endif ?>
             <?php if ($subtitle): ?><h4><?php echo $subtitle ?></h4><?php endif ?>
             <?php if ($description): ?><p class="text-secondary"><?php echo $description ?></p><?php endif ?>
           <?php endif ?>
           <?php if ($link and $cta): ?>
-            <a href="<?php echo $link ?>" class="btn btn-primary">
-              <?php echo $cta; ?>
-            </a>
+            <?php if ( $button_design == 'E-commerce' ):?>
+              <a href="<?php echo $link ?>" class="btn uppercase btn-ecommerce">
+                <span><?php echo $cta; ?></span>
+              </a>
+            <?php else: ?>
+              <a href="<?php echo $link ?>" class="btn uppercase btn-primary">
+                <?php echo $cta; ?>
+              </a>
+            <?php endif ?>
           <?php endif ?>
         </div>
         <?php endif; ?>
@@ -99,14 +137,14 @@
               $video_type = 'youtube';
               parse_str( parse_url( $video, PHP_URL_QUERY ), $q );
               $video_id = $q['v']; ?>
-            <div data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
+            <div class="sw-media-player" data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
             <?php elseif (stripos($video, "vimeo.com") !== false):
               $video_type = 'vimeo';
               $video_id = (int) substr(parse_url($video, PHP_URL_PATH), 1); ?>
-            <div data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
+            <div class="sw-media-player" data-type="<?php echo $video_type ?>" data-video-id="<?php echo $video_id ?>"></div>
           <?php else: ?>
             <?php $video_extension = pathinfo($video, PATHINFO_EXTENSION) ?>
-            <video poster="" controls>
+            <video class="sw-media-player" poster="" controls>
               <source src="<?php echo $video ?>" type="video/<?php echo $video_extension ?>">
             </video>
           <?php endif; ?>
@@ -137,7 +175,7 @@ jQuery(document).ready(function(){
   });
 });
 </script>
-<ul class="bxslider">
+<ul id="slider-<?php echo $slider_id; ?>" class="sw-slider bxslider">
   <?php foreach ($slides as $key => $slide): ?>
   <?php
     $image = get_if_exists($slide['image']);
@@ -149,7 +187,7 @@ jQuery(document).ready(function(){
     $cta = get_if_exists($slide['link']['title']);
   ?>
   <?php if ( isset($image) && $image ): ?>
-    <li class="bxslider__item">
+    <li class="bxslider__item <?php if($slider_style == 'center'): ?> bg-cover<?php endif ?>">
       <img class="bxslider__img"
            src="<?php echo $image['url'] ?>"
            alt="<?php echo $image['alt'] ?>"
@@ -173,3 +211,4 @@ jQuery(document).ready(function(){
   <?php endforeach; ?>
 </ul>
 <?php endif; ?>
+

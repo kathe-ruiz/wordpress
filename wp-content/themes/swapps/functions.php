@@ -47,8 +47,12 @@ require_once('includes/navbar-user-button.php');
 require_once('wp_theme_pages_setup.php');
 require_once('includes/custom-fields.php');
 require_once('includes/sw_maintenance_mode.php');
+require 'includes/customizer-navbar.php';
 // require_once('includes/admin-mods.php');
-require 'widgets/subscribe_widget.php';
+require 'widgets/subscribe/widget.php';
+require 'widgets/business-info/widget.php';
+require 'widgets/pre-header-info/widget.php';
+require 'widgets/centered-menu/widget.php';
 
 
 
@@ -193,13 +197,13 @@ if (!function_exists('slugify')) {
 }
 
 if (!function_exists('sw_get_phone')) {
-  function sw_get_phone()
+  function sw_get_phone($priority='main')
   {
     $front_page_id = (int)get_option('page_on_front');
     if (function_exists('get_field') && get_field( 'field_phone', $front_page_id )):
       $phone = get_field( 'field_phone', $front_page_id );
-    elseif (function_exists('sw_options') && sw_options('phone')):
-      $phone = sw_options('phone');
+    elseif (function_exists('sw_options')):
+      $phone = ($priority == 'main' && sw_options('phone')) ? sw_options('phone') : (($priority == 'secondary' && sw_options('secondary_phone')) ? sw_options('secondary_phone') : '') ;
     endif;
     if (!isset($phone)){
       $phone = False;
@@ -221,40 +225,6 @@ function render_subscribe_form()
 
 add_shortcode( 'sw-subscribe-form', 'render_subscribe_form' );
 
-/**
- *
- * Register our sidebars and widgetized areas.
- *
- */
-function pre_footer_widgets_init() {
-
-  register_sidebar( array(
-    'name'          => 'Pre Footer',
-    'id'            => 'pre_footer',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="rounded">',
-    'after_title'   => '</h2>',
-  ) );
-
-}
-add_action( 'widgets_init', 'pre_footer_widgets_init' );
-
-
-function internal_pages_sidebar_widgets_init() {
-
-  register_sidebar( array(
-    'name'          => 'Internal Pages Sidebar',
-    'id'            => 'internal_pages_sidebar',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h2 class="rounded">',
-    'after_title'   => '</h2>',
-  ) );
-
-}
-add_action( 'widgets_init', 'internal_pages_sidebar_widgets_init' );
-
 
 if (!function_exists('format_date_array')) {
   function format_date_array($var, $format = "D d F Y"){
@@ -267,7 +237,7 @@ add_filter( 'wpseo_title', 'sw_site_title' );
 function sw_site_title($title) {
   global $post;
 
-  // Retrieve front page value for Yoast SEO title 
+  // Retrieve front page value for Yoast SEO title
   $page_title = WPSEO_Meta::get_value( 'title', $post->ID );
   // Show site name if title is not set
   if ( is_front_page() && !$page_title ) {
@@ -289,7 +259,7 @@ class Image_Widget extends WP_Widget {
     add_action('admin_enqueue_scripts', array($this, 'scripts'));
     parent::__construct('image_picker', // Base ID
       __( 'Image Picker', 'text_domain' ), // Name
-      array( 'description' => __( 'Widget with media files', 'text_domain' ), ) // Args
+      array( 'description' => __( 'Widget para subir imagenes, con este widget podras publicar aununcion para tu sitio web.', 'text_domain' ), ) // Args
      );
   }
   public function scripts(){
@@ -324,36 +294,34 @@ class Image_Widget extends WP_Widget {
     ?>
     <div class="container-fluid">
       <div class="grid">
-        <div class="gutter-sizer"></div>
-        <div class="grid-sizer"></div>
       <?php if($image): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link1); ?>" target="_blank">
-            <img src="<?php echo esc_url($image); ?>" alt="image" class="img-responsive center-block">
+            <img src="<?php echo esc_url($image); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
           </a>
         </div>
       <?php endif; ?>
       <?php if($image2): ?>
         <div class="grid-item">
           <a href="<?php echo esc_url($link2); ?>" target="_blank">
-            <img src="<?php echo esc_url($image2); ?>" alt="image" class="img-responsive center-block">
+            <img src="<?php echo esc_url($image2); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
           </a>
         </div>
       <?php endif; ?>
-      <?php if($image3): ?>
         <div class="grid-item">
-          <a href="<?php echo esc_url($link3); ?>" target="_blank">
-            <img src="<?php echo esc_url($image3); ?>" alt="image" class="img-responsive center-block">
-          </a>
+          <?php if($image3 and $image4): ?>
+            <div class="item">
+              <a href="<?php echo esc_url($link3); ?>" target="_blank">
+                <img src="<?php echo esc_url($image3); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
+              </a>
+            </div>
+            <div class="item">
+              <a href="<?php echo esc_url($link4); ?>" target="_blank">
+                <img src="<?php echo esc_url($image4); ?>" alt="woocommerce-advertisement" class="img-responsive center-block">
+              </a>
+            </div>
+          <?php endif; ?>
         </div>
-      <?php endif; ?>
-      <?php if($image4): ?>
-        <div class="grid-item">
-          <a href="<?php echo esc_url($link4); ?>" target="_blank">
-            <img src="<?php echo esc_url($image4); ?>" alt="image" class="img-responsive center-block">
-          </a>
-        </div>
-      <?php endif; ?>
       </div>
     </div>
     <?php
@@ -470,3 +438,32 @@ function add_signin_nav_item($items) {
   return $items .= $item;
 }
 add_filter('wp_nav_menu_items','add_signin_nav_item');
+
+function is_acadp() {
+  global $post;
+  if ( isset($post->ID) && in_array( $post->ID, get_option('acadp_page_settings') ) )
+    return true;
+  return false;
+}
+
+function display_internal_sidebar() {
+  if ( is_active_sidebar( 'internal_pages_sidebar' ) ) {
+    if ( (function_exists('is_ultimatemember') && is_ultimatemember()) ||
+         (function_exists('is_acadp') && is_acadp())
+    ) {
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'gallery-image', 320, 200, true ); // Hard Crop Mode
+function hide_msg__admins(){
+ if (current_user_can( 'manage_options' )) { // non-admin users
+    echo '<style>.update-nag, .updated , .notice , .error{ display: none !important; }</style>';
+  }
+}
+if(!SUPERUSER == wp_get_current_user()){
+  add_action( 'admin_head', 'hide_msg__admins');
+}

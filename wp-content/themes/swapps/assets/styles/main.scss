@@ -1,6 +1,7 @@
 @import "mixins";
 
 @import "common/variables";
+@import "common/customvariables";
 @import "common/fonts";
 
 @import "../../bower_components/owl.carousel/src/scss/owl.carousel.scss";
@@ -34,13 +35,15 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
-// @import "components/wp-classes";
+@import "components/wordpress-classes";
 
 @import "layouts/sidebar";
 @import "layouts/pages";
 @import "layouts/posts";
 // @import "layouts/tinymce";
 
+@import "plugins/acadp";
 @import "plugins/events-manager";
 @import "plugins/ultimate-member";
 @import "plugins/woocommerce";
+@import "plugins/anspress";
