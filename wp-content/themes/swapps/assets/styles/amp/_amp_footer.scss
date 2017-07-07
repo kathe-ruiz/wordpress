@@ -3,7 +3,11 @@
   color: #5a5a5a;
   padding: 40px 0;
   .footer__sidebar{
-    border: 1px solid;
+    .disclaimer{
+      border: 1px solid;
+      margin: 0 auto;
+      padding: 20px;
+    }
     p{
       font-family: PlayfairDisplay;
       font-size: 18px;
@@ -30,7 +34,8 @@
   .footer__brand {
     color: inherit;
     font-size: 12px;
-    margin-left: 40px;
+    display: block;
+    margin-top: 5px;
     amp-img{
       vertical-align: middle;
       margin-left: 5px;
