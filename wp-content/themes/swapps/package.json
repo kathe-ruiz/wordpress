@@ -41,6 +41,7 @@
     "gulp-imagemin": "^3.0.3",
     "gulp-jshint": "^2.0.1",
     "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.2",
@@ -58,6 +59,5 @@
     "traverse": "^0.6.6",
     "wiredep": "^4.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
