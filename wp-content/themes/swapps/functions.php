@@ -467,3 +467,20 @@ function hide_msg__admins(){
 if(!SUPERUSER == wp_get_current_user()){
   add_action( 'admin_head', 'hide_msg__admins');
 }
+
+add_action('init', function() {
+  $url_path = parse_url(add_query_arg(array()), PHP_URL_PATH);
+  $url_path = explode('/', $url_path);
+  $key = array_search('amp', $url_path);
+  if ($key !== false) {
+    unset($url_path[$key]);
+    $url_path = get_home_url().implode('/', $url_path);
+    $post = url_to_postid($url_path);
+    $home = (int)get_option('page_on_front');
+    if ($post == 0 && $home == 0) {
+      $overridden_template = locate_template( 'template-blog-index-amp.php' );
+      load_template( $overridden_template );
+      exit();
+    }
+  }
+});
