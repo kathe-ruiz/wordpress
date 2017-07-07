@@ -11,6 +11,12 @@
       <div class="logo-name"><strong><?php echo get_bloginfo( 'name' ) ?></strong></div>
     <?php endif ?>
     </a>
+    <button type="button" id="button-menu" on="tap:sidebar.toggle"
+    class="ampstart-btn caps m2 navbar-toggle">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
     <?php if (function_exists('sw_options')): ?>
       <?php $phone = sw_get_phone(); ?>
       <?php if ($phone): ?>
@@ -24,12 +30,6 @@
         </a>
       <?php endif ?>
     <?php endif ?>
-    <button type="button" id="button-menu" on="tap:sidebar.toggle"
-    class="ampstart-btn caps m2 navbar-toggle">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
   </div>
 </header>
 <amp-sidebar id="sidebar"
