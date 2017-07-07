@@ -60,3 +60,10 @@
   font-weight: 400;
   font-size: 14px
 }
+.back-to-top{
+  bottom: 0;
+  &:hover,
+  &:visited{
+    color: #0a89c0;
+  }
+}

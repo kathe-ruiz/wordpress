@@ -4,6 +4,9 @@
       <?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
   <?php endif; ?>
+  <div>
+    <a href="#top" class="back-to-top">Back to top</a>
+  </div>
 </footer>
 <div class="after-footer dark">
   <div class="after-footer__flex">
