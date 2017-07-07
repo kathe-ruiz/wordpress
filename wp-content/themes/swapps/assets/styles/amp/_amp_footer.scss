@@ -1,0 +1,62 @@
+.amp-wp-footer{
+  border-top: 0;
+  color: #5a5a5a;
+  padding: 40px 0;
+  .footer__sidebar{
+    border: 1px solid;
+    p{
+      font-family: PlayfairDisplay;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+}
+.amp-wp-footer{
+  &.navbar--dark{
+    background: rgba(0,0,0,.902);
+  }
+  &.navbar--light {
+    background: hsla(0,0%,100%,.9);
+  }
+}
+.after-footer.dark{
+  background: #000;
+  text-align: center;
+  padding: 30px 0;
+  color: #5a5a5a;
+  a{
+    text-decoration: none;
+  }
+  .footer__brand {
+    color: inherit;
+    font-size: 12px;
+    margin-left: 40px;
+    amp-img{
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+  .footer__sw {
+    color: #757476;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 600;
+    vertical-align: sub;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+  }
+  .footer__apps {
+    color: #98979a;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 600;
+    vertical-align: sub;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+  }
+}
+.text-secondary {
+  font-family: PlayfairDisplay;
+  font-weight: 400;
+  font-size: 14px
+}

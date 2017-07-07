@@ -51,6 +51,12 @@ header.amp-wp-header{
   }
   amp-accordion{
     clear: both;
+    .nav.navbar-nav{
+      font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+      li{
+        text-transform: uppercase;
+      }
+    }
     .menu-item-has-children{
       a{
         position: relative;
@@ -78,7 +84,7 @@ header.amp-wp-header{
             border-bottom: 6px solid transparent;
             float: right;
             color: #0f3a78;
-            margin-top: 0;
+            margin-top: -3px;
           }
         }
         ul{
@@ -172,7 +178,6 @@ header.amp-wp-header{
       }
     }
   }
-
 }
 amp-sidebar[side][open]{
   width: 350px;
