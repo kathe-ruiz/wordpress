@@ -227,7 +227,7 @@ gulp.task('amp-styles', function() {
   gulp.src(path.source + 'styles/amp.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(_.sourcemaps.write("./"))
-    .pipe(gulp.dest(path.dist + 'styles'))
+    .pipe(gulp.dest('amp/'))
     .pipe(browserSync.stream());
 })
 

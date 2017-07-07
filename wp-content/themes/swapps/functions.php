@@ -39,6 +39,7 @@ function my_theme_setup(){
 
 //Start Register Custom Navigation
 require_once('wp_bootstrap_navwalker.php');
+require_once('wp_amp_navwalker.php');
 require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
 require_once('includes/custom-pagination.php');
