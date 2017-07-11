@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <title> <?php echo get_bloginfo(); ?> | Blogs</title>
+    <title><?php echo get_bloginfo(); ?> | Blogs</title>
     <link rel="canonical" href="<?php echo get_home_url(); ?>" />
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -16,9 +16,9 @@
         "publisher":
           {
             "@type":"Organization",
-            "name":"Zuckerman Law - Whistleblower Lawyers"
+            "name":"<?php echo get_bloginfo(); ?> | Blogs"
           },
-        "headline":"Zuckerman Law",
+        "headline":"<?php echo get_bloginfo(); ?>",
         "author":
           {
             "@type":"Person",
@@ -444,12 +444,12 @@
         <hr class="divider divider--list">
       <?php endwhile; ?>
 
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center paginator">
       <?php if ($postslist->query_vars['paged'] > 1): ?>
-        <a href="?paged=<?php echo $postslist->query_vars['paged'] -1; ?>">Older Entries</a>
+        <a href="?paged=<?php echo $postslist->query_vars['paged'] -1; ?>" class="older">Older</a>
       <?php endif ?>
       <?php if ($postslist->query_vars['paged'] < $postslist->max_num_pages): ?>
-        <a href="?paged=<?php echo $postslist->query_vars['paged'] + 1; ?>">Next Entries</a>
+        <a href="?paged=<?php echo $postslist->query_vars['paged'] + 1; ?>" class="next">Next</a>
       <?php endif ?>
       <?php
         wp_reset_postdata();

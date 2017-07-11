@@ -1,8 +1,17 @@
 .amp-wp-blog{
   font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
   .header-blog-list{
-    h1{
+    .title-blog-list{
       font-size: 27px;
+      margin-bottom: 32px;
+      &:after{
+        content: '';
+        display: block;
+        width: 120px;
+        height: 3px;
+        background: #0f3a78;
+        margin-top: 10px;
+      }
     }
   }
   .blog-item{
@@ -54,5 +63,41 @@
     border: 0;
     border-top: 1px dashed;
     border-top-color: #bcbcbc;
+  }
+}
+.paginator{
+  margin-top: 25px;
+  clear: both;
+  display: block;
+  .next,
+  .older{
+    color: inherit;
+    font-weight: 300;
+    margin: 0 5px;
+    border-radius: 25px;
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    &:hover{
+      background-color: #eee;
+      border-color: #ddd;
+    }
+  }
+  .next{
+    &:after{
+      content: '>>';
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 12px;
+    }
+  }
+  .older{
+    &:before{
+      content: '<<';
+      display: inline-block;
+      margin-right: 5px;
+      font-size: 12px;
+    }
   }
 }
