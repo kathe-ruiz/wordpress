@@ -404,20 +404,33 @@
   <body>
     <?php include "amp/header-bar.php"; ?>
     <article class="amp-wp-article">
-      <?php if (!have_posts()) : ?>
+    <?php
+    $paged = (array_key_exists('paged', $_GET)) ? $_GET['paged'] : 1;
+    $args = array( 'posts_per_page' => 5, 'paged' => $paged,'post_type' => 'post' );
+    $postslist = new WP_Query( $args );
+    ?>
+      <?php if (!$postslist->have_posts()) : ?>
         <div class="alert alert-warning">
           <?php _e('Sorry, no results were found.', 'sage'); ?>
         </div>
         <?php get_search_form(); ?>
       <?php endif; ?>
 
-      <?php while (have_posts()) : the_post(); ?>
+      <?php while ($postslist->have_posts()) : $postslist->the_post(); ?>
         <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
         <hr class="divider divider--list">
       <?php endwhile; ?>
 
       <div class="col-md-12 text-center">
-        <?php echo custom_pagination() ?>
+      <?php if ($postslist->query_vars['paged'] > 1): ?>
+        <a href="?paged=<?php echo $postslist->query_vars['paged'] -1; ?>">Older Entries</a>
+      <?php endif ?>
+      <?php if ($postslist->query_vars['paged'] < $postslist->max_num_pages): ?>
+        <a href="?paged=<?php echo $postslist->query_vars['paged'] + 1; ?>">Next Entries</a>
+      <?php endif ?>
+      <?php
+        wp_reset_postdata();
+      ?>
       </div>
     </article>
     <?php include "amp/footer.php"; ?>
