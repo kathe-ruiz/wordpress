@@ -6,7 +6,7 @@
         <h2 class="heading__title"><?php echo $row_item['video_title'] ?></h2>
       </div>
     <?php endif; ?>
-    <i class="fa fa-play-circle video__icon" aria-hidden="true" data-target="#video-<?php echo $video_id ?>"></i>
+    <i class="fa fa-play-circle video__icon <?php echo($row['background_color']) ?>" aria-hidden="true" data-target="#video-<?php echo $video_id ?>"></i>
     <?php if (isset($row_item['video_description']) ): ?>
       <p class="video__text"><?php echo strip_tags($row_item['video_description']) ?></p>
     <?php endif; ?>
