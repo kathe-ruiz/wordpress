@@ -402,6 +402,7 @@
       <?php if (function_exists('sw_options') && sw_options('blog_description')): ?>
         <p class="description-blog-list"><?php echo sw_options('blog_description'); ?></p>
       <?php endif ?>
+      <hr>
       </header>
     <?php
     $paged = (array_key_exists('paged', $_GET)) ? $_GET['paged'] : 1;
