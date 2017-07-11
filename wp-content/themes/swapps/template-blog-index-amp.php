@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Zuckerman Law</title>
+    <title> <?php echo get_bloginfo(); ?> | Blogs</title>
     <link rel="canonical" href="<?php echo get_home_url(); ?>" />
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <script type="application/ld+json">
@@ -302,15 +301,7 @@
       amp-carousel > amp-img > img {
         object-fit: contain;
       }
-
-      .amp-wp-iframe-placeholder {
-        background: #c2c2c2 url( https://glass-ceiling-discrimination.wp.swapps.in/wp-content/plugins/amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
-        background-size: 48px 48px;
-        min-height: 48px;
-      }
-
       /* Article Footer Meta */
-
       .amp-wp-article-footer .amp-wp-meta {
         display: block;
       }
@@ -403,7 +394,15 @@
   </head>
   <body>
     <?php include "amp/header-bar.php"; ?>
-    <article class="amp-wp-article">
+    <article class="amp-wp-article amp-wp-blog">
+      <header class="header-blog-list">
+      <?php if (function_exists('sw_options') && sw_options('blog_header')): ?>
+        <h1 class="title-blog-list"><?php echo sw_options('blog_header'); ?></h1>
+      <?php endif ?>
+      <?php if (function_exists('sw_options') && sw_options('blog_description')): ?>
+        <p class="description-blog-list"><?php echo sw_options('blog_description'); ?></p>
+      <?php endif ?>
+      </header>
     <?php
     $paged = (array_key_exists('paged', $_GET)) ? $_GET['paged'] : 1;
     $args = array( 'posts_per_page' => 5, 'paged' => $paged,'post_type' => 'post' );
@@ -417,7 +416,31 @@
       <?php endif; ?>
 
       <?php while ($postslist->have_posts()) : $postslist->the_post(); ?>
-        <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
+        <article <?php post_class( 'blog-item' ); ?>>
+          <header class="heading-underline">
+            <h2 class="h3 heading-underline__title entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          </header>
+          <?php if (has_post_thumbnail()): ?>
+            <a href="<?php the_permalink(); ?>">
+              <?php
+                $thumb_id = get_post_thumbnail_id();
+                $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+                $thumb_url = $thumb_url_array[0];
+               ?>
+               <amp-img src="<?php echo $thumb_url; ?>" width="750" height="420" layout="responsive"></amp-img>
+            </a>
+          <?php endif ?>
+          <div class="blog-item__description entry-summary">
+            <?php the_excerpt(); ?>
+          </div>
+          <footer class="blog-item__footer">
+            <div class="row">
+              <div class="col-md-12">
+                <?php get_template_part('templates/entry-meta'); ?>
+              </div>
+            </div>
+          </footer>
+        </article>
         <hr class="divider divider--list">
       <?php endwhile; ?>
 
