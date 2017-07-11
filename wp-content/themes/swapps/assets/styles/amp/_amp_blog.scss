@@ -1,0 +1,58 @@
+.amp-wp-blog{
+  font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+  .header-blog-list{
+    h1{
+      font-size: 27px;
+    }
+  }
+  .blog-item{
+    .heading-underline__title{
+      a{
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      margin-bottom: 32px;
+      &:after{
+        content: '';
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: #0f3a78;
+        margin-top: 5px;
+      }
+    }
+    .entry-meta{
+      font-size: 15px;
+      .entry-meta__item{
+        &.entry-meta__item--right{
+          float: right;
+          a{
+            color: inherit;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        &.author{
+          a{
+            color: inherit;
+            text-decoration: none;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  hr{
+    border-style: dashed;
+    border: 0;
+    border-top: 1px dashed;
+    border-top-color: #bcbcbc;
+  }
+}
