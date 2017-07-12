@@ -1,8 +1,8 @@
 .video{
   min-height: 550px;
-  padding-bottom: 120px;
-  padding-top: 95px;
   color: $subscribe-text-color;
+  display: flex;
+  align-items: center;
   .relative{
     position: relative;
   }
