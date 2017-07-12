@@ -1,0 +1,196 @@
+header.amp-wp-header{
+  box-shadow: 0 0 8px hsla(0,0%,7%,.2);
+  .link_phone{
+    float: right;
+    .phone{
+      background: none;
+      border:0;
+    }
+  }
+  #button-menu{
+    float: right;
+  }
+  #button-menu,
+  .link_phone{
+    margin-top: 15px;
+  }
+  .custom-logo {
+    margin-top: 12px;
+  }
+  #button-menu{
+    border:0px;
+    background: transparent;
+    .icon-bar{
+      &:before{
+        content: '';
+        display: block;
+        background: #0f3a78;
+        height: 2px;
+        width: 20px;
+        margin: 4px 3px;
+      }
+    }
+  }
+}
+#sidebar{
+  .ampstart-btn{
+    display: none;
+  }
+  .amp-close-image{
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+  }
+  #button-menu{
+    span{
+      display: none;
+    }
+  }
+  > amp-accordion > section h4{
+    border: 0px;
+  }
+  amp-accordion{
+    clear: both;
+    .nav.navbar-nav{
+      font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+      li{
+        text-transform: uppercase;
+      }
+    }
+    .menu-item-has-children{
+      a{
+        position: relative;
+      }
+      a + amp-accordion{
+        margin-top: -33px;
+        z-index: 9;
+        h4{
+          padding: 8px 15px;
+          padding-top: 15px;
+          background: transparent;
+          border:0px;
+          outline: 0;
+          p{
+            height: 15px;
+            margin-bottom: 0;
+          }
+          &:before{
+            content: '';
+            width: 0;
+            height: 0;
+            vertical-align: middle;
+            border-left: 6px dashed;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            float: right;
+            color: #0f3a78;
+            margin-top: -3px;
+          }
+        }
+        ul{
+          li{
+            padding-left: 40px;
+          }
+        }
+        section[expanded] > h4:before{
+          border-top: 6px dashed;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          margin-top: 0px;
+        }
+      }
+      a.dropdown-toggle{
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 1px;
+          background: red;
+          margin-top: 26px;
+        }
+      }
+    }
+  }
+  amp-accordion#accordion{
+    .nav.navbar-nav{
+      li{
+        font-size: 15px;
+        a{
+          text-decoration: none;
+          color: #333;
+          z-index: 2;
+        }
+      }
+      > li.menu-item-users:not(.menu-item-has-children){
+        padding:0px;
+        > a{
+          padding: 9px 15px;
+        }
+        ul{
+          list-style: none;
+          background: #EAF4FA;
+          li{
+            padding:5px 0px;
+            padding-left: 40px;
+            a{
+              display: block;
+            }
+          }
+        }
+      }
+      > li:first-child{
+        border-top: 0px;
+      }
+      > li > a{
+        font-weight: bold;
+        display: block;
+      }
+      > li:not(.menu-item-has-children) {
+        padding: 8px 15px;
+      }
+      > li.menu-item-has-children > a{
+        margin-left: 15px;
+      }
+      li .menu-item:not(.menu-item-has-children) a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -10px;
+        color: #748EB3;
+      }
+      .menu-item amp-accordion ul li ul li{
+        padding-left: 40px;
+        background: #D5E6F0;
+      }
+      amp-accordion{
+        ul{
+           li:not(.menu-item-has-children){
+            padding: 11px 15px 11px 40px;
+            a{
+              display: block;
+            }
+          }
+          li{
+            background: #EAF4FA;
+            line-height: 1;
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+amp-sidebar[side][open]{
+  width: 350px;
+}
+.hide{
+  display: none;
+}
+.amp-wp-header{
+  &.navbar--dark{
+    background: #000;
+  }
+  &.navbar--light,
+  &.navbar--transparent{
+    background: rgba(255,255,255, 0.9);
+  }
+}
