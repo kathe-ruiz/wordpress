@@ -56,9 +56,7 @@ $add_logos = function($args){
 $update_slider = function($args){
 	/* gets an slider and updates its first slide */
 	$post_id = $args[0];
-	// WP_CLI::success($args);
 	$json = (array)json_decode($args[1]);
-	WP_CLI::success(var_dump($json));
 	if (get_post_type($post_id) == "slider" && have_rows('slide', $post_id)) {
 		update_row( "slide", 1, $json, $post_id );
 	}
