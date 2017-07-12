@@ -488,3 +488,12 @@ add_action('init', function() {
     }
   }
 });
+
+add_action( 'wp_head', 'amp_home_add_canonical' );
+
+function amp_home_add_canonical() {
+  if (is_plugin_active('amp/amp.php') && is_home()) {
+    $amp_url = get_home_url().'/amp/';
+    printf( '<link rel="amphtml" href="%s" />', esc_url( $amp_url ) );
+  }
+}
