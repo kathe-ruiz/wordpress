@@ -53,5 +53,16 @@ $add_logos = function($args){
 
 };
 
+$update_slider = function($args){
+	/* gets an slider and updates its first slide */
+	$post_id = $args[0];
+	$json = (array)json_decode($args[1]);
+	if (get_post_type($post_id) == "slider" && have_rows('slide', $post_id)) {
+		update_row( "slide", 1, $json, $post_id );
+	}
+
+};
+
 WP_CLI::add_command( 'update-swoptions', $update_swoptions );
 WP_CLI::add_command( 'add_logos', $add_logos );
+WP_CLI::add_command( 'update-slide', $update_slider );

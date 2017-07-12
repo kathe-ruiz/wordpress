@@ -470,6 +470,9 @@ if(!SUPERUSER == wp_get_current_user()){
 }
 
 add_action('init', function() {
+  if (!is_plugin_active('amp/amp.php')) {
+    return;
+  }
   $url_path = parse_url(add_query_arg(array()), PHP_URL_PATH);
   $url_path = explode('/', $url_path);
   $key = array_search('amp', $url_path);
@@ -485,3 +488,12 @@ add_action('init', function() {
     }
   }
 });
+
+add_action( 'wp_head', 'amp_home_add_canonical' );
+
+function amp_home_add_canonical() {
+  if (is_plugin_active('amp/amp.php') && is_home()) {
+    $amp_url = get_home_url().'/amp/';
+    printf( '<link rel="amphtml" href="%s" />', esc_url( $amp_url ) );
+  }
+}
