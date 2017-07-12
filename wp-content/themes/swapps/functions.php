@@ -39,6 +39,7 @@ function my_theme_setup(){
 
 //Start Register Custom Navigation
 require_once('wp_bootstrap_navwalker.php');
+require_once('wp_amp_navwalker.php');
 require_once('swapps_default_menu.php');
 require_once('breadcrumb.php');
 require_once('includes/custom-pagination.php');
@@ -466,4 +467,33 @@ function hide_msg__admins(){
 }
 if(!SUPERUSER == wp_get_current_user()){
   add_action( 'admin_head', 'hide_msg__admins');
+}
+
+add_action('init', function() {
+  if (!is_plugin_active('amp/amp.php')) {
+    return;
+  }
+  $url_path = parse_url(add_query_arg(array()), PHP_URL_PATH);
+  $url_path = explode('/', $url_path);
+  $key = array_search('amp', $url_path);
+  if ($key !== false) {
+    unset($url_path[$key]);
+    $url_path = get_home_url().implode('/', $url_path);
+    $post = url_to_postid($url_path);
+    $home = (int)get_option('page_on_front');
+    if ($post == 0 && $home == 0) {
+      $overridden_template = locate_template( 'template-blog-index-amp.php' );
+      load_template( $overridden_template );
+      exit();
+    }
+  }
+});
+
+add_action( 'wp_head', 'amp_home_add_canonical' );
+
+function amp_home_add_canonical() {
+  if (is_plugin_active('amp/amp.php') && is_home()) {
+    $amp_url = get_home_url().'/amp/';
+    printf( '<link rel="amphtml" href="%s" />', esc_url( $amp_url ) );
+  }
 }

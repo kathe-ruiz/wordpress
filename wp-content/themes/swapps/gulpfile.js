@@ -20,6 +20,7 @@ var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var sassVariables = require('gulp-sass-variables');
+var _ = require('gulp-load-plugins')({lazy: false})
 var convert = require('color-convert');
 var env = require('gulp-env');
 env({file: "../../../.env",type: 'ini',}); // if the file can be found via `require`
@@ -222,6 +223,14 @@ gulp.task('fonts', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('amp-styles', function() {
+  gulp.src(path.source + 'styles/amp.scss')
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(_.sourcemaps.write("./"))
+    .pipe(gulp.dest('amp/'))
+    .pipe(browserSync.stream());
+})
+
 // ### Images
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
@@ -266,6 +275,7 @@ gulp.task('watch', function() {
     }
   });
   gulp.watch([path.source + 'styles/**/*', '../../../.env'], ['styles']);
+  gulp.watch([path.source + 'styles/amp.scss'], ['amp-styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
