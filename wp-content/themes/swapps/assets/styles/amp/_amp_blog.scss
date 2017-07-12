@@ -22,11 +22,13 @@
       a{
         text-decoration: none;
         color: inherit;
+        font-size: 16px;
         &:hover{
           text-decoration: underline;
         }
       }
       margin-bottom: 32px;
+      font-size: 25px;
       &:after{
         content: '';
         display: block;
