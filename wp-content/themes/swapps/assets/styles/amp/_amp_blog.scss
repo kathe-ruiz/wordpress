@@ -1,20 +1,22 @@
+.header-blog-list{
+  font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+  .header-content{
+    background: rgba(0,0,0,.65);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+  }
+  .title-blog-list{
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
 .amp-wp-blog{
   font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0 20px;
-  .header-blog-list{
-    .title-blog-list{
-      font-size: 27px;
-      margin-bottom: 32px;
-      &:after{
-        content: '';
-        display: block;
-        width: 120px;
-        height: 3px;
-        background: #0f3a78;
-        margin-top: 10px;
-      }
-    }
-  }
   .blog-item{
     .heading-underline__title{
       a{

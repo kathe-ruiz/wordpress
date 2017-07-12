@@ -390,20 +390,31 @@
       text-decoration: underline;
       }
       <?php include 'amp/amp.css' ?>
+      <?php if (function_exists('get_custom_logo') && get_theme_mod( 'blog_header_image' )):
+      $custom_logo_id = get_theme_mod( 'blog_header_image' );
+      $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+      $custom_logo = $image[0];?>
+        .header-blog-list{
+          background: url(<?php echo $custom_logo; ?>);
+          background-size: cover;
+          background-position: center;
+        }
+      <?php endif;?>
     </style>
   </head>
   <body>
     <?php include "amp/header-bar.php"; ?>
-    <article class="amp-wp-article amp-wp-blog">
-      <header class="header-blog-list">
+    <header class="header-blog-list">
+      <div class="header-content">
       <?php if (function_exists('sw_options') && sw_options('blog_header')): ?>
         <h1 class="title-blog-list"><?php echo sw_options('blog_header'); ?></h1>
       <?php endif ?>
       <?php if (function_exists('sw_options') && sw_options('blog_description')): ?>
         <p class="description-blog-list"><?php echo sw_options('blog_description'); ?></p>
       <?php endif ?>
-      <hr>
-      </header>
+      </div>
+    </header>
+    <article class="amp-wp-article amp-wp-blog">
     <?php
     $paged = (array_key_exists('paged', $_GET)) ? $_GET['paged'] : 1;
     $args = array( 'posts_per_page' => 5, 'paged' => $paged,'post_type' => 'post' );
