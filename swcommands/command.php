@@ -28,14 +28,19 @@ function uploadRemoteImageAndAttach($image_url){
     return $attach_id;
 }
 
+# https://stackoverflow.com/questions/2934563/how-to-decode-unicode-escape-sequences-like-u00ed-to-proper-utf-8-encoded-cha
+function fix_ascii($str){
+	$str = preg_replace_callback('/\\\\u([0-9a-fA-F]{4})/', function ($match) { return mb_convert_encoding(pack('H*', $match[1]), 'UTF-8', 'UCS-2BE'); }, $str);
+	return $str;
+}
+
 $update_swoptions = function($args) {
 	/* updates the sw_theme_options with the given json */
-	include_once('wp-config.php');
 	$current_options = get_option('sw_theme_options');
 	if (!$current_options) {
 		$current_options = array();
 	}
-	$json = (array)json_decode($args[0]);
+	$json = (array)json_decode(fix_ascii($args[0]));
 	$result = array_merge($current_options, $json);
 	update_option('sw_theme_options', $result);
 	$current_options = get_option('sw_theme_options');
@@ -56,7 +61,7 @@ $add_logos = function($args){
 $update_slider = function($args){
 	/* gets an slider and updates its first slide */
 	$post_id = $args[0];
-	$json = (array)json_decode($args[1]);
+	$json = (array)json_decode(fix_ascii($args[1]));
 	if (get_post_type($post_id) == "slider" && have_rows('slide', $post_id)) {
 		update_row( "slide", 1, $json, $post_id );
 	}
