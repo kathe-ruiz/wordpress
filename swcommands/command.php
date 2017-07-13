@@ -31,6 +31,7 @@ function uploadRemoteImageAndAttach($image_url){
 # https://stackoverflow.com/questions/2934563/how-to-decode-unicode-escape-sequences-like-u00ed-to-proper-utf-8-encoded-cha
 function fix_ascii($str){
 	$str = preg_replace_callback('/\\\\u([0-9a-fA-F]{4})/', function ($match) { return mb_convert_encoding(pack('H*', $match[1]), 'UTF-8', 'UCS-2BE'); }, $str);
+	$str = str_replace("\\", "", $str);
 	return $str;
 }
 
