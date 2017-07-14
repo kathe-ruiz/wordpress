@@ -470,6 +470,9 @@ if(!SUPERUSER == wp_get_current_user()){
 }
 
 add_action('init', function() {
+  if (!function_exists('is_plugin_active')) {
+    return;
+  }
   if (!is_plugin_active('amp/amp.php')) {
     return;
   }
