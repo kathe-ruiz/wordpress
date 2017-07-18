@@ -108,3 +108,6 @@ require_once(ABSPATH . 'wp-settings.php');
 
 define('FONT_NAME', getenv("MAIN_FONT_NAME")?:"Montserrat");
 define('PARAGRAPHS_SECONDARY_FONT_NAME', getenv("PARAGRAPHS_SECONDARY_FONT_NAME")?:"Playfair Display");
+define('WP_SHOW_ALL_SIDEBAR_ITEMS', filter_var(
+    getenv('SHOW_ALL_SIDEBAR_ITEMS'), FILTER_VALIDATE_BOOLEAN
+    )?:False);
