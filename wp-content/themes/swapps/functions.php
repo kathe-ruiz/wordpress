@@ -500,3 +500,14 @@ function amp_home_add_canonical() {
     printf( '<link rel="amphtml" href="%s" />', esc_url( $amp_url ) );
   }
 }
+
+# Seriously Simple Podcasting: Remove metadata links from episode meta data
+# https://gist.github.com/hlashbrooke/a1185df7576b3ff4fd28
+add_filter( 'ssp_episode_meta_details', 'ssp_remove_download_link', 10, 3 );
+function ssp_remove_download_link ( $meta, $episode_id, $context ) {
+  unset( $meta['link'] );
+  unset( $meta['new_window'] );
+  unset( $meta['date_recorded'] );
+  unset( $meta['duration'] );
+  return $meta;
+}
