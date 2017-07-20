@@ -72,3 +72,5 @@ supported_plugins:
     - "wpackagist-plugin/woocommerce-gateway-stripe": "3.2.0"
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
+- "seriously-simple-podcasting":
+    - "wpackagist-plugin/seriously-simple-podcasting": "1.16.4"
