@@ -40,3 +40,11 @@
       }
     }
 }
+.podcast-info{
+  margin-top: 15px;
+  .ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
