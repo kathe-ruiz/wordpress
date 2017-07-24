@@ -87,3 +87,7 @@
     margin-top: 1em;
   }
 } 
+// Remove breadcrumb margin
+.single-podcast .breadcrumb{
+  margin-bottom: 0;
+}
