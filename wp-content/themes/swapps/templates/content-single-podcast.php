@@ -10,11 +10,10 @@
   </div>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-      
       <?php
-      $posts_array = get_posts(
+      $query = new WP_Query(
           array(
-              'posts_per_page' => -1,
+              'posts_per_page' => 10,
               'post_type' => 'podcast',
               // 'tax_query' => array(
               //     array(
@@ -24,17 +23,14 @@
               //     )
               // )
           )
-      );
-      ?>
-
-    <?php foreach ($posts_array as $key => $podcast): ?>
-      <?php include(locate_template( 'templates/podcast-item.php' )) ?>
-    <?php endforeach ?>
+      );?>
+      <?php foreach ($query->posts as $key => $podcast): ?>
+        <?php include(locate_template( 'templates/podcast-item.php' )) ?>
+      <?php endforeach ?>
       <div class="col-md-4">
         <?php echo $key; ?>
         <?php print_r($podcast); ?>
       </div>
-
     </div>
   </div>
 </div>
@@ -45,3 +41,7 @@
     </div>
   </div>
 </div>
+<div class="col-md-12 text-center">
+  <?php echo custom_pagination($query) ?>
+</div>
+
