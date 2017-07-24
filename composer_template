@@ -47,11 +47,11 @@
             "type": "package",
             "package": {
                 "name": "wp-accountant",
-                "version": "0.1.4",
+                "version": "0.1.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-accountant.git",
                     "type": "git",
-                    "reference": "0.1.4"
+                    "reference": "0.1.5"
                 }
             }
 
