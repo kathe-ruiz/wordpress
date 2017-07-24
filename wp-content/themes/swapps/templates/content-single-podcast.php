@@ -24,6 +24,13 @@
 <?php endwhile; ?>
 <div class="container">
   <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">More from</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      
       <?php
       $posts_array = get_posts(
           array(
@@ -39,9 +46,6 @@
           )
       );
       ?>
-    <div class="col-md-12">
-      <h2>More from</h2>
-    </div>
 
     <?php foreach ($posts_array as $key => $podcast): ?>
       <div class="col-md-4 col-sm-6 col-xs-12 podcast-item">
@@ -57,16 +61,16 @@
               </div>
               <?php $image = get_the_post_thumbnail(
                 $podcast->ID, array( 290, 121), array(
-                  'class'  => 'img-responsive',
+                  'class'  => 'img-responsive center-block',
                   'width'  => 290,
                   'height' => 121));?>
               <?php if ($image): ?>
                 <?php echo $image; ?>
               <?php else: ?>
-                <img alt="Podcasts" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdocast-default-image.png" class="img-responsive" width="290" height="121">
+                <img alt="Podcasts" src="<?php echo get_template_directory_uri(); ?>/assets/images/pdocast-default-image.png" class="img-responsive center-block" width="290" height="121">
               <?php endif ?>
           </div>
-          <div class="podcast-info">
+          <div class="podcast-info text-center">
               <div class="title ellipsis">
                   <a href="/sermons/01583-hello">
                     <?php echo $podcast->post_title ?>
@@ -81,6 +85,7 @@
         <?php print_r($podcast); ?>
       </div>
 
+    </div>
   </div>
 </div>
 <div class="container">
