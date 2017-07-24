@@ -37,6 +37,24 @@
     }
   }
 }
+.btn-podcast{
+  margin-top: 0;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border-radius: 0;
+  font-weight: 700;
+  border-width: 3px;
+  border-color: #262441;
+  border-style: solid;
+  color: #262441;
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: transparent;
+  &:hover{
+    border-color: #ee4729;
+    color: #ee4729;
+  }
+}
 
 
 
