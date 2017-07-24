@@ -3,7 +3,7 @@
         <div class="reveal-link">
             <div class="actions">
                 <p>
-                  <a class="button button-wht" href="/podcasts/01583-hello">
+                  <a class="button button-wht" href="<?php echo get_permalink($podcast->ID) ?>">
                     Listen
                   </a>
                 </p>
@@ -22,10 +22,12 @@
     </div>
     <div class="podcast-info text-center">
         <div class="title ellipsis text-uppercase">
-            <a href="/sermons/01583-hello">
+            <a href="<?php echo get_permalink($podcast->ID) ?>">
               <?php echo $podcast->post_title ?>
             </a>
         </div>
         <span><?php echo $podcast->post_date ?></span>
+        <?php // echo $key; ?>
+        <?php // print_r($podcast); ?>
     </div>
 </div>

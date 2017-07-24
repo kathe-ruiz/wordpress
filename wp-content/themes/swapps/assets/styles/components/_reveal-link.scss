@@ -1,6 +1,9 @@
 .podcast-image{
   position: relative;
 }
+.podcast-title{
+  margin: 20px 0;
+}
 .reveal-link {
     background-color: white;
     background-repeat: no-repeat;
@@ -32,9 +35,10 @@
         font-weight: 700;
         padding: 8px 31px;
         text-align: center;
+        transition: all 0.2s;
         &:hover{
-          border: 3px rgba(contrast_function($brand-primary), .7) solid;
-          color: rgba(contrast_function($brand-primary), .7) !important;
+          background-color: contrast_function($brand-primary);
+          color: $brand-primary;
           text-decoration: none;
         }
       }
@@ -47,4 +51,39 @@
     white-space: nowrap;
     overflow: hidden;
   }
+  .title a{
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    line-height: 1.3;
+    &:hover{
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+  span{
+    font-weight: 300;
+  }
 }
+.related-podcasts{
+  padding: 50px 0;
+  .list-title{
+    font-weight: 300;
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+.podcast-detail .row.card-wrapper{
+  padding-top: 50px;
+}
+.podcast .card{
+  padding-bottom: 25px;
+  .entry-meta{
+    margin: 0 !important;
+  }
+  .podcast_meta{
+    margin-top: 1em;
+  }
+} 
