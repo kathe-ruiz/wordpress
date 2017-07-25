@@ -69,6 +69,19 @@ $update_slider = function($args){
 
 };
 
+$change_posts_to_podcasts = function($args){
+	/* change posts to podcasts. Exclusively for wlcc */
+
+	$args = array('meta_query' => array(array('key' => 'audio_file', 'compare' => 'EXISTS')), 'post_type' => array('post'), 'numberposts' => -1);
+
+	$posts = get_posts($args);
+	foreach ($posts as $post) {
+		set_post_type($post->ID, 'podcast' );
+	}
+
+};
+
 WP_CLI::add_command( 'update-swoptions', $update_swoptions );
 WP_CLI::add_command( 'add_logos', $add_logos );
 WP_CLI::add_command( 'update-slide', $update_slider );
+WP_CLI::add_command( 'post-to-podcasts', $change_posts_to_podcasts );
