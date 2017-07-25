@@ -1,0 +1,110 @@
+.podcast-image{
+  position: relative;
+}
+.podcast-title{
+  margin: 20px 0;
+}
+.reveal-link {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $brand-primary;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      transition: opacity 0.5s ease;
+      opacity: 1;
+    }
+    .actions{
+      text-align: center;
+      margin: auto;
+      .button-wht{
+        @include text-contrast($brand-primary);
+        background-color: transparent;
+        border: 3px contrast_function($brand-primary) solid;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 8px 31px;
+        text-align: center;
+        transition: all 0.2s;
+        &:hover{
+          background-color: contrast_function($brand-primary);
+          color: $brand-primary;
+          text-decoration: none;
+        }
+      }
+    }
+}
+.podcast-info{
+  margin-top: 15px;
+  .ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .title a{
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    line-height: 1.3;
+    &:hover{
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+  span{
+    font-weight: 300;
+  }
+}
+.related-podcasts{
+  padding: 50px 0;
+  .list-title{
+    font-weight: 300;
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+.podcast-detail .row.card-wrapper{
+  padding-top: 50px;
+}
+.podcast .card{
+  padding-bottom: 25px;
+  .entry-meta{
+    margin: 0 !important;
+  }
+  .podcast_meta{
+    margin-top: 1em;
+  }
+}
+  // Remove breadcrumb margin
+  .single-podcast .breadcrumb{
+    margin-bottom: 0;
+  }
+
+
+.card-wrapper{
+  background-color: #EFEFEF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card{
+  background-color: #FFF;
+  padding: 15px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+}
+.podcast-list{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+

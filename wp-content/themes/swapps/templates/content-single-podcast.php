@@ -1,27 +1,49 @@
+
 <?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
-    <header class="content-single">
-      <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 content-single__div">
-          <h1 class="text-center"><?php the_title() ?></h1>
-          <div class="card-wrapper">
-            <div class="card">
-              <?php if ( has_post_thumbnail() ) : ?>
-                <?php the_post_thumbnail('medium_large', array( 'class' => "img-responsive center-block content-single__image full-width")) ?>
-              <?php else: ?>
-                <img src="/wp-content/themes/swapps/assets/images/pdocast-default-image.png" alt="Podcast image" class="img-responsive center-block content-single__image full-width">
-              <?php endif; ?>
-                <div class="entry-content content-single__text">
-                  <?php the_content(); ?>
-                </div>
-              <?php get_template_part('templates/entry-meta'); ?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <footer>
-      <?php comments_template('/templates/comments.php'); ?>
-    </footer>
-  </article>
+  <section class="podcast-detail">
+    <?php get_template_part( 'templates/podcast', 'head' ) ?>
+  </section>
 <?php endwhile; ?>
+<section class="related-podcasts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="h3 list-title text-center">More from <strong>Series</strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <?php
+      $series_array = [];
+      $series = get_the_terms(get_the_ID(), 'series');
+      foreach ($series as $serie) {
+        array_push($series_array, $serie->term_id);
+      };
+      $query = new WP_Query(
+          array(
+              'posts_per_page' => 9,
+              'post_type' => 'podcast',
+              'tax_query' => array(
+                  array(
+                      'taxonomy' => 'series',
+                      'field' => 'term_id',
+                      'terms' => $series_array,
+                  )
+              )
+          )
+      );?>
+      <?php foreach ($query->posts as $key => $podcast): ?>
+        <?php include(locate_template( 'templates/podcast-item.php' )) ?>
+      <?php endforeach ?>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <?php comments_template('/templates/comments.php'); ?>
+    </div>
+  </div>
+</div>
