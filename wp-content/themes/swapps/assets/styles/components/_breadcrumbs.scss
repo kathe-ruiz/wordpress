@@ -1,6 +1,9 @@
 .breadcrumb{
   border-radius: 0;
   margin-bottom: 50px;
+  .no-margin &{
+    margin-bottom: 0;
+  }
   @media (max-width: $screen-sm-max){
     padding: 20px 0;
   }

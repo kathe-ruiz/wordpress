@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="document">
+    <div class="document no-margin">
     <?php if (!(is_front_page() && get_option('show_on_front') == 'page') ): get_template_part('templates/page', 'header'); endif; ?>
     <div class="wrap container-fluid" role="document">
       <div class="content row">

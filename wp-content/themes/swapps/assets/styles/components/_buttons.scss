@@ -50,9 +50,10 @@
   font-size: 20px;
   line-height: 1.2;
   background-color: transparent;
+  transition: all 0.2s;
   &:hover{
-    border-color: #ee4729;
-    color: #ee4729;
+    border-color: $brand-primary;
+    color: $brand-primary;
   }
 }
 
