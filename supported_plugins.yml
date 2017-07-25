@@ -74,3 +74,5 @@ supported_plugins:
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
 - "seriously-simple-podcasting":
     - "wpackagist-plugin/seriously-simple-podcasting": "1.16.4"
+- "list-category-posts":
+    - "wpackagist-plugin/list-category-posts": "0.72"
