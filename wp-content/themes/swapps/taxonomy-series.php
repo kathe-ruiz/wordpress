@@ -16,7 +16,7 @@
     <div class='sermon-search search-bar row'>
       <form accept-charset="UTF-8" action="/podcast" class="inline-form" method="get">
         <div class='form-group col-sm-9'>
-          <input class="form-control" id="q" name="q" placeholder="Search for a podcast" type="text" />
+          <input class="form-control" id="s" name="s" placeholder="Search for a podcast" type="text" />
         </div>
         <div class='form-group col-sm-3'>
           <button class="btn btn-podcast btn-block" name="button" type="submit">Search</button>
