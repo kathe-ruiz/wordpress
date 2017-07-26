@@ -72,3 +72,5 @@ supported_plugins:
     - "wpackagist-plugin/woocommerce-gateway-stripe": "3.2.0"
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
+- "instapage":
+    - "wpackagist-plugin/instapage": "3.1.9"
