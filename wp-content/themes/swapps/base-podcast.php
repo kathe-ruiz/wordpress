@@ -19,19 +19,19 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="document no-margin">
-    <div class="wrap container-fluid" role="document">
-      <div class="content row">
-        <main class="main <?php echo $col_size = (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) ? 'col-sm-8' : ( !(is_page_template('template-landing.php') || is_page_template('template-home.php')) ? 'col-sm-12' : '' ) ; ?>">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) : ?>
-          <aside class="sidebar <?php if (Setup\display_sidebar()): echo 'col-sm-4'; endif; ?>">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+    <div class="document no-margin" style="margin-top: 60px;">
+      <div class="wrap container-fluid" role="document">
+        <div class="content row">
+          <main class="main <?php echo $col_size = (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) ? 'col-sm-8' : ( !(is_page_template('template-landing.php') || is_page_template('template-home.php')) ? 'col-sm-12' : '' ) ; ?>">
+            <?php include Wrapper\template_path(); ?>
+          </main><!-- /.main -->
+          <?php if (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) : ?>
+            <aside class="sidebar <?php if (Setup\display_sidebar()): echo 'col-sm-4'; endif; ?>">
+              <?php include Wrapper\sidebar_path(); ?>
+            </aside><!-- /.sidebar -->
+          <?php endif; ?>
+        </div><!-- /.content -->
+      </div><!-- /.wrap -->
     </div>
     <?php
       do_action('get_footer');
