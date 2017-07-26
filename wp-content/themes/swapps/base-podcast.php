@@ -20,7 +20,6 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="document no-margin">
-    <?php if (!(is_front_page() && get_option('show_on_front') == 'page') ): get_template_part('templates/page', 'header'); endif; ?>
     <div class="wrap container-fluid" role="document">
       <div class="content row">
         <main class="main <?php echo $col_size = (Setup\display_sidebar() && is_active_sidebar('sidebar-primary')) ? 'col-sm-8' : ( !(is_page_template('template-landing.php') || is_page_template('template-home.php')) ? 'col-sm-12' : '' ) ; ?>">
