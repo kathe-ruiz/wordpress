@@ -26,15 +26,29 @@
   </div>
 </div>'
  ?>
-<div class="col-md-10 col-md-offset-1 podcast-list">
-  <?php while (have_posts()) : the_post(); ?>
-    <?php if ($row != 0): ?>
-      <?php $podcast = get_post(); ?>
-      <?php include(locate_template( 'templates/podcast-item.php' )) ?>
-    <?php endif ?>
-  <?php endwhile; ?>
-</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1 podcast-list">
+    <?php $key = 1 ?>
+    <?php while (have_posts()) : the_post(); ?>
+      <?php if ($row != 0): ?>
+        <?php $podcast = get_post(); ?>
+        <?php include(locate_template( 'templates/podcast-item.php' )) ?>
+      <?php endif ?>
 
-<div class="col-md-12 text-center">
-  <?php echo custom_pagination() ?>
+      <?php // Added to avoid problems with divs without same heigth ?>
+      <?php if ($key % 3 == 0): ?>
+        <div class="clearfix visible-md-block visible-lg-block"></div>
+      <?php endif ?>
+      <?php if ($key % 2 == 0): ?>
+        <div class="clearfix visible-sm-block"></div>
+      <?php endif ?>
+
+      <?php $key +=1 ?>
+    <?php endwhile; ?>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <?php echo custom_pagination() ?>
+  </div>
 </div>

@@ -41,6 +41,13 @@
       <?php if ($query and count($query->posts) > 0): ?>
         <?php foreach ($query->posts as $key => $podcast): ?>
           <?php include(locate_template( 'templates/podcast-item.php' )) ?>
+          <?php // Added to avoid problems with divs without same heigth ?>
+          <?php if (($key+1) % 3 == 0): ?>
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+          <?php endif ?>
+          <?php if (($key+1) % 2 == 0): ?>
+            <div class="clearfix visible-sm-block"></div>
+          <?php endif ?>
         <?php endforeach ?>
       <?php else: ?>
         <p class="h5 text-center">There are no other podcasts in this series: <?php echo $serie_name ?>. <a href="/podcasts/">See all podcasts</a></p>
