@@ -7,7 +7,9 @@
 
 <?php $row = 0; ?>
 <?php while (have_posts() and $row == 0) : the_post(); ?>
-  <?php get_template_part( 'templates/podcast', 'head' ) ?>
+  <?php //get_template_part( 'templates/podcast', 'head' ) ?>
+  <?php $listing = true ?>
+  <?php include(locate_template('templates/podcast-head.php')); ?>
   <?php $row = 1; ?>
 <?php endwhile; ?>
 

@@ -1,7 +1,20 @@
 <div class="row card-wrapper">
   <article <?php post_class(); ?>>
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 content-single__div">
-      <h1 class="podcast-title text-center">Messages</h1>
+      <?php if (isset($listing) and $listing): ?>
+        <h1 class="podcast-title text-center">Messages</h1>
+      <?php else: ?>
+        <?php
+          $series = get_the_terms(get_the_ID(), 'series');
+          if (isset($series[0])) {
+            $serie_id = $series[0]->term_id;
+            $serie_name = $series[0]->name;
+          }
+        ?>
+        <?php if (isset($serie_name )): ?>
+          <h1 class="podcast-title text-center"><?php echo $serie_name; ?></h1>
+        <?php endif ?>
+      <?php endif ?>
       <div class="card-wrapper">
         <div class="card">
           <?php if ( has_post_thumbnail() ) : ?>
@@ -13,7 +26,6 @@
             <div class="entry-content content-single__text">
               <?php the_content(); ?>
             </div>
-          <?php get_template_part('templates/entry-meta'); ?>
         </div>
       </div>
     </div>

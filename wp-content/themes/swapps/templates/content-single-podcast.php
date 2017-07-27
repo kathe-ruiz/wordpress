@@ -14,7 +14,6 @@
             'post__not_in' => array(get_the_ID()),
             'posts_per_page' => 9,
             'post_type' => 'podcast',
-            'orderby' => 'rand',
             'tax_query' => array(
                 array(
                     'taxonomy' => 'series',
@@ -32,7 +31,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="h3 list-title text-center">More from <strong><?php echo $serie_name ?></strong></h2>
+        <?php if (isset($serie_name)): ?>
+          <h2 class="h3 list-title text-center">
+            More from <strong><?php echo $serie_name ?></strong>
+          </h2>
+        <?php endif ?>
       </div>
     </div>
   </div>
