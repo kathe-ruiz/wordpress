@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-31 15:37-0500\n"
+"PO-Revision-Date: 2017-07-31 15:43-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11061,3 +11061,11 @@ msgstr "Clave de activación:"
 #: wp-activate.php:78
 msgid "Activation Key Required"
 msgstr "Requiere clave de activación"
+
+#: core/um-actions-login.php:192
+msgid "Keep me signed in"
+msgstr "Recordar Conexión"
+
+#: core/um-actions-login.php:225
+msgid "Forgot your password?"
+msgstr "¿Olvidó su contraseña?"
