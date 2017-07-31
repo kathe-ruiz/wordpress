@@ -2,14 +2,17 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-14 11:35:29+0000\n"
+"PO-Revision-Date: 2017-07-31 15:37-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "Language: es\n"
 "Project-Id-Version: WordPress - 4.8.x\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 
 #. translators: Translate this to the correct language tag for your locale, see
 #. https://www.w3.org/International/articles/language-tags/ for reference. Do
@@ -9890,6 +9893,9 @@ msgstr "Administrador del sitio"
 #: wp-login.php:743 wp-login.php:936
 msgid "Register"
 msgstr "Registrarse"
+
+msgid "Sign in"
+msgstr "Ingresar"
 
 #: wp-includes/general-template.php:410 wp-login.php:917
 msgid "Remember Me"
