@@ -511,3 +511,12 @@ function ssp_remove_download_link ( $meta, $episode_id, $context ) {
   unset( $meta['duration'] );
   return $meta;
 }
+
+function podcast_search( $query ) {
+    if (is_post_type_archive('podcast') && isset($_GET['search_podcast'])){
+      $query->query_vars["s"] = $_GET['search_podcast'];
+    }
+}
+if (post_type_exists('podcast')) {
+  add_action( 'pre_get_posts', 'podcast_search', 1 );
+}
