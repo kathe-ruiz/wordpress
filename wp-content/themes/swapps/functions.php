@@ -514,10 +514,9 @@ function ssp_remove_download_link ( $meta, $episode_id, $context ) {
 
 function podcast_search( $query ) {
   if (post_type_exists('podcast')) {
-    return;
-  }
-  if (is_post_type_archive('podcast') && isset($_GET['search_podcast'])){
-    $query->query_vars["s"] = $_GET['search_podcast'];
+    if (is_post_type_archive('podcast') && isset($_GET['search_podcast'])){
+      $query->query_vars["s"] = $_GET['search_podcast'];
+    }
   }
 }
 add_action( 'pre_get_posts', 'podcast_search', 1 );
