@@ -1897,11 +1897,13 @@ p.demo_store {
 .variations_form.cart{
   .variations{
     tr{
-      display: flex;
-      align-items: center;
+      display: block;
       .label{
         padding-top: 0;
-        padding-bottom: 11px;
+        padding-bottom: 0;
+        label{
+            padding-top: 10px;
+        }
       }
     }
     .value{
