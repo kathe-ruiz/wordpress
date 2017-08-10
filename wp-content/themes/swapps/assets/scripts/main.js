@@ -202,7 +202,6 @@
           });
           if($('#nav-sec.fx')){
             var topCss = $('#autocollapse').innerHeight();
-            console.log(topCss);
             if ($('.admin-bar')) {
               adminCss = $('#wpadminbar').innerHeight();
               $('#nav-sec.fx').css('top', (topCss+adminCss+2) +'px');

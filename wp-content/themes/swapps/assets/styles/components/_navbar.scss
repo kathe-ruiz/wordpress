@@ -430,6 +430,15 @@
     align-items: center;
   }
 }
+@media (min-width: 480px) and (max-width: $screen-md){
+  .navbar__toggle{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .navbar__btn--compact {
+    margin-right: 15px !important;
+  }
+}
 .collapsed.small{
   .navbar__menu{
     overflow: hidden !important;
