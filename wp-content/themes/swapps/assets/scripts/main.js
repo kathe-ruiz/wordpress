@@ -20,7 +20,7 @@
       init: function() {
         // JavaScript to be fired on all pages
         $.fn.exists = function () {
-            return this.length !== 0;
+          return this.length !== 0;
         };
         function stickyFooter() {
           var footer_height = document.querySelector('.footer').offsetHeight;
@@ -201,6 +201,15 @@
             }
           });
         });
+        if($('#nav-sec.fx')){
+          var topCss = $('#autocollapse').innerHeight();
+          if ($('.admin-bar')) {
+            adminCss = $('#wpadminbar').innerHeight();
+            $('#nav-sec.fx').css('top', (topCss+adminCss) +'px');
+          }else{
+            $('#nav-sec.fx').css('top', topCss +'px');
+          }
+        }
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
