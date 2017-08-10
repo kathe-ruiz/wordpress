@@ -445,6 +445,9 @@
   }
   .sw-nav{
     display: block;
+    min-height: 250px;
+    overflow-y: scroll;
+    height: 300px;
     li{
       a{
         font-size: 14px;
