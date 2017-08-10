@@ -134,8 +134,8 @@
         function autocollapse(){
           var navbar = $('#autocollapse');
           navbar.removeClass('collapsed'); // set standart view
-          if(navbar.innerHeight() > 82){ // check if we've got 2 lines
-            navbar.addClass('collapsed');// force collapse mode
+          if(navbar.innerHeight() > 85){ // check if we've got 2 lines
+            navbar.addClass('collapsed small');// force collapse mode
           }
         }
 
@@ -200,16 +200,17 @@
               },
             }
           });
-        });
-        if($('#nav-sec.fx')){
-          var topCss = $('#autocollapse').innerHeight();
-          if ($('.admin-bar')) {
-            adminCss = $('#wpadminbar').innerHeight();
-            $('#nav-sec.fx').css('top', (topCss+adminCss) +'px');
-          }else{
-            $('#nav-sec.fx').css('top', topCss +'px');
+          if($('#nav-sec.fx')){
+            var topCss = $('#autocollapse').innerHeight();
+            console.log(topCss);
+            if ($('.admin-bar')) {
+              adminCss = $('#wpadminbar').innerHeight();
+              $('#nav-sec.fx').css('top', (topCss+adminCss+2) +'px');
+            }else{
+              $('#nav-sec.fx').css('top', (topCss+2) +'px');
+            }
           }
-        }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
