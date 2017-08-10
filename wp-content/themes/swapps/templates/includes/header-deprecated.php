@@ -45,7 +45,7 @@
           <a href="tel:<?php echo $phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $phone; ?></span></a>
         <?php endif ?>
         <?php $secondary_phone = sw_get_phone('secondary'); ?>
-        <?php if (function_exists('sw_options') && sw_options('checkbox_phone')): ?>
+        <?php if (function_exists('sw_options')): ?>
           <?php if ($secondary_phone): ?>
             <a href="tel:<?php echo $secondary_phone; ?>" class="navbar__btn navbar__btn--compact btn btn-primary-outline btn-sm navbar-right"><i class="fa fa-phone" aria-hidden="true"></i> <span class="navbar__phone"><?php echo $secondary_phone; ?></span></a>
           <?php endif ?>
