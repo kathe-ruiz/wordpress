@@ -36,7 +36,7 @@
               echo $separator;
             }
           else:
-            echo "No tags.";
+            echo __("No tags").".";
           endif;
           ?>
         </span>
