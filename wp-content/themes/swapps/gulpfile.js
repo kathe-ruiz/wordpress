@@ -20,7 +20,7 @@ var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var sassVariables = require('gulp-sass-variables');
-var _ = require('gulp-load-plugins')({lazy: false})
+var _ = require('gulp-load-plugins')({lazy: false});
 var convert = require('color-convert');
 var env = require('gulp-env');
 env({file: "../../../.env",type: 'ini',}); // if the file can be found via `require`
@@ -229,7 +229,7 @@ gulp.task('amp-styles', function() {
     .pipe(_.sourcemaps.write("./"))
     .pipe(gulp.dest('amp/'))
     .pipe(browserSync.stream());
-})
+});
 
 // ### Images
 // `gulp images` - Run lossless compression on all the images.

@@ -4,6 +4,9 @@
   </header>
   <?php if (has_post_thumbnail()): ?>
     <a href="<?php the_permalink(); ?>">
+      <?php if (!isset($post_id)): ?>
+        <?php $post_id = NULL ?>
+      <?php endif ?>
       <?php echo get_the_post_thumbnail( $post_id, 'full', array( 'class' => 'img-responsive center-block blog-item__image' ) ); ?>
     </a>
   <?php endif ?>

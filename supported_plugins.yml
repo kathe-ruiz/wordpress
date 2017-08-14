@@ -27,7 +27,7 @@ supported_plugins:
 - "sitepress-multilingual-cms":
     - "sitepress-multilingual-cms": "3.7.0"
 - "amp":
-    - "wpackagist-plugin/amp": "0.4.2"
+    - "wpackagist-plugin/amp": "0.5"
 - "glue-for-yoast-seo-amp":
     - "wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.2"
 - "jetpack":
@@ -72,5 +72,7 @@ supported_plugins:
     - "wpackagist-plugin/woocommerce-gateway-stripe": "3.2.0"
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
+- "seriously-simple-podcasting":
+    - "wpackagist-plugin/seriously-simple-podcasting": "1.16.4"
 - "instapage":
     - "wpackagist-plugin/instapage": "3.1.9"

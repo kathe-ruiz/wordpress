@@ -15,3 +15,30 @@
     }
   }
 }
+.woocommerce {
+  div.product {
+    form.cart {
+      .variations{
+        tr{
+          margin-bottom: 5px;
+          &:last-child{
+            .value{
+              select{
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+        .value{
+          select{
+            text-align: left;
+            padding: 8px 0px;
+          }
+          .reset_variations{
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

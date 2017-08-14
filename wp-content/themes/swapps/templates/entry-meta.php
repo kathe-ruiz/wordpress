@@ -6,7 +6,7 @@
     </time>
   </span>
   <span class="entry-meta__item byline author vcard">
-    <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__text entry-meta__link">
+    <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__link">
       <i class="entry-meta__icon fa fa-lg fa-keyboard-o " aria-hidden="true"></i>
     </a>
     <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn entry-meta__text entry-meta__link">
