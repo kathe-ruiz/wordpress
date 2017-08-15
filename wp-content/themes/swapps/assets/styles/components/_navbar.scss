@@ -413,7 +413,7 @@
 }
 /* ======= STYLES FOR DROPDOWN ======= */
 @media (min-width: 992px) {
-  :not(.collapsed.small){
+  #autocollapse:not(.small){
     ul.nav li:hover > ul.dropdown-menu {
       display: block;
     }
