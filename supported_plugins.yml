@@ -76,3 +76,5 @@ supported_plugins:
     - "wpackagist-plugin/seriously-simple-podcasting": "1.16.4"
 - "instapage":
     - "wpackagist-plugin/instapage": "3.1.9"
+- "send-grid":
+    - "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.11.6"
