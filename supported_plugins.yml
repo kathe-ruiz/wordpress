@@ -23,7 +23,7 @@ supported_plugins:
 - "woocommerce-quick-buy":
     - "wpackagist-plugin/woocommerce-quick-buy": "1.7"
 - "ultimate-member":
-    - "wpackagist-plugin/ultimate-member": "1.3.87"
+    - "wpackagist-plugin/ultimate-member": "1.3.88"
 - "sitepress-multilingual-cms":
     - "sitepress-multilingual-cms": "3.7.0"
 - "amp":
