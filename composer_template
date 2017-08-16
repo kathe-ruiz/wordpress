@@ -96,11 +96,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.5.14",
+                "version": "5.6.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.5.14"
+                    "reference": "5.6.1"
                 }
             }
 
@@ -157,12 +157,12 @@
     "require": {
         "vlucas/phpdotenv": "2.4.*",
         "cocur/slugify": "^2.4",
-        "advanced-custom-fields-pro": "5.5.14",
+        "advanced-custom-fields-pro": "5.6.1",
         "wpackagist-plugin/addthis": "5.3.5",
         "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.4",
         "wpackagist-plugin/acf-image-crop-add-on": "1.4.12",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
-        "wpackagist-plugin/coming-soon": "5.0.10",
+        "wpackagist-plugin/coming-soon": "5.0.12",
         "wpackagist-plugin/smtp-mailer": "1.0.3",
         "wpackagist-plugin/duplicate-post": "3.2",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
