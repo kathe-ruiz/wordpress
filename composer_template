@@ -159,7 +159,7 @@
         "cocur/slugify": "^2.4",
         "advanced-custom-fields-pro": "5.5.14",
         "wpackagist-plugin/addthis": "5.3.5",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.3",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.4",
         "wpackagist-plugin/acf-image-crop-add-on": "1.4.11",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
         "wpackagist-plugin/coming-soon": "5.0.10",
