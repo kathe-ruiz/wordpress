@@ -2083,3 +2083,38 @@ li.product{
 .reset_variations{
   display: none;
 }
+.shop_table{
+  @media(min-width: $screen-sm-min){
+    .woocommerce-cart-form__cart-item{
+      .product-remove{
+        .remove{
+          span{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: $screen-sm-min){
+    .woocommerce-cart-form__cart-item{
+      .product-remove{
+        .remove{
+          width: 100%;
+          text-align: left;
+          font-weight: 500;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          &:hover{
+            background: none;
+            color: #f14343 !important;
+          }
+          span{
+            font-size: 14px;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}
