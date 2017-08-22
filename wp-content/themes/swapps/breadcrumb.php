@@ -63,9 +63,17 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
     }elseif ( (is_singular('product') )) {
       $shop_page_id = wc_get_page_id( 'shop' );
       $title['title'] = get_the_title( $shop_page_id );
+      $category = get_queried_object();
+      $terms = wp_get_post_terms( $post->ID, 'product_cat' );
       $permalink['link'] = get_permalink( $shop_page_id );
       $html .= '<li class="breadcrumb__item item-' . $shop_page_id . '"><a class="breadcrumb__bread bread-link bread-item-' . $shop_page_id . '" href="' . $permalink['link'] . '" title="' . $title['title'] . '">' . $title['title'] . '</a></li>';
       $html .= $separator;
+      if ($terms) {
+        $link = get_term_link( $terms[0]->slug, $terms[0]->taxonomy );
+        $html .= '<li class="breadcrumb__item item-cat"><a href="'. $link .'">'.$terms[0]->name.'</a></li>';
+        //$html .= print_r(get_post_meta( get_the_ID()));
+        $html .= $separator;
+      }
       $html .= '<li class="breadcrumb__item item-current item-cat"><span class="breadcrumb__bread bread-current bread-cat" title="' . esc_attr( get_the_title() ) . '">' . esc_html( get_the_title() ) . '</span></li>';
 
     }elseif ( (is_tax( 'product_cat' ) || is_tax('product_tag')) ) {
