@@ -2059,3 +2059,24 @@ li.product{
 .woo-ban{
   width: 100%;
 }
+.comment-form textarea{
+  border: 1px solid;
+}
+.related.products{
+  @media(min-width: $screen-sm-min) and (max-width:$screen-md-min){
+    .products{
+      li.product{
+        width: 30.8%;
+      }
+    }
+  }
+  @media(min-width: $screen-md-min) and (max-width:$screen-lg-min){
+    .add_to_cart_button,
+    .cart-button,
+    .wcqb_button{
+      &:before{
+        margin: 0 11px 0 -20px;
+      }
+    }
+  }
+}
