@@ -372,9 +372,6 @@ p.demo_store {
 .woocommerce div.product form.cart .variations td.label {
     padding-right: 1em
 }
-.woocommerce div.product form.cart .variations td {
-    vertical-align: top
-}
 .woocommerce div.product form.cart .button {
     vertical-align: middle;
     float: left
@@ -2082,4 +2079,7 @@ li.product{
 }
 .wpmenucartli {
   margin: 0 5px;
+}
+.reset_variations{
+  display: none;
 }
