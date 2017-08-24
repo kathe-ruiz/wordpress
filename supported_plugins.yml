@@ -78,3 +78,5 @@ supported_plugins:
     - "wpackagist-plugin/instapage": "3.1.9"
 - "send-grid":
     - "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.11.6"
+- "password-strength-for-woocommerce":
+    - "wpackagist-plugin/password-strength-for-woocommerce": "1.0.1"
