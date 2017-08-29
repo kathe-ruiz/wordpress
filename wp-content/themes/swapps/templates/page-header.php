@@ -3,7 +3,7 @@
   if (function_exists('get_field')){
     $enable_breadcrumbs = ( get_field('field_breadcrumbs_option') == 'yes') ? true : false ;
   }
-  if ( isset($enable_breadcrumbs) ): ?>
+  if ( $enable_breadcrumbs ): ?>
     <?php
       if (function_exists('sw_options') && sw_options('blog_description')) {
         $custom_description = sw_options('blog_description');

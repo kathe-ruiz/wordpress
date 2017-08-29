@@ -54,4 +54,16 @@
     font-weight:100;
     color: inherit;
   }
+  @media(max-width: $screen-xs-min){
+    li{
+      &:last-child{
+        line-height: 30px;
+        margin: 0px;
+        .bread-current.bread-cat{
+          font-size: 35px;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
 }

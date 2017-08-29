@@ -520,3 +520,6 @@ function podcast_search( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'podcast_search', 1 );
+
+//for woocommerce
+//add_filter( 'woocommerce_defer_transactional_emails', '__return_false' );
