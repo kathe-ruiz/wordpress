@@ -78,13 +78,36 @@ if ( ! function_exists( 'swapps_breadcrumbs' ) ) {
           $html .= '<li class="breadcrumb__item item-parent item-cat"><a href="'. $link_parent .'">'.$parent_det->name.'</a></li>';
           $html .= $separator;
         }
-        /*$children = get_terms( $product_cat->taxonomy, array(
+        $children = get_terms( $product_cat->taxonomy, array(
         'parent'    => $product_cat->term_id,
         'hide_empty' => false,
-        'childless' => true
-        ));*/
+        'childless' => false
+        ));
         $html .= '<li class="breadcrumb__item item-cat"><a href="'. $link .'">'.$product_cat->name.'</a></li>';
         $html .= $separator;
+        foreach ($children as $children_term) {
+          if (has_term($children_term->term_id, "product_cat", $post->ID)) {
+            $children_bread = $children_term;
+            $children_link = get_term_link($children_bread->term_id);
+            $html .= '<li class="breadcrumb__item item-cat"><a href="'. $children_link .'">'.$children_bread->name.'</a></li>';
+            $html .= $separator;
+            $children = get_terms( $children_term->taxonomy, array(
+            'parent'    => $children_term->term_id,
+            'hide_empty' => false,
+            'childless' => false
+            ));
+            foreach ($children as $children_term) {
+              if (has_term($children_term->term_id, "product_cat", $post->ID)) {
+                $children_bread = $children_term;
+                $children_link = get_term_link($children_bread->term_id);
+                $html .= '<li class="breadcrumb__item item-cat"><a href="'. $children_link .'">'.$children_bread->name.'</a></li>';
+                $html .= $separator;
+                break;
+              }
+            }
+            break;
+          }
+        }
       }
       $html .= '<li class="breadcrumb__item item-current item-cat"><span class="breadcrumb__bread bread-current bread-cat" title="' . esc_attr( get_the_title() ) . '">' . esc_html( get_the_title() ) . '</span></li>';
 
