@@ -15,7 +15,7 @@ supported_plugins:
 - "woocommerce-payu-latam-gateway":
     - "woocommerce-payu": "0.1.0"
 - "woocommerce-tu-compra":
-    - "woocommerce-tu-compra": "0.1.5"
+    - "woocommerce-tu-compra": "0.1.6"
 - "wp-dors":
     - "wp-dors": "0.1.4"
 - "wp-accountant":
