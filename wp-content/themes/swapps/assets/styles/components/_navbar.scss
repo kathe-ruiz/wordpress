@@ -38,7 +38,7 @@
     .menu-item.active{
       a{
         background-color: transparent;
-        color: darken( $navbar-default-link-color, 60% );
+        //color: darken( $navbar-default-link-color, 60% );
       }
     }
   }
@@ -528,4 +528,9 @@
     @extend .btn-primary-outline-withoutborder;
   }
 
+}
+.current-menu-item{
+  a{
+    font-weight: bold;
+  }
 }
