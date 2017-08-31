@@ -135,4 +135,13 @@ img.nature {
   height: auto;
   max-height: 100%;
 }
+.entry-author{
+  .author{
+    img.avatar{
+      max-width: 250px;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+}
 /* Wordpres class */
