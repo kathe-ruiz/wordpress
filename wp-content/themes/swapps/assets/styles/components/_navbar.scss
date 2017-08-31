@@ -430,6 +430,21 @@
   @media (min-width: $screen-md-min){
     display: flex;
     align-items: center;
+    .current-menu-item{
+      padding-bottom: 6px;
+      a{
+        padding-bottom: 5px !important;
+        border-bottom: 3px $brand-primary solid;
+        border-radius: 0px !important;
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max){
+    .current-menu-item{
+      a{
+        font-weight: bold;
+      }
+    }
   }
 }
 @media (min-width: 480px) and (max-width: $screen-md){
@@ -528,9 +543,4 @@
     @extend .btn-primary-outline-withoutborder;
   }
 
-}
-.current-menu-item{
-  a{
-    font-weight: bold;
-  }
 }
