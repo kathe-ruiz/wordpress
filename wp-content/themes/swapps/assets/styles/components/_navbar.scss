@@ -530,6 +530,16 @@
 
 }
 @media (min-width: $screen-md-min){
+  .header__centered{
+    .current-menu-item{
+      padding-bottom: 1.3em !important;
+      a{
+        padding-bottom: 5px !important;
+        border-bottom: 3px $brand-primary solid;
+        border-radius: 0px !important;
+      }
+    }
+  }
   .current-menu-item{
     padding-bottom: 6px;
     a{
