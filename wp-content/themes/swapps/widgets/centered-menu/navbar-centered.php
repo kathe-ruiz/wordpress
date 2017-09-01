@@ -1,4 +1,4 @@
-<div class="header__swbi">
+<div class="header__swbi header__centered">
   <?php $phone = sw_get_phone(); ?>
   <?php if ($phone): ?>
   <div class="phone">

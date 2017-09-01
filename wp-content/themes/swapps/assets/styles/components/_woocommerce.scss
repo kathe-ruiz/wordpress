@@ -2118,3 +2118,15 @@ li.product{
     }
   }
 }
+.woocommerce-account-fields{
+    .create-account{
+        .woocommerce-form__label-for-checkbox{
+            .woocommerce-form__input-checkbox {
+                position: relative;
+                margin: 0;
+                vertical-align: middle;
+                display: inline-block;
+            }
+        }
+    }
+}
