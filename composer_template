@@ -60,11 +60,11 @@
             "type": "package",
             "package": {
                 "name": "sw-customizer",
-                "version": "0.3.13",
+                "version": "0.3.11",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
                     "type": "git",
-                    "reference": "0.3.13"
+                    "reference": "0.3.11"
                 }
             }
         },
@@ -171,7 +171,7 @@
         "wpackagist-plugin/ewww-image-optimizer": "3.6.1",
         "wpackagist-plugin/nav-menu-images": "3.4",
         "sw-simple-slider": "0.2.9",
-        "sw-customizer": "0.3.13",
+        "sw-customizer": "0.3.11",
         "wp-plugin-swapps": "0.1.10",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
