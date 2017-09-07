@@ -1,1 +1,0 @@
-<pre><?php $fields = get_fields(); var_dump( $fields );  ?></pre>
