@@ -41,8 +41,6 @@ Thumbs.db
 
 # Theme plugin in the repo until is updated with Ansible. 
 # Don't consider git submodules!
-!wp-content/themes/swapps
-
 
 /vendor/
 !.gitkeep
