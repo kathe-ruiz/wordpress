@@ -80,3 +80,7 @@ supported_plugins:
     - "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.11.6"
 - "password-strength-for-woocommerce":
     - "wpackagist-plugin/password-strength-for-woocommerce": "1.0.1"
+- "bb-plugin-pro":
+    - "bb-plugin-pro": "1.10.7.1"
+- "bb-theme":
+    - "bb-theme": "1.6.2"

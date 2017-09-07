@@ -152,6 +152,32 @@
                     "reference": "1.01.02"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bb-plugin-pro",
+                "version": "1.10.7.1",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
+                    "type": "git",
+                    "reference": "1.10.7.1"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bb-theme",
+                "version": "1.6.2",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-theme-bb.git",
+                    "type": "git",
+                    "reference": "1.6.2"
+                }
+            }
+
         }
     ],
     "require": {
@@ -209,6 +235,10 @@
     "extra" : {
         "installer-types": ["library"],
         "installer-paths": {
+            "wp-content/themes/{$name}/": [
+                "bb-theme",
+                "sw-theme"
+            ],
             "wp-content/mu-plugins/{$name}/": [
             "wp-plugin-swapps"
             {% if plan_data['mu_plugins'] is defined %}
