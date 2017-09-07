@@ -231,13 +231,38 @@
               {% endfor %}
             {% endfor%}
         {% endif %}
+        {% if plan_data['themes'] is defined %}
+            {% for i in plan_data['themes'] %}
+              {% for j in supported_plugins %}
+                {% if i in j %}
+                  {% for k in j[i] %}
+                    {% for key, value in k.iteritems() %}
+                      , "{{ key }}": "{{ value}}"
+                    {% endfor %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endfor%}
+        {% endif %}
     },
     "extra" : {
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/themes/{$name}/": [
-                "bb-theme",
                 "sw-theme"
+                {% if plan_data['themes'] is defined %}
+                {% for i in plan_data['themes'] %}
+                  {% for j in supported_plugins %}
+                    {% if i in j %}
+                      {% for k in j[i] %}
+                        {% for key, value in k.iteritems() %}
+                          , "{{ key }}"
+                        {% endfor %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+                {% endfor%}
+                {% endif %}
             ],
             "wp-content/mu-plugins/{$name}/": [
             "wp-plugin-swapps"
