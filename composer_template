@@ -256,6 +256,8 @@
                 {% endif %}
               {% endfor %}
             {% endfor%}
+        {% else %}
+            , "sw-theme":"1.*"
         {% endif %}
     },
     "extra" : {
