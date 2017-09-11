@@ -178,6 +178,19 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "sw-theme",
+                "version": "1.0.0",
+                "source": {
+                    "url": "git@github.com:swappsco/swapps-theme.git",
+                    "type": "git",
+                    "reference": "1.0.0"
+                }
+            }
+
         }
     ],
     "require": {
