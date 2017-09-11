@@ -182,7 +182,7 @@
         {
             "type": "package",
             "package": {
-                "name": "sw-theme",
+                "name": "swapps",
                 "version": "1.0.0",
                 "source": {
                     "url": "git@github.com:swappsco/swapps-theme.git",
@@ -257,14 +257,14 @@
               {% endfor %}
             {% endfor%}
         {% else %}
-            , "sw-theme":"1.*"
+            , "swapps":"1.*"
         {% endif %}
     },
     "extra" : {
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/themes/{$name}/": [
-                "sw-theme"
+                "swapps"
                 {% if plan_data['themes'] is defined %}
                 {% for i in plan_data['themes'] %}
                   {% for j in supported_plugins %}
