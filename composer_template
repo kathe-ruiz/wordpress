@@ -191,6 +191,19 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "duenio-django-integration",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/duenio-django-integration.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
+
         }
     ],
     "require": {

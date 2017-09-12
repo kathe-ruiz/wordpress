@@ -84,3 +84,5 @@ supported_plugins:
     - "bb-plugin-pro": "1.10.7.1"
 - "bb-theme":
     - "bb-theme": "1.6.2"
+- "duenio-django-integration":
+    - "duenio-django-integration": "0.1.0"
