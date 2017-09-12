@@ -215,7 +215,7 @@
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
-        "wpackagist-plugin/wordpress-seo": "5.2",
+        wpackagist-plugin/wordpress-seo": "5.4",
         "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "1.2.6",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
