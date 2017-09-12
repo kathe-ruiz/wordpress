@@ -73,7 +73,7 @@ supported_plugins:
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
 - "seriously-simple-podcasting":
-    - "wpackagist-plugin/seriously-simple-podcasting": "1.17.1"
+    - "wpackagist-plugin/seriously-simple-podcasting": "1.17.3"
 - "instapage":
     - "wpackagist-plugin/instapage": "3.1.9"
 - "send-grid":
