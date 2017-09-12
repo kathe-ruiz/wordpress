@@ -27,7 +27,7 @@ supported_plugins:
 - "sitepress-multilingual-cms":
     - "sitepress-multilingual-cms": "3.7.0"
 - "amp":
-    - "wpackagist-plugin/amp": "0.5"
+    - "wpackagist-plugin/amp": "0.5.1"
 - "glue-for-yoast-seo-amp":
     - "wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.2"
 - "jetpack":
