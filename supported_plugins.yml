@@ -67,7 +67,7 @@ supported_plugins:
 - "tags-for-anspress":
     - "wpackagist-plugin/tags-for-anspress": "3.0.1"
 - "geodirectory":
-    - "wpackagist-plugin/geodirectory": "1.6.21"
+    - "wpackagist-plugin/geodirectory": "1.6.23"
 - "woocommerce-gateway-stripe":
     - "wpackagist-plugin/woocommerce-gateway-stripe": "3.2.0"
 - "mb-imagechimp-rss-feed-enhancer":
