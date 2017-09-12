@@ -51,7 +51,7 @@ supported_plugins:
 - "simple-301-redirects":
     - "wpackagist-plugin/simple-301-redirects": "1.07"
 - "si-contact-form":
-    - "wpackagist-plugin/si-contact-form": "4.0.51"
+    - "wpackagist-plugin/si-contact-form": "4.0.55"
 - "wired-impact-volunteer-management":
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.2"
 - "woocommerce-dynamic-gallery":
