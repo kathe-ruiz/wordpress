@@ -86,3 +86,39 @@ supported_plugins:
     - "bb-theme": "1.6.2"
 - "duenio-django-integration":
     - "duenio-django-integration": "0.1.0"
+- "duplicate-post":
+    - "wpackagist-plugin/duplicate-post":"3.2"
+- "floating-publish-button":
+    - "wpackagist-plugin/floating-publish-button":"1.0.6"
+- "wp-basic-auth":
+    - "wpackagist-plugin/wp-basic-auth": "1.1.3"
+- "addthis-follow":
+    - "wpackagist-plugin/addthis-follow": "4.1.1"
+- "all-in-one-seo-pack":
+    - "wpackagist-plugin/all-in-one-seo-pack": "2.3.16"
+- "auto-tag-links":
+    - "wpackagist-plugin/auto-tag-links": "1.0.8"
+- "disqus-comment-system": 
+    - "wpackagist-plugin/disqus-comment-system": "2.87"
+- "enlighter": 
+    - "wpackagist-plugin/enlighter": "3.5"
+- "google-analyticator":
+    - "wpackagist-plugin/google-analyticator": "6.5.4"
+- "image-elevator":
+    - "wpackagist-plugin/image-elevator": "2.5.8"
+- "json-rest-api":
+    - "wpackagist-plugin/json-rest-api": "1.2.5"
+- "mailgun":
+    - "wpackagist-plugin/mailgun": "1.5.8.5"
+- "quick-pagepost-redirect-plugin":
+    - "wpackagist-plugin/quick-pagepost-redirect-plugin": "5.1.8"
+- "sitemap": 
+    - "wpackagist-plugin/sitemap":
+- "wonderm00ns-simple-facebook-open-graph-tags":
+    - "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "2.0.9"
+- "wp-gravatar-https": 
+    - "wpackagist-plugin/wp-gravatar-https": "1.1"
+- "amazon-web-services":
+    - "wpackagist-plugin/amazon-web-services": "1.0.3"
+- "amazon-s3-and-cloudfront": 
+    - "wpackagist-plugin/amazon-s3-and-cloudfront": "1.2"
