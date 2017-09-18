@@ -224,6 +224,7 @@
         "wpackagist-plugin/nav-menu-images": "3.4",
         "sw-simple-slider": "0.2.9",
         "sw-customizer": "0.3.11",
+        "wpackagist-plugin/wordpress-importer": "0.6.3",
         "wp-plugin-swapps": "0.1.10",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
@@ -330,6 +331,7 @@
             "wpackagist-plugin/floating-publish-button",
             "wpackagist-plugin/ninja-forms",
             "wpackagist-plugin/smtp-mailer",
+            "wpackagist-plugin/wordpress-importer",
             "sw-simple-slider",
             "sw-customizer",
             "wpackagist-plugin/wordpress-seo"
