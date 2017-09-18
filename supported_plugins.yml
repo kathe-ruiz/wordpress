@@ -122,5 +122,3 @@ supported_plugins:
     - "wpackagist-plugin/amazon-web-services": "1.0.3"
 - "amazon-s3-and-cloudfront": 
     - "wpackagist-plugin/amazon-s3-and-cloudfront": "1.2"
-- "quick-pagepost-redirect-plugin":
-    - "wpackagist-plugin/quick-pagepost-redirect-plugin": "5.1.8"
