@@ -178,22 +178,48 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "swapps",
+                "version": "1.0.0",
+                "source": {
+                    "url": "git@github.com:swappsco/swapps-theme.git",
+                    "type": "git",
+                    "reference": "1.0.0"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "duenio-django-integration",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/duenio-django-integration.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
+
         }
     ],
     "require": {
         "vlucas/phpdotenv": "2.4.*",
         "cocur/slugify": "^2.4",
         "advanced-custom-fields-pro": "5.6.1",
-        "wpackagist-plugin/addthis": "5.3.5",
+        "wpackagist-plugin/addthis": "6.1.1",
         "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.4",
         "wpackagist-plugin/acf-image-crop-add-on": "1.4.12",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
-        "wpackagist-plugin/coming-soon": "5.0.12",
+        "wpackagist-plugin/coming-soon": "5.0.14",
         "wpackagist-plugin/smtp-mailer": "1.0.3",
         "wpackagist-plugin/duplicate-post": "3.2",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/floating-publish-button": "1.0.6",
-        "wpackagist-plugin/ninja-forms": "3.1.9",
+        "wpackagist-plugin/ninja-forms": "3.2.1",
         "wpackagist-plugin/ewww-image-optimizer": "3.6.1",
         "wpackagist-plugin/nav-menu-images": "3.4",
         "sw-simple-slider": "0.2.9",
@@ -202,8 +228,8 @@
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
-        "wpackagist-plugin/wordpress-seo": "5.2",
-        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "1.2.6",
+        "wpackagist-plugin/wordpress-seo": "5.4",
+        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.0",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
@@ -243,13 +269,15 @@
                 {% endif %}
               {% endfor %}
             {% endfor%}
+        {% else %}
+            , "swapps":"1.*"
         {% endif %}
     },
     "extra" : {
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/themes/{$name}/": [
-                "sw-theme"
+                "swapps"
                 {% if plan_data['themes'] is defined %}
                 {% for i in plan_data['themes'] %}
                   {% for j in supported_plugins %}
