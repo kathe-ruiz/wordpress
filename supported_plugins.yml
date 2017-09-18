@@ -115,7 +115,7 @@ supported_plugins:
 - "quick-pagepost-redirect-plugin":
     - "wpackagist-plugin/quick-pagepost-redirect-plugin": "5.1.8"
 - "sitemap": 
-    - "wpackagist-plugin/sitemap":
+    - "wpackagist-plugin/sitemap": "4.3"
 - "wonderm00ns-simple-facebook-open-graph-tags":
     - "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "2.0.9"
 - "wp-gravatar-https": 
