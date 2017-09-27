@@ -183,11 +183,11 @@
             "type": "package",
             "package": {
                 "name": "swapps",
-                "version": "1.0.1",
+                "version": "1.0.4",
                 "source": {
                     "url": "git@github.com:swappsco/swapps-theme.git",
                     "type": "git",
-                    "reference": "1.0.1"
+                    "reference": "1.0.4"
                 }
             }
 
