@@ -122,5 +122,5 @@ supported_plugins:
     - "wpackagist-plugin/amazon-web-services": "1.0.3"
 - "amazon-s3-and-cloudfront": 
     - "wpackagist-plugin/amazon-s3-and-cloudfront": "1.2"
-- "instapage": "3.1.10":
+- "instapage":
     - "wpackagist-plugin/instapage": "3.1.10"
