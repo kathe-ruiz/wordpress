@@ -96,11 +96,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.6.1",
+                "version": "5.6.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.6.1"
+                    "reference": "5.6.5"
                 }
             }
 
@@ -133,11 +133,11 @@
             "type": "package",
             "package": {
                 "name": "formidable",
-                "version": "2.03.10",
+                "version": "2.05.06",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "2.03.10"
+                    "reference": "2.05.06"
                 }
             }
         },
@@ -209,18 +209,18 @@
     "require": {
         "vlucas/phpdotenv": "2.4.*",
         "cocur/slugify": "^2.4",
-        "advanced-custom-fields-pro": "5.6.1",
+        "advanced-custom-fields-pro": "5.6.5",
         "wpackagist-plugin/addthis": "6.1.1",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome": "1.7.4",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.0.9",
         "wpackagist-plugin/acf-image-crop-add-on": "1.4.12",
         "wpackagist-plugin/acf-link-picker-field": "^1.2",
-        "wpackagist-plugin/coming-soon": "5.0.14",
+        "wpackagist-plugin/coming-soon": "5.0.16",
         "wpackagist-plugin/smtp-mailer": "1.0.5",
         "wpackagist-plugin/duplicate-post": "3.2",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/floating-publish-button": "1.0.6",
-        "wpackagist-plugin/ninja-forms": "3.2.1",
-        "wpackagist-plugin/ewww-image-optimizer": "3.6.1",
+        "wpackagist-plugin/ninja-forms": "3.2.4",
+        "wpackagist-plugin/ewww-image-optimizer": "4.0.3",
         "wpackagist-plugin/nav-menu-images": "3.4",
         "sw-simple-slider": "0.2.9",
         "sw-customizer": "0.3.11",
@@ -228,8 +228,8 @@
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "2.0.4",
         {% endif %}
-        "wpackagist-plugin/wordpress-seo": "5.4",
-        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.0",
+        "wpackagist-plugin/wordpress-seo": "5.8",
+        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
