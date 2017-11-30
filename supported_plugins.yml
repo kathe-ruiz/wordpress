@@ -18,6 +18,8 @@ supported_plugins:
     - "woocommerce-tu-compra": "0.1.6"
 - "wp-dors":
     - "wp-dors": "0.1.4"
+- "wp-swappsio":
+    - "wp-swappsio": "0.0.1"
 - "wp-accountant":
     - "wp-accountant": "0.1.5"
 - "woocommerce-quick-buy":
@@ -113,7 +115,7 @@ supported_plugins:
 - "quick-pagepost-redirect-plugin":
     - "wpackagist-plugin/quick-pagepost-redirect-plugin": "5.1.8"
 - "sitemap": 
-    - "wpackagist-plugin/sitemap":
+    - "wpackagist-plugin/sitemap": "4.3"
 - "wonderm00ns-simple-facebook-open-graph-tags":
     - "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "2.0.9"
 - "wp-gravatar-https": 
