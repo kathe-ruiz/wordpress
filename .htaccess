@@ -7,9 +7,22 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+RewriteRule ^composer\.json$ - [F,L]
+RewriteRule ^[^/]+\.json$ - [F,L]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
 </IfModule>
 
 # END WordPress
+
+# STRONG PROTECTION
+<files composer.json>
+order allow,deny
+deny from all
+</files>
+<Files ~ "\.json$">
+Order allow,deny
+Deny from all
+</Files>
 
 php_value upload_max_filesize 8M
 php_value post_max_size 8M
