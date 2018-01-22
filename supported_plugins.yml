@@ -126,3 +126,7 @@ supported_plugins:
     - "wpackagist-plugin/amazon-s3-and-cloudfront": "1.2"
 - "acf-content-analysis-for-yoast-seo":
     - "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1"
+- "wc-fields-factory":
+    - "wpackagist-plugin/wc-fields-factory": "2.0.5"
+- "woo-order-export":
+    - "wpackagist-plugin/woo-order-export-lite": "1.5.2"
