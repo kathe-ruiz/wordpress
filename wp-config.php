@@ -117,10 +117,6 @@ define('WP_SHOW_ALL_SIDEBAR_ITEMS', filter_var(
 
 $restrict_value = filter_var(getenv('RESTRICT')?:true, FILTER_VALIDATE_BOOLEAN);
 
-$current_user = wp_get_current_user();
-if (SUPERUSER == $current_user->user_login):
-    $restrict_value = false;
-endif;
 
 if($restrict_value == false):
     $restrict_value = false;
