@@ -123,7 +123,7 @@
             "type": "package",
             "package": {
                 "name": "sitepress-multilingual-cms",
-                "version": "3.7.0",
+                "version": "3.9.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-wpml.git",
                     "type": "git",
