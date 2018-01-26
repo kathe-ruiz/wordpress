@@ -4,15 +4,16 @@
             "type":"composer",
             "url":"https://wpackagist.org"
         },
+        { "packagist": false },
         {
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.9",
+                "version": "0.2.10",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.9"
+                    "reference": "0.2.10"
                 }
             }
 
@@ -196,11 +197,11 @@
             "type": "package",
             "package": {
                 "name": "swapps",
-                "version": "1.0.4",
+                "version": "1.1.3",
                 "source": {
                     "url": "git@github.com:swappsco/swapps-theme.git",
                     "type": "git",
-                    "reference": "1.0.4"
+                    "reference": "1.1.3"
                 }
             }
 
@@ -235,7 +236,7 @@
         "wpackagist-plugin/ninja-forms": "3.2.4",
         "wpackagist-plugin/ewww-image-optimizer": "4.0.4",
         "wpackagist-plugin/nav-menu-images": "3.4",
-        "sw-simple-slider": "0.2.9",
+        "sw-simple-slider": "0.2.10",
         "sw-customizer": "0.3.11",
         "wpackagist-plugin/wordpress-importer": "0.6.3",
         "wp-plugin-swapps": "0.1.10",
