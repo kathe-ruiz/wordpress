@@ -97,6 +97,20 @@ define('SSL_ON', filter_var(getenv('SSL_ON'), FILTER_VALIDATE_BOOLEAN));
 if (SSL_ON == true) {
 	$_SERVER['HTTPS']='on';
 }
+
+$restrict_value = filter_var(getenv('RESTRICT')?:true, FILTER_VALIDATE_BOOLEAN)
+
+$current_user = wp_get_current_user();
+if (SUPERUSER == $user->user_login):
+    $restrict_content = false;
+endif;
+
+if($restrict_value == false):
+    $restrict_content = false;
+endif;
+
+define('RESTRICT', $restrict_content);
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
