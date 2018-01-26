@@ -215,7 +215,7 @@
                 "source": {
                     "url": "{{ extra_theme_info.git_url }}",
                     "type": "git",
-                    "reference": "{{ extra_theme_info.version }}"
+                    "reference": "{{ extra_theme_info.reference }}"
                 }
             }
 
