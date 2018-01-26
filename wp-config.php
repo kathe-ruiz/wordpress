@@ -115,16 +115,15 @@ define('WP_SHOW_ALL_SIDEBAR_ITEMS', filter_var(
     getenv('SHOW_ALL_SIDEBAR_ITEMS'), FILTER_VALIDATE_BOOLEAN
     )?:False);
 
-
-$restrict_value = filter_var(getenv('RESTRICT')?:true, FILTER_VALIDATE_BOOLEAN)
+$restrict_value = filter_var(getenv('RESTRICT')?:true, FILTER_VALIDATE_BOOLEAN);
 
 $current_user = wp_get_current_user();
-if (SUPERUSER == $user->user_login):
-    $restrict_content = false;
+if (SUPERUSER == $current_user->user_login):
+    $restrict_value = false;
 endif;
 
 if($restrict_value == false):
-    $restrict_content = false;
+    $restrict_value = false;
 endif;
 
-define('RESTRICT', $restrict_content);
+define('RESTRICT', $restrict_value);
