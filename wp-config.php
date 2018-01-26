@@ -97,6 +97,9 @@ define('SSL_ON', filter_var(getenv('SSL_ON'), FILTER_VALIDATE_BOOLEAN));
 if (SSL_ON == true) {
 	$_SERVER['HTTPS']='on';
 }
+
+
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -111,3 +114,12 @@ define('PARAGRAPHS_SECONDARY_FONT_NAME', getenv("PARAGRAPHS_SECONDARY_FONT_NAME"
 define('WP_SHOW_ALL_SIDEBAR_ITEMS', filter_var(
     getenv('SHOW_ALL_SIDEBAR_ITEMS'), FILTER_VALIDATE_BOOLEAN
     )?:False);
+
+$restrict_value = filter_var(getenv('RESTRICT')?:true, FILTER_VALIDATE_BOOLEAN);
+
+
+if($restrict_value == false):
+    $restrict_value = false;
+endif;
+
+define('RESTRICT', $restrict_value);
