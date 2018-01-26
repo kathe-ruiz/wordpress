@@ -55,7 +55,7 @@ supported_plugins:
 - "si-contact-form":
     - "wpackagist-plugin/si-contact-form": "4.0.55"
 - "wired-impact-volunteer-management":
-    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.3"
+    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.8"
 - "woocommerce-dynamic-gallery":
     - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.1"
 - "regenerate-thumbnails":
