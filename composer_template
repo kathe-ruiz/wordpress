@@ -236,9 +236,9 @@
     "require": {
         "vlucas/phpdotenv": "2.4",
         "cocur/slugify": "^2.4",
-        "advanced-custom-fields-pro": "5.6.5",
+        "advanced-custom-fields-pro": "5.6.7",
         "wpackagist-plugin/addthis": "6.1.2",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.0.9",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.1.0",
         "wpackagist-plugin/acf-image-crop-add-on": "1.4.12",
         "wpackagist-plugin/acf-link-picker-field": "^1.2.8",
         "wpackagist-plugin/coming-soon": "5.0.17",
