@@ -110,11 +110,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.6.5",
+                "version": "5.6.7",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.6.5"
+                    "reference": "5.6.7"
                 }
             }
 
@@ -123,7 +123,7 @@
             "type": "package",
             "package": {
                 "name": "sitepress-multilingual-cms",
-                "version": "3.7.0",
+                "version": "3.9.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-wpml.git",
                     "type": "git",
@@ -171,11 +171,11 @@
             "type": "package",
             "package": {
                 "name": "bb-plugin-pro",
-                "version": "1.10.7.1",
+                "version": "2.0.4.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
                     "type": "git",
-                    "reference": "1.10.7.1"
+                    "reference": "2.0.4.1"
                 }
             }
 
@@ -184,24 +184,11 @@
             "type": "package",
             "package": {
                 "name": "bb-theme",
-                "version": "1.6.2",
+                "version": "1.6.4.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-theme-bb.git",
                     "type": "git",
-                    "reference": "1.6.2"
-                }
-            }
-
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "duenio-theme",
-                "version": "0.1.0",
-                "source": {
-                    "url": "git@github.com:swappsco/duenio-theme.git",
-                    "type": "git",
-                    "reference": "0.1.0"
+                    "reference": "1.6.4.1"
                 }
             }
 
@@ -219,6 +206,21 @@
             }
 
         },
+        {% if extra_theme_info is defined %}
+        {
+            "type": "package",
+            "package": {
+                "name": "{{ extra_theme_info.name }}",
+                "version": "{{ extra_theme_info.version }}",
+                "source": {
+                    "url": "{{ extra_theme_info.git_url }}",
+                    "type": "git",
+                    "reference": "{{ extra_theme_info.reference }}"
+                }
+            }
+
+        },
+        {% endif %}
         {
             "type": "package",
             "package": {
@@ -236,18 +238,18 @@
     "require": {
         "vlucas/phpdotenv": "2.4",
         "cocur/slugify": "^2.4",
-        "advanced-custom-fields-pro": "5.6.5",
+        "advanced-custom-fields-pro": "5.6.7",
         "wpackagist-plugin/addthis": "6.1.2",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.0.9",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "2.1.0",
         "wpackagist-plugin/acf-image-crop-add-on": "1.4.12",
         "wpackagist-plugin/acf-link-picker-field": "^1.2.8",
-        "wpackagist-plugin/coming-soon": "5.0.16",
+        "wpackagist-plugin/coming-soon": "5.0.17",
         "wpackagist-plugin/smtp-mailer": "1.0.5",
         "wpackagist-plugin/duplicate-post": "3.2.1",
         "wpackagist-plugin/google-tag-manager": "1.0.2",
         "wpackagist-plugin/floating-publish-button": "1.0.6",
-        "wpackagist-plugin/ninja-forms": "3.2.4",
-        "wpackagist-plugin/ewww-image-optimizer": "4.0.4",
+        "wpackagist-plugin/ninja-forms": "3.2.10",
+        "wpackagist-plugin/ewww-image-optimizer": "4.0.6",
         "wpackagist-plugin/nav-menu-images": "3.4",
         "sw-simple-slider": "0.2.10",
         "sw-customizer": "0.3.11",
@@ -285,6 +287,9 @@
               {% endfor %}
             {% endfor%}
         {% endif %}
+        {% if extra_theme_info is defined %}
+        , "{{ extra_theme_info.name }}": "{{ extra_theme_info.version }}"
+        {% endif %}
         {% if plan_data['themes'] is defined %}
             {% for i in plan_data['themes'] %}
               {% for j in supported_plugins %}
@@ -306,6 +311,9 @@
         "installer-paths": {
             "wp-content/themes/{$name}/": [
                 "swapps"
+                {% if extra_theme_info is defined %}
+                , "{{ extra_theme_info.name }}"
+                {% endif %}
                 {% if plan_data['themes'] is defined %}
                 {% for i in plan_data['themes'] %}
                   {% for j in supported_plugins %}
