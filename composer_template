@@ -171,11 +171,11 @@
             "type": "package",
             "package": {
                 "name": "bb-plugin-pro",
-                "version": "1.10.7.1",
+                "version": "2.0.4.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
                     "type": "git",
-                    "reference": "1.10.7.1"
+                    "reference": "2.0.4.1"
                 }
             }
 
@@ -184,11 +184,11 @@
             "type": "package",
             "package": {
                 "name": "bb-theme",
-                "version": "1.6.2",
+                "version": "1.6.4.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-theme-bb.git",
                     "type": "git",
-                    "reference": "1.6.2"
+                    "reference": "1.6.4.1"
                 }
             }
 

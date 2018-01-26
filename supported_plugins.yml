@@ -83,11 +83,9 @@ supported_plugins:
 - "password-strength-for-woocommerce":
     - "wpackagist-plugin/password-strength-for-woocommerce": "1.0.1"
 - "bb-plugin-pro":
-    - "bb-plugin-pro": "1.10.7.1"
+    - "bb-plugin-pro": "2.0.4.1"
 - "bb-theme":
-    - "bb-theme": "1.6.2"
-- "duenio-theme":
-    - "duenio-theme": "0.1.0"
+    - "bb-theme": "1.6.4.1"
 - "duenio-django-integration":
     - "duenio-django-integration": "0.1.0"
 - "duplicate-post":
