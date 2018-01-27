@@ -167,57 +167,53 @@
                 }
             }
         },
+{% for package_version in ["2.0.4.1"] %}
         {
             "type": "package",
             "package": {
                 "name": "bb-plugin-pro",
-                "version": "2.0.4.1",
+                "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
                     "type": "git",
-                    "reference": "2.0.4.1"
+                    "reference": "{{ package_version }}"
                 }
             }
 
         },
+{% endfor %}
+{% for package_version in ["1.6.4.1"] %}
         {
             "type": "package",
             "package": {
                 "name": "bb-theme",
-                "version": "1.6.4.1",
+                "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wp-theme-bb.git",
                     "type": "git",
-                    "reference": "1.6.4.1"
+                    "reference": "{{ package_version }}"
                 }
             }
 
         },
+{% endfor %}
+{% for package_version in ["1.0.0","1.1.1","1.1.3","1.2.0"] %}
         {
             "type": "package",
-            "package": [
+            "package": 
             {
                 "name": "swapps",
-                "version": "1.1.3",
+                "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/swapps-theme.git",
                     "type": "git",
-                    "reference": "1.1.3"
-                }
-            },
-            {
-                "name": "swapps",
-                "version": "1.2.0",
-                "source": {
-                    "url": "git@github.com:swappsco/swapps-theme.git",
-                    "type": "git",
-                    "reference": "1.2.0"
+                    "reference": "{{ package_version }}"
                 }
             }
-            ]
 
         },
-        {% if extra_theme_info is defined %}
+{% endfor %}
+{% if extra_theme_info is defined %}
         {
             "type": "package",
             "package": {
@@ -231,7 +227,7 @@
             }
 
         },
-        {% endif %}
+{% endif %}
         {
             "type": "package",
             "package": {
