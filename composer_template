@@ -197,7 +197,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.0.0","1.1.1","1.1.3","1.2.0"] %}
+{% for package_version in ["1.2.0","1.1.3","1.1.1","1.0.0"] %}
         {
             "type": "package",
             "package": 
