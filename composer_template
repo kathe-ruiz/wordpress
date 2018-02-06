@@ -9,11 +9,11 @@
             "type": "package",
             "package": {
                 "name": "sw-simple-slider",
-                "version": "0.2.10",
+                "version": "0.2.11",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
                     "type": "git",
-                    "reference": "0.2.10"
+                    "reference": "0.2.11"
                 }
             }
 
@@ -258,7 +258,7 @@
         "wpackagist-plugin/ninja-forms": "~3.2",
         "wpackagist-plugin/ewww-image-optimizer": "~4",
         "wpackagist-plugin/nav-menu-images": "~3.4",
-        "sw-simple-slider": "0.2.10",
+        "sw-simple-slider": "0.2.11",
         "sw-customizer": "0.3.11",
         "wpackagist-plugin/wordpress-importer": "~0.6",
         "wp-plugin-swapps": "0.1.12",
