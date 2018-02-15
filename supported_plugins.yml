@@ -57,7 +57,7 @@ supported_plugins:
 - "wired-impact-volunteer-management":
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.8"
 - "woocommerce-dynamic-gallery":
-    - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.2"
+    - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.0"
 - "regenerate-thumbnails":
     - "wpackagist-plugin/regenerate-thumbnails": "2.2.6"
 - "anspress-question-answer":
