@@ -100,9 +100,9 @@ supported_plugins:
     - "wpackagist-plugin/all-in-one-seo-pack": "2.3.16"
 - "auto-tag-links":
     - "wpackagist-plugin/auto-tag-links": "1.0.8"
-- "disqus-comment-system": 
+- "disqus-comment-system":
     - "wpackagist-plugin/disqus-comment-system": "2.87"
-- "enlighter": 
+- "enlighter":
     - "wpackagist-plugin/enlighter": "3.5"
 - "google-analyticator":
     - "wpackagist-plugin/google-analyticator": "6.5.4"
@@ -114,15 +114,15 @@ supported_plugins:
     - "wpackagist-plugin/mailgun": "1.5.8.5"
 - "quick-pagepost-redirect-plugin":
     - "wpackagist-plugin/quick-pagepost-redirect-plugin": "5.1.8"
-- "sitemap": 
+- "sitemap":
     - "wpackagist-plugin/sitemap": "4.3"
 - "wonderm00ns-simple-facebook-open-graph-tags":
     - "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "2.0.9"
-- "wp-gravatar-https": 
+- "wp-gravatar-https":
     - "wpackagist-plugin/wp-gravatar-https": "1.1"
 - "amazon-web-services":
     - "wpackagist-plugin/amazon-web-services": "1.0.3"
-- "amazon-s3-and-cloudfront": 
+- "amazon-s3-and-cloudfront":
     - "wpackagist-plugin/amazon-s3-and-cloudfront": "1.2"
 - "acf-content-analysis-for-yoast-seo":
     - "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1"
@@ -130,3 +130,5 @@ supported_plugins:
     - "wpackagist-plugin/wc-fields-factory": "2.0.5"
 - "woo-order-export":
     - "wpackagist-plugin/woo-order-export-lite": "1.5.2"
+- "bb-ultimate-addon":
+    - "bb-ultimate-addon": "1.6.8"
