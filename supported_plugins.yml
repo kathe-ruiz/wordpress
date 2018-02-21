@@ -132,3 +132,5 @@ supported_plugins:
     - "wpackagist-plugin/woo-order-export-lite": "1.5.2"
 - "bb-ultimate-addon":
     - "bb-ultimate-addon": "1.6.8"
+- "menu-icons":
+    - "wpackagist-plugin/menu-icons": "0.11.0"
