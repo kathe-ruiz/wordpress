@@ -150,3 +150,5 @@ supported_plugins:
     - "sliderpro" : "4.4.0"
 - "masterslider":
     - "masterslider" : "3.2.1"
+- "disqus-comment-system":
+    - "wpackagist-plugin/disqus-comment-system": "3.0.13"
