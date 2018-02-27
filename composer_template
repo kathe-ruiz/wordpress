@@ -181,7 +181,7 @@
         {
             "type": "package",
             "package": {
-                "name": "slider-pro",
+                "name": "sliderpro",
                 "version": "4.4.0",
                 "source": {
                     "url": "git@github.com:swappsco/slider-pro.git",
