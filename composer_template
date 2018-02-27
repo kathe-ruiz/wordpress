@@ -178,6 +178,18 @@
                 }
             }
         },
+        {
+            "type": "package",
+            "package": {
+                "name": "masterslider",
+                "version": "3.2.1",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-masterslider.git",
+                    "type": "git",
+                    "reference": "3.2.1"
+                }
+            }
+        },
 {% for package_version in ["2.0.4.1"] %}
         {
             "type": "package",
