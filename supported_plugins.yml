@@ -140,5 +140,5 @@ supported_plugins:
     - "wpackagist-plugin/locateanything": "1.2.02"
 - "popup-builder":
     - "wpackagist-plugin/popup-builder": "2.6.7.3"
-- "slider-pro":
-    - "slider-pro" : "4.4.0"
+- "sliderpro":
+    - "sliderpro" : "4.4.0"
