@@ -124,7 +124,6 @@ supported_plugins:
     - "wpackagist-plugin/amazon-web-services": "1.0.5"
 - "amazon-s3-and-cloudfront": 
     - "wpackagist-plugin/amazon-s3-and-cloudfront": "1.3.2"
-
 - "acf-content-analysis-for-yoast-seo":
     - "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1"
 - "wc-fields-factory":
@@ -137,3 +136,15 @@ supported_plugins:
     - "wpackagist-plugin/menu-icons": "0.11.0"
 - "wp-pagenavi":
     - "wpackagist-plugin/wp-pagenavi": "2.92"
+- "google-maps":
+    - "wpackagist-plugin/wp-google-maps": "6.4.08"
+- "megamenu":
+    - "wpackagist-plugin/megamenu": "2.4.1.4"
+- "getsitecontrol":
+    - "wpackagist-plugin/getsitecontrol": "2.2.2"
+- "locateanything":
+    - "wpackagist-plugin/locateanything": "1.2.02"
+- "popup-builder":
+    - "wpackagist-plugin/popup-builder": "2.6.7.3"
+- "slider-pro":
+    - "slider-pro" : "4.4.0"

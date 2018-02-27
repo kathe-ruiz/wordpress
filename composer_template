@@ -178,6 +178,18 @@
                 }
             }
         },
+        {
+            "type": "package",
+            "package": {
+                "name": "slider-pro",
+                "version": "4.4.0",
+                "source": {
+                    "url": "git@github.com:swappsco/slider-pro.git",
+                    "type": "git",
+                    "reference": "4.4.0"
+                }
+            }
+        },
 {% for package_version in ["2.0.4.1"] %}
         {
             "type": "package",
