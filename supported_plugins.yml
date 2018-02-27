@@ -130,3 +130,15 @@ supported_plugins:
     - "wpackagist-plugin/wc-fields-factory": "2.0.6"
 - "woo-order-export":
     - "wpackagist-plugin/woo-order-export-lite": "1.5.3"
+- "google-maps":
+    - "wpackagist-plugin/wp-google-maps": "6.4.08"
+- "megamenu":
+    - "wpackagist-plugin/megamenu": "2.4.1.4"
+- "getsitecontrol":
+    - "wpackagist-plugin/getsitecontrol": "2.2.2"
+- "locateanything":
+    - "wpackagist-plugin/locateanything": "1.2.02"
+- "popup-builder":
+    - "wpackagist-plugin/popup-builder": "2.6.7.3"
+- "slider-pro":
+    - "slider-pro" : "4.4.0"
