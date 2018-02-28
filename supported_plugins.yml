@@ -1,4 +1,4 @@
----
+ƒ---
 supported_plugins:
 - "advanced-classifieds":
     - "wpackagist-plugin/advanced-classifieds-and-directory-pro": "1.5.9"
@@ -152,3 +152,5 @@ supported_plugins:
     - "masterslider" : "3.2.1"
 - "disqus-comment-system":
     - "wpackagist-plugin/disqus-comment-system": "3.0.13"
+- "mc4wp-wpml":
+    - "wpackagist-plugin/mc4wp-wpml": "1.0"
