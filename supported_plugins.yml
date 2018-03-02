@@ -154,3 +154,5 @@ supported_plugins:
     - "wpackagist-plugin/disqus-comment-system": "3.0.13"
 - "mc4wp-wpml":
     - "wpackagist-plugin/mc4wp-wpml": "1.0"
+- "facebook-pixel":
+    - "wpackagist-plugin/facebook-pixel": "1.0.0"
