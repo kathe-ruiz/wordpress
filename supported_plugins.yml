@@ -144,3 +144,5 @@ supported_plugins:
     - "sliderpro" : "4.4.0"
 - "masterslider":
     - "masterslider" : "3.2.1"
+- "woo-product-social-sharing":
+    - "wpackagist-plugin/woo-product-social-sharing": "1.7"
