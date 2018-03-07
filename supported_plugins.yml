@@ -162,3 +162,5 @@ supported_plugins:
     - "wpackagist-plugin/cache-control": "2.2.1"
 - "wp-fastest-cache":
     - "wpackagist-plugin/wp-fastest-cache": "0.8.7.7"
+- "w3-total-cache":
+    - "wpackagist-plugin/w3-total-cache": "0.9.6"
