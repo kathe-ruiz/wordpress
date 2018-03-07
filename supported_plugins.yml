@@ -146,3 +146,7 @@ supported_plugins:
     - "masterslider" : "3.2.1"
 - "woo-product-social-sharing":
     - "wpackagist-plugin/woo-product-social-sharing": "1.7"
+- "cache-control":
+    - "wpackagist-plugin/cache-control": "2.2.1"
+- "wp-fastest-cache":
+    - "wpackagist-plugin/wp-fastest-cache": "0.8.7.7"
