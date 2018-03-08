@@ -150,3 +150,5 @@ supported_plugins:
     - "wpackagist-plugin/cache-control": "2.2.1"
 - "wp-fastest-cache":
     - "wpackagist-plugin/wp-fastest-cache": "0.8.7.7"
+- "youtube-embed-plus":
+    - "wpackagist-plugin/youtube-embed-plus": "11.8.5"
