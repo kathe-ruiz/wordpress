@@ -139,7 +139,7 @@ supported_plugins:
 - "locateanything":
     - "wpackagist-plugin/locateanything": "1.2.02"
 - "popup-builder":
-    - "wpackagist-plugin/popup-builder": "2.6.7.3"
+    - "wpackagist-plugin/popup-builder": "2.6.7.4"
 - "sliderpro":
     - "sliderpro" : "4.4.0"
 - "masterslider":
