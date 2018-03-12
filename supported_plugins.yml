@@ -168,3 +168,5 @@ supported_plugins:
     - "wpackagist-plugin/w3-total-cache": "0.9.6"
 - "pdf-embedder":
     - "wpackagist-plugin/pdf-embedder": "3.1.8"
+- "woo-checkout-field-editor-pro":
+    - "wpackagist-plugin/woo-checkout-field-editor-pro": "1.2.5"
