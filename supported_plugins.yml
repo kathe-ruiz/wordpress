@@ -27,7 +27,7 @@ supported_plugins:
 - "ultimate-member":
     - "wpackagist-plugin/ultimate-member": "1.3.88"
 - "sitepress-multilingual-cms":
-    - "sitepress-multilingual-cms": "3.9.1"
+    - "sitepress-multilingual-cms": "3.9.3"
 - "amp":
     - "wpackagist-plugin/amp": "0.6.1"
 - "glue-for-yoast-seo-amp":
@@ -170,3 +170,5 @@ supported_plugins:
     - "wpackagist-plugin/pdf-embedder": "3.1.8"
 - "woo-checkout-field-editor-pro":
     - "wpackagist-plugin/woo-checkout-field-editor-pro": "1.2.5"
+- "wpml-string-translation":
+    - "sitepress-multilingual-cms": "2.7.3"
