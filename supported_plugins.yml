@@ -171,4 +171,4 @@ supported_plugins:
 - "woo-checkout-field-editor-pro":
     - "wpackagist-plugin/woo-checkout-field-editor-pro": "1.2.5"
 - "wpml-string-translation":
-    - "sitepress-multilingual-cms": "2.7.3"
+    - "wpml-string-translation": "2.7.3"
