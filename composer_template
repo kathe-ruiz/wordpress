@@ -170,11 +170,11 @@
             "type": "package",
             "package": {
                 "name": "formidable",
-                "version": "2.05.06",
+                "version": "3.0.06",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "2.05.06"
+                    "reference": "3.0.06"
                 }
             }
         },
