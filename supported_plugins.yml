@@ -35,11 +35,11 @@ supported_plugins:
 - "jetpack":
     - "wpackagist-plugin/jetpack": "5.8"
 - "mailchimp-for-wp":
-    - "wpackagist-plugin/mailchimp-for-wp": "4.1.15"
+    - "wpackagist-plugin/mailchimp-for-wp": "4.2"
 - "wpackagist-plugin/wp-user-avatar":
     - "wpackagist-plugin/wp-user-avatar": "2.0.9"
 - "formidable":
-    - "formidable": "2.05.06"
+    - "formidable": "3.0.06"
 - "formidable-bootstrap":
     - "formidable-bootstrap": "1.01.02"
 - "formidable-pro-add-color-picker-field":
@@ -146,6 +146,8 @@ supported_plugins:
     - "wpackagist-plugin/locateanything": "1.2.02"
 - "popup-builder":
     - "wpackagist-plugin/popup-builder": "2.6.7.4"
+- "sw-simple-slider":
+    - "sw-simple-slider": "0.2.11"
 - "sliderpro":
     - "sliderpro" : "4.4.0"
 - "masterslider":
