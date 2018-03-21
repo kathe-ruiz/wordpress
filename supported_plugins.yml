@@ -133,7 +133,7 @@ supported_plugins:
 - "woo-order-export":
     - "wpackagist-plugin/woo-order-export-lite": "1.5.3"
 - "bb-ultimate-addon":
-    - "bb-ultimate-addon": "1.6.8"
+    - "bb-ultimate-addon": "^1.6"
 - "menu-icons":
     - "wpackagist-plugin/menu-icons": "0.11.0"
 - "wp-pagenavi":
