@@ -169,7 +169,7 @@
         {
             "type": "package",
             "package": {
-                "name": "formidable",
+                "name": "formidable-pro",
                 "version": "3.0.06",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",

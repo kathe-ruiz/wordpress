@@ -39,7 +39,9 @@ supported_plugins:
 - "wpackagist-plugin/wp-user-avatar":
     - "wpackagist-plugin/wp-user-avatar": "2.0.9"
 - "formidable":
-    - "formidable": "3.0.06"
+    - "wpackagist-plugin/formidable": "^3.0"
+- "formidable-pro":
+    - "formidable-pro": "^3.0"
 - "formidable-bootstrap":
     - "formidable-bootstrap": "1.01.02"
 - "formidable-pro-add-color-picker-field":
