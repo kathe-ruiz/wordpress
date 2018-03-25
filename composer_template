@@ -229,6 +229,22 @@
 
         },
 {% endfor %}
+{% for package_version in ["7.1.1"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "wordpress-seo-premium",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-wordpress-seo-premium.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
 {% for package_version in ["1.6.4.1"] %}
         {
             "type": "package",
@@ -260,6 +276,7 @@
 
         },
 {% endfor %}
+
 {% if extra_theme_info is defined %}
         {
             "type": "package",

@@ -33,7 +33,7 @@ supported_plugins:
 - "glue-for-yoast-seo-amp":
     - "wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.2"
 - "jetpack":
-    - "wpackagist-plugin/jetpack": "5.8"
+    - "wpackagist-plugin/jetpack": "^5"
 - "mailchimp-for-wp":
     - "wpackagist-plugin/mailchimp-for-wp": "4.2"
 - "wpackagist-plugin/wp-user-avatar":
@@ -177,4 +177,8 @@ supported_plugins:
 - "wpml-string-translation":
     - "wpml-string-translation": "2.7.3"
 - "intercom":
-    - "wpackagist-plugin/intercom": "2.6.1"
+    - "wpackagist-plugin/intercom": "^2.6"
+- "wordpress-seo":
+    - "wpackagist-plugin/wordpress-seo": "^7"
+- "wordpress-seo-premium":
+    - "wordpress-seo-premium": "^7"
