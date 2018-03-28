@@ -182,3 +182,5 @@ supported_plugins:
     - "wpackagist-plugin/wordpress-seo": "^7"
 - "wordpress-seo-premium":
     - "wordpress-seo-premium": "^7"
+- "resmushit-image-optimizer":
+    - "wpackagist-plugin/resmushit-image-optimizer": "0.1.13"
