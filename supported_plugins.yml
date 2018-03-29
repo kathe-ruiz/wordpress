@@ -167,7 +167,7 @@ supported_plugins:
 - "wp-fastest-cache":
     - "wpackagist-plugin/wp-fastest-cache": "0.8.7.7"
 - "youtube-embed-plus":
-    - "wpackagist-plugin/youtube-embed-plus": "11.8.5"
+    - "wpackagist-plugin/youtube-embed-plus": "11.8.6.1"
 - "w3-total-cache":
     - "wpackagist-plugin/w3-total-cache": "0.9.6"
 - "pdf-embedder":
