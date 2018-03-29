@@ -29,7 +29,7 @@ supported_plugins:
 - "sitepress-multilingual-cms":
     - "sitepress-multilingual-cms": "3.9.3"
 - "amp":
-    - "wpackagist-plugin/amp": "0.6.1"
+    - "wpackagist-plugin/amp": "0.6.2"
 - "glue-for-yoast-seo-amp":
     - "wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.2"
 - "jetpack":
