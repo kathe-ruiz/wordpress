@@ -3,11 +3,11 @@ supported_plugins:
 - "advanced-classifieds":
     - "wpackagist-plugin/advanced-classifieds-and-directory-pro": "1.5.9"
 - "events":
-    - "wpackagist-plugin/events-manager": "5.8.1.3"
+    - "wpackagist-plugin/events-manager": "5.9.1"
 - "volunteer-management":
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.8"
 - "woocommerce":
-    - "wpackagist-plugin/woocommerce": "3.3.3"
+    - "wpackagist-plugin/woocommerce": "3.3.4"
 - "woocommerce-dropdown-cart":
     - "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1"
 - "woocommerce-menu-bar-cart":
@@ -59,7 +59,7 @@ supported_plugins:
 - "wired-impact-volunteer-management":
     - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.8"
 - "woocommerce-dynamic-gallery":
-    - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.0"
+    - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.2"
 - "regenerate-thumbnails":
     - "wpackagist-plugin/regenerate-thumbnails": "3.0.2"
 - "anspress-question-answer":
@@ -77,7 +77,7 @@ supported_plugins:
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
 - "seriously-simple-podcasting":
-    - "wpackagist-plugin/seriously-simple-podcasting": "1.19.5"
+    - "wpackagist-plugin/seriously-simple-podcasting": "1.19.8"
 - "instapage":
     - "wpackagist-plugin/instapage": "3.2.2"
 - "send-grid":
@@ -129,7 +129,7 @@ supported_plugins:
 - "acf-content-analysis-for-yoast-seo":
     - "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1"
 - "wc-fields-factory":
-    - "wpackagist-plugin/wc-fields-factory": "2.0.6"
+    - "wpackagist-plugin/wc-fields-factory": "2.0.7"
 - "woo-order-export":
     - "wpackagist-plugin/woo-order-export-lite": "1.5.3"
 - "bb-ultimate-addon":
