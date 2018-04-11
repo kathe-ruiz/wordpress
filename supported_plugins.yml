@@ -184,3 +184,5 @@ supported_plugins:
     - "wordpress-seo-premium": "^7"
 - "resmushit-image-optimizer":
     - "wpackagist-plugin/resmushit-image-optimizer": "0.1.13"
+- "easy-appointments":
+    - "wpackagist-plugin/easy-appointments": "2.1.4"
