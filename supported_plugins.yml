@@ -186,3 +186,11 @@ supported_plugins:
     - "wpackagist-plugin/resmushit-image-optimizer": "0.1.13"
 - "easy-appointments":
     - "wpackagist-plugin/easy-appointments": "2.1.4"
+- "bb-header-footer":
+    - "wpackagist-plugin/bb-header-footer": "1.1.7"
+- "broken-link-checker":
+    - "wpackagist-plugin/broken-link-checker": "1.11.5"
+- "dw-question-answer":
+    - "wpackagist-plugin/dw-question-answer": "1.5.1"
+- "tinymce-advanced":
+    - "wpackagist-plugin/tinymce-advanced": "4.6.7"
