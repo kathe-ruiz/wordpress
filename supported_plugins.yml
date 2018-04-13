@@ -79,7 +79,7 @@ supported_plugins:
 - "seriously-simple-podcasting":
     - "wpackagist-plugin/seriously-simple-podcasting": "1.19.8"
 - "instapage":
-    - "wpackagist-plugin/instapage": "3.2.2"
+    - "wpackagist-plugin/instapage": "3.2.3"
 - "send-grid":
     - "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.11.8"
 - "password-strength-for-woocommerce":
