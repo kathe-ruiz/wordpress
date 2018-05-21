@@ -1,17 +1,17 @@
 ---
 supported_plugins:
 - "advanced-classifieds":
-    - "wpackagist-plugin/advanced-classifieds-and-directory-pro": "1.5.9"
+    - "wpackagist-plugin/advanced-classifieds-and-directory-pro": "1.6.0"
 - "events":
-    - "wpackagist-plugin/events-manager": "5.9.1"
+    - "wpackagist-plugin/events-manager": "5.9.2"
 - "volunteer-management":
-    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.8"
+    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.9"
 - "woocommerce":
-    - "wpackagist-plugin/woocommerce": "3.3.4"
+    - "wpackagist-plugin/woocommerce": "3.3.5"
 - "woocommerce-dropdown-cart":
     - "wpackagist-plugin/woocommerce-dropdown-cart": "2.1.1"
 - "woocommerce-menu-bar-cart":
-    - "wpackagist-plugin/woocommerce-menu-bar-cart": "2.6.1"
+    - "wpackagist-plugin/woocommerce-menu-bar-cart": "2.7.1"
 - "woocommerce-payu-latam-gateway":
     - "woocommerce-payu": "0.1.0"
 - "woocommerce-tu-compra":
@@ -23,21 +23,21 @@ supported_plugins:
 - "wp-accountant":
     - "wp-accountant": "0.1.5"
 - "woocommerce-quick-buy":
-    - "wpackagist-plugin/woocommerce-quick-buy": "1.8"
+    - "wpackagist-plugin/woocommerce-quick-buy": "1.9"
 - "ultimate-member":
-    - "wpackagist-plugin/ultimate-member": "1.3.88"
+    - "wpackagist-plugin/ultimate-member": "2.0.13"
 - "sitepress-multilingual-cms":
     - "sitepress-multilingual-cms": "3.9.3"
 - "amp":
-    - "wpackagist-plugin/amp": "0.6.2"
+    - "wpackagist-plugin/amp": "0.7.0"
 - "glue-for-yoast-seo-amp":
-    - "wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.2"
+    - "wpackagist-plugin/glue-for-yoast-seo-amp": "0.4.3"
 - "jetpack":
-    - "wpackagist-plugin/jetpack": "6.0"
+    - "wpackagist-plugin/jetpack": "6.1"
 - "mailchimp-for-wp":
     - "wpackagist-plugin/mailchimp-for-wp": "4.2.1"
 - "wpackagist-plugin/wp-user-avatar":
-    - "wpackagist-plugin/wp-user-avatar": "2.0.9"
+    - "wpackagist-plugin/wp-user-avatar": "2.1.0"
 - "formidable":
     - "wpackagist-plugin/formidable": "^3.0"
 - "formidable-pro":
@@ -47,23 +47,23 @@ supported_plugins:
 - "formidable-pro-add-color-picker-field":
     - "wpackagist-plugin/formidable-pro-add-color-picker-field": "1.0"
 - "kirki":
-    - "wpackagist-plugin/kirki": "3.0.25"
+    - "wpackagist-plugin/kirki": "3.0.33"
 - "wp-menu-cart":
-    - "wpackagist-plugin/wp-menu-cart": "2.6.1"
+    - "wpackagist-plugin/wp-menu-cart": "2.7.1"
 - "import-meetup-events":
-    - "wpackagist-plugin/import-meetup-events": "1.2.1"
+    - "wpackagist-plugin/import-meetup-events": "1.3.0"
 - "simple-301-redirects":
     - "wpackagist-plugin/simple-301-redirects": "1.07"
 - "si-contact-form":
-    - "wpackagist-plugin/si-contact-form": "4.0.55"
+    - "wpackagist-plugin/si-contact-form": "4.0.56"
 - "wired-impact-volunteer-management":
-    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.8"
+    - "wpackagist-plugin/wired-impact-volunteer-management": "1.3.9"
 - "woocommerce-dynamic-gallery":
-    - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.0"
+    - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.2"
 - "regenerate-thumbnails":
     - "wpackagist-plugin/regenerate-thumbnails": "3.0.2"
 - "anspress-question-answer":
-    - "wpackagist-plugin/anspress-question-answer": "4.1.7"
+    - "wpackagist-plugin/anspress-question-answer": "4.1.10"
 - "anspress-email":
     - "wpackagist-plugin/anspress-email": "2.1"
 - "categories-for-anspress":
@@ -73,11 +73,11 @@ supported_plugins:
 - "geodirectory":
     - "wpackagist-plugin/geodirectory": "1.6.25"
 - "woocommerce-gateway-stripe":
-    - "wpackagist-plugin/woocommerce-gateway-stripe": "4.0.7"
+    - "wpackagist-plugin/woocommerce-gateway-stripe": "4.1.13"
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
 - "seriously-simple-podcasting":
-    - "wpackagist-plugin/seriously-simple-podcasting": "1.19.8"
+    - "wpackagist-plugin/seriously-simple-podcasting": "1.19.9"
 - "instapage":
     - "wpackagist-plugin/instapage": "3.2.3"
 - "send-grid":
@@ -97,15 +97,15 @@ supported_plugins:
 - "wp-basic-auth":
     - "wpackagist-plugin/wp-basic-auth": "1.1.3"
 - "addthis-follow":
-    - "wpackagist-plugin/addthis-follow": "4.1.2"
+    - "wpackagist-plugin/addthis-follow": "4.1.5"
 - "all-in-one-seo-pack":
-    - "wpackagist-plugin/all-in-one-seo-pack": "2.4.5.1"
+    - "wpackagist-plugin/all-in-one-seo-pack": "2.5"
 - "auto-tag-links":
     - "wpackagist-plugin/auto-tag-links": "1.0.9"
 - "disqus-comment-system":
-    - "wpackagist-plugin/disqus-comment-system": "3.0.13"
+    - "wpackagist-plugin/disqus-comment-system": "3.0.15"
 - "enlighter":
-    - "wpackagist-plugin/enlighter": "3.5"
+    - "wpackagist-plugin/enlighter": "3.6"
 - "google-analyticator":
     - "wpackagist-plugin/google-analyticator": "6.5.4"
 - "image-elevator":
@@ -119,7 +119,7 @@ supported_plugins:
 - "sitemap":
     - "wpackagist-plugin/sitemap": "4.3"
 - "wonderm00ns-simple-facebook-open-graph-tags":
-    - "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "2.2.3.1"
+    - "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "2.2.4.1"
 - "wp-gravatar-https":
     - "wpackagist-plugin/wp-gravatar-https": "1.1"
 - "amazon-web-services":
@@ -129,25 +129,25 @@ supported_plugins:
 - "acf-content-analysis-for-yoast-seo":
     - "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1"
 - "wc-fields-factory":
-    - "wpackagist-plugin/wc-fields-factory": "2.0.7"
+    - "wpackagist-plugin/wc-fields-factory": "2.0.8"
 - "woo-order-export":
-    - "wpackagist-plugin/woo-order-export-lite": "1.5.3"
+    - "wpackagist-plugin/woo-order-export-lite": "1.5.4"
 - "bb-ultimate-addon":
     - "bb-ultimate-addon": "^1.6"
 - "menu-icons":
-    - "wpackagist-plugin/menu-icons": "0.11.0"
+    - "wpackagist-plugin/menu-icons": "0.11.2"
 - "wp-pagenavi":
     - "wpackagist-plugin/wp-pagenavi": "2.92"
 - "google-maps":
-    - "wpackagist-plugin/wp-google-maps": "6.4.11"
+    - "wpackagist-plugin/wp-google-maps": "7.0.04"
 - "megamenu":
-    - "wpackagist-plugin/megamenu": "2.4.1.5"
+    - "wpackagist-plugin/megamenu": "2.4.2"
 - "getsitecontrol":
-    - "wpackagist-plugin/getsitecontrol": "2.2.2"
+    - "wpackagist-plugin/getsitecontrol": "2.2.3"
 - "locateanything":
     - "wpackagist-plugin/locateanything": "1.2.02"
 - "popup-builder":
-    - "wpackagist-plugin/popup-builder": "2.6.7.4"
+    - "wpackagist-plugin/popup-builder": "2.6.7.6"
 - "sw-simple-slider":
     - "sw-simple-slider": "0.2.11"
 - "sliderpro":
@@ -155,7 +155,7 @@ supported_plugins:
 - "masterslider":
     - "masterslider" : "3.2.1"
 - "disqus-comment-system":
-    - "wpackagist-plugin/disqus-comment-system": "3.0.13"
+    - "wpackagist-plugin/disqus-comment-system": "3.0.15"
 - "mc4wp-wpml":
     - "wpackagist-plugin/mc4wp-wpml": "1.0"
 - "facebook-pixel":
@@ -163,29 +163,29 @@ supported_plugins:
 - "woo-product-social-sharing":
     - "wpackagist-plugin/woo-product-social-sharing": "1.7"
 - "cache-control":
-    - "wpackagist-plugin/cache-control": "2.2.1"
+    - "wpackagist-plugin/cache-control": "2.2.2"
 - "wp-fastest-cache":
-    - "wpackagist-plugin/wp-fastest-cache": "0.8.7.7"
+    - "wpackagist-plugin/wp-fastest-cache": "0.8.7.9"
 - "youtube-embed-plus":
-    - "wpackagist-plugin/youtube-embed-plus": "11.8.6.1"
+    - "wpackagist-plugin/youtube-embed-plus": "11.8.7"
 - "w3-total-cache":
-    - "wpackagist-plugin/w3-total-cache": "0.9.6"
+    - "wpackagist-plugin/w3-total-cache": "0.9.7"
 - "pdf-embedder":
     - "wpackagist-plugin/pdf-embedder": "3.1.8"
 - "woo-checkout-field-editor-pro":
-    - "wpackagist-plugin/woo-checkout-field-editor-pro": "1.2.5"
+    - "wpackagist-plugin/woo-checkout-field-editor-pro": "1.2.6"
 - "wpml-string-translation":
     - "wpml-string-translation": "2.7.3"
 - "intercom":
     - "wpackagist-plugin/intercom": "^2.6"
 - "wordpress-seo":
-    - "wpackagist-plugin/wordpress-seo": "7.2"
+    - "wpackagist-plugin/wordpress-seo": "7.5.1"
 - "wordpress-seo-premium":
     - "wordpress-seo-premium": "^7"
 - "resmushit-image-optimizer":
-    - "wpackagist-plugin/resmushit-image-optimizer": "0.1.13"
+    - "wpackagist-plugin/resmushit-image-optimizer": "0.1.15"
 - "easy-appointments":
-    - "wpackagist-plugin/easy-appointments": "2.1.4"
+    - "wpackagist-plugin/easy-appointments": "2.3.0"
 - "bb-header-footer":
     - "wpackagist-plugin/bb-header-footer": "1.1.7"
 - "broken-link-checker":
@@ -193,4 +193,4 @@ supported_plugins:
 - "dw-question-answer":
     - "wpackagist-plugin/dw-question-answer": "1.5.1"
 - "tinymce-advanced":
-    - "wpackagist-plugin/tinymce-advanced": "4.6.7"
+    - "wpackagist-plugin/tinymce-advanced": "4.7.11"
