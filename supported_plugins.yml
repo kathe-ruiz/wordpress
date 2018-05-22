@@ -27,7 +27,7 @@ supported_plugins:
 - "ultimate-member":
     - "wpackagist-plugin/ultimate-member": "2.0.13"
 - "sitepress-multilingual-cms":
-    - "sitepress-multilingual-cms": "3.9.3"
+    - "sitepress-multilingual-cms": "3.9.4"
 - "amp":
     - "wpackagist-plugin/amp": "0.7.0"
 - "glue-for-yoast-seo-amp":
@@ -35,13 +35,13 @@ supported_plugins:
 - "jetpack":
     - "wpackagist-plugin/jetpack": "6.1"
 - "mailchimp-for-wp":
-    - "wpackagist-plugin/mailchimp-for-wp": "4.2.1"
+    - "wpackagist-plugin/mailchimp-for-wp": "4.2.2"
 - "wpackagist-plugin/wp-user-avatar":
     - "wpackagist-plugin/wp-user-avatar": "2.1.0"
 - "formidable":
     - "wpackagist-plugin/formidable": "^3.0"
 - "formidable-pro":
-    - "formidable-pro": "^3.0"
+    - "formidable-pro": "^3.01"
 - "formidable-bootstrap":
     - "formidable-bootstrap": "1.01.02"
 - "formidable-pro-add-color-picker-field":
@@ -79,7 +79,7 @@ supported_plugins:
 - "seriously-simple-podcasting":
     - "wpackagist-plugin/seriously-simple-podcasting": "1.19.9"
 - "instapage":
-    - "wpackagist-plugin/instapage": "3.2.3"
+    - "wpackagist-plugin/instapage": "3.2.4"
 - "send-grid":
     - "wpackagist-plugin/sendgrid-email-delivery-simplified": "1.11.8"
 - "password-strength-for-woocommerce":
@@ -133,7 +133,7 @@ supported_plugins:
 - "woo-order-export":
     - "wpackagist-plugin/woo-order-export-lite": "1.5.4"
 - "bb-ultimate-addon":
-    - "bb-ultimate-addon": "^1.6"
+    - "bb-ultimate-addon": "^1.7"
 - "menu-icons":
     - "wpackagist-plugin/menu-icons": "0.11.2"
 - "wp-pagenavi":
