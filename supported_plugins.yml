@@ -194,3 +194,8 @@ supported_plugins:
     - "wpackagist-plugin/dw-question-answer": "1.5.1"
 - "tinymce-advanced":
     - "wpackagist-plugin/tinymce-advanced": "4.7.11"
+- "dobsondev-shortcodes":
+    - "wpackagist-plugin/dobsondev-shortcodes": "2.1.9"
+- "types":
+    - "wpackagist-plugin/types": "2.2.23"
+
