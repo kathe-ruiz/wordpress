@@ -25,7 +25,7 @@ supported_plugins:
 - "woocommerce-quick-buy":
     - "wpackagist-plugin/woocommerce-quick-buy": "1.9"
 - "ultimate-member":
-    - "wpackagist-plugin/ultimate-member": "2.0.13"
+    - "wpackagist-plugin/ultimate-member": "^2"
 - "sitepress-multilingual-cms":
     - "sitepress-multilingual-cms": "3.9.4"
 - "amp":
