@@ -399,7 +399,6 @@
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "~2.0.4",
         {% endif %}
-        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
