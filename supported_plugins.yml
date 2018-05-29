@@ -71,7 +71,7 @@ supported_plugins:
 - "geodirectory":
     - "wpackagist-plugin/geodirectory": "1.6.25"
 - "woocommerce-gateway-stripe":
-    - "wpackagist-plugin/woocommerce-gateway-stripe": "4.1.13"
+    - "wpackagist-plugin/woocommerce-gateway-stripe": "^4.1"
 - "mb-imagechimp-rss-feed-enhancer":
     - "wpackagist-plugin/mb-imagechimp-rss-feed-enhancer": "1.0"
 - "seriously-simple-podcasting":
@@ -89,7 +89,7 @@ supported_plugins:
 - "duenio-django-integration":
     - "duenio-django-integration": "0.1.0"
 - "duplicate-post":
-    - "wpackagist-plugin/duplicate-post": "3.2.2"
+    - "wpackagist-plugin/duplicate-post": "^3.2"
 - "floating-publish-button":
     - "wpackagist-plugin/floating-publish-button": "1.0.6"
 - "wp-basic-auth":
@@ -137,7 +137,7 @@ supported_plugins:
 - "wp-pagenavi":
     - "wpackagist-plugin/wp-pagenavi": "2.92"
 - "google-maps":
-    - "wpackagist-plugin/wp-google-maps": "7.0.04"
+    - "wpackagist-plugin/wp-google-maps": "^7.0"
 - "megamenu":
     - "wpackagist-plugin/megamenu": "2.4.2"
 - "getsitecontrol":
@@ -156,8 +156,8 @@ supported_plugins:
     - "wpackagist-plugin/disqus-comment-system": "3.0.15"
 - "mc4wp-wpml":
     - "wpackagist-plugin/mc4wp-wpml": "1.0"
-- "facebook-pixel":
-    - "wpackagist-plugin/facebook-pixel": "1.0.0"
+- "wp-facebook-pixel":
+    - "wpackagist-plugin/wp-facebook-pixel":"^4"
 - "woo-product-social-sharing":
     - "wpackagist-plugin/woo-product-social-sharing": "1.7"
 - "cache-control":
@@ -171,7 +171,7 @@ supported_plugins:
 - "pdf-embedder":
     - "wpackagist-plugin/pdf-embedder": "3.1.8"
 - "woo-checkout-field-editor-pro":
-    - "wpackagist-plugin/woo-checkout-field-editor-pro": "1.2.6"
+    - "wpackagist-plugin/woo-checkout-field-editor-pro": "^1.2"
 - "wpml-string-translation":
     - "wpml-string-translation": "^2.7"
 - "intercom":
@@ -202,3 +202,7 @@ supported_plugins:
     - "types": "^3.0"
 - "wp-views":
     - "wp-views": "^2.6"
+- "ewww-image-optimizer":
+    - "wpackagist-plugin/ewww-image-optimizer": "~4"
+- "ninja-forms":
+    - "wpackagist-plugin/ninja-forms": "^3"
