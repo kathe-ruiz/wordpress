@@ -218,3 +218,9 @@ supported_plugins:
     - "fg-joomla-to-wordpress-premium": "^3"
 - "fg-joomla-to-wordpress-premium-wpml-modules":
     - "fg-joomla-to-wordpress-premium-wpml-module": "^2"
+- "acf-content-analysis-for-yoast-seo":
+    - "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1"
+- "sw-simple-slider":
+    - "sw-simple-slider": "^0.2"
+- "sw-customizer":
+    - "sw-customizer": "^0.3"

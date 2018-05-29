@@ -499,15 +499,12 @@
             "wpackagist-plugin/disable-blogging",
             {% endif %}
             "wpackagist-plugin/acf-link-picker-field",
-            "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
             "wpackagist-plugin/coming-soon",
             "wpackagist-plugin/floating-publish-button",
-            "wpackagist-plugin/ninja-forms",
             "wpackagist-plugin/smtp-mailer",
             "wpackagist-plugin/wordpress-importer",
-            "sw-simple-slider",
             "sw-customizer",
             "wpackagist-plugin/wordpress-seo"
             {% if plan_data['plugins'] is defined %}
