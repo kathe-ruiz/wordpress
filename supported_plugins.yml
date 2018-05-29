@@ -55,7 +55,7 @@ supported_plugins:
 - "simple-301-redirects":
     - "wpackagist-plugin/simple-301-redirects": "1.07"
 - "si-contact-form":
-    - "wpackagist-plugin/si-contact-form": "4.0.56"
+    - "wpackagist-plugin/si-contact-form": "^4.0"
 - "woocommerce-dynamic-gallery":
     - "wpackagist-plugin/woocommerce-dynamic-gallery": "2.5.2"
 - "regenerate-thumbnails":
