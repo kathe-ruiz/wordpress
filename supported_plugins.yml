@@ -214,7 +214,7 @@ supported_plugins:
     - "wpackagist-plugin/acf-link-picker-field": "^1.2.8"
 - "nav-menu-images":
     - "wpackagist-plugin/nav-menu-images": "~3.4"
-- "fg-joomla-to-wordpress-premium-wpml-modules":
-    - "fg-joomla-to-wordpress-premium": "^3"
 - "fg-joomla-to-wordpress-premium":
+    - "fg-joomla-to-wordpress-premium": "^3"
+- "fg-joomla-to-wordpress-premium-wpml-modules":
     - "fg-joomla-to-wordpress-premium-wpml-module": "^2"
