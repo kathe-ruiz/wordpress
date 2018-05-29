@@ -157,7 +157,7 @@ supported_plugins:
 - "mc4wp-wpml":
     - "wpackagist-plugin/mc4wp-wpml": "1.0"
 - "wp-facebook-pixel":
-    - "wpackagist-plugin/wp-facebook-pixel":"^4"
+    - "wpackagist-plugin/wp-facebook-pixel": "^4"
 - "woo-product-social-sharing":
     - "wpackagist-plugin/woo-product-social-sharing": "1.7"
 - "cache-control":
