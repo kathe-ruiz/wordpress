@@ -196,8 +196,6 @@ supported_plugins:
     - "wpackagist-plugin/tinymce-advanced": "4.7.11"
 - "dobsondev-shortcodes":
     - "wpackagist-plugin/dobsondev-shortcodes": "^2.1"
-- "types":
-    - "wpackagist-plugin/types": "2.2.23"
 - "updraftplus":
     - "wpackagist-plugin/updraftplus": "^1.14"
 - "wpml-mailchimp-for-wp":
