@@ -293,6 +293,38 @@
 
         },
 {% endfor %}
+{% for package_version in ["3.43.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "fg-joomla-to-wordpress-premium",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.5.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "fg-joomla-to-wordpress-premium-wpml-module",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-wpml-module.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
 {% for package_version in ["1.6.4.1"] %}
         {
             "type": "package",
