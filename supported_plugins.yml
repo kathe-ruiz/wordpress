@@ -177,7 +177,7 @@ supported_plugins:
 - "intercom":
     - "wpackagist-plugin/intercom": "^2.6"
 - "wordpress-seo":
-    - "wpackagist-plugin/wordpress-seo": "7.5.1"
+    - "wpackagist-plugin/wordpress-seo": "^7"
 - "wordpress-seo-premium":
     - "wordpress-seo-premium": "^7"
 - "resmushit-image-optimizer":
@@ -206,3 +206,17 @@ supported_plugins:
     - "wpackagist-plugin/ewww-image-optimizer": "~4"
 - "ninja-forms":
     - "wpackagist-plugin/ninja-forms": "^3"
+- "coming-soon":
+    - "wpackagist-plugin/coming-soon": "^5.0"
+- "addthis":
+    - "wpackagist-plugin/addthis": "^6.1"
+- "advanced-custom-fields-pro":
+    - "advanced-custom-fields-pro": "^5.6"
+- "advanced-custom-fields-font-awesome":
+    - "wpackagist-plugin/advanced-custom-fields-font-awesome": "~2.1"
+- "acf-image-crop-add-on":
+    - "wpackagist-plugin/acf-image-crop-add-on": "~1.4"
+- "acf-link-picker-field":
+    - "wpackagist-plugin/acf-link-picker-field": "^1.2.8"
+- "nav-menu-images":
+    - "wpackagist-plugin/nav-menu-images": "~3.4"

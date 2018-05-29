@@ -357,12 +357,6 @@
     "require": {
         "vlucas/phpdotenv": "2.4",
         "cocur/slugify": "^2.4",
-        "advanced-custom-fields-pro": "^5.6",
-        "wpackagist-plugin/addthis": "^6.1",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome": "~2.1.0",
-        "wpackagist-plugin/acf-image-crop-add-on": "~1.4.12",
-        "wpackagist-plugin/acf-link-picker-field": "^1.2.8",
-        "wpackagist-plugin/coming-soon": "^5.0",
         "wpackagist-plugin/smtp-mailer": "~1.0",
         "wpackagist-plugin/google-tag-manager": "^1.0",
         "wpackagist-plugin/floating-publish-button": "~1.0.6",
@@ -373,7 +367,6 @@
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "~2.0.4",
         {% endif %}
-        "wpackagist-plugin/wordpress-seo": "^7",
         "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
