@@ -136,9 +136,9 @@
                 "name": "sitepress-multilingual-cms",
                 "version": "3.9.4",
                 "source": {
-                    "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                    "url": "git@github.com:swappsco/sitepress-multilingual-cms.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "3.9.4"
                 }
             }
         },
@@ -169,12 +169,12 @@
         {
             "type": "package",
             "package": {
-                "name": "ç",
-                "version": "3.01.03",
+                "name": "formidable-pro",
+                "version": "3.02",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "3.01.03"
+                    "reference": "3.02"
                 }
             }
         },
@@ -238,6 +238,54 @@
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-wordpress-seo-premium.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["0.0.2"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "wpml-mailchimp-for-wp",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/wpml-mailchimp-for-wp.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["3.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "types",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/types.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.6"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "wp-views",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-views.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
@@ -319,7 +367,7 @@
         "wpackagist-plugin/duplicate-post": "^3.2.1",
         "wpackagist-plugin/google-tag-manager": "~1.0.2",
         "wpackagist-plugin/floating-publish-button": "~1.0.6",
-        "wpackagist-plugin/ninja-forms": "3.2.27",
+        "wpackagist-plugin/ninja-forms": "^3",
         "wpackagist-plugin/ewww-image-optimizer": "~4",
         "wpackagist-plugin/nav-menu-images": "~3.4",
         "sw-customizer": "0.3.11",
