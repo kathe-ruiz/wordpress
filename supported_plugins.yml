@@ -202,3 +202,5 @@ supported_plugins:
     - "wpml-mailchimp-for-wp": "^0.0"
 - "types":
     - "types": "^3.0"
+- "wp-views":
+    - "wp-views": "^2.6"
