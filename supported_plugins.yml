@@ -200,4 +200,7 @@ supported_plugins:
     - "wpackagist-plugin/types": "2.2.23"
 - "updraftplus":
     - "wpackagist-plugin/updraftplus": "^1.14"
-
+- "wpml-mailchimp-for-wp":
+    - "wpml-mailchimp-for-wp": "^0.0"
+- "types":
+    - "types": "^3.0"
