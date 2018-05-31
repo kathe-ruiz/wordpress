@@ -221,4 +221,4 @@ supported_plugins:
 - "sw-customizer":
     - "sw-customizer": "^0.3"
 - "breadcrumb-navxt":
-    - "wpackagist-plugin/breadcrumb-navxt":"^6"
+    - "wpackagist-plugin/breadcrumb-navxt": "^6"
