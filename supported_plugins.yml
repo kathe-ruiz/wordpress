@@ -220,3 +220,5 @@ supported_plugins:
     - "sw-simple-slider": "^0.2"
 - "sw-customizer":
     - "sw-customizer": "^0.3"
+- "breadcrumb-navxt":
+    - "wpackagist-plugin/breadcrumb-navxt":"^6"
