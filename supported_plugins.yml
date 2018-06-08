@@ -83,7 +83,7 @@ supported_plugins:
 - "bb-plugin-pro":
     - "bb-plugin-pro": "^2"
 - "bb-theme":
-    - "bb-theme": "1.6.4.1"
+    - "bb-theme": "^1"
 - "duenio-django-integration":
     - "duenio-django-integration": "0.1.0"
 - "duplicate-post":
