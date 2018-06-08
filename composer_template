@@ -325,14 +325,14 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.6.4.1"] %}
+{% for package_version in ["1.6.5.1","1.6.4.1"] %}
         {
             "type": "package",
             "package": {
                 "name": "bb-theme",
                 "version": "{{ package_version }}",
                 "source": {
-                    "url": "git@github.com:swappsco/wp-theme-bb.git",
+                    "url": "git@github.com:swappsco/theme-bb.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
