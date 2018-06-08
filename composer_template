@@ -332,7 +332,7 @@
                 "name": "bb-theme",
                 "version": "{{ package_version }}",
                 "source": {
-                    "url": "git@github.com:swappsco/theme-bb.git",
+                    "url": "git@github.com:swappsco/bb-theme.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
