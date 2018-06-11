@@ -220,3 +220,5 @@ supported_plugins:
     - "sw-simple-slider": "^0.2"
 - "sw-customizer":
     - "sw-customizer": "^0.3"
+- "insert-php-code-snippet":
+    - "wpackagist-plugin/insert-php-code-snippet": "^1.2"
