@@ -222,3 +222,5 @@ supported_plugins:
     - "sw-customizer": "^0.3"
 - "breadcrumb-navxt":
     - "wpackagist-plugin/breadcrumb-navxt": "^6"
+- "insert-php-code-snippet":
+    - "wpackagist-plugin/insert-php-code-snippet": "^1.2"
