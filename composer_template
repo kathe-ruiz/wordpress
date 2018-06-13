@@ -190,30 +190,6 @@
                 }
             }
         },
-        {
-            "type": "package",
-            "package": {
-                "name": "sliderpro",
-                "version": "4.4.0",
-                "source": {
-                    "url": "git@github.com:swappsco/slider-pro.git",
-                    "type": "git",
-                    "reference": "4.4.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "masterslider",
-                "version": "3.2.1",
-                "source": {
-                    "url": "git@github.com:swappsco/wp-masterslider.git",
-                    "type": "git",
-                    "reference": "3.2.1"
-                }
-            }
-        },
 {% for package_version in ["2.1.2.2"] %}
         {
             "type": "package",
@@ -293,7 +269,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["3.43.0"] %}
+{% for package_version in ["3.43.1"] %}
         {
             "type": "package",
             "package":
@@ -318,6 +294,22 @@
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-wpml-module.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.15.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "fg-joomla-to-wordpress-premium-k2-module",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-k2-module.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
