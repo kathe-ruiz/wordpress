@@ -190,30 +190,7 @@
                 }
             }
         },
-        {
-            "type": "package",
-            "package": {
-                "name": "sliderpro",
-                "version": "4.4.0",
-                "source": {
-                    "url": "git@github.com:swappsco/slider-pro.git",
-                    "type": "git",
-                    "reference": "4.4.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "masterslider",
-                "version": "3.2.1",
-                "source": {
-                    "url": "git@github.com:swappsco/wp-masterslider.git",
-                    "type": "git",
-                    "reference": "3.2.1"
-                }
-            }
-        },
+
 {% for package_version in ["2.1.2.2"] %}
         {
             "type": "package",
