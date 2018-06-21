@@ -134,7 +134,7 @@
             "type": "package",
             "package": {
                 "name": "sitepress-multilingual-cms",
-                "version": "3.9.4",
+                "version": "4.0.3",
                 "source": {
                     "url": "git@github.com:swappsco/sitepress-multilingual-cms.git",
                     "type": "git",
