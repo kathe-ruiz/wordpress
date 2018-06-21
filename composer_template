@@ -97,11 +97,11 @@
             "type": "package",
             "package": {
                 "name": "bb-ultimate-addon",
-                "version": "1.6.8",
+                "version": "1.7.3",
                 "source": {
                     "url": "git@github.com:swappsco/bb-ultimate-addon.git",
                     "type": "git",
-                    "reference": "1.6.8"
+                    "reference": "1.7.3"
                 }
             }
         },
@@ -121,11 +121,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.6.7",
+                "version": "5.6.10",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.6.7"
+                    "reference": "5.6.10"
                 }
             }
 
@@ -134,11 +134,11 @@
             "type": "package",
             "package": {
                 "name": "sitepress-multilingual-cms",
-                "version": "3.9.3",
+                "version": "3.9.4",
                 "source": {
-                    "url": "git@github.com:swappsco/wp-plugin-wpml.git",
+                    "url": "git@github.com:swappsco/sitepress-multilingual-cms.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "3.9.4"
                 }
             }
         },
@@ -169,12 +169,12 @@
         {
             "type": "package",
             "package": {
-                "name": "formidable",
-                "version": "2.05.06",
+                "name": "formidable-pro",
+                "version": "3.02",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "2.05.06"
+                    "reference": "3.02"
                 }
             }
         },
@@ -182,39 +182,15 @@
             "type": "package",
             "package": {
                 "name": "formidable-bootstrap",
-                "version": "1.01.02",
+                "version": "1.02.02",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-formidable-bootstrap.git",
                     "type": "git",
-                    "reference": "1.01.02"
+                    "reference": "1.02.02"
                 }
             }
         },
-        {
-            "type": "package",
-            "package": {
-                "name": "sliderpro",
-                "version": "4.4.0",
-                "source": {
-                    "url": "git@github.com:swappsco/slider-pro.git",
-                    "type": "git",
-                    "reference": "4.4.0"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "masterslider",
-                "version": "3.2.1",
-                "source": {
-                    "url": "git@github.com:swappsco/wp-masterslider.git",
-                    "type": "git",
-                    "reference": "3.2.1"
-                }
-            }
-        },
-{% for package_version in ["2.0.4.1"] %}
+{% for package_version in ["2.1.2.2"] %}
         {
             "type": "package",
             "package": {
@@ -229,14 +205,15 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.6.4.1"] %}
+{% for package_version in ["7.5.1"] %}
         {
             "type": "package",
-            "package": {
-                "name": "bb-theme",
+            "package":
+            {
+                "name": "wordpress-seo-premium",
                 "version": "{{ package_version }}",
                 "source": {
-                    "url": "git@github.com:swappsco/wp-theme-bb.git",
+                    "url": "git@github.com:swappsco/wp-plugin-wordpress-seo-premium.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
@@ -244,7 +221,118 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.2.1","1.2.0","1.1.3","1.1.1","1.0.0"] %}
+{% for package_version in ["0.0.2"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "wpml-mailchimp-for-wp",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/wpml-mailchimp-for-wp.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["3.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "types",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/types.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.6"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "wp-views",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-views.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["3.43.1"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "fg-joomla-to-wordpress-premium",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.5.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "fg-joomla-to-wordpress-premium-wpml-module",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-wpml-module.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.15.0"] %}
+        {
+            "type": "package",
+            "package":
+            {
+                "name": "fg-joomla-to-wordpress-premium-k2-module",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-k2-module.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["1.6.5.1","1.6.4.1"] %}
+        {
+            "type": "package",
+            "package": {
+                "name": "bb-theme",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/bb-theme.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["1.2.2"] %}
         {
             "type": "package",
             "package":
@@ -260,6 +348,7 @@
 
         },
 {% endfor %}
+
 {% if extra_theme_info is defined %}
         {
             "type": "package",
@@ -292,28 +381,15 @@
     "require": {
         "vlucas/phpdotenv": "2.4",
         "cocur/slugify": "^2.4",
-        "advanced-custom-fields-pro": "5.6.7",
-        "wpackagist-plugin/addthis": "^6.1.2",
-        "wpackagist-plugin/advanced-custom-fields-font-awesome": "~2.1.0",
-        "wpackagist-plugin/acf-image-crop-add-on": "~1.4.12",
-        "wpackagist-plugin/acf-link-picker-field": "^1.2.8",
-        "wpackagist-plugin/coming-soon": "^5.0.17",
-        "wpackagist-plugin/smtp-mailer": "~1.0.5",
-        "wpackagist-plugin/duplicate-post": "^3.2.1",
-        "wpackagist-plugin/google-tag-manager": "~1.0.2",
+        "wpackagist-plugin/smtp-mailer": "~1.0",
+        "wpackagist-plugin/google-tag-manager": "^1.0",
         "wpackagist-plugin/floating-publish-button": "~1.0.6",
-        "wpackagist-plugin/ninja-forms": "~3.2",
-        "wpackagist-plugin/ewww-image-optimizer": "~4",
         "wpackagist-plugin/nav-menu-images": "~3.4",
-        "sw-simple-slider": "0.2.11",
-        "sw-customizer": "0.3.11",
         "wpackagist-plugin/wordpress-importer": "~0.6",
         "wp-plugin-swapps": "0.1.12",
         {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
         "wpackagist-plugin/disable-blogging": "~2.0.4",
         {% endif %}
-        "wpackagist-plugin/wordpress-seo": "^6",
-        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "2.0.1",
         "oomphinc/composer-installers-extender": "^1.1"
         {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}
@@ -357,7 +433,7 @@
               {% endfor %}
             {% endfor%}
         {% else %}
-            , "swapps":"^1.1"
+            , "swapps":"^1.2"
         {% endif %}
     },
     "extra" : {
@@ -413,15 +489,12 @@
             "wpackagist-plugin/disable-blogging",
             {% endif %}
             "wpackagist-plugin/acf-link-picker-field",
-            "wpackagist-plugin/acf-content-analysis-for-yoast-seo",
             "wpackagist-plugin/advanced-custom-fields-font-awesome",
             "wpackagist-plugin/acf-image-crop-add-on",
             "wpackagist-plugin/coming-soon",
             "wpackagist-plugin/floating-publish-button",
-            "wpackagist-plugin/ninja-forms",
             "wpackagist-plugin/smtp-mailer",
             "wpackagist-plugin/wordpress-importer",
-            "sw-simple-slider",
             "sw-customizer",
             "wpackagist-plugin/wordpress-seo"
             {% if plan_data['plugins'] is defined %}
