@@ -97,11 +97,11 @@
             "type": "package",
             "package": {
                 "name": "bb-ultimate-addon",
-                "version": "1.7.3",
+                "version": "1.8.2",
                 "source": {
                     "url": "git@github.com:swappsco/bb-ultimate-addon.git",
                     "type": "git",
-                    "reference": "1.7.3"
+                    "reference": "1.8.2"
                 }
             }
         },
@@ -198,6 +198,21 @@
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.1.3.3"] %}
+        {
+            "type": "package",
+            "package": {
+                "name": "bb-plugin",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/bb-plugin.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
