@@ -97,11 +97,11 @@
             "type": "package",
             "package": {
                 "name": "bb-ultimate-addon",
-                "version": "1.7.3",
+                "version": "1.8.2",
                 "source": {
                     "url": "git@github.com:swappsco/bb-ultimate-addon.git",
                     "type": "git",
-                    "reference": "1.7.3"
+                    "reference": "1.8.2"
                 }
             }
         },

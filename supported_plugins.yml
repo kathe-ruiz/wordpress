@@ -128,7 +128,7 @@ supported_plugins:
   - woo-order-export:
       - wpackagist-plugin/woo-order-export-lite: ^1.5
   - bb-ultimate-addon:
-      - bb-ultimate-addon: ^1.7
+      - bb-ultimate-addon: ^1
   - menu-icons:
       - wpackagist-plugin/menu-icons: ^0.11
   - wp-pagenavi:
