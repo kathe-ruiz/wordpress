@@ -190,11 +190,26 @@
                 }
             }
         },
-{% for package_version in ["2.1.3.3"] %}
+{% for package_version in ["2.1.2.2"] %}
         {
             "type": "package",
             "package": {
                 "name": "bb-plugin-pro",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
+{% for package_version in ["2.1.3.3"] %}
+        {
+            "type": "package",
+            "package": {
+                "name": "bb-plugin",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/bb-plugin.git",
