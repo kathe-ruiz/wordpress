@@ -190,6 +190,7 @@
                 }
             }
         },
+{## bb-plugin PRO - Standard pro version ##}
 {% for package_version in ["2.1.2.2"] %}
         {
             "type": "package",
@@ -197,7 +198,7 @@
                 "name": "bb-plugin-pro",
                 "version": "{{ package_version }}",
                 "source": {
-                    "url": "git@github.com:swappsco/wp-plugin-bb-pro.git",
+                    "url": "git@github.com:swappsco/bb-plugin-pro.git",
                     "type": "git",
                     "reference": "{{ package_version }}"
                 }
@@ -205,6 +206,7 @@
 
         },
 {% endfor %}
+{## bb-plugin PRO - Swapps Agency PRO version ##}
 {% for package_version in ["2.1.3.3"] %}
         {
             "type": "package",
