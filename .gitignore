@@ -24,6 +24,7 @@ Thumbs.db
 *.tar
 *.zip
 *.tgz
+!wp-includes/js/tinymce/wp-tinymce.js.gz
 # ignore everything in the "wp-content" directory, except:
 /wp-content/uploads
 /wp-content/mu-plugins/*
