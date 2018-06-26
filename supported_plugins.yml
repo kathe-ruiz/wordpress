@@ -225,3 +225,7 @@ supported_plugins:
       - wpackagist-plugin/fix-duplicates: 1.0.4
   - fg-joomla-to-wordpress-premium-k2-module:
       - fg-joomla-to-wordpress-premium-k2-module: ^2
+  - beaver-tunnels:
+      - beaver-tunnels: 2.1.5
+  - post-type-switcher:
+      - wpackagist-plugin/post-type-switcher: ^3.1
