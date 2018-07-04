@@ -79,6 +79,8 @@ supported_plugins:
       - wpackagist-plugin/sendgrid-email-delivery-simplified: ^1.11
   - password-strength-for-woocommerce:
       - wpackagist-plugin/password-strength-for-woocommerce: ^1.0
+  - bb-plugin:
+      - bb-plugin: ^2
   - bb-plugin-pro:
       - bb-plugin-pro: ^2
   - bb-theme:
@@ -126,7 +128,7 @@ supported_plugins:
   - woo-order-export:
       - wpackagist-plugin/woo-order-export-lite: ^1.5
   - bb-ultimate-addon:
-      - bb-ultimate-addon: ^1.7
+      - bb-ultimate-addon: ^1
   - menu-icons:
       - wpackagist-plugin/menu-icons: ^0.11
   - wp-pagenavi:
@@ -223,5 +225,7 @@ supported_plugins:
       - wpackagist-plugin/fix-duplicates: 1.0.4
   - fg-joomla-to-wordpress-premium-k2-module:
       - fg-joomla-to-wordpress-premium-k2-module: ^2
+  - beaver-tunnels:
+      - beaver-tunnels: 2.1.5
   - post-type-switcher:
       - wpackagist-plugin/post-type-switcher: ^3.1
