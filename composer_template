@@ -385,11 +385,11 @@
             "type": "package",
             "package": {
                 "name": "duenio-django-integration",
-                "version": "0.1.0",
+                "version": "0.1.1",
                 "source": {
                     "url": "git@github.com:swappsco/duenio-django-integration.git",
                     "type": "git",
-                    "reference": "0.1.0"
+                    "reference": "0.1.1"
                 }
             }
 
