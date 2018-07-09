@@ -26,7 +26,7 @@ supported_plugins:
   - ultimate-member:
       - wpackagist-plugin/ultimate-member: ^2
   - sitepress-multilingual-cms:
-      - sitepress-multilingual-cms: ^3
+      - sitepress-multilingual-cms: ^4
   - amp:
       - wpackagist-plugin/amp: ^0.7
   - glue-for-yoast-seo-amp:
@@ -162,7 +162,7 @@ supported_plugins:
   - woo-checkout-field-editor-pro:
       - wpackagist-plugin/woo-checkout-field-editor-pro: ^1.2
   - wpml-string-translation:
-      - wpml-string-translation: ^2.7
+      - wpml-string-translation: ^2
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
@@ -188,9 +188,9 @@ supported_plugins:
   - wpml-mailchimp-for-wp:
       - wpml-mailchimp-for-wp: ^0.0
   - types:
-      - types: ^3.0
+      - types: ^3
   - wp-views:
-      - wp-views: ^2.6
+      - wp-views: ^2
   - ewww-image-optimizer:
       - wpackagist-plugin/ewww-image-optimizer: ~4
   - ninja-forms:

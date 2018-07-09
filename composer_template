@@ -134,11 +134,11 @@
             "type": "package",
             "package": {
                 "name": "sitepress-multilingual-cms",
-                "version": "3.9.4",
+                "version": "4.0.4",
                 "source": {
                     "url": "git@github.com:swappsco/sitepress-multilingual-cms.git",
                     "type": "git",
-                    "reference": "3.9.4"
+                    "reference": "4.0.4"
                 }
             }
         },
@@ -146,11 +146,11 @@
             "type": "package",
             "package": {
                 "name": "wpml-string-translation",
-                "version": "2.7.3",
+                "version": "2.8.4",
                 "source": {
                     "url": "git@github.com:swappsco/wpml-string-translation.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "2.8.4"
                 }
             }
         },
@@ -411,6 +411,7 @@
     "require": {
         "vlucas/phpdotenv": "2.4",
         "cocur/slugify": "^2.4",
+        "sentry/sentry": "^1.9",
         "wpackagist-plugin/smtp-mailer": "~1.0",
         "wpackagist-plugin/google-tag-manager": "^1.0",
         "wpackagist-plugin/floating-publish-button": "~1.0.6",
