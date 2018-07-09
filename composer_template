@@ -150,7 +150,7 @@
                 "source": {
                     "url": "git@github.com:swappsco/wpml-string-translation.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "2.8.4"
                 }
             }
         },
