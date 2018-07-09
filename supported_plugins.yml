@@ -86,7 +86,7 @@ supported_plugins:
   - bb-theme:
       - bb-theme: ^1
   - duenio-django-integration:
-      - duenio-django-integration: 0.1.0
+      - duenio-django-integration: 0.1.1
   - duplicate-post:
       - wpackagist-plugin/duplicate-post: ^3.2
   - wp-basic-auth:
