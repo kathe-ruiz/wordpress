@@ -15,6 +15,9 @@
 */
 
 $loader = require __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/sentry/sentry/lib/Raven/Autoloader.php';
+Raven_Autoloader::register();
+
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
@@ -98,6 +101,15 @@ if (SSL_ON == true) {
 	$_SERVER['HTTPS']='on';
 }
 
+define('SENTRY_DSN', getenv('SENTRY_DSN')?:"");
+
+if(SENTRY_DSN){
+    $client = new Raven_Client(SENTRY_DSN);
+    $error_handler = new Raven_ErrorHandler($client);
+    $error_handler->registerExceptionHandler();
+    $error_handler->registerErrorHandler();
+    $error_handler->registerShutdownFunction();
+}
 
 
 /* That's all, stop editing! Happy blogging. */

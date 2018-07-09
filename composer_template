@@ -411,6 +411,7 @@
     "require": {
         "vlucas/phpdotenv": "2.4",
         "cocur/slugify": "^2.4",
+        "sentry/sentry": "^1.9",
         "wpackagist-plugin/smtp-mailer": "~1.0",
         "wpackagist-plugin/google-tag-manager": "^1.0",
         "wpackagist-plugin/floating-publish-button": "~1.0.6",
