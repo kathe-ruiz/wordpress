@@ -188,9 +188,9 @@ supported_plugins:
   - wpml-mailchimp-for-wp:
       - wpml-mailchimp-for-wp: ^0.0
   - types:
-      - types: ^3.0
+      - types: ^3
   - wp-views:
-      - wp-views: ^2.6
+      - wp-views: ^2
   - ewww-image-optimizer:
       - wpackagist-plugin/ewww-image-optimizer: ~4
   - ninja-forms:
