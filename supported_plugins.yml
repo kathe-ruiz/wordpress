@@ -231,3 +231,5 @@ supported_plugins:
       - wpackagist-plugin/post-type-switcher: ^3.1
   - master-slider:
       - wpackagist-plugin/master-slider: 3.5.1
+  - mce-table-buttons:
+      - wpackagist-plugin/mce-table-buttons: 3.3
