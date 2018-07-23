@@ -26,7 +26,7 @@ supported_plugins:
   - ultimate-member:
       - wpackagist-plugin/ultimate-member: ^2
   - sitepress-multilingual-cms:
-      - sitepress-multilingual-cms: ^3
+      - sitepress-multilingual-cms: ^4
   - amp:
       - wpackagist-plugin/amp: ^0.7
   - glue-for-yoast-seo-amp:
@@ -79,12 +79,14 @@ supported_plugins:
       - wpackagist-plugin/sendgrid-email-delivery-simplified: ^1.11
   - password-strength-for-woocommerce:
       - wpackagist-plugin/password-strength-for-woocommerce: ^1.0
+  - bb-plugin:
+      - bb-plugin: ^2
   - bb-plugin-pro:
       - bb-plugin-pro: ^2
   - bb-theme:
       - bb-theme: ^1
   - duenio-django-integration:
-      - duenio-django-integration: 0.1.0
+      - duenio-django-integration: 0.1.1
   - duplicate-post:
       - wpackagist-plugin/duplicate-post: ^3.2
   - wp-basic-auth:
@@ -126,7 +128,7 @@ supported_plugins:
   - woo-order-export:
       - wpackagist-plugin/woo-order-export-lite: ^1.5
   - bb-ultimate-addon:
-      - bb-ultimate-addon: ^1.7
+      - bb-ultimate-addon: ^1
   - menu-icons:
       - wpackagist-plugin/menu-icons: ^0.11
   - wp-pagenavi:
@@ -160,7 +162,7 @@ supported_plugins:
   - woo-checkout-field-editor-pro:
       - wpackagist-plugin/woo-checkout-field-editor-pro: ^1.2
   - wpml-string-translation:
-      - wpml-string-translation: ^2.7
+      - wpml-string-translation: ^2
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
@@ -186,9 +188,9 @@ supported_plugins:
   - wpml-mailchimp-for-wp:
       - wpml-mailchimp-for-wp: ^0.0
   - types:
-      - types: ^3.0
+      - types: ^3
   - wp-views:
-      - wp-views: ^2.6
+      - wp-views: ^2
   - ewww-image-optimizer:
       - wpackagist-plugin/ewww-image-optimizer: ~4
   - ninja-forms:
@@ -223,7 +225,13 @@ supported_plugins:
       - wpackagist-plugin/fix-duplicates: 1.0.4
   - fg-joomla-to-wordpress-premium-k2-module:
       - fg-joomla-to-wordpress-premium-k2-module: ^2
+  - beaver-tunnels:
+      - beaver-tunnels: 2.1.5
   - post-type-switcher:
       - wpackagist-plugin/post-type-switcher: ^3.1
   - avatar-manager:
       - wpackagist-plugin/avatar-manager: ^1.6
+  - master-slider:
+      - wpackagist-plugin/master-slider: 3.5.1
+  - mce-table-buttons:
+      - wpackagist-plugin/mce-table-buttons: 3.3
