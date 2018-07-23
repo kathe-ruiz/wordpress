@@ -225,3 +225,5 @@ supported_plugins:
       - fg-joomla-to-wordpress-premium-k2-module: ^2
   - post-type-switcher:
       - wpackagist-plugin/post-type-switcher: ^3.1
+  - avatar-manager:
+      - wpackagist-plugin/avatar-manager: ^1.6
