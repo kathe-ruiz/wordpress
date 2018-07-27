@@ -1,7 +1,7 @@
 # ignore all files starting with .env
 .env
 .DS_Store
-
+.htaccess
 # ignore all files that start with ~
 ~*
 adminer.php
