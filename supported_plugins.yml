@@ -229,6 +229,8 @@ supported_plugins:
       - beaver-tunnels: 2.1.5
   - post-type-switcher:
       - wpackagist-plugin/post-type-switcher: ^3.1
+  - avatar-manager:
+      - wpackagist-plugin/avatar-manager: ^1.6
   - master-slider:
       - wpackagist-plugin/master-slider: 3.5.1
   - mce-table-buttons:
