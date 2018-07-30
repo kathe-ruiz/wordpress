@@ -100,6 +100,8 @@ define('SSL_ON', filter_var(getenv('SSL_ON'), FILTER_VALIDATE_BOOLEAN));
 if (SSL_ON == true) {
 	$_SERVER['HTTPS']='on';
 }
+//controling WP_CACHE
+define('WP_CACHE', filter_var(getenv('WP_CACHE'), FILTER_VALIDATE_BOOLEAN));
 
 define('SENTRY_DSN', getenv('SENTRY_DSN')?:"");
 
