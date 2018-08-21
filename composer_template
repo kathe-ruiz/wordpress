@@ -397,6 +397,19 @@
         {
             "type": "package",
             "package": {
+                "name": "wp-relatos-anfibios-core",
+                "version": "0.0.1",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-relatos-anfibios-core.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "beaver-tunnels",
                 "version": "2.1.5",
                 "source": {

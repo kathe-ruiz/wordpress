@@ -19,6 +19,8 @@ supported_plugins:
       - wp-dors: 0.1.4
   - wp-swappsio:
       - wp-swappsio: 0.0.1
+  - wp-relatos-anfibios-core:
+      - wp-relatos-anfibios-core: 0.0.1
   - wp-accountant:
       - wp-accountant: 0.1.5
   - woocommerce-quick-buy:
