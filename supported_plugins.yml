@@ -235,3 +235,5 @@ supported_plugins:
       - wpackagist-plugin/master-slider: 3.5.1
   - mce-table-buttons:
       - wpackagist-plugin/mce-table-buttons: 3.3
+  - woo-swatches-manager:
+      - wpackagist-plugin/woo-swatches-manager: 1.1
