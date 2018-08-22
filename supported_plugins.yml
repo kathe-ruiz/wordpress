@@ -241,3 +241,5 @@ supported_plugins:
       - wpackagist-plugin/woo-swatches-manager: 1.1
   - woocommerce-custom-tabs:
       - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
+  - gutenberg:
+      - wpackagist-plugin/gutenberg: ^3
