@@ -243,3 +243,5 @@ supported_plugins:
       - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
   - anspress:
       - wpackagist-plugin/anspress-question-answer: 4.1.14
+  - wc-fields-factory:
+      - wpackagist-plugin/wc-fields-factory: ^3
