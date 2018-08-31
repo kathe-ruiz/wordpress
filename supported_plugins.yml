@@ -241,6 +241,8 @@ supported_plugins:
       - wpackagist-plugin/woo-swatches-manager: 1.1
   - woocommerce-custom-tabs:
       - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
+  - gutenberg:
+      - wpackagist-plugin/gutenberg: ^3
   - anspress:
       - wpackagist-plugin/anspress-question-answer: 4.1.14
   - wc-fields-factory:
