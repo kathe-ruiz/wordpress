@@ -97,11 +97,11 @@
             "type": "package",
             "package": {
                 "name": "bb-ultimate-addon",
-                "version": "1.8.2",
+                "version": "1.10.0",
                 "source": {
                     "url": "git@github.com:swappsco/bb-ultimate-addon.git",
                     "type": "git",
-                    "reference": "1.8.2"
+                    "reference": "1.10.0"
                 }
             }
         },
@@ -170,11 +170,11 @@
             "type": "package",
             "package": {
                 "name": "formidable-pro",
-                "version": "3.02",
+                "version": "3.03.01",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "3.02"
+                    "reference": "3.03.01"
                 }
             }
         },

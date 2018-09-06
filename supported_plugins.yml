@@ -102,7 +102,7 @@ supported_plugins:
   - disqus-comment-system:
       - wpackagist-plugin/disqus-comment-system: ^3.0
   - enlighter:
-      - wpackagist-plugin/enlighter: ^3.6
+      - wpackagist-plugin/enlighter: ^3
   - google-analyticator:
       - wpackagist-plugin/google-analyticator: ^6.5
   - image-elevator:
