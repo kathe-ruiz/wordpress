@@ -15,12 +15,21 @@
 */
 
 $loader = require __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/vendor/sentry/sentry/lib/Raven/Autoloader.php';
-Raven_Autoloader::register();
 
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
+define('SENTRY_DSN', getenv('SENTRY_DSN')?:"");
+
+if(SENTRY_DSN){
+    require_once __DIR__ . '/vendor/sentry/sentry/lib/Raven/Autoloader.php';
+    Raven_Autoloader::register();
+    $client = new Raven_Client(SENTRY_DSN);
+    $error_handler = new Raven_ErrorHandler($client);
+    $error_handler->registerExceptionHandler();
+    $error_handler->registerErrorHandler();
+    $error_handler->registerShutdownFunction();
+}
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -102,18 +111,6 @@ if (SSL_ON == true) {
 }
 //controling WP_CACHE
 define('WP_CACHE', filter_var(getenv('WP_CACHE'), FILTER_VALIDATE_BOOLEAN));
-
-define('SENTRY_DSN', getenv('SENTRY_DSN')?:"");
-
-if(SENTRY_DSN){
-    $client = new Raven_Client(SENTRY_DSN);
-    $error_handler = new Raven_ErrorHandler($client);
-    $error_handler->registerExceptionHandler();
-    $error_handler->registerErrorHandler();
-    $error_handler->registerShutdownFunction();
-}
-
-
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
