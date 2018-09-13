@@ -102,7 +102,7 @@ supported_plugins:
   - disqus-comment-system:
       - wpackagist-plugin/disqus-comment-system: ^3.0
   - enlighter:
-      - wpackagist-plugin/enlighter: ^3.6
+      - wpackagist-plugin/enlighter: ^3
   - google-analyticator:
       - wpackagist-plugin/google-analyticator: ^6.5
   - image-elevator:
@@ -202,7 +202,7 @@ supported_plugins:
   - addthis:
       - wpackagist-plugin/addthis: ^6.1
   - advanced-custom-fields-pro:
-      - advanced-custom-fields-pro: ^5.6
+      - advanced-custom-fields-pro: ^5.7
   - advanced-custom-fields-font-awesome:
       - wpackagist-plugin/advanced-custom-fields-font-awesome: ~2.1
   - acf-image-crop-add-on:
