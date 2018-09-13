@@ -410,6 +410,19 @@
         {
             "type": "package",
             "package": {
+                "name": "woocommerce-bulk-variations",
+                "version": "1.6.3",
+                "source": {
+                    "url": "git@github.com:swappsco/woocommerce-bulk-variations.git",
+                    "type": "git",
+                    "reference": "1.6.3"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "beaver-tunnels",
                 "version": "2.1.5",
                 "source": {
