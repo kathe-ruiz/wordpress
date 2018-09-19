@@ -249,3 +249,5 @@ supported_plugins:
       - wpackagist-plugin/wc-fields-factory: ^3
   - woocommerce-bulk-variations:
       - woocommerce-bulk-variations: 1.6.3
+  - woocommerce-product-tabs:
+      - wpackagist-plugin/yikes-inc-easy-custom-woocommerce-product-tabs: ^1.6
