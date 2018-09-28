@@ -28,7 +28,7 @@ Thumbs.db
 # ignore everything in the "wp-content" directory, except:
 /wp-content/uploads
 /wp-content/mu-plugins/*
-/wp-content/plugins/*
+/wp-content/plugins-old/*
 /wp-content/themes/*
 
 # ACF PRO Licensed plugin that needs to be included in repo
