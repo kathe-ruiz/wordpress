@@ -255,3 +255,5 @@ supported_plugins:
       - wpackagist-plugin/minmax-quantity-for-woocommerce: ^1.2
   - accelerated-mobile-pages:
       - wpackagist-plugin/accelerated-mobile-pages: ^0.9
+  - woocommerce-checkout-field-editor:
+      - woocommerce-checkout-field-editor: ^1.5.13

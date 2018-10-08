@@ -432,6 +432,19 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "woocommerce-checkout-field-editor",
+                "version": "1.5.13",
+                "source": {
+                    "url": "git@github.com:swappsco/woocommerce-checkout-field-editor.git",
+                    "type": "git",
+                    "reference": "1.5.13"
+                }
+            }
+
         }
     ],
     "require": {
