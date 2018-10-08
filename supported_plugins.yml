@@ -253,3 +253,5 @@ supported_plugins:
       - wpackagist-plugin/yikes-inc-easy-custom-woocommerce-product-tabs: ^1.6
   - minmax-quantity-for-woocommerce:
       - wpackagist-plugin/minmax-quantity-for-woocommerce: ^1.2
+  - woocommerce-checkout-field-editor:
+      - woocommerce-checkout-field-editor: ^1.5.13
