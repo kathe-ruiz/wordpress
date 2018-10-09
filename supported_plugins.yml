@@ -148,7 +148,7 @@ supported_plugins:
   - wp-facebook-pixel:
       - wpackagist-plugin/wp-facebook-pixel: ^4
   - woo-product-social-sharing:
-      - wpackagist-plugin/woo-product-social-sharing: '1.7'
+      - wpackagist-plugin/woo-product-social-sharing: ^1.8
   - cache-control:
       - wpackagist-plugin/cache-control: 2.2.2
   - wp-fastest-cache:
