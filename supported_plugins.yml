@@ -186,7 +186,7 @@ supported_plugins:
   - dobsondev-shortcodes:
       - wpackagist-plugin/dobsondev-shortcodes: ^2.1
   - updraftplus:
-      - wpackagist-plugin/updraftplus: ^1.14
+      - wpackagist-plugin/updraftplus: ^1.15
   - wpml-mailchimp-for-wp:
       - wpml-mailchimp-for-wp: ^0.0
   - types:
@@ -245,11 +245,13 @@ supported_plugins:
       - wpackagist-plugin/gutenberg: ^3
   - anspress:
       - wpackagist-plugin/anspress-question-answer: 4.1.14
-  - wc-fields-factory:
-      - wpackagist-plugin/wc-fields-factory: ^3
   - woocommerce-bulk-variations:
       - woocommerce-bulk-variations: 1.6.3
   - woocommerce-product-tabs:
       - wpackagist-plugin/yikes-inc-easy-custom-woocommerce-product-tabs: ^1.6
   - minmax-quantity-for-woocommerce:
       - wpackagist-plugin/minmax-quantity-for-woocommerce: ^1.2
+  - accelerated-mobile-pages:
+      - wpackagist-plugin/accelerated-mobile-pages: ^0.9
+  - woocommerce-checkout-field-editor:
+      - woocommerce-checkout-field-editor: ^1.5.13
