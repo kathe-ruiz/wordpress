@@ -242,7 +242,7 @@ supported_plugins:
   - gutenberg:
       - wpackagist-plugin/gutenberg: ^3
   - anspress:
-      - wpackagist-plugin/anspress-question-answer: 4.1.14
+      - wpackagist-plugin/anspress-question-answer: ^4.1.15
   - woocommerce-bulk-variations:
       - woocommerce-bulk-variations: 1.6.3
   - woocommerce-product-tabs:
