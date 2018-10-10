@@ -3,7 +3,7 @@ if ( ! isset( $saving ) ) {
 	header( 'Content-type: text/css' );
 
 	if ( isset( $css ) && $css ) {
-		echo FrmAppHelper::kses( $css, 'all' ); // WPCS: XSS ok.
+		echo strip_tags( $css, 'all' ); // WPCS: XSS ok.
 		die();
 	}
 }
@@ -20,6 +20,7 @@ $defaults = FrmStylesHelper::get_settings_for_output( $default_style );
 
 .frm_form_field .grecaptcha-badge,
 .frm_hidden,
+.frm_remove_form_row.frm_hidden,
 .with_frm_style .frm_button.frm_hidden{
     display:none;
 }
@@ -861,65 +862,6 @@ select.frm_loading_lookup{
     display:block;
 }
 
-/* Login form */
-.with_frm_style.frm_login_form,
-.with_frm_style.frm_login_form form{
-	clear:both;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login .login-remember input{
-	vertical-align:baseline;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login .login-submit{
-	float:left;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login label{
-	display:inline;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login .login-username,
-.with_frm_style.frm_login_form.frm_inline_login .login-password,
-.with_frm_style.frm_login_form.frm_inline_login .login-remember{
-	float:left;
-	margin-right:5px;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login form{
-	position:relative;
-	clear:none;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login .login-remember{
-	position:absolute;
-	top:35px;
-}
-
-.with_frm_style.frm_login_form.frm_inline_login input[type=submit]{
-	margin:0 !important;
-}
-
-.with_frm_style.frm_login_form.frm_no_labels .login-username label,
-.with_frm_style.frm_login_form.frm_no_labels .login-password label{
-	display:none;
-}
-
-.with_frm_style .frm-open-login{
-	float:left;
-	margin-right:15px;
-}
-
-.with_frm_style .frm-open-login a{
-	text-decoration:none;
-	border:none;
-	outline:none;
-}
-
-.with_frm_style.frm_slide.frm_login_form form{
-	display:none;
-}
-
 /* Fonts */
 @font-face {
 	font-family:'s11-fp';
@@ -962,19 +904,6 @@ select.frm_loading_lookup{
 		max-width:220px;
 	}
 
-	.with_frm_style.frm_login_form.frm_inline_login p{
-		clear:both;
-		float:none;
-	}
-
-	.with_frm_style.frm_login_form.frm_inline_login form{
-		position:static;
-	}
-
-	.with_frm_style.frm_login_form.frm_inline_login .login-remember{
-		position:static;
-	}
-
 	.with_frm_style .frm-g-recaptcha > div > div,
 	.with_frm_style .g-recaptcha > div > div{
 		width:inherit !important;
@@ -999,4 +928,4 @@ if ( $frm_settings->old_css ) {
 	readfile( dirname( __FILE__ ) . '/frm_old_grids.css' );
 }
 
-echo FrmAppHelper::kses( $defaults['custom_css'], 'all' ); // WPCS: XSS ok.
+echo strip_tags( $defaults['custom_css'] ); // WPCS: XSS ok.

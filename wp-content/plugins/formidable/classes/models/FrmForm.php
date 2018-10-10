@@ -242,9 +242,7 @@ class FrmForm {
 
 			foreach ( $update_options as $opt => $default ) {
 				$field->field_options[ $opt ] = isset( $values['field_options'][ $opt . '_' . $field_id ] ) ? $values['field_options'][ $opt . '_' . $field_id ] : $default;
-				if ( is_string( $field->field_options[ $opt ] ) ) {
-					$field->field_options[ $opt ] = trim( FrmAppHelper::kses( $field->field_options[ $opt ], 'all' ) );
-				}
+				self::sanitize_field_opt( $opt, $field->field_options[ $opt ] );
             }
 
 			$field->field_options = apply_filters( 'frm_update_field_options', $field->field_options, $field, $values );
@@ -265,6 +263,17 @@ class FrmForm {
 
         return $values;
     }
+
+	private static function sanitize_field_opt( $opt, &$value ) {
+		if ( is_string( $value ) ) {
+			if ( $opt === 'calc' ) {
+				$value = strip_tags( $value );
+			} else {
+				$value = FrmAppHelper::kses( $value, 'all' );
+			}
+			$value = trim( $value );
+		}
+	}
 
 	/**
 	 * updating the settings page
@@ -576,10 +585,7 @@ class FrmForm {
 				$where['status'] = array( null, '', 'published' );
 			}
 
-			$results = FrmDb::get_results( 'frm_forms', $where, '*', array(
-				'order_by' => $order_by,
-				'limit'    => $limit,
-			) );
+			$results = FrmDb::get_results( 'frm_forms', $where, '*', compact( 'order_by', 'limit' ) );
 		} else {
 			global $wpdb;
 
@@ -632,11 +638,15 @@ class FrmForm {
     	    return $counts;
     	}
 
-		$results = (array) FrmDb::get_results( 'frm_forms', array(
-			'or' => 1,
-			'parent_form_id' => null,
-			'parent_form_id <' => 0,
-		), 'status, is_template' );
+		$results = (array) FrmDb::get_results(
+			'frm_forms',
+			array(
+				'or'               => 1,
+				'parent_form_id'   => null,
+				'parent_form_id <' => 0,
+			),
+			'status, is_template'
+		);
 
 		$statuses = array( 'published', 'draft', 'template', 'trash' );
     	$counts = array_fill_keys( $statuses, 0 );
