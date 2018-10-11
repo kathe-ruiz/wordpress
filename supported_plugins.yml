@@ -81,6 +81,8 @@ supported_plugins:
       - bb-plugin-pro: ^2
   - bb-theme:
       - bb-theme: ^1
+  - timeline-for-beaver-builder:
+      - wpackagist-plugin/timeline-for-beaver-builder: ^1.1
   - duenio-django-integration:
       - duenio-django-integration: 0.2.1
   - duplicate-post:
