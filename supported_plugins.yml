@@ -16,7 +16,7 @@ supported_plugins:
   - woocommerce-tu-compra:
       - woocommerce-tu-compra: 0.1.6
   - wp-dors:
-      - wp-dors: 0.1.4
+      - wp-dors: 0.1.5
   - wp-swappsio:
       - wp-swappsio: 0.0.1
   - wp-relatos-anfibios-core:
@@ -86,7 +86,7 @@ supported_plugins:
   - bb-theme:
       - bb-theme: ^1
   - duenio-django-integration:
-      - duenio-django-integration: 0.2.0
+      - duenio-django-integration: 0.2.1
   - duplicate-post:
       - wpackagist-plugin/duplicate-post: ^3.2
   - wp-basic-auth:
