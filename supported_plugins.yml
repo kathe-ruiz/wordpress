@@ -249,3 +249,5 @@ supported_plugins:
       - wpackagist-plugin/accelerated-mobile-pages: ^0.9
   - woocommerce-checkout-field-editor:
       - woocommerce-checkout-field-editor: ^1.5.13
+  - domus-wp:
+      - domus-wp: ^0

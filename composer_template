@@ -108,6 +108,18 @@
         {
             "type": "package",
             "package": {
+                "name": "domus-wp",
+                "version": "0.0.1",
+                "source": {
+                    "url": "git@github.com:swappsco/domus-wp.git",
+                    "type": "git",
+                    "reference": "0.0.1"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "wp-dors",
                 "version": "0.1.5",
                 "source": {
