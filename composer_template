@@ -113,7 +113,7 @@
                 "source": {
                     "url": "git@github.com:swappsco/domus-wp.git",
                     "type": "git",
-                    "reference": "0.0.5"
+                    "reference": "feature/6pt75"
                 }
             }
         },
