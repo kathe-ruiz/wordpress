@@ -164,7 +164,7 @@ supported_plugins:
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
-      - wpackagist-plugin/wordpress-seo: ^8
+      - wpackagist-plugin/wordpress-seo: ^9
   - wordpress-seo-premium:
       - wordpress-seo-premium: ^7
   - resmushit-image-optimizer:
@@ -236,7 +236,7 @@ supported_plugins:
   - woocommerce-custom-tabs:
       - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
   - gutenberg:
-      - wpackagist-plugin/gutenberg: ^3
+      - wpackagist-plugin/gutenberg: ^4
   - anspress:
       - wpackagist-plugin/anspress-question-answer: ^4.1.15
   - woocommerce-bulk-variations:
