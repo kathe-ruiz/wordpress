@@ -118,13 +118,13 @@ supported_plugins:
   - amazon-web-services:
       - wpackagist-plugin/amazon-web-services: ^1.0
   - amazon-s3-and-cloudfront:
-      - wpackagist-plugin/amazon-s3-and-cloudfront: ^1.3
+      - wpackagist-plugin/amazon-s3-and-cloudfront: ^2
   - acf-content-analysis-for-yoast-seo:
       - wpackagist-plugin/acf-content-analysis-for-yoast-seo: ^2.1
   - wc-fields-factory:
-      - wpackagist-plugin/wc-fields-factory: ^2.0
+      - wpackagist-plugin/wc-fields-factory: ^3.0
   - woo-order-export:
-      - wpackagist-plugin/woo-order-export-lite: ^1.5
+      - wpackagist-plugin/woo-order-export-lite: ^2.0
   - bb-ultimate-addon:
       - bb-ultimate-addon: ^1
   - menu-icons:
@@ -140,7 +140,7 @@ supported_plugins:
   - locateanything:
       - wpackagist-plugin/locateanything: 1.2.02
   - popup-builder:
-      - wpackagist-plugin/popup-builder: 2.6.7.6
+      - wpackagist-plugin/popup-builder: 3.0.9.1
   - mc4wp-wpml:
       - wpackagist-plugin/mc4wp-wpml: '1.0'
   - wp-facebook-pixel:
@@ -152,7 +152,7 @@ supported_plugins:
   - wp-fastest-cache:
       - wpackagist-plugin/wp-fastest-cache: ^0.8
   - youtube-embed-plus:
-      - wpackagist-plugin/youtube-embed-plus: ^11
+      - wpackagist-plugin/youtube-embed-plus: ^12
   - w3-total-cache:
       - wpackagist-plugin/w3-total-cache: ^0.9
   - pdf-embedder:
@@ -164,7 +164,7 @@ supported_plugins:
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
-      - wpackagist-plugin/wordpress-seo: ^8
+      - wpackagist-plugin/wordpress-seo: ^9
   - wordpress-seo-premium:
       - wordpress-seo-premium: ^7
   - resmushit-image-optimizer:
@@ -228,7 +228,7 @@ supported_plugins:
   - avatar-manager:
       - wpackagist-plugin/avatar-manager: ^1.6
   - master-slider:
-      - wpackagist-plugin/master-slider: 3.5.1
+      - wpackagist-plugin/master-slider: 3.5.3
   - mce-table-buttons:
       - wpackagist-plugin/mce-table-buttons: 3.3
   - woo-swatches-manager:
@@ -236,7 +236,7 @@ supported_plugins:
   - woocommerce-custom-tabs:
       - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
   - gutenberg:
-      - wpackagist-plugin/gutenberg: ^3
+      - wpackagist-plugin/gutenberg: ^4
   - anspress:
       - wpackagist-plugin/anspress-question-answer: ^4.1.15
   - woocommerce-bulk-variations:
