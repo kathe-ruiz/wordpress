@@ -445,6 +445,18 @@
                 }
             }
 
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "theme-amp-swapps",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/theme-amp-swapps.git",
+                    "type": "git",
+                    "reference": "0.1.0"
+                }
+            }
         }
     ],
     "require": {
