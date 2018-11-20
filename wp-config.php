@@ -1,4 +1,5 @@
 <?php
+
 /**
 * The base configurations of the WordPress.
 *
@@ -110,7 +111,6 @@ if (SSL_ON == true) {
 	$_SERVER['HTTPS']='on';
 }
 //controling WP_CACHE
-define('WP_CACHE', filter_var(getenv('WP_CACHE'), FILTER_VALIDATE_BOOLEAN));
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
