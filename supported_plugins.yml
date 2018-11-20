@@ -253,3 +253,6 @@ supported_plugins:
       - domus-wp: ^0
   - theme-amp-swapps:
       - theme-amp-swapps: ^0.2.0
+  - ncarb-centennial-core:
+      - ncarb-centennial-core: ^0.1.0
+
