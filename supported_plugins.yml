@@ -140,7 +140,7 @@ supported_plugins:
   - locateanything:
       - wpackagist-plugin/locateanything: 1.2.02
   - popup-builder:
-      - wpackagist-plugin/popup-builder: 3.0.9.1
+      - wpackagist-plugin/popup-builder: 3.1
   - mc4wp-wpml:
       - wpackagist-plugin/mc4wp-wpml: '1.0'
   - wp-facebook-pixel:
