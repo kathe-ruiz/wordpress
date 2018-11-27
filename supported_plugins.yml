@@ -252,4 +252,4 @@ supported_plugins:
   - domus-wp:
       - domus-wp: ^0
   - theme-amp-swapps:
-      - theme-amp-swapps: ^0.1.0
+      - theme-amp-swapps: ^0.2.0
