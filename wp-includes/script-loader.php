@@ -178,6 +178,24 @@ function wp_get_script_polyfill( &$scripts, $tests ) {
 			continue;
 		}
 
+		$src = $scripts->registered[ $handle ]->src;
+		$ver = $scripts->registered[ $handle ]->ver;
+
+		if ( ! preg_match( '|^(https?:)?//|', $src ) && ! ( $scripts->content_url && 0 === strpos( $src, $scripts->content_url ) ) ) {
+			$src = $scripts->base_url . $src;
+		}
+
+		if ( ! empty( $ver ) ) {
+			$src = add_query_arg( 'ver', $ver, $src );
+		}
+
+		/** This filter is documented in wp-includes/class.wp-scripts.php */
+		$src = esc_url( apply_filters( 'script_loader_src', $src, $handle ) );
+
+		if ( ! $src ) {
+			continue;
+		}
+
 		$polyfill .= (
 			// Test presence of feature...
 			'( ' . $test . ' ) || ' .
@@ -185,7 +203,7 @@ function wp_get_script_polyfill( &$scripts, $tests ) {
 			// at the `document.write`. Its caveat of synchronous mid-stream
 			// blocking write is exactly the behavior we need though.
 			'document.write( \'<script src="' .
-			esc_url( $scripts->registered[ $handle ]->src ) .
+			$src .
 			'"></scr\' + \'ipt>\' );'
 		);
 	}
@@ -212,10 +230,10 @@ function wp_default_packages_scripts( &$scripts ) {
 		'annotations' => '1.0.3',
 		'autop' => '2.0.2',
 		'blob' => '2.1.0',
-		'block-library' => '2.2.7',
-		'block-serialization-default-parser' => '2.0.0',
-		'blocks' => '6.0.2',
-		'components' => '7.0.2',
+		'block-library' => '2.2.9',
+		'block-serialization-default-parser' => '2.0.1',
+		'blocks' => '6.0.3',
+		'components' => '7.0.3',
 		'compose' => '3.0.0',
 		'core-data' => '2.0.14',
 		'data' => '4.0.1',
@@ -223,19 +241,19 @@ function wp_default_packages_scripts( &$scripts ) {
 		'deprecated' => '2.0.3',
 		'dom' => '2.0.7',
 		'dom-ready' => '2.0.2',
-		'edit-post' => '3.1.2',
-		'editor' => '9.0.2',
+		'edit-post' => '3.1.4',
+		'editor' => '9.0.4',
 		'element' => '2.1.8',
 		'escape-html' => '1.0.1',
-		'format-library' => '1.2.5',
+		'format-library' => '1.2.7',
 		'hooks' => '2.0.3',
 		'html-entities' => '2.0.3',
 		'i18n' => '3.1.0',
 		'is-shallow-equal' => '1.1.4',
 		'keycodes' => '2.0.5',
-		'list-reusable-blocks' => '1.1.15',
+		'list-reusable-blocks' => '1.1.16',
 		'notices' => '1.1.0',
-		'nux' => '3.0.3',
+		'nux' => '3.0.4',
 		'plugins' => '2.0.9',
 		'redux-routine' => '3.0.3',
 		'rich-text' => '3.0.2',
@@ -276,7 +294,6 @@ function wp_default_packages_scripts( &$scripts ) {
 		'block-library' => array(
 			'editor',
 			'lodash',
-			'moment',
 			'wp-api-fetch',
 			'wp-autop',
 			'wp-blob',
