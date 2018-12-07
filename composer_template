@@ -219,7 +219,7 @@
         },
 {% endfor %}
 {## bb-plugin PRO - Swapps Agency PRO version ##}
-{% for package_version in ["2.1.6.3"] %}
+{% for package_version in ["2.2"] %}
         {
             "type": "package",
             "package": {
