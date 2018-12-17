@@ -253,3 +253,5 @@ supported_plugins:
       - domus-wp: ^0
   - theme-amp-swapps:
       - theme-amp-swapps: ^0.2.0
+  - capability-manager-enhanced:
+      - capability-manager-enhanced: ^1.5.11
