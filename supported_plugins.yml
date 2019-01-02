@@ -222,7 +222,7 @@ supported_plugins:
   - fg-joomla-to-wordpress-premium-k2-module:
       - fg-joomla-to-wordpress-premium-k2-module: ^2
   - beaver-tunnels:
-      - beaver-tunnels: 2.1.5
+      - beaver-tunnels: 2.1.6
   - post-type-switcher:
       - wpackagist-plugin/post-type-switcher: ^3.1
   - avatar-manager:

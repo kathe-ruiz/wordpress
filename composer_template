@@ -346,7 +346,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.6.5.1","1.6.4.1"] %}
+{% for package_version in ["1.7.1.2"] %}
         {
             "type": "package",
             "package": {
@@ -436,11 +436,11 @@
             "type": "package",
             "package": {
                 "name": "beaver-tunnels",
-                "version": "2.1.5",
+                "version": "2.1.6",
                 "source": {
                     "url": "git@github.com:swappsco/beaver-tunnels.git",
                     "type": "git",
-                    "reference": "2.1.5"
+                    "reference": "2.1.6"
                 }
             }
 
