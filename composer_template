@@ -346,7 +346,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.6.5.1","1.6.4.1"] %}
+{% for package_version in ["1.7.1.2"] %}
         {
             "type": "package",
             "package": {
