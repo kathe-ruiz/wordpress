@@ -258,8 +258,8 @@ supported_plugins:
   - capability-manager-enhanced:
       - capability-manager-enhanced: ^1.5.11
   - shortcodes-ultimate:
-     - shortcodes-ultimate: ^5.2
+     - wpackagist-plugin/shortcodes-ultimate: ^5.2
   - wp-cron-status-checker:
-     - wp-cron-status-checker: ^0.3
+     - wpackagist-plugin/wp-cron-status-checker: ^0.3
   - wp-404-auto-redirect-to-similar-post:
-     - wp-404-auto-redirect-to-similar-post: ^1.0
+     - wpackagist-plugin/wp-404-auto-redirect-to-similar-post: ^1.0
