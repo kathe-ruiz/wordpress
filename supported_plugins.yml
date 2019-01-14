@@ -266,4 +266,4 @@ supported_plugins:
   - post-types-order:
       - wpackagist-plugin/post-types-order: ^1.9.3
   - better-wp-security:
-      - better-wp-security: ^7.2.0
+      - wpackagist-plugin/better-wp-security: ^7.2.0
