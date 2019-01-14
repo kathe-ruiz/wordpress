@@ -255,5 +255,7 @@ supported_plugins:
       - theme-amp-swapps: ^0.2.0
   - capability-manager-enhanced:
       - capability-manager-enhanced: ^1.5.11
+  - onesignal-free-web-push-notifications:
+      - wpackagist-plugin/onesignal-free-web-push-notifications: ^1.16.9
   - post-types-order:
       - wpackagist-plugin/post-types-order: ^1.9.3
