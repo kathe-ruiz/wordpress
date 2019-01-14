@@ -255,3 +255,5 @@ supported_plugins:
       - theme-amp-swapps: ^0.2.0
   - capability-manager-enhanced:
       - capability-manager-enhanced: ^1.5.11
+  - post-types-order:
+      - wpackagist-plugin/post-types-order: ^1.9.3
