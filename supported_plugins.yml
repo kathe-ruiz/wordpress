@@ -255,7 +255,18 @@ supported_plugins:
       - theme-amp-swapps: ^0.2.0
   - capability-manager-enhanced:
       - capability-manager-enhanced: ^1.5.11
+  - shortcodes-ultimate:
+     - wpackagist-plugin/shortcodes-ultimate: ^5.2
+  - wp-cron-status-checker:
+     - wpackagist-plugin/wp-cron-status-checker: ^0.3
+  - wp-404-auto-redirect-to-similar-post:
+     - wpackagist-plugin/wp-404-auto-redirect-to-similar-post: ^1.0
   - onesignal-free-web-push-notifications:
       - wpackagist-plugin/onesignal-free-web-push-notifications: ^1.16.9
+<<<<<<< Updated upstream
   - post-types-order:
       - wpackagist-plugin/post-types-order: ^1.9.3
+=======
+  - wps-hide-login:
+      - wpackagist-plugin/wps-hide-login: ^1.5.2.1
+>>>>>>> Stashed changes

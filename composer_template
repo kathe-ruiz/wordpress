@@ -182,11 +182,11 @@
             "type": "package",
             "package": {
                 "name": "formidable-pro",
-                "version": "3.04.02",
+                "version": "3.04.03",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "3.04.02"
+                    "reference": "3.04.03"
                 }
             }
         },
