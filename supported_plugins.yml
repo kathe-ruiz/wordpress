@@ -32,7 +32,7 @@ supported_plugins:
   - sitepress-multilingual-cms:
       - sitepress-multilingual-cms: ^4
   - amp:
-      - wpackagist-plugin/amp: ^0.7
+      - wpackagist-plugin/amp: ^1.0
   - glue-for-yoast-seo-amp:
       - wpackagist-plugin/glue-for-yoast-seo-amp: ^0.4
   - jetpack:
