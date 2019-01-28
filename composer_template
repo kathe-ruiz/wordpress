@@ -109,11 +109,11 @@
             "type": "package",
             "package": {
                 "name": "domus-wp",
-                "version": "0.0.5",
+                "version": "1.0.0",
                 "source": {
                     "url": "git@github.com:swappsco/domus-wp.git",
                     "type": "git",
-                    "reference": "feature/6pt75"
+                    "reference": "1.0.0"
                 }
             }
         },

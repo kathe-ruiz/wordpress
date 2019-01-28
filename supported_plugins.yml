@@ -250,7 +250,7 @@ supported_plugins:
   - woocommerce-checkout-field-editor:
       - woocommerce-checkout-field-editor: ^1.5.13
   - domus-wp:
-      - domus-wp: ^0
+      - domus-wp: ^1
   - theme-amp-swapps:
       - theme-amp-swapps: ^0.2.0
   - ncarb-centennial-core:
