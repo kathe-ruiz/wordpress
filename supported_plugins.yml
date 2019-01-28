@@ -32,7 +32,7 @@ supported_plugins:
   - sitepress-multilingual-cms:
       - sitepress-multilingual-cms: ^4
   - amp:
-      - wpackagist-plugin/amp: ^0.7
+      - wpackagist-plugin/amp: ^1.0
   - glue-for-yoast-seo-amp:
       - wpackagist-plugin/glue-for-yoast-seo-amp: ^0.4
   - jetpack:
@@ -253,6 +253,8 @@ supported_plugins:
       - domus-wp: ^0
   - theme-amp-swapps:
       - theme-amp-swapps: ^0.2.0
+  - ncarb-centennial-core:
+      - ncarb-centennial-core: ^0.1.0
   - capability-manager-enhanced:
       - capability-manager-enhanced: ^1.5.11
   - shortcodes-ultimate:
@@ -267,3 +269,5 @@ supported_plugins:
       - wpackagist-plugin/post-types-order: ^1.9.3
   - better-wp-security:
       - wpackagist-plugin/better-wp-security: ^7.2.0
+  - classic-editor:
+      - wpackagist-plugin/classic-editor: ^1.3

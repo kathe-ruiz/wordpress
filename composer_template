@@ -461,6 +461,19 @@
         {
             "type": "package",
             "package": {
+                "name": "ncarb-centennial-core",
+                "version": "0.1.0",
+                "source": {
+                    "url": "git@github.com:swappsco/ncarb-centennial-core.git",
+                    "type": "git",
+                    "reference": "develop"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "theme-amp-swapps",
                 "version": "0.2.0",
                 "source": {
