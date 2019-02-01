@@ -361,6 +361,21 @@
 
         },
 {% endfor %}
+{% for package_version in ["1.2.1.1"] %}
+        {
+            "type": "package",
+            "package": {
+                "name": "bb-theme-builder",
+                "version": "{{ package_version }}",
+                "source": {
+                    "url": "git@github.com:swappsco/bb-theme-builder.git",
+                    "type": "git",
+                    "reference": "{{ package_version }}"
+                }
+            }
+
+        },
+{% endfor %}
 {% for package_version in ["1.2.2"] %}
         {
             "type": "package",
