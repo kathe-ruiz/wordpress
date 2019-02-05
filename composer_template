@@ -476,6 +476,32 @@
         {
             "type": "package",
             "package": {
+                "name": "wp-rocket",
+                "version": "3.2.4",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-rocket.git",
+                    "type": "git",
+                    "reference": "3.2.4"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wp-rocket-compat-varnish-ip",
+                "version": "0.1.1",
+                "source": {
+                    "url": "git@github.com:swappsco/wp-rocket-compat-varnish-ip.git",
+                    "type": "git",
+                    "reference": "0.1.1"
+                }
+            }
+
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "ncarb-centennial-core",
                 "version": "0.1.0",
                 "source": {
