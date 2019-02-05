@@ -112,11 +112,6 @@ if (SSL_ON == true) {
 }
 //controling WP_CACHE
 define('WP_CACHE', filter_var(getenv('WP_CACHE'), FILTER_VALIDATE_BOOLEAN));
-/* That's all, stop editing! Happy blogging. */
-
-/** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
@@ -127,6 +122,10 @@ define('WP_SHOW_ALL_SIDEBAR_ITEMS', filter_var(
     getenv('SHOW_ALL_SIDEBAR_ITEMS'), FILTER_VALIDATE_BOOLEAN
     )?:False);
 
+define('WPROCKETHELPERS_CUSTOM_VARNISH_IP', getenv("VARNISH_IP")?:'127.0.0.1');
+
+
+
 $restrict_value = filter_var(getenv('RESTRICT')?:true, FILTER_VALIDATE_BOOLEAN);
 
 
@@ -135,3 +134,9 @@ if($restrict_value == false):
 endif;
 
 define('RESTRICT', $restrict_value);
+
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+define('ABSPATH', dirname(__FILE__) . '/');
