@@ -133,11 +133,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.7.9",
+                "version": "5.7.10",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.7.9"
+                    "reference": "5.7.10"
                 }
             }
 
@@ -250,7 +250,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["0.0.2"] %}
+{% for package_version in ["0.0.3"] %}
         {
             "type": "package",
             "package":
@@ -266,7 +266,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["3.0"] %}
+{% for package_version in ["3.0.6"] %}
         {
             "type": "package",
             "package":

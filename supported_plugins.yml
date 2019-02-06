@@ -36,7 +36,7 @@ supported_plugins:
   - glue-for-yoast-seo-amp:
       - wpackagist-plugin/glue-for-yoast-seo-amp: ^0.4
   - jetpack:
-      - wpackagist-plugin/jetpack: ^6
+      - wpackagist-plugin/jetpack: ^7
   - mailchimp-for-wp:
       - wpackagist-plugin/mailchimp-for-wp: ^4
   - wpackagist-plugin/wp-user-avatar:
