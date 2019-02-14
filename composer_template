@@ -503,11 +503,11 @@
             "type": "package",
             "package": {
                 "name": "ncarb-centennial-core",
-                "version": "0.1.0",
+                "version": "0.1.1",
                 "source": {
                     "url": "git@github.com:swappsco/ncarb-centennial-core.git",
                     "type": "git",
-                    "reference": "develop"
+                    "reference": "master"
                 }
             }
 

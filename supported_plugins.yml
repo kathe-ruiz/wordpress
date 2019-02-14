@@ -256,7 +256,7 @@ supported_plugins:
   - theme-amp-swapps:
       - theme-amp-swapps: ^0.2.0
   - ncarb-centennial-core:
-      - ncarb-centennial-core: ^0.1.0
+      - ncarb-centennial-core: 0.1.1
   - capability-manager-enhanced:
       - capability-manager-enhanced: ^1.5.11
   - shortcodes-ultimate:
