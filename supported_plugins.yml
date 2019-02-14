@@ -283,4 +283,5 @@ supported_plugins:
       - wp-rocket: 3.2.4
   - wp-rocket-compat-varnish-ip:
       - wp-rocket-compat-varnish-ip: 0.1.1
-
+  - notification:
+      - wpackagist-plugin/notification: ^5.3
