@@ -36,7 +36,7 @@ supported_plugins:
   - glue-for-yoast-seo-amp:
       - wpackagist-plugin/glue-for-yoast-seo-amp: ^0.4
   - jetpack:
-      - wpackagist-plugin/jetpack: ^6
+      - wpackagist-plugin/jetpack: ^7
   - mailchimp-for-wp:
       - wpackagist-plugin/mailchimp-for-wp: ^4
   - wpackagist-plugin/wp-user-avatar:
@@ -108,7 +108,7 @@ supported_plugins:
   - json-rest-api:
       - wpackagist-plugin/json-rest-api: ^1.2
   - mailgun:
-      - wpackagist-plugin/mailgun: ^1.5
+      - wpackagist-plugin/mailgun: ^1.7
   - quick-pagepost-redirect-plugin:
       - wpackagist-plugin/quick-pagepost-redirect-plugin: ^5.1
   - sitemap:
@@ -134,15 +134,15 @@ supported_plugins:
   - wp-pagenavi:
       - wpackagist-plugin/wp-pagenavi: ^2
   - google-maps:
-      - wpackagist-plugin/wp-google-maps: ^7.10
+      - wpackagist-plugin/wp-google-maps: ^7.11
   - megamenu:
       - wpackagist-plugin/megamenu: ^2.4
   - getsitecontrol:
-      - wpackagist-plugin/getsitecontrol: 2.2.3
+      - wpackagist-plugin/getsitecontrol: 2.3.0
   - locateanything:
       - wpackagist-plugin/locateanything: 1.2.02
   - popup-builder:
-      - wpackagist-plugin/popup-builder: 3.1.5.2
+      - wpackagist-plugin/popup-builder: 3.1.6.1
   - mc4wp-wpml:
       - wpackagist-plugin/mc4wp-wpml: '1.0'
   - wp-facebook-pixel:
@@ -238,7 +238,7 @@ supported_plugins:
   - woocommerce-custom-tabs:
       - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
   - gutenberg:
-      - wpackagist-plugin/gutenberg: ^4
+      - wpackagist-plugin/gutenberg: ^5
   - anspress:
       - wpackagist-plugin/anspress-question-answer: ^4.1.15
   - woocommerce-bulk-variations:
