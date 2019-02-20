@@ -544,7 +544,7 @@
               {% for j in supported_plugins %}
                 {% if i in j %}
                   {% for k in j[i] %}
-                    {% for key, value in k.iteritems() %}
+                    {% for key, value in k.items() %}
                       , "{{ key }}": "{{ value}}"
                     {% endfor %}
                   {% endfor %}
@@ -557,7 +557,7 @@
               {% for j in supported_plugins %}
                 {% if i in j %}
                   {% for k in j[i] %}
-                    {% for key, value in k.iteritems() %}
+                    {% for key, value in k.items() %}
                       , "{{ key }}": "{{ value}}"
                     {% endfor %}
                   {% endfor %}
@@ -573,7 +573,7 @@
               {% for j in supported_plugins %}
                 {% if i in j %}
                   {% for k in j[i] %}
-                    {% for key, value in k.iteritems() %}
+                    {% for key, value in k.items() %}
                       , "{{ key }}": "{{ value}}"
                     {% endfor %}
                   {% endfor %}
@@ -597,7 +597,7 @@
                   {% for j in supported_plugins %}
                     {% if i in j %}
                       {% for k in j[i] %}
-                        {% for key, value in k.iteritems() %}
+                        {% for key, value in k.items() %}
                           , "{{ key }}"
                         {% endfor %}
                       {% endfor %}
@@ -614,7 +614,7 @@
               {% for j in supported_plugins %}
                 {% if i in j %}
                   {% for k in j[i] %}
-                    {% for key, value in k.iteritems() %}
+                    {% for key, value in k.items() %}
                       , "{{ key }}",
                     {% endfor %}
                   {% endfor %}
@@ -622,7 +622,7 @@
               {% endfor %}
             {% endfor%}
                 {% if i in supported_plugins %}
-                  {% for key, value in supported_plugins[i].iteritems() %}
+                  {% for key, value in supported_plugins[i].items() %}
                   , "{{ key }}"
                   {% endfor %}
                 {% endif %}
@@ -650,7 +650,7 @@
               {% for j in supported_plugins %}
                 {% if i in j %}
                   {% for k in j[i] %}
-                    {% for key, value in k.iteritems() %}
+                    {% for key, value in k.items() %}
                       , "{{ key }}"
                     {% endfor %}
                   {% endfor %}
