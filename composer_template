@@ -97,11 +97,11 @@
             "type": "package",
             "package": {
                 "name": "bb-ultimate-addon",
-                "version": "1.14.4",
+                "version": "1.15.0",
                 "source": {
                     "url": "git@github.com:swappsco/bb-ultimate-addon.git",
                     "type": "git",
-                    "reference": "1.14.4"
+                    "reference": "1.15.0"
                 }
             }
         },
@@ -133,11 +133,11 @@
             "type": "package",
             "package": {
                 "name": "advanced-custom-fields-pro",
-                "version": "5.7.9",
+                "version": "5.7.12",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
                     "type": "git",
-                    "reference": "5.7.9"
+                    "reference": "5.7.12"
                 }
             }
 
@@ -219,7 +219,7 @@
         },
 {% endfor %}
 {## bb-plugin PRO - Swapps Agency PRO version ##}
-{% for package_version in ["2.2.0.6"] %}
+{% for package_version in ["2.2.1.1"] %}
         {
             "type": "package",
             "package": {
