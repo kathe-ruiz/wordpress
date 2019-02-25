@@ -3,7 +3,7 @@ Contributors: Reisetiger
 Donate link: http://www.reisetiger.net
 Tags: Downgrade, Core, WP-Core, Version, Rollback, Upgrade, Update, Release, Versionskontrolle
 Requires at least: 3.0.1
-Tested up to: 4.9
+Tested up to: 5.0.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,6 +23,8 @@ The user Gahapati describes it so much better than I can. (Thank you!)
 > With *WP Downgrade | Specific Core Version* this is now a thing of the past. Anyone who lags behind the latest WP release is now able to use Automatic Updates even to lower WP versions. What WP Downgrade does simply is to make WP believe that the version you want to update to *actually is* the latest version. Because of this, there is no difference to updating to the latest version.  
 
 > For security reasons I think this is a must-have plugin for anyone running a "seasoned" WP installation, and it actually should be a Core feature to be able to update not to the *latest* WP release exclusively but instead to have a choice among *secure* releases.
+
+New advanced option: You are now able to manually edit the download link, if necessary. This allows, for example, a change of language for wp-core. Or you can get the release from another source.
 
 **DE:** Das Plugin "WP Downgrade" zwingt die WordPress-interne Update-Funktion, ein **bestimmtes** WordPress-Release zu installieren. Das definierte Core-Release wird **wie ein regul&auml;res Update** von wordpress.org bezogen und direkt installiert. 
 Das klappt wie gewohnt per Update-Button im Admin-Bereich oder per Auto-Update. Die Versionsnummer kann sowohl **höher** als auch **niedriger** sein als die aktuell installierte Version. Somit ist also auch ein Rollback auf frühere Releases möglich. Dein WordPress wird solange auf dieser Version bleiben, bis du eine neue Versionsnummer in WP-Downgrade hinterlegst (oder bis du die Versionsnummer leerst oder das Plugin deaktivierst).
@@ -63,6 +65,11 @@ A: Weil es bisher keine Fragen gab! :-)
 
 
 == Changelog ==
+= 1.2.0 =
+* Advanced option: You are now able to manually edit the download link, if necessary. This allows, for example, a change of language. Or you can get the release from another source.
+* Notes improved a little.
+* compatibility with WordPress 5.0.2
+
 = 1.1.4 =
 * Improved access to the settings page (link from plugin overview)
 * compatibility with WordPress 4.7.1
