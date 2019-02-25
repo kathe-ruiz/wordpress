@@ -1,5 +1,9 @@
 <?php global $redux_builder_amp ?>
 <?php amp_header_core() ?>
+<?php
+do_action( 'levelup_head');
+if( !ampforwp_levelup_compatibility('hf_builder_head') ){
+?>
 <?php if($redux_builder_amp['header-type'] == '1'){?>
 <header class="header h_m h_m_1">
     <?php do_action('ampforwp_header_top_design4'); ?>
@@ -110,12 +114,12 @@
                     <?php } ?>
                     <?php if( isset( $redux_builder_amp['amp-swift-cart-btn'] ) && true == $redux_builder_amp['amp-swift-cart-btn'] ) { ?>
                         <div class="h-shop h-ic">
-                            <a href="<?php echo ampforwp_wc_cart_page_url(); ?>" class="icon-shopping-cart"></a>
+                            <a href="<?php echo esc_url(ampforwp_wc_cart_page_url()); ?>" class="icon-shopping-cart"></a>
                         </div>
                     <?php } ?>
                     <?php if ( true == $redux_builder_amp['ampforwp-callnow-button'] ) { ?>
                         <div class="h-call h-ic">
-                            <a title="call telephone" href="tel:<?php echo $redux_builder_amp['enable-amp-call-numberfield'];?>"></a>
+                            <a title="call telephone" href="tel:<?php echo esc_attr($redux_builder_amp['enable-amp-call-numberfield']);?>"></a>
                         </div>
                     <?php } ?> 
                 </div>
@@ -223,7 +227,7 @@
                 <div class="h-2">
                     <?php if($redux_builder_amp['signin-button-text'] && $redux_builder_amp['signin-button-link']){?>
                     <div class="h-sing">
-                        <a target="_blank" href="<?php echo $redux_builder_amp['signin-button-link']?>"><?php echo $redux_builder_amp['signin-button-text'] ?></a>
+                        <a target="_blank" href="<?php echo esc_url($redux_builder_amp['signin-button-link'])?>"><?php echo esc_attr($redux_builder_amp['signin-button-text']) ?></a>
                     </div>
                     <?php } ?>
                     <?php if( isset( $redux_builder_amp['amp-swift-cart-btn'] ) && true == $redux_builder_amp['amp-swift-cart-btn'] ) { ?>
@@ -233,7 +237,7 @@
                     <?php } ?>
                     <?php if ( true == $redux_builder_amp['ampforwp-callnow-button'] ) { ?>
                         <div class="h-call h-ic">
-                            <a title="call telephone" href="tel:<?php echo $redux_builder_amp['enable-amp-call-numberfield'];?>"></a>
+                            <a title="call telephone" href="tel:<?php echo esc_attr($redux_builder_amp['enable-amp-call-numberfield']);?>"></a>
                         </div>
                     <?php } ?>    
                 </div>
@@ -353,7 +357,7 @@
                     <?php } ?>
                     <?php if ( true == $redux_builder_amp['ampforwp-callnow-button'] ) { ?>
                         <div class="h-call h-ic">
-                            <a href="tel:<?php echo $redux_builder_amp['enable-amp-call-numberfield'];?>"></a>
+                            <a href="tel:<?php echo esc_attr($redux_builder_amp['enable-amp-call-numberfield']);?>"></a>
                         </div>
                     <?php } ?>
                     <div class="h-nav">
@@ -367,9 +371,12 @@
 </header>
 <?php }
 do_action("ampforwp_advance_header_layout_options");
+}
  ?>
 <div class="content-wrapper">
-<?php if($redux_builder_amp['primary-menu']){?>
+<?php
+if(!ampforwp_levelup_compatibility('hf_builder_head') ){
+ if($redux_builder_amp['primary-menu']){?>
 <div class="p-m-fl">
 <?php if ( amp_menu(false) ) : ?>
   <div class="p-menu">
@@ -378,5 +385,6 @@ do_action("ampforwp_advance_header_layout_options");
   <?php endif; ?>
  <?php do_action('ampforwp_after_primary_menu');  ?>
 </div>
-<?php } ?>
+<?php } 
+}?>
 

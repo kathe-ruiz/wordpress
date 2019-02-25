@@ -70,7 +70,7 @@ if ( !class_exists ( 'ReduxFramework_checkbox_hierarchy' ) ) {
             }
             $this->field[ 'data_class' ] = ( isset ( $this->field[ 'multi_layout' ] ) ) ? 'data-' . $this->field[ 'multi_layout' ] : 'data-full';
             if ( !empty ( $this->field[ 'options' ] ) && ( is_array ( $this->field[ 'options' ] ) || is_array ( $this->field[ 'default' ] ) ) ) {
-                echo '<ul class="' . $this->field[ 'data_class' ] . '">';
+                echo '<ul class="' . esc_attr($this->field[ 'data_class' ]) . '">';
                 if ( !isset ( $this->value ) ) {
                     $this->value = array();
                 }
@@ -158,16 +158,22 @@ if ( !class_exists ( 'ReduxFramework_checkbox_hierarchy' ) ) {
                         echo " selected='selected'";
                     echo ">$pad$category->name</option>";*/
 
+                    $selectedvalue = '';
+                    if(isset($this->value[ $category->term_id ])){
+                        $selectedvalue = $this->value[ $category->term_id ];
+                    }
 
                     echo '<li><label for="' . strtr ( $this->parent->args[ 'opt_name' ] . '[' . $this->field[ 'id' ] . '][' . $category->term_id . ']', array(
                         '[' => '_',
                         ']' => ''
                     ) ) . '_' . array_search ( $category->term_id, array_keys ( $this->field[ 'options' ] ) ) . '">';
-                    echo '<input type="hidden" class="checkbox-check" data-val="1" name="' . $this->field[ 'name' ] . '[' . $category->term_id . ']' . $this->field[ 'name_suffix' ] . '" value="' . $this->value[ $category->term_id ] . '" ' . '/>';
+                    if($this->field[ 'name' ]){
+                    echo '<input type="hidden" class="checkbox-check" data-val="1" name="' . $this->field[ 'name' ] . '[' . $category->term_id . ']' . $this->field[ 'name_suffix' ] . '" value="' . $selectedvalue . '" ' . '/>';
+                    }
                     echo '<input type="checkbox" class="checkbox ' . $this->field[ 'class' ] . '" id="' . strtr ( $this->parent->args[ 'opt_name' ] . '[' . $this->field[ 'id' ] . '][' . $category->term_id . ']', array(
                         '[' => '_',
                         ']' => ''
-                    ) ) . '_' . array_search ( $category->term_id, array_keys ( $this->field[ 'options' ] ) ) . '" value="1" ' . checked ( $this->value[$category->term_id], '1', false ) . '/>';
+                    ) ) . '_' . array_search ( $category->term_id, array_keys ( $this->field[ 'options' ] ) ) . '" value="1" ' . checked ( $selectedvalue, '1', false ) . '/>';
                     echo ' <span>' .$pad. $category->name . '</span></label></li>';
 
 
@@ -191,7 +197,7 @@ if ( !class_exists ( 'ReduxFramework_checkbox_hierarchy' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style (
                     'redux-field-checkbox-hierarchy-css',
-                    $this->extension_url  . 'field_checkbox_hierarchy.css',
+                    esc_url($this->extension_url  . 'field_checkbox_hierarchy.css'),
                     array(),
                     $this->time, //time (),
                     'all'
@@ -200,7 +206,7 @@ if ( !class_exists ( 'ReduxFramework_checkbox_hierarchy' ) ) {
 	//
             wp_enqueue_script (
                 'redux-field-checkbox-hierarchy-js',
-                $this->extension_url . 'field_checkbox_hierarchy' . Redux_Functions::isMin () . '.js',
+                esc_url($this->extension_url . 'field_checkbox_hierarchy' . Redux_Functions::isMin () . '.js'),
                 array( 'jquery', 'redux-js' ),
                 $this->time, //time (),
                 true

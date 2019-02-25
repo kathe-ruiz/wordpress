@@ -66,7 +66,6 @@
             <?php if ( ! empty( $this->parent->args['display_version'] ) ) { ?>
                 <span><?php echo wp_kses_post( $this->parent->args['display_version'] ); ?></span>
             <?php } ?>
-
         </div>
     <?php } ?>
 

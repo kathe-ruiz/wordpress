@@ -16,22 +16,19 @@
                   $menu = apply_filters('ampforwp_menu_content', $menu);
                   $sanitizer_obj = new AMPFORWP_Content( $menu, array(), apply_filters( 'ampforwp_content_sanitizers', array( 'AMP_Img_Sanitizer' => array(), 'AMP_Style_Sanitizer' => array(), ) ) );
                   $sanitized_menu =  $sanitizer_obj->get_amp_content();
-                  echo $sanitized_menu; ?>
+                  echo $sanitized_menu;//amphtml content, no kses ?>
             </nav>
           </div>
         <?php } ?>
-        <p><?php 
-          if($redux_builder_amp['ampforwp-footer-top']=='1') { ?><a title="back to top" on="tap:backtotop.scrollTo(duration=500)" class="btt" ><?php echo ampforwp_translation( $redux_builder_amp['amp-translator-top-text'], 'Top'); ?></a><?php }
-              if($redux_builder_amp['amp-footer-link-non-amp-page']=='1') {
-                  if($redux_builder_amp['ampforwp-footer-top']=='1') { ?> | <?php 
-                    ampforwp_view_nonamp(); 
-                  }
-                  else{
-                    ampforwp_view_nonamp();
-                  }
-              }
-              $allowed_html = ampforwp_wp_kses_allowed_html();
-              echo wp_kses( ampforwp_translation($redux_builder_amp['amp-translator-footer-text'], 'Footer'),$allowed_html);
+        <p class="rightslink back-to-top"><?php 
+          if ( true == ampforwp_get_setting('ampforwp-footer-top') || true == ampforwp_get_setting('amp-footer-link-non-amp-page') ) {
+            amp_back_to_top_link();
+            if(true == ampforwp_get_setting('amp-footer-link-non-amp-page')){
+              ampforwp_view_nonamp();
+            }
+          };        
+              $allowed_tags = '<p><a><b><strong><i><u><ul><ol><li><h1><h2><h3><h4><h5><h6><table><tr><th><td><em><span>'; 
+              echo strip_tags( ampforwp_translation($redux_builder_amp['amp-translator-footer-text'], 'Footer') ,$allowed_tags );
         ?></p>
         <?php do_action('amp_footer_link'); ?>
       </div>

@@ -57,7 +57,7 @@
 					} ?>
 		            <?php if( isset($redux_builder_amp['amp-author-name']) && $redux_builder_amp['amp-author-name'] ) { ?>
 			            <div class="sp-athr">
-			            	<span class="athr-tx"><?php echo ampforwp_translation($redux_builder_amp['amp-translator-published-by'], 'Published by' ); ?></span>
+			            	<span class="athr-tx"><?php echo esc_attr(ampforwp_translation($redux_builder_amp['amp-translator-published-by'], 'Published by' )); ?></span>
 			            	<?php amp_author_box(); ?>
 			            </div>
 			         <?php } ?>   
@@ -151,7 +151,7 @@ do_action("ampforwp_single_design_type_handle");
 <?php if($redux_builder_amp['single-design-type'] == '1' && isset($redux_builder_amp['ampforwp-swift-recent-posts']) && $redux_builder_amp['ampforwp-swift-recent-posts']=='1' && !checkAMPforPageBuilderStatus(get_the_ID()) ) { ?>
 <div class="r-pf">
 	<div class="cntr">
-		<h3><?php echo ampforwp_translation($redux_builder_amp['amp-translator-recent-text'], 'Recent Posts' ); ?></h3>
+		<h3><?php echo esc_attr(ampforwp_translation($redux_builder_amp['amp-translator-recent-text'], 'Recent Posts' )); ?></h3>
 	<?php while( amp_loop('start', array( 'posts_per_page' => 6 ) ) ): ?>
 		<div class="fsp">
 			<?php if( ampforwp_has_post_thumbnail() ){
@@ -211,7 +211,7 @@ do_action("ampforwp_single_design_type_handle");
 								</div>
 								<?php if( !checkAMPforPageBuilderStatus(get_the_ID()) ) { ?>
 								<div class="ss-ic">
-									<span class="shr-txt"><?php echo ampforwp_translation($redux_builder_amp['amp-translator-share-text'], 'Share' ); ?></span>
+									<span class="shr-txt"><?php echo esc_attr(ampforwp_translation($redux_builder_amp['amp-translator-share-text'], 'Share' )); ?></span>
 									<ul>
 										<?php if($redux_builder_amp['enable-single-facebook-share']){?>
 										<li>
@@ -423,27 +423,12 @@ do_action("ampforwp_single_design_type_handle");
 				<?php if ( is_active_sidebar( 'swift-sidebar' ) ) : ?>
 				<div class="sdbr-right">
 					<?php 
-						ob_start();
-						dynamic_sidebar('swift-sidebar');
-						$swift_footer_widget = ob_get_contents();
-						ob_end_clean();
-						$sanitizer_obj = new AMPFORWP_Content( 
-											$swift_footer_widget,
-											array(), 
-											apply_filters( 'ampforwp_content_sanitizers', 
-												array( 'AMP_Img_Sanitizer' => array(), 
-													'AMP_Style_Sanitizer' => array(), 
-													'AMP_Blacklist_Sanitizer' => array(),
-													'AMP_Video_Sanitizer' => array(),
-							 						'AMP_Audio_Sanitizer' => array(),
-							 						'AMP_Iframe_Sanitizer' => array(
-														 'add_placeholder' => true,
-													 ),
-												) 
-											) 
-										);
-						 $sanitized_footer_widget =  $sanitizer_obj->get_amp_content();
-			              echo $sanitized_footer_widget;
+						$sanitized_sidebar = ampforwp_sidebar_content_sanitizer('swift-sidebar');
+						if ( $sanitized_sidebar) {
+							$sidebar_output = $sanitized_sidebar->get_amp_content();
+							$sidebar_output = apply_filters('ampforwp_modify_sidebars_content',$sidebar_output);
+						}
+			            echo $sidebar_output; // amphtml content, no kses
 					?>
 				</div>
 			<?php endif; ?>

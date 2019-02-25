@@ -1,38 +1,22 @@
 </div>
 <?php global $redux_builder_amp ?>
-<?php if ( isset($redux_builder_amp['footer-type']) && '1' == $redux_builder_amp['footer-type'] ) { ?>
+
+<?php 
+do_action( 'levelup_foot');
+if(!ampforwp_levelup_compatibility('hf_builder_foot') ){
+if ( isset($redux_builder_amp['footer-type']) && '1' == $redux_builder_amp['footer-type'] ) { ?>
 <footer class="footer">
 	<?php if ( is_active_sidebar( 'swift-footer-widget-area'  ) ) : ?>
 	<div class="f-w-f1">
 		<div class="cntr">
 			<div class="f-w">
 				<?php 
-				if ( is_active_widget(false,false,'search', true) || is_active_widget(false,false,'text', true) ) {
-					add_filter('amp_blacklisted_tags','ampforwp_sidebar_blacklist_tags');
-					add_filter('ampforwp_modify_sidebars_content','ampforwp_modified_search_sidebar');
+				$sanitized_sidebar = ampforwp_sidebar_content_sanitizer('swift-footer-widget-area');
+				if ( $sanitized_sidebar) {
+					$sidebar_output = $sanitized_sidebar->get_amp_content();
+					$sidebar_output = apply_filters('ampforwp_modify_sidebars_content',$sidebar_output);
 				}
-				ob_start();
-				dynamic_sidebar('swift-footer-widget-area');
-				$swift_footer_widget = ob_get_contents();
-				ob_end_clean();
-				$sanitizer_obj = new AMPFORWP_Content( 
-									$swift_footer_widget,
-									array(), 
-									apply_filters( 'ampforwp_content_sanitizers', 
-										array( 'AMP_Img_Sanitizer' => array(), 
-											'AMP_Blacklist_Sanitizer' => array(),
-											'AMP_Style_Sanitizer' => array(), 
-											'AMP_Video_Sanitizer' => array(),
-					 						'AMP_Audio_Sanitizer' => array(),
-					 						'AMP_Iframe_Sanitizer' => array(
-												 'add_placeholder' => true,
-											 ),
-										) 
-									) 
-								);
-				 $sanitized_footer_widget =  $sanitizer_obj->get_amp_content();
-				 $sanitized_footer_widget = apply_filters('ampforwp_modify_sidebars_content',$sanitized_footer_widget); 
-	              echo $sanitized_footer_widget;
+	            echo $sidebar_output; // amphtml content, no kses
 				?>
 			</div>
 		</div>
@@ -53,19 +37,19 @@
 	              $menu = apply_filters('ampforwp_menu_content', $menu);
 	              $sanitizer_obj = new AMPFORWP_Content( $menu, array(), apply_filters( 'ampforwp_content_sanitizers', array( 'AMP_Img_Sanitizer' => array(), 'AMP_Style_Sanitizer' => array(), ) ) );
 	              $sanitized_menu =  $sanitizer_obj->get_amp_content();
-	              echo $sanitized_menu; ?>
+	              echo $sanitized_menu;// amphtml content, no kses ?>
 	           </nav>
 			</div>
 			<?php } }?>
 			<div class="rr">
 				<?php amp_non_amp_link(); ?>
-				<?php amp_back_to_top_link(); ?>
             <?php do_action('amp_footer_link'); ?>
 			</div>
 		</div>
 	</div>
 </footer>
 <?php }
+}
 // Social share in AMP 
 	$amp_permalink = "";
 	if ( ampforwp_get_setting('ampforwp-social-share-amp')  ) {
@@ -134,7 +118,7 @@ if( (is_single() && $redux_builder_amp['enable-single-social-icons']) || (is_pag
 		<?php } ?>
 		<?php if($redux_builder_amp['enable-single-tumblr-share']){?>
 		<li>
-			<a title="tumblr share" class="s_tb" target="_blank" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=<?php echo $amp_permalink ?>"></a>
+			<a title="tumblr share" class="s_tb" target="_blank" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=<?php echo esc_url($amp_permalink) ?>"></a>
 		</li>
 		<?php } ?>
 		<?php if($redux_builder_amp['enable-single-telegram-share']){?>

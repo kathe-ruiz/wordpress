@@ -1,4 +1,6 @@
 <?php
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) exit;
 $moduleTemplate = array();
 $layoutTemplate = array();
 
@@ -53,7 +55,7 @@ if(!function_exists("ampforwp_module_templates")){
 }//If Fucntion check closed
 
 //Row Contents
-$output = '<section class="ap_m {{row_class}} {{grid_type}} {{if_condition_check_for_slant==1}}slant_clr{{ifend_condition_check_for_slant_1}}">
+$output = '<section {{if_row_id}}id={{row_id}}{{ifend_row_id}} class="ap_m {{row_class}} {{grid_type}} {{if_condition_check_for_slant==1}}slant_clr{{ifend_condition_check_for_slant_1}}">
 	{{if_condition_background_type==video}}
 	<div class="amp_video">
 		<div class="amp-txt">
@@ -106,9 +108,11 @@ $front_css = '
 	
 	{{shadow}}
 }
-{{row-class}}.slant_clr{position:relative;}
+{{if_condition_check_for_slant==1}}
+{{row-class}}.st{position:relative;}
+{{ifend_condition_check_for_slant_1}}
 {{if_condition_check_for_enbtp==1}}
-{{row-class}}.slant_clr:before{
+{{row-class}}.st:before{
 	content:"";
 	height:110px;
 	width:100%;
@@ -127,7 +131,7 @@ $front_css = '
 {{ifend_condition_check_for_enbtp_1}}
 
 {{if_condition_check_for_enbbt==1}}
-{{row-class}}.slant_clr:after{
+{{row-class}}.st:after{
 	content:"";
 	height:110px;
 	width:100%;
@@ -224,6 +228,14 @@ $containerCommonSettings = array(
 								'type'		=>'text',
 								'name'		=>"row_label",
 								'label'		=>'Row label',
+								'tab'    	=>'container_css',
+								'default'	=>'',
+								'content_type'=>'html',
+								),
+							array(
+								'type'		=>'text',
+								'name'		=>'row_id',
+								'label'		=>esc_html__('Row ID', 'accelerated-mobile-pages'),
 								'tab'    	=>'container_css',
 								'default'	=>'',
 								'content_type'=>'html',
@@ -351,12 +363,13 @@ $containerCommonSettings = array(
 	 						array(
 								'type'		=>'text',
 								'name'		=>"row_background_video",
-								'label'		=>"Background Video URL",
+								'label'		=> esc_html__( 'Background Video URL', 'accelerated-mobile-pages' ),
 								'tab'		=>'customizer',
 								'default'	=>'',
+								'helpmessage'	=> esc_html__('Your video should be 600px away from the top or not within the first 75% of the viewport and it should be added like - https://www.youtube.com/embed/XXXXXXXXXX', 'accelerated-mobile-pages'),
 								'content_type'=>'html',
 								'required'  => array('background_type'=>'video')
-								),
+							),
 	 						array(		
 		 						'type'		=>'text',		
 		 						'name'		=>"title",		

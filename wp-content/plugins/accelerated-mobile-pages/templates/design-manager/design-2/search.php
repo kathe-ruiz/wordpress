@@ -53,7 +53,7 @@
 		};?>
 
 		<div class="amp-wp-content amp-archive-heading">
-		<h1 class="page-title"><?php echo ampforwp_translation($redux_builder_amp['amp-translator-search-text'], 'You searched for:' ) . '  ' . get_search_query();?></h1>
+		<h1 class="page-title"><?php echo esc_attr(ampforwp_translation($redux_builder_amp['amp-translator-search-text'], 'You searched for:' ) . '  ' . get_search_query());?></h1>
  		</div>
 		<?php if ( $q->have_posts() ) : while ( $q->have_posts() ) : $q->the_post();
 			$ampforwp_amp_post_url = ampforwp_url_controller( get_permalink() ); ?>
@@ -90,8 +90,8 @@
 	<?php else: ?>
 		<div class="amp-wp-content amp-loop-list">
 			<div class="amp-wp-post-content">
-				<?php echo ampforwp_translation($redux_builder_amp['amp-translator-search-no-found'], 
-				'It seems we can\'t find what you\'re looking for. '); ?>
+				<?php echo esc_attr(ampforwp_translation($redux_builder_amp['amp-translator-search-no-found'], 
+				'It seems we can\'t find what you\'re looking for. ')); ?>
 		    </div>
             <div class="cb"></div>
 		</div>

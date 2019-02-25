@@ -1,8 +1,10 @@
 <?php		
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) exit;
 require_once  ABSPATH . WPINC . '/category.php';
  $output = '{{if_condition_content_layout_type==1}}
-            <div class="pb_mod cat_mod"><h4>{{content_title}}</h4>   
-                <div class="wrap"><ul>{{category_selection}}</ul></div>    
+            <div {{if_id}}id="{{id}}"{{ifend_id}} class="pb_mod cat_mod {{user_class}}"><h4>{{content_title}}</h4>
+              <div class="wrap"><ul>{{category_selection}}</ul></div> 
             </div>
           {{ifend_condition_content_layout_type_1}}
           ';
@@ -53,9 +55,9 @@ require_once  ABSPATH . WPINC . '/category.php';
     'default_tab'=> 'customizer',
     'tabs' => array(
               'customizer'=>'Content',
+              'layout' => 'Layout',
               'container_css'=>'Design',
-              'advanced' => 'Advanced',
-              'layout' => 'Layout'
+              'advanced' => 'Advanced'
             ),
  		'fields' => array(
             array(    
@@ -82,6 +84,22 @@ require_once  ABSPATH . WPINC . '/category.php';
  						'default'	=>'Category',	
             'content_type'=>'html',
  						),
+            array(
+                'type'    =>'text',
+                'name'    =>"id",
+                'label'   =>'ID',
+                'tab'   =>'advanced',
+                'default' =>'',
+                'content_type'=>'html'
+            ),
+            array(
+                'type'    =>'text',
+                'name'    =>"user_class",
+                'label'   =>'Class',
+                'tab'   =>'advanced',
+                'default' =>'',
+                'content_type'=>'html'
+              ),
             array(
                 'type'    =>'spacing',
                 'name'    =>"margin_css",
@@ -138,6 +156,15 @@ require_once  ABSPATH . WPINC . '/category.php';
             'content_type'=>'html',
  						),
             array(    
+            'type'    =>'text',
+            'name'    =>"ampforwp_excerpt_length",
+            'label'   =>"Excerpt Length",
+            'tab'     =>'customizer',
+            'default' =>'15',    
+            'content_type'=>'html',
+            'required'  => array('ampforwp_show_excerpt' => 'yes'),
+            ),
+            array(    
             'type'    =>'text',   
             'name'    =>"img-width-1",    
             'label'   =>'Image Width',
@@ -180,7 +207,10 @@ require_once  ABSPATH . WPINC . '/category.php';
                           ',
  );		
  function ampforwp_contentHtml($the_query,$fieldValues,$loopHtml){	
- 	$contenthtml = '';		
+ 	$contenthtml = '';
+  $ampforwp_show_excerpt = (isset($fieldValues['ampforwp_show_excerpt'])? $fieldValues['ampforwp_show_excerpt']: 'yes');
+  $ampforwp_excerpt_length = (isset($fieldValues['ampforwp_excerpt_length'])? $fieldValues['ampforwp_excerpt_length']: 15);
+  $ampforwp_excerpt_length = (int) $ampforwp_excerpt_length;
  	$ampforwp_show_excerpt = (isset($fieldValues['ampforwp_show_excerpt'])? $fieldValues['ampforwp_show_excerpt']: 'yes');		
  	if ( $the_query->have_posts() ) {	
          while ( $the_query->have_posts() ) {		
@@ -246,12 +276,14 @@ require_once  ABSPATH . WPINC . '/category.php';
                       $height = $height * $resolution;
                     }
                   try{
-                    $thumb_url = ampforwp_aq_resize( $image, $width, $height, true, false ); //resize & crop the image
-                   
-                    if($thumb_url!=false){
-                      $image   =  $thumb_url[0];
-                      $width   =  $thumb_url[1];
-                      $height  =  $thumb_url[2];
+                    if(function_exists('ampforwp_aq_resize')){
+                      $thumb_url = ampforwp_aq_resize( $image, $width, $height, true, false ); //resize & crop the image
+                     
+                      if($thumb_url!=false){
+                        $image   =  $thumb_url[0];
+                        $width   =  $thumb_url[1];
+                        $height  =  $thumb_url[2];
+                      }
                     }
 
                    }catch(Exception $e){
@@ -267,7 +299,7 @@ require_once  ABSPATH . WPINC . '/category.php';
                      $content = get_the_content();    
                    }  
                  $excerptContent = ' 
-                 <p>'.wp_trim_words( strip_tags( strip_shortcodes( $content ) ) , '15'  ).'</p>';   
+                 <p>'.wp_trim_words( strip_tags( strip_shortcodes( $content ) ) , $ampforwp_excerpt_length  ).'</p>'; 
               }
                $title = get_the_title();
                $postid = get_the_ID();

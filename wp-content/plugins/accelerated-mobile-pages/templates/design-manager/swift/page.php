@@ -2,18 +2,23 @@
 amp_header(); ?>
 <div class="sp">
 	<div <?php if(!checkAMPforPageBuilderStatus(get_the_ID())){ ?>class="cntr"<?php } ?>>
+		<?php if( !ampforwp_levelup_compatibility('levelup_elementor') ){ // Level up Condition starts ?>
 		<?php if(!checkAMPforPageBuilderStatus(get_the_ID())){ ?>
 			<?php if ( true == $redux_builder_amp['ampforwp-bread-crumb'] ) {
 				amp_breadcrumb();
 			}?>
 		 	<?php amp_title(); ?>
 		<?php } ?>
+		<?php } // Level up Condition ends here?>
 		<?php if ( isset($redux_builder_amp['featured_image_swift_page']) && $redux_builder_amp['featured_image_swift_page'] && ampforwp_has_post_thumbnail() ) { ?>
 			<div class="sf-img">
 				<?php amp_featured_image();?>
 			</div>
 		<?php } ?>
        <div class="pg">
+       		<?php if (  is_page() && true == ampforwp_get_setting('ampforwp-page-social') && 'above-content' ==  ampforwp_get_setting('swift-social-position') ){
+							ampforwp_swift_social_icons(); 
+			} ?>
 			<div class="cntn-wrp">
 				<?php if( ampforwp_get_setting('gbl-sidebar') == '1' && ampforwp_is_front_page() ){ ?>				
 					<div class="cntr pgb">
@@ -22,20 +27,12 @@ amp_header(); ?>
 						</div>
 						<?php if(isset($redux_builder_amp['gbl-sidebar']) && $redux_builder_amp['gbl-sidebar'] == '1'){ ?>
 							<div class="sdbr-right"> <?php 
-								ob_start();
-								dynamic_sidebar('swift-sidebar');
-								$swift_widget = ob_get_contents();
-								ob_end_clean();
-								$sanitizer_obj = new AMPFORWP_Content( 
-									$swift_widget,
-									array(), 
-									apply_filters( 'ampforwp_content_sanitizers', 
-										array( 'AMP_Img_Sanitizer' => array(), 'AMP_Style_Sanitizer' => array(), 
-										)
-									) 
-								);
-								$sanitized_content =  $sanitizer_obj->get_amp_content();
-					            echo $sanitized_content;?>
+								$sanitized_sidebar = ampforwp_sidebar_content_sanitizer('swift-sidebar');
+								if ( $sanitized_sidebar) {
+									$sidebar_output = $sanitized_sidebar->get_amp_content();
+									$sidebar_output = apply_filters('ampforwp_modify_sidebars_content',$sidebar_output);
+								}
+					            echo $sidebar_output; // amphtml content, no kses?>
 							</div>
 						<?php } ?>
 					</div><!-- /.cntr -->
@@ -44,9 +41,9 @@ amp_header(); ?>
 				<?php } ?>
 			</div>
 			<?php if(!checkAMPforPageBuilderStatus(get_the_ID())){ 
-			if( is_page() && isset($redux_builder_amp['ampforwp-page-social']) && $redux_builder_amp['ampforwp-page-social'] ) { ?>
+			if( is_page() && true == ampforwp_get_setting('ampforwp-page-social') && 'above-content' !=  ampforwp_get_setting('swift-social-position') ) { ?>
 				<div class="ss-ic">
-					<span class="shr-txt"><?php echo ampforwp_translation($redux_builder_amp['amp-translator-share-text'], 'Share' ); ?></span>
+					<span class="shr-txt"><?php echo esc_attr(ampforwp_translation($redux_builder_amp['amp-translator-share-text'], 'Share' )); ?></span>
 					<ul>
 						<?php if($redux_builder_amp['enable-single-facebook-share']){?>
 						<li>
@@ -172,9 +169,11 @@ amp_header(); ?>
 					</ul>
 	            </div>
 	        	<?php } ?>
+	    <?php if( !ampforwp_levelup_compatibility('levelup_elementor') ){ // Level up Condition starts ?>
 			<div class="cmts">
 				<?php amp_comments();?>
 			</div>
+		<?php } // Level up Condition ends  ?>
 			<?php } ?>
 		</div>
 	</div>
