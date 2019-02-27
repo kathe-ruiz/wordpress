@@ -287,3 +287,9 @@ supported_plugins:
       - wpackagist-plugin/notification: ^5.3
   - co-authors-plus:
       - wpackagist-plugin/co-authors-plus: ^3.3
+  - wpml-translation-management:
+      - wpml-translation-management: ^2
+  - restrict-content-pro:
+      - restrict-content-pro: ^3
+  - wp-plugin-media-library-plus-pro:
+      - wp-plugin-media-library-plus-pro: ^4
