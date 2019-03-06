@@ -258,7 +258,7 @@ supported_plugins:
   - ncarb-centennial-core:
       - ncarb-centennial-core: 0.1.1
   - capability-manager-enhanced:
-      - capability-manager-enhanced: ^1.5.11
+      - wpackagist-plugin/capability-manager-enhanced: ^1.6.1
   - shortcodes-ultimate:
      - wpackagist-plugin/shortcodes-ultimate: ^5.2
   - wp-cron-status-checker:
