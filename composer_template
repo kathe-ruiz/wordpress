@@ -574,7 +574,7 @@
                   {% for k in j[i] %}
                     {% for key, value in k.items() %}
                     {% if key in swapps_plugins %}
-                    , "{{ key }}": "dev-{{ repo_tag }}"
+                    , "swappsco/{{ key }}": "dev-{{ repo_tag }}"
                     {% else %}
                     , "{{ key }}": "{{ value}}"
                     {% endif %}
@@ -683,7 +683,11 @@
                 {% if i in j %}
                   {% for k in j[i] %}
                     {% for key, value in k.items() %}
-                      , "{{ key }}"
+                    {% if key in swapps_plugins %}
+                    , "swappsco/{{ key }}"
+                    {% else %}
+                    , "{{ key }}"
+                    {% endif %}
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
