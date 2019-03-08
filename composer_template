@@ -1,8 +1,13 @@
+{% set swapps_plugins = ['ncarb-centennial-core'] %}
 {
     "repositories":[
         {
             "type":"composer",
             "url":"https://wpackagist.org"
+        },
+        {
+          "type": "vcs",
+          "url": "git@github.com:swappsco/ncarb-centennial-core.git"
         },
         {
             "type": "package",
@@ -538,19 +543,6 @@
         {
             "type": "package",
             "package": {
-                "name": "ncarb-centennial-core",
-                "version": "0.1.1",
-                "source": {
-                    "url": "git@github.com:swappsco/ncarb-centennial-core.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "theme-amp-swapps",
                 "version": "0.2.0",
                 "source": {
@@ -581,7 +573,11 @@
                 {% if i in j %}
                   {% for k in j[i] %}
                     {% for key, value in k.items() %}
-                      , "{{ key }}": "{{ value}}"
+                    {% if key in swapps_plugins %}
+                    , "swappsco/{{ key }}": "dev-{{ repo_tag }}"
+                    {% else %}
+                    , "{{ key }}": "{{ value}}"
+                    {% endif %}
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
@@ -687,7 +683,11 @@
                 {% if i in j %}
                   {% for k in j[i] %}
                     {% for key, value in k.items() %}
-                      , "{{ key }}"
+                    {% if key in swapps_plugins %}
+                    , "swappsco/{{ key }}"
+                    {% else %}
+                    , "{{ key }}"
+                    {% endif %}
                     {% endfor %}
                   {% endfor %}
                 {% endif %}
