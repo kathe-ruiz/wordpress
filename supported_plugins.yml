@@ -142,7 +142,7 @@ supported_plugins:
   - locateanything:
       - wpackagist-plugin/locateanything: 1.2.02
   - popup-builder:
-      - wpackagist-plugin/popup-builder: 3.1.6.1
+      - wpackagist-plugin/popup-builder: ^3.1
   - mc4wp-wpml:
       - wpackagist-plugin/mc4wp-wpml: '1.0'
   - wp-facebook-pixel:
@@ -166,7 +166,7 @@ supported_plugins:
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
-      - wpackagist-plugin/wordpress-seo: ^9
+      - wpackagist-plugin/wordpress-seo: ^10
   - wordpress-seo-premium:
       - wordpress-seo-premium: ^7
   - resmushit-image-optimizer:
