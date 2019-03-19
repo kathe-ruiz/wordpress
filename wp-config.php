@@ -48,6 +48,19 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+define('MULTISITE_DOMAIN', getenv('MULTISITE_DOMAIN'));
+
+if (MULTISITE_DOMAIN){
+    define( 'WP_ALLOW_MULTISITE', true );
+    define( 'MULTISITE', true );
+    define( 'SUBDOMAIN_INSTALL', true );
+    define( 'DOMAIN_CURRENT_SITE', MULTISITE_DOMAIN);
+    define( 'PATH_CURRENT_SITE', '/' );
+    define( 'SITE_ID_CURRENT_SITE', 1 );
+    define( 'BLOG_ID_CURRENT_SITE', 1 );
+    define( 'SUNRISE', 'on' );
+}
+
 /**#@+
 * Authentication Unique Keys and Salts.
 *

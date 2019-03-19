@@ -42,6 +42,21 @@ Create .env file with the following variables and complete according to the need
 
 
 ***************
+Use the project as multisite project
+***************
+
+add the following variable to your .env ::
+    MULTISITE_DOMAIN=mydomain.com
+
+install the site using the following command. Replace the user credentials with your desired credentials.
+
+```
+wp core multisite-install --title="Welcome to the WordPress" --admin_user="admin" --admin_password="password" --admin_email="admin@example.com" --skip-config=true
+```
+
+go to the url defined on MULTISITE_DOMAIN, login with the credentials and create the sites you need.
+
+***************
 Run the project
 ***************
 
