@@ -1,4 +1,4 @@
-{% set swapps_plugins = ['ncarb-centennial-core'] %}
+{% set swapps_plugins = ['ncarb-centennial-core', 'theme-amp-swapps'] %}
 {
     "repositories":[
         {
@@ -8,6 +8,10 @@
         {
           "type": "vcs",
           "url": "git@github.com:swappsco/ncarb-centennial-core.git"
+        },
+        {
+          "type": "vcs",
+          "url": "git@github.com:swappsco/theme-amp-swapps.git"
         },
         {
             "type": "package",
@@ -539,18 +543,6 @@
                 }
             }
 
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "theme-amp-swapps",
-                "version": "0.2.0",
-                "source": {
-                    "url": "git@github.com:swappsco/theme-amp-swapps.git",
-                    "type": "git",
-                    "reference": "0.2.0"
-                }
-            }
         }
     ],
     "require": {
