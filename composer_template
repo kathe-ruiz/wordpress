@@ -558,11 +558,11 @@
             "type": "package",
             "package": {
                 "name": "wp-rocket",
-                "version": "3.2.4",
+                "version": "3.2.6",
                 "source": {
                     "url": "git@github.com:swappsco/wp-rocket.git",
                     "type": "git",
-                    "reference": "3.2.4"
+                    "reference": "3.2.6"
                 }
             }
 
