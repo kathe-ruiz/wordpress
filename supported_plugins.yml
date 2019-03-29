@@ -293,3 +293,5 @@ supported_plugins:
       - restrict-content-pro: ^3
   - wp-plugin-media-library-plus-pro:
       - wp-plugin-media-library-plus-pro: ^4
+  - revisionary:
+      - wpackagist-plugin/revisionary: ^1.2.7
