@@ -227,11 +227,11 @@
             "type": "package",
             "package": {
                 "name": "formidable-pro",
-                "version": "3.06.02",
+                "version": "3.06.03",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "3.06.02"
+                    "reference": "3.06.03"
                 }
             }
         },
@@ -300,7 +300,7 @@
         },
 {% endfor %}
 {## bb-plugin PRO - Swapps Agency PRO version ##}
-{% for package_version in ["2.2.1.4"] %}
+{% for package_version in ["2.2.1.5"] %}
         {
             "type": "package",
             "package": {
@@ -363,7 +363,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["2.6"] %}
+{% for package_version in ["2.6.3"] %}
         {
             "type": "package",
             "package":
