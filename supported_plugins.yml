@@ -295,3 +295,5 @@ supported_plugins:
       - wp-plugin-media-library-plus-pro: ^4
   - revisionary:
       - wpackagist-plugin/revisionary: ^1.2.7
+  - simple-custom-post-order:
+      - wpackagist-plugin/simple-custom-post-order: ˆ2
