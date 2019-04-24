@@ -280,7 +280,7 @@ supported_plugins:
   - autoptimize-criticalcss:
       - wpackagist-plugin/autoptimize-criticalcss: ^1.13
   - wp-rocket:
-      - wp-rocket: 3.2.4
+      - wp-rocket: ^3
   - wp-rocket-compat-varnish-ip:
       - wp-rocket-compat-varnish-ip: 0.1.1
   - notification:
