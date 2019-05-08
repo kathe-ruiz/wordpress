@@ -51,8 +51,8 @@ wp-content/wp-rocket-config/
 /vendor/
 !.gitkeep
 ./readme.html
-
 composer.json
+!wp-includes/sodium_compat/composer.json
 composer.lock
 package-lock.json
 robots.txt
