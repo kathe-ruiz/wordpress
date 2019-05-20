@@ -200,7 +200,7 @@ supported_plugins:
   - addthis:
       - wpackagist-plugin/addthis: ^6.1
   - advanced-custom-fields-pro:
-      - advanced-custom-fields-pro: ^5.7
+      - advanced-custom-fields-pro: ^5.8
   - advanced-custom-fields-font-awesome:
       - wpackagist-plugin/advanced-custom-fields-font-awesome: ~3.0
   - acf-image-crop-add-on:
