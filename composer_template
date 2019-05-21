@@ -203,11 +203,11 @@
             "type": "package",
             "package": {
                 "name": "wp-plugin-media-library-plus-pro",
-                "version": "5.0.0",
+                "version": "5.0.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-media-library-plus-pro.git",
                     "type": "git",
-                    "reference": "5.0.0"
+                    "reference": "5.0.1"
                 }
             }
         },
