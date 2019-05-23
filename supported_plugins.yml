@@ -200,7 +200,7 @@ supported_plugins:
   - addthis:
       - wpackagist-plugin/addthis: ^6.1
   - advanced-custom-fields-pro:
-      - advanced-custom-fields-pro: ^5.7
+      - advanced-custom-fields-pro: ^5.8
   - advanced-custom-fields-font-awesome:
       - wpackagist-plugin/advanced-custom-fields-font-awesome: ~3.0
   - acf-image-crop-add-on:
@@ -292,7 +292,7 @@ supported_plugins:
   - restrict-content-pro:
       - restrict-content-pro: ^3
   - wp-plugin-media-library-plus-pro:
-      - wp-plugin-media-library-plus-pro: ^4
+      - wp-plugin-media-library-plus-pro: ^5
   - revisionary:
       - wpackagist-plugin/revisionary: ^1.2.7
   - simple-custom-post-order:
