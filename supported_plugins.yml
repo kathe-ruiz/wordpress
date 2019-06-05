@@ -42,7 +42,7 @@ supported_plugins:
   - wpackagist-plugin/wp-user-avatar:
       - wpackagist-plugin/wp-user-avatar: ^2.1
   - formidable:
-      - wpackagist-plugin/formidable: ^3
+      - wpackagist-plugin/formidable: ^4
   - formidable-pro:
       - formidable-pro: ^3
   - formidable-bootstrap:
@@ -297,3 +297,9 @@ supported_plugins:
       - wpackagist-plugin/revisionary: ^1.2.7
   - simple-custom-post-order:
       - wpackagist-plugin/simple-custom-post-order: ^2
+  - wpforo-embeds:
+      - wpforo-embeds: ^1
+  - wpforo-private-messages:
+      - wpforo-private-messages: ^1
+  - wpforo-ad-manager:
+      - wpforo-ad-manager: ^1
