@@ -44,7 +44,7 @@ supported_plugins:
   - formidable:
       - wpackagist-plugin/formidable: ^4
   - formidable-pro:
-      - formidable-pro: ^3
+      - formidable-pro: ^4
   - formidable-bootstrap:
       - formidable-bootstrap: ^1.01
   - formidable-pro-add-color-picker-field:
