@@ -263,11 +263,11 @@
             "type": "package",
             "package": {
                 "name": "swappsco/wpforo-ad-manager",
-                "version": "1.0.8",
+                "version": "1.3.2",
                 "source": {
                     "url": "git@github.com:swappsco/wpforo-embeds.git",
                     "type": "git",
-                    "reference": "1.0.8"
+                    "reference": "1.3.2"
                 }
             }
         },
