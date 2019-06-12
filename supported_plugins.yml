@@ -105,8 +105,6 @@ supported_plugins:
       - wpackagist-plugin/google-analyticator: ^6.5
   - image-elevator:
       - wpackagist-plugin/image-elevator: ^2.5
-  - json-rest-api:
-      - wpackagist-plugin/json-rest-api: ^1.2
   - mailgun:
       - wpackagist-plugin/mailgun: ^1.7
   - quick-pagepost-redirect-plugin:
@@ -254,9 +252,9 @@ supported_plugins:
   - domus-wp:
       - swappsco/domus-wp: ^1
   - theme-amp-swapps:
-      - swappsco/theme-amp-swapps: ^0.2.0
+      - theme-amp-swapps: ^0.2.0
   - ncarb-centennial-core:
-      - swappsco/ncarb-centennial-core: 0.1.1
+      - ncarb-centennial-core: 0.1.1
   - capability-manager-enhanced:
       - wpackagist-plugin/capability-manager-enhanced: ^1.6.1
   - shortcodes-ultimate:
