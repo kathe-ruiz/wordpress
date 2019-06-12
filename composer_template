@@ -16,7 +16,7 @@
         {
             "type": "package",
             "package": {
-                "name": "sw-simple-slider",
+                "name": "swappsco/sw-simple-slider",
                 "version": "0.2.11",
                 "source": {
                     "url": "git@github.com:swappsco/sw-simple-slider.git",
@@ -29,7 +29,7 @@
         {
             "type": "package",
             "package": {
-                "name": "woocommerce-tu-compra",
+                "name": "swappsco/woocommerce-tu-compra",
                 "version": "0.1.6",
                 "source": {
                     "url": "git@github.com:swappsco/wp-woocommerce-tu-compra.git",
@@ -42,7 +42,7 @@
         {
             "type": "package",
             "package": {
-                "name": "woocommerce-payu",
+                "name": "swappsco/woocommerce-payu",
                 "version": "0.1.0",
                 "source": {
                     "url": "git@github.com:swappsco/woocommerce-payu.git",
@@ -55,7 +55,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-swappsio",
+                "name": "swappsco/wp-swappsio",
                 "version": "0.0.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-swappsio.git",
@@ -68,7 +68,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-accountant",
+                "name": "swappsco/wp-accountant",
                 "version": "0.1.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-accountant.git",
@@ -81,7 +81,7 @@
         {
             "type": "package",
             "package": {
-                "name": "sw-customizer",
+                "name": "swappsco/sw-customizer",
                 "version": "0.3.11",
                 "source": {
                     "url": "git@github.com:swappsco/sw-customizer.git",
@@ -93,7 +93,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-plugin-swapps",
+                "name": "swappsco/wp-plugin-swapps",
                 "version": "0.1.13",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-swapps.git",
@@ -105,7 +105,7 @@
         {
             "type": "package",
             "package": {
-                "name": "bb-ultimate-addon",
+                "name": "swappsco/bb-ultimate-addon",
                 "version": "1.17.1",
                 "source": {
                     "url": "git@github.com:swappsco/bb-ultimate-addon.git",
@@ -117,7 +117,7 @@
         {
             "type": "package",
             "package": {
-                "name": "domus-wp",
+                "name": "swappsco/domus-wp",
                 "version": "1.0.0",
                 "source": {
                     "url": "git@github.com:swappsco/domus-wp.git",
@@ -129,7 +129,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-dors",
+                "name": "swappsco/wp-dors",
                 "version": "0.1.5",
                 "source": {
                     "url": "git@github.com:swappsco/wp-dors.git",
@@ -141,7 +141,7 @@
         {
             "type": "package",
             "package": {
-                "name": "advanced-custom-fields-pro",
+                "name": "swappsco/advanced-custom-fields-pro",
                 "version": "5.8.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-advanced-custom-fields-pro.git",
@@ -154,7 +154,7 @@
         {
             "type": "package",
             "package": {
-                "name": "sitepress-multilingual-cms",
+                "name": "swappsco/sitepress-multilingual-cms",
                 "version": "4.2.6",
                 "source": {
                     "url": "git@github.com:swappsco/sitepress-multilingual-cms.git",
@@ -166,7 +166,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wpml-string-translation",
+                "name": "swappsco/wpml-string-translation",
                 "version": "2.10.4",
                 "source": {
                     "url": "git@github.com:swappsco/wpml-string-translation.git",
@@ -178,7 +178,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wpml-translation-management",
+                "name": "swappsco/wpml-translation-management",
                 "version": "2.8.5",
                 "source": {
                     "url": "git@github.com:swappsco/wpml-translation-management.git",
@@ -190,7 +190,7 @@
         {
             "type": "package",
             "package": {
-                "name": "restrict-content-pro",
+                "name": "swappsco/restrict-content-pro",
                 "version": "3.0.9",
                 "source": {
                     "url": "git@github.com:swappsco/restrict-content-pro.git",
@@ -202,7 +202,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-plugin-media-library-plus-pro",
+                "name": "swappsco/wp-plugin-media-library-plus-pro",
                 "version": "5.0.2",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-media-library-plus-pro.git",
@@ -214,7 +214,7 @@
         {
             "type": "package",
             "package": {
-                "name": "flexi-pages-widget",
+                "name": "swappsco/flexi-pages-widget",
                 "version": "1.7.4",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-flexi-pages-widget.git",
@@ -226,7 +226,7 @@
         {
             "type": "package",
             "package": {
-                "name": "formidable-pro",
+                "name": "swappsco/formidable-pro",
                 "version": "4.0.0.3",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
@@ -238,7 +238,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wpforo-embeds",
+                "name": "swappsco/wpforo-embeds",
                 "version": "1.3.2",
                 "source": {
                     "url": "git@github.com:swappsco/wpforo-embeds.git",
@@ -250,7 +250,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wpforo-private-messages",
+                "name": "swappsco/wpforo-private-messages",
                 "version": "1.2.1",
                 "source": {
                     "url": "git@github.com:swappsco/wpforo-embeds.git",
@@ -262,7 +262,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wpforo-ad-manager",
+                "name": "swappsco/wpforo-ad-manager",
                 "version": "1.0.8",
                 "source": {
                     "url": "git@github.com:swappsco/wpforo-embeds.git",
@@ -274,7 +274,7 @@
         {
             "type": "package",
             "package": {
-                "name": "formidable-bootstrap",
+                "name": "swappsco/formidable-bootstrap",
                 "version": "1.02.02",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-formidable-bootstrap.git",
@@ -288,7 +288,7 @@
         {
             "type": "package",
             "package": {
-                "name": "bb-plugin-pro",
+                "name": "swappsco/bb-plugin-pro",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/bb-plugin.git",
@@ -304,7 +304,7 @@
         {
             "type": "package",
             "package": {
-                "name": "bb-plugin",
+                "name": "swappsco/bb-plugin",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/bb-plugin.git",
@@ -320,7 +320,7 @@
             "type": "package",
             "package":
             {
-                "name": "wordpress-seo-premium",
+                "name": "swappsco/wordpress-seo-premium",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wp-plugin-wordpress-seo-premium.git",
@@ -336,7 +336,7 @@
             "type": "package",
             "package":
             {
-                "name": "wpml-mailchimp-for-wp",
+                "name": "swappsco/wpml-mailchimp-for-wp",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wpml-mailchimp-for-wp.git",
@@ -352,7 +352,7 @@
             "type": "package",
             "package":
             {
-                "name": "types",
+                "name": "swappsco/types",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/types.git",
@@ -368,7 +368,7 @@
             "type": "package",
             "package":
             {
-                "name": "wp-views",
+                "name": "swappsco/wp-views",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/wp-views.git",
@@ -384,7 +384,7 @@
             "type": "package",
             "package":
             {
-                "name": "fg-joomla-to-wordpress-premium",
+                "name": "swappsco/fg-joomla-to-wordpress-premium",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium.git",
@@ -400,7 +400,7 @@
             "type": "package",
             "package":
             {
-                "name": "fg-joomla-to-wordpress-premium-wpml-module",
+                "name": "swappsco/fg-joomla-to-wordpress-premium-wpml-module",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-wpml-module.git",
@@ -416,7 +416,7 @@
             "type": "package",
             "package":
             {
-                "name": "fg-joomla-to-wordpress-premium-k2-module",
+                "name": "swappsco/fg-joomla-to-wordpress-premium-k2-module",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/fg-joomla-to-wordpress-premium-k2-module.git",
@@ -431,7 +431,7 @@
         {
             "type": "package",
             "package": {
-                "name": "bb-theme",
+                "name": "swappsco/bb-theme",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/bb-theme.git",
@@ -446,7 +446,7 @@
         {
             "type": "package",
             "package": {
-                "name": "bb-theme-builder",
+                "name": "swappsco/bb-theme-builder",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/bb-theme-builder.git",
@@ -462,7 +462,7 @@
             "type": "package",
             "package":
             {
-                "name": "swapps",
+                "name": "swappsco/swapps",
                 "version": "{{ package_version }}",
                 "source": {
                     "url": "git@github.com:swappsco/swapps-theme.git",
@@ -478,7 +478,7 @@
         {
             "type": "package",
             "package": {
-                "name": "{{ extra_theme_info.name }}",
+                "name": "swappsco/{{ extra_theme_info.name }}",
                 "version": "{{ extra_theme_info.version }}",
                 "source": {
                     "url": "{{ extra_theme_info.git_url }}",
@@ -492,7 +492,7 @@
         {
             "type": "package",
             "package": {
-                "name": "duenio-django-integration",
+                "name": "swappsco/duenio-django-integration",
                 "version": "0.2.1",
                 "source": {
                     "url": "git@github.com:swappsco/duenio-django-integration.git",
@@ -505,7 +505,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-relatos-anfibios-core",
+                "name": "swappsco/wp-relatos-anfibios-core",
                 "version": "0.0.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-relatos-anfibios-core.git",
@@ -518,7 +518,7 @@
         {
             "type": "package",
             "package": {
-                "name": "woocommerce-bulk-variations",
+                "name": "swappsco/woocommerce-bulk-variations",
                 "version": "1.6.3",
                 "source": {
                     "url": "git@github.com:swappsco/woocommerce-bulk-variations.git",
@@ -531,7 +531,7 @@
         {
             "type": "package",
             "package": {
-                "name": "beaver-tunnels",
+                "name": "swappsco/beaver-tunnels",
                 "version": "2.1.6",
                 "source": {
                     "url": "git@github.com:swappsco/beaver-tunnels.git",
@@ -544,7 +544,7 @@
         {
             "type": "package",
             "package": {
-                "name": "woocommerce-checkout-field-editor",
+                "name": "swappsco/woocommerce-checkout-field-editor",
                 "version": "1.5.13",
                 "source": {
                     "url": "git@github.com:swappsco/woocommerce-checkout-field-editor.git",
@@ -557,7 +557,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-rocket",
+                "name": "swappsco/wp-rocket",
                 "version": "3.3.4",
                 "source": {
                     "url": "git@github.com:swappsco/wp-rocket.git",
@@ -570,7 +570,7 @@
         {
             "type": "package",
             "package": {
-                "name": "wp-rocket-compat-varnish-ip",
+                "name": "swappsco/wp-rocket-compat-varnish-ip",
                 "version": "0.1.1",
                 "source": {
                     "url": "git@github.com:swappsco/wp-rocket-compat-varnish-ip.git",
@@ -690,9 +690,8 @@
             {% endif %}
             ],
             "wp-content/plugins/{$name}/": [
-            "wp-dummy-plugin",
-            "advanced-custom-fields-pro",
-            "flexi-pages-widget",
+            "swappsco/advanced-custom-fields-pro",
+            "swappsco/flexi-pages-widget",
             {% if wp_blog_enabled is defined and not wp_blog_enabled|bool %}
             "wpackagist-plugin/disable-blogging",
             {% endif %}
@@ -703,7 +702,7 @@
             "wpackagist-plugin/floating-publish-button",
             "wpackagist-plugin/smtp-mailer",
             "wpackagist-plugin/wordpress-importer",
-            "sw-customizer",
+            "swappsco/sw-customizer",
             "wpackagist-plugin/wordpress-seo"
             {% if plan_data['plugins'] is defined %}
             {% for i in plan_data['plugins'] %}

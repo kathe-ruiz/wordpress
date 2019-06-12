@@ -14,23 +14,23 @@ supported_plugins:
   - wp-menu-cart:
       - wpackagist-plugin/wp-menu-cart: ^2.7
   - woocommerce-payu-latam-gateway:
-      - woocommerce-payu: 0.1.0
+      - swappsco/woocommerce-payu: 0.1.0
   - woocommerce-tu-compra:
-      - woocommerce-tu-compra: 0.1.6
+      - swappsco/woocommerce-tu-compra: 0.1.6
   - wp-dors:
-      - wp-dors: 0.1.5
+      - swappsco/wp-dors: 0.1.5
   - wp-swappsio:
-      - wp-swappsio: 0.0.1
+      - swappsco/wp-swappsio: 0.0.1
   - wp-relatos-anfibios-core:
-      - wp-relatos-anfibios-core: 0.0.1
+      - swappsco/wp-relatos-anfibios-core: 0.0.1
   - wp-accountant:
-      - wp-accountant: 0.1.5
+      - swappsco/wp-accountant: 0.1.5
   - woocommerce-quick-buy:
       - wpackagist-plugin/woocommerce-quick-buy: '1.9'
   - ultimate-member:
       - wpackagist-plugin/ultimate-member: ^2
   - sitepress-multilingual-cms:
-      - sitepress-multilingual-cms: ^4
+      - swappsco/sitepress-multilingual-cms: ^4
   - amp:
       - wpackagist-plugin/amp: ^1.0
   - glue-for-yoast-seo-amp:
@@ -44,9 +44,9 @@ supported_plugins:
   - formidable:
       - wpackagist-plugin/formidable: ^4
   - formidable-pro:
-      - formidable-pro: ^4
+      - swappsco/formidable-pro: ^4
   - formidable-bootstrap:
-      - formidable-bootstrap: ^1.01
+      - swappsco/formidable-bootstrap: ^1.01
   - formidable-pro-add-color-picker-field:
       - wpackagist-plugin/formidable-pro-add-color-picker-field: ^1.0
   - kirki:
@@ -76,17 +76,17 @@ supported_plugins:
   - password-strength-for-woocommerce:
       - wpackagist-plugin/password-strength-for-woocommerce: ^1.0
   - bb-plugin:
-      - bb-plugin: ^2
+      - swappsco/bb-plugin: ^2
   - bb-plugin-pro:
-      - bb-plugin-pro: ^2
+      - swappsco/bb-plugin-pro: ^2
   - bb-theme:
-      - bb-theme: ^1
+      - swappsco/bb-theme: ^1
   - bb-theme-builder:
-      - bb-theme-builder: ^1
+      - swappsco/bb-theme-builder: ^1
   - timeline-for-beaver-builder:
       - wpackagist-plugin/timeline-for-beaver-builder: ^1.1
   - duenio-django-integration:
-      - duenio-django-integration: 0.2.1
+      - swappsco/duenio-django-integration: 0.2.1
   - duplicate-post:
       - wpackagist-plugin/duplicate-post: ^3.2
   - wp-basic-auth:
@@ -128,7 +128,7 @@ supported_plugins:
   - woo-order-export:
       - wpackagist-plugin/woo-order-export-lite: ^2.0
   - bb-ultimate-addon:
-      - bb-ultimate-addon: ^1
+      - swappsco/bb-ultimate-addon: ^1
   - menu-icons:
       - wpackagist-plugin/menu-icons: ^0.11
   - wp-pagenavi:
@@ -162,13 +162,13 @@ supported_plugins:
   - woo-checkout-field-editor-pro:
       - wpackagist-plugin/woo-checkout-field-editor-pro: ^1.2
   - wpml-string-translation:
-      - wpml-string-translation: ^2
+      - swappsco/wpml-string-translation: ^2
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
       - wpackagist-plugin/wordpress-seo: ^10
   - wordpress-seo-premium:
-      - wordpress-seo-premium: ^7
+      - swappsco/wordpress-seo-premium: ^7
   - resmushit-image-optimizer:
       - wpackagist-plugin/resmushit-image-optimizer: ^0.1
   - easy-appointments:
@@ -186,11 +186,11 @@ supported_plugins:
   - updraftplus:
       - wpackagist-plugin/updraftplus: ^1.15
   - wpml-mailchimp-for-wp:
-      - wpml-mailchimp-for-wp: ^0.0
+      - swappsco/wpml-mailchimp-for-wp: ^0.0
   - types:
-      - types: ^3
+      - swappsco/types: ^3
   - wp-views:
-      - wp-views: ^2
+      - swappsco/wp-views: ^2
   - ewww-image-optimizer:
       - wpackagist-plugin/ewww-image-optimizer: ~4
   - ninja-forms:
@@ -200,7 +200,7 @@ supported_plugins:
   - addthis:
       - wpackagist-plugin/addthis: ^6.1
   - advanced-custom-fields-pro:
-      - advanced-custom-fields-pro: ^5.8
+      - swappsco/advanced-custom-fields-pro: ^5.8
   - advanced-custom-fields-font-awesome:
       - wpackagist-plugin/advanced-custom-fields-font-awesome: ~3.0
   - acf-image-crop-add-on:
@@ -208,13 +208,13 @@ supported_plugins:
   - acf-link-picker-field:
       - wpackagist-plugin/acf-link-picker-field: ^1.2.8
   - fg-joomla-to-wordpress-premium:
-      - fg-joomla-to-wordpress-premium: ^3
+      - swappsco/fg-joomla-to-wordpress-premium: ^3
   - fg-joomla-to-wordpress-premium-wpml-modules:
-      - fg-joomla-to-wordpress-premium-wpml-module: ^2
+      - swappsco/fg-joomla-to-wordpress-premium-wpml-module: ^2
   - sw-simple-slider:
-      - sw-simple-slider: ^0.2
+      - swappsco/sw-simple-slider: ^0.2
   - sw-customizer:
-      - sw-customizer: ^0.3
+      - swappsco/sw-customizer: ^0.3
   - breadcrumb-navxt:
       - wpackagist-plugin/breadcrumb-navxt: ^6
   - insert-php-code-snippet:
@@ -222,9 +222,9 @@ supported_plugins:
   - fix-duplicates:
       - wpackagist-plugin/fix-duplicates: 1.0.4
   - fg-joomla-to-wordpress-premium-k2-module:
-      - fg-joomla-to-wordpress-premium-k2-module: ^2
+      - swappsco/fg-joomla-to-wordpress-premium-k2-module: ^2
   - beaver-tunnels:
-      - beaver-tunnels: 2.1.6
+      - swappsco/beaver-tunnels: 2.1.6
   - post-type-switcher:
       - wpackagist-plugin/post-type-switcher: ^3.1
   - avatar-manager:
@@ -242,7 +242,7 @@ supported_plugins:
   - anspress:
       - wpackagist-plugin/anspress-question-answer: ^4.1.15
   - woocommerce-bulk-variations:
-      - woocommerce-bulk-variations: 1.6.3
+      - swappsco/woocommerce-bulk-variations: 1.6.3
   - woocommerce-product-tabs:
       - wpackagist-plugin/yikes-inc-easy-custom-woocommerce-product-tabs: ^1.6
   - minmax-quantity-for-woocommerce:
@@ -250,13 +250,13 @@ supported_plugins:
   - accelerated-mobile-pages:
       - wpackagist-plugin/accelerated-mobile-pages: ^0.9
   - woocommerce-checkout-field-editor:
-      - woocommerce-checkout-field-editor: ^1.5.13
+      - swappsco/woocommerce-checkout-field-editor: ^1.5.13
   - domus-wp:
-      - domus-wp: ^1
+      - swappsco/domus-wp: ^1
   - theme-amp-swapps:
-      - theme-amp-swapps: ^0.2.0
+      - swappsco/theme-amp-swapps: ^0.2.0
   - ncarb-centennial-core:
-      - ncarb-centennial-core: 0.1.1
+      - swappsco/ncarb-centennial-core: 0.1.1
   - capability-manager-enhanced:
       - wpackagist-plugin/capability-manager-enhanced: ^1.6.1
   - shortcodes-ultimate:
@@ -280,26 +280,26 @@ supported_plugins:
   - autoptimize-criticalcss:
       - wpackagist-plugin/autoptimize-criticalcss: ^1.13
   - wp-rocket:
-      - wp-rocket: ^3
+      - swappsco/swappsco/wp-rocket: ^3
   - wp-rocket-compat-varnish-ip:
-      - wp-rocket-compat-varnish-ip: 0.1.1
+      - swappsco/wp-rocket-compat-varnish-ip: 0.1.1
   - notification:
       - wpackagist-plugin/notification: ^5.3
   - co-authors-plus:
       - wpackagist-plugin/co-authors-plus: ^3.3
   - wpml-translation-management:
-      - wpml-translation-management: ^2
+      - swappsco/wpml-translation-management: ^2
   - restrict-content-pro:
-      - restrict-content-pro: ^3
+      - swappsco/restrict-content-pro: ^3
   - wp-plugin-media-library-plus-pro:
-      - wp-plugin-media-library-plus-pro: ^5
+      - swappsco/wp-plugin-media-library-plus-pro: ^5
   - revisionary:
       - wpackagist-plugin/revisionary: ^1.2.7
   - simple-custom-post-order:
       - wpackagist-plugin/simple-custom-post-order: ^2
   - wpforo-embeds:
-      - wpforo-embeds: ^1
+      - swappsco/wpforo-embeds: ^1
   - wpforo-private-messages:
-      - wpforo-private-messages: ^1
+      - swappsco/wpforo-private-messages: ^1
   - wpforo-ad-manager:
-      - wpforo-ad-manager: ^1
+      - swappsco/wpforo-ad-manager: ^1
