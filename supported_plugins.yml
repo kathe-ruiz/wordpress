@@ -301,3 +301,5 @@ supported_plugins:
       - swappsco/wpforo-private-messages: ^1
   - wpforo-ad-manager:
       - swappsco/wpforo-ad-manager: ^1
+  - wpml-media-translation:
+      - swappsco/wpml-media-translation: ^2
