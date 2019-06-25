@@ -648,7 +648,7 @@
         "installer-types": ["library"],
         "installer-paths": {
             "wp-content/themes/{$name}/": [
-                "swapps"
+                "swappsco/swapps"
                 {% if extra_theme_info is defined %}
                 , "{{ extra_theme_info.name }}"
                 {% endif %}
