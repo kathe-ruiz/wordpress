@@ -155,11 +155,11 @@
             "type": "package",
             "package": {
                 "name": "swappsco/sitepress-multilingual-cms",
-                "version": "4.2.6",
+                "version": "4.2.7.1",
                 "source": {
                     "url": "git@github.com:swappsco/sitepress-multilingual-cms.git",
                     "type": "git",
-                    "reference": "4.2.6"
+                    "reference": "4.2.7.1"
                 }
             }
         },
@@ -167,11 +167,11 @@
             "type": "package",
             "package": {
                 "name": "swappsco/wpml-string-translation",
-                "version": "2.10.4",
+                "version": "2.10.5.1",
                 "source": {
                     "url": "git@github.com:swappsco/wpml-string-translation.git",
                     "type": "git",
-                    "reference": "2.10.4"
+                    "reference": "2.10.5.1"
                 }
             }
         },
@@ -179,11 +179,23 @@
             "type": "package",
             "package": {
                 "name": "swappsco/wpml-translation-management",
-                "version": "2.8.5",
+                "version": "2.8.6.2",
                 "source": {
                     "url": "git@github.com:swappsco/wpml-translation-management.git",
                     "type": "git",
-                    "reference": "2.8.5"
+                    "reference": "2.8.6.2"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "swappsco/wpml-media-translation",
+                "version": "2.5.2",
+                "source": {
+                    "url": "git@github.com:swappsco/wpml-media-translation.git",
+                    "type": "git",
+                    "reference": "2.5.2"
                 }
             }
         },
@@ -191,11 +203,11 @@
             "type": "package",
             "package": {
                 "name": "swappsco/restrict-content-pro",
-                "version": "3.0.9",
+                "version": "3.0.10",
                 "source": {
                     "url": "git@github.com:swappsco/restrict-content-pro.git",
                     "type": "git",
-                    "reference": "3.0.9"
+                    "reference": "3.0.10"
                 }
             }
         },
@@ -227,11 +239,11 @@
             "type": "package",
             "package": {
                 "name": "swappsco/formidable-pro",
-                "version": "4.0.0.3",
+                "version": "4.0.0.4",
                 "source": {
                     "url": "git@github.com:swappsco/formidable.git",
                     "type": "git",
-                    "reference": "4.0.0.3"
+                    "reference": "4.0.0.4"
                 }
             }
         },
@@ -300,7 +312,7 @@
         },
 {% endfor %}
 {## bb-plugin PRO - Swapps Agency PRO version ##}
-{% for package_version in ["2.2.3"] %}
+{% for package_version in ["2.2.3.3"] %}
         {
             "type": "package",
             "package": {
@@ -427,7 +439,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.7.2"] %}
+{% for package_version in ["1.7.3"] %}
         {
             "type": "package",
             "package": {
@@ -558,11 +570,11 @@
             "type": "package",
             "package": {
                 "name": "swappsco/wp-rocket",
-                "version": "3.3.4",
+                "version": "3.3.5.2",
                 "source": {
                     "url": "git@github.com:swappsco/wp-rocket.git",
                     "type": "git",
-                    "reference": "3.3.4"
+                    "reference": "3.3.5.2"
                 }
             }
 

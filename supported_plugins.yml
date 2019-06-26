@@ -164,7 +164,7 @@ supported_plugins:
   - intercom:
       - wpackagist-plugin/intercom: ^2.6
   - wordpress-seo:
-      - wpackagist-plugin/wordpress-seo: ^10
+      - wpackagist-plugin/wordpress-seo: ^11
   - wordpress-seo-premium:
       - swappsco/wordpress-seo-premium: ^7
   - resmushit-image-optimizer:
@@ -301,3 +301,5 @@ supported_plugins:
       - swappsco/wpforo-private-messages: ^1
   - wpforo-ad-manager:
       - swappsco/wpforo-ad-manager: ^1
+  - wpml-media-translation:
+      - swappsco/wpml-media-translation: ^2
