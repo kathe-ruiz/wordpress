@@ -282,7 +282,7 @@ supported_plugins:
   - wp-rocket-compat-varnish-ip:
       - swappsco/wp-rocket-compat-varnish-ip: 0.1.1
   - notification:
-      - wpackagist-plugin/notification: ^6
+      - wpackagist-plugin/notification: ^5.3
   - co-authors-plus:
       - wpackagist-plugin/co-authors-plus: ^3.3
   - wpml-translation-management:
