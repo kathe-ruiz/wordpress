@@ -469,7 +469,7 @@
 
         },
 {% endfor %}
-{% for package_version in ["1.2.2"] %}
+{% for package_version in ["1.2.5"] %}
         {
             "type": "package",
             "package":
