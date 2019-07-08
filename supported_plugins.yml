@@ -62,7 +62,7 @@ supported_plugins:
   - anspress-email:
       - wpackagist-plugin/anspress-email: ^2.1
   - geodirectory:
-      - wpackagist-plugin/geodirectory: ^1.6
+      - wpackagist-plugin/geodirectory: ^2
   - woocommerce-gateway-stripe:
       - wpackagist-plugin/woocommerce-gateway-stripe: ^4.1
   - mb-imagechimp-rss-feed-enhancer:
@@ -94,7 +94,7 @@ supported_plugins:
   - addthis-follow:
       - wpackagist-plugin/addthis-follow: ^4.1
   - all-in-one-seo-pack:
-      - wpackagist-plugin/all-in-one-seo-pack: ^2
+      - wpackagist-plugin/all-in-one-seo-pack: ^3
   - auto-tag-links:
       - wpackagist-plugin/auto-tag-links: ^1.0
   - disqus-comment-system:
@@ -124,7 +124,7 @@ supported_plugins:
   - wc-fields-factory:
       - wpackagist-plugin/wc-fields-factory: ^3.0
   - woo-order-export:
-      - wpackagist-plugin/woo-order-export-lite: ^2.0
+      - wpackagist-plugin/woo-order-export-lite: ^3
   - bb-ultimate-addon:
       - swappsco/bb-ultimate-addon: ^1
   - menu-icons:
@@ -234,9 +234,9 @@ supported_plugins:
   - woo-swatches-manager:
       - wpackagist-plugin/woo-swatches-manager: 1.1
   - woocommerce-custom-tabs:
-      - wpackagist-plugin/woocommerce-custom-tabs: 1.0.23
+      - wpackagist-plugin/woocommerce-custom-tabs: 1.0.26
   - gutenberg:
-      - wpackagist-plugin/gutenberg: ^5
+      - wpackagist-plugin/gutenberg: ^6
   - anspress:
       - wpackagist-plugin/anspress-question-answer: ^4.1.15
   - woocommerce-bulk-variations:
@@ -282,7 +282,7 @@ supported_plugins:
   - wp-rocket-compat-varnish-ip:
       - swappsco/wp-rocket-compat-varnish-ip: 0.1.1
   - notification:
-      - wpackagist-plugin/notification: ^5.3
+      - wpackagist-plugin/notification: ^6
   - co-authors-plus:
       - wpackagist-plugin/co-authors-plus: ^3.3
   - wpml-translation-management:
