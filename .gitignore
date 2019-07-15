@@ -28,7 +28,7 @@ Thumbs.db
 # ignore everything in the "wp-content" directory, except:
 /wp-content/uploads
 /wp-content/mu-plugins/*
-/wp-content/plugins/*
+#/wp-content/plugins/*
 /wp-content/themes/*
 /wp-content/w3tc-config/master.php
 wp-content/advanced-cache.php
