@@ -106,6 +106,7 @@ if ($fileCount > 1 && !$idvdl) {
     if ($indfile != '' && strpos($indfile, '://')) {
 
         if (!isset($package['url_protect']) || $package['url_protect'] == 0) {
+            $indfile = wpdm_escs(htmlspecialchars_decode($indfile));
             header('location: ' . $indfile);
 
         } else {

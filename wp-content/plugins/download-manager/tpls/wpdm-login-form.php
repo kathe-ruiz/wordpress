@@ -1,6 +1,6 @@
 <?php if(!defined('ABSPATH')) die();
 global $current_user;
-if(!is_array($params)) $params = array();
+if(!isset($params) || !is_array($params)) $params = array();
 $regurl = get_option('__wpdm_register_url');
 if($regurl > 0)
     $regurl = get_permalink($regurl);

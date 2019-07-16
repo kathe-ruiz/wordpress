@@ -49,7 +49,12 @@ class Packages
             if($meta_key == 'package_dir' && $meta_value != '') { $meta_value = realpath($meta_value); }
             if($meta_key == 'package_size' && doubleval($meta_value) == 0) $meta_value = "";
             if($meta_key == 'files') $meta_value = array_unique($meta_value);
-            $meta_value = is_array($meta_value)?wpdm_sanitize_array($meta_value):wpdm_escs($meta_value);
+            if($meta_key == 'files'){
+                foreach ($meta_value as &$value){
+                    $value = wpdm_escs($value);
+                }
+            } else
+                $meta_value = is_array($meta_value)?wpdm_sanitize_array($meta_value):wpdm_escs($meta_value);
             update_post_meta($post, $key_name, $meta_value);
         }
 

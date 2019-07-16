@@ -35,6 +35,8 @@ class Package {
         else
             $post_vars = (array)$post;
 
+        $loginmsg = get_option('wpdm_login_msg');
+        $loginmsg = wpdm_escs(htmlspecialchars_decode($loginmsg));
 
         $ID = $post_vars['ID'];
 
@@ -194,7 +196,7 @@ class Package {
             $post_vars['download_url'] = home_url('/wp-login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
             $post_vars['download_link'] =
             $post_vars['download_link_extended'] =
-            $post_vars['download_link_popup'] = stripcslashes(str_replace(array("[loginform]","[this_url]", "[package_url]"), array($loginform, $_SERVER['REQUEST_URI'],get_permalink($post_vars['ID'])), get_option('wpdm_login_msg')));
+            $post_vars['download_link_popup'] = stripcslashes(str_replace(array("[loginform]","[this_url]", "[package_url]"), array($loginform, $_SERVER['REQUEST_URI'],get_permalink($post_vars['ID'])), $loginmsg));
             $post_vars['download_link'] =
             $post_vars['download_link_extended'] =
             $post_vars['download_link_popup'] = get_option('__wpdm_login_form', 0) == 1 ? $loginform : $post_vars['download_link'];
@@ -208,7 +210,7 @@ class Package {
         }
 
         if(isset($data['terms_lock']) && $data['terms_lock'] != 0 && (!function_exists('wpdmpp_effective_price') || wpdmpp_effective_price($post_vars['ID']) ==0) && $limit_over == 0){
-            $data['terms_conditions'] = wpautop($data['terms_conditions']);
+            $data['terms_conditions'] = wpautop(wpdm_escs(htmlspecialchars_decode($data['terms_conditions'])));
             $data['terms_title'] = !isset($data['terms_title']) || $data['terms_title'] == ''?__("Terms and Conditions",'download-manager'):$data['terms_title'];
             $data['terms_check_label'] = !isset($data['terms_check_label']) || $data['terms_check_label'] == ''?__("I Agree",'download-manager'):$data['terms_check_label'];
             if(!self::isLocked($post_vars)) {
@@ -638,7 +640,8 @@ class Package {
             extract($extras);
         $data = '';
         //get_currentuserinfo();
-
+        $loginmsg = get_option('wpdm_login_msg');
+        $loginmsg = wpdm_escs(htmlspecialchars_decode($loginmsg));
         $package['link_url'] = home_url('/?download=1&');
         $package['link_label'] = !isset($package['link_label']) || $package['link_label'] == '' ? __("Download",'download-manager') : $package['link_label'];
 
@@ -692,7 +695,7 @@ class Package {
             $loginform = wpdm_login_form(array('redirect'=>get_permalink($package['ID'])));
             if (get_option('_wpdm_hide_all', 0) == 1) return 'loginform';
             $package['download_url'] = home_url('/wp-login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
-            $package['download_link'] = stripcslashes(str_replace(array("[loginform]","[this_url]"), array($loginform,get_permalink($package['ID'])), get_option('wpdm_login_msg')));
+            $package['download_link'] = stripcslashes(str_replace(array("[loginform]","[this_url]"), array($loginform,get_permalink($package['ID'])), $loginmsg));
             return get_option('__wpdm_login_form', 0) == 1 ? $loginform : $package['download_link'];
 
         }
@@ -836,7 +839,8 @@ class Package {
         if(is_array($extras))
             extract($extras);
         $data = '';
-
+        $loginmsg = get_option('wpdm_login_msg');
+        $loginmsg = wpdm_escs(stripslashes_deep(htmlspecialchars_decode($loginmsg)));
         $package = self::Get($ID);
 
         $package['link_url'] = home_url('/?download=1&');
@@ -894,7 +898,7 @@ class Package {
             $loginform = wpdm_login_form(array('redirect'=>get_permalink($package['ID'])));
             if (get_option('_wpdm_hide_all', 0) == 1) return 'loginform';
             $package['download_url'] = home_url('/wp-login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
-            $package['download_link'] = $vars['download_link_extended'] = $vars['download_link_popup'] = stripcslashes(str_replace(array("[loginform]","[this_url]", "[package_url]"), array($loginform, $_SERVER['REQUEST_URI'],get_permalink($package['ID'])), get_option('wpdm_login_msg')));
+            $package['download_link'] = $vars['download_link_extended'] = $vars['download_link_popup'] = stripcslashes(str_replace(array("[loginform]","[this_url]", "[package_url]"), array($loginform, $_SERVER['REQUEST_URI'],get_permalink($package['ID'])), $loginmsg));
             return get_option('__wpdm_login_form', 0) == 1 ? $loginform : $package['download_link'];
 
         }
@@ -908,6 +912,8 @@ class Package {
 
             $extras['embed'] = $embed;
             $data = self::activeLocks($package, $extras);
+
+            $package['terms_conditions'] = isset($package['terms_conditions']) ? wpautop(wpdm_escs(htmlspecialchars_decode($package['terms_conditions']))) : '';
 
             if(isset($package['terms_lock']) && $package['terms_lock'] != 0 && (!function_exists('wpdmpp_effective_price') || wpdmpp_effective_price($package['ID']) ==0)){
                 if(!self::isLocked($package)) {
@@ -998,7 +1004,8 @@ class Package {
 
         if(!is_array($vars) && is_int($vars) && $vars > 0) $vars = array('ID' => $vars);
         if (!isset($vars['ID']) || intval($vars['ID']) <1 ) return '';
-
+        $loginmsg = get_option('wpdm_login_msg');
+        $loginmsg = wpdm_escs(htmlspecialchars_decode($loginmsg));
         $default['link'] =  'link-template-default.php';
         $default['page'] =  'page-template-default.php';
 
@@ -1132,7 +1139,7 @@ class Package {
         }
 
         $loginform = wpdm_login_form(array('redirect'=>get_permalink($vars['ID'])));
-        $hide_all_message = get_option('__wpdm_login_form', 0) == 1 ? $loginform : stripcslashes(str_replace(array("[loginform]","[this_url]"), array($loginform,get_permalink($vars['ID'])), get_option('wpdm_login_msg')));
+        $hide_all_message = get_option('__wpdm_login_form', 0) == 1 ? $loginform : stripcslashes(str_replace(array("[loginform]","[this_url]"), array($loginform,get_permalink($vars['ID'])), $loginmsg));
 
         if ($vars['download_link'] == 'blocked' && $type == 'link') return "";
         if ($vars['download_link'] == 'blocked' && $type == 'page') return get_option('wpdm_permission_msg');

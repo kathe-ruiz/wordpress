@@ -1,6 +1,6 @@
 <!-- WPDM Link Template: Card -->
 
-    <div class="list-group wpdm-lt-card" style="margin: 0 0 15px 0">
+    <div class="wpdm-link-template list-group wpdm-lt-card" style="margin: 0 0 15px 0">
         <div class="list-group-item">
             <a href="[page_url]" style="display: block;margin: 5px 0">
             [thumb_500x250]

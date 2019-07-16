@@ -54,7 +54,7 @@ function wpdm_download_file($filepath, $filename, $speed = 0, $resume_support = 
 {
 
     if(isset($_GET['play'])) $extras['play'] = esc_attr($_GET['play']);
-     \WPDM\libs\FileSystem::donwloadFile($filepath, $filename, $speed, $resume_support, $extras);
+     \WPDM\libs\FileSystem::downloadFile($filepath, $filename, $speed, $resume_support, $extras);
 
 }
 
@@ -95,6 +95,9 @@ function downloadLink(&$package, $embed = 0, $extras = array())
     extract($extras);
     $data = '';
     //get_currentuserinfo();
+
+    $loginmsg = get_option('wpdm_login_msg');
+    $loginmsg = wpdm_escs(htmlspecialchars_decode($loginmsg));
 
     $package['link_url'] = home_url('/?download=1&');
     $package['link_label'] = !isset($package['link_label']) || $package['link_label'] == '' ? __("Download",'download-manager') : $package['link_label'];
@@ -149,7 +152,7 @@ function downloadLink(&$package, $embed = 0, $extras = array())
         $loginform = wpdm_login_form(array('redirect'=>get_permalink($package['ID'])));
         if (get_option('_wpdm_hide_all', 0) == 1) return 'loginform';
         $package['download_url'] = home_url('/wp-login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
-        $package['download_link'] = stripcslashes(str_replace(array("[loginform]","[this_url]"), array($loginform,get_permalink($package['ID'])), get_option('wpdm_login_msg')));
+        $package['download_link'] = stripcslashes(str_replace(array("[loginform]","[this_url]"), array($loginform,get_permalink($package['ID'])), $loginmsg));
         return get_option('__wpdm_login_form', 0) == 1 ? $loginform : $package['download_link'];
 
     }
@@ -407,6 +410,7 @@ function wpdm_downloadable($content)
     //get_currentuserinfo();
     $permission_msg = get_option('wpdm_permission_msg') ? stripslashes(get_option('wpdm_permission_msg')) : "<div  style=\"background:url('" . get_option('siteurl') . "/wp-content/plugins/download-manager/images/lock.png') no-repeat;padding:3px 12px 12px 28px;font:bold 10pt verdana;color:#800000\">Sorry! You don't have suffient permission to download this file!</div>";
     $login_msg = get_option('wpdm_login_msg') ? stripcslashes(get_option('wpdm_login_msg')) : "<a href='" . get_option('siteurl') . "/wp-login.php'  style=\"background:url('" . get_option('siteurl') . "/wp-content/plugins/download-manager/images/lock.png') no-repeat;padding:3px 12px 12px 28px;font:bold 10pt verdana;\">Please login to access downloadables</a>";
+    $login_msg = wpdm_escs(htmlspecialchars_decode($login_msg));
     $user = new WP_User(null);
     if (isset($_GET[get_option('__wpdm_purl_base', 'download')]) && $_GET[get_option('__wpdm_purl_base', 'download')] != '' && $wp_query->query_vars[get_option('__wpdm_purl_base', 'download')] == '')
         $wp_query->query_vars[get_option('__wpdm_purl_base', 'download')] =  esc_attr($_GET[get_option('__wpdm_purl_base', 'download')]);
@@ -574,7 +578,9 @@ function wpdm_query_var($var, $params = array())
  * @return null|string|string[]
  */
 function wpdm_escs($html){
-    return preg_replace('#<script(.*?)>(.*?)</script>#is', '', $html);
+    $html =  preg_replace('#<script(.*?)>(.*?)</script>#is', '', $html);
+    $html = stripslashes_deep($html);
+    return $html;
 }
 
 /**
@@ -582,19 +588,57 @@ function wpdm_escs($html){
  * @param $array
  * @return mixed
  */
-function wpdm_sanitize_array($array){
-    if(!is_array($array)) return esc_attr($array);
+function wpdm_sanitize_array($array, $kses = true){
+    $allowed_html = wp_kses_allowed_html();
+    if(!is_array($array)) {
+        $array = strstr($array, "\n") || $kses?wp_kses($array, $allowed_html):esc_attr($array);
+        $array = wpdm_escs($array);
+        return $array;
+    }
     foreach ($array as $key => &$value){
         if(is_array($value))
-            wpdm_sanitize_array($value);
+            wpdm_sanitize_array($value, $kses);
         else {
-            $value = strstr($value, "\n")?wp_kses($value, array('strong' => array(), 'b' => array(), 'br' => array(), 'p' => array(), 'hr' => array(), 'a' => array('href' => array(), 'title' => array()))):esc_attr($value);
+            $value = strstr($value, "\n") || $kses?wp_kses($value, $allowed_html):esc_attr($value);
             $value = wpdm_escs($value);
         }
         $array[$key] = &$value;
     }
     return $array;
 }
+
+/**
+ * Sanitize any single value
+ * @param $value
+ * @return string
+ */
+function wpdm_sanitize_var($value, $sanitize = 'kses'){
+    if(is_array($value))
+        return wpdm_sanitize_array($value);
+    else {
+        switch ($sanitize){
+            case 'int':
+                $value = (int)$value;
+                break;
+            case 'double':
+            case 'float':
+                $value = (double)($value);
+                break;
+            case 'txt':
+                $value = esc_attr($value);
+                break;
+            case 'kses':
+                $value = wp_kses($value, wp_kses_allowed_html());
+                break;
+            case 'serverpath':
+                $value = realpath($value);
+                break;
+        }
+        $value = wpdm_escs($value);
+    }
+    return $value;
+}
+
 
 
 function wpdm_category($params)
@@ -1599,14 +1643,16 @@ function wpdm_tpl_path($file, $tpldir = '', $fallback = ''){
  */
 function wpdm_ip_in_range( $ip, $range ) {
     // Check IP range
+
     list($subnet, $bits) = explode('/', $range);
+    if(!$bits || (int)$bits < 1) return false;
     // Convert subnet to binary string of $bits length
-    $subnet = unpack('H*', inet_pton($subnet)); // Subnet in Hex
+    $subnet = unpack('H*', @inet_pton($subnet)); // Subnet in Hex
     foreach($subnet as $i => $h) $subnet[$i] = base_convert($h, 16, 2); // Array of Binary
     $subnet = substr(implode('', $subnet), 0, $bits); // Subnet in Binary, only network bits
 
     // Convert remote IP to binary string of $bits length
-    $ip = unpack('H*', inet_pton($ip)); // IP in Hex
+    $ip = unpack('H*', @inet_pton($ip)); // IP in Hex
     foreach($ip as $i => $h) $ip[$i] = base_convert($h, 16, 2); // Array of Binary
     $ip = substr(implode('', $ip), 0, $bits); // IP in Binary, only network bits
 

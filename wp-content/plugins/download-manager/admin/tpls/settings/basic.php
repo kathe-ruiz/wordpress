@@ -32,7 +32,7 @@
 
                     <div class="form-group">
                         <label><?php echo __('Permission Denied Message for Packages:','download-manager'); ?></label>
-                        <input type=text class="form-control" name="wpdm_permission_msg" value="<?php echo htmlspecialchars(stripslashes(get_option('wpdm_permission_msg','Access Denied'))); ?>" />
+                        <input type=text class="form-control" name="wpdm_permission_msg" value="<?php echo htmlspecialchars(stripslashes_deep(get_option('wpdm_permission_msg','Access Denied'))); ?>" />
                     </div>
 
 
@@ -41,7 +41,7 @@
 
                     <div class="form-group">
                         <label><?php echo __('Login Required Message:','download-manager'); ?></label>
-                        <textarea class="form-control" cols="70" rows="6" name="wpdm_login_msg"><?php echo get_option('wpdm_login_msg')?stripslashes(get_option('wpdm_login_msg')):"<a href='".wp_login_url()."' >Please login to download</a>"; ?></textarea><br>
+                        <textarea class="form-control" cols="70" rows="6" name="wpdm_login_msg"><?php echo htmlspecialchars(get_option('wpdm_login_msg', "<a href=\"".wp_login_url()."\" >Please login to download</a>")); ?></textarea><br>
 
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <div class="form-group">
                         <label><?php echo __('Server File Browser Base Dir:','download-manager'); ?></label>
                         <div class="input-group">
-                            <input type=text class="form-control" id="_wpdm_file_browser_root" name="_wpdm_file_browser_root" value="<?php echo htmlspecialchars(stripslashes(get_option('_wpdm_file_browser_root',ABSPATH))); ?>" />
+                            <input type=text class="form-control" id="_wpdm_file_browser_root" name="_wpdm_file_browser_root" value="<?php echo htmlspecialchars(stripslashes_deep(get_option('_wpdm_file_browser_root',ABSPATH))); ?>" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-secondary ttip" title="<?php _e('Reset Base Dir'); ?>" type="button" onclick="jQuery('#_wpdm_file_browser_root').val('<?php echo rtrim(ABSPATH,'/'); ?>');"><i class="fas fa-redo"></i></button>
                                 </span>
@@ -144,7 +144,7 @@
                             <em><?php _e('List IP Addresses to blacklist. One IP per line ( Ex: IPv4 - 192.168.23.12 or 192.168.23.1/24 or 192.168.23.* , IPv6 - 2a01:8760:2:3001::1 or 2620:112:3000::/44 )','download-manager'); ?></em>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="<?php _e('Write a Message for Blocked IPs','download-manager'); ?>" class="form-control" name="__wpdm_blocked_ips_msg"><?php echo get_option('__wpdm_blocked_ips_msg'); ?></textarea>
+                            <textarea placeholder="<?php _e('Write a Message for Blocked IPs','download-manager'); ?>" class="form-control" name="__wpdm_blocked_ips_msg"><?php echo esc_attr(stripslashes_deep(get_option('__wpdm_blocked_ips_msg'))); ?></textarea>
                             <em><?php _e('Message for Blocked IPs','download-manager'); ?></em>
                         </div>
                     </fieldset>

@@ -109,13 +109,36 @@ class Settings
 
     function Basic(){
 
+        $validate = array(
+            'wpdm_permission_msg'           => 'kses',
+            'wpdm_login_msg'                => 'kses',
+            '_wpdm_file_browser_root'       => 'serverpath',
+            '_wpdm_file_browser_access'     => 'txtarray',
+            '__wpdm_sanitize_filename'      => 'int',
+            '__wpdm_chunk_upload'           => 'int',
+            '__wpdm_chunk_size'             => 'int',
+            '__wpdm_download_speed'         => 'int',
+            '__wpdm_blocked_ips'            => 'txt',
+            '__wpdm_blocked_ips_msg'        => 'kses',
+            '__wpdm_download_resume'        => 'int',
+            '__wpdm_support_output_buffer'  => 'int',
+            '__wpdm_open_in_browser'        => 'int',
+            '_wpdm_recaptcha_site_key'      => 'txt',
+            '_wpdm_recaptcha_secret_key'    => 'txt',
+            '__wpdm_login_url'              => 'int',
+            '__wpdm_register_url'           => 'int',
+            '__wpdm_user_dashboard'         => 'int',
+            '__wpdm_rss_feed_main'          => 'int',
+
+        );
+
         if (isset($_POST['task']) && $_POST['task'] == 'wdm_save_settings' && current_user_can(WPDM_ADMIN_CAP)) {
 
             if(!wp_verify_nonce($_POST['__wpdms_nonce'], NONCE_KEY)) die(__('Security token is expired! Refresh the page and try again.', 'download-manager'));
 
             foreach ($_POST as $optn => $optv) {
                 if(strpos("__".$optn, '_wpdm_')) {
-                    $optv = wpdm_sanitize_array($optv);
+                    $optv = wpdm_sanitize_var($optv, $validate[$optn]);
                     update_option($optn, $optv);
                 }
             }

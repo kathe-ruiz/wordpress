@@ -4,7 +4,7 @@ Plugin Name: Download Manager
 Plugin URI: https://www.wpdownloadmanager.com/purchases/
 Description: Manage, Protect and Track File Downloads from your WordPress site
 Author: W3 Eden
-Version: 2.9.97
+Version: 2.9.99
 Author URI: https://www.wpdownloadmanager.com/
 Text Domain: download-manager
 Domain Path: /languages
@@ -71,7 +71,7 @@ class WordPressDownloadManager{
 
     function __construct(){
 
-        define('WPDM_Version','2.9.97');
+        define('WPDM_Version','2.9.99');
 
         register_activation_hook(__FILE__, array($this, 'Install'));
 
@@ -79,7 +79,7 @@ class WordPressDownloadManager{
         add_action( 'init', array($this, 'registerPostTypeTaxonomy'), 1 );
 
         add_action( 'plugins_loaded', array($this, 'loadTextdomain') );
-        add_action( 'wp_enqueue_scripts', array($this, 'EnqueueScripts') );
+        add_action( 'wp_enqueue_scripts', array($this, 'enqueueScripts') );
 
         add_action( 'wp_head', array($this, 'wpHead') );
         add_action( 'wp_footer', array($this, 'wpFooter') );
@@ -268,6 +268,7 @@ class WordPressDownloadManager{
         wp_register_style('wpdm-font-awesome', WPDM_BASE_URL . 'assets/fontawesome/css/all.css');
 
         wp_register_script('wpdm-bootstrap', WPDM_BASE_URL.'assets/bootstrap/js/bootstrap.min.js', array('jquery'));
+        wp_register_script('jquery-validate', plugins_url('/download-manager/assets/js/jquery.validate.min.js'), array('jquery'));
     }
 
     /**
@@ -285,6 +286,13 @@ class WordPressDownloadManager{
             'site' => esc_url_raw(site_url('/')),
             'ajax' => esc_url_raw(admin_url('/admin-ajax.php'))
         ));
+
+        $wpdm_asset = array(
+            'spinner' => '<i class="fas fa-sun fa-spin"></i>'
+        );
+        $this->asset = $wpdm_asset;
+        $wpdm_asset = apply_filters("wpdm_js_vars", $wpdm_asset);
+        wp_localize_script('jquery', 'wpdm_asset', $wpdm_asset);
 
         $wpdmss = maybe_unserialize(get_option('__wpdm_disable_scripts', array()));
 

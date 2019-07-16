@@ -158,6 +158,13 @@ Check download stats and get a push notification when someone downloads, install
 
 == Changelog ==
 
+= 2.9.99 =
+* Fixed an char encoding issue with server file browser path
+
+= 2.9.98 =
+* Fixed an issue with google drive file download
+* Fixed an issue with login required message
+
 = 2.9.97 =
 * Fixed input sanitization issue with email template and package settings
 

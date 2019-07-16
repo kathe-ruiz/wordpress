@@ -3061,11 +3061,15 @@ input.wpdm-radio[type="radio"]:checked::before, input.wpdm-checkbox[type="checkb
 }
 .w3eden .package-title{
     font-weight: 700;
-    font-size: 110%;
 }
 
-.w3eden .wpdm-link-tpl img.wpdm_icon { width: 48px !important; margin: 5px 0; }
-
+.w3eden .wpdm-link-template img.wpdm_icon { width: 48px !important; margin: 0; }
+.w3eden .wpdm-link-template.c2a3  .package-title{ padding: 0; margin: 0 0 5px 0; line-height: 20px; font-size: 11pt; }
+.c2a3 .wpdm-download-link.wpdm-download-locked.btn.btn-info {
+    padding: 16px 28px;
+    font-size: 14px;
+    font-weight: 700;
+}
 .panel-heading[data-toggle="collapse"]{
     cursor: pointer !important;
     position: relative;
@@ -3275,16 +3279,18 @@ i.udbsap{
 .wpdm-file-block .img-area img.file-ico{
     padding: 20% !important;
 }
-.link-template-default .package-title {
-    margin: 0;
+.w3eden .wpdm-link-template .package-title a,
+.w3eden .wpdm-link-template .package-title {
+    margin: 0 !important;
     font-size: 11pt;
     line-height: 24px;
 }
-.link-template-default.thumbnail{
+.w3eden .link-template-default.thumbnail{
     padding: 10px;
 }
-.link-template-default.thumbnail .wpdm-download-link.btn{
-    padding: 0 20px;
-    line-height: 48px;
+.w3eden .link-template-default.thumbnail .wpdm-download-link.btn{
+    padding: 0 20px !important;
+    line-height: 48px !important;
     font-size: 12pt;
+    margin: 0;
 }

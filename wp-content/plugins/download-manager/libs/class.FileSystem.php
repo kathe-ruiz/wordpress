@@ -21,7 +21,7 @@ class FileSystem
      * @param int $resume_support
      * @param array $extras
      */
-    public static function donwloadFile($filepath, $filename, $speed = 1024, $resume_support = 1, $extras = array())
+    public static function downloadFile($filepath, $filename, $speed = 1024, $resume_support = 1, $extras = array())
     {
 
         if (isset($extras['package']))
