@@ -1,0 +1,124 @@
+#historial-table tbody tr td p{
+  margin: 0px !important;
+}
+#historial-table{
+  border-collapse: collapse;
+}
+#historial-table tbody tr,
+#historial-table thead tr{
+  border-bottom: 1px #ddd solid;
+}
+#historial-table tbody tr:nth-child(2n+1){
+  background-color:#f8f8f8;
+}
+#historial-table tbody tr td .file{
+  color: #3ba1da;
+}
+#historial-table tbody tr td .file:after{
+  content: ',';
+}
+#historial-table tbody tr td{
+  vertical-align: baseline;
+}
+#historial-table tbody tr td .file:last-child:after{
+  content: '.';
+}
+.download-file{
+  background: #3ba1da;
+  line-height: 1em;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+  font-weight: 400;
+  color: #fff !important;
+  border-radius: 4px;
+  border-top: 1px solid transparent;
+  border-bottom: 2px solid rgba(0,0,0,.1);
+}
+.download-file:hover{
+  background-color: #44b0ec;
+  color: #fff !important;
+  cursor: pointer;
+}
+.um-field-info{
+  background-color:  #3ba1da;
+  color: #fff;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+@media(max-width:990px){
+  .um-account-main{
+    max-width: 100% !important;
+  }
+}
+.um-account-nav.open + .um-account-tab-historial .um-account-tab-historial,
+.um-account-nav.open + .um-account-tab-crystal .um-account-tab-crystal{
+  display: block !important;
+}
+.um-account-tab-crystal .um-account-tab-crystal,
+.um-account-tab-historial .um-account-tab-historial{
+  border-bottom: 0px !important;
+}
+.um-account.um-editing.um-um_account_id .func-um_user.gravatar{
+  width: 100%;
+  max-width: 200px !important;
+}
+@media (max-width: 767px){
+  .um-account.um-editing.um-um_account_id form{
+    padding: 0 15px;
+  }
+  .um-account.um-editing.um-um_account_id .form-password{
+    padding: 0;
+  }
+  .table-responsive {
+    width: 100%;
+    margin-top: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+#hash{
+  opacity: .6 !important;
+  cursor: no-drop !important;
+}
