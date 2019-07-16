@@ -11,7 +11,6 @@
 
 $defaults = array(
     'title' => 'Last news',
-    'block_background' => '#E6E9ED',
     'color' => '#999999',
     'font_family' => 'Helvetica, Arial, sans-serif',
     'font_size' => '16',

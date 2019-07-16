@@ -2,6 +2,22 @@
 
 defined('ABSPATH') || exit;
 
+class TNP_Composer {
+    static $block_dirs = array();
+    
+    static function register_block($dir) {
+        // Checks
+        
+        if (!file_exists($dir . '/block.php')) {
+            $error = new WP_Error('1', 'block.php missing on folder ' . $dir);
+            NewsletterEmails::instance()->logger->error($error);
+            return $error;
+        }
+        self::$block_dirs[] = $dir;
+        return true;
+    }
+}
+
 /**
  * @property int $id The list unique identifier
  * @property string $name The list name
@@ -303,8 +319,9 @@ class NewsletterModule {
     }
 
     function merge_options($options, $sub = '', $language = '') {
-        if (!is_array($options))
+        if (!is_array($options)) {
             $options = array();
+        }
         $old_options = $this->get_options($sub, $language);
         $this->save_options(array_merge($old_options, $options), $sub, null, $language);
     }
@@ -354,10 +371,13 @@ class NewsletterModule {
             $time = 60;
         //usleep(rand(0, 1000000));
         if (($value = get_transient($this->get_prefix() . '_' . $name)) !== false) {
-            $this->logger->error('Blocked by transient ' . $this->get_prefix() . '_' . $name . ' set ' . (time() - $value) . ' seconds ago');
+            list($t, $v) = explode(';', $value, 2);
+            $this->logger->error('Blocked by transient ' . $this->get_prefix() . '_' . $name . ' set ' . (time() - $t) . ' seconds ago by ' . $v);
             return false;
         }
-        set_transient($this->get_prefix() . '_' . $name, time(), $time);
+        //$ip = ''; //gethostbyname(gethostname());
+        $value = time() . ";" . ABSPATH . ';' . gethostname();
+        set_transient($this->get_prefix() . '_' . $name, $value, $time);
         return true;
     }
 
@@ -640,11 +660,13 @@ class NewsletterModule {
     }
 
     function add_menu_page($page, $title, $capability = '') {
+        if (!Newsletter::instance()->is_allowed()) return;
         $name = 'newsletter_' . $this->module . '_' . $page;
         add_submenu_page('newsletter_main_index', $title, $title, 'exist', $name, array($this, 'menu_page'));
     }
     
     function add_admin_page($page, $title) {
+        if (!Newsletter::instance()->is_allowed()) return;
         $name = 'newsletter_' . $this->module . '_' . $page;
         $name = apply_filters('newsletter_admin_page', $name);
         add_submenu_page(null, $title, $title, 'exist', $name, array($this, 'menu_page'));

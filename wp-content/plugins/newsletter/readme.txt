@@ -2,7 +2,7 @@
 Tags: email, email marketing, newsletter, newsletter subscribers, welcome email, signup forms, contact, lead generation, popup, marketing automation
 Requires at least: 3.4.0
 Tested up to: 5.2.2
-Stable tag: 6.0.9
+Stable tag: 6.1.2
 Contributors: satollo,webagile,michael-travan
 
 Add a real newsletter system to your blog. For free. With unlimited newsletters and subscribers.
@@ -107,6 +107,19 @@ Thank you, The Newsletter Team
 3. The Reports extension
 
 == Changelog ==
+
+= 6.1.2 =
+
+* Added support for roles
+
+= 6.1.1 =
+
+* Added support for custom blocks
+
+= 6.1.0 =
+
+* Fixed data cleanup for non utf8mb4 database. Emoji not saved solved.
+* Small changes to the addons panel
 
 = 6.0.9 =
 

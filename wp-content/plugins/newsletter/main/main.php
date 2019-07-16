@@ -7,10 +7,16 @@ $module = Newsletter::instance();
 
 if (!$controls->is_action()) {
     $controls->data = get_option('newsletter_main');
+    if (!isset($controls->data['roles'])) {
+        $controls->data['roles'] = array();
+        if (!empty($controls->data['editor'])) $controls->data['roles'] = 'editor';
+    }
 } else {
 
     if ($controls->is_action('save')) {
         $errors = null;
+        
+        if (!isset($controls->data['roles'])) $controls->data['roles'] = array();
 
         // Validation
         $controls->data['sender_email'] = $module->normalize_email($controls->data['sender_email']);
@@ -268,9 +274,19 @@ if (!empty($return_path)) {
                             </td>
                         </tr>
                         <tr>
-                            <th><?php _e('Enable access to blog editors?', 'newsletter') ?></th>
+                            <th><?php _e('Allowed roles', 'newsletter') ?></th>
                             <td>
-                                <?php $controls->yesno('editor'); ?>
+                                <?php 
+                                $wp_roles = get_editable_roles();
+                                $roles = array();
+                                foreach ($wp_roles as $key=>$wp_role) {
+                                    if ($key == 'administrator') continue;
+                                    if ($key == 'subscriber') continue;
+                                    $roles[$key] = $wp_role['name'];
+                                }
+                                $controls->checkboxes('roles', $roles); 
+                                ?>
+                                
                             </td>
                         </tr>
 

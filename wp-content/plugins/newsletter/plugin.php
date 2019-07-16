@@ -4,7 +4,7 @@
   Plugin Name: Newsletter
   Plugin URI: https://www.thenewsletterplugin.com/plugins/newsletter
   Description: Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. <strong>Before update give a look to <a href="https://www.thenewsletterplugin.com/category/release">this page</a> to know what's changed.</strong>
-  Version: 6.0.9
+  Version: 6.1.2
   Author: Stefano Lissa & The Newsletter Team
   Author URI: https://www.thenewsletterplugin.com
   Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -29,7 +29,7 @@
  */
 
 // Used as dummy parameter on css and js links
-define('NEWSLETTER_VERSION', '6.0.9');
+define('NEWSLETTER_VERSION', '6.1.2');
 
 global $newsletter, $wpdb;
 
@@ -296,7 +296,7 @@ class Newsletter extends NewsletterModule {
             KEY email_id (email_id)
           ) $charset_collate;");
         $wpdb->suppress_errors($suppress_errors);
-        
+
         // Some setting check to avoid the common support request for mis-configurations
         $options = $this->get_options();
 
@@ -334,19 +334,31 @@ class Newsletter extends NewsletterModule {
 
         return true;
     }
-    
+
     function is_allowed() {
-        return current_user_can('administrator') || $this->options['editor'] == 1 && current_user_can('editor');
+        if (current_user_can('administrator')) {
+            return true;
+        }
+        if (!empty($this->options['editor']) && current_user_can('editor')) return true;
+        if (!empty($this->options['roles'])) {
+            foreach ($this->options['roles'] as $role) {
+                if (current_user_can($role)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     function admin_menu() {
-        if (!$this->is_allowed()) return;
-        
+        if (!$this->is_allowed())
+            return;
+
         add_menu_page('Newsletter', 'Newsletter', 'exist', 'newsletter_main_index', '', plugins_url('newsletter') . '/images/menu-icon.png', '30.333');
 
         $this->add_menu_page('index', __('Dashboard', 'newsletter'));
         $this->add_admin_page('info', __('Company info', 'newsletter'));
-        
+
         if (current_user_can('administrator')) {
             $this->add_menu_page('welcome', __('Welcome', 'newsletter'));
             $this->add_menu_page('main', __('Settings and More', 'newsletter'));

@@ -1484,6 +1484,13 @@ table.widefat {
     cursor: pointer;
 }
 
+#tnp-body a.tnp-extension-details{
+    color: #999999;
+    padding: 5px 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .tnp-extension-free {
     color: #D35400;
     padding: 5px 8px;
